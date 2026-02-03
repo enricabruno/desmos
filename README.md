@@ -10,8 +10,8 @@ The ontology provides a structured conceptual framework to describe:
 
 ## 🛠️ DeSMòS is aligned to international standards:
 
-| Prefix | Standard | URI |
-| :--- | :--- | :--- | :--- |
+| Prefix | Standard | URI | 
+| :--- | :--- | :--- |
 | `crm` | **CIDOC CRM** | `http://www.cidoc-crm.org/cidoc-crm/` 
 | `lrmoo` | **LRMoo** | `http://iflastandards.info/ns/lrm/lrmoo/`  
 | `skos` | **SKOS** | `http://www.w3.org/2004/02/skos/core#` 
