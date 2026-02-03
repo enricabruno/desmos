@@ -1,0 +1,12 @@
+desmos:TextualFeature,desmos:isFeatureOf,dct:description,desmos:revealsConstraint
+text_feature_01,e_plaquette_01,"Il testo presenta una sequenza numerata di stringhe di uguale lunghezza, organizzate in forma di lista/colonna, ottenute per permutazione delle lettere della stessa base.",literary_constraint_01
+text_feature_01,,,literary_constraint_02
+text_feature_02,e_plaquette_02,La plaquette presenta una tabella strutturata con le intestazioni di pagina e riga che esplicita operativamente le istruzioni di selezione: la configurazione rende visibile che il testo è ottenuto applicando coordinate di estrazione (pagina/riga) a un testo sorgente.,literary_constraint_03
+text_feature_03,e_plaquette_03,Nel testo è presente un’alternanza sistematica tra carattere neretto e carattere normale; la marcatura tipografica evidenzia il succedersi delle unità mitografiche (mitografemi).,literary_constraint_06
+text_feature_04,e_plaquette_03,Elenco finale dei mitografemi in ordine di apparizione.,literary_constraint_06
+text_feature_05,e_plaquette_04,Il componimento rende visibile l’innesto palindromico mediante una cornice di apertura/chiusura e sequenza di punteggiatura in mezzo.,literary_constraint_09
+text_feature_06,e_plaquette_05,La plaquette include un apparato finale strutturato che mappa per ciascun frammento la provenienza dei versi da Dante e Petrarca. ,literary_constraint_10
+text_feature_07,e_plaquette_05,Nel frammento poetico la fine di verso mostra una ricorrenza sistematica della terminazione grafica in -ita .,literary_constraint_11
+text_feature_08,e_plaquette_07,Il testo distingue graficamente le due letture della stessa base omografica tramite una marcatura tipografica differenziale (corsivo del blocco in inglese).,literary_constraint_12
+text_feature_09,e_plaquette_12,"Nel testo le occorrenze della lettera raffigurata sono evidenziate mediante marcatura tipografica (corsivo), così da far emergere visivamente la lettera come figura all’interno della griglia letteraria.",literary_constraint_13
+text_feature_10,e_plaquette_18,Accanto a ciascun verso è presente una colonna di riferimenti bibliografici allineati (canto/verso della Commedia) che indica la fonte di ciascun verso del testo.,literary_constraint_10
