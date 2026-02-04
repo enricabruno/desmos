@@ -17,7 +17,7 @@ The ontology provides a structured conceptual framework to describe:
 | `lrmoo` | **LRMoo** | `http://iflastandards.info/ns/lrm/lrmoo/`  
 | `skos` | **SKOS** | `http://www.w3.org/2004/02/skos/core#` 
 | `prov` | **PROV-O** | `http://www.w3.org/ns/prov#` 
-| `dct` | **Dublin Core Terms** | `http://purl.org/dc/terms/` 
+| `dct` | **Dublin Core** | `http://purl.org/dc/terms/` 
 
 ## 📁 Repository Structure
 * **`/ontology`**: Contains the `desmos.ttl` (Turtle) and `desmos.owl` (RDF/XML) source files**
