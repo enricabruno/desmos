@@ -20,9 +20,9 @@ The ontology provides a structured conceptual framework to describe:
 | `dcterms` | **Dublin Core** | `http://purl.org/dc/terms/` 
 
 ## 📁 Repository Structure
-* **`/ontology`**: Contains the `desmos.owl` (RDF/XML) source file**
-* **`/data`**: The **Oplepiana** dataset from *La Biblioteca Oplepiana* (in riga edizioni, 2005).
-* **`/img`**: Graphical documentation of the **formal model**.
+* **`desmos.owl`**: Contains the **OWL 2 ontology** source file (RDF/XML)**
+* **`oplepiana.ttl`**: The **Oplepiana** dataset from *La Biblioteca Oplepiana* (in riga edizioni, 2005).
+* **`/img`**: Graphical documentation and diagrams of **DeSMòS**.
 * **`/OOPSevaluation`**: Reports from **OOPS!** (OntOlogy Pitfall Scanner!) and consistency checks.
 
 **Author:** Enrica Bruno
