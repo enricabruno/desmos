@@ -1,0 +1,1376 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/desmos/"
+     xml:base="https://w3id.org/desmos/"
+     xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:intro="https://w3id.org/lso/intro/beta202506#"
+     xmlns:lrmoo="http://iflastandards.info/ns/lrm/lrmoo/"
+     xmlns:desmos="https://w3id.org/desmos/"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/desmos/">
+        <owl:versionIRI rdf:resource="https://w3id.org/desmos/v2.0.0"/>
+        <dcterms:creator rdf:resource="https://orcid.org/0009-0007-5620-3834"/>
+        <dcterms:description xml:lang="en">DeSMòS (Descriptive Semantic Model for Structured Texts) is an OWL 2 ontology for the formal description of literary constraints understood as generative devices: rule-governed procedures that orient the writing process and yield textually identifiable forms. Drawing on the theoretical legacy of the Oulipo and Oplepo traditions, the ontology operationalises the constraint not as a stylistic descriptor applied a posteriori but as a productive principle reconstructible from textual evidence. Three modelling layers articulate this approach: (i) a procedural layer, in which constraints are reified as instances of crm:E29_Design_or_Procedure employed within an lrmoo:F28_Expression_Creation event; (ii) a typological layer, in which the nature, origin (tradition vs. authorial invention), constituent operations and affected formal/semantic units of each constraint are qualified through SKOS-encoded controlled vocabularies; and (iii) an evidential layer, in which the identifiability of a constraint is grounded in two complementary kinds of evidence, intratextual textual features and Genettian paratextual declarations (epitextual or peritextual), modelled respectively as desmos:TextualFeature and crm:E33_Linguistic_Object. DeSMòS is designed to support documentation, comparative analysis and SPARQL-based querying of constrained writing practices across heterogeneous corpora, and is aligned by reference with CIDOC CRM, LRMoo, PROV-O, SKOS, INTRO and Dublin Core Terms.</dcterms:description>
+        <dcterms:description xml:lang="it">DeSMòS (Descriptive Semantic Model for Structured Texts) è un'ontologia OWL 2 per la descrizione formale delle costrizioni letterarie intese come dispositivi generativi: procedure regolate che orientano il processo di scrittura e determinano la genesi di forme testualmente identificabili. Muovendo dall'eredità teorica delle tradizioni oulipiana e oplepiana, l'ontologia operativizza la costrizione non come descrittore stilistico applicato a posteriori ma come principio produttivo ricostruibile a partire da evidenze testuali. Tre piani di modellazione articolano questo approccio: (i) un piano procedurale, in cui le costrizioni sono reificate come istanze di crm:E29_Design_or_Procedure impiegate in un evento di lrmoo:F28_Expression_Creation; (ii) un piano tipologico, in cui la natura, l'origine (tradizione vs. invenzione autoriale), le operazioni costitutive e le unità formali o semantiche su cui ciascuna costrizione opera sono qualificate attraverso vocabolari controllati SKOS; e (iii) un piano evidenziale, in cui l'identificabilità della costrizione si fonda su due ordini di evidenze complementari, caratteristiche intratestuali e dichiarazioni paratestuali genettiane (epitestuali o peritestuali), modellati rispettivamente come desmos:TextualFeature e crm:E33_Linguistic_Object. DeSMòS è progettata per supportare la documentazione, l'analisi comparativa e l'interrogazione SPARQL delle pratiche di scrittura vincolata su corpora eterogenei, ed è allineata per riferimento a CIDOC CRM, LRMoo, PROV-O, SKOS, INTRO e Dublin Core Terms.</dcterms:description>
+        <rdfs:comment xml:lang="en">DeSMòS adopts an "alignment-by-reference" pattern: external classes and properties (CIDOC CRM, LRMoo, PROV-O, SKOS, INTRO) are re-declared locally with DeSMòS-specific scope notes, but the source ontologies are NOT formally imported via owl:imports to keep the ontology lightweight and reasoner-friendly.</rdfs:comment>
+         <rdfs:comment xml:lang="it">DeSMòS adotta un pattern di "allineamento per riferimento": le classi e le proprietà esterne (CIDOC CRM, LRMoo, PROV-O, SKOS, INTRO) sono dichiarate localmente con note di ambito specifiche per DeSMòS, ma le ontologie sorgente NON sono formalmente importate tramite owl:imports per mantenere l'ontologia leggera e compatibile con i reasoner.</rdfs:comment>
+        <dcterms:hasVersion>2.0.0</dcterms:hasVersion>
+        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-07-02</dcterms:modified>
+        <dcterms:source rdf:resource="http://purl.org/dc/terms/"/>
+        <dcterms:source rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+        <dcterms:source rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+        <dcterms:source rdf:resource="http://www.w3.org/ns/prov#"/>
+        <dcterms:source rdf:resource="https://cidoc-crm.org/extensions/lrmoo/"/>
+        <dcterms:source rdf:resource="https://schema.org/"/>
+        <dcterms:source rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
+        <owl:priorVersion rdf:resource="https://w3id.org/desmos/v1.1.0"/>
+        <owl:versionInfo xml:lang="en">Version 2.0.0</owl:versionInfo>
+        <owl:versionInfo xml:lang="it">Versione 2.0.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title">
+        <rdfs:comment xml:lang="en">A name given to the resource.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un nome dato alla risorsa.</rdfs:comment>
+        <rdfs:label xml:lang="en">Title</rdfs:label>
+        <rdfs:label xml:lang="it">Titolo</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator">
+        <rdfs:comment xml:lang="en">An entity responsible for making the resource.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un'entità responsabile della creazione della risorsa.</rdfs:comment>
+        <rdfs:label xml:lang="en">creator</rdfs:label>
+        <rdfs:label xml:lang="it">creatore</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description">
+        <rdfs:comment xml:lang="en">A description of the resource.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una descrizione della risorsa.</rdfs:comment>
+        <rdfs:label xml:lang="en">Description</rdfs:label>
+        <rdfs:label xml:lang="it">Descrizione</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    
+    <!-- http://purl.org/dc/terms/hasVersion -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasVersion">
+        <rdfs:comment xml:lang="en">A related resource that is a version, edition, or adaptation of the described resource.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una risorsa correlata che è una versione, edizione o adattamento della risorsa descritta.</rdfs:comment>
+        <rdfs:label xml:lang="it">Ha versione</rdfs:label>
+        <rdfs:label xml:lang="en">Has version</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
+        <rdfs:comment xml:lang="en">A legal document giving official permission to do something with the resource.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Il documento legale che stabilisce i permessi di utilizzo della risorsa.</rdfs:comment>
+        <rdfs:label xml:lang="en">License</rdfs:label>
+        <rdfs:label xml:lang="it">Licenza</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified">
+        <rdfs:comment xml:lang="it">La data in cui la risorsa è stata modificata.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The date on which the resource was modified.</rdfs:comment>
+        <rdfs:label xml:lang="it">Modificato</rdfs:label>
+        <rdfs:label xml:lang="en">Modified</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source">
+        <rdfs:comment xml:lang="en">A related resource from which the described resource is derived.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una risorsa correlata da cui deriva la risorsa corrente.</rdfs:comment>
+        <rdfs:label xml:lang="it">Fonte</rdfs:label>
+        <rdfs:label xml:lang="en">Source</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+    
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+        <rdfs:comment xml:lang="en">A textual description of the entity.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una descrizione testuale dell'entità.</rdfs:comment>
+        <rdfs:label xml:lang="en">Comment</rdfs:label>
+        <rdfs:label xml:lang="it">Commento</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2000/01/rdf-schema#"/>
+    </owl:AnnotationProperty>
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:comment xml:lang="en">A human-readable name for the entity.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un nome leggibile per l'entità.</rdfs:comment>
+        <rdfs:label xml:lang="it">Etichetta</rdfs:label>
+        <rdfs:label xml:lang="en">Label</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2000/01/rdf-schema#"/>
+    </owl:AnnotationProperty>
+    
+    <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+        <rdfs:comment xml:lang="it">Indica una risorsa esterna che può fornire informazioni supplementari sulla risorsa descritta.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Used to indicate a resource that might provide additional information about the subject resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">See also</rdfs:label>
+        <rdfs:label xml:lang="it">Vedi anche</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2000/01/rdf-schema#"/>
+    </owl:AnnotationProperty>
+    
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
+        <rdfs:comment xml:lang="en">A string identifying the version of this ontology.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una stringa che identifica la versione di questa ontologia.</rdfs:comment>
+        <rdfs:label xml:lang="it">Informazioni sulla versione</rdfs:label>
+        <rdfs:label xml:lang="en">Version info</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
+    </owl:AnnotationProperty>
+    
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition">
+        <rdfs:comment xml:lang="en">A statement of the meaning of the concept.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una spiegazione del significato del concetto.</rdfs:comment>
+        <rdfs:label xml:lang="en">Definition</rdfs:label>
+        <rdfs:label xml:lang="it">Definizione</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example">
+        <rdfs:comment xml:lang="en">An example of the use of a concept.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Fornisce un esempio dell'uso di un concetto.</rdfs:comment>
+        <rdfs:label xml:lang="it">Esempio</rdfs:label>
+        <rdfs:label xml:lang="en">Example</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+    </owl:AnnotationProperty>
+    
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+        <rdfs:comment xml:lang="it">Il termine preferito per rappresentare il concetto.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The preferred term for representing the concept.</rdfs:comment>
+        <rdfs:label xml:lang="it">Etichetta preferita</rdfs:label>
+        <rdfs:label xml:lang="en">Preferred label</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+    </owl:AnnotationProperty>
+
+    <!-- http://www.w3.org/2004/02/skos/core#historyNote -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#historyNote">
+        <rdfs:comment xml:lang="en">A note about the past use of the concept.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una nota sull'uso passato del concetto.</rdfs:comment>
+        <rdfs:label xml:lang="en">History note</rdfs:label>
+        <rdfs:label xml:lang="it">Nota storica</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+    </owl:AnnotationProperty>
+
+    <!-- http://www.w3.org/2004/02/skos/core#scopeNote -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote">
+        <rdfs:comment xml:lang="en">A note that clarifies the intended meaning of the concept.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una nota che chiarisce il significato inteso del concetto.</rdfs:comment>
+        <rdfs:label xml:lang="en">Scope note</rdfs:label>
+        <rdfs:label xml:lang="it">Nota di ambito</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gYear -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gYear"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P2_has_type -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P2_has_type">
+        <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of"/>
+        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:label xml:lang="en">P2 has type</rdfs:label>
+        <rdfs:label xml:lang="it">P2 ha tipo</rdfs:label>
+         <rdfs:comment xml:lang="it">Questa proprietà consente la sub-tipizzazione delle entità CRM, una forma di specializzazione attraverso un CRM E55 Type.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property allows sub-typing of CRM entities, a form of specialisation through a CRM E55 Type.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+    </owl:ObjectProperty>
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+        <rdfs:label xml:lang="en">P2i is type of</rdfs:label>
+        <rdfs:label xml:lang="it">P2i è tipo di</rdfs:label>
+        <rdfs:comment xml:lang="it">Relazione inversa di P2_has_type. Collega un CRM E55 Type alle entità CRM che sono sub-tipizzate da esso.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Inverse relationship of P2_has_type. Relates a CRM E55 Type to the CRM entities that are sub-typed by it.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+    </owl:ObjectProperty>
+    
+    <!-- http://iflastandards.info/ns/lrm/lrmoo/R15_has_fragment -->
+
+    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/lrm/lrmoo/R15_has_fragment">
+        <owl:inverseOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R15i_is_fragment_of"/>
+        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+        <rdfs:comment xml:lang="it">Questa proprietà associa un'istanza di LRMoo Expression con un'altra istanza di LRMoo Expression che ne è parte integrante.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property associates an instance of LRMoo Expression with another instance of LRMoo Expression that is an integral part of it.</rdfs:comment>
+        <rdfs:label xml:lang="it">R15 has fragment</rdfs:label>
+        <rdfs:label xml:lang="en">R15 has fragment</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/"/>
+    </owl:ObjectProperty>
+    
+    <!-- http://iflastandards.info/ns/lrm/lrmoo/R15i_is_fragment_of -->
+
+    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/lrm/lrmoo/R15i_is_fragment_of">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+        <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+        <rdfs:comment xml:lang="en">Inverse relationship of R15_has_fragment. Relates a fragment to the expression it belongs to.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Relazione inversa di R15_has_fragment. Collega un frammento all'espressione a cui appartiene.</rdfs:comment>
+        <rdfs:label xml:lang="en">R15i is fragment of</rdfs:label>
+        <rdfs:label xml:lang="it">R15i è frammento di</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/"/>
+    </owl:ObjectProperty>
+
+    <!-- http://iflastandards.info/ns/lrm/lrmoo/R17_created -->
+
+    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/lrm/lrmoo/R17_created">
+        <owl:inverseOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R17i_was_created_by"/>
+        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"/>
+        <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+        <rdfs:comment xml:lang="it">Questa proprietà associa un'istanza di F28 Expression Creation con l'istanza di F2 Expression creata durante questa attività.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property associates an instance of F28 Expression Creation with the instance of F2 Expression that was created by this activity.</rdfs:comment>
+        <rdfs:label xml:lang="en">R17 created</rdfs:label>
+        <rdfs:label xml:lang="it">R17 ha creato</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/"/>
+    </owl:ObjectProperty>
+    
+    <!-- http://iflastandards.info/ns/lrm/lrmoo/R17i_was_created_by -->
+
+    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/lrm/lrmoo/R17i_was_created_by">
+        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+        <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"/>
+        <rdfs:comment xml:lang="en">Inverse relationship of R17_created. Associates an instance of F2 Expression with the instance of F28 Expression Creation during which it was created.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Relazione inversa di R17_created. Associa un'istanza di F2 Expression con l'istanza di F28 Expression Creation durante la quale è stata creata.</rdfs:comment>
+        <rdfs:label xml:lang="en">R17i was created by</rdfs:label>
+        <rdfs:label xml:lang="it">R17i è stata creata da</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/"/>
+    </owl:ObjectProperty>
+
+    <!-- http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in -->
+
+    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in">
+        <owl:inverseOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R3i_realises"/>
+        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F1_Work"/>
+        <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+        <rdfs:comment xml:lang="it">Questa proprietà associa un'istanza di F1 Work con un'istanza di F2 Expression che è una realizzazione di quell'opera.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property associates an instance of F1 Work with an instance of F2 Expression that is a realisation of that work.</rdfs:comment>
+        <rdfs:label xml:lang="en">R3 is realised in</rdfs:label>
+        <rdfs:label xml:lang="it">R3 è realizzato in</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/"/>
+    </owl:ObjectProperty>
+
+    <!-- http://iflastandards.info/ns/lrm/lrmoo/R3i_realises -->
+
+    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/lrm/lrmoo/R3i_realises">
+        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+        <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F1_Work"/>
+        <rdfs:comment xml:lang="en">Inverse relationship of R3_is_realised_in. Associates an instance of F2 Expression with an instance of F1 Work of which it is a realisation.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Relazione inversa di R3_is_realised_in. Associa un'istanza di F2 Expression con un'istanza di F1 Work di cui è realizzazione.</rdfs:comment>
+        <rdfs:label xml:lang="en">R3i realises</rdfs:label>
+        <rdfs:label xml:lang="it">R3i realizza</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/"/>
+    </owl:ObjectProperty>
+    
+    <!-- http://iflastandards.info/ns/lrm/lrmoo/R4_embodies -->
+
+    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/lrm/lrmoo/R4_embodies">
+        <owl:inverseOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R4i_is_embodied_in"/>
+        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation"/>
+        <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+        <rdfs:comment xml:lang="it">Associa una Manifestazione all'Espressione che essa rende pubblica o distribuisce.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Associates a Manifestation with the Expression that it makes public or distributes.</rdfs:comment>
+        <rdfs:label xml:lang="en">R4 embodies</rdfs:label>
+        <rdfs:label xml:lang="it">R4 incarna</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/"/>
+    </owl:ObjectProperty>
+    
+    <!-- http://iflastandards.info/ns/lrm/lrmoo/R4i_is_embodied_in -->
+
+    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/lrm/lrmoo/R4i_is_embodied_in">
+        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+        <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation"/>
+        <rdfs:comment xml:lang="en">Inverse relationship of R4_embodies. Associates an Expression with the Manifestation that makes it public or distributes it.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Relazione inversa di R4_embodies. Associa un'Espressione alla Manifestazione che la rende pubblica o distribuisce.</rdfs:comment>
+        <rdfs:label xml:lang="en">R4i is embodied in</rdfs:label>
+        <rdfs:label xml:lang="it">R4i è incarnata in</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/"/>
+    </owl:ObjectProperty>
+    
+    <!-- http://iflastandards.info/ns/lrm/lrmoo/R76_is_derivative_of -->
+
+    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/lrm/lrmoo/R76_is_derivative_of">
+        <owl:inverseOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R76i_has_derivative"/>
+        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+        <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+        <rdfs:comment xml:lang="it">Questa proprietà associa un'istanza di F2 Expression con un'altra istanza di F2 Expression che è servita come fonte per la sua creazione.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property associates an instance of F2 Expression with another instance of F2 Expression that served as a source for its creation.</rdfs:comment>
+        <rdfs:label xml:lang="it">R76 è derivato di</rdfs:label>
+        <rdfs:label xml:lang="en">R76 is derivative of</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://iflastandards.info/ns/lrm/lrmoo/R76i_has_derivative -->
+
+    <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/lrm/lrmoo/R76i_has_derivative">
+        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+        <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+        <rdfs:comment xml:lang="en">Inverse relationship of R76_is_derivative_of. Associates an instance of F2 Expression with another instance of F2 Expression that is derived from it.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Relazione inversa di R76_is_derivative_of. Associa un'istanza di F2 Expression con un'altra istanza di F2 Expression che è derivata da essa.</rdfs:comment>
+        <rdfs:label xml:lang="it">R76i ha derivato</rdfs:label>
+        <rdfs:label xml:lang="en">R76i has derivative</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/"/>
+    </owl:ObjectProperty>
+    
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P129_is_about -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P129_is_about">
+        <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+        <rdfs:range rdf:resource="https://w3id.org/desmos/LiteraryConstraint"/>
+        <rdfs:comment xml:lang="en">In DeSMòS, this property documents that an instance of E33 Linguistic Object has as its subject an instance of desmos:LiteraryConstraint.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Questa proprietà documenta che un'istanza di E33 Linguistic Object ha come soggetto un'istanza di desmos:LiteraryConstraint.</rdfs:comment>
+        <rdfs:label xml:lang="en">P129 is about</rdfs:label>
+        <rdfs:label xml:lang="it">P129 verte su</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+    </owl:ObjectProperty>
+    
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of">
+        <rdfs:domain rdf:resource="https://w3id.org/desmos/LiteraryConstraint"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+        <rdfs:comment xml:lang="en">Inverse property of P129 is about.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà inversa di P129 verte su.</rdfs:comment>
+        <rdfs:label xml:lang="en">P129i is subject of</rdfs:label>
+        <rdfs:label xml:lang="it">P129i è oggetto di</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+    </owl:ObjectProperty>
+    
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P148_has_component -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P148_has_component">
+        <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P148i_is_component_of"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+                    <rdf:Description rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+                    <rdf:Description rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="it">Questa proprietà associa un'istanza di E1 CRM Entity con un'altra istanza di E1 CRM Entity che ne è un componente.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property associates an instance of E1 CRM Entity with another instance of E1 CRM Entity that is a component of it.</rdfs:comment>
+        <rdfs:label xml:lang="it">P148 ha componente</rdfs:label>
+        <rdfs:label xml:lang="en">P148 has component</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+    </owl:ObjectProperty>
+    
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P148i_is_component_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P148i_is_component_of">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+                    <rdf:Description rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+                    <rdf:Description rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Inverse relationship of P148_has_component. Relates a component to the complex entity it belongs to.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Relazione inversa di P148_has_component. Correla un componente all'entità complessa a cui appartiene.</rdfs:comment>
+        <rdfs:label xml:lang="en">P148i is component of</rdfs:label>
+        <rdfs:label xml:lang="it">P148i è componente di</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+    </owl:ObjectProperty>
+    
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by">
+        <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P14i_performed"/>
+        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+        <rdfs:comment xml:lang="it">Questa proprietà descrive la partecipazione attiva di un'istanza di E39 Actor a un'istanza di E7 Activity.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property describes the active participation of an instance of E39 Actor in an instance of E7 Activity.</rdfs:comment>
+        <rdfs:label xml:lang="en">P14 carried out by</rdfs:label>
+        <rdfs:label xml:lang="it">P14 eseguito da</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+    </owl:ObjectProperty>
+    
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P14i_performed -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P14i_performed">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+        <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"/>
+        <rdfs:comment xml:lang="en">Inverse relationship of P14_carried_out_by. Associates an instance of E39 Actor with an instance of E7 Activity that it performed.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Relazione inversa di P14_carried_out_by. Associa un'istanza di E39 Actor con un'istanza di E7 Activity che ha eseguito.</rdfs:comment>
+        <rdfs:label xml:lang="it">P14i ha eseguito</rdfs:label>
+        <rdfs:label xml:lang="en">P14i performed</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+    </owl:ObjectProperty>
+    
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P33_used_specific_technique -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P33_used_specific_technique">
+        <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P33i_was_used_by"/>
+        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"/>
+        <rdfs:comment xml:lang="it">Questa proprietà identifica un'istanza specifica di E29 Design or Procedure per caratterizzare un'istanza di E7 Activity.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property identifies a specific instance of E29 Design or Procedure in order to characterize an instance of E7 Activity.</rdfs:comment>
+        <rdfs:label xml:lang="it">P33 ha usato la tecnica specifica</rdfs:label>
+        <rdfs:label xml:lang="en">P33 used specific technique</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+    </owl:ObjectProperty>
+    
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P33i_was_used_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P33i_was_used_by">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"/>
+        <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"/>
+        <rdfs:comment xml:lang="en">Inverse relationship of P33_used_specific_technique. Associates an instance of E29 Design or Procedure with an instance of E7 Activity that used it.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Relazione inversa di P33_used_specific_technique. Associa un'istanza di E29 Design or Procedure con un'istanza di E7 Activity che l'ha usata.</rdfs:comment>
+        <rdfs:label xml:lang="en">P33i was used by</rdfs:label>
+        <rdfs:label xml:lang="it">P33i è stata usata da</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+    </owl:ObjectProperty>
+    
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P67_refers_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P67_refers_to">
+        <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+        <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+        <rdfs:comment xml:lang="it">Questa proprietà documenta che un'istanza di E1 CRM Entity ha come soggetto un'altra istanza di E1 CRM Entity.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property documents that an instance of E1 CRM Entity has as its subject another instance of E1 CRM Entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">P67 refers to</rdfs:label>
+        <rdfs:label xml:lang="it">P67 si riferisce a</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+    </owl:ObjectProperty>
+    
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by">
+        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+        <rdfs:comment xml:lang="en">Inverse relationship of P67_refers_to.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Relazione inversa di P67_refers_to.</rdfs:comment>
+        <rdfs:label xml:lang="en">P67i is referred to by</rdfs:label>
+        <rdfs:label xml:lang="it">P67i è riferito da</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+    </owl:ObjectProperty>
+    
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#broader">
+        <owl:inverseOf rdf:resource="http://www.w3.org/2004/02/skos/core#narrower"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">Relates a concept to a more general concept.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Relazione tra un concetto e un concetto più generale.</rdfs:comment>
+        <rdfs:label xml:lang="en">broader</rdfs:label>
+        <rdfs:label xml:lang="it">più ampio</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+    </owl:ObjectProperty>
+    
+    <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch">
+        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="it">Indica un collegamento di somiglianza semantica tra concetti di vocabolari diversi.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Used to link two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications.</rdfs:comment>
+        <rdfs:label xml:lang="en">close match</rdfs:label>
+        <rdfs:label xml:lang="it">corrispondenza vicina</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+    </owl:ObjectProperty>
+    
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch">
+        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="it">Indica un collegamento di equivalenza semantica tra concetti di vocabolari diversi.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Used to link two concepts that indicate a high degree of confidence that the concepts can be used interchangeably.</rdfs:comment>
+        <rdfs:label xml:lang="it">corrispondenza esatta</rdfs:label>
+        <rdfs:label xml:lang="en">exact match</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+    </owl:ObjectProperty>
+    
+    <!-- http://www.w3.org/2004/02/skos/core#hasTopConcept -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept">
+        <owl:inverseOf rdf:resource="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">Relates a concept scheme to its top-level concepts.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Relazione tra uno schema di concetti e i suoi concetti principali.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha concetto principale</rdfs:label>
+        <rdfs:label xml:lang="en">has top concept</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+    </owl:ObjectProperty>
+
+    <!-- http://www.w3.org/2004/02/skos/core#topConceptOf -->
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf">
+        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">Relates a concept to the concept scheme for which it is a top-level entry point.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Relazione tra un concetto e lo schema di cui è radice.</rdfs:comment>
+        <rdfs:label xml:lang="it">Concetto principale di</rdfs:label>
+        <rdfs:label xml:lang="en">Top concept of</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+    </owl:ObjectProperty>
+    
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme">
+        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">Relates a concept to the concept scheme it belongs to.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Relazione tra un concetto e lo schema di cui è parte.</rdfs:comment>
+        <rdfs:label xml:lang="en">in scheme</rdfs:label>
+        <rdfs:label xml:lang="it">nello schema</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+    </owl:ObjectProperty>
+    
+    <!-- http://www.w3.org/2004/02/skos/core#narrower -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#narrower">
+        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">Relates a concept to a more specific concept.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Relazione tra un concetto e un concetto più specifico.</rdfs:comment>
+        <rdfs:label xml:lang="en">narrower</rdfs:label>
+        <rdfs:label xml:lang="it">più specifico</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+    </owl:ObjectProperty>
+    
+    <!-- http://www.w3.org/2004/02/skos/core#related -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#related">
+        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">Relates concepts that are not in a hierarchical relationship but are still associated.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Relazione tra concetti che non sono in relazione gerarchica ma sono comunque associati.</rdfs:comment>
+        <rdfs:label xml:lang="it">correlato</rdfs:label>
+        <rdfs:label xml:lang="en">related</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+    </owl:ObjectProperty>
+    
+    <!-- http://www.w3.org/ns/prov#wasAttributedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasAttributedTo">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdfs:comment xml:lang="en">Attribution is the ascribing of an entity to an agent.</rdfs:comment>
+        <rdfs:comment xml:lang="it">L'attribuzione è l'assegnazione di un'entità a un agente.</rdfs:comment>
+        <rdfs:label xml:lang="en">was attributed to</rdfs:label>
+        <rdfs:label xml:lang="it">è stato attribuito a</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov#"/>
+    </owl:ObjectProperty>
+    
+    <!-- https://w3id.org/desmos/constrainsFormalUnit -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/desmos/constrainsFormalUnit">
+        <rdfs:domain rdf:resource="https://w3id.org/desmos/FormalConstraint"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="it">Collega una costrizione formale all'unità discreta del sistema di scrittura (es. lettera, sillaba, parola) su cui opera la procedura.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a formal constraint to the discrete unit of the writing system (e.g., letter, syllable, word) on which the procedure operates.</rdfs:comment>
+        <rdfs:label xml:lang="en">constrains formal unit</rdfs:label>
+        <rdfs:label xml:lang="it">vincola unità formale</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
+    </owl:ObjectProperty>
+    
+    <!-- https://w3id.org/desmos/constrainsSemanticUnit -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/desmos/constrainsSemanticUnit">
+        <rdfs:domain rdf:resource="https://w3id.org/desmos/SemanticConstraint"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="it">Collega una costrizione semantica all'unità del piano del contenuto (es. personaggio, spazio, tempo) che viene determinata dal processo generativo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a semantic constraint to the unit of the content plane (e.g., character, space, time) that is determined by the generative process.</rdfs:comment>
+        <rdfs:label xml:lang="en">constrains semantic unit</rdfs:label>
+        <rdfs:label xml:lang="it">vincola unità semantica</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
+    </owl:ObjectProperty>
+    
+    <!-- https://w3id.org/desmos/constraintOrigin -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/desmos/constraintOrigin">
+        <owl:inverseOf rdf:resource="https://w3id.org/desmos/isOriginOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/desmos/LiteraryConstraint"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="it">Collega una costrizione letteraria ad un concetto SKOS che ne qualifica l'origine concettuale (tradizione o invenzione autoriale).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a constraint to a SKOS concept qualifying its conceptual origin (tradition or authorial invention).</rdfs:comment>
+        <rdfs:label xml:lang="en">constraint origin</rdfs:label>
+        <rdfs:label xml:lang="it">origine della costrizione</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
+    </owl:ObjectProperty>
+
+    <!-- https://w3id.org/desmos/hasFeature -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/desmos/hasFeature">
+        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+        <rdfs:range rdf:resource="https://w3id.org/desmos/TextualFeature"/>
+        <rdfs:comment xml:lang="en">Relates a textual expression (F2) to the observable textual feature that reveals its constrained structure.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Collega un'espressione testuale (F2) alla caratteristica osservabile (TextualFeature) che ne rivela la struttura vincolata.</rdfs:comment>
+        <rdfs:label xml:lang="it">Ha caratteristica</rdfs:label>
+        <rdfs:label xml:lang="en">Has feature</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
+    </owl:ObjectProperty>
+
+    <!-- https://w3id.org/desmos/isFeatureOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/desmos/isFeatureOf">
+        <owl:inverseOf rdf:resource="https://w3id.org/desmos/hasFeature"/>
+        <rdfs:domain rdf:resource="https://w3id.org/desmos/TextualFeature"/>
+        <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+        <rdfs:comment xml:lang="en">Inverse relationship of hasFeature. Relates a textual feature to the textual expression (F2) that reveals its constrained structure.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Relazione inversa di hasFeature. Collega una caratteristica testuale all'espressione testuale (F2) che ne rivela la struttura vincolata.</rdfs:comment>
+        <rdfs:label xml:lang="it">è caratteristica di</rdfs:label>
+        <rdfs:label xml:lang="en">is feature of</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
+    </owl:ObjectProperty>
+
+    <!-- https://w3id.org/desmos/involvesOperation -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/desmos/involvesOperation">
+        <owl:inverseOf rdf:resource="https://w3id.org/desmos/isOperationInvolvedIn"/>
+        <rdfs:domain rdf:resource="https://w3id.org/desmos/LiteraryConstraint"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="it">
+        Relaziona una costrizione letteraria all'operazione procedurale coinvolta per il suo utilizzo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a literary constraint to the procedural operation involved in its use.</rdfs:comment>
+        <rdfs:label xml:lang="it">coinvolge operazione</rdfs:label>
+        <rdfs:label xml:lang="en">involves operation</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
+    </owl:ObjectProperty>
+    
+    <!-- https://w3id.org/desmos/isConstraintUsedIn -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/desmos/isConstraintUsedIn">
+        <owl:inverseOf rdf:resource="https://w3id.org/desmos/usedConstraint"/>
+        <rdfs:domain rdf:resource="https://w3id.org/desmos/LiteraryConstraint"/>
+        <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"/>
+        <rdfs:comment xml:lang="en">Relates a literary constraint to the expression creation event in which it was employed as a generative device.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Relaziona una costrizione letteraria all'evento di creazione dell'espressione in cui essa è stata impiegata come dispositivo generativo.</rdfs:comment>
+        <rdfs:label xml:lang="en">is constraint used in</rdfs:label>
+        <rdfs:label xml:lang="it">è costrizione usata in</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
+    </owl:ObjectProperty>
+
+    <!-- https://w3id.org/desmos/isOperationInvolvedIn -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/desmos/isOperationInvolvedIn">
+        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range rdf:resource="https://w3id.org/desmos/LiteraryConstraint"/>
+        <rdfs:comment xml:lang="en">Relates a procedural operation back to the literary constraint involved in its use.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Relazione inversa di involvesOperation. Relaziona un'operazione procedurale alla costrizione letteraria in cui è coinvolta.</rdfs:comment>
+        <rdfs:label xml:lang="en">is operation involved in</rdfs:label>
+        <rdfs:label xml:lang="it">è l'operazione coinvolta in</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
+    </owl:ObjectProperty>
+    
+    <!-- https://w3id.org/desmos/isOriginOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/desmos/isOriginOf">
+        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range rdf:resource="https://w3id.org/desmos/LiteraryConstraint"/>
+        <rdfs:comment xml:lang="en">Inverse relationship of constraintOrigin. Relates a SKOS concept (tradition or authorial invention) to the literary constraint whose genesis it defines.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Relazione inversa di constraintOrigin. Collega un concetto SKOS (tradizione o invenzione autoriale) alla costrizione letteraria di cui definisce la genesi.</rdfs:comment>
+        <rdfs:label xml:lang="en">is origin of</rdfs:label>
+        <rdfs:label xml:lang="it">è origine di</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
+    </owl:ObjectProperty>
+    
+    <!-- https://w3id.org/desmos/isRevealedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/desmos/isRevealedBy">
+        <owl:inverseOf rdf:resource="https://w3id.org/desmos/revealsConstraint"/>
+        <rdfs:domain rdf:resource="https://w3id.org/desmos/LiteraryConstraint"/>
+        <rdfs:range rdf:resource="https://w3id.org/desmos/TextualFeature"/>
+        <rdfs:comment xml:lang="en">Relates a literary constraint to the evidence (authorial declaration or textual feature) that makes it identifiable.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Relaziona una costrizione letteraria all'evidenza (dichiarazione autoriale o caratteristica testuale) che ne permette l'identificazione.</rdfs:comment>
+        <rdfs:label xml:lang="en">is revealed by</rdfs:label>
+        <rdfs:label xml:lang="it">è rivelata da</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
+    </owl:ObjectProperty>
+    
+    <!-- https://w3id.org/desmos/revealsConstraint -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/desmos/revealsConstraint">
+        <rdfs:domain rdf:resource="https://w3id.org/desmos/TextualFeature"/>
+        <rdfs:range rdf:resource="https://w3id.org/desmos/LiteraryConstraint"/>
+        <rdfs:comment xml:lang="it">Collega un'evidenza (dichiarazione autoriale o caratteristica testuale) alla costrizione letteraria che essa rende identificabile.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates evidence (intratextual or paratextual) to the LiteraryConstraint it makes identifiable.</rdfs:comment>
+        <rdfs:label xml:lang="en">reveals constraint</rdfs:label>
+        <rdfs:label xml:lang="it">rivela costrizione</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
+    </owl:ObjectProperty>
+    
+    <!-- https://w3id.org/desmos/usedConstraint -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/desmos/usedConstraint">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P33_used_specific_technique"/>
+        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"/>
+        <rdfs:range rdf:resource="https://w3id.org/desmos/LiteraryConstraint"/>
+        <rdfs:comment xml:lang="en">
+            Relates a literary creation event to a literary constraint used as a generative device in the production of an expression.
+            Declared as a subproperty of CIDOC CRM P33 (used specific technique) for interoperability.
+        </rdfs:comment>
+        <rdfs:comment xml:lang="it">
+            Relaziona un evento di creazione letteraria alla costrizione impiegata come dispositivo generativo nella produzione di un'espressione.
+            È dichiarata come sottoproprietà di CIDOC CRM P33 (used specific technique) per interoperabilità.
+        </rdfs:comment>
+        <rdfs:label xml:lang="it">Usa costrizione</rdfs:label>
+        <rdfs:label xml:lang="en">Uses constraint</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
+    </owl:ObjectProperty>
+    
+    <!-- https://w3id.org/lso/intro/beta202506#R12_hasReferredToEntity -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/lso/intro/beta202506#R12_hasReferredToEntity">
+        <owl:inverseOf rdf:resource="https://w3id.org/lso/intro/beta202506#R12i_isReferredToEntityOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/lso/intro/beta202506#INT3_Interrelation"/>
+        <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+        <rdfs:comment xml:lang="it">Collega un'INT3 Interrelation all'entità a cui si riferisce nella relazione (un testo o immagine a qualsiasi livello ontologico o una caratteristica attualizzata nel testo resp. immagine in questione).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Links an INT3 Interrelation to the entity referred to in the relationship (a text or image on any ontological level or a feature actualized in the text resp. image in question).</rdfs:comment>
+        <rdfs:label xml:lang="it">R12 ha entità a cui si riferisce</rdfs:label>
+        <rdfs:label xml:lang="en">R12 has referred to entity</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
+    </owl:ObjectProperty>
+    
+    <!-- https://w3id.org/lso/intro/beta202506#R12i_isReferredToEntityOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/lso/intro/beta202506#R12i_isReferredToEntityOf">
+        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+        <rdfs:range rdf:resource="https://w3id.org/lso/intro/beta202506#INT3_Interrelation"/>
+        <rdfs:comment xml:lang="en">Inverse relationship of R12_hasReferredToEntity. Links an entity referred to in the relationship (a text or image on any ontological level or a feature actualized in the text resp. image in question) to the INT3 Interrelation of which it is referred to entity.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Relazione inversa di R12_hasReferredToEntity. Collega un'entità a cui si riferisce nella relazione (un testo o immagine a qualsiasi livello ontologico o una caratteristica attualizzata nel testo resp. immagine in questione) all'INT3 Interrelation di cui è entità a cui si riferisce.</rdfs:comment>
+        <rdfs:label xml:lang="en">R12i is referred to entity of</rdfs:label>
+        <rdfs:label xml:lang="it">R12i è entità a cui si riferisce di</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
+    </owl:ObjectProperty>
+    
+    <!-- https://w3id.org/lso/intro/beta202506#R13_hasReferringEntity -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/lso/intro/beta202506#R13_hasReferringEntity">
+        <owl:inverseOf rdf:resource="https://w3id.org/lso/intro/beta202506#R13i_isReferringEntityOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/lso/intro/beta202506#INT3_Interrelation"/>
+        <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+        <rdfs:comment xml:lang="it">Collega un'INT31 IntertextualRelation ad un'entità referente (un testo o immagine a qualsiasi livello ontologico o una caratteristica attualizzata nel testo resp. immagine in questione).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Links an INT31 IntertextualRelation to a referring entity (a text or image on any ontological level or a feature actualized in the text resp. image in question).</rdfs:comment>
+        <rdfs:label xml:lang="it">R13 ha entità referente</rdfs:label>
+        <rdfs:label xml:lang="en">R13 has referring entity</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
+    </owl:ObjectProperty>
+
+    <!-- https://w3id.org/lso/intro/beta202506#R13i_isReferringEntityOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/lso/intro/beta202506#R13i_isReferringEntityOf">
+        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+        <rdfs:range rdf:resource="https://w3id.org/lso/intro/beta202506#INT3_Interrelation"/>
+        <rdfs:comment xml:lang="en">Inverse relationship of R13_hasReferringEntity. Links a referring entity (a text or image on any ontological level or a feature actualized in the text resp. image in question) to the INT3 Interrelation of which it is referring entity.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Relazione inversa di R13_hasReferringEntity. Collega un'entità referente (un testo o immagine a qualsiasi livello ontologico o una caratteristica attualizzata nel testo resp. immagine in questione) all'INT3 Interrelation di cui è referente.</rdfs:comment>
+        <rdfs:label xml:lang="en">R13i is referring entity of</rdfs:label>
+        <rdfs:label xml:lang="it">R13i è entità referente di</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
+    </owl:ObjectProperty>
+    
+    <!-- https://w3id.org/lso/intro/beta202506#R19_hasType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/lso/intro/beta202506#R19_hasType">
+        <owl:inverseOf rdf:resource="https://w3id.org/lso/intro/beta202506#R19i_isTypeOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/lso/intro/beta202506#INT31_IntertextualRelation"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:comment xml:lang="it">Collega un'INT31 IntertextualRelation al suo tipo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Links an INT31 IntertextualRelation to its type.</rdfs:comment>
+        <rdfs:label xml:lang="it">R19 ha tipo</rdfs:label>
+        <rdfs:label xml:lang="en">R19 has type</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
+    </owl:ObjectProperty>
+    
+    <!-- https://w3id.org/lso/intro/beta202506#R19i_isTypeOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/lso/intro/beta202506#R19i_isTypeOf">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:range rdf:resource="https://w3id.org/lso/intro/beta202506#INT31_IntertextualRelation"/>
+        <rdfs:comment xml:lang="en">Inverse relationship of R19_hasType. Links a type to its intertextual relations.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Relazione inversa di R19_hasType. Collega un tipo alle sue relazioni intertestuali.</rdfs:comment>
+        <rdfs:label xml:lang="en">R19i is type of</rdfs:label>
+        <rdfs:label xml:lang="it">R19i è tipo di</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
+    </owl:ObjectProperty>
+
+    <!-- https://w3id.org/lso/intro/beta202506#R30_hasTextPassage -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/lso/intro/beta202506#R30_hasTextPassage">
+        <owl:inverseOf rdf:resource="https://w3id.org/lso/intro/beta202506#R30i_isTextPassageOf"/>
+        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+        <rdfs:range rdf:resource="https://w3id.org/lso/intro/beta202506#INT21_TextPassage"/>
+        <rdfs:comment xml:lang="it">Collega (di norma, sono facilmente immaginabili eccezioni) un testo, come un'opera o un'espressione, ad un INT21 Passaggio Testuale di quel testo, es. un libro ad un passaggio a pagina tre di questo libro.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Links (usually, exceptions are easily conceivable) a text, like a work or an expression, to an INT21 Text Passage from that text, e. g., a book to a passage on page three of this book.</rdfs:comment>
+        <rdfs:label xml:lang="it">R30 ha passaggio testuale</rdfs:label>
+        <rdfs:label xml:lang="en">R30 has text passage</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
+    </owl:ObjectProperty>
+    
+    <!-- https://w3id.org/lso/intro/beta202506#R30i_isTextPassageOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/lso/intro/beta202506#R30i_isTextPassageOf">
+        <rdfs:domain rdf:resource="https://w3id.org/lso/intro/beta202506#INT21_TextPassage"/>
+        <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+        <rdfs:comment xml:lang="en">Inverse relationship of R30_hasTextPassage. Links an INT21 Text Passage to the text, like a work or an expression, of which it is a passage.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Relazione inversa di R30_hasTextPassage. Collega un INT21 Passaggio Testuale al testo, come un'opera o un'espressione, di cui è passaggio.</rdfs:comment>
+        <rdfs:label xml:lang="en">R30i is text passage of</rdfs:label>
+        <rdfs:label xml:lang="it">R30i è passaggio testuale di</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/created">
+        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+        <rdfs:comment xml:lang="it">Indica la data o l'intervallo temporale in cui la risorsa è stata generata.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Represents the date or time interval when the resource was generated.</rdfs:comment>
+        <rdfs:label xml:lang="en">created</rdfs:label>
+        <rdfs:label xml:lang="it">creato</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/issued">
+        <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+        <rdfs:comment xml:lang="it">Data di emissione formale (es. pubblicazione) della risorsa.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Date of formal issuance (e.g., publication) of the resource.</rdfs:comment>
+        <rdfs:label xml:lang="it">data di emissione</rdfs:label>
+        <rdfs:label xml:lang="en">date issued</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/pagination -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/pagination">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+                    <rdf:Description rdf:about="https://w3id.org/desmos/TextualFeature"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="it">Il numero di pagina o l'intervallo di pagine. Corrisponde alla proprietà standard di schema.org.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The page number or range of pages. Corresponds to the standard schema.org property.</rdfs:comment>
+        <rdfs:label xml:lang="en">pagination</rdfs:label>
+        <rdfs:label xml:lang="it">paginazione</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://schema.org/"/>
+    </owl:DatatypeProperty>
+    
+    <!-- http://www.cidoc-crm.org/cidoc-crm/P3_has_note -->
+
+    <owl:DatatypeProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P3_has_note">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+                    <rdf:Description rdf:about="https://w3id.org/desmos/TextualFeature"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="it">Questa proprietà associa un'istanza di E33 Linguistic Object o una Caratteristica testuale ad uno o più testi che forniscono informazioni aggiuntive, modellati come letterali.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property associates an instance of E33 or a Textual Feature with one or more textual strings (literals) that provide additional information.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha nota</rdfs:label>
+        <rdfs:label xml:lang="en">has note</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+    </owl:DatatypeProperty>
+    
+    <!-- https://w3id.org/lso/intro/beta202506#R44_hasWording -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/lso/intro/beta202506#R44_hasWording">
+        <rdfs:domain rdf:resource="https://w3id.org/lso/intro/beta202506#INT21_TextPassage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="it">Collega un INT21 Passaggio Testuale o un INT16 Segmento a una stringa di dati che ne fornisce la formulazione esatta.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Links an INT21 Text Passage or an INT16 Segment to a data string providing its exact wording.</rdfs:comment>
+        <rdfs:label xml:lang="it">R44 ha formulazione</rdfs:label>
+        <rdfs:label xml:lang="en">R44 has wording</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://iflastandards.info/ns/lrm/lrmoo/F1_Work -->
+
+    <owl:Class rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F1_Work">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"/>
+        <rdfs:comment xml:lang="it">Questa classe comprende le realizzazioni intellettuali o artistiche di un individuo o di un gruppo, che sono riconoscibili come entità distinte e possiedono un insieme comune di caratteristiche. Un'Opera è un'entità astratta; non ha una forma fisica.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class comprises the intellectual or artistic realizations of an individual or a group, which are recognizable as a distinct entity and have a common set of characteristics. A Work is an abstract entity; it does not have a physical form.</rdfs:comment>
+        <rdfs:label xml:lang="en">F1 Work</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/"/>
+    </owl:Class>
+    
+    <!-- http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation -->
+
+    <owl:Class rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation">
+        <rdfs:comment xml:lang="it">Questa classe comprende l'attività di rendere manifesta un'opera come espressione intellettuale o artistica. È l'evento che lega l'autore al risultato della sua creazione.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class comprises the activity of manifesting a work as an intellectual or artistic expression. It is the event that links the author to the result of their creation.</rdfs:comment>
+        <rdfs:label xml:lang="en">F28 Expression Creation</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/"/>
+    </owl:Class>
+    
+    <!-- http://iflastandards.info/ns/lrm/lrmoo/F2_Expression -->
+
+    <owl:Class rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+        <rdfs:comment xml:lang="it">Questa classe comprende le realizzazioni intellettuali o artistiche di un'opera che prendono la forma di segni codificati (testo, musica, immagini, ecc.). Un'espressione è il contenuto intellettuale di un'opera nel momento in cui viene reso manifesto in una forma specifica.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class comprises the intellectual or artistic realisations of a work in the form of identifiable symbols (text, sound, image, etc.). An expression is the intellectual content of a work at the moment it is rendered manifest in a specific form.</rdfs:comment>
+        <rdfs:label xml:lang="en">F2 Expression</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/"/>
+    </owl:Class>
+    
+    <!-- http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation -->
+
+    <owl:Class rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+        <rdfs:comment xml:lang="it">Questa classe comprende i prodotti fisici o digitali che racchiudono una o più espressioni. Una Manifestazione rappresenta l'insieme di tutti i supporti che portano lo stesso contenuto e hanno le stesse caratteristiche fisiche di produzione.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class comprises the physical or digital products encompassing one or more expressions. A Manifestation represents the set of all carriers that bear the same content and share the same physical characteristics of production.</rdfs:comment>
+        <rdfs:label xml:lang="en">F3 Manifestation</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/"/>
+    </owl:Class>
+    
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+        <rdfs:comment xml:lang="it">Questa classe comprende i piani o i protocolli. In DeSMòS, rappresenta i vincoli letterari che l'autore segue durante la creazione dell'espressione.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class comprises the documented designs or procedures. In DeSMòS, it represents the literary constraints followed by the author during the creation of an expression.</rdfs:comment>
+        <rdfs:label xml:lang="en">E29 Design or Procedure</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+    </owl:Class>
+    
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+        <rdfs:comment xml:lang="it">Questa classe comprende espressioni identificabili, in forma scritta o parlata, che utilizzano un linguaggio umano per comunicare un contenuto. In DeSMòS, definisce la natura testuale delle espressioni e dei passaggi analizzati.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class comprises identifiable expressions in written or spoken form that use a human language to communicate content. In DeSMòS, it defines the textual nature of the analyzed expressions and passages.</rdfs:comment>
+        <rdfs:label xml:lang="en">E33 Linguistic Object</rdfs:label>
+        <rdfs:label xml:lang="it">E33 Oggetto Linguistico</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+    </owl:Class>
+    
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E39_Actor -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E39_Actor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdfs:comment xml:lang="it">Questa classe comprende persone, singole o in gruppo, che hanno la capacità di agire e di avere una responsabilità legale o intenzionale per le loro azioni. In DeSMòS, identifica gli autori, i curatori e i collettivi coinvolti nella produzione letteraria.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class comprises people, individually or as groups, who have the potential to perform actions and for whom a legal or intentional responsibility can be attributed. In DeSMòS, it identifies authors, curators, and literary collectives involved in literary production.</rdfs:comment>
+        <rdfs:label xml:lang="en">E39 Actor</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+    </owl:Class>
+    
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E55_Type -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E55_Type">
+        <rdfs:comment xml:lang="it">Questa classe comprende concetti utilizzati per classificare altre entità. In DeSMòS, viene utilizzata per specificare la natura dei vincoli (es. lipogramma, palindromo) o delle relazioni intertestuali.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class comprises concepts used to further classify other entities. In DeSMòS, it is used to specify the nature of constraints (e.g., lipogram, palindrome) or intertextual relations.</rdfs:comment>
+        <rdfs:label xml:lang="en">E55 Type</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+    </owl:Class>
+    
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"/>
+        <rdfs:label xml:lang="en">E73 Information Object</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+    </owl:Class>
+    
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object">
+    <rdfs:comment xml:lang="it">Questa classe comprende entità che esistono come insiemi di caratteristiche o proprietà, piuttosto che come oggetti fisici. In DeSMòS, rappresenta le entità astratte come le opere, i vincoli letterari e le relazioni intertestuali.</rdfs:comment>
+    <rdfs:comment xml:lang="en">This class comprises entities that exist as sets of characteristics or properties rather than as physical objects. In DeSMòS, it represents abstract entities such as works, literary constraints, and intertextual relations.</rdfs:comment>
+        <rdfs:label xml:lang="en">E89 Propositional Object</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+    </owl:Class>
+    
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+        <rdfs:comment xml:lang="it">In DeSMòS, la classe viene utilizzata per definire i singoli vincoli letterari e le categorie analitiche all'interno di un sistema di conoscenza organizzato.</rdfs:comment>
+        <rdfs:comment xml:lang="en">In DeSMòS, the class is used to define individual literary constraints and analytical categories within an organized knowledge system.</rdfs:comment>
+        <rdfs:label xml:lang="en">Concept</rdfs:label>
+        <rdfs:label xml:lang="it">Concetto</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+    </owl:Class>
+    
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
+        <rdfs:comment xml:lang="en">A collection of concepts organized within a knowledge system. In DeSMòS, it is used to define different classification systems for literary constraints and analytical categories.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una collezione di concetti organizzati in un sistema di conoscenza. In DeSMòS, viene utilizzato per definire i diversi sistemi di classificazione dei vincoli letterari e delle categorie analitiche.</rdfs:comment>
+        <rdfs:label xml:lang="en">skos:ConceptScheme</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+    </owl:Class>
+    
+    <!-- http://www.w3.org/ns/prov#Agent -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Agent">
+        <rdfs:comment xml:lang="en">An agent is something that bears some form of responsibility for an activity, for an entity, or for another agent's activity. In DeSMòS, it includes authors, curators, and software systems.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un agente è qualcosa che assume una qualche forma di responsabilità per un'attività, per un'entità o per l'attività di un altro agente. In DeSMòS, include autori, curatori e sistemi software.</rdfs:comment>
+        <rdfs:label xml:lang="en">prov:Agent</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov#"/>
+    </owl:Class>
+    
+    <!-- http://www.w3.org/ns/prov#Entity -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Entity">
+        <rdfs:comment xml:lang="it">In DeSMòS, prov:Entity rappresenta le dichiarazioni autoriali (E33 Linguistic Object) relative ai vincoli letterari.</rdfs:comment>
+        <rdfs:comment xml:lang="en">In DeSMòS, prov:Entity represents authorial declarations (E33 Linguistic Object) related to literary constraints.</rdfs:comment>
+        <rdfs:label xml:lang="en">prov:Entity</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov#"/>
+    </owl:Class>
+    
+    <!-- https://w3id.org/desmos/FormalConstraint -->
+
+    <owl:Class rdf:about="https://w3id.org/desmos/FormalConstraint">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/desmos/LiteraryConstraint"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/desmos/SemanticConstraint"/>
+        <rdfs:comment xml:lang="en">Constraint that intervenes primarily on the signifier.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Costrizione che interviene prioritariamente sul significante.</rdfs:comment>
+        <rdfs:label xml:lang="it">Costrizione formale</rdfs:label>
+        <rdfs:label xml:lang="en">Formal constraint</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
+    </owl:Class>
+
+    <!-- https://w3id.org/desmos/VisualConstraint -->
+
+    <owl:Class rdf:about="https://w3id.org/desmos/VisualConstraint">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/desmos/FormalConstraint"/>
+        <rdfs:comment xml:lang="en">Formal Constraint intervening on the visual or typographic arrangement of the text, where the spatial layout of letters/words on the page is itself part of the rule.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Costrizione formale che interviene sulla disposizione visiva o tipografica del testo, in cui l'impaginazione spaziale di lettere/parole sulla pagina è essa stessa parte della regola.</rdfs:comment>
+        <rdfs:label xml:lang="it">Costrizione visiva</rdfs:label>
+        <rdfs:label xml:lang="en">Visual constraint</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
+    </owl:Class>
+    
+    <!-- https://w3id.org/desmos/LiteraryConstraint -->
+
+    <owl:Class rdf:about="https://w3id.org/desmos/LiteraryConstraint">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"/>
+        <rdfs:comment xml:lang="en">A formal or semantic procedure intervening in the process of textual generation (F28 Expression Creation), whose presence is detectable through objective evidence (TextualFeature) independently of the explicit statement of authorial intent.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Procedura formale o semantica che interviene nel processo di generazione testuale (F28 Expression Creation), la cui presenza può essere rilevabile attraverso evidenze oggettive (TextualFeature) indipendentemente dall'esplicitazione dell'intento autoriale.</rdfs:comment>
+        <rdfs:label xml:lang="it">Costrizione letteraria</rdfs:label>
+        <rdfs:label xml:lang="en">Literary constraint</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
+    </owl:Class>
+    
+    <!-- https://w3id.org/desmos/SemanticConstraint -->
+
+    <owl:Class rdf:about="https://w3id.org/desmos/SemanticConstraint">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/desmos/LiteraryConstraint"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/desmos/FormalConstraint"/>
+        <rdfs:comment xml:lang="en">Constraint that intervenes primarily on the signified.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Costrizione che intervengono prioritariamente sul significato.</rdfs:comment>
+        <rdfs:label xml:lang="it">Costrizione semantica</rdfs:label>
+        <rdfs:label xml:lang="en">Semantic constraint</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
+    </owl:Class>
+    
+    <!-- https://w3id.org/desmos/TextualFeature -->
+
+    <owl:Class rdf:about="https://w3id.org/desmos/TextualFeature">
+        <rdfs:comment xml:lang="it">Caratteristica osservabile dell’espressione che può rendere leggibile una costrizione. In DeSMòS è intesa come evidenza intratestuale: una traccia testuale che supporta l’identificazione della costrizione, senza implicare di per sé sufficienza o necessità.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Observable feature of an expression that may make a constraint legible. In DeSMòS it is treated as intratextual evidence: a textual trace supporting the identification of a constraint, without implying necessity or sufficiency by itself.</rdfs:comment>
+        <rdfs:label xml:lang="it">Caratteristica testuale</rdfs:label>
+        <rdfs:label xml:lang="en">Textual feature</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
+    </owl:Class>
+    
+    <!-- https://w3id.org/lso/intro/beta202506#INT21_TextPassage -->
+
+    <owl:Class rdf:about="https://w3id.org/lso/intro/beta202506#INT21_TextPassage">
+        <rdfs:comment xml:lang="it">L'INT21 Passaggio Testuale è un mezzo per modellare una parte identificabile di un E73 Oggetto Informativo o delle sue sottoclassi – senza che quella parte venga rimossa dal suo oggetto informativo di origine.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The INT21 TextPassage is a means of modelling an identifiable part of an E73 Information Object or its subclasses – without that part being removed from its source Information Object. 
+		</rdfs:comment>
+        <rdfs:label xml:lang="en">INT21 Text Passage</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
+    </owl:Class>
+    
+    <!-- https://w3id.org/lso/intro/beta202506#INT31_IntertextualRelation -->
+
+    <owl:Class rdf:about="https://w3id.org/lso/intro/beta202506#INT31_IntertextualRelation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/lso/intro/beta202506#INT3_Interrelation"/>
+        <rdfs:comment xml:lang="it">Questa classe comprende la nozione astratta di relazione tra testi resp. parti di essi. Non è identica, ad esempio, a una citazione, ma una citazione può essere considerata un caso tipico. Tuttavia, la classe non richiede alcun presupposto teorico specifico per la relazione (come l'intenzione dell'autore, l'identità di formulazione, ecc.), ma comprende relazioni basate su tutti i tipi di quadri teorici, inclusi quelli accademici ('pastiche'), legali ('plagio') o molto generali ('citazione', 'allusione'). 
+		</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class comprises the abstract notion of a relationship between texts resp. parts thereof. It is not identical to, e. g., a quote, but a quote can be considered a typical case. However, the class does not demand any specific theoretical prerequisites for the relation (like the author's intention, identical wording, etc.), but encompasses relations based on all kinds of theoretical frameworks, including scholarly ('pastiche'), legal ('plagiarism'), or very general notions ('quote', 'allusion').
+        </rdfs:comment>
+        <rdfs:label xml:lang="en">INT31 Intertextual Relation</rdfs:label>
+        <rdfs:label xml:lang="it">INT31 Relazione intertestuale</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
+    </owl:Class>
+
+    <!-- https://w3id.org/lso/intro/beta202506#INT3_Interrelation -->
+
+    <owl:Class rdf:about="https://w3id.org/lso/intro/beta202506#INT3_Interrelation">
+        <rdfs:comment xml:lang="it">Questa classe comprende la nozione astratta di relazione tra testi e/o immagini resp. parti di essi. È la reificazione di una relazione intertestuale, interpittorica o intermediale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class comprises the abstract notion of a relationship between texts and/or images resp. parts thereof. It is the reification of an intertextual, interpictorial, or intermedial relation.
+        </rdfs:comment>
+        <rdfs:label xml:lang="en">INT3 Interrelation</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
+    </owl:Class>
+
+    <!-- https://w3id.org/lso/intro/beta202506#INT11_TypeOfInterrelation -->
+    <owl:Class rdf:about="https://w3id.org/lso/intro/beta202506#INT11_TypeOfInterrelation">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:comment xml:lang="en">Class of types used to qualify INT3 Interrelation instances. Subclass of crm:E55_Type. Source: INTRO ontology (Oberreither, beta202506).</rdfs:comment>
+        <rdfs:comment xml:lang="it">Classe dei tipi utilizzati per qualificare le istanze di INT3 Interrelation. Sottoclasse di crm:E55_Type. Fonte: ontologia INTRO (Oberreither, beta202506).</rdfs:comment>
+        <rdfs:label xml:lang="en">INT11 Type of Interrelation</rdfs:label>
+        <rdfs:label xml:lang="it">INT11 Tipo di interrelazione</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
+    </owl:Class>
+
+    <!-- https://w3id.org/lso/intro/beta202506#INT15_IntertextualityInIntertextualityTheories -->
+
+    <owl:Class rdf:about="https://w3id.org/lso/intro/beta202506#INT15_IntertextualityInIntertextualityTheories">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/lso/intro/beta202506#INT11_TypeOfInterrelation"/>
+        <rdfs:comment xml:lang="en">Subclass of INT11 Type of Interrelation comprising types of intertextual relations as defined within intertextuality theories (e.g., Genette's typology of transtextuality).</rdfs:comment>
+        <rdfs:comment xml:lang="it">Sottoclasse di INT11 Tipo di Interrelazione che comprende i tipi di relazione intertestuale definiti nell'ambito delle teorie dell'intertestualità (es. la tipologia genettiana della transtestualità).</rdfs:comment>
+        <rdfs:label xml:lang="en">INT15 Intertextuality in Intertextuality Theories</rdfs:label>
+        <rdfs:label xml:lang="it">INT15 Intertestualità nelle teorie dell'intertestualità</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- https://w3id.org/desmos/hypertextuality -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/desmos/hypertextuality">
+        <rdf:type rdf:resource="https://w3id.org/lso/intro/beta202506#INT15_IntertextualityInIntertextualityTheories"/>
+        <skos:prefLabel xml:lang="en">Hypertextuality</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Ipertestualità</skos:prefLabel>
+        <skos:definition xml:lang="en">Type of intertextual relation, in the Genettian sense, designating any relationship of derivation linking a later text (the hypertext) to an earlier one (the hypotext) upon which it is grafted in a manner that is not that of commentary; the derivation may proceed by transformation (as in parody) or by imitation (as in pastiche).</skos:definition>
+        <skos:definition xml:lang="it">Tipo di relazione intertestuale, nell'accezione genettiana, che designa qualsiasi rapporto di derivazione che collega un testo posteriore (l'ipertesto) ad un testo anteriore (l'ipotesto) sul quale esso si innesta in modo non commentativo; la derivazione può realizzarsi per trasformazione (come nella parodia) o per imitazione (come nel pastiche).</skos:definition>
+        <skos:scopeNote xml:lang="en">Used as the object of intro:R19_hasType to qualify instances of intro:INT31_IntertextualRelation as Genettian hypertextual relations.</skos:scopeNote>
+        <skos:scopeNote xml:lang="it">Utilizzato come oggetto di intro:R19_hasType per qualificare istanze di intro:INT31_IntertextualRelation come relazioni ipertestuali genettiane.</skos:scopeNote>
+        <dcterms:source rdf:resource="https://www.worldcat.org/isbn/9782020061162"/>
+        <rdfs:label xml:lang="en">Hypertextuality</rdfs:label>
+        <rdfs:label xml:lang="it">Ipertestualità</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
+    </owl:NamedIndividual>
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // SKOS ConceptScheme
+    // 
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <!-- https://w3id.org/desmos/ConstraintOriginScheme -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/desmos/ConstraintOriginScheme">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">Concept scheme distinguishing constraints inherited from tradition from those introduced as Oulipian/Oplepian inventions. Expected as the range value of desmos:constraintOrigin.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Schema concettuale che distingue le costrizioni ereditate dalla tradizione da quelle introdotte come invenzioni oulipiane o oplepiane. Atteso come valore del range di desmos:constraintOrigin.</rdfs:comment>
+        <rdfs:label xml:lang="en">Constraint Origin Scheme</rdfs:label>
+        <rdfs:label xml:lang="it">Schema dell'origine della costrizione</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/concept"/>
+    </owl:NamedIndividual>
+
+    <!-- https://w3id.org/desmos/FormalConstraintScheme -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/desmos/FormalConstraintScheme">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">Concept scheme classifying formal constraints (constraints intervening primarily on the signifier). Used to type instances of desmos:FormalConstraint.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Schema concettuale che classifica le costrizioni formali (operanti prioritariamente sul significante). Utilizzato per tipizzare istanze di desmos:FormalConstraint.</rdfs:comment>
+        <rdfs:label xml:lang="en">Formal Constraint Scheme</rdfs:label>
+        <rdfs:label xml:lang="it">Schema delle costrizioni formali</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/concept"/>
+    </owl:NamedIndividual>
+
+    <!-- https://w3id.org/desmos/SemanticConstraintScheme -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/desmos/SemanticConstraintScheme">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">Concept scheme classifying semantic constraints (constraints intervening primarily on the signified). Used to type instances of desmos:SemanticConstraint.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Schema concettuale che classifica le costrizioni semantiche (operanti prioritariamente sul significato). Utilizzato per tipizzare istanze di desmos:SemanticConstraint.</rdfs:comment>
+        <rdfs:label xml:lang="en">Semantic Constraint Scheme</rdfs:label>
+        <rdfs:label xml:lang="it">Schema delle costrizioni semantiche</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/concept"/>
+    </owl:NamedIndividual>
+
+    <!-- https://w3id.org/desmos/LiteraryFormScheme -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/desmos/LiteraryFormScheme">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">Concept scheme defining the textual form of the work (prose, poetry, visual form). Used to qualify lrmoo:F2_Expression instances via crm:P2_has_type.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Schema concettuale che definisce la forma testuale dell'opera (prosa, poesia, forma visuale). Utilizzato per qualificare istanze di lrmoo:F2_Expression tramite crm:P2_has_type.</rdfs:comment>
+        <rdfs:label xml:lang="en">Literary Form Scheme</rdfs:label>
+        <rdfs:label xml:lang="it">Schema delle forme letterarie</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/concept"/>
+    </owl:NamedIndividual>
+
+    <!-- https://w3id.org/desmos/FormalUnitScheme -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/desmos/FormalUnitScheme">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">Concept scheme defining the discrete units of the writing system (e.g., letter, syllable, word) on which a formal constraint operates. Expected as the range value of desmos:constrainsFormalUnit.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Schema concettuale che definisce le unità discrete del sistema di scrittura (lettera, sillaba, parola) su cui opera una costrizione di tipo formale. Atteso come valore del range di desmos:constrainsFormalUnit.</rdfs:comment>
+        <rdfs:label xml:lang="en">Formal Unit Scheme</rdfs:label>
+        <rdfs:label xml:lang="it">Schema delle unità formali</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/concept"/>
+    </owl:NamedIndividual>
+
+    <!-- https://w3id.org/desmos/SemanticUnitScheme -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/desmos/SemanticUnitScheme">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">Concept scheme defining the discrete units of the content plane (e.g., character, space, time) determined by a semantic constraint. Expected as the range value of desmos:constrainsSemanticUnit.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Schema concettuale che definisce le unità discrete del piano del contenuto (personaggio, spazio, tempo) determinate da una costrizione di tipo semantico. Atteso come valore del range di desmos:constrainsSemanticUnit.</rdfs:comment>
+        <rdfs:label xml:lang="en">Semantic Unit Scheme</rdfs:label>
+        <rdfs:label xml:lang="it">Schema delle unità semantiche</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/concept"/>
+    </owl:NamedIndividual>
+
+    <!-- https://w3id.org/desmos/ProceduralOperationScheme -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/desmos/ProceduralOperationScheme">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">Concept scheme describing the procedural operations applied to generate the constrained text. Expected as the range value of desmos:involvesOperation.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Schema concettuale che descrive le operazioni procedurali applicate per generare il testo vincolato. Atteso come valore del range di desmos:involvesOperation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Procedural Operation Scheme</rdfs:label>
+        <rdfs:label xml:lang="it">Schema delle operazioni procedurali</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/concept"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
