@@ -1,0 +1,1337 @@
+@prefix desmos:  <https://w3id.org/desmos/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+desmos:example_LS_method a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_40_text_berti> ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio segnaposto."""@it ;
+    desmos:illustrates desmos:LS_method .
+
+desmos:example_acrobistic a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_30_text_sanguineti> ;
+    rdf:value """Edoardo Sanguineti, sonetto «A Jacques Roubaud», scritto a conclusione della motivazione per il «Premio Capri dell'Enigma» — arte e letteratura — all'oulipiano Jacques Roubaud (ottobre 2000), incipit:
+
+rifugio è il doppio cœur, che a me fa il crac,
+ovvero è il beau boulevard, che ha nome Go:
+un Jonas, sbalenato da un cognac,
+bienveillamment si espone al bleu Roubaud:
+
+Il nome e cognome del dedicatario (Jacques Roubaud) contano esattamente 14 lettere, quanti i versi del sonetto, e le rime (ABAB ABAB AAB ABB) ne richiamano foneticamente il nome."""@it ,
+              """Edoardo Sanguineti, sonnet «A Jacques Roubaud», written to conclude the citation for the «Premio Capri dell'Enigma» — art and literature — awarded to the Oulipian Jacques Roubaud (October 2000), opening:
+
+rifugio è il doppio cœur, che a me fa il crac,
+ovvero è il beau boulevard, che ha nome Go:
+un Jonas, sbalenato da un cognac,
+bienveillamment si espone al bleu Roubaud:
+
+The first and last name of the dedicatee (Jacques Roubaud) count exactly 14 letters, matching the sonnet's lines, and the rhymes (ABAB ABAB AAB ABB) phonetically echo the name."""@en ;
+    desmos:illustrates desmos:acrobistic .
+
+desmos:example_acronym a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_17_text_addomine> ;
+    rdf:value """Elena Addòmine, «Elogio dell'Opera poetica limitante entropiche profondità ombelicali», Biblioteca Oplepiana n. 17 (2000), incipit:
+
+[E]ccomi [d]unque [o]norata [a] [r]accontar [d]i [O]plepo = EDOARDO
+
+Le iniziali delle parole successive compongono di séguito i nomi dei membri dell'OPLEPO; la catena prosegue per l'intero testo."""@it ,
+              """Elena Addòmine, «Elogio dell'Opera poetica limitante entropiche profondità ombelicali», Biblioteca Oplepiana no. 17 (2000), opening:
+
+[E]ccomi [d]unque [o]norata [a] [r]accontar [d]i [O]plepo = EDOARDO
+
+The initials of successive words spell in sequence the names of the OPLEPO members; the chain runs through the whole text."""@en ;
+    desmos:illustrates desmos:acronym .
+
+desmos:example_acrostic a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_41_text_narros> ;
+    rdf:value """Jacopo Narros, «Lettori», in «Passar la lunga sera sulla terra», Biblioteca Oplepiana n. 41 (2016), primi sette paragrafi:
+
+[U]baldo la mattina esce di casa e trova un foglio...
+[M]arundia è una lettrice di medicine.
+[B]etlemme è un feto di acciuga.
+[E]rmes è un lettore di aria.
+[R]odolfo è un lettore di occhi.
+[T]onjo è un lettore di piccioni.
+[O]lona è una lettrice di baci.
+
+Le iniziali dei paragrafi, che coincidono con quelle dei nomi dei personaggi, lette in verticale compongono UMBERTO."""@it ,
+              """Jacopo Narros, «Lettori», in «Passar la lunga sera sulla terra», Biblioteca Oplepiana no. 41 (2016), first seven paragraphs:
+
+[U]baldo la mattina esce di casa e trova un foglio...
+[M]arundia è una lettrice di medicine.
+[B]etlemme è un feto di acciuga.
+[E]rmes è un lettore di aria.
+[R]odolfo è un lettore di occhi.
+[T]onjo è un lettore di piccioni.
+[O]lona è una lettrice di baci.
+
+The paragraph initials, which coincide with those of the characters' names, spell UMBERTO when read vertically."""@en ;
+    desmos:illustrates desmos:acrostic .
+
+desmos:example_alliteration a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_17_text_sebregondi> ;
+    rdf:value """Maria Sebregondi, «Elogio dell'Osar poetare liberamente, evitando penalizzanti ortodossie», Biblioteca Oplepiana n. 17 (2000), terzo componimento «Lilastrocca»:
+
+Lemme lemme la Lilastrocca
+languida lingua saltimbocca,
+lettera quì lettera là
+son caramelle color lìllà.
+
+Ciascuno dei sei componimenti della serie fa risuonare per allitterazione la lettera del proprio titolo, secondo l'acronimo OPLEPO: qui la /l/, in posizione iniziale o accentuata."""@it ,
+              """Maria Sebregondi, «Elogio dell'Osar poetare liberamente, evitando penalizzanti ortodossie», Biblioteca Oplepiana no. 17 (2000), third poem «Lilastrocca»:
+
+Lemme lemme la Lilastrocca
+languida lingua saltimbocca,
+lettera quì lettera là
+son caramelle color lìllà.
+
+Each of the six poems in the series makes the letter of its own title resound through alliteration, following the acronym OPLEPO: here /l/, in initial or stressed position."""@en ;
+    desmos:illustrates desmos:alliteration .
+
+desmos:example_alphabetic_set_constraint a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_06> ;
+    rdf:value """Ruggero Campagnoli, «Vocalizzi Zulu. Sonetti monovocalici latenti», Biblioteca Oplepiana n. 6 (1994), coppia sulla vocale A:
+
+Ulto core, di cocci fori ore,
+Mesto ridi su loti di cortili ...
+
+Alta, cara, da cacca farà ara,
+Ma sta rada salata, dà cart'ala ...
+
+Il concetto si realizza per esclusione o per inclusione: sulla medesima successione di consonanti, il primo sonetto è lipogrammatico in A, il secondo monovocalico in A."""@it ,
+              """Ruggero Campagnoli, «Vocalizzi Zulu. Sonetti monovocalici latenti», Biblioteca Oplepiana no. 6 (1994), the pair on the vowel A:
+
+Ulto core, di cocci fori ore,
+Mesto ridi su loti di cortili ...
+
+Alta, cara, da cacca farà ara,
+Ma sta rada salata, dà cart'ala ...
+
+The concept is realised by exclusion or by inclusion: over the same consonant sequence, the first sonnet is lipogrammatic in A, the second monovocalic in A."""@en ;
+    desmos:illustrates desmos:alphabetic_set_constraint .
+
+desmos:example_alphabetical_acrostic a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_29_text_sanguineti> ;
+    rdf:value """Edoardo Sanguineti, «Distichetti alfabetici artusiani», in «Le leggi della tavola», Biblioteca Oplepiana n. 29 (2009). Schema:
+
+[a]llora, con la mestola forata,
+alla scarlatta prende un bel colore:
+
+[b]uccio per busto è licenza poetica,
+buttate dentro mandorle a filetti
+
+Le iniziali dei 42 versi che formano i 21 distici, lette in verticale, restituiscono l'abbecedario italiano."""@it ,
+              """Edoardo Sanguineti, «Distichetti alfabetici artusiani», in «Le leggi della tavola», Biblioteca Oplepiana no. 29 (2009). Schema:
+
+[a]llora, con la mestola forata,
+alla scarlatta prende un bel colore:
+
+[b]uccio per busto è licenza poetica,
+buttate dentro mandorle a filetti
+
+The initials of the 42 lines making up the 21 distichs, read vertically, spell the Italian alphabet."""@en ;
+    desmos:illustrates desmos:alphabetical_acrostic .
+
+desmos:example_alternating_rhyme a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_03> ;
+    rdf:value """Giuseppe Varaldo, «Canto tenero. Mitografemi», Biblioteca Oplepiana n. 3 (1992), vv. 1-8:
+
+Anna, perenna - ligia al poter mio -,   [A]
+e mesci a caso o reca come dote,        [B]
+tipico tono fausto a te natio,          [A]
+né farti debellar in odì o mote ...     [B]
+Ridesidero l'atona armonia,             [C]
+la smania gaia, l'indole beata,         [D]
+d'erotiche macerie la mania,            [C]
+l'italo coro l'aria delicata.           [D]
+
+I versi dispari e i versi pari rimano fra loro a coppie alternate, secondo lo schema ABAB CDCD che prosegue per l'intero componimento."""@it ,
+              """Giuseppe Varaldo, «Canto tenero. Mitografemi», Biblioteca Oplepiana no. 3 (1992), ll. 1-8:
+
+Anna, perenna - ligia al poter mio -,   [A]
+e mesci a caso o reca come dote,        [B]
+tipico tono fausto a te natio,          [A]
+né farti debellar in odì o mote ...     [B]
+Ridesidero l'atona armonia,             [C]
+la smania gaia, l'indole beata,         [D]
+d'erotiche macerie la mania,            [C]
+l'italo coro l'aria delicata.           [D] 
+
+Odd- and even-numbered lines rhyme with each other in alternating pairs, following the ABAB CDCD scheme that continues throughout the poem."""@en ;
+    desmos:illustrates desmos:alternating_rhyme .
+
+desmos:example_anagram a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_40> ;
+    rdf:value """Aldo Spinelli, «33 nomi, un sol anagramma», in «Venticinque anni d'Oplepo», Biblioteca Oplepiana n. 40 (2015):
+
+Nella lista dei nomi degli affiliati all'Oplepo figurano sessantuno a, dieci b... [...] si giunge vicino ai rari e radi lipogrammi, rigirar ilari gerghi, barcollar righi ai bordi, ruzzolarli, ballarli o balzar, rollar ali a radar, urka... ahi!
+
+Il testo impiega esattamente le lettere che compongono i nomi dei 33 membri dell'OpLePo, riordinate in un componimento che tematizza la propria costrizione; caso minimo a livello di sintagma: 'l'attrice' > 'le tracce'."""@it ,
+              """Aldo Spinelli, «33 nomi, un sol anagramma», in «Venticinque anni d'Oplepo», Biblioteca Oplepiana no. 40 (2015):
+
+Nella lista dei nomi degli affiliati all'Oplepo figurano sessantuno a, dieci b... [...] si giunge vicino ai rari e radi lipogrammi, rigirar ilari gerghi, barcollar righi ai bordi, ruzzolarli, ballarli o balzar, rollar ali a radar, urka... ahi!
+
+The text uses exactly the letters composing the names of the 33 members of OpLePo, rearranged into a composition that thematises its own constraint; minimal phrase-level case: 'l'attrice' > 'le tracce'."""@en ;
+    desmos:illustrates desmos:anagram .
+
+desmos:example_anagraphy a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_11> ;
+    rdf:value """Nicola Aurilio [Ilion], «Dimenticando sopravvivo», in Salvatore Chierchia (a cura di), «L'isola teletrasportata. Anagrafie», Biblioteca Oplepiana n. 11 (1995):
+
+Testo-sorgente (Umberto Eco, «L'isola del giorno prima», Bompiani 1994, p. 5):
+Eppure m'inorgoglisco della mia umiliazione e, poiché a tal privilegio son condannato, quasi godo di un'aborrita salvezza: sono, credo a memoria d'uomo, l'unico essere della nostra specie ad aver fatto naufragio su di una nave deserta.
+
+Anagrafia:
+Poiché sono uomo, / son essere condannato / ad un'aborrita umiliazione, / a naufragio di mia e nostra nave, / eppure, credo a una salvezza / della specie, / su di tal fatto m'inorgoglisco: / godo / d'aver l'unico 'privilegio' / della quasi deserta memoria.
+
+Le stesse parole e i medesimi segni d'interpunzione del passo di Eco, ricomposti in ordine differente; la plaquette raccoglie oltre venti riscritture parallele del medesimo inventario lessicale."""@it ,
+              """Nicola Aurilio [Ilion], «Dimenticando sopravvivo», in Salvatore Chierchia (ed.), «L'isola teletrasportata. Anagrafie», Biblioteca Oplepiana no. 11 (1995):
+
+Source text (Umberto Eco, «L'isola del giorno prima», Bompiani 1994, p. 5):
+Eppure m'inorgoglisco della mia umiliazione e, poiché a tal privilegio son condannato, quasi godo di un'aborrita salvezza: sono, credo a memoria d'uomo, l'unico essere della nostra specie ad aver fatto naufragio su di una nave deserta.
+
+Anagraphy:
+Poiché sono uomo, / son essere condannato / ad un'aborrita umiliazione, / a naufragio di mia e nostra nave, / eppure, credo a una salvezza / della specie, / su di tal fatto m'inorgoglisco: / godo / d'aver l'unico 'privilegio' / della quasi deserta memoria.
+
+The same words and the same punctuation marks as Eco's passage, recomposed in a different order; the plaquette collects more than twenty parallel rewritings of the same lexical inventory."""@en ;
+    desmos:illustrates desmos:anagraphy .
+
+desmos:example_antonymic_rewriting a desmos:CorpusExample ;
+    rdf:value """Esempio prototipico: il concetto non ha attestazione diretta nei volumi antologici della Biblioteca Oplepiana consultati.
+
+Il bianco silenzio della sera avvolge la città addormentata.
+Il nero rumore del mattino svela la campagna vegliante.
+
+Ogni parola piena è sostituita dal suo opposto semantico, mentre la struttura sintattica e le parole grammaticali restano invariate."""@it ,
+              """Prototypical example: the concept has no direct attestation in the anthological volumes of the Biblioteca Oplepiana consulted.
+
+Il bianco silenzio della sera avvolge la città addormentata.
+Il nero rumore del mattino svela la campagna vegliante.
+
+Every content word is replaced by its semantic opposite, while the syntactic structure and the function words remain unchanged."""@en ;
+    desmos:illustrates desmos:antonymic_rewriting .
+
+desmos:example_apocryphal_pentimento a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_20> ;
+    rdf:value """Giulio Bizzarri, «Art caveau. L'invisibile pittura», Biblioteca Oplepiana n. 20 (2001), scheda su Piero della Francesca:
+
+[...] nella primitiva versione dell'opera di Piero (fig. 3) poi intitolata alla Flagellazione di Cristo non c'erano né Cristo flagellato né Oddantonio da Montefeltro martirizzato né altri personaggi in scena. Solo poesia architettonica [...]
+
+Un radiologo fittizio, Luigi Orbirazzi, «dimostra» con stratigrafie apocrife che cinque capolavori avevano in origine uno stato diverso; ogni scheda affianca l'opera canonica (fig. 1), la radiografia inventata che ne attesta lo stato perduto (fig. 2) e la ricostruzione dell'opera invisibile (fig. 3)."""@it ,
+              """Giulio Bizzarri, «Art caveau. L'invisibile pittura», Biblioteca Oplepiana no. 20 (2001), entry on Piero della Francesca:
+
+[...] nella primitiva versione dell'opera di Piero (fig. 3) poi intitolata alla Flagellazione di Cristo non c'erano né Cristo flagellato né Oddantonio da Montefeltro martirizzato né altri personaggi in scena. Solo poesia architettonica [...]
+
+A fictional radiologist, Luigi Orbirazzi, «proves» by means of apocryphal stratigraphies that five masterpieces originally had a different state; each entry sets side by side the canonical work (fig. 1), the invented X-ray attesting the lost state (fig. 2) and the reconstruction of the invisible work (fig. 3)."""@en ;
+    desmos:illustrates desmos:apocryphal_pentimento .
+
+desmos:example_beau_present a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_34_text_aragona> ;
+    rdf:value """Raffaele Aragona, «Epitalamio per Emanuela Grimalda ed Elio Arzu», Biblioteca Oplepiana n. 34 (2013):
+
+Un giorno era zona di Nuoro
+l'odierna regione d'OG:
+di Gairo e del lido di Orri,
+di rada Gonone e Dorgali ...
+
+Sono ammesse le sole dodici lettere che compongono i nomi degli sposi (A D E G I L M N O R U Z)."""@it ,
+              """Raffaele Aragona, «Epitalamio per Emanuela Grimalda ed Elio Arzu», Biblioteca Oplepiana no. 34 (2013):
+
+Un giorno era zona di Nuoro
+l'odierna regione d'OG:
+di Gairo e del lido di Orri,
+di rada Gonone e Dorgali ...
+
+Only the twelve letters forming the spouses' names are admitted (A D E G I L M N O R U Z)."""@en ;
+    desmos:illustrates desmos:beau_present .
+
+desmos:example_bisenso a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_56_text_aragona> ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:bisenso .
+
+desmos:example_boule_de_neige a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_51_text_aragona> ;
+    rdf:value """Raffaele Aragona, «Une boule de neige pour Gustave Alexandre Eiffel», Biblioteca Oplepiana n. 51 (2023):
+
+À (1) 
+UN (2) 
+ING (3) 
+TRÈS (4) 
+GRAND (5) 
+AUTEUR (6) 
+CÉLÈBRE (7)
+
+Ogni verso è formato da una sola parola, la cui lunghezza cresce di una lettera per volta senza salti; la lettura consecutiva restituisce una dedica all'ingegnere."""@it ,
+              """Raffaele Aragona, «Une boule de neige pour Gustave Alexandre Eiffel», Biblioteca Oplepiana no. 51 (2023):
+
+À (1) / UN (2) / ING (3) / TRÈS (4) / GRAND (5) / AUTEUR (6) / CÉLÈBRE (7)
+
+Each line consists of a single word whose length grows by one letter at a time without gaps; read consecutively, the lines yield a dedication to the engineer."""@en ;
+    desmos:illustrates desmos:boule_de_neige .
+
+desmos:example_brivadois_acrostiche a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_41_text_jouet> ;
+    rdf:value """Jacques Jouet, «E C O (titre vertical...)», in «Passar la lunga sera sulla terra», Biblioteca Oplepiana n. 41 (2016), i tre paragrafi:
+
+[E]lan furieux généralisé hautement implosif, je kidnappe le maître nullement obscur pour quoi relire ? ses titres umbertesques valent warrant, Xénophon y zozotte à bras chèrement dosés
+[C]ette dure encolure frondeuse grondait, harponnait ici, jubilait kilométriquement là ...
+[O]n pleure quel romancier, savant, tribun ? urticante vision wisigothe : xylographies, ysopets ...
+
+In orizzontale le iniziali delle parole percorrono l'alfabeto a partire da quella del paragrafo e si richiudono ciclicamente sulle lettere che la precedono; in verticale le iniziali dei tre paragrafi compongono E-C-O."""@it ,
+              """Jacques Jouet, «E C O (titre vertical...)», in «Passar la lunga sera sulla terra», Biblioteca Oplepiana no. 41 (2016), the three paragraphs:
+
+[E]lan furieux généralisé hautement implosif, je kidnappe le maître nullement obscur pour quoi relire ? ses titres umbertesques valent warrant, Xénophon y zozotte à bras chèrement dosés
+[C]ette dure encolure frondeuse grondait, harponnait ici, jubilait kilométriquement là ...
+[O]n pleure quel romancier, savant, tribun ? urticante vision wisigothe : xylographies, ysopets ...
+
+Horizontally the word initials run through the alphabet starting from the paragraph's own initial and close cyclically on the letters preceding it; vertically the initials of the three paragraphs spell E-C-O."""@en ;
+    desmos:illustrates desmos:brivadois_acrostiche .
+
+desmos:example_buried_word a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_36> ;
+    rdf:value """Giuseppe Varaldo, «I costretti sposi», Biblioteca Oplepiana n. 36 (2014), ottava 5 «Colori»:
+
+Anche og[GI, ALLO]rquando ci ripenso,
+di Renzo, no[n-ero]e spontaneo e vivo
+e sa[vio la]tin lover mai melenso,
+mi pia[ce l'este]nuante tentativo,
+grazie a un amore g[rosso] modo immenso
+e certo né p[rosa]ico né lascivo,
+di a[ver - de]funto il Don con le sue voglie,
+finiti gli a[gri gio]rni - lei per moglie.
+
+In ciascun verso si cela un colore, recuperabile ignorando spazi, trattini e punteggiatura; sei sono a cavallo del confine di parola, due contenuti per intero in una parola più lunga."""@it ,
+              """Giuseppe Varaldo, «I costretti sposi», Biblioteca Oplepiana no. 36 (2014), octave 5 «Colori»:
+
+Anche og[GI, ALLO]rquando ci ripenso,
+di Renzo, no[n-ero]e spontaneo e vivo
+e sa[vio la]tin lover mai melenso,
+mi pia[ce l'este]nuante tentativo,
+grazie a un amore g[rosso] modo immenso
+e certo né p[rosa]ico né lascivo,
+di a[ver - de]funto il Don con le sue voglie,
+finiti gli a[gri gio]rni - lei per moglie.
+
+Each line conceals a colour, recoverable by ignoring spaces, hyphens and punctuation; six straddle a word boundary, two are wholly contained within a longer word."""@en ;
+    desmos:illustrates desmos:buried_word .
+
+desmos:example_calligram a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_51_text_bloomfield> ;
+    rdf:value """Camille Bloomfield, «"Elle : F" : Eiffel retourné par les femmes», Biblioteca Oplepiana n. 51 (2023), frammenti con la posizione nella figura:
+
+[sommità] elle / F
+[arco] nouveau siècle nouvelles valeurs nouvelles formes nouvelles femmes nouvelles eiffelles
+[montante destro] elle lei elle lei elle lei elle c'iel
+[base] de ma main je retourne vos valeurs . je renverse vos codes
+
+Il testo è disposto secondo il profilo della Torre Eiffel."""@it ,
+              """Camille Bloomfield, «"Elle : F" : Eiffel retourné par les femmes», Biblioteca Oplepiana no. 51 (2023), fragments with their position in the figure:
+
+[top] elle / F
+[arch] nouveau siècle nouvelles valeurs nouvelles formes nouvelles femmes nouvelles eiffelles
+[right upright] elle lei elle lei elle lei elle c'iel
+[base] de ma main je retourne vos valeurs . je renverse vos codes
+
+The text is laid out along the outline of the Eiffel Tower."""@en ;
+    desmos:illustrates desmos:calligram .
+
+desmos:example_cento a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_05> ;
+    rdf:value """Piero Falchetta, «Frammenti in vita. Combinazioni monorime con commento», Biblioteca Oplepiana n. 5 (1993), combinazione I:
+
+Nel mezzo del cammin di nostra vita
+L'ultimo dì, ch'è primo a l'altra vita.
+
+I due versi, di Dante e di Petrarca, sono accostati perché condividono la rima in -ita."""@it ,
+              """Piero Falchetta, «Frammenti in vita. Combinazioni monorime con commento», Biblioteca Oplepiana no. 5 (1993), combination I:
+
+Nel mezzo del cammin di nostra vita
+L'ultimo dì, ch'è primo a l'altra vita.
+
+The two lines, by Dante and by Petrarch, are juxtaposed because they share the rhyme in -ita."""@en ;
+    desmos:illustrates desmos:cento .
+
+desmos:example_classical_sonnet a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_34_text_varaldo> ;
+    rdf:value """Giuseppe Varaldo, «Identikit lessicali», Biblioteca Oplepiana n. 34 (2013), primo dei cinque sonetti:
+
+Spesso col punto sopra a mo' d'accento,
+sempre allungata e stretta è la vocale
+testé scomparsa, che nel tempo attuale
+a volte contrassegna un elemento,
+ma che dal padre Dante nel Trecento,
+con l'apostrofo dopo o tale e quale,
+fu promossa a pronome personale,
+come soggetto o come complemento.
+E se comunemente nel parlato
+al portoghese os o al los spagnolo
+questo grafema aguzzo va accostato,
+preposto a emme o esse oppur da solo
+- emblema allor del nostro stesso Stato -
+assume sulle targhe un altro ruolo.
+
+Quattordici endecasillabi in due quartine e due terzine, con schema ABBA ABBA CDC DCD; alla forma fissa si sovrappone un lipogramma, poiché il sonetto descrive per enigma la vocale che gli manca, la i, senza mai adoperarla."""@it ,
+              """Giuseppe Varaldo, «Identikit lessicali», Biblioteca Oplepiana no. 34 (2013), first of the five sonnets:
+
+Spesso col punto sopra a mo' d'accento,
+sempre allungata e stretta è la vocale
+testé scomparsa, che nel tempo attuale
+a volte contrassegna un elemento,
+ma che dal padre Dante nel Trecento,
+con l'apostrofo dopo o tale e quale,
+fu promossa a pronome personale,
+come soggetto o come complemento.
+E se comunemente nel parlato
+al portoghese os o al los spagnolo
+questo grafema aguzzo va accostato,
+preposto a emme o esse oppur da solo
+- emblema allor del nostro stesso Stato -
+assume sulle targhe un altro ruolo.
+
+Fourteen hendecasyllables in two quatrains and two tercets, rhyming ABBA ABBA CDC DCD; a lipogram is superimposed on the fixed form, since the sonnet describes as a riddle the vowel it lacks, the letter i, without ever using it."""@en ;
+    desmos:illustrates desmos:classical_sonnet .
+
+desmos:example_colloquial_register_lexicon a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_36> ;
+    rdf:value """Giuseppe Varaldo, «I costretti sposi», Biblioteca Oplepiana n. 36 (2014), ottava 37 «Lessico colloquiale»:
+
+Nonostante gli impiastri ed i casini
+che sforni a vagonate e le cappelle
+che inevitabilmente mi combini,
+per sfiga (ti s'infratta sottopelle!) ...
+
+Tutti i sostantivi, gli aggettivi e i verbi dell'ottava recano nel GRADIT la qualifica di «colloq.», di per sé o nell'accezione impiegata; l'intera strofa è impostata come un tu amichevole rivolto a Renzo."""@it ,
+              """Giuseppe Varaldo, «I costretti sposi», Biblioteca Oplepiana no. 36 (2014), octave 37 «Lessico colloquiale»:
+
+Nonostante gli impiastri ed i casini
+che sforni a vagonate e le cappelle
+che inevitabilmente mi combini,
+per sfiga (ti s'infratta sottopelle!) ...
+
+Every noun, adjective and verb in the octave carries the label «colloq.» in the GRADIT dictionary, in itself or in the sense used; the whole stanza is cast as a friendly second-person address to Renzo."""@en ;
+    desmos:illustrates desmos:colloquial_register_lexicon .
+
+desmos:example_combinatorial_lottery a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_42> ;
+    rdf:value """Jacopo Narros, «Il barbiere notturno. Lottomatica combinatoria», Biblioteca Oplepiana n. 42 (2018), Prologo «Lo studente affamato», incipit:
+
+Si pulisce i denti, lo studente, tra una confusione di oggetti (un libro usato, una canna da pesca, una lima arrugginita, un uovo da mangiare, un portacenere rotto). Civetta con la sua bava di ammalato, con della cipolla tritata.
+
+Il testo è generato dalla cinquina 78-60-35-30-10 estratta sulla Ruota Nazionale: ciascun numero rinvia a un gruppo di parole in un'enciclopedia del Lotto, impiegata qui in senso inverso, dai numeri al testo."""@it ,
+              """Jacopo Narros, «Il barbiere notturno. Lottomatica combinatoria», Biblioteca Oplepiana no. 42 (2018), Prologue «Lo studente affamato», opening:
+
+Si pulisce i denti, lo studente, tra una confusione di oggetti (un libro usato, una canna da pesca, una lima arrugginita, un uovo da mangiare, un portacenere rotto). Civetta con la sua bava di ammalato, con della cipolla tritata.
+
+The text is generated from the five-number set 78-60-35-30-10 drawn on the Ruota Nazionale: each number refers to a group of words in a Lotto encyclopedia, used here in reverse, from the numbers to the text."""@en ;
+    desmos:illustrates desmos:combinatorial_lottery .
+
+desmos:example_compound_noun_lexicon a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_36> ;
+    rdf:value """Giuseppe Varaldo, «I costretti sposi», Biblioteca Oplepiana n. 36 (2014), ottava 3 «Nomi composti»:
+
+Divenire non può capofamiglia
+un sanguecaldo facile a scattare,
+ché un bellimbusto ch'urla e gozzoviglia
+a un cacasotto nega il benestare ...
+
+Tutti i sostantivi dell'ottava sono nomi composti registrati come tali dal dizionario di riferimento; nell'edizione a stampa sono evidenziati in grassetto."""@it ,
+              """Giuseppe Varaldo, «I costretti sposi», Biblioteca Oplepiana no. 36 (2014), octave 3 «Nomi composti»:
+
+Divenire non può capofamiglia
+un sanguecaldo facile a scattare,
+ché un bellimbusto ch'urla e gozzoviglia
+a un cacasotto nega il benestare ...
+
+Every noun in the octave is a compound noun recorded as such by the reference dictionary; in the printed edition they are set in bold."""@en ;
+    desmos:illustrates desmos:compound_noun_lexicon .
+
+desmos:example_crown_of_sonnets a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_29_text_addomine> ;
+    rdf:value """Elena Addòmine, «Corona di sonetti gastronomici», in «Le leggi della tavola», Biblioteca Oplepiana n. 29 (2009), sonetto I «Salse, burri composti, marinate», seconda quartina e verso finale:
+
+Divino è il celeberrimo contrasto
+tra senapi e mostarde originali
+e burri, tenerezze eccezionali
+se poi si aggiungon l'erbe all'impasto.
+[...]
+cucina è vero orgoglio nazionale!
+
+Primo dei quindici sonetti della corona, in endecasillabi con schema ABBA ABBA CDE EDC; l'ultimo verso di ciascun sonetto apre il successivo, e il quindicesimo, detto magistrale, è formato nell'ordine dagli ultimi versi dei quattordici precedenti."""@it ,
+              """Elena Addòmine, «Corona di sonetti gastronomici», in «Le leggi della tavola», Biblioteca Oplepiana no. 29 (2009), sonnet I «Salse, burri composti, marinate», second quatrain and closing line:
+
+Divino è il celeberrimo contrasto
+tra senapi e mostarde originali
+e burri, tenerezze eccezionali
+se poi si aggiungon l'erbe all'impasto.
+[...]
+cucina è vero orgoglio nazionale!
+
+The first of the fifteen sonnets in the crown, in hendecasyllables rhyming ABBA ABBA CDE EDC; the last line of each sonnet opens the next, and the fifteenth, called the master sonnet, is made up in order of the final lines of the preceding fourteen."""@en ;
+    desmos:illustrates desmos:crown_of_sonnets .
+
+desmos:example_datation_1621_1640_lexicon a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_36> ;
+    rdf:value """Giuseppe Varaldo, «I costretti sposi», Biblioteca Oplepiana n. 36 (2014), ottava 47 «Lessico manzoniano seicentesco»:
+
+Mentre abbini in impervia coesistenza,
+con impegno e infrequente limatezza,
+l'aristocratica malipotenza
+e l'agrodolce miserevolezza ...
+
+Le vicende dei «Promessi sposi» si svolgono fra il 1628 e il 1630: tutte le parole piene dell'ottava sono entrate nella lingua nel ventennio contemporaneo ai fatti narrati."""@it ,
+              """Giuseppe Varaldo, «I costretti sposi», Biblioteca Oplepiana no. 36 (2014), octave 47 «Lessico manzoniano seicentesco»:
+
+Mentre abbini in impervia coesistenza,
+con impegno e infrequente limatezza,
+l'aristocratica malipotenza
+e l'agrodolce miserevolezza ...
+
+The events of «I promessi sposi» take place between 1628 and 1630: every content word in the octave entered the language in the twenty years contemporary with the narrated events."""@en ;
+    desmos:illustrates desmos:datation_1621_1640_lexicon .
+
+desmos:example_datation_1827_1842_lexicon a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_36> ;
+    rdf:value """Giuseppe Varaldo, «I costretti sposi», Biblioteca Oplepiana n. 36 (2014), ottava 48 «Lessico manzoniano ottocentesco»:
+
+Commistura di epos e umorismo
+- sapidezza non certo da sghignazzi! -,
+il cui ineccepibile ibridismo,
+senza bellurie né un cliché che arrazzi ...
+
+Le due edizioni dei «Promessi sposi» risalgono al 1827, la Ventisettana, e al 1842, la Quarantana: tutte le parole piene dell'ottava sono entrate nella lingua entro quel quindicennio."""@it ,
+              """Giuseppe Varaldo, «I costretti sposi», Biblioteca Oplepiana no. 36 (2014), octave 48 «Lessico manzoniano ottocentesco»:
+
+Commistura di epos e umorismo
+- sapidezza non certo da sghignazzi! -,
+il cui ineccepibile ibridismo,
+senza bellurie né un cliché che arrazzi ...
+
+The two editions of «I promessi sposi» date from 1827, the Ventisettana, and 1842, the Quarantana: every content word in the octave entered the language within those fifteen years."""@en ;
+    desmos:illustrates desmos:datation_1827_1842_lexicon .
+
+desmos:example_datation_lexicon a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_36> ;
+    rdf:value """Giuseppe Varaldo, «I costretti sposi», Biblioteca Oplepiana n. 36 (2014), ottava 50 «Lessico del dopo-muro»:
+
+Non mi sconfinferan lo sfaccimmuso
+che imparanoia e blabla oltremisura,
+la seraficità dello scantuso,
+del busbano la scrausa imbranatura ...
+
+Assunto il 1989 come spartiacque, tutti i sostantivi, gli aggettivi e i verbi dell'ottava hanno secondo il GRADIT una datazione posteriore a quell'anno, dal 1990 di sconfinferare al 2002 di sgarzina."""@it ,
+              """Giuseppe Varaldo, «I costretti sposi», Biblioteca Oplepiana no. 36 (2014), octave 50 «Lessico del dopo-muro»:
+
+Non mi sconfinferan lo sfaccimmuso
+che imparanoia e blabla oltremisura,
+la seraficità dello scantuso,
+del busbano la scrausa imbranatura ...
+
+Taking 1989 as the watershed, every noun, adjective and verb in the octave is dated by the GRADIT dictionary to a year after that, from sconfinferare in 1990 to sgarzina in 2002."""@en ;
+    desmos:illustrates desmos:datation_lexicon .
+
+desmos:example_date_indexed_word_length a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_53> ;
+    rdf:value """Giuseppe Varaldo, Biblioteca Oplepiana n. 53 (2024), ottava «Suicidio di Emilio Salgari», riferita alla data 25.04.1911.
+
+Immaginosità e talento vero:
+dal West al Polo Nord ai lidi indiani
+fino ai Caraibi del Corsaro Nero,
+comunque in siti esotici e lontani ...
+
+Le lunghezze ammesse si ricavano dalla data: 4 lettere dal mese, aprile, e 7 dal giorno, 25, la cui somma delle cifre dà 7; in ciascuna ottava deve comparire almeno un vocabolo per anno, mese e giorno."""@it ,
+              """Giuseppe Varaldo, Biblioteca Oplepiana no. 53 (2024), octave «Suicidio di Emilio Salgari», keyed to the date 25.04.1911.
+
+Immaginosità e talento vero:
+dal West al Polo Nord ai lidi indiani
+fino ai Caraibi del Corsaro Nero,
+comunque in siti esotici e lontani ...
+
+The admissible lengths derive from the date: 4 letters from the month, April, and 7 from the day, 25, whose digits sum to 7; each octave must contain at least one word for year, month and day."""@en ;
+    desmos:illustrates desmos:date_indexed_word_length .
+
+desmos:example_defective_verb_lexicon a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_36> ;
+    rdf:value """Giuseppe Varaldo, «I costretti sposi. 50 regole, 50 ottave», Biblioteca Oplepiana n. 36 (2014), ottava 1 «Verbi difettivi»:
+
+Mentre già fervono i preparativi
+per uno sposalizio di paese,
+un prete se n'esime, benché ivi
+a lui competa: tali le pretese ...
+
+Tutti i verbi dell'ottava sono difettivi, mancanti cioè di alcuni modi o tempi secondo il criterio restrittivo del GRADIT."""@it ,
+              """Giuseppe Varaldo, «I costretti sposi. 50 regole, 50 ottave», Biblioteca Oplepiana no. 36 (2014), octave 1 «Verbi difettivi»:
+
+Mentre già fervono i preparativi
+per uno sposalizio di paese,
+un prete se n'esime, benché ivi
+a lui competa: tali le pretese ...
+
+Every verb in the octave is defective, that is, lacking some moods or tenses according to the GRADIT dictionary's restrictive criterion."""@en ;
+    desmos:illustrates desmos:defective_verb_lexicon .
+
+desmos:example_derogatory_register_lexicon a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_36> ;
+    rdf:value """Giuseppe Varaldo, «I costretti sposi», Biblioteca Oplepiana n. 36 (2014), ottava 40 «Lessico spregiativo»:
+
+Risciacquatura ahinoi fiorentinesca,
+dove saccenta o intriga un'accozzaglia
+- benpensante, bavosa o animalesca -
+di lecchini, giannizzeri, sbirraglia ...
+
+Tutti i sostantivi, gli aggettivi e i verbi dell'ottava recano nel dizionario di riferimento la qualifica di «spreg.», di per sé o nell'accezione impiegata."""@it ,
+              """Giuseppe Varaldo, «I costretti sposi», Biblioteca Oplepiana no. 36 (2014), octave 40 «Lessico spregiativo»:
+
+Risciacquatura ahinoi fiorentinesca,
+dove saccenta o intriga un'accozzaglia
+- benpensante, bavosa o animalesca -
+di lecchini, giannizzeri, sbirraglia ...
+
+Every noun, adjective and verb in the octave carries the label «spreg.» (derogatory) in the reference dictionary, in itself or in the sense used."""@en ;
+    desmos:illustrates desmos:derogatory_register_lexicon .
+
+desmos:example_diatopic_lexicon a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_36> ;
+    rdf:value """Giuseppe Varaldo, «I costretti sposi», Biblioteca Oplepiana n. 36 (2014), ottava 45 «Lessico lombardo/milanese»:
+
+Lui dopo il garibaldi, forloccando,
+si svacca come un bamba, mentre ella,
+sgomentendosi e molto tripillando,
+già con le madonnine ahimè barbella ...
+
+In omaggio all'ambientazione lombarda del romanzo, tutti i sostantivi, gli aggettivi e i verbi dell'ottava recano nel dizionario di riferimento la marca «lomb.» o «milan.»."""@it ,
+              """Giuseppe Varaldo, «I costretti sposi», Biblioteca Oplepiana no. 36 (2014), octave 45 «Lessico lombardo/milanese»:
+
+Lui dopo il garibaldi, forloccando,
+si svacca come un bamba, mentre ella,
+sgomentendosi e molto tripillando,
+già con le madonnine ahimè barbella ...
+
+In homage to the novel's Lombard setting, every noun, adjective and verb in the octave carries the label «lomb.» or «milan.» in the reference dictionary."""@en ;
+    desmos:illustrates desmos:diatopic_lexicon .
+
+desmos:example_dispersed_name a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_36> ;
+    rdf:value """Giuseppe Varaldo, «I costretti sposi», Biblioteca Oplepiana n. 36 (2014), ottava 16 «Versi vincolati»:
+
+Leggo che il vano zerbinotto a cui
+lice bloccare nozze consensuali,
+con le manfrine rozze che usa lui,
+comanda mascalzon e rii locali! ...
+
+Le cinque lettere distinte di Renzo (r, e, n, z, o) ricorrono all'interno di ciascun verso; quelle di Lucia (l, u, c, i, a) nel passaggio fra un verso e il successivo, ciclicamente, quindi anche fra l'ultimo e il primo."""@it ,
+              """Giuseppe Varaldo, «I costretti sposi», Biblioteca Oplepiana no. 36 (2014), octave 16 «Versi vincolati»:
+
+Leggo che il vano zerbinotto a cui
+lice bloccare nozze consensuali,
+con le manfrine rozze che usa lui,
+comanda mascalzon e rii locali! ...
+
+The five distinct letters of Renzo (r, e, n, z, o) occur within each line; those of Lucia (l, u, c, i, a) across the junction between one line and the next, cyclically, and therefore also between the last and the first."""@en ;
+    desmos:illustrates desmos:dispersed_name .
+
+desmos:example_distich a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_31_text_chierchia> ;
+    rdf:value """Sal Kierkia, «Epistolina per E.S.», in «A Edoardo Sanguineti», Biblioteca Oplepiana n. 31 (2010), chiusa:
+
+Ora in simil contesto
+faremo complimenti a chi ci loda
+per tal sonetto scritto con la coda.
+
+Il distico finale, a rima baciata su -oda, chiude il testo."""@it ,
+              """Sal Kierkia, «Epistolina per E.S.», in «A Edoardo Sanguineti», Biblioteca Oplepiana no. 31 (2010), closing lines:
+
+Ora in simil contesto
+faremo complimenti a chi ci loda
+per tal sonetto scritto con la coda.
+
+The final distich, in couplet rhyme on -oda, closes the text."""@en ;
+    desmos:illustrates desmos:distich .
+
+desmos:example_divergent_captions a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_52> ;
+    rdf:value """Joshua Babic, Il cuboide - Racconto in novantasei didascalie, Biblioteca Oplepiana n. 52 (2023), Fig. 1:
+
+Fig. 1. La prima volta che ho visto l'immagine qui sopra era in un vecchio numero di Focus - un grande classico delle vacanze al mare...
+
+La stessa figura, invariata, è accompagnata ogni volta da una didascalia diversa."""@it ,
+              """Joshua Babic, Il cuboide - Racconto in novantasei didascalie, Biblioteca Oplepiana no. 52 (2023), Fig. 1:
+
+Fig. 1. The first time I saw the image above was in an old issue of Focus - a great summer-holiday classic...
+
+The same figure, unchanged, is paired each time with a different caption."""@en ;
+    desmos:illustrates desmos:divergent_captions .
+
+desmos:example_embedded_numeral_calculus a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_40_text_brignoli> ;
+    rdf:value """Laura Brignoli, «Che magìa l'anniversario!», in «Venticinque anni d'Oplepo», Biblioteca Oplepiana n. 40 (2015), segmento sottrattivo:
+
+Ricordi quando volevamo entrare ai musei vaticani, lo scorso marzo? Ricordi la fila lunghissima fino alle balaustre? Scappammo in linea retta [...] dove ci aspettavano le ginestre, insieme ai musicisti di tante orchestre alate.
+
+I numerali iniziali si sommano (novellino +9, duelli +2, tresca +3, Cinqueterre +5, ottomana +8, seitan +6, setter +7 = 40) e i finali si sottraggono (musei, balaustre, ginestre, orchestre = 15): il computo dà 25, gli anni dell'Oplepo festeggiati dalla raccolta."""@it ,
+              """Laura Brignoli, «Che magìa l'anniversario!», in «Venticinque anni d'Oplepo», Biblioteca Oplepiana no. 40 (2015), subtractive segment:
+
+Ricordi quando volevamo entrare ai musei vaticani, lo scorso marzo? Ricordi la fila lunghissima fino alle balaustre? Scappammo in linea retta [...] dove ci aspettavano le ginestre, insieme ai musicisti di tante orchestre alate.
+
+Word-initial numerals are added (novellino +9, duelli +2, tresca +3, Cinqueterre +5, ottomana +8, seitan +6, setter +7 = 40) and word-final ones subtracted (musei, balaustre, ginestre, orchestre = 15): the computation yields 25, the years of Oplepo celebrated by the collection."""@en ;
+    desmos:illustrates desmos:embedded_numeral_calculus .
+
+desmos:example_embedded_proverb a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_36> ;
+    rdf:value """Giuseppe Varaldo, «I costretti sposi», Biblioteca Oplepiana n. 36 (2014), ottava 18 «Proverbi italiani»:
+
+Partire è un po' morire, ma una coppia
+- da cosa nasce cosa - farlo deve:
+l'unione fa la forza, eppur si sdoppia,
+ed ogni cuore ha il suo dolore greve... ...
+
+Ciascun verso contiene un proverbio italiano riprodotto alla lettera nella sua forma canonica; nell'edizione a stampa sono evidenziati in grassetto."""@it ,
+              """Giuseppe Varaldo, «I costretti sposi», Biblioteca Oplepiana no. 36 (2014), octave 18 «Proverbi italiani»:
+
+Partire è un po' morire, ma una coppia
+- da cosa nasce cosa - farlo deve:
+l'unione fa la forza, eppur si sdoppia,
+ed ogni cuore ha il suo dolore greve... ...
+
+Each line contains an Italian proverb reproduced verbatim in its canonical form; in the printed edition they are set in bold."""@en ;
+    desmos:illustrates desmos:embedded_proverb .
+
+desmos:example_enclosed_rhyme a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_34_text_varaldo> ;
+    rdf:value """Giuseppe Varaldo, «Identikit lessicali», Biblioteca Oplepiana n. 34 (2013), prima quartina del primo sonetto:
+
+Spesso col punto sopra a mo' d'accento,   [A]
+sempre allungata e stretta è la vocale    [B]
+testé scomparsa, che nel tempo attuale    [B]
+a volte contrassegna un elemento,         [A]
+
+Il primo verso rima con il quarto e il secondo con il terzo: la coppia interna resta racchiusa fra i due versi esterni, secondo lo schema ABBA che si ripete nella seconda quartina."""@it ,
+              """Giuseppe Varaldo, «Identikit lessicali», Biblioteca Oplepiana no. 34 (2013), first quatrain of the first sonnet:
+
+Spesso col punto sopra a mo' d'accento,   [A]
+sempre allungata e stretta è la vocale    [B]
+testé scomparsa, che nel tempo attuale    [B]
+a volte contrassegna un elemento,         [A]
+
+The first line rhymes with the fourth and the second with the third: the inner couplet remains enclosed between the two outer lines, following the ABBA scheme that repeats in the second quatrain."""@en ;
+    desmos:illustrates desmos:enclosed_rhyme .
+
+desmos:example_english_loanword_lexicon a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_36> ;
+    rdf:value """Giuseppe Varaldo, «I costretti sposi», Biblioteca Oplepiana n. 36 (2014), ottava 6 «Prestiti inglesi»:
+
+Sposarsi, per gli eroi di 'sta love story,
+è una mission impossible, o almeno,
+per l'escalation d'atti vessatori
+dal primo round di prepotenze pieno ...
+
+Ciascuno degli otto versi contiene almeno un prestito di lingua inglese registrato come tale dal dizionario di riferimento."""@it ,
+              """Giuseppe Varaldo, «I costretti sposi», Biblioteca Oplepiana no. 36 (2014), octave 6 «Prestiti inglesi»:
+
+Sposarsi, per gli eroi di 'sta love story,
+è una mission impossible, o almeno,
+per l'escalation d'atti vessatori
+dal primo round di prepotenze pieno ...
+
+Each of the eight lines contains at least one English loanword recorded as such by the reference dictionary."""@en ;
+    desmos:illustrates desmos:english_loanword_lexicon .
+
+desmos:example_enigmatic_transformation_chain a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_36> ;
+    rdf:value """Giuseppe Varaldo, «I costretti sposi», Biblioteca Oplepiana n. 36 (2014), ottava 14 «Combinazioni enigmistiche»:
+
+Chi a un duo unito, ligio a Dio, proibisce
+di sposarsi, brigando e intimorendo,
+segnato a dito andrebbe, ché impedisce
+un rito sacro e per di più stupendo! ...
+
+Ciascun sostantivo è correlato al successivo da una singola operazione enigmistica: duo > Dio (Cambio), Dio > dito (Zeppa), dito > rito (Cambio), rito > ritmo (Zeppa), ritmo > morti (Anagramma), morti > monti (Cambio), monti > moti (Scarto), moti > voti (Cambio)."""@it ,
+              """Giuseppe Varaldo, «I costretti sposi», Biblioteca Oplepiana no. 36 (2014), octave 14 «Combinazioni enigmistiche»:
+
+Chi a un duo unito, ligio a Dio, proibisce
+di sposarsi, brigando e intimorendo,
+segnato a dito andrebbe, ché impedisce
+un rito sacro e per di più stupendo! ...
+
+Each noun is linked to the next by a single enigmistic operation: duo > Dio (change), Dio > dito (addition), dito > rito (change), rito > ritmo (addition), ritmo > morti (anagram), morti > monti (change), monti > moti (removal), moti > voti (change)."""@en ;
+    desmos:illustrates desmos:enigmatic_transformation_chain .
+
+desmos:example_enumerating_text a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_32_text_spinelli> ;
+    rdf:value """Aldo Spinelli, «Di lemmi numerici», Biblioteca Oplepiana n. 32 (2011), incipit:
+
+- Dimmi figliolo, che cosa ti ha portato qui da me?
+- Una pena, una preoccupazione che mi perseguita e che mi fa diventare iracondo... uno dei peccati capitali, diciotto.
+- Innanzitutto non sono peccati ma vizi, poi sono solo sette.
+
+Il penitente conteggia le parole dentro la battuta stessa, «diciotto» essendo il numero di quelle appena dette, e adirandosi passa all'inventario per grafema: «settantatre, duecentottantasette, venti a, due b, dieci c...»."""@it ,
+              """Aldo Spinelli, «Di lemmi numerici», Biblioteca Oplepiana no. 32 (2011), opening:
+
+- Dimmi figliolo, che cosa ti ha portato qui da me?
+- Una pena, una preoccupazione che mi perseguita e che mi fa diventare iracondo... uno dei peccati capitali, diciotto.
+- Innanzitutto non sono peccati ma vizi, poi sono solo sette.
+
+The penitent counts his words within the utterance itself, «diciotto» being the number of those just spoken, and as he grows angry moves on to an inventory by grapheme: «settantatre, duecentottantasette, venti a, due b, dieci c...»."""@en ;
+    desmos:illustrates desmos:enumerating_text .
+
+desmos:example_familiar_register_lexicon a desmos:CorpusExample ;
+    rdf:value """Placeholder example"""@en ,
+              """Esempio segnaposto"""@it ;
+    desmos:illustrates desmos:familiar_register_lexicon .
+
+desmos:example_figured_alphabet a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:figured_alphabet .
+
+desmos:example_fixed_fictional_character a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:fixed_fictional_character .
+
+desmos:example_fixed_fictional_setting a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:fixed_fictional_setting .
+
+desmos:example_fixed_title_length a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:fixed_title_length .
+
+desmos:example_fragmentation a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:fragmentation .
+
+desmos:example_german_loanword_lexicon a desmos:CorpusExample ;
+    rdf:value """Placeholder example"""@en ,
+              """Esempio segnaposto"""@it ;
+    desmos:illustrates desmos:german_loanword_lexicon .
+
+desmos:example_grammatical_category_lexicon a desmos:CorpusExample ;
+    rdf:value """Placeholder example"""@en ,
+              """Placeholder example"""@it ;
+    desmos:illustrates desmos:grammatical_category_lexicon .
+
+desmos:example_grammatical_exception_lexicon a desmos:CorpusExample ;
+    rdf:value """Placeholder example"""@en ,
+              """Placeholder example"""@it ;
+    desmos:illustrates desmos:grammatical_exception_lexicon .
+
+desmos:example_hendecasyllable a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:hendecasyllable .
+
+desmos:example_heterogeneous_register_lexicon a desmos:CorpusExample ;
+    rdf:value """Placeholder example"""@en ,
+              """Esempio segnaposto"""@it ;
+    desmos:illustrates desmos:heterogeneous_register_lexicon .
+
+desmos:example_heterogram a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_01> ;
+    rdf:value """Example of a 9-letter heterogram: 'Ulcerations' (U, L, C, E, R, A, T, I, O)."""@en ,
+              """Esempio di eterogramma di 9 lettere: 'Ulcerations' (U, L, C, E, R, A, T, I, O)."""@it ;
+    desmos:illustrates desmos:heterogram .
+
+desmos:example_heterolexical_writing a desmos:CorpusExample ;
+    rdf:value """Placeholder example"""@en ,
+              """Esempio segnaposto"""@it ;
+    desmos:illustrates desmos:heterolexical_writing .
+
+desmos:example_homographic_translation a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:homographic_translation .
+
+desmos:example_homonymy a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:homonymy .
+
+desmos:example_homophony a desmos:CorpusExample ;
+    rdf:value """Eiffel ≈ «F-elle» ≈ «Effet elle»."""@it ;
+    desmos:illustrates desmos:homophony .
+
+desmos:example_hyperbolic_register_lexicon a desmos:CorpusExample ;
+    rdf:value """Placeholder example"""@en ,
+              """Esempio segnaposto"""@it ;
+    desmos:illustrates desmos:hyperbolic_register_lexicon .
+
+desmos:example_hypogram a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:hypogram .
+
+desmos:example_iambic_hendecasyllable a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio segnaposto."""@it ;
+    desmos:illustrates desmos:iambic_hendecasyllable .
+
+desmos:example_inverted_rhyme a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio segnaposto."""@it ;
+    desmos:illustrates desmos:inverted_rhyme .
+
+desmos:example_ironic_register_lexicon a desmos:CorpusExample ;
+    rdf:value """Placeholder example"""@en ,
+              """Esempio segnaposto"""@it ;
+    desmos:illustrates desmos:ironic_register_lexicon .
+
+desmos:example_isosyllabic_words a desmos:CorpusExample ;
+    rdf:value """Varaldo realises three instances - monosyllabic («Se qui, coi suoi del clan, c'è un boss…»), bisyllabic («Renzo aver vuole, come propria sposa»), trisyllabic («Lucia Mondella, dall'autor blandita»)."""@en ,
+              """Varaldo ne realizza tre istanze - monosillabica («Se qui, coi suoi del clan, c'è un boss…»), bisillabica («Renzo aver vuole, come propria sposa»), trisillabica («Lucia Mondella, dall'autor blandita»)."""@it ;
+    desmos:illustrates desmos:isosyllabic_words .
+
+desmos:example_isovocalism a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:isovocalism .
+
+desmos:example_jocular_register_lexicon a desmos:CorpusExample ;
+    rdf:value """Placeholder example"""@en ,
+              """Esempio segnaposto"""@it ;
+    desmos:illustrates desmos:jocular_register_lexicon .
+
+desmos:example_latin_locution_lexicon a desmos:CorpusExample ;
+    rdf:value """Varaldo: 'modus vivendi [...] de facto [...] in primis [...] extrema ratio [...] sui generis [...] a fortiori [...] ex lege [...] coram populò."""@it ;
+    desmos:illustrates desmos:latin_locution_lexicon .
+
+desmos:example_latin_noun_lexicon a desmos:CorpusExample ;
+    rdf:value """Varaldo: 'summa [...] incipit [...] explicit [...] continuum [...] excursus [...] unicum [...] excerpta [...] exitus [...] pietas'."""@it ;
+    desmos:illustrates desmos:latin_noun_lexicon .
+
+desmos:example_lexical_gap a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_19> ;
+    rdf:value """che•mos ra•ponendosi•in•posa → lettera rimossa: 't'"""@it ,
+              """Letters are removed from within words, creating visible gaps; these extracted letters, when reassembled in sequence, constitute a hidden latent word."""@en ;
+    desmos:illustrates desmos:lexical_gap .
+
+desmos:example_lexicographic_marker_constraint a desmos:CorpusExample ;
+    rdf:value """G. Varaldo, 'I costretti sposi' (2014): the plaquette devotes one octave to each GRADIT label, e.g. «escalation» (ingl.), «paciugo» (fam.), «coniugi» (mat.), «buonismo» dated 1995."""@en ,
+              """G. Varaldo, 'I costretti sposi' (2014): la plaquette dedica un'ottava a ciascuna etichetta GRADIT, es. «escalation» (ingl.), «paciugo» (fam.), «coniugi» (mat.), «buonismo» datato 1995."""@it ;
+    desmos:illustrates desmos:lexicographic_marker_constraint .
+
+desmos:example_lipogram a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:lipogram .
+
+desmos:example_lipogram_A a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:lipogram_A .
+
+desmos:example_lipogram_B a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:lipogram_B .
+
+desmos:example_lipogram_E a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:lipogram_E .
+
+desmos:example_lipogram_I a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:lipogram_I .
+
+desmos:example_lipogram_O a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:lipogram_O .
+
+desmos:example_lipogram_S a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:lipogram_S .
+
+desmos:example_lipogram_U a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:lipogram_U .
+
+desmos:example_loanword_lexicon a desmos:CorpusExample ;
+    rdf:value """Varaldo, octave 'Prestiti spagnoli': one Spanish loanword per line - «aficionado», «embarcadero», «capataz», «bandolero», «campesinos», «olé» (e.g. GRADIT 'sp.')."""@en ,
+              """Varaldo, ottava 'Prestiti spagnoli': un prestito spagnolo per verso - «aficionado», «embarcadero», «capataz», «bandolero», «campesinos», «olé» (es. GRADIT 'sp.')."""@it ;
+    desmos:illustrates desmos:loanword_lexicon .
+
+desmos:example_lombard_lexicon a desmos:CorpusExample ;
+    rdf:value """Placeholder example"""@en ,
+              """Esempio segnaposto"""@it ;
+    desmos:illustrates desmos:lombard_lexicon .
+
+desmos:example_mandatory_dedication a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:mandatory_dedication .
+
+desmos:example_mandatory_genre a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:mandatory_genre .
+
+desmos:example_mandatory_sentence a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:mandatory_sentence .
+
+desmos:example_mandatory_theme a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:mandatory_theme .
+
+desmos:example_martellian_verse a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:martellian_verse .
+
+desmos:example_mathematical_lexicon a desmos:CorpusExample ;
+    rdf:value """Placeholder example"""@en ,
+              """Esempio segnaposto"""@it ;
+    desmos:illustrates desmos:mathematical_lexicon .
+
+desmos:example_metagram a desmos:CorpusExample ;
+    rdf:value """Varaldo: Fermo > formò > forno > torno > tonno > tonto > tentò > tendo > rendo > Renzo."""@it ;
+    desmos:illustrates desmos:metagram .
+
+desmos:example_metric_liposyllabism a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:metric_liposyllabism .
+
+desmos:example_mnemonic_encoding a desmos:CorpusExample ;
+    rdf:value """Varaldo, octave 'Mnemottava riferita all'incipit': the highlighted words reconstruct «Quel ramo del lago di Como», the novel's incipit."""@en ,
+              """Varaldo, ottava 'Mnemottava riferita all'incipit': le parole evidenziate ricostruiscono «Quel ramo del lago di Como», incipit del romanzo."""@it ;
+    desmos:illustrates desmos:mnemonic_encoding .
+
+desmos:example_mnemonic_fragment a desmos:CorpusExample ;
+    rdf:value """Varaldo, 'I costretti sposi' (2014): the fragments spell «Quel ramo del lago di Como» — acQUE Lacustri, gRAMO, la GOta, modiCO MOtivo."""@en ,
+              """Varaldo, 'I costretti sposi' (2014): i frammenti compitano «Quel ramo del lago di Como» — acQUE Lacustri, gRAMO, la GOta, modi[CO MO]tivo."""@it ;
+    desmos:illustrates desmos:mnemonic_fragment .
+
+desmos:example_monorhyme a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:monorhyme .
+
+desmos:example_monosyllabic_text a desmos:CorpusExample ;
+    rdf:value """Placeholder example"""@en ,
+              """Esempio segnaposto"""@it ;
+    desmos:illustrates desmos:monosyllabic_text .
+
+desmos:example_monovocalism a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:monovocalism .
+
+desmos:example_monovocalism_A a desmos:CorpusExample ;
+    rdf:value """Placeholder example"""@en ,
+              """Esempio segnaposto"""@it ;
+    desmos:illustrates desmos:monovocalism_A .
+
+desmos:example_monovocalism_E a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:monovocalism_E .
+
+desmos:example_monovocalism_I a desmos:CorpusExample ;
+    rdf:value """Placeholder example"""@en ,
+              """Esempio segnaposto"""@it ;
+    desmos:illustrates desmos:monovocalism_I .
+
+desmos:example_monovocalism_O a desmos:CorpusExample ;
+    rdf:value """Placeholder example"""@en ,
+              """Esempio segnaposto"""@it ;
+    desmos:illustrates desmos:monovocalism_O .
+
+desmos:example_morale_elementaire a desmos:CorpusExample ;
+    rdf:value """Placeholder example"""@en ,
+              """Esempio segnaposto"""@it ;
+    desmos:illustrates desmos:morale_elementaire .
+
+desmos:example_mythographic_units a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:mythographic_units .
+
+desmos:example_non_repeating_rhyme a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:non_repeating_rhyme .
+
+desmos:example_numeric_based_homosyntaxism a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_57> ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:numeric_based_homosyntaxism .
+
+desmos:example_octave a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:octave .
+
+desmos:example_page_format a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:page_format .
+
+desmos:example_palindrome a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:palindrome .
+
+desmos:example_panvocalism a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:panvocalism .
+
+desmos:example_paronomasia a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:paronomasia .
+
+desmos:example_pentomino_segmentation a desmos:CorpusExample ;
+    rdf:value """Placeholder example"""@en ,
+              """Esempio segnaposto"""@it ;
+    desmos:illustrates desmos:pentomino_segmentation .
+
+desmos:example_permutation a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:permutation .
+
+desmos:example_polyglot_loanword_lexicon a desmos:CorpusExample ;
+    rdf:value """Placeholder example"""@en ,
+              """Esempio segnaposto"""@it ;
+    desmos:illustrates desmos:polyglot_loanword_lexicon .
+
+desmos:example_popular_register_lexicon a desmos:CorpusExample ;
+    rdf:value """Placeholder example"""@en ,
+              """Esempio segnaposto"""@it ;
+    desmos:illustrates desmos:popular_register_lexicon .
+
+desmos:example_post_1989_lexicon a desmos:CorpusExample ;
+    rdf:value """Placeholder example"""@en ,
+              """Esempio segnaposto"""@it ;
+    desmos:illustrates desmos:post_1989_lexicon .
+
+desmos:example_postal_code_acrostic a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_47> ;
+    rdf:value """Placeholder example."""@en , """Esempio segnaposto."""@it ;
+    desmos:illustrates desmos:postal_code_acrostic .
+
+desmos:example_prescribed_line_frame a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en , """Esempio segnaposto."""@it ;
+    desmos:illustrates desmos:prescribed_line_frame .
+
+desmos:example_preventive_review a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:preventive_review .
+
+desmos:example_prisoner_constraint a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:prisoner_constraint .
+
+desmos:example_procomplementary_verb_lexicon a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio segnaposto."""@it ;
+    desmos:illustrates desmos:procomplementary_verb_lexicon .
+
+desmos:example_progressive_alphabetical_lipogram a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio segnaposto."""@it ;
+    desmos:illustrates desmos:progressive_alphabetical_lipogram .
+
+desmos:example_progressive_century_datation a desmos:CorpusExample ;
+    rdf:value """Placeholder example"""@en ,
+              """Esempio segnaposto"""@it ;
+    desmos:illustrates desmos:progressive_century_datation .
+
+desmos:example_progressive_vocalic_lipogram a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio segnaposto."""@it ;
+    desmos:illustrates desmos:progressive_vocalic_lipogram .
+
+desmos:example_proverbial_shift a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio segnaposto"""@it ;
+    desmos:illustrates desmos:proverbial_shift .
+
+desmos:example_quatrain a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:quatrain .
+
+desmos:example_rebus a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_46_text_giuliani> ;
+    rdf:value """Placeholder example."""@en , """Esempio segnaposto."""@it ;
+    desmos:illustrates desmos:rebus .
+
+desmos:example_register_lexicon a desmos:CorpusExample ;
+    rdf:value """Varaldo, octave 'Lessico popolare': every content word is 'pop.' - «fregole», «mollacchioni», «paraculi», «minchioni», «berlicche»."""@en ,
+              """Varaldo, ottava 'Lessico popolare': ogni parola piena è 'pop.' - «fregole», «mollacchioni», «paraculi», «minchioni», «berlicche»."""@it ;
+    desmos:illustrates desmos:register_lexicon .
+
+desmos:example_regraphing a desmos:CorpusExample ;
+    dcterms:source <https://w3id.org/desmos/oplepiana/expression/e_plaquette_02> ;
+    rdf:value """Example of regraphing: 'Sì, tutto potrebbe iniziare così, qui, in questo modo, una maniera' → '...'."""@en ,
+              """Esempio di rigrafia: 'Sì, tutto potrebbe iniziare così, qui, in questo modo, una maniera' → '...'."""@it ;
+    desmos:illustrates desmos:regraphing .
+
+desmos:example_sdrucciola_rhyme a desmos:CorpusExample ;
+    rdf:value """Luca Chiti, 'Elogio dell'Operosa pastorelleria legata, elegantemente poco ortodossa' (2000): A-rhymes are always sdrucciola in the AAB scheme."""@en ,
+              """Luca Chiti, 'Elogio dell'Operosa pastorelleria legata, elegantemente poco ortodossa' (2000): le rime A sono sempre sdrucciole nello schema AAB."""@it ;
+    desmos:illustrates desmos:sdrucciola_rhyme .
+
+desmos:example_semi_automatic_locutionary_text a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:semi_automatic_locutionary_text .
+
+desmos:example_septenary a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:septenary .
+
+desmos:example_septenary_double a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:septenary_double .
+
+desmos:example_sestina a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:sestina .
+
+desmos:example_slang_register_lexicon a desmos:CorpusExample ;
+    rdf:value """Placeholder example"""@en ,
+              """Esempio segnaposto"""@it ;
+    desmos:illustrates desmos:slang_register_lexicon .
+
+desmos:example_solfeix a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Placeholder example"""@it ;
+    desmos:illustrates desmos:solfeix .
+
+desmos:example_spanish_loanword_lexicon a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:spanish_loanword_lexicon .
+
+desmos:example_statistical_bound a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:statistical_bound .
+
+desmos:example_statistical_bound_in_E a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:statistical_bound_in_E .
+
+desmos:example_stolen_letters a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:stolen_letters .
+
+desmos:example_syllabic_set_constraint a desmos:CorpusExample ;
+    rdf:value """Varaldo: tutte le parole iniziano con I, PRO, MES, SI o SPO (da 'I promessi sposi')."""@it ;
+    desmos:illustrates desmos:syllabic_set_constraint .
+
+desmos:example_syllable_expansion a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:syllable_expansion .
+
+desmos:example_tanka a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:tanka .
+
+desmos:example_tautogram a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:tautogram .
+
+desmos:example_temporal_constraint a desmos:CorpusExample ;
+    rdf:value """Placeholder example"""@en ,
+              """Placeholder example"""@it ;
+    desmos:illustrates desmos:temporal_constraint .
+
+desmos:example_tercet a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:tercet .
+
+desmos:example_terminal_word_series a desmos:CorpusExample ;
+    rdf:value """Varaldo: parole finali dei capitoli IV, VI, XIII, XIV, XXIV, XXXI, XXXIII, XXXVIII de I promessi sposi'."""@it ;
+    desmos:illustrates desmos:terminal_word_series .
+
+desmos:example_triple_letter_cluster a desmos:CorpusExample ;
+    rdf:value """Varaldo: 'ininin(terrotte) [...] larman man man [...] tran tran tran(quillo)'."""@it ;
+    desmos:illustrates desmos:triple_letter_cluster .
+
+desmos:example_trisyllabic_text a desmos:CorpusExample ;
+    rdf:value """Placeholder example"""@en ,
+              """Esempio segnaposto"""@it ;
+    desmos:illustrates desmos:trisyllabic_text .
+
+desmos:example_truncated_rhyme a desmos:CorpusExample ;
+    rdf:value """Luca Chiti, 'Elogio dell'Operosa pastorelleria legata, elegantemente poco ortodossa' (2000): B-rhymes are always truncated in the AAB scheme."""@en ,
+              """Luca Chiti, 'Elogio dell'Operosa pastorelleria legata, elegantemente poco ortodossa' (2000): le rime B sono sempre tronche nello schema AAB."""@it ;
+    desmos:illustrates desmos:truncated_rhyme .
+
+desmos:example_tuscan_lexicon a desmos:CorpusExample ;
+    rdf:value """Placeholder example"""@en ,
+              """Esempio segnaposto"""@it ;
+    desmos:illustrates desmos:tuscan_lexicon .
+
+desmos:example_typographic_constraints a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:typographic_constraints .
+
+desmos:example_visual_anaphora a desmos:CorpusExample ;
+    rdf:value """Esempio segnaposto."""@it ,
+              """Placeholder example."""@en ;
+    desmos:illustrates desmos:visual_anaphora .
+
+desmos:example_vowel_alternation a desmos:CorpusExample ;
+    rdf:value """Varaldo, octave 'Alternanza vocalica E/O': only E and O alternate - «moderno e onesto eroe, nonché promesso»."""@en ,
+              """Varaldo, ottava 'Alternanza vocalica E/O': si alternano solo E e O - «moderno e onesto eroe, nonché promesso»."""@it ;
+    desmos:illustrates desmos:vowel_alternation .
+
+desmos:example_vowel_alternation_AI a desmos:CorpusExample ;
+    rdf:value """Placeholder example"""@en ,
+              """Esempio segnaposto"""@it ;
+    desmos:illustrates desmos:vowel_alternation_AI .
+
+desmos:example_vowel_alternation_EO a desmos:CorpusExample ;
+    rdf:value """Placeholder example"""@en ,
+              """Esempio segnaposto"""@it ;
+    desmos:illustrates desmos:vowel_alternation_EO .
+
+desmos:example_vowel_slide a desmos:CorpusExample ;
+    rdf:value """Varaldo, octave 'Slittamento vocalico': the vowels follow the cycle a-e-i-o-u - «Tra l'empio Don, un frate sempre in moto»."""@en ,
+              """Varaldo, ottava 'Slittamento vocalico': le vocali seguono il ciclo a-e-i-o-u - «Tra l'empio Don, un frate sempre in moto»."""@it ;
+    desmos:illustrates desmos:vowel_slide .
+
+desmos:example_vowel_slide_direct a desmos:CorpusExample ;
+    rdf:value """Placeholder example"""@en ,
+              """Esempio segnaposto"""@it ;
+    desmos:illustrates desmos:vowel_slide_direct .
+
+desmos:example_vowel_slide_retrograde a desmos:CorpusExample ;
+    rdf:value """Placeholder example"""@en ,
+              """Esempio segnaposto"""@it ;
+    desmos:illustrates desmos:vowel_slide_retrograde .
+
+desmos:example_word_length_oscillation a desmos:CorpusExample ;
+    rdf:value """Placeholder example."""@en ,
+              """Esempio placeholder."""@it ;
+    desmos:illustrates desmos:word_length_oscillation .
