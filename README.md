@@ -21,7 +21,14 @@ The ontology provides a structured conceptual framework to describe:
 
 ## 📁 Repository Structure
 * **`desmos.owl`**: Contains the **OWL 2 ontology** source file (RDF/XML)**
-* **`oplepiana.ttl`**: The **Oplepiana** dataset from *La Biblioteca Oplepiana* (in riga edizioni, 2005).
+* **`corpus.ttl`** — The **Oplepiana** dataset: an RDF description of the
+  *plaquettes* of the *Biblioteca Oplepiana*, the collection published by
+  Oplepo (*Opificio di Letteratura Potenziale*) and gathered in the three
+  volumes *La Biblioteca Oplepiana* I–III. It currently covers 56 of the
+  57 plaquettes published to date.
+* **`concept.ttl`** — The DESMOS controlled vocabulary: 194 `skos:Concept`
+  organised in 8 `skos:ConceptScheme`, providing the terminology (constraints,
+  operations, units, forms) referenced by `corpus.ttl`.
 * **`/img`**: Graphical documentation and diagrams of **DeSMòS**.
 * **`/OOPSevaluation`**: Reports from **OOPS!** (OntOlogy Pitfall Scanner!) and consistency checks.
 
