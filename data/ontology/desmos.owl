@@ -13,6 +13,7 @@
      xmlns:lrmoo="http://iflastandards.info/ns/lrm/lrmoo/"
      xmlns:schema="http://schema.org/"
      xmlns:desmos="https://w3id.org/desmos/"
+     xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/desmos/">
         <owl:versionIRI rdf:resource="https://w3id.org/desmos/v2.0.0"/>
@@ -35,7 +36,10 @@
         <dcterms:source rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/"/>
         <dcterms:source rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
         <dcterms:source rdf:resource="http://schema.org/"/>
-        <owl:priorVersion rdf:resource="https://w3id.org/desmos/v1.1.0"/>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-02-07</dcterms:issued> 
+        <vann:preferredNamespacePrefix>desmos</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/desmos/</vann:preferredNamespaceUri>
+        <dcterms:bibliographicCitation>Bruno, Enrica. (2026). DeSMòS: Descriptive Semantic Model for Structured Texts (Version 2.0.0) [Ontology].</dcterms:bibliographicCitation>
         <owl:versionInfo xml:lang="en">Version 2.0.0</owl:versionInfo>
         <owl:versionInfo xml:lang="it">Versione 2.0.0</owl:versionInfo>
     </owl:Ontology>
@@ -120,6 +124,30 @@
         <rdfs:label xml:lang="it">Fonte</rdfs:label>
         <rdfs:label xml:lang="en">Source</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation">
+        <rdfs:comment xml:lang="en">A bibliographic reference for the resource.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Il riferimento bibliografico con cui citare la risorsa.</rdfs:comment>
+        <rdfs:label xml:lang="en">Bibliographic citation</rdfs:label>
+        <rdfs:label xml:lang="it">Citazione bibliografica</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    </owl:AnnotationProperty>
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix">
+        <rdfs:comment xml:lang="en">The preferred namespace prefix to use when using terms from the vocabulary in an XML document.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Il prefisso preferito da usare per i termini del vocabolario.</rdfs:comment>
+        <rdfs:label xml:lang="en">Preferred namespace prefix</rdfs:label>
+        <rdfs:label xml:lang="it">Prefisso preferito del namespace</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/vann/"/>
+    </owl:AnnotationProperty>
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri">
+        <rdfs:comment xml:lang="en">The preferred namespace URI to use when using terms from the vocabulary in an XML document.</rdfs:comment>
+        <rdfs:comment xml:lang="it">L'URI di namespace preferito da usare per i termini del vocabolario.</rdfs:comment>
+        <rdfs:label xml:lang="en">Preferred namespace URI</rdfs:label>
+        <rdfs:label xml:lang="it">URI preferito del namespace</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/vann/"/>
     </owl:AnnotationProperty>
     
     <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
@@ -250,20 +278,8 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
 
 
-        <!-- https://w3id.org/desmos/illustrates -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/desmos/illustrates">
-        <rdfs:domain rdf:resource="https://w3id.org/desmos/CorpusExample"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdfs:comment xml:lang="it">Collega un esempio di corpus al concetto SKOS (una costrizione) di cui costituisce un'attestazione documentata.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Relates a corpus example to the SKOS concept (i.e. a constraint) for which it provides a documented attestation.</rdfs:comment>
-        <rdfs:label xml:lang="it">illustra</rdfs:label>
-        <rdfs:label xml:lang="en">illustrates</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
-    </owl:ObjectProperty>
 
     <!-- https://w3id.org/desmos/finerThan -->
 
@@ -323,7 +339,7 @@
         <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
         <rdfs:comment xml:lang="it">In DeSMòS, R15 has fragment è utilizzata per collegare un'espressione alla dichiarazione peritestuale (crm:E33_Linguistic_Object) contenuta nella stessa pubblicazione, che ne costituisce un frammento e documenta l'impiego di una costrizione.</rdfs:comment>
         <rdfs:comment xml:lang="en">In DeSMòS, R15 has fragment is used to relate an expression to the peritextual statement (crm:E33_Linguistic_Object) contained in the same publication, which constitutes a fragment of it and documents the use of a constraint.</rdfs:comment>
-        <rdfs:label xml:lang="it">R15 has fragment</rdfs:label>
+        <rdfs:label xml:lang="it">R15 ha frammento</rdfs:label>
         <rdfs:label xml:lang="en">R15 has fragment</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/"/>
     </owl:ObjectProperty>
@@ -824,14 +840,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P33_used_specific_technique"/>
         <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"/>
         <rdfs:range rdf:resource="https://w3id.org/desmos/LiteraryConstraint"/>
-        <rdfs:comment xml:lang="en">
-            Relates a literary creation event to a literary constraint used as a generative device in the production of an expression.
-            Declared as a subproperty of CIDOC CRM P33 (used specific technique) for interoperability.
-        </rdfs:comment>
-        <rdfs:comment xml:lang="it">
-            Relaziona un evento di creazione letteraria alla costrizione impiegata come dispositivo generativo nella produzione di un'espressione.
-            È dichiarata come sottoproprietà di CIDOC CRM P33 (used specific technique) per interoperabilità.
-        </rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a literary creation event to a literary constraint used as a generative device in the production of an expression. Declared as a subproperty of CIDOC CRM P33 (used specific technique) for interoperability.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Relaziona un evento di creazione letteraria alla costrizione impiegata come dispositivo generativo nella produzione di un'espressione. È dichiarata come sottoproprietà di CIDOC CRM P33 (used specific technique) per interoperabilità.</rdfs:comment>
         <rdfs:label xml:lang="it">Usa costrizione</rdfs:label>
         <rdfs:label xml:lang="en">Uses constraint</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
@@ -842,8 +852,8 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/lso/intro/beta202506#R12_hasReferredToEntity">
         <owl:inverseOf rdf:resource="https://w3id.org/lso/intro/beta202506#R12i_isReferredToEntityOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/lso/intro/beta202506#INT3_Interrelation"/>
-        <rdfs:comment xml:lang="it">In DeSMòS, R12 has referred to entity è utilizzata per collegare una relazione intertestuale all'entità alla quale il testo referente rimanda, ad esempio l'ipotesto in una relazione ipertestuale.</rdfs:comment>
-        <rdfs:comment xml:lang="en">In DeSMòS, R12 has referred to entity is used to relate an intertextual relation to the entity referred to by the referring text, for example the hypotext in a hypertextual relation.</rdfs:comment>
+        <rdfs:comment xml:lang="it">In DeSMòS, questa proprietà identifica l'entità ipotestuale coinvolta in una relazione intertestuale. Può fare riferimento a un lrmoo:F2_Expression quando la relazione è stabilita a livello dell'intero testo, o a un intro:INT21_TextPassage quando la relazione può essere localizzata in una porzione specifica dell'ipotesto.</rdfs:comment>
+        <rdfs:comment xml:lang="en">In DeSMòS, this property identifies the hypotextual entity involved in an intertextual relation. It may refer to an lrmoo:F2_Expression when the relation is established at the level of the text as a whole, or to an intro:INT21_TextPassage when the relation can be localized to a specific portion of the hypotext.</rdfs:comment>
         <rdfs:label xml:lang="it">R12 ha entità a cui si riferisce</rdfs:label>
         <rdfs:label xml:lang="en">R12 has referred to entity</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
@@ -853,8 +863,8 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/lso/intro/beta202506#R12i_isReferredToEntityOf">
         <rdfs:range rdf:resource="https://w3id.org/lso/intro/beta202506#INT3_Interrelation"/>
-        <rdfs:comment xml:lang="en">In DeSMòS, R12i is referred to entity of relates the referred-to entity, for example a hypotext, to the intertextual relation in which it has that role; it is the inverse of R12 has referred to entity.</rdfs:comment>
-        <rdfs:comment xml:lang="it">In DeSMòS, R12i is referred to entity of collega l'entità a cui si fa riferimento, ad esempio un ipotesto, alla relazione intertestuale nella quale assume tale ruolo; è l'inversa di R12 has referred to entity.</rdfs:comment>
+        <rdfs:comment xml:lang="en">In DeSMòS, this property links a hypotextual entity to the intertextual relation in which it acts as the entity to which the reference is made. The hypotextual entity may be an lrmoo:F2_Expression when the relation is established at the level of the text as a whole, or an intro:INT21_TextPassage when the relation can be localized to a specific portion of the hypotext.</rdfs:comment>
+        <rdfs:comment xml:lang="it">In DeSMòS, questa proprietà collega un'entità ipotestuale alla relazione intertestuale nella quale costituisce l'entità a cui si fa riferimento. L'entità ipotestuale può essere un lrmoo:F2_Expression quando la relazione è stabilita a livello dell'intero testo, o un intro:INT21_TextPassage quando la relazione può essere localizzata in una porzione specifica dell'ipotesto.</rdfs:comment>
         <rdfs:label xml:lang="en">R12i is referred to entity of</rdfs:label>
         <rdfs:label xml:lang="it">R12i è entità a cui si riferisce di</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
@@ -865,8 +875,8 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/lso/intro/beta202506#R13_hasReferringEntity">
         <owl:inverseOf rdf:resource="https://w3id.org/lso/intro/beta202506#R13i_isReferringEntityOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/lso/intro/beta202506#INT3_Interrelation"/>
-        <rdfs:comment xml:lang="it">In DeSMòS, R13 has referring entity è utilizzata per collegare una relazione intertestuale all'entità che instaura il riferimento, ad esempio l'ipertesto in una relazione ipertestuale.</rdfs:comment>
-        <rdfs:comment xml:lang="en">In DeSMòS, R13 has referring entity is used to relate an intertextual relation to the entity establishing the reference, for example the hypertext in a hypertextual relation.</rdfs:comment>
+        <rdfs:comment xml:lang="it">In DeSMòS, questa proprietà identifica l'entità ipertestuale coinvolta in una relazione intertestuale. Può fare riferimento a un lrmoo:F2_Expression quando la relazione è stabilita a livello dell'intero testo, o a un intro:INT21_TextPassage quando la relazione può essere localizzata in una porzione specifica dell'ipertesto.</rdfs:comment>
+        <rdfs:comment xml:lang="en">In DeSMòS, this property identifies the hypertextual entity involved in an intertextual relation. It may refer to an lrmoo:F2_Expression when the relation is established at the level of the text as a whole, or to an intro:INT21_TextPassage when the relation can be localized to a specific portion of the hypertext.</rdfs:comment>
         <rdfs:label xml:lang="it">R13 ha entità referente</rdfs:label>
         <rdfs:label xml:lang="en">R13 has referring entity</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
@@ -876,8 +886,8 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/lso/intro/beta202506#R13i_isReferringEntityOf">
         <rdfs:range rdf:resource="https://w3id.org/lso/intro/beta202506#INT3_Interrelation"/>
-        <rdfs:comment xml:lang="en">In DeSMòS, R13i is referring entity of relates the referring entity, for example a hypertext, to the intertextual relation in which it has that role; it is the inverse of R13 has referring entity.</rdfs:comment>
-        <rdfs:comment xml:lang="it">In DeSMòS, R13i is referring entity of collega l'entità referente, ad esempio un ipertesto, alla relazione intertestuale nella quale assume tale ruolo; è l'inversa di R13 has referring entity.</rdfs:comment>
+        <rdfs:comment xml:lang="en">In DeSMòS, this property links a hypertextual entity to the intertextual relation in which it acts as the referring entity. The hypertextual entity may be an lrmoo:F2_Expression when the relation is established at the level of the text as a whole, or an intro:INT21_TextPassage when the relation can be localized to a specific portion of the hypertext.</rdfs:comment>
+        <rdfs:comment xml:lang="it">In DeSMòS, questa proprietà collega un'entità ipertestuale alla relazione intertestuale nella quale costituisce l'entità referente. L'entità ipertestuale può essere un lrmoo:F2_Expression quando la relazione è stabilita a livello dell'intero testo, o un intro:INT21_TextPassage quando la relazione può essere localizzata in una porzione specifica dell'ipertesto.</rdfs:comment>
         <rdfs:label xml:lang="en">R13i is referring entity of</rdfs:label>
         <rdfs:label xml:lang="it">R13i è entità referente di</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
@@ -961,18 +971,6 @@
         <rdfs:label xml:lang="en">date issued</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
     </owl:DatatypeProperty>
-
-    <!-- https://w3id.org/desmos/hasExcerpt -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/desmos/hasExcerpt">
-        <rdfs:domain rdf:resource="https://w3id.org/desmos/TextualFeature"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment xml:lang="it">Associa una caratteristica testuale al passo dell'espressione in cui la traccia della costrizione è riportata verbatim. Si distingue da crm:P3_has_note, che registra la descrizione analitica della caratteristica invece. La proprietà non è obbligatoria: la traccia può non essere citabile come testo quando risiede nella disposizione grafica, nell'apparato iconografico o nell'impaginazione.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Relates a textual feature to the passage of the expression in which the trace of the constraint appears verbatim. It differs from crm:P3_has_note, which records the analytical description of the feature instead. The property is not mandatory: the trace may not be quotable as text when it resides in graphic arrangement, iconographic apparatus or page layout.</rdfs:comment>
-        <rdfs:label xml:lang="it">ha estratto </rdfs:label>
-        <rdfs:label xml:lang="en">has excerpt</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
-    </owl:DatatypeProperty>
     
     <!-- http://schema.org/pagination -->
 
@@ -1024,6 +1022,7 @@
         <rdfs:comment xml:lang="it">In DeSMòS, F1 Work è utilizzata per rappresentare l'opera come entità astratta, distinta dalle espressioni testuali attraverso cui essa viene realizzata.</rdfs:comment>
         <rdfs:comment xml:lang="en">In DeSMòS, F1 Work is used to represent the work as an abstract entity, distinct from the textual expressions through which it is realised.</rdfs:comment>
         <rdfs:label xml:lang="en">F1 Work</rdfs:label>
+        <rdfs:label xml:lang="it">F1 Opera</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/"/>
     </owl:Class>
     
@@ -1033,6 +1032,7 @@
         <rdfs:comment xml:lang="it">In DeSMòS, F28 Expression Creation è utilizzata per rappresentare l'evento compositivo che produce un'espressione testuale e nel quale può essere impiegata una costrizione letteraria.</rdfs:comment>
         <rdfs:comment xml:lang="en">In DeSMòS, F28 Expression Creation is used to represent the compositional event that produces a textual expression and in which a literary constraint may be employed.</rdfs:comment>
         <rdfs:label xml:lang="en">F28 Expression Creation</rdfs:label>
+        <rdfs:label xml:lang="it">F28 Creazione dell'espressione</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/"/>
     </owl:Class>
     
@@ -1043,6 +1043,7 @@
         <rdfs:comment xml:lang="it">In DeSMòS, F2 Expression è utilizzata per rappresentare la realizzazione testuale di un'opera, sulla quale vengono documentate le costrizioni letterarie e le relazioni con altri testi.</rdfs:comment>
         <rdfs:comment xml:lang="en">In DeSMòS, F2 Expression is used to represent the textual realisation of a work, on which literary constraints and relations to other texts are documented.</rdfs:comment>
         <rdfs:label xml:lang="en">F2 Expression</rdfs:label>
+        <rdfs:label xml:lang="it">F2 Espressione</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/"/>
     </owl:Class>
     
@@ -1053,6 +1054,7 @@
         <rdfs:comment xml:lang="it">In DeSMòS, F3 Manifestation è utilizzata per rappresentare la manifestazione editoriale o digitale che incorpora un'espressione e alla quale sono associate informazioni relative alla pubblicazione e alla collocazione del testo.</rdfs:comment>
         <rdfs:comment xml:lang="en">In DeSMòS, F3 Manifestation is used to represent the published or digital manifestation embodying an expression and carrying information about its publication and textual location.</rdfs:comment>
         <rdfs:label xml:lang="en">F3 Manifestation</rdfs:label>
+        <rdfs:label xml:lang="it">F3 Manifestazione</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/"/>
     </owl:Class>
     
@@ -1063,6 +1065,7 @@
         <rdfs:comment xml:lang="it">In DeSMòS, E29 Design or Procedure fornisce la categoria procedurale entro cui è modellata desmos:LiteraryConstraint, intesa come procedura applicata durante la creazione di un'espressione.</rdfs:comment>
         <rdfs:comment xml:lang="en">In DeSMòS, E29 Design or Procedure provides the procedural category under which desmos:LiteraryConstraint is modelled, as a procedure applied during the creation of an expression.</rdfs:comment>
         <rdfs:label xml:lang="en">E29 Design or Procedure</rdfs:label>
+        <rdfs:label xml:lang="it">E29 Progetto o Procedura</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
     </owl:Class>
     
@@ -1083,6 +1086,7 @@
         <rdfs:comment xml:lang="it">In DeSMòS, E39 Actor è utilizzata per rappresentare autori, curatori e soggetti collettivi coinvolti nella creazione e nella documentazione delle espressioni testuali.</rdfs:comment>
         <rdfs:comment xml:lang="en">In DeSMòS, E39 Actor is used to represent authors, editors, and collective agents involved in the creation and documentation of textual expressions.</rdfs:comment>
         <rdfs:label xml:lang="en">E39 Actor</rdfs:label>
+        <rdfs:label xml:lang="it">E39 Attore</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
     </owl:Class>
     
@@ -1092,6 +1096,7 @@
         <rdfs:comment xml:lang="it">In DeSMòS, E55 Type è utilizzata per due ordini di tipi controllati: le forme espressive delle opere (prosa, poesia, poesia visiva, arte visiva, musica), assegnate alle espressioni mediante P2 has type, e, attraverso la sottoclasse INTRO INT11 Type of Interrelation, i tipi di relazione intertestuale come l'ipertestualità, assegnati mediante R19 has type.</rdfs:comment>
         <rdfs:comment xml:lang="en">In DeSMòS, E55 Type is used for two kinds of controlled types: the expressive forms of works (prose, poetry, visual poetry, visual art, music), assigned to expressions via P2 has type, and, through the INTRO subclass INT11 Type of Interrelation, intertextual relation types such as hypertextuality, assigned via R19 has type.</rdfs:comment>
         <rdfs:label xml:lang="en">E55 Type</rdfs:label>
+        <rdfs:label xml:lang="it">E55 Tipo</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
     </owl:Class>
     
@@ -1102,6 +1107,7 @@
         <rdfs:comment xml:lang="it">In DeSMòS, E73 Information Object è utilizzata come categoria generale per gli oggetti informativi coinvolti nella rappresentazione del testo e delle procedure ad esso associate, attraverso le classi specializzate riprese da CIDOC CRM, LRMoo e INTRO.</rdfs:comment>
         <rdfs:comment xml:lang="en">In DeSMòS, E73 Information Object is used as a general category for information objects involved in the representation of texts and their associated procedures, through specialised classes reused from CIDOC CRM, LRMoo, and INTRO.</rdfs:comment>
         <rdfs:label xml:lang="en">E73 Information Object</rdfs:label>
+        <rdfs:label xml:lang="it">E73 Oggetto Informativo</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
     </owl:Class>
     
@@ -1111,6 +1117,7 @@
     <rdfs:comment xml:lang="it">Questa classe comprende entità che esistono come insiemi di caratteristiche o proprietà, piuttosto che come oggetti fisici. In DeSMòS, rappresenta le entità astratte come le opere, le costrizioni letterarie e le relazioni intertestuali.</rdfs:comment>
     <rdfs:comment xml:lang="en">This class comprises entities that exist as sets of characteristics or properties rather than as physical objects. In DeSMòS, it represents abstract entities such as works, literary constraints, and intertextual relations.</rdfs:comment>
         <rdfs:label xml:lang="en">E89 Propositional Object</rdfs:label>
+        <rdfs:label xml:lang="it">E89 Oggetto Proposizionale</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
     </owl:Class>
     
@@ -1129,7 +1136,8 @@
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
         <rdfs:comment xml:lang="en">In DeSMòS, skos:ConceptScheme is used to organise literary constraints and the analytical categories used to describe them into controlled vocabularies.</rdfs:comment>
         <rdfs:comment xml:lang="it">In DeSMòS, skos:ConceptScheme è utilizzata per organizzare in vocabolari controllati le costrizioni letterarie e le categorie analitiche impiegate per descriverle.</rdfs:comment>
-        <rdfs:label xml:lang="en">skos:ConceptScheme</rdfs:label>
+        <rdfs:label xml:lang="en">Concept Scheme</rdfs:label>
+        <rdfs:label xml:lang="it">Schema di concetti</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
     </owl:Class>
     
@@ -1138,7 +1146,8 @@
     <owl:Class rdf:about="http://www.w3.org/ns/prov#Agent">
         <rdfs:comment xml:lang="en">In DeSMòS, prov:Agent is used to represent agents to whom entities or declarations are attributed, including authors, editors, collective agents and, where relevant, software systems.</rdfs:comment>
         <rdfs:comment xml:lang="it">In DeSMòS, prov:Agent è utilizzata per rappresentare gli agenti ai quali vengono attribuite entità o dichiarazioni, inclusi autori, curatori, soggetti collettivi e, ove pertinente, sistemi software.</rdfs:comment>
-        <rdfs:label xml:lang="en">prov:Agent</rdfs:label>
+        <rdfs:label xml:lang="en">Agent</rdfs:label>
+        <rdfs:label xml:lang="it">Agente</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov#"/>
     </owl:Class>
     
@@ -1147,7 +1156,8 @@
     <owl:Class rdf:about="http://www.w3.org/ns/prov#Entity">
         <rdfs:comment xml:lang="it">In DeSMòS, prov:Entity è utilizzata come categoria di provenienza per gli oggetti linguistici di cui viene documentata l'attribuzione a un agente, in particolare le dichiarazioni relative alle costrizioni letterarie.</rdfs:comment>
         <rdfs:comment xml:lang="en">In DeSMòS, prov:Entity is used as a provenance category for linguistic objects whose attribution to an agent is documented, particularly declarations concerning literary constraints.</rdfs:comment>
-        <rdfs:label xml:lang="en">prov:Entity</rdfs:label>
+        <rdfs:label xml:lang="en">Entity</rdfs:label>
+        <rdfs:label xml:lang="it">Entità</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov#"/>
     </owl:Class>
     
@@ -1179,8 +1189,8 @@
     <owl:Class rdf:about="https://w3id.org/desmos/LiteraryConstraint">
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/> 
-        <rdfs:comment xml:lang="en">A formal or semantic procedure intervening in the process of textual generation (F28 Expression Creation), whose presence is detectable through objective evidence (TextualFeature) independently of the explicit statement of authorial intent.</rdfs:comment>
-        <rdfs:comment xml:lang="it">Procedura formale o semantica che interviene nel processo di generazione testuale (F28 Expression Creation), la cui presenza può essere rilevata attraverso evidenze oggettive (TextualFeature) indipendentemente dall'esplicitazione dell'intento autoriale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A formal or semantic procedure intervening in the process of textual generation (F28 Expression Creation). Its presence may be documented through objective evidence (TextualFeature) or paratextual statements (E33 Linguistic Object).</rdfs:comment>
+        <rdfs:comment xml:lang="it">Procedura formale o semantica che interviene nel processo di generazione testuale (F28 Expression Creation). La sua presenza può essere documentata attraverso evidenze oggettive (TextualFeature) o dichiarazioni paratestuali (E33 Linguistic Object).</rdfs:comment>
         <rdfs:label xml:lang="it">Costrizione letteraria</rdfs:label>
         <rdfs:label xml:lang="en">Literary constraint</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
@@ -1215,6 +1225,7 @@
         <rdfs:comment xml:lang="it">In DeSMòS, INT21 Text Passage è utilizzata per rappresentare una porzione testuale identificabile di un'espressione, in particolare quando è necessario documentare i passaggi coinvolti in una relazione intertestuale.</rdfs:comment>
         <rdfs:comment xml:lang="en">In DeSMòS, INT21 Text Passage is used to represent an identifiable textual portion of an expression, particularly when documenting passages involved in an intertextual relation.</rdfs:comment>
         <rdfs:label xml:lang="en">INT21 Text Passage</rdfs:label>
+        <rdfs:label xml:lang="it">INT21 Passaggio Testuale</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
     </owl:Class>
     
@@ -1225,7 +1236,7 @@
         <rdfs:comment xml:lang="it">In DeSMòS, INT31 Intertextual Relation è utilizzata per rappresentare come entità autonoma una relazione intertestuale tra testi o loro passaggi, specificandone le entità coinvolte e la tipologia.</rdfs:comment>
         <rdfs:comment xml:lang="en">In DeSMòS, INT31 Intertextual Relation is used to represent an intertextual relation between texts or their passages as an independent entity, specifying the entities involved and the relation type.</rdfs:comment>
         <rdfs:label xml:lang="en">INT31 Intertextual Relation</rdfs:label>
-        <rdfs:label xml:lang="it">INT31 Relazione intertestuale</rdfs:label>
+        <rdfs:label xml:lang="it">INT31 Relazione Intertestuale</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
     </owl:Class>
 
@@ -1236,6 +1247,7 @@
         <rdfs:comment xml:lang="it">In DeSMòS, INT3 Interrelation fornisce la categoria generale per la rappresentazione reificata delle relazioni tra entità, specializzata attraverso INT31 Intertextual Relation per le relazioni intertestuali considerate nel modello.</rdfs:comment>
         <rdfs:comment xml:lang="en">In DeSMòS, INT3 Interrelation provides the general category for the reified representation of relations between entities, specialised through INT31 Intertextual Relation for the intertextual relations considered in the model.</rdfs:comment>
         <rdfs:label xml:lang="en">INT3 Interrelation</rdfs:label>
+        <rdfs:label xml:lang="it">INT3 Interrelazione</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
     </owl:Class>
 
@@ -1260,23 +1272,21 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
     </owl:Class>
 
-        <!-- https://w3id.org/desmos/CorpusExample -->
-
-    <owl:Class rdf:about="https://w3id.org/desmos/CorpusExample">
-        <rdfs:comment xml:lang="it">Attestazione documentata di una costrizione in un testo del corpus. Reifica un esempio (citazione della fonte, campione di testo vincolato ed eventuale spiegazione) come entità autonoma, collegata al concetto SKOS che essa illustra tramite desmos:illustrates.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Documented attestation of a constraint in a corpus text. It reifies an example (source citation, sample of constrained text and optional explanation) as a standalone entity, linked to the SKOS concept it illustrates via desmos:illustrates.</rdfs:comment>
-        <rdfs:label xml:lang="it">Esempio di corpus</rdfs:label>
-        <rdfs:label xml:lang="en">Corpus example</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
-    </owl:Class>
-
     <!-- https://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object -->
     <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object">
+        <rdfs:label xml:lang="en">E28 Conceptual Object</rdfs:label>
+        <rdfs:label xml:lang="it">E28 Oggetto Concettuale</rdfs:label>
+        <rdfs:comment xml:lang="en">In DeSMòS, E28 Conceptual Object provides the conceptual category under which intro:INT3_Interrelation is positioned.</rdfs:comment>
+        <rdfs:comment xml:lang="it">In DeSMòS, E28 Conceptual Object fornisce la categoria concettuale entro cui è ricondotta intro:INT3_Interrelation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
         </owl:Class>
     
     <!-- https://w3id.org/lso/intro/beta202506#INT1_Passage -->
     <owl:Class rdf:about="https://w3id.org/lso/intro/beta202506#INT1_Passage">
+        <rdfs:label xml:lang="en">INT1 Passage</rdfs:label>
+        <rdfs:label xml:lang="it">INT1 Passaggio</rdfs:label>
+        <rdfs:comment xml:lang="en">In DeSMòS, INT1 Passage provides the general category for intro:INT21_TextPassage, used to represent textual passages involved in intertextual relations.</rdfs:comment>
+        <rdfs:comment xml:lang="it">In DeSMòS, INT1 Passage fornisce la categoria generale per intro:INT21_TextPassage, utilizzata per rappresentare i passaggi testuali coinvolti nelle relazioni intertestuali.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
     </owl:Class>
 
@@ -1326,7 +1336,7 @@
         <rdfs:comment xml:lang="it">Schema concettuale che distingue le costrizioni ereditate dalla tradizione da quelle introdotte come invenzioni oulipiane o oplepiane. Atteso come valore del range di desmos:constraintOrigin.</rdfs:comment>
         <rdfs:label xml:lang="en">Constraint Origin Scheme</rdfs:label>
         <rdfs:label xml:lang="it">Schema dell'origine della costrizione</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/concept"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
     </owl:NamedIndividual>
 
     <!-- https://w3id.org/desmos/FormalConstraintScheme -->
@@ -1337,7 +1347,7 @@
         <rdfs:comment xml:lang="en">Concept scheme collecting formal constraints, which intervene primarily on the signifier of the text.</rdfs:comment>
         <rdfs:label xml:lang="en">Formal Constraint Scheme</rdfs:label>
         <rdfs:label xml:lang="it">Schema delle costrizioni formali</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/concept"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
     </owl:NamedIndividual>
 
     <!-- https://w3id.org/desmos/VisualConstraintScheme -->
@@ -1347,7 +1357,7 @@
         <rdfs:comment xml:lang="en">Concept scheme collecting visual constraints, which intervene on the spatial, graphic or typographic arrangement of the text on the page.</rdfs:comment>
         <rdfs:label xml:lang="en">Visual Constraint Scheme</rdfs:label>
         <rdfs:label xml:lang="it">Schema delle costrizioni visive</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/concept"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
     </owl:NamedIndividual>
 
     <!-- https://w3id.org/desmos/SemanticConstraintScheme -->
@@ -1358,7 +1368,7 @@
         <rdfs:comment xml:lang="en">Concept scheme collecting semantic constraints, which intervene primarily on the signified of the text.</rdfs:comment>
         <rdfs:label xml:lang="en">Semantic Constraint Scheme</rdfs:label>
         <rdfs:label xml:lang="it">Schema delle costrizioni semantiche</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/concept"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
     </owl:NamedIndividual>
 
     <!-- https://w3id.org/desmos/LiteraryFormScheme -->
@@ -1369,7 +1379,7 @@
         <rdfs:comment xml:lang="it">Schema concettuale che definisce la forma testuale dell'opera (prosa, poesia, forma visuale). Utilizzato per qualificare istanze di lrmoo:F2_Expression tramite crm:P2_has_type.</rdfs:comment>
         <rdfs:label xml:lang="en">Literary Form Scheme</rdfs:label>
         <rdfs:label xml:lang="it">Schema delle forme letterarie</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/concept"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
     </owl:NamedIndividual>
 
         <!-- https://w3id.org/desmos/ArtisticFormScheme -->
@@ -1380,7 +1390,7 @@
         <rdfs:comment xml:lang="it">Schema concettuale che definisce la forma artistica di espressioni non linguistiche (arte visuale, musica). Utilizzato per qualificare istanze di lrmoo:F2_Expression tramite crm:P2_has_type, in complemento a desmos:LiteraryFormScheme nei casi in cui l'espressione non sia un testo.</rdfs:comment>
         <rdfs:label xml:lang="en">Artistic Form Scheme</rdfs:label>
         <rdfs:label xml:lang="it">Schema delle forme artistiche</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/concept"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
     </owl:NamedIndividual>
 
     <!-- https://w3id.org/desmos/FormalUnitScheme -->
@@ -1391,7 +1401,7 @@
         <rdfs:comment xml:lang="it">Schema concettuale che definisce le unità discrete del sistema di scrittura (ad esempio lettera, sillaba, parola) su cui opera una costrizione di tipo formale. Atteso come valore del range di desmos:constrainsFormalUnit.</rdfs:comment>
         <rdfs:label xml:lang="en">Formal Unit Scheme</rdfs:label>
         <rdfs:label xml:lang="it">Schema delle unità formali</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/concept"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
     </owl:NamedIndividual>
 
     <!-- https://w3id.org/desmos/SemanticUnitScheme -->
@@ -1402,7 +1412,7 @@
         <rdfs:comment xml:lang="it">Schema concettuale che definisce le unità discrete del piano del contenuto (personaggio, spazio, tempo) determinate da una costrizione di tipo semantico. Atteso come valore del range di desmos:constrainsSemanticUnit.</rdfs:comment>
         <rdfs:label xml:lang="en">Semantic Unit Scheme</rdfs:label>
         <rdfs:label xml:lang="it">Schema delle unità semantiche</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/concept"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
     </owl:NamedIndividual>
 
     <!-- https://w3id.org/desmos/ProceduralOperationScheme -->
@@ -1413,7 +1423,7 @@
         <rdfs:comment xml:lang="it">Schema concettuale che descrive le operazioni procedurali applicate per generare il testo vincolato. Atteso come valore del range di desmos:involvesOperation.</rdfs:comment>
         <rdfs:label xml:lang="en">Procedural Operation Scheme</rdfs:label>
         <rdfs:label xml:lang="it">Schema delle operazioni procedurali</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/concept"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 

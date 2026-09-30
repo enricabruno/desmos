@@ -1,0 +1,1218 @@
+@prefix sh:      <http://www.w3.org/ns/shacl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema:  <http://schema.org/> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+@prefix crm:     <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix lrmoo:   <http://iflastandards.info/ns/lrm/lrmoo/> .
+@prefix intro:   <https://w3id.org/lso/intro/beta202506#> .
+@prefix desmos:  <https://w3id.org/desmos/> .
+@prefix dsh:     <https://w3id.org/desmos/shapes/> .
+
+# ===== METADATI =====
+
+dsh: a owl:Ontology ;
+    rdfs:label "Shapes SHACL di DeSMòS"@it , "DeSMòS SHACL shapes"@en ;
+    rdfs:comment "Grafo di shapes per validare il corpus DeSMòS (corpus.ttl) e i vocabolari controllati (concept.ttl) rispetto a desmos.owl v2.0.0. Livelli: [A] derivato dall'ontologia, [B] valori dei dati, [C] requisiti di progetto."@it ,
+                 "Shapes graph for validating the DeSMòS corpus (corpus.ttl) and controlled vocabularies (concept.ttl) against desmos.owl v2.0.0. Layers: [A] ontology-derived, [B] data value, [C] project-required."@en ;
+    dcterms:description "Modalità di validazione: il data graph è l'unione di corpus.ttl e concept.ttl; desmos.owl va passata come ontology graph; nessuna inferenza (pyshacl -s shapes -e desmos.owl -i none -a). Severità: sh:Violation per invarianti strutturali e assiomi dell'ontologia; sh:Warning per completezza catalografica attesa; sh:Info per segnali analitici."@it ,
+                        "Validation mode: the data graph is the union of corpus.ttl and concept.ttl; desmos.owl is passed as the ontology graph; no inference (pyshacl -s shapes -e desmos.owl -i none -a). Severity: sh:Violation for structural invariants and ontology axioms; sh:Warning for expected cataloguing completeness; sh:Info for analytical signals."@en ;
+    dcterms:source <https://w3id.org/desmos/v2.0.0> ;
+    dcterms:created "2026-09-30"^^xsd:date ;
+    owl:versionInfo "1.0" ;
+    sh:declare
+        [ sh:prefix "rdf"     ; sh:namespace "http://www.w3.org/1999/02/22-rdf-syntax-ns#"^^xsd:anyURI ] ,
+        [ sh:prefix "xsd"     ; sh:namespace "http://www.w3.org/2001/XMLSchema#"^^xsd:anyURI ] ,
+        [ sh:prefix "skos"    ; sh:namespace "http://www.w3.org/2004/02/skos/core#"^^xsd:anyURI ] ,
+        [ sh:prefix "dcterms" ; sh:namespace "http://purl.org/dc/terms/"^^xsd:anyURI ] ,
+        [ sh:prefix "crm"     ; sh:namespace "http://www.cidoc-crm.org/cidoc-crm/"^^xsd:anyURI ] ,
+        [ sh:prefix "lrmoo"   ; sh:namespace "http://iflastandards.info/ns/lrm/lrmoo/"^^xsd:anyURI ] ,
+        [ sh:prefix "intro"   ; sh:namespace "https://w3id.org/lso/intro/beta202506#"^^xsd:anyURI ] ,
+        [ sh:prefix "desmos"  ; sh:namespace "https://w3id.org/desmos/"^^xsd:anyURI ] .
+
+dsh:layer a owl:AnnotationProperty ;
+    rdfs:label "livello"@it , "layer"@en ;
+    rdfs:comment "Livello di derivazione di una shape."@it , "Derivation layer of a shape."@en .
+
+dsh:LayerA rdfs:label "A — derivato dall'ontologia"@it , "A — ontology-derived"@en ;
+    rdfs:comment "Vincoli ricavati da rdfs:domain, rdfs:range e owl:disjointWith di desmos.owl, letti in closed world (sh:targetSubjectsOf, sh:targetObjectsOf, sh:not)."@it ,
+                 "Constraints derived from rdfs:domain, rdfs:range and owl:disjointWith in desmos.owl, read in closed world (sh:targetSubjectsOf, sh:targetObjectsOf, sh:not)."@en .
+dsh:LayerB rdfs:label "B — valori dei dati"@it , "B — data value"@en ;
+    rdfs:comment "Datatype e forma lessicale dei letterali (xsd:gYear, xsd:string, rdf:langString)."@it ,
+                 "Datatypes and lexical form of literals (xsd:gYear, xsd:string, rdf:langString)."@en .
+dsh:LayerC rdfs:label "C — requisiti di progetto"@it , "C — project-required"@en ;
+    rdfs:comment "Cardinalità, appartenenza agli schemi SKOS, integrità SKOS e coerenza fra entità (SHACL-SPARQL), ricavate dalle convenzioni documentate in desmos.owl."@it ,
+                 "Cardinalities, SKOS scheme membership, SKOS integrity and cross-entity consistency (SHACL-SPARQL), derived from the conventions documented in desmos.owl."@en .
+
+# ===== [A] DOMINIO (rdfs:domain) =====
+
+dsh:Domain_LiteraryConstraint a sh:NodeShape ;
+    rdfs:label "Dominio: costrizione letteraria"@it , "Domain: literary constraint"@en ;
+    rdfs:comment "Lettura closed-world di rdfs:domain: chi usa constraintOrigin, involvesOperation, isConstraintUsedIn o isRevealedBy deve essere desmos:LiteraryConstraint."@it ,
+                 "Closed-world reading of rdfs:domain: subjects of constraintOrigin, involvesOperation, isConstraintUsedIn or isRevealedBy must be desmos:LiteraryConstraint."@en ;
+    dsh:layer dsh:LayerA ;
+    sh:targetSubjectsOf desmos:constraintOrigin , desmos:involvesOperation ,
+                        desmos:isConstraintUsedIn , desmos:isRevealedBy ;
+    sh:class desmos:LiteraryConstraint ;
+    sh:message "Soggetto di una proprietà con rdfs:domain desmos:LiteraryConstraint non tipizzato come tale."@it ,
+               "Subject of a property whose domain is desmos:LiteraryConstraint is not typed as such."@en .
+
+dsh:Domain_FormalConstraint a sh:NodeShape ;
+    rdfs:label "Dominio: costrizione formale"@it , "Domain: formal constraint"@en ;
+    rdfs:comment "Chi usa desmos:constrainsFormalUnit deve essere desmos:FormalConstraint."@it ,
+                 "Subjects of desmos:constrainsFormalUnit must be desmos:FormalConstraint."@en ;
+    dsh:layer dsh:LayerA ;
+    sh:targetSubjectsOf desmos:constrainsFormalUnit ;
+    sh:class desmos:FormalConstraint ;
+    sh:message "desmos:constrainsFormalUnit usata su un nodo che non è desmos:FormalConstraint."@it ,
+               "desmos:constrainsFormalUnit used on a node that is not a desmos:FormalConstraint."@en .
+
+dsh:Domain_SemanticConstraint a sh:NodeShape ;
+    rdfs:label "Dominio: costrizione semantica"@it , "Domain: semantic constraint"@en ;
+    rdfs:comment "Chi usa desmos:constrainsSemanticUnit deve essere desmos:SemanticConstraint."@it ,
+                 "Subjects of desmos:constrainsSemanticUnit must be desmos:SemanticConstraint."@en ;
+    dsh:layer dsh:LayerA ;
+    sh:targetSubjectsOf desmos:constrainsSemanticUnit ;
+    sh:class desmos:SemanticConstraint ;
+    sh:message "desmos:constrainsSemanticUnit usata su un nodo che non è desmos:SemanticConstraint."@it ,
+               "desmos:constrainsSemanticUnit used on a node that is not a desmos:SemanticConstraint."@en .
+
+dsh:Domain_TextualFeature a sh:NodeShape ;
+    rdfs:label "Dominio: caratteristica testuale"@it , "Domain: textual feature"@en ;
+    rdfs:comment "Chi usa revealsConstraint o isFeatureOf deve essere desmos:TextualFeature."@it ,
+                 "Subjects of revealsConstraint or isFeatureOf must be desmos:TextualFeature."@en ;
+    dsh:layer dsh:LayerA ;
+    sh:targetSubjectsOf desmos:revealsConstraint , desmos:isFeatureOf ;
+    sh:class desmos:TextualFeature ;
+    sh:message "Soggetto di revealsConstraint/isFeatureOf non tipizzato come desmos:TextualFeature."@it ,
+               "Subject of revealsConstraint/isFeatureOf is not typed as desmos:TextualFeature."@en .
+
+dsh:Domain_F2_Expression a sh:NodeShape ;
+    rdfs:label "Dominio: F2 Espressione"@it , "Domain: F2 Expression"@en ;
+    rdfs:comment "Chi usa hasFeature, R15, R17i, R3i, R4i, R76 o R76i deve essere lrmoo:F2_Expression."@it ,
+                 "Subjects of hasFeature, R15, R17i, R3i, R4i, R76 or R76i must be lrmoo:F2_Expression."@en ;
+    dsh:layer dsh:LayerA ;
+    sh:targetSubjectsOf desmos:hasFeature , lrmoo:R15_has_fragment , lrmoo:R17i_was_created_by ,
+                        lrmoo:R3i_realises , lrmoo:R4i_is_embodied_in ,
+                        lrmoo:R76_is_derivative_of , lrmoo:R76i_has_derivative ;
+    sh:class lrmoo:F2_Expression ;
+    sh:message "Soggetto di una proprietà con dominio lrmoo:F2_Expression non tipizzato come tale."@it ,
+               "Subject of a property whose domain is lrmoo:F2_Expression is not typed as such."@en .
+
+dsh:Domain_F28_ExpressionCreation a sh:NodeShape ;
+    rdfs:label "Dominio: F28 Creazione dell'espressione"@it , "Domain: F28 Expression Creation"@en ;
+    rdfs:comment "Chi usa R17_created o usedConstraint deve essere lrmoo:F28_Expression_Creation."@it ,
+                 "Subjects of R17_created or usedConstraint must be lrmoo:F28_Expression_Creation."@en ;
+    dsh:layer dsh:LayerA ;
+    sh:targetSubjectsOf lrmoo:R17_created , desmos:usedConstraint ;
+    sh:class lrmoo:F28_Expression_Creation ;
+    sh:message "Soggetto di R17_created/usedConstraint non tipizzato come lrmoo:F28_Expression_Creation."@it ,
+               "Subject of R17_created/usedConstraint is not typed as lrmoo:F28_Expression_Creation."@en .
+
+dsh:Domain_F1_Work a sh:NodeShape ;
+    rdfs:label "Dominio: F1 Opera"@it , "Domain: F1 Work"@en ;
+    rdfs:comment "Chi usa R3_is_realised_in deve essere lrmoo:F1_Work."@it ,
+                 "Subjects of R3_is_realised_in must be lrmoo:F1_Work."@en ;
+    dsh:layer dsh:LayerA ;
+    sh:targetSubjectsOf lrmoo:R3_is_realised_in ;
+    sh:class lrmoo:F1_Work .
+
+dsh:Domain_F3_Manifestation a sh:NodeShape ;
+    rdfs:label "Dominio: F3 Manifestazione"@it , "Domain: F3 Manifestation"@en ;
+    rdfs:comment "Chi usa R4_embodies deve essere lrmoo:F3_Manifestation."@it ,
+                 "Subjects of R4_embodies must be lrmoo:F3_Manifestation."@en ;
+    dsh:layer dsh:LayerA ;
+    sh:targetSubjectsOf lrmoo:R4_embodies ;
+    sh:class lrmoo:F3_Manifestation .
+
+dsh:Domain_E39_Actor a sh:NodeShape ;
+    rdfs:label "Dominio: E39 Attore"@it , "Domain: E39 Actor"@en ;
+    rdfs:comment "Chi usa P14i_performed deve essere crm:E39_Actor."@it ,
+                 "Subjects of P14i_performed must be crm:E39_Actor."@en ;
+    dsh:layer dsh:LayerA ;
+    sh:targetSubjectsOf crm:P14i_performed ;
+    sh:class crm:E39_Actor .
+
+dsh:Domain_INT3_Interrelation a sh:NodeShape ;
+    rdfs:label "Dominio: INT3 Interrelazione"@it , "Domain: INT3 Interrelation"@en ;
+    rdfs:comment "Chi usa R12 o R13 deve essere intro:INT3_Interrelation (o sottoclasse, es. INT31)."@it ,
+                 "Subjects of R12 or R13 must be intro:INT3_Interrelation (or a subclass, e.g. INT31)."@en ;
+    dsh:layer dsh:LayerA ;
+    sh:targetSubjectsOf intro:R12_hasReferredToEntity , intro:R13_hasReferringEntity ;
+    sh:class intro:INT3_Interrelation .
+
+dsh:Domain_INT21_TextPassage a sh:NodeShape ;
+    rdfs:label "Dominio: INT21 Passaggio testuale"@it , "Domain: INT21 Text Passage"@en ;
+    rdfs:comment "Chi usa R30i_isTextPassageOf deve essere intro:INT21_TextPassage."@it ,
+                 "Subjects of R30i_isTextPassageOf must be intro:INT21_TextPassage."@en ;
+    dsh:layer dsh:LayerA ;
+    sh:targetSubjectsOf intro:R30i_isTextPassageOf ;
+    sh:class intro:INT21_TextPassage .
+
+dsh:Domain_SkosConcept a sh:NodeShape ;
+    rdfs:label "Dominio: concetto SKOS"@it , "Domain: SKOS concept"@en ;
+    rdfs:comment "Chi usa relazioni gerarchiche, associative, di mapping o di granularità deve essere skos:Concept."@it ,
+                 "Subjects of hierarchical, associative, mapping or granularity relations must be skos:Concept."@en ;
+    dsh:layer dsh:LayerA ;
+    sh:targetSubjectsOf skos:broader , skos:narrower , skos:related ,
+                        skos:exactMatch , skos:closeMatch , skos:topConceptOf ,
+                        desmos:finerThan , desmos:coarserThan ,
+                        desmos:isOperationInvolvedIn , desmos:isOriginOf ;
+    sh:class skos:Concept .
+
+dsh:Domain_SkosConceptScheme a sh:NodeShape ;
+    rdfs:label "Dominio: schema SKOS"@it , "Domain: SKOS concept scheme"@en ;
+    rdfs:comment "Chi usa skos:hasTopConcept deve essere skos:ConceptScheme."@it ,
+                 "Subjects of skos:hasTopConcept must be skos:ConceptScheme."@en ;
+    dsh:layer dsh:LayerA ;
+    sh:targetSubjectsOf skos:hasTopConcept ;
+    sh:class skos:ConceptScheme .
+
+# ===== [A] RANGE (rdfs:range) =====
+
+dsh:Range_F2_Expression a sh:NodeShape ;
+    rdfs:label "Range: F2 Espressione"@it , "Range: F2 Expression"@en ;
+    rdfs:comment "Lettura closed-world di rdfs:range: gli oggetti di R17, R3, R4, R76, R76i, R15i e isFeatureOf devono essere lrmoo:F2_Expression."@it ,
+                 "Closed-world reading of rdfs:range: objects of R17, R3, R4, R76, R76i, R15i and isFeatureOf must be lrmoo:F2_Expression."@en ;
+    dsh:layer dsh:LayerA ;
+    sh:targetObjectsOf lrmoo:R17_created , lrmoo:R3_is_realised_in , lrmoo:R4_embodies ,
+                       lrmoo:R76_is_derivative_of , lrmoo:R76i_has_derivative ,
+                       lrmoo:R15i_is_fragment_of , desmos:isFeatureOf ;
+    sh:class lrmoo:F2_Expression ;
+    sh:message "Oggetto di una proprietà con range lrmoo:F2_Expression non tipizzato come tale."@it ,
+               "Object of a property whose range is lrmoo:F2_Expression is not typed as such."@en .
+
+dsh:Range_LiteraryConstraint a sh:NodeShape ;
+    rdfs:label "Range: costrizione letteraria"@it , "Range: literary constraint"@en ;
+    rdfs:comment "Gli oggetti di usedConstraint, revealsConstraint, isOperationInvolvedIn e isOriginOf devono essere desmos:LiteraryConstraint (o sottoclassi)."@it ,
+                 "Objects of usedConstraint, revealsConstraint, isOperationInvolvedIn and isOriginOf must be desmos:LiteraryConstraint (or subclasses)."@en ;
+    dsh:layer dsh:LayerA ;
+    sh:targetObjectsOf desmos:usedConstraint , desmos:revealsConstraint ,
+                       desmos:isOperationInvolvedIn , desmos:isOriginOf ;
+    sh:class desmos:LiteraryConstraint ;
+    sh:message "Oggetto di usedConstraint/revealsConstraint non tipizzato come desmos:LiteraryConstraint (o sottoclassi)."@it ,
+               "Object of usedConstraint/revealsConstraint is not a desmos:LiteraryConstraint (or subclass)."@en .
+
+dsh:Range_F28_ExpressionCreation a sh:NodeShape ;
+    rdfs:label "Range: F28 Creazione dell'espressione"@it , "Range: F28 Expression Creation"@en ;
+    rdfs:comment "Gli oggetti di R17i e isConstraintUsedIn devono essere lrmoo:F28_Expression_Creation."@it ,
+                 "Objects of R17i and isConstraintUsedIn must be lrmoo:F28_Expression_Creation."@en ;
+    dsh:layer dsh:LayerA ;
+    sh:targetObjectsOf lrmoo:R17i_was_created_by , desmos:isConstraintUsedIn ;
+    sh:class lrmoo:F28_Expression_Creation .
+
+dsh:Range_F1_Work a sh:NodeShape ;
+    rdfs:label "Range: F1 Opera"@it , "Range: F1 Work"@en ;
+    rdfs:comment "Gli oggetti di R3i_realises devono essere lrmoo:F1_Work."@it ,
+                 "Objects of R3i_realises must be lrmoo:F1_Work."@en ;
+    dsh:layer dsh:LayerA ;
+    sh:targetObjectsOf lrmoo:R3i_realises ;
+    sh:class lrmoo:F1_Work .
+
+dsh:Range_F3_Manifestation a sh:NodeShape ;
+    rdfs:label "Range: F3 Manifestazione"@it , "Range: F3 Manifestation"@en ;
+    rdfs:comment "Gli oggetti di R4i_is_embodied_in devono essere lrmoo:F3_Manifestation."@it ,
+                 "Objects of R4i_is_embodied_in must be lrmoo:F3_Manifestation."@en ;
+    dsh:layer dsh:LayerA ;
+    sh:targetObjectsOf lrmoo:R4i_is_embodied_in ;
+    sh:class lrmoo:F3_Manifestation .
+
+dsh:Range_TextualFeature a sh:NodeShape ;
+    rdfs:label "Range: caratteristica testuale"@it , "Range: textual feature"@en ;
+    rdfs:comment "Gli oggetti di hasFeature e isRevealedBy devono essere desmos:TextualFeature."@it ,
+                 "Objects of hasFeature and isRevealedBy must be desmos:TextualFeature."@en ;
+    dsh:layer dsh:LayerA ;
+    sh:targetObjectsOf desmos:hasFeature , desmos:isRevealedBy ;
+    sh:class desmos:TextualFeature .
+
+dsh:Range_E39_Actor a sh:NodeShape ;
+    rdfs:label "Range: E39 Attore"@it , "Range: E39 Actor"@en ;
+    rdfs:comment "Gli oggetti di P14_carried_out_by devono essere crm:E39_Actor."@it ,
+                 "Objects of P14_carried_out_by must be crm:E39_Actor."@en ;
+    dsh:layer dsh:LayerA ;
+    sh:targetObjectsOf crm:P14_carried_out_by ;
+    sh:class crm:E39_Actor .
+
+dsh:Range_E55_Type a sh:NodeShape ;
+    rdfs:label "Range: E55 Tipo"@it , "Range: E55 Type"@en ;
+    rdfs:comment "Gli oggetti di P2_has_type devono essere crm:E55_Type."@it ,
+                 "Objects of P2_has_type must be crm:E55_Type."@en ;
+    dsh:layer dsh:LayerA ;
+    sh:targetObjectsOf crm:P2_has_type ;
+    sh:class crm:E55_Type .
+
+dsh:Range_E29_DesignOrProcedure a sh:NodeShape ;
+    rdfs:label "Range: E29 Progetto o procedura"@it , "Range: E29 Design or Procedure"@en ;
+    rdfs:comment "Gli oggetti di P33_used_specific_technique devono essere crm:E29_Design_or_Procedure."@it ,
+                 "Objects of P33_used_specific_technique must be crm:E29_Design_or_Procedure."@en ;
+    dsh:layer dsh:LayerA ;
+    sh:targetObjectsOf crm:P33_used_specific_technique ;
+    sh:class crm:E29_Design_or_Procedure .
+
+dsh:Range_ProvAgent a sh:NodeShape ;
+    rdfs:label "Range: agente PROV"@it , "Range: PROV agent"@en ;
+    rdfs:comment "Gli oggetti di prov:wasAttributedTo devono essere prov:Agent."@it ,
+                 "Objects of prov:wasAttributedTo must be prov:Agent."@en ;
+    dsh:layer dsh:LayerA ;
+    sh:targetObjectsOf prov:wasAttributedTo ;
+    sh:class prov:Agent .
+
+dsh:Range_INT3_Interrelation a sh:NodeShape ;
+    rdfs:label "Range: INT3 Interrelazione"@it , "Range: INT3 Interrelation"@en ;
+    rdfs:comment "Gli oggetti di R12i e R13i devono essere intro:INT3_Interrelation."@it ,
+                 "Objects of R12i and R13i must be intro:INT3_Interrelation."@en ;
+    dsh:layer dsh:LayerA ;
+    sh:targetObjectsOf intro:R12i_isReferredToEntityOf , intro:R13i_isReferringEntityOf ;
+    sh:class intro:INT3_Interrelation .
+
+dsh:Range_INT21_TextPassage a sh:NodeShape ;
+    rdfs:label "Range: INT21 Passaggio testuale"@it , "Range: INT21 Text Passage"@en ;
+    rdfs:comment "Gli oggetti di R30_hasTextPassage devono essere intro:INT21_TextPassage."@it ,
+                 "Objects of R30_hasTextPassage must be intro:INT21_TextPassage."@en ;
+    dsh:layer dsh:LayerA ;
+    sh:targetObjectsOf intro:R30_hasTextPassage ;
+    sh:class intro:INT21_TextPassage .
+
+dsh:Range_SkosConcept a sh:NodeShape ;
+    rdfs:label "Range: concetto SKOS"@it , "Range: SKOS concept"@en ;
+    rdfs:comment "Gli oggetti delle relazioni SKOS interne e delle proprietà DeSMòS verso i vocabolari devono essere skos:Concept; esclusi exactMatch/closeMatch, che puntano a risorse esterne."@it ,
+                 "Objects of internal SKOS relations and of DeSMòS properties pointing to vocabularies must be skos:Concept; exactMatch/closeMatch excluded, as they point to external resources."@en ;
+    dsh:layer dsh:LayerA ;
+    sh:targetObjectsOf skos:broader , skos:narrower , skos:related , skos:hasTopConcept ,
+                       desmos:finerThan , desmos:coarserThan ,
+                       desmos:constraintOrigin , desmos:involvesOperation ,
+                       desmos:constrainsFormalUnit , desmos:constrainsSemanticUnit ;
+    sh:class skos:Concept .
+
+dsh:Range_SkosConceptScheme a sh:NodeShape ;
+    rdfs:label "Range: schema SKOS"@it , "Range: SKOS concept scheme"@en ;
+    rdfs:comment "Gli oggetti di skos:inScheme e skos:topConceptOf devono essere skos:ConceptScheme."@it ,
+                 "Objects of skos:inScheme and skos:topConceptOf must be skos:ConceptScheme."@en ;
+    dsh:layer dsh:LayerA ;
+    sh:targetObjectsOf skos:inScheme , skos:topConceptOf ;
+    sh:class skos:ConceptScheme .
+
+# ===== [A] DISGIUNZIONE (owl:disjointWith) =====
+
+dsh:Disjoint_FormalSemantic a sh:NodeShape ;
+    rdfs:label "Disgiunzione formale/semantica"@it , "Formal/semantic disjointness"@en ;
+    rdfs:comment "Traduce owl:disjointWith: nessun nodo può essere insieme FormalConstraint e SemanticConstraint."@it ,
+                 "Translates owl:disjointWith: no node can be both FormalConstraint and SemanticConstraint."@en ;
+    dsh:layer dsh:LayerA ;
+    sh:targetClass desmos:FormalConstraint ;
+    sh:not [ sh:class desmos:SemanticConstraint ] ;
+    sh:message "desmos:FormalConstraint e desmos:SemanticConstraint sono disgiunte (owl:disjointWith)."@it ,
+               "desmos:FormalConstraint and desmos:SemanticConstraint are disjoint (owl:disjointWith)."@en .
+
+# ===== [C] SHAPE DI SUPPORTO: SCHEMI SKOS =====
+
+dsh:InConstraintOriginScheme a sh:NodeShape ;
+    rdfs:label "Appartenenza a ConstraintOriginScheme"@it , "Membership in ConstraintOriginScheme"@en ;
+    rdfs:comment "Shape di supporto: il concetto deve appartenere a desmos:ConstraintOriginScheme."@it ,
+                 "Helper shape: the concept must belong to desmos:ConstraintOriginScheme."@en ;
+    dsh:layer dsh:LayerC ;
+    sh:property [ sh:name "nello schema"@it , "in scheme"@en ; sh:description "In DeSMòS, skos:inScheme è utilizzata per indicare lo schema concettuale al quale appartiene un concetto."@it , "In DeSMòS, skos:inScheme is used to indicate the concept scheme to which a concept belongs."@en ; sh:path skos:inScheme ; sh:hasValue desmos:ConstraintOriginScheme ] .
+
+dsh:InProceduralOperationScheme a sh:NodeShape ;
+    rdfs:label "Appartenenza a ProceduralOperationScheme"@it , "Membership in ProceduralOperationScheme"@en ;
+    rdfs:comment "Shape di supporto: il concetto deve appartenere a desmos:ProceduralOperationScheme."@it ,
+                 "Helper shape: the concept must belong to desmos:ProceduralOperationScheme."@en ;
+    dsh:layer dsh:LayerC ;
+    sh:property [ sh:name "nello schema"@it , "in scheme"@en ; sh:description "In DeSMòS, skos:inScheme è utilizzata per indicare lo schema concettuale al quale appartiene un concetto."@it , "In DeSMòS, skos:inScheme is used to indicate the concept scheme to which a concept belongs."@en ; sh:path skos:inScheme ; sh:hasValue desmos:ProceduralOperationScheme ] .
+
+dsh:InFormalUnitScheme a sh:NodeShape ;
+    rdfs:label "Appartenenza a FormalUnitScheme"@it , "Membership in FormalUnitScheme"@en ;
+    rdfs:comment "Shape di supporto: il concetto deve appartenere a desmos:FormalUnitScheme."@it ,
+                 "Helper shape: the concept must belong to desmos:FormalUnitScheme."@en ;
+    dsh:layer dsh:LayerC ;
+    sh:property [ sh:name "nello schema"@it , "in scheme"@en ; sh:description "In DeSMòS, skos:inScheme è utilizzata per indicare lo schema concettuale al quale appartiene un concetto."@it , "In DeSMòS, skos:inScheme is used to indicate the concept scheme to which a concept belongs."@en ; sh:path skos:inScheme ; sh:hasValue desmos:FormalUnitScheme ] .
+
+dsh:InSemanticUnitScheme a sh:NodeShape ;
+    rdfs:label "Appartenenza a SemanticUnitScheme"@it , "Membership in SemanticUnitScheme"@en ;
+    rdfs:comment "Shape di supporto: il concetto deve appartenere a desmos:SemanticUnitScheme."@it ,
+                 "Helper shape: the concept must belong to desmos:SemanticUnitScheme."@en ;
+    dsh:layer dsh:LayerC ;
+    sh:property [ sh:name "nello schema"@it , "in scheme"@en ; sh:description "In DeSMòS, skos:inScheme è utilizzata per indicare lo schema concettuale al quale appartiene un concetto."@it , "In DeSMòS, skos:inScheme is used to indicate the concept scheme to which a concept belongs."@en ; sh:path skos:inScheme ; sh:hasValue desmos:SemanticUnitScheme ] .
+
+dsh:InFormScheme a sh:NodeShape ;
+    rdfs:label "Appartenenza a uno schema di forme"@it , "Membership in a form scheme"@en ;
+    rdfs:comment "Shape di supporto: il concetto deve appartenere a LiteraryFormScheme o ArtisticFormScheme."@it ,
+                 "Helper shape: the concept must belong to LiteraryFormScheme or ArtisticFormScheme."@en ;
+    dsh:layer dsh:LayerC ;
+    sh:or (
+        [ sh:path skos:inScheme ; sh:hasValue desmos:LiteraryFormScheme ]
+        [ sh:path skos:inScheme ; sh:hasValue desmos:ArtisticFormScheme ]
+    ) .
+
+# ===== [C] COSTRIZIONI LETTERARIE =====
+
+dsh:LiteraryConstraintShape a sh:NodeShape ;
+    rdfs:label "Costrizione letteraria"@it , "Literary constraint"@en ;
+    rdfs:comment "Etichetta, origine unica da ConstraintOriginScheme, operazione facoltativa ma dallo schema corretto, appartenenza a uno e un solo schema di costrizioni."@it ,
+                 "Label, single origin from ConstraintOriginScheme, optional operation from the correct scheme, membership in exactly one constraint scheme."@en ;
+    sh:name "Costrizione letteraria"@it , "Literary constraint"@en ;
+    sh:description "Procedura formale o semantica che interviene nel processo di generazione testuale (F28 Expression Creation). La sua presenza può essere documentata attraverso evidenze oggettive (TextualFeature) o dichiarazioni paratextuali (E33 Linguistic Object)."@it ,
+                   "A formal or semantic procedure intervening in the process of textual generation (F28 Expression Creation). Its presence may be documented through objective evidence (TextualFeature) or paratextual statements (E33 Linguistic Object)."@en ;
+    dcterms:source desmos:LiteraryConstraint ;
+    dsh:layer dsh:LayerC ;
+    sh:targetClass desmos:LiteraryConstraint ;
+    sh:nodeKind sh:IRI ;
+
+    sh:property [
+        sh:name "Etichetta"@it , "Label"@en ;
+        sh:description "Un nome leggibile per l'entità."@it , "A human-readable name for the entity."@en ;
+        sh:path rdfs:label ;
+        sh:minCount 1 ;
+        sh:message "Ogni costrizione deve avere almeno un rdfs:label."@it ,
+                   "Each constraint must have at least one rdfs:label."@en ;
+    ] ;
+    sh:property [
+        sh:name "Etichetta"@it , "Label"@en ;
+        sh:description "Un nome leggibile per l'entità."@it , "A human-readable name for the entity."@en ;
+        sh:path rdfs:label ;
+        sh:or ( [ sh:datatype xsd:string ]
+                [ sh:datatype rdf:langString ; sh:languageIn ( "it" "en" ) ] ) ;
+        sh:uniqueLang true ;
+        sh:message "rdfs:label deve essere xsd:string oppure @it/@en, al più una per lingua."@it ,
+                   "rdfs:label must be xsd:string or @it/@en, at most one per language."@en ;
+    ] ;
+    sh:property [
+        sh:name "Etichetta"@it , "Label"@en ;
+        sh:description "Un nome leggibile per l'entità."@it , "A human-readable name for the entity."@en ;
+        sh:path rdfs:label ;
+        sh:qualifiedValueShape [ sh:datatype xsd:string ] ;
+        sh:qualifiedMaxCount 1 ;
+        sh:message "Al più un rdfs:label xsd:string senza tag."@it ,
+                   "At most one untagged xsd:string rdfs:label."@en ;
+    ] ;
+
+    sh:property [
+        sh:name "origine della costrizione"@it , "constraint origin"@en ;
+        sh:description "Collega una costrizione letteraria ad un concetto SKOS che ne qualifica l'origine concettuale (tradizione o invenzione oulipiana o oplepiana)."@it , "Relates a constraint to a SKOS concept qualifying its conceptual origin (tradition or oulipian or oplepian invention)."@en ;
+        sh:path desmos:constraintOrigin ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:node dsh:InConstraintOriginScheme ;
+        sh:message "Serve esattamente un desmos:constraintOrigin in desmos:ConstraintOriginScheme."@it ,
+                   "Exactly one desmos:constraintOrigin from desmos:ConstraintOriginScheme is required."@en ;
+    ] ;
+
+    sh:property [
+        sh:name "coinvolge operazione"@it , "involves operation"@en ;
+        sh:description "Collega una costrizione letteraria all'operazione procedurale coinvolta per il suo utilizzo."@it , "Relates a literary constraint to the procedural operation involved in its use."@en ;
+        sh:path desmos:involvesOperation ;
+        sh:node dsh:InProceduralOperationScheme ;
+        sh:message "Il valore di desmos:involvesOperation deve appartenere a desmos:ProceduralOperationScheme."@it ,
+                   "desmos:involvesOperation values must belong to desmos:ProceduralOperationScheme."@en ;
+    ] ;
+
+    sh:property [
+        sh:name "nello schema"@it , "in scheme"@en ;
+        sh:description "In DeSMòS, skos:inScheme è utilizzata per indicare lo schema concettuale al quale appartiene un concetto."@it , "In DeSMòS, skos:inScheme is used to indicate the concept scheme to which a concept belongs."@en ;
+        sh:path skos:inScheme ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:in ( desmos:FormalConstraintScheme desmos:SemanticConstraintScheme desmos:VisualConstraintScheme ) ;
+        sh:message "Una costrizione deve appartenere a uno e un solo schema fra Formal/Semantic/VisualConstraintScheme."@it ,
+                   "A constraint must belong to exactly one of Formal/Semantic/VisualConstraintScheme."@en ;
+    ] .
+
+dsh:FormalConstraintShape a sh:NodeShape ;
+    rdfs:label "Costrizione formale"@it , "Formal constraint"@en ;
+    rdfs:comment "Almeno un'unità da FormalUnitScheme; schema SKOS coerente con la classe."@it ,
+                 "At least one unit from FormalUnitScheme; SKOS scheme consistent with the class."@en ;
+    sh:name "Costrizione formale"@it , "Formal constraint"@en ;
+    sh:description "Costrizione che interviene prioritariamente sul significante."@it ,
+                   "Constraint that intervenes primarily on the signifier."@en ;
+    dcterms:source desmos:FormalConstraint ;
+    dsh:layer dsh:LayerC ;
+    sh:targetClass desmos:FormalConstraint ;
+    sh:property [
+        sh:name "vincola unità formale"@it , "constrains formal unit"@en ;
+        sh:description "Collega una costrizione formale all'unità discreta del sistema di scrittura (es. lettera, sillaba, parola) su cui opera la procedura."@it , "Relates a formal constraint to the discrete unit of the writing system (e.g., letter, syllable, word) on which the procedure operates."@en ;
+        sh:path desmos:constrainsFormalUnit ;
+        sh:minCount 1 ;
+        sh:node dsh:InFormalUnitScheme ;
+        sh:message "Una costrizione formale deve indicare almeno un'unità in desmos:FormalUnitScheme."@it ,
+                   "A formal constraint must name at least one unit from desmos:FormalUnitScheme."@en ;
+    ] ;
+    sh:property [
+        sh:name "nello schema"@it , "in scheme"@en ;
+        sh:description "In DeSMòS, skos:inScheme è utilizzata per indicare lo schema concettuale al quale appartiene un concetto."@it , "In DeSMòS, skos:inScheme is used to indicate the concept scheme to which a concept belongs."@en ;
+        sh:path skos:inScheme ;
+        sh:in ( desmos:FormalConstraintScheme desmos:VisualConstraintScheme ) ;
+        sh:message "Classe (FormalConstraint) e schema SKOS non allineati."@it ,
+                   "Class (FormalConstraint) and SKOS scheme are misaligned."@en ;
+    ] .
+
+dsh:VisualConstraintShape a sh:NodeShape ;
+    rdfs:label "Costrizione visiva"@it , "Visual constraint"@en ;
+    rdfs:comment "Deve appartenere a VisualConstraintScheme."@it ,
+                 "Must belong to VisualConstraintScheme."@en ;
+    sh:name "Costrizione visiva"@it , "Visual constraint"@en ;
+    sh:description "Costrizione visiva che interviene sulla disposizione visiva o tipografica del testo, in cui l'impaginazione spaziale di lettere/parole sulla pagina è essa stessa parte della regola."@it ,
+                   "Visual Constraint intervening on the visual or typographic arrangement of the text, where the spatial layout of letters/words on the page is itself part of the rule."@en ;
+    dcterms:source desmos:VisualConstraint ;
+    dsh:layer dsh:LayerC ;
+    sh:targetClass desmos:VisualConstraint ;
+    sh:property [
+        sh:name "nello schema"@it , "in scheme"@en ;
+        sh:description "In DeSMòS, skos:inScheme è utilizzata per indicare lo schema concettuale al quale appartiene un concetto."@it , "In DeSMòS, skos:inScheme is used to indicate the concept scheme to which a concept belongs."@en ;
+        sh:path skos:inScheme ;
+        sh:hasValue desmos:VisualConstraintScheme ;
+        sh:message "Una desmos:VisualConstraint deve stare in desmos:VisualConstraintScheme."@it ,
+                   "A desmos:VisualConstraint must be in desmos:VisualConstraintScheme."@en ;
+    ] .
+
+dsh:SemanticConstraintShape a sh:NodeShape ;
+    rdfs:label "Costrizione semantica"@it , "Semantic constraint"@en ;
+    rdfs:comment "Almeno un'unità da SemanticUnitScheme; deve appartenere a SemanticConstraintScheme."@it ,
+                 "At least one unit from SemanticUnitScheme; must belong to SemanticConstraintScheme."@en ;
+    sh:name "Costrizione semantica"@it , "Semantic constraint"@en ;
+    sh:description "Costrizione che interviene prioritariamente sul significato."@it ,
+                   "Constraint that intervenes primarily on the signified."@en ;
+    dcterms:source desmos:SemanticConstraint ;
+    dsh:layer dsh:LayerC ;
+    sh:targetClass desmos:SemanticConstraint ;
+    sh:property [
+        sh:name "vincola unità semantica"@it , "constrains semantic unit"@en ;
+        sh:description "Collega una costrizione semantica all'unità del piano del contenuto (es. personaggio, spazio, tempo) che viene determinata dal processo generativo."@it , "Relates a semantic constraint to the unit of the content plane (e.g., character, space, time) that is determined by the generative process."@en ;
+        sh:path desmos:constrainsSemanticUnit ;
+        sh:minCount 1 ;
+        sh:node dsh:InSemanticUnitScheme ;
+        sh:message "Una costrizione semantica deve indicare almeno un'unità in desmos:SemanticUnitScheme."@it ,
+                   "A semantic constraint must name at least one unit from desmos:SemanticUnitScheme."@en ;
+    ] ;
+    sh:property [
+        sh:name "nello schema"@it , "in scheme"@en ;
+        sh:description "In DeSMòS, skos:inScheme è utilizzata per indicare lo schema concettuale al quale appartiene un concetto."@it , "In DeSMòS, skos:inScheme is used to indicate the concept scheme to which a concept belongs."@en ;
+        sh:path skos:inScheme ;
+        sh:hasValue desmos:SemanticConstraintScheme ;
+        sh:message "Una desmos:SemanticConstraint deve stare in desmos:SemanticConstraintScheme."@it ,
+                   "A desmos:SemanticConstraint must be in desmos:SemanticConstraintScheme."@en ;
+    ] .
+
+dsh:ConstraintAttestationShape a sh:NodeShape ;
+    rdfs:label "Attestazione della costrizione"@it , "Constraint attestation"@en ;
+    rdfs:comment "Segnale analitico (Info): costrizione mai usata nel corpus, né direttamente né tramite concetti più specifici."@it ,
+                 "Analytical signal (Info): constraint never used in the corpus, neither directly nor through narrower concepts."@en ;
+    dsh:layer dsh:LayerC ;
+    sh:targetClass desmos:LiteraryConstraint ;
+    sh:severity sh:Info ;
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Costrizione mai attestata nel corpus, né direttamente né tramite concetti più specifici."@it ,
+                   "Constraint never attested in the corpus, neither directly nor through narrower concepts."@en ;
+        sh:prefixes dsh: ;
+        sh:select """
+            SELECT $this WHERE {
+                FILTER NOT EXISTS { ?c desmos:usedConstraint|crm:P33_used_specific_technique $this }
+                FILTER NOT EXISTS { $this desmos:isConstraintUsedIn|crm:P33i_was_used_by ?c }
+                FILTER NOT EXISTS {
+                    $this (skos:narrower|^skos:broader)+ ?n .
+                    ?c2 desmos:usedConstraint|crm:P33_used_specific_technique ?n .
+                }
+            }""" ;
+    ] .
+
+# ===== [C] ENTITÀ BIBLIOGRAFICHE (LRMoo) =====
+
+dsh:ExpressionShape a sh:NodeShape ;
+    rdfs:label "F2 Espressione"@it , "F2 Expression"@en ;
+    rdfs:comment "Titolo; una sola creazione; almeno una manifestazione; tipo da uno schema di forme; componenti, frammenti e fonti tipizzati."@it ,
+                 "Title; exactly one creation; at least one manifestation; type from a form scheme; typed components, fragments and sources."@en ;
+    sh:name "F2 Espressione"@it , "F2 Expression"@en ;
+    sh:description "In DeSMòS, F2 Expression è utilizzata per rappresentare la realizzazione testuale di un'opera, sulla quale vengono documentate le costrizioni letterarie e le relazioni con altri testi."@it ,
+                   "In DeSMòS, F2 Expression is used to represent the textual realisation of a work, on which literary constraints and relations to other texts are documented."@en ;
+    dcterms:source lrmoo:F2_Expression ;
+    dsh:layer dsh:LayerC ;
+    sh:targetClass lrmoo:F2_Expression ;
+    sh:nodeKind sh:IRI ;
+
+    sh:property [
+        sh:name "Titolo"@it , "Title"@en ;
+        sh:description "Un nome dato alla risorsa."@it , "A name given to the resource."@en ;
+        sh:path dcterms:title ;
+        sh:minCount 1 ;
+        sh:or ( [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] ) ;
+        sh:message "Ogni F2 deve avere un dcterms:title (xsd:string o rdf:langString)."@it ,
+                   "Each F2 needs a dcterms:title (xsd:string or rdf:langString)."@en ;
+    ] ;
+    sh:property [
+        sh:name "Titolo"@it , "Title"@en ;
+        sh:description "Un nome dato alla risorsa."@it , "A name given to the resource."@en ;
+        sh:path dcterms:title ; sh:maxCount 1 ; sh:severity sh:Warning ;
+        sh:message "Più di un dcterms:title sulla stessa F2."@it , "More than one dcterms:title on the same F2."@en ;
+    ] ;
+
+    sh:property [
+        sh:name "R17i è stata creata da (diretta o inversa)"@it , "R17i was created by (direct or inverse)"@en ;
+        sh:description "In DeSMòS, R17i was created by collega un'espressione testuale all'evento compositivo che l'ha prodotta; è l'inversa di R17 created."@it , "In DeSMòS, R17i was created by relates a textual expression to the compositional event that produced it; it is the inverse of R17 created."@en ;
+        sh:path [ sh:alternativePath ( lrmoo:R17i_was_created_by [ sh:inversePath lrmoo:R17_created ] ) ] ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:message "Ogni F2 deve essere creata da esattamente un lrmoo:F28_Expression_Creation."@it ,
+                   "Each F2 must be created by exactly one lrmoo:F28_Expression_Creation."@en ;
+    ] ;
+
+    sh:property [
+        sh:name "R4i è incarnata in (diretta o inversa)"@it , "R4i is embodied in (direct or inverse)"@en ;
+        sh:description "In DeSMòS, R4i is embodied in collega un'espressione alla manifestazione editoriale o digitale che la incorpora; è l'inversa di R4 embodies."@it , "In DeSMòS, R4i is embodied in relates an expression to the published or digital manifestation that embodies it; it is the inverse of R4 embodies."@en ;
+        sh:path [ sh:alternativePath ( lrmoo:R4i_is_embodied_in [ sh:inversePath lrmoo:R4_embodies ] ) ] ;
+        sh:minCount 1 ;
+        sh:message "Ogni F2 deve essere incorporata in almeno una lrmoo:F3_Manifestation."@it ,
+                   "Each F2 must be embodied in at least one lrmoo:F3_Manifestation."@en ;
+    ] ;
+
+    sh:property [
+        sh:name "P2 ha tipo"@it , "P2 has type"@en ;
+        sh:description "In DeSMòS, P2 has type è utilizzata per classificare le espressioni secondo tipi controllati relativi alla loro forma letteraria o artistica, come prosa, poesia o poesia visiva."@it , "In DeSMòS, P2 has type is used to classify expressions according to controlled types describing their literary or artistic form, such as prose, poetry, or visual poetry."@en ;
+        sh:path crm:P2_has_type ;
+        sh:minCount 1 ;
+        sh:node dsh:InFormScheme ;
+        sh:message "crm:P2_has_type deve puntare a un concetto di LiteraryFormScheme o ArtisticFormScheme."@it ,
+                   "crm:P2_has_type must point to a concept in LiteraryFormScheme or ArtisticFormScheme."@en ;
+    ] ;
+
+    sh:property [ sh:name "P148 ha componente"@it , "P148 has component"@en ; sh:description "In DeSMòS, P148 has component è utilizzata per articolare espressioni e manifestazioni complesse nelle rispettive componenti."@it , "In DeSMòS, P148 has component is used to decompose complex expressions and manifestations into their respective components."@en ; sh:path crm:P148_has_component ; sh:class lrmoo:F2_Expression ;
+        sh:message "Il componente di una F2 deve essere una F2."@it , "A component of an F2 must be an F2."@en ] ;
+    sh:property [ sh:name "R15 ha frammento"@it , "R15 has fragment"@en ; sh:description "In DeSMòS, R15 has fragment è utilizzata per collegare un'espressione alla dichiarazione peritestuale (crm:E33_Linguistic_Object) contenuta nella stessa pubblicazione, che ne costituisce un frammento e documenta l'impiego di una costrizione."@it , "In DeSMòS, R15 has fragment is used to relate an expression to the peritextual statement (crm:E33_Linguistic_Object) contained in the same publication, which constitutes a fragment of it and documents the use of a constraint."@en ; sh:path lrmoo:R15_has_fragment ; sh:class crm:E33_Linguistic_Object ;
+        sh:message "In DeSMòS R15_has_fragment punta a una dichiarazione peritestuale (crm:E33)."@it ,
+                   "In DeSMòS R15_has_fragment points to a peritextual statement (crm:E33)."@en ] ;
+    sh:property [ sh:name "P130 presenta caratteristiche di"@it , "P130 shows features of"@en ; sh:description "In DeSMòS, P130 shows features of è utilizzata tra espressioni per documentare un legame più blando di R76 is derivative of: l'espressione presenta tratti di una fonte (lessicali, onomastici, fraseologici, tematici o narrativi, oppure, per fonti non testuali, di andamento) senza derivarne il contenuto e senza che si instauri una relazione intertestuale INTRO (es. un componimento costruito con i nomi di un repertorio onomastico o modellato sulle indicazioni di movimento e sulla durata di brani musicali)."@it , "In DeSMòS, P130 shows features of is used between expressions to document a looser link than R76 is derivative of: the expression shows features of a source (lexical, onomastic, phraseological, thematic or narrative, or, for non-textual sources, of tempo and pacing) without deriving its content and without establishing an INTRO intertextual relation (e.g., a poem built from the names in an onomastic repertory or modelled on the tempo markings and duration of musical pieces)."@en ; sh:path crm:P130_shows_features_of ; sh:class lrmoo:F2_Expression ] .
+
+dsh:ExpressionWorkOrComponentShape a sh:NodeShape ;
+    rdfs:label "F2: opera o componente"@it , "F2: work or component"@en ;
+    rdfs:comment "Ogni espressione realizza un F1 oppure è componente di un'altra F2."@it ,
+                 "Each expression realises an F1 or is a component of another F2."@en ;
+    dsh:layer dsh:LayerC ;
+    sh:targetClass lrmoo:F2_Expression ;
+    sh:or (
+        [ sh:path [ sh:alternativePath ( lrmoo:R3i_realises [ sh:inversePath lrmoo:R3_is_realised_in ] ) ] ; sh:minCount 1 ]
+        [ sh:path [ sh:alternativePath ( crm:P148i_is_component_of [ sh:inversePath crm:P148_has_component ] ) ] ; sh:minCount 1 ]
+    ) ;
+    sh:message "Una F2 deve realizzare un lrmoo:F1_Work o essere componente di un'altra F2."@it ,
+               "An F2 must realise an lrmoo:F1_Work or be a component of another F2."@en .
+
+dsh:ExpressionCreationShape a sh:NodeShape ;
+    rdfs:label "F28 Creazione dell'espressione"@it , "F28 Expression Creation"@en ;
+    rdfs:comment "Una sola F2 creata, almeno un autore, data xsd:gYear; costrizione assente solo per le fonti; coerenza cronologica con la pubblicazione."@it ,
+                 "Exactly one created F2, at least one author, xsd:gYear date; no constraint only for sources; chronological consistency with publication."@en ;
+    sh:name "F28 Creazione dell'espressione"@it , "F28 Expression Creation"@en ;
+    sh:description "In DeSMòS, F28 Expression Creation è utilizzata per rappresentare l'evento compositivo che produce un'espressione testuale e nel quale può essere impiegata una costrizione letteraria."@it ,
+                   "In DeSMòS, F28 Expression Creation is used to represent the compositional event that produces a textual expression and in which a literary constraint may be employed."@en ;
+    dcterms:source lrmoo:F28_Expression_Creation ;
+    dsh:layer dsh:LayerC ;
+    sh:targetClass lrmoo:F28_Expression_Creation ;
+    sh:nodeKind sh:IRI ;
+    sh:property [
+        sh:name "R17 ha creato"@it , "R17 created"@en ;
+        sh:description "In DeSMòS, R17 created collega un evento di creazione dell'espressione all'espressione testuale prodotta da tale evento."@it , "In DeSMòS, R17 created relates an expression creation event to the textual expression produced by that event."@en ;
+        sh:path lrmoo:R17_created ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:message "Un F28 deve creare esattamente una F2."@it , "An F28 must create exactly one F2."@en ;
+    ] ;
+    sh:property [
+        sh:name "P14 eseguito da"@it , "P14 carried out by"@en ;
+        sh:description "In DeSMòS, P14 carried out by è utilizzata per collegare un evento di creazione dell'espressione all'autore o agli autori che lo hanno realizzato."@it , "In DeSMòS, P14 carried out by is used to relate an expression creation event to the author or authors who carried it out."@en ;
+        sh:path crm:P14_carried_out_by ;
+        sh:minCount 1 ;
+        sh:message "Un F28 deve avere almeno un autore (crm:P14_carried_out_by)."@it ,
+                   "An F28 must have at least one author (crm:P14_carried_out_by)."@en ;
+    ] ;
+    sh:property [
+        sh:name "creato"@it , "created"@en ;
+        sh:description "In DeSMòS, dcterms:created è utilizzata per registrare la data associata all'evento di creazione di un'espressione."@it , "In DeSMòS, dcterms:created is used to record the date associated with an expression creation event."@en ;
+        sh:path dcterms:created ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:gYear ;
+        sh:pattern "^-?[0-9]{4,}(Z|[+-][0-9]{2}:[0-9]{2})?$" ;
+        sh:message "dcterms:created deve essere un unico xsd:gYear valido."@it ,
+                   "dcterms:created must be a single valid xsd:gYear."@en ;
+    ] ;
+    sh:property [
+        sh:name "creato"@it , "created"@en ;
+        sh:description "In DeSMòS, dcterms:created è utilizzata per registrare la data associata all'evento di creazione di un'espressione."@it , "In DeSMòS, dcterms:created is used to record the date associated with an expression creation event."@en ;
+        sh:path dcterms:created ; sh:minCount 1 ; sh:severity sh:Warning ;
+        sh:message "F28 senza data di creazione."@it , "F28 without creation date."@en ;
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "F28 senza desmos:usedConstraint la cui F2 non è fonte di alcuna riscrittura (R76, P130, intro:R12)."@it ,
+                   "F28 without desmos:usedConstraint whose F2 is not the source of any rewriting (R76, P130, intro:R12)."@en ;
+        sh:prefixes dsh: ;
+        sh:select """
+            SELECT $this ?value WHERE {
+                $this lrmoo:R17_created ?value .
+                FILTER NOT EXISTS { $this desmos:usedConstraint|crm:P33_used_specific_technique ?c }
+                FILTER NOT EXISTS { ?x lrmoo:R76_is_derivative_of|crm:P130_shows_features_of ?value }
+                FILTER NOT EXISTS { ?value lrmoo:R76i_has_derivative|crm:P130i_features_are_also_found_on ?y }
+                FILTER NOT EXISTS { ?r intro:R12_hasReferredToEntity ?value }
+            }""" ;
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "dcterms:created dell'F28 posteriore al dcterms:issued della manifestazione (o del volume che la contiene)."@it ,
+                   "F28 dcterms:created is later than the dcterms:issued of the manifestation (or its containing volume)."@en ;
+        sh:prefixes dsh: ;
+        sh:select """
+            SELECT $this ?value WHERE {
+                $this lrmoo:R17_created ?x ; dcterms:created ?d .
+                ?x lrmoo:R4i_is_embodied_in|^lrmoo:R4_embodies ?m .
+                ?m (crm:P148i_is_component_of|^crm:P148_has_component)? ?mm .
+                ?mm dcterms:issued ?value .
+                FILTER ( xsd:integer(SUBSTR(STR(?d), 1, 4)) > xsd:integer(SUBSTR(STR(?value), 1, 4)) )
+            }""" ;
+    ] .
+
+dsh:WorkShape a sh:NodeShape ;
+    rdfs:label "F1 Opera"@it , "F1 Work"@en ;
+    rdfs:comment "Titolo e almeno un'espressione che la realizza."@it ,
+                 "Title and at least one realising expression."@en ;
+    sh:name "F1 Opera"@it , "F1 Work"@en ;
+    sh:description "In DeSMòS, F1 Work è utilizzata per rappresentare l'opera come entità astratta, distinta dalle espressioni testuali attraverso cui essa viene realizzata."@it ,
+                   "In DeSMòS, F1 Work is used to represent the work as an abstract entity, distinct from the textual expressions through which it is realised."@en ;
+    dcterms:source lrmoo:F1_Work ;
+    dsh:layer dsh:LayerC ;
+    sh:targetClass lrmoo:F1_Work ;
+    sh:nodeKind sh:IRI ;
+    sh:property [ sh:name "Titolo"@it , "Title"@en ; sh:description "Un nome dato alla risorsa."@it , "A name given to the resource."@en ; sh:path dcterms:title ; sh:minCount 1 ;
+        sh:message "Ogni F1 deve avere un dcterms:title."@it , "Each F1 needs a dcterms:title."@en ] ;
+    sh:property [
+        sh:name "R3 è realizzato in (diretta o inversa)"@it , "R3 is realised in (direct or inverse)"@en ;
+        sh:description "In DeSMòS, R3 is realised in collega un'opera astratta all'espressione testuale attraverso cui essa è realizzata."@it , "In DeSMòS, R3 is realised in relates an abstract work to the textual expression through which it is realised."@en ;
+        sh:path [ sh:alternativePath ( lrmoo:R3_is_realised_in [ sh:inversePath lrmoo:R3i_realises ] ) ] ;
+        sh:minCount 1 ;
+        sh:message "Un F1 deve essere realizzato in almeno una F2."@it , "An F1 must be realised in at least one F2."@en ;
+    ] .
+
+dsh:ManifestationShape a sh:NodeShape ;
+    rdfs:label "F3 Manifestazione"@it , "F3 Manifestation"@en ;
+    rdfs:comment "Titolo, data e paginazione ben tipizzate; incorpora almeno una F2, direttamente o tramite i componenti."@it ,
+                 "Well-typed title, date and pagination; embodies at least one F2, directly or through its components."@en ;
+    sh:name "F3 Manifestazione"@it , "F3 Manifestation"@en ;
+    sh:description "In DeSMòS, F3 Manifestation è utilizzata per rappresentare la manifestazione editoriale o digitale che incorpora un'espressione e alla quale sono associate informazioni relative alla pubblicazione e alla collocazione del testo."@it ,
+                   "In DeSMòS, F3 Manifestation is used to represent the published or digital manifestation embodying an expression and carrying information about its publication and textual location."@en ;
+    dcterms:source lrmoo:F3_Manifestation ;
+    dsh:layer dsh:LayerC ;
+    sh:targetClass lrmoo:F3_Manifestation ;
+    sh:nodeKind sh:IRI ;
+    sh:property [ sh:name "Titolo"@it , "Title"@en ; sh:description "Un nome dato alla risorsa."@it , "A name given to the resource."@en ; sh:path dcterms:title ; sh:minCount 1 ;
+        sh:message "Ogni F3 deve avere un dcterms:title."@it , "Each F3 needs a dcterms:title."@en ] ;
+    sh:property [ sh:name "data di emissione"@it , "date issued"@en ; sh:description "In DeSMòS, dcterms:issued è utilizzata per registrare la data di pubblicazione o emissione di una manifestazione."@it , "In DeSMòS, dcterms:issued is used to record the publication or issuance date of a manifestation."@en ; sh:path dcterms:issued ; sh:maxCount 1 ; sh:datatype xsd:gYear ;
+        sh:pattern "^-?[0-9]{4,}(Z|[+-][0-9]{2}:[0-9]{2})?$" ;
+        sh:message "dcterms:issued deve essere un unico xsd:gYear valido."@it , "dcterms:issued must be a single valid xsd:gYear."@en ] ;
+    sh:property [ sh:name "paginazione"@it , "pagination"@en ; sh:description "In DeSMòS, schema:pagination è utilizzata per registrare la pagina o l'intervallo di pagine di una F3_Manifestation."@it , "In DeSMòS, schema:pagination is used to record the page or page range of a F3_Manifestation."@en ; sh:path schema:pagination ; sh:maxCount 1 ; sh:datatype xsd:string ;
+        sh:message "schema:pagination deve essere un'unica xsd:string."@it , "schema:pagination must be a single xsd:string."@en ] ;
+    sh:property [ sh:name "P148 ha componente"@it , "P148 has component"@en ; sh:description "In DeSMòS, P148 has component è utilizzata per articolare espressioni e manifestazioni complesse nelle rispettive componenti."@it , "In DeSMòS, P148 has component is used to decompose complex expressions and manifestations into their respective components."@en ; sh:path crm:P148_has_component ; sh:class lrmoo:F3_Manifestation ] ;
+    sh:property [ sh:name "P148i è componente di"@it , "P148i is component of"@en ; sh:description "In DeSMòS, P148i is component of collega una componente all'espressione o alla manifestazione complessa di cui fa parte; è l'inversa di P148 has component."@it , "In DeSMòS, P148i is component of relates a component to the complex expression or manifestation of which it forms part; it is the inverse of P148 has component."@en ; sh:path crm:P148i_is_component_of ; sh:class lrmoo:F3_Manifestation ] ;
+    sh:property [
+        sh:name "R4 incarna (diretta o inversa)"@it , "R4 embodies (direct or inverse)"@en ;
+        sh:description "In DeSMòS, R4 embodies collega una manifestazione editoriale o digitale all'espressione che essa incorpora."@it , "In DeSMòS, R4 embodies relates a published or digital manifestation to the expression it embodies."@en ;
+        sh:path [ sh:alternativePath (
+                    lrmoo:R4_embodies
+                    [ sh:inversePath lrmoo:R4i_is_embodied_in ]
+                    ( crm:P148_has_component lrmoo:R4_embodies )
+                    ( crm:P148_has_component [ sh:inversePath lrmoo:R4i_is_embodied_in ] )
+                    ( [ sh:inversePath crm:P148i_is_component_of ] lrmoo:R4_embodies )
+                    ( [ sh:inversePath crm:P148i_is_component_of ] [ sh:inversePath lrmoo:R4i_is_embodied_in ] )
+                ) ] ;
+        sh:minCount 1 ;
+        sh:severity sh:Warning ;
+        sh:message "F3 che non incorpora alcuna F2, né direttamente né tramite i componenti."@it ,
+                   "F3 embodying no F2, neither directly nor through its components."@en ;
+    ] ;
+    sh:property [ sh:name "Titolo"@it , "Title"@en ; sh:description "Un nome dato alla risorsa."@it , "A name given to the resource."@en ; sh:path dcterms:title ; sh:maxCount 1 ; sh:severity sh:Warning ] .
+
+dsh:ManifestationPaginationShape a sh:NodeShape ;
+    rdfs:label "F3: paginazione dei componenti"@it , "F3: pagination of components"@en ;
+    rdfs:comment "Una manifestazione che è parte di un volume deve avere schema:pagination."@it ,
+                 "A manifestation that is part of a volume must have schema:pagination."@en ;
+    dsh:layer dsh:LayerC ;
+    sh:targetClass lrmoo:F3_Manifestation ;
+    sh:or (
+        [ sh:path [ sh:alternativePath ( crm:P148i_is_component_of [ sh:inversePath crm:P148_has_component ] ) ] ; sh:maxCount 0 ]
+        [ sh:path schema:pagination ; sh:minCount 1 ]
+    ) ;
+    sh:message "Una F3 componente di un volume deve avere schema:pagination."@it ,
+               "An F3 that is a component of a volume must have schema:pagination."@en .
+
+# ===== [C] EVIDENZE (E33, TextualFeature) =====
+
+dsh:LinguisticObjectShape a sh:NodeShape ;
+    rdfs:label "E33 Dichiarazione paratestuale"@it , "E33 Paratextual statement"@en ;
+    rdfs:comment "Si riferisce a una sola F2, verte su una costrizione, è attribuita e annotata; coerenza con il frammento e con le costrizioni usate."@it ,
+                 "Refers to exactly one F2, is about a constraint, is attributed and annotated; consistent with fragment and used constraints."@en ;
+    sh:name "E33 Oggetto Linguistico"@it , "E33 Linguistic Object"@en ;
+    sh:description "In DeSMòS, E33 Linguistic Object è utilizzata per identificare passaggi paratestuali (epitestuali o peritestuali) nei quali l'autore o il curatore del volume dichiara l'utilizzo di una costrizione letteraria."@it ,
+                   "In DeSMòS, E33 Linguistic Object is used to identify paratextual passages (epitextual or peritextual) in which the author or editor of the volume declares the use of a literary constraint."@en ;
+    dcterms:source crm:E33_Linguistic_Object ;
+    dsh:layer dsh:LayerC ;
+    sh:targetClass crm:E33_Linguistic_Object ;
+    sh:nodeKind sh:IRI ;
+    sh:property [ sh:name "P67 si riferisce a"@it , "P67 refers to"@en ; sh:description "In DeSMòS, P67 refers to è utilizzata per collegare un oggetto linguistico all'espressione testuale alla quale esso fa riferimento."@it , "In DeSMòS, P67 refers to is used to relate a linguistic object to the textual expression to which it refers."@en ; sh:path crm:P67_refers_to ; sh:minCount 1 ; sh:maxCount 1 ; sh:class lrmoo:F2_Expression ;
+        sh:message "Una dichiarazione E33 deve riferirsi a esattamente una F2 (crm:P67_refers_to)."@it ,
+                   "An E33 statement must refer to exactly one F2 (crm:P67_refers_to)."@en ] ;
+    sh:property [ sh:name "P129 verte su"@it , "P129 is about"@en ; sh:description "In DeSMòS, P129 is about è utilizzata per documentare che un oggetto linguistico ha come oggetto tematico una costrizione letteraria."@it , "In DeSMòS, P129 is about is used to document that a linguistic object has a literary constraint as its subject matter."@en ; sh:path crm:P129_is_about ; sh:minCount 1 ; sh:class desmos:LiteraryConstraint ;
+        sh:message "Una dichiarazione E33 deve vertere su almeno una desmos:LiteraryConstraint (crm:P129_is_about)."@it ,
+                   "An E33 statement must be about at least one desmos:LiteraryConstraint (crm:P129_is_about)."@en ] ;
+    sh:property [ sh:name "è stato attribuito a"@it , "was attributed to"@en ; sh:description "In DeSMòS, prov:wasAttributedTo è utilizzata per attribuire un oggetto linguistico, in particolare una dichiarazione relativa a una costrizione, all'agente che ne è responsabile."@it , "In DeSMòS, prov:wasAttributedTo is used to attribute a linguistic object, particularly a declaration concerning a constraint, to the agent responsible for it."@en ; sh:path prov:wasAttributedTo ; sh:minCount 1 ; sh:class crm:E39_Actor ;
+        sh:message "Una dichiarazione E33 deve essere attribuita a un crm:E39_Actor (prov:wasAttributedTo)."@it ,
+                   "An E33 statement must be attributed to a crm:E39_Actor (prov:wasAttributedTo)."@en ] ;
+    sh:property [ sh:name "ha nota"@it , "has note"@en ; sh:description "In DeSMòS, P3 has note è utilizzata per associare a un oggetto linguistico o a una caratteristica testuale una descrizione testuale aggiuntiva espressa come letterale."@it , "In DeSMòS, P3 has note is used to associate a linguistic object or textual feature with an additional textual description expressed as a literal."@en ; sh:path crm:P3_has_note ; sh:minCount 1 ; sh:datatype rdf:langString ;
+        sh:message "crm:P3_has_note obbligatoria e con tag di lingua."@it , "crm:P3_has_note is required and language-tagged."@en ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "E33 frammento di X (R15) che si riferisce a una F2 diversa da X e dai suoi componenti."@it ,
+                   "E33 fragment of X (R15) refers to an F2 other than X or its components."@en ;
+        sh:prefixes dsh: ;
+        sh:select """
+            SELECT $this ?value WHERE {
+                ?x lrmoo:R15_has_fragment|^lrmoo:R15i_is_fragment_of $this .
+                $this crm:P67_refers_to ?value .
+                FILTER ( ?value != ?x )
+                FILTER NOT EXISTS { ?x crm:P148_has_component|^crm:P148i_is_component_of ?value }
+            }""" ;
+    ] ;
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "La dichiarazione verte su una costrizione non registrata come usata nella creazione della F2 a cui si riferisce."@it ,
+                   "The statement is about a constraint not recorded as used in the creation of the F2 it refers to."@en ;
+        sh:prefixes dsh: ;
+        sh:select """
+            SELECT $this ?value WHERE {
+                $this crm:P129_is_about ?value ; crm:P67_refers_to ?x .
+                FILTER NOT EXISTS {
+                    ?cr lrmoo:R17_created|^lrmoo:R17i_was_created_by ?x .
+                    ?cr desmos:usedConstraint|crm:P33_used_specific_technique|^desmos:isConstraintUsedIn ?value .
+                }
+            }""" ;
+    ] .
+
+dsh:TextualFeatureShape a sh:NodeShape ;
+    rdfs:label "Caratteristica testuale"@it , "Textual feature"@en ;
+    rdfs:comment "Appartiene a una sola F2, rivela almeno una costrizione usata nella sua creazione, è annotata."@it ,
+                 "Belongs to exactly one F2, reveals at least one constraint used in its creation, is annotated."@en ;
+    sh:name "Caratteristica testuale"@it , "Textual feature"@en ;
+    sh:description "Caratteristica osservabile dell’espressione che può rendere leggibile una costrizione. In DeSMòS è intesa come evidenza intratestuale: una traccia testuale che supporta l’identificazione della costrizione, senza implicare di per sé sufficienza o necessità."@it ,
+                   "Observable feature of an expression that may make a constraint legible. In DeSMòS it is treated as intratextual evidence: a textual trace supporting the identification of a constraint, without implying necessity or sufficiency by itself."@en ;
+    dcterms:source desmos:TextualFeature ;
+    dsh:layer dsh:LayerC ;
+    sh:targetClass desmos:TextualFeature ;
+    sh:nodeKind sh:IRI ;
+    sh:property [
+        sh:name "è caratteristica di (diretta o inversa)"@it , "is feature of (direct or inverse)"@en ;
+        sh:description "Relazione inversa di hasFeature. Collega un'evidenza testuale della costrizione (TextualFeature) all'espressione testuale (F2) in cui è manifesta."@it , "Inverse relationship of hasFeature. Relates a piece of textual evidence of the constraint (TextualFeature) to the textual expression (F2) in which it is manifest."@en ;
+        sh:path [ sh:alternativePath ( desmos:isFeatureOf [ sh:inversePath desmos:hasFeature ] ) ] ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:message "Una TextualFeature deve appartenere a esattamente una F2."@it ,
+                   "A TextualFeature must belong to exactly one F2."@en ;
+    ] ;
+    sh:property [
+        sh:name "rivela costrizione (diretta o inversa)"@it , "reveals constraint (direct or inverse)"@en ;
+        sh:description "Collega una caratteristica testuale alla costrizione letteraria che essa rende identificabile."@it , "Relates a textual feature to the LiteraryConstraint it makes identifiable."@en ;
+        sh:path [ sh:alternativePath ( desmos:revealsConstraint [ sh:inversePath desmos:isRevealedBy ] ) ] ;
+        sh:minCount 1 ;
+        sh:message "Una TextualFeature deve rivelare almeno una costrizione."@it ,
+                   "A TextualFeature must reveal at least one constraint."@en ;
+    ] ;
+    sh:property [ sh:name "ha nota"@it , "has note"@en ; sh:description "In DeSMòS, P3 has note è utilizzata per associare a un oggetto linguistico o a una caratteristica testuale una descrizione testuale aggiuntiva espressa come letterale."@it , "In DeSMòS, P3 has note is used to associate a linguistic object or textual feature with an additional textual description expressed as a literal."@en ; sh:path crm:P3_has_note ; sh:minCount 1 ; sh:datatype rdf:langString ;
+        sh:message "crm:P3_has_note obbligatoria e con tag di lingua."@it , "crm:P3_has_note is required and language-tagged."@en ] ;
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "La TextualFeature rivela una costrizione non registrata come usata nella creazione della sua F2."@it ,
+                   "The TextualFeature reveals a constraint not recorded as used in the creation of its F2."@en ;
+        sh:prefixes dsh: ;
+        sh:select """
+            SELECT $this ?value WHERE {
+                $this desmos:revealsConstraint|^desmos:isRevealedBy ?value ;
+                      desmos:isFeatureOf|^desmos:hasFeature ?x .
+                FILTER NOT EXISTS {
+                    ?cr lrmoo:R17_created|^lrmoo:R17i_was_created_by ?x .
+                    ?cr desmos:usedConstraint|crm:P33_used_specific_technique|^desmos:isConstraintUsedIn ?value .
+                }
+            }""" ;
+    ] .
+
+# ===== [C] INTERTESTUALITÀ (INTRO) =====
+
+dsh:IntertextualRelationShape a sh:NodeShape ;
+    rdfs:label "INT31 Relazione intertestuale"@it , "INT31 Intertextual relation"@en ;
+    rdfs:comment "Un ipertesto (R13), almeno un ipotesto (R12), entrambi F2 o passaggi; tipo da INT11."@it ,
+                 "One hypertext (R13), at least one hypotext (R12), both F2 or passages; type from INT11."@en ;
+    sh:name "INT31 Relazione Intertestuale"@it , "INT31 Intertextual Relation"@en ;
+    sh:description "In DeSMòS, INT31 Intertextual Relation è utilizzata per rappresentare come entità autonoma una relazione intertestuale tra testi o loro passaggi, specificandone le entità coinvolte e la tipologia."@it ,
+                   "In DeSMòS, INT31 Intertextual Relation is used to represent an intertextual relation between texts or their passages as an independent entity, specifying the entities involved and the relation type."@en ;
+    dcterms:source intro:INT31_IntertextualRelation ;
+    dsh:layer dsh:LayerC ;
+    sh:targetClass intro:INT31_IntertextualRelation ;
+    sh:nodeKind sh:IRI ;
+    sh:property [
+        sh:name "R13 ha entità referente"@it , "R13 has referring entity"@en ;
+        sh:description "In DeSMòS, questa proprietà identifica l'entità ipertestuale coinvolta in una relazione intertestuale. Può fare riferimento a un lrmoo:F2_Expression quando la relazione è stabilita a livello dell'intero testo, o a un intro:INT21_TextPassage quando la relazione può essere localizzata in una porzione specifica dell'ipertesto."@it , "In DeSMòS, this property identifies the hypertextual entity involved in an intertextual relation. It may refer to an lrmoo:F2_Expression when the relation is established at the level of the text as a whole, or to an intro:INT21_TextPassage when the relation can be localized to a specific portion of the hypertext."@en ;
+        sh:path intro:R13_hasReferringEntity ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:or ( [ sh:class lrmoo:F2_Expression ] [ sh:class intro:INT21_TextPassage ] ) ;
+        sh:message "Serve esattamente un ipertesto (R13), F2 o INT21_TextPassage."@it ,
+                   "Exactly one hypertext (R13), F2 or INT21_TextPassage, is required."@en ;
+    ] ;
+    sh:property [
+        sh:name "R12 ha entità a cui si riferisce"@it , "R12 has referred to entity"@en ;
+        sh:description "In DeSMòS, questa proprietà identifica l'entità ipotestuale coinvolta in una relazione intertestuale. Può fare riferimento a un lrmoo:F2_Expression quando la relazione è stabilita a livello dell'intero testo, o a un intro:INT21_TextPassage quando la relazione può essere localizzata in una porzione specifica dell'ipotesto."@it , "In DeSMòS, this property identifies the hypotextual entity involved in an intertextual relation. It may refer to an lrmoo:F2_Expression when the relation is established at the level of the text as a whole, or to an intro:INT21_TextPassage when the relation can be localized to a specific portion of the hypotext."@en ;
+        sh:path intro:R12_hasReferredToEntity ;
+        sh:minCount 1 ;
+        sh:or ( [ sh:class lrmoo:F2_Expression ] [ sh:class intro:INT21_TextPassage ] ) ;
+        sh:message "Serve almeno un ipotesto (R12), F2 o INT21_TextPassage."@it ,
+                   "At least one hypotext (R12), F2 or INT21_TextPassage, is required."@en ;
+    ] ;
+    sh:property [
+        sh:name "R19 ha tipo"@it , "R19 has type"@en ;
+        sh:description "In DeSMòS, R19 has type è utilizzata per qualificare una relazione intertestuale mediante un tipo controllato, come l'ipertestualità."@it , "In DeSMòS, R19 has type is used to qualify an intertextual relation with a controlled relation type, such as hypertextuality."@en ;
+        sh:path intro:R19_hasType ;
+        sh:minCount 1 ;
+        sh:class intro:INT11_TypeOfInterrelation ;
+        sh:message "La relazione deve essere tipizzata (intro:R19_hasType → INT11, es. desmos:hypertextuality)."@it ,
+                   "The relation must be typed (intro:R19_hasType → INT11, e.g. desmos:hypertextuality)."@en ;
+    ] ;
+    sh:property [ sh:name "R19 ha tipo"@it , "R19 has type"@en ; sh:description "In DeSMòS, R19 has type è utilizzata per qualificare una relazione intertestuale mediante un tipo controllato, come l'ipertestualità."@it , "In DeSMòS, R19 has type is used to qualify an intertextual relation with a controlled relation type, such as hypertextuality."@en ; sh:path intro:R19_hasType ; sh:maxCount 1 ; sh:severity sh:Warning ] .
+
+dsh:IntertextualDerivationShape a sh:NodeShape ;
+    rdfs:label "INT31 ↔ R76"@it , "INT31 ↔ R76"@en ;
+    rdfs:comment "Allineamento INTRO/LRMoo: ogni relazione ipertestuale ha il corrispondente R76 fra le espressioni."@it ,
+                 "INTRO/LRMoo alignment: each hypertextual relation has the corresponding R76 between the expressions."@en ;
+    dsh:layer dsh:LayerC ;
+    sh:targetClass intro:INT31_IntertextualRelation ;
+    sh:severity sh:Warning ;
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Relazione INT31 senza il corrispondente lrmoo:R76_is_derivative_of fra le espressioni coinvolte."@it ,
+                   "INT31 relation without the corresponding lrmoo:R76_is_derivative_of between the expressions involved."@en ;
+        sh:prefixes dsh: ;
+        sh:select """
+            SELECT $this ?value WHERE {
+                $this intro:R13_hasReferringEntity/(intro:R30i_isTextPassageOf|^intro:R30_hasTextPassage)? ?a ;
+                      intro:R12_hasReferredToEntity/(intro:R30i_isTextPassageOf|^intro:R30_hasTextPassage)? ?value .
+                ?a a lrmoo:F2_Expression . ?value a lrmoo:F2_Expression .
+                FILTER NOT EXISTS {
+                    ?a (crm:P148_has_component|^crm:P148_has_component)? ?a2 .
+                    ?a2 lrmoo:R76_is_derivative_of|^lrmoo:R76i_has_derivative ?value .
+                }
+            }""" ;
+    ] .
+
+dsh:TextPassageShape a sh:NodeShape ;
+    rdfs:label "INT21 Passaggio testuale"@it , "INT21 Text Passage"@en ;
+    rdfs:comment "Appartiene a una sola F2 e ha una sola formulazione testuale."@it ,
+                 "Belongs to exactly one F2 and has exactly one wording."@en ;
+    sh:name "INT21 Passaggio Testuale"@it , "INT21 Text Passage"@en ;
+    sh:description "In DeSMòS, INT21 Text Passage è utilizzata per rappresentare una porzione testuale identificabile di un'espressione, in particolare quando è necessario documentare i passaggi coinvolti in una relazione intertestuale."@it ,
+                   "In DeSMòS, INT21 Text Passage is used to represent an identifiable textual portion of an expression, particularly when documenting passages involved in an intertextual relation."@en ;
+    dcterms:source intro:INT21_TextPassage ;
+    dsh:layer dsh:LayerC ;
+    sh:targetClass intro:INT21_TextPassage ;
+    sh:nodeKind sh:IRI ;
+    sh:property [
+        sh:name "R30i è passaggio testuale di (diretta o inversa)"@it , "R30i is text passage of (direct or inverse)"@en ;
+        sh:description "In DeSMòS, R30i is text passage of collega un passaggio testuale al testo dal quale è tratto; è l'inversa di R30 has text passage."@it , "In DeSMòS, R30i is text passage of relates a textual passage to the text from which it is taken; it is the inverse of R30 has text passage."@en ;
+        sh:path [ sh:alternativePath ( intro:R30i_isTextPassageOf [ sh:inversePath intro:R30_hasTextPassage ] ) ] ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:class lrmoo:F2_Expression ;
+        sh:message "Un passaggio deve appartenere a esattamente una F2."@it ,
+                   "A passage must belong to exactly one F2."@en ;
+    ] ;
+    sh:property [
+        sh:name "R44 ha formulazione"@it , "R44 has wording"@en ;
+        sh:description "In DeSMòS, R44 has wording è utilizzata per registrare come stringa la formulazione testuale esatta di un passaggio identificato mediante INT21 Text Passage."@it , "In DeSMòS, R44 has wording is used to record as a string the exact textual wording of a passage identified through INT21 Text Passage."@en ;
+        sh:path intro:R44_hasWording ;
+        sh:minCount 1 ; sh:maxCount 1 ;
+        sh:or ( [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] ) ;
+        sh:message "Un passaggio deve avere esattamente una intro:R44_hasWording testuale."@it ,
+                   "A passage must have exactly one textual intro:R44_hasWording."@en ;
+    ] .
+
+dsh:DerivationShape a sh:NodeShape ;
+    rdfs:label "R76 ↔ INT31"@it , "R76 ↔ INT31"@en ;
+    rdfs:comment "Segnale analitico (Info): derivazione R76 senza relazione intertestuale che la qualifichi."@it ,
+                 "Analytical signal (Info): R76 derivation without a qualifying intertextual relation."@en ;
+    dsh:layer dsh:LayerC ;
+    sh:targetSubjectsOf lrmoo:R76_is_derivative_of ;
+    sh:severity sh:Info ;
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "R76 senza intro:INT31_IntertextualRelation che la qualifichi."@it ,
+                   "R76 without an intro:INT31_IntertextualRelation qualifying it."@en ;
+        sh:prefixes dsh: ;
+        sh:select """
+            SELECT $this ?value WHERE {
+                $this lrmoo:R76_is_derivative_of ?value .
+                FILTER NOT EXISTS {
+                    ?r intro:R13_hasReferringEntity/(intro:R30i_isTextPassageOf|^intro:R30_hasTextPassage)? ?a ;
+                       intro:R12_hasReferredToEntity/(intro:R30i_isTextPassageOf|^intro:R30_hasTextPassage)? ?value .
+                    ?a (crm:P148_has_component|^crm:P148_has_component)? $this .
+                }
+            }""" ;
+    ] .
+
+# ===== [C] ATTORI =====
+
+dsh:ActorShape a sh:NodeShape ;
+    rdfs:label "E39 Attore"@it , "E39 Actor"@en ;
+    rdfs:comment "Etichetta obbligatoria; collegamenti esterni come IRI; almeno un authority file atteso."@it ,
+                 "Mandatory label; external links as IRIs; at least one authority-file link expected."@en ;
+    sh:name "E39 Attore"@it , "E39 Actor"@en ;
+    sh:description "In DeSMòS, E39 Actor è utilizzata per rappresentare autori, curatori e soggetti collettivi coinvolti nella creazione e nella documentazione delle espressioni testuali."@it ,
+                   "In DeSMòS, E39 Actor is used to represent authors, editors, and collective agents involved in the creation and documentation of textual expressions."@en ;
+    dcterms:source crm:E39_Actor ;
+    dsh:layer dsh:LayerC ;
+    sh:targetClass crm:E39_Actor ;
+    sh:nodeKind sh:IRI ;
+    sh:property [ sh:name "Etichetta"@it , "Label"@en ; sh:description "Un nome leggibile per l'entità."@it , "A human-readable name for the entity."@en ; sh:path rdfs:label ; sh:minCount 1 ;
+        sh:message "Ogni attore deve avere un rdfs:label."@it , "Each actor needs an rdfs:label."@en ] ;
+    sh:property [ sh:name "stesso individuo (owl:sameAs)"@it , "same individual (owl:sameAs)"@en ; sh:path owl:sameAs ; sh:nodeKind sh:IRI ] ;
+    sh:property [ sh:name "Vedi anche"@it , "See also"@en ; sh:description "Indica una risorsa esterna che può fornire informazioni supplementari sulla risorsa descritta."@it , "Used to indicate a resource that might provide additional information about the subject resource."@en ; sh:path rdfs:seeAlso ; sh:nodeKind sh:IRI ] ;
+    sh:property [
+        sh:name "collegamento ad authority file (owl:sameAs o rdfs:seeAlso)"@it , "authority-file link (owl:sameAs or rdfs:seeAlso)"@en ;
+        sh:path [ sh:alternativePath ( owl:sameAs rdfs:seeAlso ) ] ;
+        sh:minCount 1 ;
+        sh:severity sh:Warning ;
+        sh:message "Attore senza collegamento a un authority file (owl:sameAs/rdfs:seeAlso: VIAF, SBN, BnF)."@it ,
+                   "Actor without an authority-file link (owl:sameAs/rdfs:seeAlso: VIAF, SBN, BnF)."@en ;
+    ] .
+
+dsh:ActorProvShape a sh:NodeShape ;
+    rdfs:label "E39 Attore come prov:Agent"@it , "E39 Actor as prov:Agent"@en ;
+    rdfs:comment "Doppia tipizzazione CRM/PROV richiesta da prov:wasAttributedTo."@it ,
+                 "CRM/PROV double typing required by prov:wasAttributedTo."@en ;
+    dsh:layer dsh:LayerC ;
+    sh:targetClass crm:E39_Actor ;
+    sh:class prov:Agent ;
+    sh:message "Un crm:E39_Actor deve essere anche prov:Agent."@it , "A crm:E39_Actor must also be a prov:Agent."@en .
+
+# ===== [C] VOCABOLARI SKOS =====
+
+dsh:ConceptShape a sh:NodeShape ;
+    rdfs:label "Concetto SKOS"@it , "SKOS concept"@en ;
+    rdfs:comment "prefLabel it/en unica per lingua (S14), altLabel ≠ prefLabel (S13), related ≠ broader (S27), schema obbligatorio, gerarchia aciclica e interna allo schema."@it ,
+                 "Unique it/en prefLabel per language (S14), altLabel ≠ prefLabel (S13), related ≠ broader (S27), mandatory scheme, acyclic in-scheme hierarchy."@en ;
+    sh:name "Concetto"@it , "Concept"@en ;
+    sh:description "In DeSMòS, la classe viene utilizzata per definire le singole costrizioni letterarie e le categorie analitiche all'interno di un sistema di conoscenza organizzato."@it ,
+                   "In DeSMòS, the class is used to define individual literary constraints and analytical categories within an organized knowledge system."@en ;
+    dcterms:source skos:Concept ;
+    dsh:layer dsh:LayerC ;
+    sh:targetClass skos:Concept ;
+    sh:nodeKind sh:IRI ;
+
+    sh:property [
+        sh:name "Etichetta preferita"@it , "Preferred label"@en ;
+        sh:description "Il termine preferito per rappresentare il concetto."@it , "The preferred term for representing the concept."@en ;
+        sh:path skos:prefLabel ;
+        sh:minCount 1 ;
+        sh:uniqueLang true ;
+        sh:message "skos:prefLabel obbligatoria, al più una per lingua (SKOS S14)."@it ,
+                   "skos:prefLabel required, at most one per language (SKOS S14)."@en ;
+    ] ;
+    sh:property [
+        sh:name "Etichetta preferita"@it , "Preferred label"@en ;
+        sh:description "Il termine preferito per rappresentare il concetto."@it , "The preferred term for representing the concept."@en ;
+        sh:path skos:prefLabel ;
+        sh:qualifiedValueShape [ sh:languageIn ( "it" ) ] ; sh:qualifiedMinCount 1 ;
+        sh:message "Manca skos:prefLabel @it."@it , "Missing skos:prefLabel @it."@en ;
+    ] ;
+    sh:property [
+        sh:name "Etichetta preferita"@it , "Preferred label"@en ;
+        sh:description "Il termine preferito per rappresentare il concetto."@it , "The preferred term for representing the concept."@en ;
+        sh:path skos:prefLabel ;
+        sh:qualifiedValueShape [ sh:languageIn ( "en" ) ] ; sh:qualifiedMinCount 1 ;
+        sh:message "Manca skos:prefLabel @en."@it , "Missing skos:prefLabel @en."@en ;
+    ] ;
+    sh:property [
+        sh:name "Etichetta alternativa"@it , "Alternative label"@en ;
+        sh:description "Un termine alternativo per un concetto."@it , "An alternative term for a concept."@en ;
+        sh:path skos:altLabel ;
+        sh:disjoint skos:prefLabel ;
+        sh:message "Stessa stringa usata come prefLabel e altLabel (SKOS S13)."@it ,
+                   "Same literal used as prefLabel and altLabel (SKOS S13)."@en ;
+    ] ;
+    sh:property [
+        sh:name "Definizione"@it , "Definition"@en ;
+        sh:description "Una spiegazione del significato del concetto."@it , "A statement of the meaning of the concept."@en ;
+        sh:path skos:definition ;
+        sh:qualifiedValueShape [ sh:languageIn ( "it" ) ] ; sh:qualifiedMinCount 1 ;
+        sh:severity sh:Warning ;
+        sh:message "Manca skos:definition @it."@it , "Missing skos:definition @it."@en ;
+    ] ;
+    sh:property [
+        sh:name "Definizione"@it , "Definition"@en ;
+        sh:description "Una spiegazione del significato del concetto."@it , "A statement of the meaning of the concept."@en ;
+        sh:path skos:definition ;
+        sh:qualifiedValueShape [ sh:languageIn ( "en" ) ] ; sh:qualifiedMinCount 1 ;
+        sh:severity sh:Warning ;
+        sh:message "Manca skos:definition @en."@it , "Missing skos:definition @en."@en ;
+    ] ;
+
+    sh:property [
+        sh:name "nello schema"@it , "in scheme"@en ;
+        sh:description "In DeSMòS, skos:inScheme è utilizzata per indicare lo schema concettuale al quale appartiene un concetto."@it , "In DeSMòS, skos:inScheme is used to indicate the concept scheme to which a concept belongs."@en ;
+        sh:path skos:inScheme ;
+        sh:minCount 1 ;
+        sh:message "skos:Concept non collegato ad alcuno skos:ConceptScheme."@it ,
+                   "skos:Concept not linked to any skos:ConceptScheme."@en ;
+    ] ;
+    sh:property [
+        sh:name "nello schema"@it , "in scheme"@en ;
+        sh:description "In DeSMòS, skos:inScheme è utilizzata per indicare lo schema concettuale al quale appartiene un concetto."@it , "In DeSMòS, skos:inScheme is used to indicate the concept scheme to which a concept belongs."@en ;
+        sh:path skos:inScheme ; sh:maxCount 1 ; sh:severity sh:Warning ;
+        sh:message "Concetto in più schemi: DeSMòS assume un solo schema per concetto."@it ,
+                   "Concept in several schemes: DeSMòS assumes one scheme per concept."@en ;
+    ] ;
+
+    sh:property [ sh:name "correlato"@it , "related"@en ; sh:description "In DeSMòS, skos:related è utilizzata per esprimere associazioni semantiche non gerarchiche tra concetti appartenenti ai vocabolari controllati."@it , "In DeSMòS, skos:related is used to express non-hierarchical semantic associations between concepts in the controlled vocabularies."@en ; sh:path skos:related ; sh:disjoint skos:broader ;
+        sh:message "skos:related e skos:broader sulla stessa coppia (SKOS S27)."@it , "skos:related and skos:broader on the same pair (SKOS S27)."@en ] ;
+    sh:property [ sh:name "correlato"@it , "related"@en ; sh:description "In DeSMòS, skos:related è utilizzata per esprimere associazioni semantiche non gerarchiche tra concetti appartenenti ai vocabolari controllati."@it , "In DeSMòS, skos:related is used to express non-hierarchical semantic associations between concepts in the controlled vocabularies."@en ; sh:path skos:related ; sh:disjoint skos:narrower ;
+        sh:message "skos:related e skos:narrower sulla stessa coppia."@it , "skos:related and skos:narrower on the same pair."@en ] ;
+
+    sh:property [
+        sh:name "corrispondenza esatta (diretta o inversa)"@it , "exact match (direct or inverse)"@en ;
+        sh:description "In DeSMòS, skos:exactMatch è utilizzata per allineare un concetto DeSMòS a un concetto esterno considerato semanticamente equivalente."@it , "In DeSMòS, skos:exactMatch is used to align a DeSMòS concept with an external concept considered semantically equivalent."@en ;
+        sh:path [ sh:alternativePath ( skos:exactMatch skos:closeMatch ) ] ;
+        sh:nodeKind sh:IRI ;
+    ] ;
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Ciclo nella gerarchia skos:broader."@it , "Cycle in the skos:broader hierarchy."@en ;
+        sh:prefixes dsh: ;
+        sh:select """ SELECT $this WHERE { $this skos:broader+ $this } """ ;
+    ] ;
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "skos:broader verso un concetto di un altro schema."@it , "skos:broader to a concept in another scheme."@en ;
+        sh:prefixes dsh: ;
+        sh:select """
+            SELECT $this ?value WHERE {
+                $this skos:broader ?value ; skos:inScheme ?s .
+                FILTER NOT EXISTS { ?value skos:inScheme ?s }
+            }""" ;
+    ] .
+
+dsh:ConceptClassSchemeAlignmentShape a sh:NodeShape ;
+    rdfs:label "Allineamento schema ↔ classe"@it , "Scheme ↔ class alignment"@en ;
+    rdfs:comment "Un concetto in uno schema di costrizioni deve avere la classe DeSMòS corrispondente."@it ,
+                 "A concept in a constraint scheme must have the corresponding DeSMòS class."@en ;
+    dsh:layer dsh:LayerC ;
+    sh:targetClass skos:Concept ;
+    sh:or (
+        [ sh:not [ sh:path skos:inScheme ; sh:hasValue desmos:FormalConstraintScheme ] ]
+        [ sh:class desmos:FormalConstraint ]
+    ) ;
+    sh:or (
+        [ sh:not [ sh:path skos:inScheme ; sh:hasValue desmos:SemanticConstraintScheme ] ]
+        [ sh:class desmos:SemanticConstraint ]
+    ) ;
+    sh:or (
+        [ sh:not [ sh:path skos:inScheme ; sh:hasValue desmos:VisualConstraintScheme ] ]
+        [ sh:class desmos:VisualConstraint ]
+    ) ;
+    sh:message "Concetto in uno schema di costrizioni ma non tipizzato con la classe DeSMòS corrispondente."@it ,
+               "Concept in a constraint scheme but not typed with the corresponding DeSMòS class."@en .
+
+dsh:TopConceptShape a sh:NodeShape ;
+    rdfs:label "Concetti radice"@it , "Top concepts"@en ;
+    rdfs:comment "Un concetto senza broader deve essere top concept del proprio schema."@it ,
+                 "A concept without broader must be a top concept of its scheme."@en ;
+    dsh:layer dsh:LayerC ;
+    sh:targetClass skos:Concept ;
+    sh:severity sh:Warning ;
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Concetto senza skos:broader non dichiarato top concept del proprio schema."@it ,
+                   "Concept without skos:broader not declared as top concept of its scheme."@en ;
+        sh:prefixes dsh: ;
+        sh:select """
+            SELECT $this ?value WHERE {
+                $this skos:inScheme ?value .
+                FILTER NOT EXISTS { $this skos:broader ?b }
+                FILTER NOT EXISTS { ?value skos:hasTopConcept $this }
+                FILTER NOT EXISTS { $this skos:topConceptOf ?value }
+            }""" ;
+    ] .
+
+dsh:ConceptSchemeShape a sh:NodeShape ;
+    rdfs:label "Schema SKOS"@it , "SKOS concept scheme"@en ;
+    rdfs:comment "prefLabel unica per lingua, almeno un top concept, top concept interni allo schema."@it ,
+                 "Unique prefLabel per language, at least one top concept, top concepts belong to the scheme."@en ;
+    sh:name "Schema di concetti"@it , "Concept Scheme"@en ;
+    sh:description "In DeSMòS, skos:ConceptScheme è utilizzata per organizzare in vocabolari controllati le costrizioni letterarie e le categorie analitiche impiegate per descriverle."@it ,
+                   "In DeSMòS, skos:ConceptScheme is used to organise literary constraints and the analytical categories used to describe them into controlled vocabularies."@en ;
+    dcterms:source skos:ConceptScheme ;
+    dsh:layer dsh:LayerC ;
+    sh:targetClass skos:ConceptScheme ;
+    sh:nodeKind sh:IRI ;
+    sh:property [ sh:name "Etichetta preferita"@it , "Preferred label"@en ; sh:description "Il termine preferito per rappresentare il concetto."@it , "The preferred term for representing the concept."@en ; sh:path skos:prefLabel ; sh:minCount 1 ; sh:uniqueLang true ] ;
+    sh:property [ sh:name "ha concetto principale"@it , "has top concept"@en ; sh:description "In DeSMòS, skos:hasTopConcept collega uno schema concettuale ai concetti che costituiscono i suoi punti di accesso gerarchici principali."@it , "In DeSMòS, skos:hasTopConcept relates a concept scheme to the concepts that constitute its main hierarchical entry points."@en ; sh:path skos:hasTopConcept ; sh:minCount 1 ;
+        sh:message "Schema senza skos:hasTopConcept."@it , "Scheme without skos:hasTopConcept."@en ] ;
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Top concept non dichiarato skos:inScheme dello schema."@it ,
+                   "Top concept not declared skos:inScheme of the scheme."@en ;
+        sh:prefixes dsh: ;
+        sh:select """
+            SELECT $this ?value WHERE {
+                $this skos:hasTopConcept ?value .
+                FILTER NOT EXISTS { ?value skos:inScheme $this }
+            }""" ;
+    ] .
+
+dsh:GranularityShape a sh:NodeShape ;
+    rdfs:label "Granularità delle unità formali"@it , "Formal unit granularity"@en ;
+    rdfs:comment "finerThan/coarserThan solo fra concetti di FormalUnitScheme e senza cicli."@it ,
+                 "finerThan/coarserThan only between FormalUnitScheme concepts and acyclic."@en ;
+    dsh:layer dsh:LayerC ;
+    sh:targetSubjectsOf desmos:finerThan , desmos:coarserThan ;
+    sh:targetObjectsOf  desmos:finerThan , desmos:coarserThan ;
+    sh:node dsh:InFormalUnitScheme ;
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Ciclo in desmos:finerThan (proprietà transitiva: l'ordine di granularità deve essere aciclico)."@it ,
+                   "Cycle in desmos:finerThan (transitive property: the granularity order must be acyclic)."@en ;
+        sh:prefixes dsh: ;
+        sh:select """ SELECT $this WHERE { $this desmos:finerThan+ $this } """ ;
+    ] .
+
+dsh:GranularityInverseShape a sh:NodeShape ;
+    rdfs:label "Granularità: inversi"@it , "Granularity: inverses"@en ;
+    rdfs:comment "finerThan e coarserThan asserite in coppia."@it ,
+                 "finerThan and coarserThan asserted in pairs."@en ;
+    dsh:layer dsh:LayerC ;
+    sh:targetSubjectsOf desmos:finerThan , desmos:coarserThan ;
+    sh:severity sh:Warning ;
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "desmos:finerThan asserita senza il desmos:coarserThan inverso (o viceversa)."@it ,
+                   "desmos:finerThan asserted without the inverse desmos:coarserThan (or vice versa)."@en ;
+        sh:prefixes dsh: ;
+        sh:select """
+            SELECT $this ?value WHERE {
+                { $this desmos:finerThan ?value . FILTER NOT EXISTS { ?value desmos:coarserThan $this } }
+                UNION
+                { $this desmos:coarserThan ?value . FILTER NOT EXISTS { ?value desmos:finerThan $this } }
+            }""" ;
+    ] .
+
+# ===== [C] COLLEGAMENTI ESTERNI =====
+
+dsh:ExternalLinkShape a sh:NodeShape ;
+    rdfs:label "Collegamenti esterni"@it , "External links"@en ;
+    rdfs:comment "I collegamenti LOD sono IRI e, per Wikidata, puntano all'entità e non alla pagina."@it ,
+                 "LOD links are IRIs and, for Wikidata, point to the entity rather than the page."@en ;
+    dsh:layer dsh:LayerC ;
+    sh:targetObjectsOf skos:exactMatch , skos:closeMatch , owl:sameAs , rdfs:seeAlso ;
+    sh:severity sh:Warning ;
+    sh:nodeKind sh:IRI ;
+    sh:not [ sh:pattern "^https?://(www\\.)?wikidata\\.org/wiki/" ] ;
+    sh:message "Collegamento a una PAGINA Wikidata (/wiki/Q…): usare l'IRI dell'entità http://www.wikidata.org/entity/Q…"@it ,
+               "Link to a Wikidata PAGE (/wiki/Q…): use the entity IRI http://www.wikidata.org/entity/Q…"@en .
