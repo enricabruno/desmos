@@ -16,7 +16,14 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/desmos/">
-        <owl:versionIRI rdf:resource="https://w3id.org/desmos/v1.0.0"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/desmos/v1.2.0"/>
+        <owl:versionInfo xml:lang="en">Version 1.2.0</owl:versionInfo>
+        <owl:versionInfo xml:lang="it">Versione 1.2.0</owl:versionInfo>
+        <owl:priorVersion rdf:resource="https://zenodo.org/records/19610250/files/desmos.owl"/>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-30</dcterms:modified>
+        <vann:preferredNamespacePrefix>desmos</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/desmos/</vann:preferredNamespaceUri>
+        <dcterms:bibliographicCitation>Bruno, Enrica. (2026). DeSMòS: Descriptive Semantic Model for Structured Texts (Version 1.2.0) [Ontology].</dcterms:bibliographicCitation>
         <dcterms:creator rdf:resource="https://orcid.org/0009-0007-5620-3834"/>
         <dcterms:title xml:lang="en">DeSMòS (Descriptive Semantic Model for Structured Texts)</dcterms:title>
         <dcterms:title xml:lang="it">DeSMòS (Descriptive Semantic Model for Structured Texts)</dcterms:title>
@@ -26,9 +33,8 @@
         <dcterms:description xml:lang="it">DeSMòS, Descriptive Semantic Model for Structured Texts, è un'ontologia OWL 2 per la descrizione formale delle costrizioni letterarie come procedure generative del testo, con particolare riferimento alla tradizione oulipiana e alla sua prosecuzione nell'Oplepo. Il modello distingue la costrizione dalle entità bibliografiche dell'opera e delle sue realizzazioni, rappresentate mediante LRMoo, e ne afferma l'autonomia concettuale, non riducendola ad un descrittore stilistico attribuito a posteriori al testo. La costrizione è collegata all'evento di produzione testuale, nel quale orienta il processo creativo; questo ruolo attivo trova una manifestazione caratterizzante nella riscrittura vincolata, in cui i rapporti fra testo sorgente e testo risultante sono qualificati insieme ai passaggi testuali coinvolti. La procedura è caratterizzata secondo la natura formale, semantica o visiva, le unità vincolate, le operazioni procedurali e l'origine, mediante vocabolari controllati SKOS. Il suo impiego nell'opera è documentato attraverso evidenze intratestuali rappresentate mediante DeSMòS e dichiarazioni paratestuali genettiane, epitestuali o peritestuali, rappresentate mediante CIDOC CRM e attribuibili ai loro autori attraverso PROV-O. DeSMòS supporta la documentazione, l'analisi comparativa e l'interrogazione SPARQL delle pratiche di scrittura vincolata su corpora eterogenei ed è allineata con CIDOC CRM, LRMoo, PROV-O, SKOS, INTRO, Dublin Core Terms e Schema.org</dcterms:description>
         <rdfs:comment xml:lang="en">DeSMòS adopts an "alignment-by-reference" pattern to keep the ontology lightweight and reasoner-friendly.</rdfs:comment>
          <rdfs:comment xml:lang="it">DeSMòS adotta un pattern di "allineamento per riferimento" per mantenere l'ontologia leggera e compatibile con i reasoner.</rdfs:comment>
-        <dcterms:hasVersion>1.0.0</dcterms:hasVersion>
+        <dcterms:hasVersion>1.2.0</dcterms:hasVersion>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</dcterms:modified>
         <dcterms:source rdf:resource="http://purl.org/dc/terms/"/>
         <dcterms:source rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
         <dcterms:source rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
@@ -36,12 +42,6 @@
         <dcterms:source rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/"/>
         <dcterms:source rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
         <dcterms:source rdf:resource="http://schema.org/"/>
-        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-02-07</dcterms:issued> 
-        <vann:preferredNamespacePrefix>desmos</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri>https://w3id.org/desmos/</vann:preferredNamespaceUri>
-        <dcterms:bibliographicCitation>Bruno, Enrica. (2026). DeSMòS: Descriptive Semantic Model for Structured Texts (Version 1.0.0) [Ontology].</dcterms:bibliographicCitation>
-        <owl:versionInfo xml:lang="en">Version 1.0.0</owl:versionInfo>
-        <owl:versionInfo xml:lang="it">Versione 1.0.0</owl:versionInfo>
     </owl:Ontology>
     
 
