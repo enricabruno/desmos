@@ -17,11 +17,11 @@
 
 dsh: a owl:Ontology ;
     rdfs:label "Shapes SHACL di DeSMòS"@it , "DeSMòS SHACL shapes"@en ;
-    rdfs:comment "Grafo di shapes per validare il corpus DeSMòS (corpus.ttl) e i vocabolari controllati (concept.ttl) rispetto a desmos.owl v2.0.0. Livelli: [A] derivato dall'ontologia, [B] valori dei dati, [C] requisiti di progetto."@it ,
-                 "Shapes graph for validating the DeSMòS corpus (corpus.ttl) and controlled vocabularies (concept.ttl) against desmos.owl v2.0.0. Layers: [A] ontology-derived, [B] data value, [C] project-required."@en ;
+    rdfs:comment "Grafo di shapes per validare il corpus DeSMòS (corpus.ttl) e i vocabolari controllati (concept.ttl) rispetto a desmos.owl v1.2.0. Livelli: [A] derivato dall'ontologia, [B] valori dei dati, [C] requisiti di progetto."@it ,
+                 "Shapes graph for validating the DeSMòS corpus (corpus.ttl) and controlled vocabularies (concept.ttl) against desmos.owl v1.2.0. Layers: [A] ontology-derived, [B] data value, [C] project-required."@en ;
     dcterms:description "Modalità di validazione: il data graph è l'unione di corpus.ttl e concept.ttl; desmos.owl va passata come ontology graph; nessuna inferenza (pyshacl -s shapes -e desmos.owl -i none -a). Severità: sh:Violation per invarianti strutturali e assiomi dell'ontologia; sh:Warning per completezza catalografica attesa; sh:Info per segnali analitici."@it ,
                         "Validation mode: the data graph is the union of corpus.ttl and concept.ttl; desmos.owl is passed as the ontology graph; no inference (pyshacl -s shapes -e desmos.owl -i none -a). Severity: sh:Violation for structural invariants and ontology axioms; sh:Warning for expected cataloguing completeness; sh:Info for analytical signals."@en ;
-    dcterms:source <https://w3id.org/desmos/v2.0.0> ;
+    dcterms:source <https://w3id.org/desmos/v1.2.0> ;
     dcterms:created "2026-09-30"^^xsd:date ;
     owl:versionInfo "1.0" ;
     sh:declare
@@ -355,7 +355,7 @@ dsh:LiteraryConstraintShape a sh:NodeShape ;
     rdfs:comment "Etichetta, origine unica da ConstraintOriginScheme, operazione facoltativa ma dallo schema corretto, appartenenza a uno e un solo schema di costrizioni."@it ,
                  "Label, single origin from ConstraintOriginScheme, optional operation from the correct scheme, membership in exactly one constraint scheme."@en ;
     sh:name "Costrizione letteraria"@it , "Literary constraint"@en ;
-    sh:description "Procedura formale o semantica che interviene nel processo di generazione testuale (F28 Expression Creation). La sua presenza può essere documentata attraverso evidenze oggettive (TextualFeature) o dichiarazioni paratextuali (E33 Linguistic Object)."@it ,
+    sh:description "Procedura formale o semantica che interviene nel processo di generazione testuale (F28 Expression Creation). La sua presenza può essere documentata attraverso evidenze oggettive (TextualFeature) o dichiarazioni paratestuali (E33 Linguistic Object)."@it ,
                    "A formal or semantic procedure intervening in the process of textual generation (F28 Expression Creation). Its presence may be documented through objective evidence (TextualFeature) or paratextual statements (E33 Linguistic Object)."@en ;
     dcterms:source desmos:LiteraryConstraint ;
     dsh:layer dsh:LayerC ;

@@ -1,0 +1,50 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dsh: <https://w3id.org/desmos/shapes/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dsh:validation-report-2026-09-30 a prov:Entity,
+        sh:ValidationReport ;
+    rdfs:label "DeSMòS SHACL validation report"@en,
+        "Report di validazione SHACL di DeSMòS"@it ;
+    dcterms:created "2026-09-30"^^xsd:date ;
+    prov:wasGeneratedBy dsh:validation-run-2026-09-30 ;
+    sh:conforms true .
+
+<https://w3id.org/desmos/shapes/agent/pyshacl-0.40.1> a prov:SoftwareAgent ;
+    rdfs:label "pySHACL 0.40.1 (rdflib 7.6.0)" ;
+    rdfs:seeAlso <https://github.com/RDFLib/pySHACL> .
+
+<https://w3id.org/desmos/shapes/input/concept.ttl> a prov:Entity ;
+    dcterms:identifier "sha256:903bc40d7c74addd856bc75baa44d93443906a054c804aab76823216898ee648" ;
+    dcterms:title "concept.ttl" ;
+    rdfs:comment "data graph"@en .
+
+<https://w3id.org/desmos/shapes/input/corpus.ttl> a prov:Entity ;
+    dcterms:identifier "sha256:a882596c96448be887e886b6ed30c42fe9af0cd4e867e0eb00cdefdbf04e342e" ;
+    dcterms:title "corpus.ttl" ;
+    rdfs:comment "data graph"@en .
+
+<https://w3id.org/desmos/shapes/input/desmos.owl> a prov:Entity ;
+    dcterms:identifier "sha256:28cd232f49ec0ddb46f27487bfb33bc157203e63e3557cfa27bca0046cf181bd" ;
+    dcterms:title "desmos.owl" ;
+    rdfs:comment "ontology graph"@en .
+
+<https://w3id.org/desmos/shapes/input/shacl.ttl> a prov:Entity ;
+    dcterms:identifier "sha256:6bc53702927892a18677ad048202c7659f0afc624b3156c889b8b1b995ad1ce4" ;
+    dcterms:title "shacl.ttl" ;
+    rdfs:comment "shapes graph"@en .
+
+dsh:validation-run-2026-09-30 a prov:Activity ;
+    rdfs:comment "Parameters: data graph = union of corpus.ttl and concept.ttl; ontology graph = desmos.owl (-e); inference: none (-i none); SHACL-SPARQL enabled (-a)."@en,
+        "Parametri: data graph = unione di corpus.ttl e concept.ttl; ontology graph = desmos.owl (-e); inferenza: none (-i none); SHACL-SPARQL attivo (-a)."@it ;
+    prov:endedAtTime "2026-09-30T16:58:32+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-09-30T16:58:05+00:00"^^xsd:dateTime ;
+    prov:used <https://w3id.org/desmos/shapes/input/concept.ttl>,
+        <https://w3id.org/desmos/shapes/input/corpus.ttl>,
+        <https://w3id.org/desmos/shapes/input/desmos.owl>,
+        <https://w3id.org/desmos/shapes/input/shacl.ttl> ;
+    prov:wasAssociatedWith <https://w3id.org/desmos/shapes/agent/pyshacl-0.40.1> .
+
