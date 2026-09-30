@@ -21,6 +21,8 @@ The ontology provides a structured conceptual framework to describe:
 | `prov` | **PROV-O** | `http://www.w3.org/ns/prov#` |
 | `dcterms` | **Dublin Core Terms** | `http://purl.org/dc/terms/` |
 | `schema` | **Schema.org** | `http://schema.org/` |
+| `intro` | **INTRO** | `https://w3id.org/lso/intro/beta202506#` |
+
 
 ## 📁 Repository Structure
 
