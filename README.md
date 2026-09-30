@@ -54,5 +54,5 @@ desmos/
 * **`OOPSevaluation/`**: reports produced through **OOPS! (OntOlogy Pitfall Scanner!)** and ontology validation checks.
 
 **Author:** Enrica Bruno  
-**Version:** 1.1.0  
+**Version:** 1.2.0  
 **License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
