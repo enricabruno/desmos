@@ -29,15 +29,19 @@ desmos/
 ├── data/
 │   ├── ontology/
 │   │   └── desmos.owl
-│   └── rdf/
-│       ├── concept.ttl
-│       └── corpus.ttl
+│   ├── rdf/
+│   │   ├── concept.ttl
+│   │   └── corpus.ttl
+│   └── csv/
+├── evaluation/
+│   └── shacl.ttl
 ├── img/
 │   ├── 1.png
 │   ├── 2.png
 │   ├── 3.png
 │   ├── 4.png
 │   └── 5.png
+├── .gitignore
 └── README.md
 ```
 
