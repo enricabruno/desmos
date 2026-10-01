@@ -232,7 +232,7 @@ desmos:music         a crm:E55_Type .
 
 ### Constraint ###
 desmos:acrobistic a desmos:FormalConstraint ;
-	rdfs:label "Acrobistico"^^xsd:string ;
+	rdfs:label "Acrobistico"@it , "Acrobistic"@en ;
 	desmos:constraintOrigin desmos:original ;
 	desmos:constrainsFormalUnit desmos:syllable ,
 		desmos:line ;
@@ -258,7 +258,7 @@ desmos:alliteration a desmos:FormalConstraint ;
 	desmos:involvesOperation desmos:multiplication .	
 
 desmos:alphabetic_set_constraint a desmos:FormalConstraint ;
-	rdfs:label "Costrizione sul set alfabetico"^^xsd:string ;
+	rdfs:label "Costrizione sul set alfabetico"@it , "Alphabetic-set constraint"@en ;
 	desmos:constraintOrigin desmos:historical ;
 	desmos:constrainsFormalUnit desmos:letter ;
 	desmos:involvesOperation desmos:extraction .
@@ -314,7 +314,7 @@ desmos:bisenso a desmos:FormalConstraint ;
 	desmos:involvesOperation desmos:division .
 
 desmos:bisyllabic_text a desmos:FormalConstraint ;
-	rdfs:label "Testo bisillabico"^^xsd:string ;
+	rdfs:label "Testo bisillabico"@it , "Bisyllabic text"@en ;
 	desmos:constraintOrigin desmos:historical ;
 	desmos:constrainsFormalUnit desmos:syllable .
 
@@ -423,7 +423,7 @@ desmos:defective_verb_lexicon a desmos:FormalConstraint ;
 	desmos:constrainsFormalUnit desmos:word .
 
 desmos:derogatory_register_lexicon a desmos:FormalConstraint ;
-	rdfs:label "Lessico spregiativo"^^xsd:string ;
+	rdfs:label "Lessico spregiativo"@it , "Derogatory-register lexicon"@en ;
 	desmos:constraintOrigin desmos:original ;
 	desmos:constrainsFormalUnit desmos:word .
 
@@ -475,7 +475,7 @@ desmos:english_loanword_lexicon a desmos:FormalConstraint ;
 	desmos:constrainsFormalUnit desmos:word .
 
 desmos:enigmatic_transformation_chain a desmos:FormalConstraint ;
-	rdfs:label "Catena di combinazioni enigmistiche"^^xsd:string ;
+	rdfs:label "Catena di combinazioni enigmistiche"@it , "Enigmatic transformation chain"@en ;
 	desmos:constraintOrigin desmos:original ;
 	desmos:constrainsFormalUnit desmos:letter ;
 	desmos:involvesOperation desmos:substitution ,
@@ -494,13 +494,13 @@ desmos:familiar_register_lexicon a desmos:FormalConstraint ;
 	desmos:constrainsFormalUnit desmos:word .
 
 desmos:figure_derived_count a desmos:FormalConstraint ;
-    rdfs:label "Numero di didascalie ricavato dalla figura"^^xsd:string ;
+    rdfs:label "Numero di didascalie ricavato dalla figura"@it , "Figure-derived count"@en ;
     desmos:constraintOrigin desmos:original ;
     desmos:constrainsFormalUnit desmos:paragraph ;
     desmos:involvesOperation desmos:multiplication .
 
 desmos:fixed_fictional_character a desmos:SemanticConstraint ;
-	rdfs:label "Personaggio finzionale fisso"^^xsd:string ;
+	rdfs:label "Personaggio finzionale fisso"@it , "Fixed fictional character"@en ;
 	desmos:constraintOrigin desmos:historical ;
 	desmos:constrainsSemanticUnit desmos:fictional_character .
 
@@ -564,7 +564,7 @@ desmos:grammatical_category_lexicon a desmos:FormalConstraint ;
 		desmos:substitution .
 
 	desmos:grammatical_exception_lexicon a desmos:FormalConstraint ;
-	rdfs:label "Lessico per eccezioni grammaticali"^^xsd:string ;
+	rdfs:label "Lessico per eccezioni grammaticali"@it , "Grammatical/orthographic-exception lexicon"@en ;
 	desmos:constraintOrigin desmos:original ;
 	desmos:constrainsFormalUnit desmos:word .
 
@@ -580,7 +580,7 @@ desmos:hendecasyllable a desmos:FormalConstraint ;
 		desmos:line .
 
 desmos:heterogeneous_register_lexicon a desmos:FormalConstraint ;
-	rdfs:label "Lessico eterogeneo"^^xsd:string ;
+	rdfs:label "Lessico eterogeneo"@it , "Heterogeneous-register lexicon"@en ;
 	desmos:constraintOrigin desmos:original ;
 	desmos:constrainsFormalUnit desmos:word .
 
@@ -666,18 +666,18 @@ desmos:isovocalism a desmos:FormalConstraint ;
 	desmos:involvesOperation desmos:multiplication .
 
 desmos:jocular_register_lexicon a desmos:FormalConstraint ;
-	rdfs:label "Lessico giocoso"^^xsd:string ;
+	rdfs:label "Lessico giocoso"@it , "Jocular-register lexicon"@en ;
 	desmos:constraintOrigin desmos:original ;
 	desmos:constrainsFormalUnit desmos:letter ,
 		desmos:word .
 
 desmos:lombard_lexicon a desmos:FormalConstraint ;
-	rdfs:label "Lessico lombardo"^^xsd:string ;
+	rdfs:label "Lessico lombardo"@it , "Lombard/Milanese lexicon"@en ;
 	desmos:constraintOrigin desmos:original ;
 	desmos:constrainsFormalUnit desmos:word .
 
 desmos:latin_noun_lexicon a desmos:FormalConstraint ;
-	rdfs:label "Lessico di nomi latini"^^xsd:string ;
+	rdfs:label "Lessico di nomi latini"@it , "Latin-noun lexicon"@en ;
 	desmos:constraintOrigin desmos:original ;
 	desmos:constrainsFormalUnit desmos:word .
 
@@ -693,7 +693,7 @@ desmos:lexical_gap a desmos:FormalConstraint ;
 	desmos:involvesOperation desmos:subtraction .
 
 desmos:lexicographic_marker_constraint a desmos:FormalConstraint ;
-	rdfs:label "Costrizione sul marcatore lessicografico"^^xsd:string ;
+	rdfs:label "Costrizione sul marcatore lessicografico"@it , "Lexicographic-marker constraint"@en ;
 	desmos:constraintOrigin desmos:original ;
 	desmos:constrainsFormalUnit desmos:word ;
 	desmos:involvesOperation desmos:extraction ,
@@ -765,7 +765,7 @@ desmos:mandatory_genre a desmos:SemanticConstraint ;
 	desmos:constrainsSemanticUnit desmos:literary_genre .
 
 desmos:mandatory_sentence a desmos:FormalConstraint ;
-	rdfs:label "Frase obbligata"^^xsd:string ;
+	rdfs:label "Frase obbligata"@it , "Mandatory sentence insertion"@en ;
 	desmos:constraintOrigin desmos:original ;
 	desmos:constrainsFormalUnit desmos:line ;
 	desmos:involvesOperation desmos:addition .
@@ -819,7 +819,7 @@ desmos:monorhyme a desmos:FormalConstraint ;
 	desmos:involvesOperation desmos:multiplication .
 
 desmos:monosyllabic_text a desmos:FormalConstraint ;
-	rdfs:label "Testo monosillabico"^^xsd:string ;
+	rdfs:label "Testo monosillabico"@it , "Monosyllabic text"@en ;
 	desmos:constraintOrigin desmos:historical ;
 	desmos:constrainsFormalUnit desmos:syllable .
 
@@ -872,7 +872,7 @@ desmos:non_repeating_rhyme a desmos:FormalConstraint ;
 		desmos:line .
 
 desmos:numeric_based_homosyntaxism a desmos:FormalConstraint ;
-	rdfs:label "Omosintattismo su base numerica"^^xsd:string ;
+	rdfs:label "Omosintattismo su base numerica"@it , "Numeric-based homosyntaxism"@en ;
 	desmos:constraintOrigin desmos:original ;
 	desmos:constrainsFormalUnit desmos:syllable ,
 		desmos:word ,
@@ -885,7 +885,7 @@ desmos:octave a desmos:FormalConstraint ;
     desmos:constrainsFormalUnit desmos:stanza .
 
 desmos:page_format a desmos:VisualConstraint ;
-	rdfs:label "Costrizione quantitativa di supporto"^^xsd:string ;
+	rdfs:label "Costrizione quantitativa di supporto"@it , "Page format constraint"@en ;
 	desmos:constraintOrigin desmos:historical ;
 	desmos:constrainsFormalUnit desmos:page .
 
@@ -909,7 +909,7 @@ desmos:paronomasia a desmos:FormalConstraint ;
 	desmos:involvesOperation desmos:substitution .
 
 desmos:pentomino_segmentation a desmos:FormalConstraint ;
-	rdfs:label "Segmentazione pentomino"^^xsd:string ;
+	rdfs:label "Segmentazione pentomino"@it , "Pentomino segmentation"@en ;
 	desmos:constraintOrigin desmos:original ;
 	desmos:constrainsFormalUnit desmos:letter ;
 	desmos:involvesOperation desmos:division .
@@ -1056,7 +1056,7 @@ desmos:sestina a desmos:FormalConstraint ;
 	desmos:constrainsFormalUnit desmos:stanza .
 
 desmos:syllabic_set_constraint a desmos:FormalConstraint ;
-	rdfs:label "Costrizione sul set sillabico"^^xsd:string ;
+	rdfs:label "Costrizione sul set sillabico"@it , "Syllabic-set constraint"@en ;
 	desmos:constraintOrigin desmos:historical ;
 	desmos:constrainsFormalUnit desmos:syllable ;
 	desmos:involvesOperation desmos:multiplication .
@@ -1078,7 +1078,7 @@ desmos:spanish_loanword_lexicon a desmos:FormalConstraint ;
 	desmos:constrainsFormalUnit desmos:word .
 
 desmos:statistical_bound a desmos:FormalConstraint ;
-    rdfs:label "Rimbalzo statistico"^^xsd:string ;
+    rdfs:label "Rimbalzo statistico"@it , "Statistical bound"@en ;
     desmos:constraintOrigin desmos:original ;
     desmos:constrainsFormalUnit desmos:letter ;
     desmos:involvesOperation desmos:multiplication ,
@@ -1135,13 +1135,13 @@ desmos:terminal_word_series a desmos:FormalConstraint ;
 	desmos:involvesOperation desmos:extraction .
 
 desmos:triple_letter_cluster a desmos:FormalConstraint ;
-	rdfs:label "Gruppo letterale triripetuto"^^xsd:string ;
+	rdfs:label "Gruppo letterale triripetuto"@it , "Triple letter cluster"@en ;
 	desmos:constraintOrigin desmos:historical ;
 	desmos:constrainsFormalUnit desmos:letter ;
 	desmos:involvesOperation desmos:multiplication .
 
 desmos:trisyllabic_text a desmos:FormalConstraint ;
-	rdfs:label "Testo trisillabico"^^xsd:string ;
+	rdfs:label "Testo trisillabico"@it , "Trisyllabic text"@en ;
 	desmos:constraintOrigin desmos:original ;
 	desmos:constrainsFormalUnit desmos:syllable .
 
@@ -1175,7 +1175,7 @@ desmos:visual_anaphora a desmos:VisualConstraint ;
 	desmos:involvesOperation desmos:multiplication .
 
 desmos:word_length_oscillation a desmos:FormalConstraint ;
-	rdfs:label "Oscillazione della lunghezza delle parole (N±1)"^^xsd:string ;
+	rdfs:label "Oscillazione della lunghezza delle parole (N±1)"@it , "Word length oscillation (N±1)"@en ;
     desmos:constraintOrigin desmos:original ;
     desmos:constrainsFormalUnit desmos:letter ,
     desmos:word ;
