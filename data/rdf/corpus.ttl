@@ -580,7 +580,7 @@ desmos:hendecasyllable a desmos:FormalConstraint ;
 		desmos:line .
 
 desmos:heterogeneous_register_lexicon a desmos:FormalConstraint ;
-	rdfs:label "Lessico eterogeneo"@it , "Heterogeneous-register lexicon"@en ;
+	rdfs:label "Lessico ibrido espressivo"@it , "Heterogeneous-register lexicon"@en ;
 	desmos:constraintOrigin desmos:original ;
 	desmos:constrainsFormalUnit desmos:word .
 
@@ -666,18 +666,18 @@ desmos:isovocalism a desmos:FormalConstraint ;
 	desmos:involvesOperation desmos:multiplication .
 
 desmos:jocular_register_lexicon a desmos:FormalConstraint ;
-	rdfs:label "Lessico giocoso"@it , "Jocular-register lexicon"@en ;
+	rdfs:label "Lessico scherzoso"@it , "Jocular-register lexicon"@en ;
 	desmos:constraintOrigin desmos:original ;
 	desmos:constrainsFormalUnit desmos:letter ,
 		desmos:word .
 
 desmos:lombard_lexicon a desmos:FormalConstraint ;
-	rdfs:label "Lessico lombardo"@it , "Lombard/Milanese lexicon"@en ;
+	rdfs:label "Lessico lombardo/milanese"@it , "Lombard/Milanese lexicon"@en ;
 	desmos:constraintOrigin desmos:original ;
 	desmos:constrainsFormalUnit desmos:word .
 
 desmos:latin_noun_lexicon a desmos:FormalConstraint ;
-	rdfs:label "Lessico di nomi latini"@it , "Latin-noun lexicon"@en ;
+	rdfs:label "Lessico di sostantivi latini"@it , "Latin-noun lexicon"@en ;
 	desmos:constraintOrigin desmos:original ;
 	desmos:constrainsFormalUnit desmos:word .
 
@@ -748,8 +748,8 @@ desmos:loanword_lexicon a desmos:FormalConstraint ;
 	desmos:involvesOperation desmos:extraction ,
 		desmos:substitution .
 
-desmos:LS_method a desmos:FormalConstraint ;
-	rdfs:label "Metodo LS (Letteratura Semidefinizionale)"@it , "LS Method (Semidefinitional Literature)"@en ;
+desmos:LD_method a desmos:FormalConstraint ;
+	rdfs:label "Metodo LD (Letteratura Definizionale)"@it , "LD Method (Definitional Literature)"@en ;
 	desmos:constraintOrigin desmos:historical ;
 	desmos:constrainsFormalUnit desmos:word ;
 	desmos:involvesOperation desmos:substitution .
@@ -908,8 +908,8 @@ desmos:paronomasia a desmos:FormalConstraint ;
 		desmos:word ;
 	desmos:involvesOperation desmos:substitution .
 
-desmos:pentomino_segmentation a desmos:FormalConstraint ;
-	rdfs:label "Segmentazione pentomino"@it , "Pentomino segmentation"@en ;
+desmos:pentamini a desmos:FormalConstraint ;
+	rdfs:label "Pentamini"@it , "Pentamini"@en ;
 	desmos:constraintOrigin desmos:original ;
 	desmos:constrainsFormalUnit desmos:letter ;
 	desmos:involvesOperation desmos:division .
@@ -1099,7 +1099,7 @@ desmos:stolen_letters a desmos:FormalConstraint ;
 	desmos:involvesOperation desmos:subtraction .
 
 desmos:syllable_expansion a desmos:FormalConstraint ;
-	rdfs:label "Espansioni sillabiche"@it , "Syllable expansion"@en ;
+	rdfs:label "Sillabe in crescenza"@it , "Syllable expansion"@en ;
 	desmos:constraintOrigin desmos:original ;
 	desmos:constrainsFormalUnit desmos:syllable ,
 		desmos:line ;
@@ -1690,7 +1690,7 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 
 <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_40_berti> a crm:E33_Linguistic_Object ;
 	crm:P3_has_note "Con alcune leggère libertà, il metodo LS (letteratura definizionale), affine a quello LSD (letteratura semi-definizionale)."@it ;
-	crm:P129_is_about desmos:LS_method ;
+	crm:P129_is_about desmos:LD_method ;
 	crm:P67_refers_to <https://w3id.org/desmos/oplepiana/expression/e_plaquette_40_text_berti> ;
 	prov:wasAttributedTo <https://w3id.org/desmos/oplepiana/author/oplepo> .
 
@@ -1934,7 +1934,8 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	lrmoo:R15_has_fragment <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_01> ;
 	rdfs:seeAlso <https://www.oplepo.com/copia-di-n1> ;
 	crm:P2_has_type desmos:poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_01> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_01> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_02> a lrmoo:F2_Expression ;
 	dcterms:title "L'uso delle istruzioni"^^xsd:string ;
@@ -1942,7 +1943,8 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	lrmoo:R76_is_derivative_of <https://w3id.org/desmos/oplepiana/expression/e_text_istruzioni> ;
 	rdfs:seeAlso <https://www.oplepo.com/copia-di-p1> ;
 	crm:P2_has_type desmos:prose ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_02> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_02> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_03> a lrmoo:F2_Expression ;
 	dcterms:title "Canto tenero"^^xsd:string ;
@@ -1950,14 +1952,16 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	lrmoo:R15_has_fragment <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_03> ;
 	rdfs:seeAlso <https://www.oplepo.com/copia-di-p1-1> ;
 	crm:P2_has_type desmos:poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_03> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_03> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_04> a lrmoo:F2_Expression ;
 	dcterms:title "Deliri edipici"^^xsd:string ;
 	lrmoo:R15_has_fragment <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_04> ;
 	rdfs:seeAlso <https://www.oplepo.com/copia-di-p2> ;
 	crm:P2_has_type desmos:poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_04> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_04> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_05> a lrmoo:F2_Expression ;
 	dcterms:title "Frammenti in vita"^^xsd:string ;
@@ -1966,35 +1970,40 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 		<https://w3id.org/desmos/oplepiana/expression/e_text_canzoniere> ;
 	rdfs:seeAlso <https://www.oplepo.com/copia-di-p4> ;
 	crm:P2_has_type desmos:poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_05> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_05> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_06> a lrmoo:F2_Expression ;
 	dcterms:title "Vocalizzi Zulu"^^xsd:string ;
 	lrmoo:R15_has_fragment <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_06> ;
 	rdfs:seeAlso <https://www.oplepo.com/copia-di-p5> ;
 	crm:P2_has_type desmos:poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_06> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_06> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_07> a lrmoo:F2_Expression ;
-	dcterms:title "Forme For Me"^^xsd:string ;
+	dcterms:title "Forme For me"^^xsd:string ;
 	lrmoo:R15_has_fragment <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_07> ;
 	rdfs:seeAlso <https://www.oplepo.com/copia-di-p1-2> ;
 	crm:P2_has_type desmos:poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_07> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_07> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_08> a lrmoo:F2_Expression ;
 	dcterms:title "La viola del bardo"^^xsd:string ;
 	lrmoo:R15_has_fragment <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_08> ;
 	rdfs:seeAlso <https://www.oplepo.com/copia-di-p6> ;
 	crm:P2_has_type desmos:prose ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_08> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_08> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_09> a lrmoo:F2_Expression ;
 	dcterms:title "Le ripartite"^^xsd:string ;
 	lrmoo:R15_has_fragment <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_09> ;
 	rdfs:seeAlso <https://www.oplepo.com/copia-di-p7> ;
 	crm:P2_has_type desmos:prose ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_09> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_09> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_10> a lrmoo:F2_Expression ;
 	dcterms:title "Sestine per modo di dire"^^xsd:string ;
@@ -2002,7 +2011,8 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	lrmoo:R15_has_fragment <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_10> ;
 	rdfs:seeAlso <https://www.oplepo.com/copia-di-p8> ;
 	crm:P2_has_type desmos:poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_10> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_10> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_11> a lrmoo:F2_Expression ;
 	dcterms:title "L'isola teletrasportata"^^xsd:string ;
@@ -2010,28 +2020,32 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	lrmoo:R76_is_derivative_of <https://w3id.org/desmos/oplepiana/expression/e_text_isola> ;
 	rdfs:seeAlso <https://www.oplepo.com/copia-di-p10> ;
 	crm:P2_has_type desmos:prose ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_11> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_11> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_12> a lrmoo:F2_Expression ;
 	dcterms:title "Geometriche visioni"^^xsd:string ;
 	lrmoo:R15_has_fragment <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_12> ;
 	rdfs:seeAlso <https://www.oplepo.com/copia-di-p11> ;
 	crm:P2_has_type desmos:visual_poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_12> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_12> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_13> a lrmoo:F2_Expression ;
 	dcterms:title "Rose osé"^^xsd:string ;
 	lrmoo:R15_has_fragment <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_13> ;
 	rdfs:seeAlso <https://www.oplepo.com/copia-di-p12> ;
 	crm:P2_has_type desmos:poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_13> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_13> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_14> a lrmoo:F2_Expression ;
 	dcterms:title "Turandot espuri"^^xsd:string ;
 	lrmoo:R15_has_fragment <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_14> ;
 	rdfs:seeAlso <https://www.oplepo.com/copia-di-p7-1> ;
 	crm:P2_has_type desmos:prose ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_14> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_14> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_15> a lrmoo:F2_Expression ;
 	dcterms:title "L'infinito futuro"^^xsd:string ;
@@ -2039,7 +2053,8 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	lrmoo:R76_is_derivative_of <https://w3id.org/desmos/oplepiana/expression/e_text_infinito> ;
 	rdfs:seeAlso <https://www.oplepo.com/copia-di-p21> ;
 	crm:P2_has_type desmos:poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_15> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_15> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_16> a lrmoo:F2_Expression ;
 	dcterms:title "Giallo di Anghiari"^^xsd:string ;
@@ -2049,17 +2064,20 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
         <https://w3id.org/desmos/oplepiana/expression/e_plaquette_16_text_eruli> ;
 	rdfs:seeAlso <https://www.oplepo.com/copia-di-p22> ;
 	crm:P2_has_type desmos:prose ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_16> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_16> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_16_text_addomine> a lrmoo:F2_Expression ;
     dcterms:title "Analisi finale"^^xsd:string ;
     crm:P2_has_type desmos:prose ;
-    lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_16> .
+    lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_16> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_16_text_eruli> a lrmoo:F2_Expression ;
     dcterms:title "Alloro per loro"^^xsd:string ;
     crm:P2_has_type desmos:prose ;
-    lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_16> .
+    lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_16> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_17> a lrmoo:F2_Expression ;
 	dcterms:title "Esercizi di stime"^^xsd:string ;
@@ -2077,27 +2095,32 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	crm:P2_has_type desmos:prose ,
 		desmos:poetry ,
 		desmos:visual_poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_17> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_17> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_17_text_addomine> a lrmoo:F2_Expression ;
 	dcterms:title "Elogio dell'Opera poetica limitante entropiche profondità ombelicali"^^xsd:string ;
     crm:P2_has_type desmos:prose ;
-    lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_17> .
+    lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_17> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_17_text_aragona> a lrmoo:F2_Expression ;
     dcterms:title "Elogio di Ogni poema lipogrammatico esprimente potenzialità oscurate"^^xsd:string ;
     crm:P2_has_type desmos:prose ;
-    lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_17> .
+    lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_17> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_17_text_chiti> a lrmoo:F2_Expression ;
     dcterms:title "Elogio dell'Operosa pastorelleria legata, elegantemente poco ortodossa"^^xsd:string ;
     crm:P2_has_type desmos:poetry ;
-    lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_17> .
+    lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_17> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_17_text_sebregondi> a lrmoo:F2_Expression ;
     dcterms:title "Elogio dell'Osar poetare liberamente, evitando penalizzanti ortodossie"^^xsd:string ;
     crm:P2_has_type desmos:poetry ;
-    lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_17> .
+    lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_17> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_18> a lrmoo:F2_Expression ;
 	dcterms:title "Il centunesimo canto"^^xsd:string ;
@@ -2105,20 +2128,23 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	lrmoo:R76_is_derivative_of <https://w3id.org/desmos/oplepiana/expression/e_text_commedia> ;
 	rdfs:seeAlso <https://www.oplepo.com/copia-di-p23> ;
 	crm:P2_has_type desmos:poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_18> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_18> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_19> a lrmoo:F2_Expression ;
 	dcterms:title "Fantasmagorie"^^xsd:string ;
 	rdfs:seeAlso <https://www.oplepo.com/copia-di-p24> ;
 	crm:P2_has_type desmos:prose ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_19> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_19> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_20> a lrmoo:F2_Expression ;
     dcterms:title "Art caveau"^^xsd:string ;
     rdfs:seeAlso <https://www.oplepo.com/copia-di-p25> ;
     crm:P2_has_type desmos:prose,
 		desmos:visual_art ;        
-    lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_20> .
+    lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_20> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_21> a lrmoo:F2_Expression ;
 	dcterms:title "Morti fortunati"^^xsd:string ;
@@ -2126,7 +2152,8 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	lrmoo:R76_is_derivative_of <https://w3id.org/desmos/oplepiana/expression/e_text_promessi_sposi> ;
 	rdfs:seeAlso <https://www.oplepo.com/copia-di-p25-1> ;
 	crm:P2_has_type desmos:prose ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_21> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_21> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_22> a lrmoo:F2_Expression ;
 	dcterms:title "Il doppio"^^xsd:string ;
@@ -2138,29 +2165,34 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	rdfs:seeAlso <https://www.oplepo.com/copia-di-p27> ;
 	crm:P2_has_type desmos:poetry ,
 		desmos:visual_poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_22> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_22> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_22_text_sanguineti> a lrmoo:F2_Expression ;
     dcterms:title "Duplex"^^xsd:string ;
     crm:P2_has_type desmos:visual_poetry ;
-    lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_22> .
+    lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_22> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_22_text_addomine> a lrmoo:F2_Expression ;
     dcterms:title "Doppia lingua"^^xsd:string ;
     crm:P2_has_type desmos:poetry ;
-    lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_22> .
+    lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_22> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_22_text_bizzarri> a lrmoo:F2_Expression ;
     dcterms:title "Specchio"^^xsd:string ;
     crm:P2_has_type desmos:visual_poetry ;
-    lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_22> .
+    lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_22> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_23> a lrmoo:F2_Expression ;
 	dcterms:title "Riflessi in uno zaffiro orientale"^^xsd:string ;
 	lrmoo:R15_has_fragment <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_23> ;
 	rdfs:seeAlso <https://www.oplepo.com/copia-di-p28> ;
 	crm:P2_has_type desmos:prose ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_23> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_23> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_24> a lrmoo:F2_Expression ;
 	dcterms:title "Preludi"^^xsd:string ;
@@ -2168,7 +2200,8 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	crm:P130_shows_features_of <https://w3id.org/desmos/oplepiana/expression/e_text_preludi> ;
 	rdfs:seeAlso <https://www.oplepo.com/copia-di-p25> ;
 	crm:P2_has_type desmos:poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_24> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_24> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_25> a lrmoo:F2_Expression ;
 	dcterms:title "A Italo Calvino"^^xsd:string ;
@@ -2180,22 +2213,26 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	crm:P148_has_component <https://w3id.org/desmos/oplepiana/expression/e_plaquette_25_text_doria> ,
 		<https://w3id.org/desmos/oplepiana/expression/e_plaquette_25_text_chierchia> ,
 		<https://w3id.org/desmos/oplepiana/expression/e_plaquette_25_text_varaldo> ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_25> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_25> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_25_text_doria> a lrmoo:F2_Expression ;
 	dcterms:title "Permutazioni bibliografiche"^^xsd:string ;
 	crm:P2_has_type desmos:prose ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_25> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_25> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_25_text_chierchia> a lrmoo:F2_Expression ;
 	dcterms:title "Alluvione d'aiuole"^^xsd:string ;
 	crm:P2_has_type desmos:poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_25> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_25> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_25_text_varaldo> a lrmoo:F2_Expression ;
 	dcterms:title "Italo Calvino in ottava"^^xsd:string ;
 	crm:P2_has_type desmos:poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_25> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_25> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_26> a lrmoo:F2_Expression ;
 	dcterms:title "Chimere"^^xsd:string ;
@@ -2208,22 +2245,26 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	crm:P148_has_component <https://w3id.org/desmos/oplepiana/expression/e_plaquette_26_text_doria> ,
 		<https://w3id.org/desmos/oplepiana/expression/e_plaquette_26_text_sanguineti> ,
 		<https://w3id.org/desmos/oplepiana/expression/e_plaquette_26_text_anna-vicari> ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_26> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_26> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_26_text_doria> a lrmoo:F2_Expression ;
-	dcterms:title "Kimerik politico-logico"^^xsd:string ;
+	dcterms:title "Kimerik polito-logico"^^xsd:string ;
 	crm:P2_has_type desmos:prose ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_26> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_26> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_26_text_sanguineti> a lrmoo:F2_Expression ;
-	dcterms:title "Sonetto della chimera"^^xsd:string ;
+	dcterms:title "Sonetto della Chimera"^^xsd:string ;
 	crm:P2_has_type desmos:poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_26> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_26> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_26_text_anna-vicari> a lrmoo:F2_Expression ;
 	dcterms:title "La Chimera Incapricciata"^^xsd:string ;
 	crm:P2_has_type desmos:prose , desmos:poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_26> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_26> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_27> a lrmoo:F2_Expression ;
 	dcterms:title "Centomila miliardi di chimere"^^xsd:string ;
@@ -2231,7 +2272,8 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	rdfs:seeAlso <https://www.oplepo.com/copia-di-p32> ;
 	crm:P130_shows_features_of <https://w3id.org/desmos/oplepiana/expression/e_text_cent_mille> ;
 	crm:P2_has_type desmos:poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_27> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_27> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_28> a lrmoo:F2_Expression ;
 	dcterms:title "Sirene. Fascinazioni"^^xsd:string ;
@@ -2245,23 +2287,27 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	crm:P148_has_component <https://w3id.org/desmos/oplepiana/expression/e_plaquette_28_text_aragona> ,
 		<https://w3id.org/desmos/oplepiana/expression/e_plaquette_28_text_fabrizi> ,
 		<https://w3id.org/desmos/oplepiana/expression/e_plaquette_28_text_weiss> ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_28> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_28> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_28_text_aragona> a lrmoo:F2_Expression ;
 	dcterms:title "canzone ansiosa: scorcio amoroso con sirene"^^xsd:string ;
 	lrmoo:R76_is_derivative_of <https://w3id.org/desmos/oplepiana/expression/e_text_lovesong> ;
 	crm:P2_has_type desmos:poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_28> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_28> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_28_text_weiss> a lrmoo:F2_Expression ;
 	dcterms:title "La sirena Partenope"^^xsd:string ;
 	crm:P2_has_type desmos:poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_28> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_28> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_28_text_fabrizi> a lrmoo:F2_Expression ;
 	dcterms:title "Io sono"^^xsd:string ;
 	crm:P2_has_type desmos:prose ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_28> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_28> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_29> a lrmoo:F2_Expression ;
 	dcterms:title "Le leggi della tavola. Regole per tutti i gusti"^^xsd:string ;
@@ -2277,23 +2323,27 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	crm:P148_has_component <https://w3id.org/desmos/oplepiana/expression/e_plaquette_29_text_addomine> ,
 		<https://w3id.org/desmos/oplepiana/expression/e_plaquette_29_text_enriques> ,
 		<https://w3id.org/desmos/oplepiana/expression/e_plaquette_29_text_sanguineti> ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_29> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_29> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_29_text_addomine> a lrmoo:F2_Expression ;
 	dcterms:title "Corona di sonetti gastronomici"^^xsd:string ;
 	crm:P2_has_type desmos:poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_29> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_29> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_29_text_enriques> a lrmoo:F2_Expression ;
 	dcterms:title "Il 'chilometro libero'"^^xsd:string ;
 	crm:P2_has_type desmos:prose ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_29> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_29> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_29_text_sanguineti> a lrmoo:F2_Expression ;
 	dcterms:title "Distichetti alfabetici artusiani"^^xsd:string ;
 	lrmoo:R76_is_derivative_of <https://w3id.org/desmos/oplepiana/expression/e_text_artusi> ;
 	crm:P2_has_type desmos:poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_29> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_29> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_30> a lrmoo:F2_Expression ;
 	dcterms:title "Capriccio oplepiano"^^xsd:string ;
@@ -2303,12 +2353,14 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	crm:P2_has_type desmos:poetry ,
 		desmos:prose ;
 	crm:P148_has_component <https://w3id.org/desmos/oplepiana/expression/e_plaquette_30_text_sanguineti> ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_30> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_30> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_30_text_sanguineti> a lrmoo:F2_Expression ;
 	dcterms:title "a Jacques Roubaud"^^xsd:string ;
 	crm:P2_has_type desmos:poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_30> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_30> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_31> a lrmoo:F2_Expression ;
 	dcterms:title "A Edoardo Sanguineti"^^xsd:string ;
@@ -2327,32 +2379,38 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 		<https://w3id.org/desmos/oplepiana/expression/e_plaquette_31_text_eruli> ,
 		<https://w3id.org/desmos/oplepiana/expression/e_plaquette_31_text_chierchia> ,
 		<https://w3id.org/desmos/oplepiana/expression/e_plaquette_31_text_varaldo> ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_31> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_31> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_31_text_aragona> a lrmoo:F2_Expression ;
 	dcterms:title "Beau présent per E.S."^^xsd:string ;
 	crm:P2_has_type desmos:poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_31> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_31> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_31_text_benabou> a lrmoo:F2_Expression ;
 	dcterms:title "Tombeau présent"^^xsd:string ;
 	crm:P2_has_type desmos:poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_31> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_31> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_31_text_eruli> a lrmoo:F2_Expression ;
 	dcterms:title "Mancanza"^^xsd:string ;
 	crm:P2_has_type desmos:prose ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_31> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_31> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_31_text_chierchia> a lrmoo:F2_Expression ;
 	dcterms:title "Epistolina per E.S."^^xsd:string ;
 	crm:P2_has_type desmos:poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_31> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_31> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_31_text_varaldo> a lrmoo:F2_Expression ;
 	dcterms:title "Frenosonetto"^^xsd:string ;
 	crm:P2_has_type desmos:poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_31> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_31> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_32> a lrmoo:F2_Expression ;
 	dcterms:title "Le confessioni di italiano. Peccati di lingua"^^xsd:string ;
@@ -2364,24 +2422,28 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 		desmos:prose ;
 	crm:P148_has_component <https://w3id.org/desmos/oplepiana/expression/e_plaquette_32_text_addomine> ,
 		<https://w3id.org/desmos/oplepiana/expression/e_plaquette_32_text_spinelli> ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_32> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_32> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_32_text_addomine> a lrmoo:F2_Expression ;
 	dcterms:title "Imperdonabile"^^xsd:string ;
 	crm:P2_has_type desmos:prose ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_32> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_32> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_32_text_spinelli> a lrmoo:F2_Expression ;
 	dcterms:title "Di lemmi numerici"^^xsd:string ;
 	crm:P2_has_type desmos:prose ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_32> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_32> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_33> a lrmoo:F2_Expression ;
 	dcterms:title "Lessico famigliare"^^xsd:string ;
 	lrmoo:R15_has_fragment <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_33> ;
 	rdfs:seeAlso <https://www.oplepo.com/copia-di-p37> ;
 	crm:P2_has_type desmos:prose ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_33> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_33> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_34> a lrmoo:F2_Expression ;
 	dcterms:title "A Georges Perec"^^xsd:string ;
@@ -2400,32 +2462,38 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 		<https://w3id.org/desmos/oplepiana/expression/e_plaquette_34_text_carrese> ,
 		<https://w3id.org/desmos/oplepiana/expression/e_plaquette_34_text_poier-bernhard> ,
 		<https://w3id.org/desmos/oplepiana/expression/e_plaquette_34_text_varaldo> ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_34> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_34> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_34_text_albani> a lrmoo:F2_Expression ;
 	dcterms:title "Je me souviens visuellement de Georges Perec"^^xsd:string ;
 	crm:P2_has_type desmos:visual_art ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_34> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_34> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_34_text_aragona> a lrmoo:F2_Expression ;
 	dcterms:title "Epitalamio"^^xsd:string ;
 	crm:P2_has_type desmos:poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_34> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_34> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_34_text_carrese> a lrmoo:F2_Expression ;
 	dcterms:title "Profilo"^^xsd:string ;
 	crm:P2_has_type desmos:poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_34> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_34> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_34_text_poier-bernhard> a lrmoo:F2_Expression ;
-	dcterms:title "leben eben, perecs leben. es lebe perec"^^xsd:string ;
+	dcterms:title "leben eben. perecs leben. es lebe perec"^^xsd:string ;
 	crm:P2_has_type desmos:poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_34> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_34> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_34_text_varaldo> a lrmoo:F2_Expression ;
 	dcterms:title "Identikit lessicali"^^xsd:string ;
 	crm:P2_has_type desmos:poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_34> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_34> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_35> a lrmoo:F2_Expression ;
 	dcterms:title "Je me souviens"^^xsd:string ;
@@ -2434,17 +2502,20 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	crm:P2_has_type desmos:prose ;
 	crm:P148_has_component <https://w3id.org/desmos/oplepiana/expression/e_plaquette_35_text_brignoli> ,
 		<https://w3id.org/desmos/oplepiana/expression/e_plaquette_35_text_eliana-vicari> ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_35> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_35> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_35_text_brignoli> a lrmoo:F2_Expression ;
 	dcterms:title "Je me souviens"^^xsd:string ;
 	crm:P2_has_type desmos:prose ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_35> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_35> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_35_text_eliana-vicari> a lrmoo:F2_Expression ;
 	dcterms:title "Je me souviens"^^xsd:string ;
 	crm:P2_has_type desmos:prose ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_35> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_35> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_36> a lrmoo:F2_Expression ;
 	dcterms:title "I costretti sposi"^^xsd:string ;
@@ -2452,28 +2523,32 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	lrmoo:R15_has_fragment <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_36> ;
 	rdfs:seeAlso <https://www.oplepo.com/copia-di-p40> ;
 	crm:P2_has_type desmos:poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_36> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_36> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_37> a lrmoo:F2_Expression ;
 	dcterms:title "Eclisse"^^xsd:string ;
 	lrmoo:R15_has_fragment <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_37> ;
 	rdfs:seeAlso <https://www.oplepo.com/copia-di-p41> ;
 	crm:P2_has_type desmos:poetry , desmos:prose ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_37> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_37> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_3> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_38> a lrmoo:F2_Expression ;
 	dcterms:title "Aurelio e lo scrivano"^^xsd:string ;
 	lrmoo:R15_has_fragment <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_38> ;
 	rdfs:seeAlso <https://www.oplepo.com/copia-di-p42> ;
 	crm:P2_has_type desmos:prose ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_38> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_38> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_3> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_39> a lrmoo:F2_Expression ;
 	dcterms:title "Doppio epilogo per Andrea"^^xsd:string ;
 	lrmoo:R15_has_fragment <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_39> ;
 	rdfs:seeAlso <https://www.oplepo.com/copia-di-p43> ;
 	crm:P2_has_type desmos:prose ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_39> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_39> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_3> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_40> a lrmoo:F2_Expression ;
 	dcterms:title "Venticinque anni d’Oplepo"^^xsd:string ;
@@ -2488,23 +2563,27 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	rdfs:seeAlso <https://www.oplepo.com/copia-di-p44> ;
 	crm:P2_has_type desmos:poetry ,
 		desmos:prose ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_40> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_40> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_3> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_40_text_berti> a lrmoo:F2_Expression ;
 	dcterms:title "Lucy, Oplepo and Diamonds"^^xsd:string ;
 	crm:P2_has_type desmos:prose ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_40> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_40> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_3> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_40_text_brignoli> a lrmoo:F2_Expression ;
-	dcterms:title "Che magìa l'anniversario!"^^xsd:string ;
+	dcterms:title "Che magia l'anniversario!"^^xsd:string ;
 	crm:P2_has_type desmos:prose ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_40> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_40> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_3> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_40_text_sebregondi> a lrmoo:F2_Expression ;
 	dcterms:title "5x5: 5 Tanka+1 di Epilogo"^^xsd:string ;
 	crm:P2_has_type desmos:poetry ;
 	rdfs:seeAlso <https://www.oplepo.com/copia-di-p44> ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_40> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_40> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_3> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_41> a lrmoo:F2_Expression ;
 	dcterms:title "Passar la lunga sera sulla terra"^^xsd:string ;
@@ -2520,36 +2599,42 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	rdfs:seeAlso <https://www.oplepo.com/copia-di-p45> ;
 	crm:P2_has_type desmos:poetry ,
 		desmos:prose ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_41> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_41> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_3> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_41_text_jouet> a lrmoo:F2_Expression ;
 	dcterms:title "E C O (titre vertical...)"^^xsd:string ;
 	crm:P2_has_type desmos:poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_41> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_41> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_3> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_41_text_narros> a lrmoo:F2_Expression ;
 	dcterms:title "Lettori"^^xsd:string ;
 	crm:P2_has_type desmos:prose ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_41> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_41> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_3> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_41_text_varaldo> a lrmoo:F2_Expression ;
 	dcterms:title "Vocali"^^xsd:string ;
 	crm:P2_has_type desmos:poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_41> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_41> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_3> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_42> a lrmoo:F2_Expression ;
 	dcterms:title "Il barbiere notturno"^^xsd:string ;
 	lrmoo:R15_has_fragment <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_42> ;
 	rdfs:seeAlso <https://www.oplepo.com/copia-di-p46> ;
 	crm:P2_has_type desmos:prose ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_42> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_42> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_3> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_43> a lrmoo:F2_Expression ;
 	dcterms:title "Poeti scomparsi"^^xsd:string ;
 	lrmoo:R15_has_fragment <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_43> ;
 	rdfs:seeAlso <https://www.oplepo.com/copia-di-p47> ;
 	crm:P2_has_type desmos:poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_43> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_43> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_3> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_44> a lrmoo:F2_Expression ;
 	dcterms:title "Domenico D'Oria. On se souvient de toi"^^xsd:string ;
@@ -2562,17 +2647,20 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 		desmos:prose ,
 		desmos:visual_poetry ,
 		desmos:visual_art ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_44> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_44> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_3> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_44_text_aragona> a lrmoo:F2_Expression ;
 	dcterms:title "a Domenico D'Oria"^^xsd:string ;
 	crm:P2_has_type desmos:poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_44> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_44> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_3> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_44_text_fabrizi> a lrmoo:F2_Expression ;
 	dcterms:title "In nomine, amen"^^xsd:string ;
 	crm:P2_has_type desmos:poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_44> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_44> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_3> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_45> a lrmoo:F2_Expression ;
 	dcterms:title "perdurante"^^xsd:string ;
@@ -2584,12 +2672,14 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 		desmos:prose ,
 		desmos:visual_poetry ,
 		desmos:visual_art ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_45> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_45> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_3> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_45_text_addomine> a lrmoo:F2_Expression ;
 	dcterms:title "Ecco, Francesco c'è!"^^xsd:string ;
 	crm:P2_has_type desmos:poetry ;
-	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_45> .
+	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_45> ,
+		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_3> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_46> a lrmoo:F2_Expression ;
 	dcterms:title "Est modus in rebus"^^xsd:string ;
@@ -2614,7 +2704,7 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_47> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_48> a lrmoo:F2_Expression ;
-	dcterms:title "Il divino intreccio"^^xsd:string ;
+	dcterms:title "Il Divino Intreccio"^^xsd:string ;
 	lrmoo:R15_has_fragment <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_48> ;
 	rdfs:seeAlso <https://www.oplepo.com/copia-di-p50-1> ;
 	crm:P2_has_type desmos:poetry ;
@@ -2636,7 +2726,7 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_49> .
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_49_text_addomine> a lrmoo:F2_Expression ;
-	dcterms:title "De Dantis eloquentia"^^xsd:string ;
+	dcterms:title "De Dantis eloquentiae"^^xsd:string ;
 	crm:P2_has_type desmos:visual_poetry ;
 	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_49> .
 
@@ -2910,272 +3000,362 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_01> a lrmoo:F3_Manifestation ;
     dcterms:title "Plaquette N. 1"^^xsd:string ;
+    dcterms:issued "1990"^^xsd:gYear ;
     crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> ;
     lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_01> ;
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 29-30."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 29-30."@en ;
 	schema:pagination "29-30"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_02> a lrmoo:F3_Manifestation ;
     dcterms:title "Plaquette N. 2"^^xsd:string ;
+    dcterms:issued "1991"^^xsd:gYear ;
     crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> ;
     lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_02> ;
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 31-46."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 31-46."@en ;
 	schema:pagination "31-46"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_03> a lrmoo:F3_Manifestation ;
     dcterms:title "Plaquette N. 3"^^xsd:string ;
+    dcterms:issued "1992"^^xsd:gYear ;
     crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> ;
     lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_03> ;
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 47-64."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 47-64."@en ;
 	schema:pagination "47-64"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_04> a lrmoo:F3_Manifestation ;
     dcterms:title "Plaquette N. 4"^^xsd:string ;
+    dcterms:issued "1992"^^xsd:gYear ;
     crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> ;
     lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_04> ;
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 65-66."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 65-66."@en ;
 	schema:pagination "65-66"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_05> a lrmoo:F3_Manifestation ;
     dcterms:title "Plaquette N. 5"^^xsd:string ;
+    dcterms:issued "1993"^^xsd:gYear ;
     crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> ;
     lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_05> ;
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 67-96."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 67-96."@en ;
 	schema:pagination "67-96"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_06> a lrmoo:F3_Manifestation ;
     dcterms:title "Plaquette N. 6"^^xsd:string ;
+    dcterms:issued "1994"^^xsd:gYear ;
     crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> ;
     lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_06> ;
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 97-98."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 97-98."@en ;
 	schema:pagination "97-98"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_07> a lrmoo:F3_Manifestation ;
     dcterms:title "Plaquette N. 7"^^xsd:string ;
+    dcterms:issued "1994"^^xsd:gYear ;
     crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> ;
     lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_07> ;
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 99-112."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 99-112."@en ;
 	schema:pagination "99-112"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_08> a lrmoo:F3_Manifestation ;
     dcterms:title "Plaquette N. 8"^^xsd:string ;
+    dcterms:issued "1994"^^xsd:gYear ;
     crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> ;
     lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_08> ;
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 113-134."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 113-134."@en ;
 	schema:pagination "113-134"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_09> a lrmoo:F3_Manifestation ;
     dcterms:title "Plaquette N. 9"^^xsd:string ;
+    dcterms:issued "1994"^^xsd:gYear ;
     crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> ;
     lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_09> ;
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 135-148."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 135-148."@en ;
 	schema:pagination "135-148"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_10> a lrmoo:F3_Manifestation ;
     dcterms:title "Plaquette N. 10"^^xsd:string ;
+    dcterms:issued "1994"^^xsd:gYear ;
     crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> ;
     lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_10> ;
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 149-150."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 149-150."@en ;
 	schema:pagination "149-150"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_11> a lrmoo:F3_Manifestation ;
     dcterms:title "Plaquette N. 11"^^xsd:string ;
+    dcterms:issued "1996"^^xsd:gYear ;
     crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> ;
     lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_11> ;
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 151-163."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 151-163."@en ;
 	schema:pagination "151-163"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_12> a lrmoo:F3_Manifestation ;
     dcterms:title "Plaquette N. 12"^^xsd:string ;
+    dcterms:issued "1996"^^xsd:gYear ;
     crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> ;
     lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_12> ;
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 165-196."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 165-196."@en ;
 	schema:pagination "165-196"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_13> a lrmoo:F3_Manifestation ;
     dcterms:title "Plaquette N. 13"^^xsd:string ;
+    dcterms:issued "1998"^^xsd:gYear ;
     crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> ;
     lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_13> ;
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 197-211."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 197-211."@en ;
 	schema:pagination "197-211"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_14> a lrmoo:F3_Manifestation ;
     dcterms:title "Plaquette N. 14"^^xsd:string ;
+    dcterms:issued "1998"^^xsd:gYear ;
     crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> ;
     lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_14> ;
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 213-231."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 213-228."@en ;
 	schema:pagination "213-230"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_15> a lrmoo:F3_Manifestation ;
     dcterms:title "Plaquette N. 15"^^xsd:string ;
+    dcterms:issued "1999"^^xsd:gYear ;
     crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> ;
     lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_15> ;
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 233-254."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 233-254."@en ;
 	schema:pagination "233-254"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_16> a lrmoo:F3_Manifestation ;
     dcterms:title "Plaquette N. 16"^^xsd:string ;
+    dcterms:issued "1999"^^xsd:gYear ;
     crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> ;
     lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_16> ;
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 255-364."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 255-364."@en ;
 	schema:pagination "255-364"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_17> a lrmoo:F3_Manifestation ;
     dcterms:title "Plaquette N. 17"^^xsd:string ;
+    dcterms:issued "2000"^^xsd:gYear ;
     crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> ;
     lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_17> ;
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 365-417."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 365-417."@en ;
 	schema:pagination "365-417"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_18> a lrmoo:F3_Manifestation ;
     dcterms:title "Plaquette N. 18"^^xsd:string ;
+    dcterms:issued "2001"^^xsd:gYear ;
     crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> ;
     lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_18> ;
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 419-485."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 419-485."@en ;
 	schema:pagination "419-485"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_19> a lrmoo:F3_Manifestation ;
     dcterms:title "Plaquette N. 19"^^xsd:string ;
+    dcterms:issued "2001"^^xsd:gYear ;
     crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> ;
     lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_19> ;
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 487-500."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 487-500."@en ;
 	schema:pagination "487-500"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_20> a lrmoo:F3_Manifestation ;
     dcterms:title "Plaquette N. 20"^^xsd:string ;
+    dcterms:issued "2001"^^xsd:gYear ;
     crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> ;
     lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_20> ;
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 501-520."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 501-520."@en ;
     schema:pagination "501-520"^^xsd:string .    
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_21> a lrmoo:F3_Manifestation ;
     dcterms:title "Plaquette N. 21"^^xsd:string ;
+    dcterms:issued "2001"^^xsd:gYear ;
     crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> ;
     lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_21> ;
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 521-535."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 521-535."@en ;
 	schema:pagination "521-535"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_22> a lrmoo:F3_Manifestation ;
     dcterms:title "Plaquette N. 22"^^xsd:string ;
+    dcterms:issued "2004"^^xsd:gYear ;
     crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> ;
     lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_22> ;
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 537-577."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 537-577."@en ;
 	schema:pagination "537-577"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_23> a lrmoo:F3_Manifestation ;
     dcterms:title "Plaquette N. 23"^^xsd:string ;
+    dcterms:issued "2005"^^xsd:gYear ;
     crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> ;
     lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_23> ;
-	schema:pagination "581-583"^^xsd:string .
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 579-614."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 579-614."@en ;
+	schema:pagination "579-614"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_24> a lrmoo:F3_Manifestation ;
     dcterms:title "Plaquette N. 24"^^xsd:string ;
+    dcterms:issued "2005"^^xsd:gYear ;
     crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> ;
     lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_24> ;
-	schema:pagination "615-638"^^xsd:string .
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 615-637."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 615-637."@en ;
+	schema:pagination "615-637"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_25> a lrmoo:F3_Manifestation ;
 	dcterms:title "Plaquette N. 25"^^xsd:string ;
+	dcterms:issued "2005"^^xsd:gYear ;
 	crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> ;
 	lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_25> ;
-	schema:pagination "13-54"^^xsd:string .
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. II (in riga, 2022), pp. 15-52."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. II (in riga, 2022), pp. 15-52."@en ;
+	schema:pagination "15-52"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_26> a lrmoo:F3_Manifestation ;
 	dcterms:title "Plaquette N. 26"^^xsd:string ;
+	dcterms:issued "2006"^^xsd:gYear ;
 	crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> ;
 	lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_26> ;
-	schema:pagination "55-84"^^xsd:string .
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. II (in riga, 2022), pp. 55-81."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. II (in riga, 2022), pp. 55-81."@en ;
+	schema:pagination "55-81"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_27> a lrmoo:F3_Manifestation ;
 	dcterms:title "Plaquette N. 27"^^xsd:string ;
+	dcterms:issued "2007"^^xsd:gYear ;
 	crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> ;
 	lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_27> ;
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. II (in riga, 2022), pp. 85-105."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. II (in riga, 2022), pp. 85-105."@en ;
 	schema:pagination "85-105"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_28> a lrmoo:F3_Manifestation ;
 	dcterms:title "Plaquette N. 28"^^xsd:string ;
+	dcterms:issued "2008"^^xsd:gYear ;
 	crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> ;
 	lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_28> ;
-	schema:pagination "109-154"^^xsd:string .
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. II (in riga, 2022), pp. 109-152."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. II (in riga, 2022), pp. 109-152."@en ;
+	schema:pagination "109-152"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_29> a lrmoo:F3_Manifestation ;
 	dcterms:title "Plaquette N. 29"^^xsd:string ;
+	dcterms:issued "2009"^^xsd:gYear ;
 	crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> ;
 	lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_29> ;
-	schema:pagination "155-224"^^xsd:string .
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. II (in riga, 2022), pp. 155-222."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. II (in riga, 2022), pp. 155-222."@en ;
+	schema:pagination "155-222"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_30> a lrmoo:F3_Manifestation ;
 	dcterms:title "Plaquette N. 30"^^xsd:string ;
+	dcterms:issued "2010"^^xsd:gYear ;
 	crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> ;
 	lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_30> ;
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. II (in riga, 2022), pp. 225-241."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. II (in riga, 2022), pp. 225-241."@en ;
 	schema:pagination "225-241"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_31> a lrmoo:F3_Manifestation ;
 	dcterms:title "Plaquette N. 31"^^xsd:string ;
+	dcterms:issued "2010"^^xsd:gYear ;
 	crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> ;
 	lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_31> ;
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. II (in riga, 2022), pp. 245-284."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. II (in riga, 2022), pp. 245-284."@en ;
 	schema:pagination "245-284"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_32> a lrmoo:F3_Manifestation ;
 	dcterms:title "Plaquette N. 32"^^xsd:string ;
+	dcterms:issued "2011"^^xsd:gYear ;
 	crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> ;
 	lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_32> ;
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. II (in riga, 2022), pp. 289-323."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. II (in riga, 2022), pp. 289-323."@en ;
 	schema:pagination "289-323"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_33> a lrmoo:F3_Manifestation ;
 	dcterms:title "Plaquette N. 33"^^xsd:string ;
+	dcterms:issued "2012"^^xsd:gYear ;
 	crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> ;
 	lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_33> ;
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. II (in riga, 2022), pp. 329-343."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. II (in riga, 2022), pp. 329-343."@en ;
 	schema:pagination "329-343"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_34> a lrmoo:F3_Manifestation ;
 	dcterms:title "Plaquette N. 34"^^xsd:string ;
+	dcterms:issued "2012"^^xsd:gYear ;
 	crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> ;
 	lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_34> ;
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. II (in riga, 2022), pp. 615-638."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. II (in riga, 2022), pp. 615-638."@en ;
 	schema:pagination "347-439"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_35> a lrmoo:F3_Manifestation ;
 	dcterms:title "Plaquette N. 35"^^xsd:string ;
+	dcterms:issued "2012"^^xsd:gYear ;
 	crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> ;
 	lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_35> ;
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. II (in riga, 2022), pp. 615-638."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. II (in riga, 2022), pp. 615-638."@en ;
 	schema:pagination "443-474"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_36> a lrmoo:F3_Manifestation ;
 	dcterms:title "Plaquette N. 36"^^xsd:string ;
+	dcterms:issued "2014"^^xsd:gYear ;
 	crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> ;
 	lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_36> ;
-	schema:pagination "471-535"^^xsd:string .
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. II (in riga, 2022), pp. 615-638."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. II (in riga, 2022), pp. 615-638."@en ;
+	schema:pagination "477-535"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_37> a lrmoo:F3_Manifestation ;
 	dcterms:title "Plaquette N. 37"^^xsd:string ;
+	dcterms:issued "2014"^^xsd:gYear ;
 	crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_3> ;
 	lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_37> ;
-	schema:pagination "13-41"^^xsd:string .
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. III (in riga, 2022), pp. 15-41."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. III (in riga, 2022), pp. 15-41."@en ;
+	schema:pagination "15-41"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_38> a lrmoo:F3_Manifestation ;
 	dcterms:title "Plaquette N. 38"^^xsd:string ;
+	dcterms:issued "2015"^^xsd:gYear ;
 	crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_3> ;
 	lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_38> ;
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. III (in riga, 2022), pp. 43-58."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. III (in riga, 2022), pp. 43-58."@en ;
 	schema:pagination "43-58"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_39> a lrmoo:F3_Manifestation ;
 	dcterms:title "Plaquette N. 39"^^xsd:string ;
+	dcterms:issued "2015"^^xsd:gYear ;
 	crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_3> ;
 	lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_39> ;
-	schema:pagination "59-81"^^xsd:string .
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. III (in riga, 2022), pp. 59-84."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. III (in riga, 2022), pp. 59-84."@en ;
+	schema:pagination "59-84"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_40> a lrmoo:F3_Manifestation ;
 	dcterms:title "Plaquette N. 40"^^xsd:string ;
+	dcterms:issued "2015"^^xsd:gYear ;
 	crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_3> ;
 	lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_40> ;
-	schema:pagination "83-162"^^xsd:string .
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. III (in riga, 2022), pp. 85-161."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. III (in riga, 2022), pp. 85-161."@en ;
+	schema:pagination "85-161"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_41> a lrmoo:F3_Manifestation ;
 	dcterms:title "Plaquette N. 41"^^xsd:string ;
+	dcterms:issued "2016"^^xsd:gYear ;
 	crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_3> ;
 	lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_41> ;
-	schema:pagination "163-246"^^xsd:string .
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. III (in riga, 2022), pp. 163-246."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. III (in riga, 2022), pp. 163-246."@en ;
+	schema:pagination "165-246"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_42> a lrmoo:F3_Manifestation ;
 	dcterms:title "Plaquette N. 42"^^xsd:string ;
+	dcterms:issued "2018"^^xsd:gYear ;
 	crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_3> ;
 	lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_42> ;
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. III (in riga, 2022), pp. 247-308."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. III (in riga, 2022), pp. 247-308."@en ;
 	schema:pagination "247-308"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_43> a lrmoo:F3_Manifestation ;
 	dcterms:title "Plaquette N. 43"^^xsd:string ;
+	dcterms:issued "2019"^^xsd:gYear ;
 	crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_3> ;
 	lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_43> ;
-	schema:pagination "309-336"^^xsd:string .
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. III (in riga, 2022), pp. 309-335."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. III (in riga, 2022), pp. 309-335."@en ;
+	schema:pagination "309-335"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_44> a lrmoo:F3_Manifestation ;
 	dcterms:title "Plaquette N. 44"^^xsd:string ;
+	dcterms:issued "2020"^^xsd:gYear ;
 	crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_3> ;
 	lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_44> ;
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. III (in riga, 2022), pp. 337-411."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. III (in riga, 2022), pp. 337-411."@en ;
 	schema:pagination "337-411"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_45> a lrmoo:F3_Manifestation ;
 	dcterms:title "Plaquette N. 45"^^xsd:string ;
+	dcterms:issued "2020"^^xsd:gYear ;
 	crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_3> ;
 	lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_45> ;
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. III (in riga, 2022), pp. 413-479."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. III (in riga, 2022), pp. 413-479."@en ;
 	schema:pagination "413-479"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_46> a lrmoo:F3_Manifestation ;
@@ -3619,7 +3799,8 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 <https://w3id.org/desmos/oplepiana/express_cr/expr_creat_11> a lrmoo:F28_Expression_Creation ;
 	lrmoo:R17_created <https://w3id.org/desmos/oplepiana/expression/e_plaquette_11> ;
 	desmos:usedConstraint desmos:anagraphy ;
-	crm:P14_carried_out_by <https://w3id.org/desmos/oplepiana/author/chierchia> ;
+	crm:P14_carried_out_by <https://w3id.org/desmos/oplepiana/author/oplepo> ,
+	<https://w3id.org/desmos/oplepiana/author/chierchia> ;
 	dcterms:created "1996"^^xsd:gYear .
 
 <https://w3id.org/desmos/oplepiana/express_cr/expr_creat_12> a lrmoo:F28_Expression_Creation ;
@@ -3912,7 +4093,8 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 <https://w3id.org/desmos/oplepiana/express_cr/expr_creat_30> a lrmoo:F28_Expression_Creation ;
 	lrmoo:R17_created <https://w3id.org/desmos/oplepiana/expression/e_plaquette_30> ;
 	desmos:usedConstraint desmos:mandatory_dedication ;
-	crm:P14_carried_out_by <https://w3id.org/desmos/oplepiana/author/oplepo> ;
+	crm:P14_carried_out_by <https://w3id.org/desmos/oplepiana/author/oplepo> ,
+		<https://w3id.org/desmos/oplepiana/author/sanguineti> ;
 	dcterms:created "2010"^^xsd:gYear .
 
 <https://w3id.org/desmos/oplepiana/express_cr/expr_creat_30_text_sanguineti> a lrmoo:F28_Expression_Creation ;
@@ -4135,7 +4317,8 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 <https://w3id.org/desmos/oplepiana/express_cr/expr_creat_39> a lrmoo:F28_Expression_Creation ;
 	lrmoo:R17_created <https://w3id.org/desmos/oplepiana/expression/e_plaquette_39> ;
 	desmos:usedConstraint desmos:fixed_text_length ;
-	crm:P14_carried_out_by  <https://w3id.org/desmos/oplepiana/author/fabrizi> ,
+	crm:P14_carried_out_by <https://w3id.org/desmos/oplepiana/author/oplepo> ,
+		<https://w3id.org/desmos/oplepiana/author/fabrizi> ,
 		<https://w3id.org/desmos/oplepiana/author/brignoli> ,
 		<https://w3id.org/desmos/oplepiana/author/eliana-vicari> ,
 		<https://w3id.org/desmos/oplepiana/author/odifreddi> ,
@@ -4157,7 +4340,7 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 
 <https://w3id.org/desmos/oplepiana/express_cr/expr_creat_40_text_berti> a lrmoo:F28_Expression_Creation ;
 	lrmoo:R17_created <https://w3id.org/desmos/oplepiana/expression/e_plaquette_40_text_berti> ;
-	desmos:usedConstraint desmos:LS_method ,
+	desmos:usedConstraint desmos:LD_method ,
 		desmos:mandatory_theme ,
 		desmos:fixed_title_length ;
 	crm:P14_carried_out_by <https://w3id.org/desmos/oplepiana/author/berti> ;
@@ -4653,7 +4836,7 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	lrmoo:R3_is_realised_in <https://w3id.org/desmos/oplepiana/expression/e_plaquette_06> .
 
 <https://w3id.org/desmos/oplepiana/work/w_plaquette_07> a lrmoo:F1_Work ;
-	dcterms:title "Forme For Me"^^xsd:string ;
+	dcterms:title "Forme For me"^^xsd:string ;
 	lrmoo:R3_is_realised_in <https://w3id.org/desmos/oplepiana/expression/e_plaquette_07> .
 
 <https://w3id.org/desmos/oplepiana/work/w_plaquette_08> a lrmoo:F1_Work ;
@@ -4817,7 +5000,7 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	lrmoo:R3_is_realised_in <https://w3id.org/desmos/oplepiana/expression/e_plaquette_47> .
 
 <https://w3id.org/desmos/oplepiana/work/w_plaquette_48> a lrmoo:F1_Work ;
-	dcterms:title "Il divino intreccio"^^xsd:string ;
+	dcterms:title "Il Divino Intreccio"^^xsd:string ;
 	lrmoo:R3_is_realised_in <https://w3id.org/desmos/oplepiana/expression/e_plaquette_48> .
 
 <https://w3id.org/desmos/oplepiana/work/w_plaquette_49> a lrmoo:F1_Work ;

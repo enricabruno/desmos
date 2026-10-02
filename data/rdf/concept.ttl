@@ -879,7 +879,7 @@ desmos:hendecasyllable a skos:Concept ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:heterogeneous_register_lexicon a skos:Concept ;
-    skos:prefLabel "Heterogeneous-register lexicon"@en , "Lessico eterogeneo"@it ;
+    skos:prefLabel "Heterogeneous-register lexicon"@en , "Lessico ibrido espressivo"@it ;
     skos:broader desmos:register_lexicon ;
     skos:definition "Formal constraint requiring all content words of a given line to share one expressive label, while each line adopts a different label, with no prescribed order among lines."@en , "Costrizione formale che impone a tutte le parole piene di un dato verso di condividere una qualifica espressiva, mentre ciascun verso ne adotta una diversa, senza ordine prestabilito fra i versi."@it ;
     skos:example "In 'I costretti sposi', ottava 44, ciascun verso adotta una diversa marca espressiva del GRADIT: nell’ordine gergale, iperbolica, familiare, colloquiale, ironica, spregiativa, popolare e scherzosa."@it , "In 'I costretti sposi', octave 44, each line adopts a different GRADIT expressive label: slang, hyperbolic, familiar, colloquial, ironic, derogatory, popular and jocular, in that order."@en ;
@@ -990,7 +990,7 @@ desmos:isovocalism a skos:Concept ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:jocular_register_lexicon a skos:Concept ;
-    skos:prefLabel "Jocular-register lexicon"@en , "Lessico giocoso"@it ;
+    skos:prefLabel "Jocular-register lexicon"@en , "Lessico scherzoso"@it ;
     skos:broader desmos:register_lexicon ;
     skos:definition "Formal constraint requiring every content word to bear the label 'scherz.' (jocular) in the reference dictionary, at least in the sense used."@en , "Costrizione formale che impone a ogni parola piena di recare l'etichetta 'scherz.' (scherzoso) nel dizionario di riferimento, almeno nell'accezione impiegata."@it ;
     skos:example "In 'I costretti sposi', ottava 41, 'Una goduria sia l’ambaradan / megagalattico alla meneghina, / sia – pure lei paneropolitan – / del togo baccellier la mogliettina': le parole piene sono marcate 'scherz.' nel GRADIT."@it , "In 'I costretti sposi', octave 41, 'Una goduria sia l’ambaradan / megagalattico alla meneghina, / sia – pure lei paneropolitan – / del togo baccellier la mogliettina': content words are marked 'scherz.' in GRADIT."@en ;
@@ -1004,7 +1004,7 @@ desmos:latin_locution_lexicon a skos:Concept ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:latin_noun_lexicon a skos:Concept ;
-    skos:prefLabel "Latin-noun lexicon"@en , "Lessico di nomi latini"@it ;
+    skos:prefLabel "Latin-noun lexicon"@en , "Lessico di sostantivi latini"@it ;
     skos:broader desmos:loanword_lexicon ;
     skos:definition "Formal constraint requiring every noun of the text to be a Latin loanword regularly recorded as 'lat.' in the reference dictionary."@en , "Costrizione formale che impone a ogni sostantivo del testo di essere un prestito latino regolarmente registrato come 'lat.' nel dizionario di riferimento."@it ;
     skos:example "In 'I costretti sposi', ottava 11, 'Una summa davvero entusiasmante, / che realizza, dall’incipit famoso / fino all’explicit sapido e ammiccante, / in un continuum…': tutti i sostantivi sono prestiti latini."@it , "In 'I costretti sposi', octave 11, 'Una summa davvero entusiasmante, / che realizza, dall’incipit famoso / fino all’explicit sapido e ammiccante, / in un continuum…': all nouns are Latin loanwords."@en ;
@@ -1105,14 +1105,14 @@ desmos:loanword_lexicon a skos:Concept ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:lombard_lexicon a skos:Concept ;
-    skos:prefLabel "Lombard/Milanese lexicon"@en , "Lessico lombardo"@it ;
+    skos:prefLabel "Lombard/Milanese lexicon"@en , "Lessico lombardo/milanese"@it ;
     skos:broader desmos:diatopic_lexicon ;
     skos:definition "Formal constraint requiring every content word, or at least the sense used, to bear the area label 'lomb.' (Lombard) or, more specifically, 'milan.' (Milanese) in the reference dictionary."@en , "Costrizione formale che impone a ogni parola piena, o almeno all'accezione impiegata, di recare la marca d'area 'lomb.' (lombardo) o, più specificamente, 'milan.' (milanese) nel dizionario di riferimento."@it ;
     skos:example "In 'I costretti sposi', ottava 45, 'Lui dopo il garibaldi, forloccando, / si svacca come un bamba, mentre ella, / sgomentendosi e molto tripillando…': le parole piene sono marcate 'lomb.' o 'milan.' nel GRADIT."@it , "In 'I costretti sposi', octave 45, 'Lui dopo il garibaldi, forloccando, / si svacca come un bamba, mentre ella, / sgomentendosi e molto tripillando…': content words are marked 'lomb.' or 'milan.' in GRADIT."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
-desmos:LS_method a skos:Concept ;
-    skos:prefLabel "LS Method (Semidefinitional Literature)"@en , "Metodo LS (Letteratura Semidefinizionale)"@it ;
+desmos:LD_method a skos:Concept ;
+    skos:prefLabel "LD Method (Definitional Literature)"@en , "Metodo LD (Letteratura Definizionale)"@it ;
     skos:broader desmos:lexicographic_marker_constraint ;
     skos:definition "Formal constraint in which every content word (or a defined subset) is replaced by its dictionary definition, drawing on the 'littérature définitionnelle' technique developed by Jean Lescure within the Oulipo."@en , "Costrizione formale in cui ogni parola piena (o un sottoinsieme definito) è sostituita dalla propria definizione dizionariale, secondo la tecnica della 'littérature définitionnelle' elaborata da Jean Lescure in seno all'Oulipo."@it ;
     skos:example "'gatto nero' → 'mammifero domestico di colore scuro': le due parole piene sono sostituite da formulazioni definizionali."@it , "'gatto nero' ('black cat') → 'mammifero domestico di colore scuro' ('domestic mammal of dark colour'): the two content words are replaced by definitional formulations."@en ;
@@ -1310,8 +1310,8 @@ desmos:paronomasia a skos:Concept ;
     skos:example "Placeholder example."@en , "Esempio segnaposto."@it ;
     skos:inScheme desmos:FormalConstraintScheme .
 
-desmos:pentomino_segmentation a skos:Concept ;
-    skos:prefLabel "Pentomino segmentation"@en , "Segmentazione pentomino"@it ;
+desmos:pentamini a skos:Concept ;
+    skos:prefLabel "Pentamini"@en , "Pentamini"@it ;
     skos:related desmos:fixed_text_length ;
     skos:definition "Formal constraint in which word boundaries (effective separations, not mere apostrophes) fall at least every five letters, so that each line is segmentable into five-letter blocks; consequently the letter count of each line, and of the whole text, is a multiple of five."@en , "Costrizione formale in cui le cesure fra parola e parola (separazioni effettive, non meri apostrofi) intervengono almeno ogni cinque lettere, sicchè ogni verso è segmentabile in blocchi di cinque lettere; di conseguenza il numero di lettere di ogni verso, e dell'intero testo, è multiplo di cinque."@it ;
     skos:example "Placeholder example"@en , "Esempio segnaposto"@it ;
@@ -1557,7 +1557,7 @@ desmos:stolen_letters a skos:Concept ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:syllable_expansion a skos:Concept ;
-    skos:prefLabel "Syllable expansion"@en , "Espansioni sillabiche"@it ;
+    skos:prefLabel "Syllable expansion"@en , "Sillabe in crescenza"@it ;
     skos:definition "Formal constraint consisting in the rewriting of a text through a progressive metrical expansion, from the shortest unit (monosyllables) to the longest one (double heptameters)."@en ,"Costrizione formale che consiste in una progressiva espansione metrica, dall'unità più breve (monosillabi) fino alla più lunga (settenari doppi)."@it ;
     skos:historyNote "The constraint was invented by Luca Chiti in 'L'infinito futuro' (1999), 'La Biblioteca Oplepiana' n. 15."@en , "La costrizione è stata inventata da Luca Chiti in 'L'infinito futuro' (1999), 'La Biblioteca Oplepiana' n. 15."@it ;
     skos:example "Placeholder example."@en , "Esempio placeholder."@it ;
