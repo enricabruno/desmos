@@ -3107,8 +3107,8 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
     dcterms:issued "1998"^^xsd:gYear ;
     crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> ;
     lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_14> ;
-	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 213-231."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 213-228."@en ;
-	schema:pagination "213-230"^^xsd:string .
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 213-231."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. I (Zanichelli, 2005), pp. 213-231."@en ;
+	schema:pagination "213-231"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_15> a lrmoo:F3_Manifestation ;
     dcterms:title "Plaquette N. 15"^^xsd:string ;
@@ -3267,7 +3267,7 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	dcterms:issued "2012"^^xsd:gYear ;
 	crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> ;
 	lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_34> ;
-	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. II (in riga, 2022), pp. 615-638."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. II (in riga, 2022), pp. 615-638."@en ;
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. II (in riga, 2022), pp. 347-439."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. II (in riga, 2022), pp. 347-439."@en ;
 	schema:pagination "347-439"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_35> a lrmoo:F3_Manifestation ;
@@ -3275,7 +3275,7 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	dcterms:issued "2012"^^xsd:gYear ;
 	crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> ;
 	lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_35> ;
-	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. II (in riga, 2022), pp. 615-638."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. II (in riga, 2022), pp. 615-638."@en ;
+	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. II (in riga, 2022), pp. 443-474."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. II (in riga, 2022), pp. 443-474."@en ;
 	schema:pagination "443-474"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_36> a lrmoo:F3_Manifestation ;
@@ -3284,7 +3284,7 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_2> ;
 	lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_36> ;
 	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. II (in riga, 2022), pp. 615-638."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. II (in riga, 2022), pp. 615-638."@en ;
-	schema:pagination "477-535"^^xsd:string .
+	schema:pagination "615-638"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_37> a lrmoo:F3_Manifestation ;
 	dcterms:title "Plaquette N. 37"^^xsd:string ;
@@ -3324,7 +3324,7 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	crm:P148i_is_component_of <https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_3> ;
 	lrmoo:R4_embodies <https://w3id.org/desmos/oplepiana/expression/e_plaquette_41> ;
 	dcterms:description "Plaquette raccolta in La Biblioteca Oplepiana, vol. III (in riga, 2022), pp. 163-246."@it , "Plaquette collected in La Biblioteca Oplepiana, vol. III (in riga, 2022), pp. 163-246."@en ;
-	schema:pagination "165-246"^^xsd:string .
+	schema:pagination "163-246"^^xsd:string .
 
 <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_42> a lrmoo:F3_Manifestation ;
 	dcterms:title "Plaquette N. 42"^^xsd:string ;
