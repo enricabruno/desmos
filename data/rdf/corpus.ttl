@@ -1611,7 +1611,7 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	crm:P3_has_note "[...] non potevano che essere numerosi e diversi i contributi di quanti - oplepiani, oulipiani e nin - hanno voluto rendere omaggio allo scrittore che più di ogni altro personifica lo spirito e le caratteristiche della letteratura 'à contrainte'."@it ;
 	crm:P129_is_about desmos:mandatory_dedication ;
 	crm:P67_refers_to <https://w3id.org/desmos/oplepiana/expression/e_plaquette_34> ;
-	prov:wasAttributedTo <https://w3id.org/desmos/oplepiana/author/pergola> .
+	prov:wasAttributedTo <https://w3id.org/desmos/oplepiana/author/oplepo> .
 
 <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_34_albani_a> a crm:E33_Linguistic_Object ;
 	crm:P3_has_note "Le 'contraintes' sono: una sorta di «anafora visiva» consistente nell'uso ripetuto di alcune foto di Perec [...] che lo ritraggono di fronte o di profilo, tutte eccetto una ('clinamen')."@it ;
@@ -1858,7 +1858,7 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 		desmos:anagram ,
 		desmos:value_inversion ;
 	crm:P67_refers_to <https://w3id.org/desmos/oplepiana/expression/e_plaquette_51_text_bloomfield> ;
-	prov:wasAttributedTo <https://w3id.org/desmos/oplepiana/author/pelliti> .
+	prov:wasAttributedTo <https://w3id.org/desmos/oplepiana/author/bloomfield> .
 
 <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_52> a crm:E33_Linguistic_Object ;
 	crm:P3_has_note "Questa plaquette nasce da un falso ricordo. Mi sembrava di aver letto da qualche parte nelle 'Ricerche Filosofiche' di Wittgenstein qualcosa come «si potrebbe immaginare un libro nel quale la stessa immagine sia presente ovunque, accompagnata da un testo in cui si parla ogni volta di qualcosa di diverso». Poi sono andato a rileggere e ho verificato che in verità Wittgenstein dice qualcosa di vagamente simile, ma non esattamente la stessa cosa. Un libro fatto di didascalie per la stessa immagine me l'ero immaginato io e alla fine l'ho anche scritto. [...] Così ho optato per la versione del cubo di Necker che appare nelle 'Ricerche Filosofiche'. [...] Il risultato finale è quindi un racconto in novantasei didascalie. Perché novantasei? Mi sembrava doveroso che il numero di didascalie avesse qualcosa a che fare con la geometria di un cuboide. Alla fine ho optato per il numero 96 che è il prodotto del numero dei vertici (8) per il numero degli spigoli (12) di un cubo."@it ;
@@ -2198,7 +2198,7 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	dcterms:title "Preludi"^^xsd:string ;
 	lrmoo:R15_has_fragment <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_24> ;
 	crm:P130_shows_features_of <https://w3id.org/desmos/oplepiana/expression/e_text_preludi> ;
-	rdfs:seeAlso <https://www.oplepo.com/copia-di-p25> ;
+	rdfs:seeAlso <https://www.oplepo.com/copia-di-p29> ;
 	crm:P2_has_type desmos:poetry ;
 	lrmoo:R4i_is_embodied_in <https://w3id.org/desmos/oplepiana/manifestation/m_plaquette_24> ,
 		<https://w3id.org/desmos/oplepiana/manifestation/m_oplepiana_1> .
@@ -2315,6 +2315,7 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
         <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_29> ,
         <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_29_addomine_a> ,
         <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_29_addomine_b> ,
+		<https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_29_addomine_c> ,
         <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_29_enriques> ,
         <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_29_sanguineti> ;
 	rdfs:seeAlso <https://www.oplepo.com/copia-di-p31-1> ;
