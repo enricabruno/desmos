@@ -1,0 +1,14 @@
+prefisso,namespace
+desmos,https://w3id.org/desmos/
+oplepiana,https://w3id.org/desmos/oplepiana/
+crm,http://www.cidoc-crm.org/cidoc-crm/
+lrmoo,http://iflastandards.info/ns/lrm/lrmoo/
+intro,https://w3id.org/lso/intro/beta202506#
+prov,http://www.w3.org/ns/prov#
+dcterms,http://purl.org/dc/terms/
+skos,http://www.w3.org/2004/02/skos/core#
+rdf,http://www.w3.org/1999/02/22-rdf-syntax-ns#
+rdfs,http://www.w3.org/2000/01/rdf-schema#
+owl,http://www.w3.org/2002/07/owl#
+xsd,http://www.w3.org/2001/XMLSchema#
+schema,http://schema.org/
