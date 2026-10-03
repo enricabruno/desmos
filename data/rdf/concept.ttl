@@ -15,7 +15,7 @@
 # ---------------------------------------------------------
 
 desmos:ConstraintOriginScheme a skos:ConceptScheme ;
-    skos:prefLabel "Constraint's origin scheme"@en , "Schema dell'origine della costrizione"@it ;
+    skos:prefLabel "Constraint origin scheme"@en , "Schema dell'origine della costrizione"@it ;
     skos:definition "A scheme defining the origin of the constraint, distinguishing between forms inherited from tradition and Oulipian or Oplepian inventions."@en , "Schema che definisce la provenienza della costrizione, distinguendo tra forme ereditate dalla tradizione e invenzioni oulipiane o oplepiane."@it ;
     skos:hasTopConcept
         desmos:historical ,
@@ -179,7 +179,7 @@ desmos:SemanticUnitScheme a skos:ConceptScheme ;
 
 desmos:ProceduralOperationScheme a skos:ConceptScheme ;
     skos:prefLabel "Procedural operation scheme"@en , "Schema delle operazioni procedurali"@it ;
-    skos:definition "A scheme describing the procedural operations applied to generate the constrained text, as retrieved from the TOLLE classification by Bénabou."@en , "Schema che descrive le operazioni procedurali applicate per generare il testo vincolato riprese dalla classificazione TOLLE di Bénabou."@it ;
+    skos:definition "A scheme describing the procedural operations applied to generate the constrained text, as retrieved from the TOLLE classification by Bénabou."@en , "Schema che descrive le operazioni procedurali applicate per generare il testo vincolato, riprese dalla classificazione TOLLE di Bénabou."@it ;
     skos:hasTopConcept
         desmos:addition ,
         desmos:contraction ,
@@ -391,7 +391,7 @@ desmos:acrobistic a skos:Concept ;
     skos:prefLabel "Acrobistic"@en , "Acrobistico"@it ;
     skos:altLabel "Rhyme name echo"@en , "Eco onomastica nelle rime"@it ;
     skos:definition "Formal constraint in which the sequence of end-rhymes phonetically recalls, letter by letter and in order, the dedicatee's first name, while their surname is repeated twice in the form of an acrostic."@en , "Costrizione formale in cui la successione delle rime finali richiama foneticamente, lettera per lettera e nell'ordine, il nome del dedicatario, il cui cognome è ripetuto due volte in forma di acrostico."@it ;
-    skos:scopeNote "Distinct from the acrostic, which spells the name through the initial letters of the lines, and from the 'beau présent', which restricts the whole text to the dedicatee's letters: here the correspondence is phonetic and bound to the rhyme position. In the realisation for Jacques Roubaud the sonnet is chosen precisely because the full name has fourteen letters, matching the sonnet's fourteen lines: the equivalence between number of lines and number of letters is a felicitous fit of the chosen form, not a rule of the constraint."@en , "Distinta dall'acrostico, che compone il nome con le lettere iniziali dei versi, e dal 'beau présent', che vincola l'intero testo alle lettere del dedicatario: qui la corrispondenza è fonetica e legata alla posizione di rima. Nella realizzazione per Jacques Roubaud il sonetto è scelto proprio perché il nome e cognome contano quattordici lettere, pari ai quattordici versi del sonetto: l'equivalenza fra numero di versi e numero di lettere è un incastro felice della forma scelta, non una regola della costrizione."@it ;
+    skos:scopeNote "Distinct from the acrostic, which spells the name through the initial letters of the lines, and from the 'beau présent', which restricts the whole text to the dedicatee's letters: here the correspondence is phonetic and bound to the rhyme position. In the realization for Jacques Roubaud the sonnet is chosen precisely because the full name has fourteen letters, matching the sonnet's fourteen lines: the equivalence between number of lines and number of letters is a felicitous fit of the chosen form, not a rule of the constraint."@en , "Distinta dall'acrostico, che compone il nome con le lettere iniziali dei versi, e dal 'beau présent', che vincola l'intero testo alle lettere del dedicatario: qui la corrispondenza è fonetica e legata alla posizione di rima. Nella realizzazione per Jacques Roubaud il sonetto è scelto proprio perché il nome e cognome contano quattordici lettere, pari ai quattordici versi del sonetto: l'equivalenza fra numero di versi e numero di lettere è un incastro felice della forma scelta, non una regola della costrizione."@it ;
     skos:historyNote "The constraint was invented by Edoardo Sanguineti in 'a Jacques Roubaud' (2002), 'La regola è questa' (a cura di Raffaele Aragona)."@en , "La costrizione è stata inventata da Edoardo Sanguineti in 'a Jacques Roubaud' (2002), 'La regola è questa' (a cura di Raffaele Aragona)."@it ;
     skos:related desmos:beau_present ,
         desmos:alliteration ;
@@ -692,7 +692,7 @@ desmos:dispersed_name a skos:Concept ;
     skos:prefLabel "Dispersed name"@en , "Nome disperso"@it ;
     skos:broader desmos:hypogram ;
     skos:definition "Formal constraint in which the distinct letters of one proper name are distributed within each line, while the distinct letters of a second proper name are distributed cyclically across the junctions between consecutive lines."@en , "Costrizione formale in cui le lettere distinte di un nome proprio sono distribuite all'interno di ciascun verso, mentre le lettere distinte di un secondo nome proprio sono distribuite ciclicamente nei passaggi fra versi consecutivi."@it ;
-    skos:scopeNote "Specialisation of hypogram with a double, position-defined reading key (intra-line vs inter-line)."@en , "Specializzazione dell'ipogramma con doppia chiave posizionale (intra-verso vs inter-verso)."@it ;
+    skos:scopeNote "Specialization of hypogram with a double, position-defined reading key (intra-line vs inter-line)."@en , "Specializzazione dell'ipogramma con doppia chiave posizionale (intra-verso vs inter-verso)."@it ;
     skos:example "Nei 'Versi vincolati' dei 'Costretti sposi' le lettere di RENZO ricorrono, in combinazioni differenti, all’interno di ciascun verso, mentre quelle di LUCIA sono distribuite ciclicamente nei passaggi fra un verso e il successivo."@it , "In the 'Versi vincolati' of 'I costretti sposi', the letters of RENZO occur in different combinations within each line, while those of LUCIA are cyclically distributed across the junctions between consecutive lines."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
@@ -949,7 +949,7 @@ desmos:homosyntaxism a skos:Concept ;
 
 desmos:iambic_hendecasyllable a skos:Concept ;
     skos:prefLabel "Iambic hendecasyllable"@en , "Endecasillabo giambico"@it ;
-    skos:definition "Hendecasyllable realised with a regular iambic rhythm: the metrical stresses (ictus) fall on the even syllables (2nd, 4th, 6th, 8th, 10th), producing a steady rising cadence. It is a rhythmic specialisation of the hendecasyllable."@en ,
+    skos:definition "Hendecasyllable realized with a regular iambic rhythm: the metrical stresses (ictus) fall on the even syllables (2nd, 4th, 6th, 8th, 10th), producing a steady rising cadence. It is a rhythmic specialization of the hendecasyllable."@en ,
         "Endecasillabo realizzato con ritmo giambico regolare: gli accenti metrici (ictus) cadono sulle posizioni pari (2ª, 4ª, 6ª, 8ª, 10ª sillaba), con andamento ascendente costante. È una specializzazione ritmica dell'endecasillabo."@it ;
     skos:related desmos:hendecasyllable ;
     skos:example "Il verso 'Tra chi fa vita ricca, chi da schiavi' dei 'Costretti sposi' realizza un endecasillabo giambico: Tra(1) CHI(2) fa(3) VÌ(4)-ta(5) RÌC(6)-ca(7) CHI(8) da(9) SCHIÀ(10)-vi(11)."@it , "The line 'Tra chi fa vita ricca, chi da schiavi' from 'I costretti sposi' realises an iambic hendecasyllable: Tra(1) CHI(2) fa(3) VÌ(4)-ta(5) RÌC(6)-ca(7) CHI(8) da(9) SCHIÀ(10)-vi(11)."@en ;
@@ -985,7 +985,7 @@ desmos:isovocalism a skos:Concept ;
     skos:related desmos:vowel_alternation ,
         desmos:vowel_slide ;
     skos:definition "Formal constraint requiring every word of a text (or section) to reproduce one and the same predetermined ordered sequence of vowels regardless of the intervening consonants; the fixed sequence may be made of identical or distinct vowels (e.g. a-e-a, i-e-u)."@en , "Costrizione formale che richiede che ogni parola di un testo (o sezione) riproduca un'unica sequenza ordinata di vocali prestabilita — il suo scheletro vocalico — indipendentemente dalle consonanti interposte; la sequenza fissa può essere composta da vocali identiche o distinte (per es. a-e-a, i-e-u)."@it ;
-    skos:historyNote "The constraint was invented by Domenico D'Oria in 'Kimerik polito' (2006), 'La Biblioteca Oplepiana', n. 26."@en , "La costrizione è stata inventata da Domenico D'Oria in 'Kimerik polito' (2006), 'La Biblioteca Oplepiana', n. 26."@it ;
+    skos:historyNote "The constraint was invented by Domenico D'Oria in 'Kimerik polito-logico' (2006), 'La Biblioteca Oplepiana', n. 26."@en , "La costrizione è stata inventata da Domenico D'Oria in 'Kimerik polito-logico' (2006), 'La Biblioteca Oplepiana', n. 26."@it ;
     skos:example "Le parole 'catena', 'pantera' e 'candela' condividono lo stesso scheletro vocalico a-e-a."@it , "The words 'catena', 'pantera' and 'candela' share the same vowel skeleton a-e-a."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
@@ -1297,7 +1297,7 @@ desmos:palindrome a skos:Concept ;
 
 desmos:panvocalism a skos:Concept ;
     skos:prefLabel "Panvocalism"@en , "Panvocalismo"@it ;
-    skos:definition "Formal constraint that requires using words or phrases that contain all five vowels (a, e, i, o, u)"@en , "Costrizione formale che richiede di utilizzare parole o frasi che contengono tutte e cinque le vocali (a, e, i, o, u)"@it ;
+    skos:definition "Formal constraint that requires using words or phrases that contain all five vowels (a, e, i, o, u)."@en , "Costrizione formale che richiede di utilizzare parole o frasi che contengono tutte e cinque le vocali (a, e, i, o, u)."@it ;
     skos:example "Placeholder example."@en , "Esempio placeholder."@it ;
     skos:inScheme desmos:FormalConstraintScheme .
 
@@ -1348,7 +1348,7 @@ desmos:postal_code_acrostic a skos:Concept ;
     skos:altLabel "Codici di Avviamento Poetico"@it ;
     skos:broader desmos:acrostic ;
     skos:related desmos:mnemonic_encoding ;
-    skos:definition "Formal constraint in which the initial letters of the lines, read vertically and converted into digits through a fixed letter-to-number cipher (A=0/1, B=2, C=3 … I=9), spell the postal codes delimiting a city's street-directory range; the poem synthesises salient features of that city."@en , "Costrizione formale in cui le lettere iniziali dei versi, lette verticalmente e convertite in cifre tramite una tabella fissa lettera-numero (A=0/1, B=2, C=3 … I=9), compongono i codici postali che delimitano lo stradario di una città; il testo ne sintetizza i caratteri salienti."@it ;
+    skos:definition "Formal constraint in which the initial letters of the lines, read vertically and converted into digits through a fixed letter-to-number cipher (A=0/1, B=2, C=3 … I=9), spell the postal codes delimiting a city's street-directory range; the poem synthesizes salient features of that city."@en , "Costrizione formale in cui le lettere iniziali dei versi, lette verticalmente e convertite in cifre tramite una tabella fissa lettera-numero (A=0/1, B=2, C=3 … I=9), compongono i codici postali che delimitano lo stradario di una città; il testo ne sintetizza i caratteri salienti."@it ;
     skos:historyNote "The constraint was invented by Matteo Pelliti (2021), plaquette n. 47."@en , "La costrizione è stata inventata da Matteo Pelliti (2021), plaquette n. 47."@it ;
     skos:example """Placeholder example."""@en , """Esempio segnaposto."""@it ;
     skos:inScheme desmos:FormalConstraintScheme .
@@ -1377,7 +1377,7 @@ desmos:preventive_review  a skos:Concept ;
 desmos:prisoner_constraint a skos:Concept ;
     skos:prefLabel "Contrainte du prisonnier"@fr , "Contrainte du prisonnier"@en , "Contrainte du prisonnier"@it ;
     skos:broader desmos:alphabetic_set_constraint ;
-    skos:scopeNote "Costrizione basata su esclusione motivata da una proprietà tipografica (assenza di ascensori/descensori): il set ammissibile è definito dalle caratteristiche dei glifi a altezza x, non dalla selezione individuale delle lettere."@it ,"Exclusion-based constraint motivated by a typographic property (absence of ascenders/descenders): the admissible set is defined by x-height glyph features, not by individual letter selection."@en ;
+    skos:scopeNote "Costrizione basata su esclusione motivata da una proprietà tipografica (assenza di ascensori/descensori): il set ammissibile è definito dalle caratteristiche dei glifi ad altezza x, non dalla selezione individuale delle lettere."@it ,"Exclusion-based constraint motivated by a typographic property (absence of ascenders/descenders): the admissible set is defined by x-height glyph features, not by individual letter selection."@en ;
     skos:definition "Formal constraint consisting of writing a text using only letters without ascenders or descenders (avoiding 'hampes' and 'jambages'), thus restricting the character set to those contained within the x-height (a, c, e, i, m, n, o, r, s, u, v, w, x, z)."@en , "Costrizione formale che consiste nello scrivere un testo utilizzando esclusivamente lettere che non presentano tratti ascendenti o discendenti (ovvero lettere prive di 'hampes' e 'jambages'), limitando il set di caratteri a quelli che rientrano nell'altezza dell'occhio medio (a, c, e, i, m, n, o, r, s, u, v, w, x, z)."@it ;
     skos:historyNote "The constraint was invented by the Oulipo."@en , "La costrizione è stata inventata dall'Oulipo."@it ;
     skos:closeMatch <https://oulipo.net/contraintes/contrainte-du-prisonnier> ;
@@ -1387,7 +1387,7 @@ desmos:prisoner_constraint a skos:Concept ;
 desmos:procomplementary_verb_lexicon a skos:Concept ;
     skos:prefLabel "Procomplementary-verb lexicon"@en , "Lessico di verbi procomplementari"@it ;
     skos:broader desmos:grammatical_category_lexicon ;
-    skos:definition "Formal constraint requiring every verb of the text to be a procomplementary verb (e.g. GRADIT 'v. procompl.'), i.e. stably used with procomplementary clitic particles and lemmatised as an autonomous entry (e.g. svignarsela, sentirsela)."@en , "Costrizione formale che impone a ogni verbo del testo di essere procomplementare (es. GRADIT 'v. procompl.'), ovvero usato stabilmente con particelle clitiche procomplementari e lemmatizzato come voce autonoma (es. svignarsela, sentirsela)."@it ;
+    skos:definition "Formal constraint requiring every verb of the text to be a procomplementary verb (e.g. GRADIT 'v. procompl.'), i.e. stably used with procomplementary clitic particles and lemmatized as an autonomous entry (e.g. svignarsela, sentirsela)."@en , "Costrizione formale che impone a ogni verbo del testo di essere procomplementare (es. GRADIT 'v. procompl.'), ovvero usato stabilmente con particelle clitiche procomplementari e lemmatizzato come voce autonoma (es. svignarsela, sentirsela)."@it ;
     skos:example "Varaldo: 'Chi se la passa bene [...] chi ci azzecca [...] chi se ne sbatte ognor della morale'."@it ;
     skos:inScheme desmos:FormalConstraintScheme .
 
@@ -1507,7 +1507,7 @@ desmos:syllabic_set_constraint a skos:Concept ;
     skos:prefLabel "Syllabic-set constraint"@en , "Costrizione sul set sillabico"@it ;
     skos:related desmos:tautogram ;
     skos:definition "Formal constraint requiring every word of the text to begin with one of a closed set of syllables (typically the syllables composing a reference title), each syllable being represented at least once."@en , "Costrizione formale che impone a ogni parola del testo di iniziare con un insieme chiuso di sillabe (tipicamente le sillabe che compongono un titolo di riferimento), con ciascuna sillaba rappresentata almeno una volta."@it ;
-    skos:scopeNote "Generalises the tautogram from a single initial letter to a finite set of initial syllables."@en , "Generalizza il tautogramma da una singola lettera iniziale a un insieme finito di sillabe iniziali."@it ;
+    skos:scopeNote "Generalizes the tautogram from a single initial letter to a finite set of initial syllables."@en , "Generalizza il tautogramma da una singola lettera iniziale a un insieme finito di sillabe iniziali."@it ;
     skos:example "Varaldo: tutte le parole iniziano con I, PRO, MES, SI o SPO (da 'I promessi sposi')."@it ;
     skos:inScheme desmos:FormalConstraintScheme .
 
@@ -1580,7 +1580,7 @@ desmos:tautogram a skos:Concept ;
 desmos:temporal_constraint a skos:Concept ;
     skos:prefLabel "Temporal constraint"@en , "Tempo obbligato"@it ;
     skos:related desmos:fixed_text_length ;
-    skos:definition "Formal constraint requiring the text to be calibrated so that its declamation or reading duration matches the execution time of a predefined external reference (typically a musical piece)."@en , "Costrizione formale che impone al testo di essere calibrato in modo che la sua declamazione o lettura abbia una durata pari al tempo di esecuzione di un riferimento esterno prestabilito (tipicamente un brano musicale)"@it ;
+    skos:definition "Formal constraint requiring the text to be calibrated so that its declamation or reading duration matches the execution time of a predefined external reference (typically a musical piece)."@en , "Costrizione formale che impone al testo di essere calibrato in modo che la sua declamazione o lettura abbia una durata pari al tempo di esecuzione di un riferimento esterno prestabilito (tipicamente un brano musicale)."@it ;
     skos:example "Placeholder example"@en , "Placeholder example"@it ;
     skos:inScheme desmos:FormalConstraintScheme .
 

@@ -1429,7 +1429,7 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	prov:wasAttributedTo <https://w3id.org/desmos/oplepiana/author/oplepo> .
 
 <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_26_doria> a crm:E33_Linguistic_Object ;
-	crm:P3_has_note "Tutti i sostantivi del testo, nomi propri compresi, contengono una successione ordinata di tre vocali secondo lo schema x y x"@it ;
+	crm:P3_has_note "Tutti i sostantivi del testo, nomi propri compresi, contengono una successione ordinata di tre vocali secondo lo schema x y x."@it ;
 	crm:P129_is_about desmos:isovocalism ;
 	crm:P67_refers_to <https://w3id.org/desmos/oplepiana/expression/e_plaquette_26_text_doria> ;
 	prov:wasAttributedTo <https://w3id.org/desmos/oplepiana/author/oplepo> .
@@ -1445,7 +1445,7 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	prov:wasAttributedTo <https://w3id.org/desmos/oplepiana/author/oplepo> .
 
 <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_26_anna-vicari> a crm:E33_Linguistic_Object ;
-	crm:P3_has_note "Il testo è costruito da innesti di vaneggiamenti di Albani (il leone), Odifreddi (la capra) e Cavazzoni (il serpente), su versi fiammanti (le vampe alitate dal mostro) di Sanguineti"@it ;
+	crm:P3_has_note "Il testo è costruito da innesti di vaneggiamenti di Albani (il leone), Odifreddi (la capra) e Cavazzoni (il serpente), su versi fiammanti (le vampe alitate dal mostro) di Sanguineti."@it ;
 	crm:P129_is_about desmos:cento ;
 	crm:P67_refers_to <https://w3id.org/desmos/oplepiana/expression/e_plaquette_26_text_anna-vicari> ;
 	prov:wasAttributedTo <https://w3id.org/desmos/oplepiana/author/oplepo> .
@@ -1515,7 +1515,7 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	prov:wasAttributedTo <https://w3id.org/desmos/oplepiana/author/oplepo> .
 
 <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_29_sanguineti> a crm:E33_Linguistic_Object ;
-	crm:P3_has_note "I 21 distici offrono, inoltre, un acrostico alfabetico doppio"@it ;
+	crm:P3_has_note "I 21 distici offrono, inoltre, un acrostico alfabetico doppio."@it ;
 	crm:P129_is_about desmos:distich ,
 		desmos:alphabetical_acrostic;
 	crm:P67_refers_to <https://w3id.org/desmos/oplepiana/expression/e_plaquette_29_text_sanguineti> ;
@@ -1528,7 +1528,7 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	prov:wasAttributedTo <https://w3id.org/desmos/oplepiana/author/oplepo> .
 
 <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_30_sanguineti_b> a crm:E33_Linguistic_Object ;
-	crm:P3_has_note "Il cognome del poeta [...] è ripetuto due volte in forma di acrostico"@it ;
+	crm:P3_has_note "Il cognome del poeta [...] è ripetuto due volte in forma di acrostico."@it ;
 	crm:P129_is_about desmos:acrostic ;
 	crm:P67_refers_to <https://w3id.org/desmos/oplepiana/expression/e_plaquette_30_text_sanguineti> ;
 	prov:wasAttributedTo <https://w3id.org/desmos/oplepiana/author/oplepo> .
@@ -1748,7 +1748,7 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	prov:wasAttributedTo <https://w3id.org/desmos/oplepiana/author/oplepo> .
 
 <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_42> a crm:E33_Linguistic_Object ;
-	crm:P3_has_note "Questa plaquette nasce dall'idea di scrivere un testo costruito sui numeri delle estrazioni del Lotto. [...] Ho pensato di usare l''Enciclopedia del Lotto' al contrario: invece che introdurre delle parole per ottenerne in risposta dei numeri, ho cercato nell''Enciclopedia' dei numeri per ottenerne di rimando delle parole che potessero formare un testo."@it ;
+	crm:P3_has_note "Questa plaquette nasce dall'idea di scrivere un testo costruito sui numeri delle estrazioni del Lotto. [...] Ho pensato di usare l' 'Enciclopedia del Lotto' al contrario: invece che introdurre delle parole per ottenerne in risposta dei numeri, ho cercato nell''Enciclopedia' dei numeri per ottenerne di rimando delle parole che potessero formare un testo."@it ;
 	crm:P129_is_about desmos:combinatorial_lottery ;
 	crm:P67_refers_to <https://w3id.org/desmos/oplepiana/expression/e_plaquette_42> ;
 	prov:wasAttributedTo <https://w3id.org/desmos/oplepiana/author/narros> .
@@ -1804,7 +1804,7 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	prov:wasAttributedTo <https://w3id.org/desmos/oplepiana/author/pelliti> .
 
 <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_48> a crm:E33_Linguistic_Object ;
-	crm:P3_has_note "L'Inferno di Dante è stato interamente riscritto in forma di lipogramma in A, omettendo cioè sistematicamente quella vocale. [...] Aggiungiamo che il presente lipogramma rispetta la metrica (terzine di endecasillabi in rima incatenata) e si tiene il più possibile fedele al senso, se non alla lettera, del poema"@it ;
+	crm:P3_has_note "L'Inferno di Dante è stato interamente riscritto in forma di lipogramma in A, omettendo cioè sistematicamente quella vocale. [...] Aggiungiamo che il presente lipogramma rispetta la metrica (terzine di endecasillabi in rima incatenata) e si tiene il più possibile fedele al senso, se non alla lettera, del poema."@it ;
 	crm:P129_is_about desmos:lipogram_A ,
 		desmos:tercet ,
 		desmos:hendecasyllable ,
@@ -4719,7 +4719,7 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 
 <https://w3id.org/desmos/oplepiana/textual_feat/text_feature_14> a desmos:TextualFeature ;
 	desmos:isFeatureOf <https://w3id.org/desmos/oplepiana/expression/e_plaquette_14> ;
-	crm:P3_has_note "Il testo presenta l'incorporazione sistematica dei nomi delle note musicali (monosillabi o bisillabi) posizionati a intervalli calcolati di sillabe 'libere'. La visibilità è data dalla ricorrenza di tali 'ancore' (es: DOmani, REcapito, MInistro) che scandiscono il ritmo matematico della lettura"@it ;
+	crm:P3_has_note "Il testo presenta l'incorporazione sistematica dei nomi delle note musicali (monosillabi o bisillabi) posizionati a intervalli calcolati di sillabe 'libere'. La visibilità è data dalla ricorrenza di tali 'ancore' (es: DOmani, REcapito, MInistro) che scandiscono il ritmo matematico della lettura."@it ;
  	desmos:revealsConstraint desmos:solfeix .
 
 <https://w3id.org/desmos/oplepiana/textual_feat/text_feature_24> a desmos:TextualFeature ;
