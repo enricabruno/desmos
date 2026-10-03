@@ -81,7 +81,7 @@ desmos:FormalConstraintScheme a skos:ConceptScheme ;
         desmos:palindrome ,
         desmos:panvocalism ,
         desmos:paronomasia ,
-        desmos:pentomino_segmentation ,
+        desmos:pentamini ,
         desmos:permutation ,
         desmos:prescribed_line_frame ,
         desmos:preventive_review ,
@@ -147,7 +147,7 @@ desmos:LiteraryFormScheme a skos:ConceptScheme ;
 
 desmos:ArtisticFormScheme a skos:ConceptScheme ;
     skos:prefLabel "Artistic form scheme"@en , "Schema delle forme artistiche"@it ;
-    skos:definition "A scheme defining the artistic form of a work (i.e. visual art and music)."@en , "Schema che definisce la forma artistica di un'opera (arte visuale e musica)."@it ;
+    skos:definition "A scheme defining the artistic form of a work (i.e. visual art and music)."@en , "Schema che definisce la forma artistica di un'opera (arte visiva e musica)."@it ;
     skos:hasTopConcept
         desmos:music ,
         desmos:visual_art .
@@ -431,7 +431,7 @@ desmos:alliteration a skos:Concept ;
         desmos:paronomasia ,
         desmos:triple_letter_cluster ,
         desmos:visual_anaphora ;
-    skos:definition "Visual constraint requiring the repetition of one or more consonantal or vocalic phonemes in the initial or stressed position of phonetically proximate words within a text or section."@en , "Costrizione formale che impone la ripetizione di uno o più fonemi consonantici o vocalici in posizione iniziale o accentuata di parole foneticamente prossime all'interno di un testo o di una sezione."@it ;
+    skos:definition "Formal constraint requiring the repetition of one or more consonantal or vocalic phonemes in the initial or stressed position of phonetically proximate words within a text or section."@en , "Costrizione formale che impone la ripetizione di uno o più fonemi consonantici o vocalici in posizione iniziale o accentuata di parole foneticamente prossime all'interno di un testo o di una sezione."@it ;
     skos:example "La sequenza 'Sotto il sole silenzioso' ripete il fonema /s/ in parole foneticamente prossime."@it , "The sequence 'Sotto il sole silenzioso' repeats the phoneme /s/ in nearby words."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
@@ -487,7 +487,7 @@ desmos:antonymic_rewriting a skos:Concept ;
     skos:altLabel "Antonymic poetry"@en , "Poesia antonimica"@it ;
     skos:related desmos:value_inversion ;
     skos:definition "Formal constraint that rewrites a source text by replacing its lexical units with their antonyms (or with semantically opposite terms), so that the new text systematically inverts the meaning of the original while preserving its structure."@en , "Costrizione formale che riscrive un testo di partenza sostituendo le sue unità lessicali con i rispettivi antonimi (o con termini di senso opposto), così che il nuovo testo ne inverte sistematicamente il significato conservandone la struttura."@it ;
-    skos:historyNote "The technique of antonymic poetry was developed by Marcel Bénabou, who provided a systematic treatment of it in L'Azur de Mallarmé."@en , "La tecnica della poesia antonimica è stata messa a punto da Marcel Bénabou che ne ha offerto uan trattazione sistematica con L'Azur di Mallarmé."@it ;
+    skos:historyNote "The technique of antonymic poetry was developed by Marcel Bénabou, who provided a systematic treatment of it in L'Azur de Mallarmé."@en , "La tecnica della poesia antonimica è stata messa a punto da Marcel Bénabou che ne ha offerto una trattazione sistematica con L'Azur di Mallarmé."@it ;
     skos:example "'Il giorno è chiaro e caldo' → 'La notte è scura e fredda': la struttura resta parallela mentre le unità lessicali principali sono sostituite con termini di senso opposto."@it , "'The day is bright and warm' → 'The night is dark and cold': the structure remains parallel while the main lexical units are replaced by semantically opposite terms."@en ;
     skos:closeMatch <https://oulipo.net/contraintes/traduction-antonymique> ;
     skos:inScheme desmos:FormalConstraintScheme .
@@ -712,8 +712,8 @@ desmos:divergent_captions a skos:Concept ;
 desmos:embedded_numeral_calculus a skos:Concept ;
     skos:prefLabel "Embedded numeral calculus"@en , "Calcolo dei numeri incorporati"@it ;
     skos:definition "Formal constraint requiring the insertion of lexemes selected because they embed a cardinal numeral at their initial or final boundary (e.g. NOVE-llino, OTTO-mana, mu-SEI); word-initial numerals are added and word-final numerals are subtracted in a running computation bound to reach a predefined target value."@en , "Costrizione formale che impone l'inserimento di lessemi scelti perché contengono un numerale cardinale incorporato in posizione iniziale o finale di parola (es. NOVE-llino, OTTO-mana, mu-SEI); i numerali in posizione iniziale vengono addizionati e quelli in posizione finale sottratti, secondo un computo progressivo vincolato a raggiungere un valore prefissato."@it ;
-    skos:historyNote "The constraint was invented by Laura Brignoli in 'Che magìa l'anniversario' (2015), 'La Biblioteca Oplepiana', n. 40"@en ,
-        "La costrizione è stata inventata da Laura Brignoli in 'Che magìa l'anniversario' (2015), 'La Biblioteca Oplepiana', n. 40"@it ;  
+    skos:historyNote "The constraint was invented by Laura Brignoli in 'Che magia l'anniversario' (2015), 'La Biblioteca Oplepiana', n. 40."@en ,
+        "La costrizione è stata inventata da Laura Brignoli in 'Che magia l'anniversario' (2015), 'La Biblioteca Oplepiana', n. 40."@it ;  
     skos:example "'NOVEllino, muSEI, OTTOmana' incorpora NOVE in posizione iniziale (+9), SEI in posizione finale (−6) e OTTO in posizione iniziale (+8), ottenendo il valore 11."@it , "In the Italian sequence 'NOVEllino, muSEI, OTTOmana', NOVE (nine) occurs initially (+9), SEI (six) finally (−6), and OTTO (eight) initially (+8), yielding the target value 11."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
@@ -803,17 +803,17 @@ desmos:fixed_fictional_time a skos:Concept ;
                     "Semantic constraint requiring the temporal setting of the narrative to be fixed in advance."@en .
 
 desmos:figured_alphabet a skos:Concept ;
-    skos:prefLabel "Figured Alphabet"@en , "Alfabeto raffigurato"@it ;
+    skos:prefLabel "Figured alphabet"@en , "Alfabeto raffigurato"@it ;
     skos:definition "Visual constraint consisting of the composition of a text within a literary grid, understood as a defined geometric space, where the arrangement of letters is designed to visually reproduce the shape of the letter itself, effectively turning the script into a figurative geometry."@en , "Costrizione visiva che consiste nel comporre un testo all'interno di una griglia letteraria intesa come spazio geometrico delimitato, dove la disposizione delle lettere è finalizzata a riprodurre visivamente il disegno della lettera stessa."@it ;
-    skos:example "In 'Alfabeto raffigurato', plaquette 12 dell'Oplepo, una griglia dedicata, per esempio, alla lettera E dispone le occorrenze di E in modo da disegnare una E maiuscola; la stessa lettera non può comparire altrove nel testo della griglia."@it ,
-    "In 'Alfabeto raffigurato', Oplepo's plaquette 12, a grid devoted, for example, to the letter E arranges occurrences of E so as to draw a capital E; that letter may not occur elsewhere in the grid’s text."@en ;
+    skos:example "In 'Geomtriche visioni', plaquette 12 dell'Oplepo, una griglia dedicata, per esempio, alla lettera E dispone le occorrenze di E in modo da disegnare una E maiuscola; la stessa lettera non può comparire altrove nel testo della griglia."@it ,
+    "In 'Geomtriche. visioni', Oplepo's plaquette 12, a grid devoted, for example, to the letter E arranges occurrences of E so as to draw a capital E; that letter may not occur elsewhere in the grid’s text."@en ;
     skos:inScheme desmos:VisualConstraintScheme .
 
 desmos:figure_bounded_text a skos:Concept ;
     skos:prefLabel "Figure-bounded text"@en , "Testo perimetrato in figura"@it ;
     skos:definition "Visual constraint in which the written text must be wholly contained within the outline of a pre-existing drawn figure: the figure is autonomous from the text, so that the layout is bounded by, but does not itself constitute, the depicted image."@en , "Costrizione visiva in cui il testo deve essere interamente contenuto entro il profilo di una figura disegnata preesistente e autonoma rispetto al testo: l'impaginazione è delimitata dall'immagine ma non la costituisce."@it ;
     skos:related desmos:calligram ;
-    skos:example "In 'La scomparsa di sé', plaquette 53 dell'Oplepo, ogni testo è inserito dentro una figura, ovvero quella del coccodrillo."@it , "In 'La scomparsa di sé', Oplepo's plaquette 53, each text is inserted within a figure, namely that of the crocodile."@en ;
+    skos:example "In 'La scomparsa di sé', plaquette 54 dell'Oplepo, ogni testo è inserito dentro una figura, ovvero quella del coccodrillo."@it , "In 'La scomparsa di sé', Oplepo's plaquette 54, each text is inserted within a figure, namely that of the crocodile."@en ;
     skos:inScheme desmos:VisualConstraintScheme .
 
 desmos:figure_derived_count a skos:Concept ;
@@ -826,7 +826,7 @@ desmos:figure_derived_count a skos:Concept ;
 desmos:fixed_text_length a skos:Concept ;
     skos:prefLabel "Fixed text length constraint"@en , "Lunghezza del testo fissa"@it ;
     skos:related desmos:enumerating_text ,
-        desmos:pentomino_segmentation ,
+        desmos:pentamini ,
         desmos:temporal_constraint ;
     skos:definition "Formal constraint requiring an exact text length, measured under an explicit criterion."@en , "Costrizione formale che impone una lunghezza esatta del testo, misurata secondo un criterio esplicito."@it ;
     skos:example "'Oggi il gatto dorme tranquillo vicino alla grande finestra aperta.' e 'Domani la pioggia cadrà lenta sopra i tetti della città.' contengono entrambi esattamente dieci parole."@it , "'Today the cat sleeps quietly beside the large open window.' and 'Tomorrow the rain will fall softly across the city rooftops.' both contain exactly ten words."@en ;
@@ -834,7 +834,7 @@ desmos:fixed_text_length a skos:Concept ;
 
 desmos:fixed_title_length a skos:Concept ;
     skos:prefLabel "Fixed title length constraint"@en , "Lunghezza del titolo fissa"@it ;
-    skos:definition "Formal constraint requiring an exact title, measured under an explicit criterion."@en , "Costrizione formale che impone una lunghezza esatta del titolo, misurata secondo un criterio esplicito."@it ;
+    skos:definition "Formal constraint requiring an exact title length, measured under an explicit criterion."@en , "Costrizione formale che impone una lunghezza esatta del titolo, misurata secondo un criterio esplicito."@it ;
     skos:example "'Mare aperto' e 'Vento caldo' contengono entrambi esattamente dieci lettere, se gli spazi non vengono conteggiati."@it , "'Open Waters' and 'Silent Road' both contain exactly ten letters when spaces are not counted."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
@@ -920,8 +920,8 @@ desmos:hypogram a skos:Concept ;
 desmos:homographic_translation a skos:Concept ;
     skos:prefLabel "Homographic translation"@en , "Traduzione omografica"@it ;
     skos:definition "Formal constraint that produces two texts, each in a different language, from the same written sequence: the same letter string is segmented differently, yielding two autonomous linguistic readings."@en , "Costrizione bilingue che produce due testi, ciascuno in una lingua diversa, a partire da una medesima sequenza grafica: la stessa stringa di lettere viene segmentata in modi differenti, generando due letture linguistiche autonome."@it ;
-    skos:historyNote "The constraint was invented by Elena Addòmine in 'Forme For Me' (1994), 'La Biblioteca Oplepiana' n. 7."@en , "La costrizione è stata inventata da Elena Addòmine in 'Forme For Me' (1994), 'La Biblioteca Oplepiana' n. 7."@it ;
-    skos:example "In 'Forme For Me', la stessa sequenza grafica è segmentata in due lingue: 'Lo vedi, / paga in amore, / tremo rapita' corrisponde a 'Love dip, / again a more tremor: / a pit, a…'."@it , "In 'Forme For Me', the same graphic sequence is segmented into two languages: 'Lo vedi, / paga in amore, / tremo rapita' corresponds to 'Love dip, / again a more tremor: / a pit, a…'."@en ;
+    skos:historyNote "The constraint was invented by Elena Addòmine in 'Forme For me' (1994), 'La Biblioteca Oplepiana' n. 7."@en , "La costrizione è stata inventata da Elena Addòmine in 'Forme For me' (1994), 'La Biblioteca Oplepiana' n. 7."@it ;
+    skos:example "In 'Forme For me', la stessa sequenza grafica è segmentata in due lingue: 'Lo vedi, / paga in amore, / tremo rapita' corrisponde a 'Love dip, / again a more tremor: / a pit, a…'."@it , "In 'Forme For me', the same graphic sequence is segmented into two languages: 'Lo vedi, / paga in amore, / tremo rapita' corresponds to 'Love dip, / again a more tremor: / a pit, a…'."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:homonymy a skos:Concept ;
@@ -985,7 +985,7 @@ desmos:isovocalism a skos:Concept ;
     skos:related desmos:vowel_alternation ,
         desmos:vowel_slide ;
     skos:definition "Formal constraint requiring every word of a text (or section) to reproduce one and the same predetermined ordered sequence of vowels regardless of the intervening consonants; the fixed sequence may be made of identical or distinct vowels (e.g. a-e-a, i-e-u)."@en , "Costrizione formale che richiede che ogni parola di un testo (o sezione) riproduca un'unica sequenza ordinata di vocali prestabilita — il suo scheletro vocalico — indipendentemente dalle consonanti interposte; la sequenza fissa può essere composta da vocali identiche o distinte (per es. a-e-a, i-e-u)."@it ;
-    skos:historyNote "The constraint was invented by Domenico D'Oria in 'Kimerik politico' (2006), 'La Biblioteca Oplepiana', n. 26"@en , "La costrizione è stata inventata da Domenico D'Oria in 'Kimerik politico' (2006), 'La Biblioteca Oplepiana', n. 26."@it ;
+    skos:historyNote "The constraint was invented by Domenico D'Oria in 'Kimerik polito' (2006), 'La Biblioteca Oplepiana', n. 26."@en , "La costrizione è stata inventata da Domenico D'Oria in 'Kimerik polito' (2006), 'La Biblioteca Oplepiana', n. 26."@it ;
     skos:example "Le parole 'catena', 'pantera' e 'candela' condividono lo stesso scheletro vocalico a-e-a."@it , "The words 'catena', 'pantera' and 'candela' share the same vowel skeleton a-e-a."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
@@ -1024,7 +1024,7 @@ desmos:lexicographic_marker_constraint a skos:Concept ;
         desmos:register_lexicon ,
         desmos:datation_lexicon ,
         desmos:grammatical_category_lexicon ,
-        desmos:LS_method ,
+        desmos:LD_method ,
         desmos:mathematical_lexicon ;
     skos:definition "Family of formal constraints that select the admissible lexicon of a text by a lexicographic label assigned in a reference dictionary (e.g. GRADIT) - origin, register, domain, datation or grammatical category - whether applied exhaustively (every content word bears the label) or positionally (at least one labelled word per textual unit, e.g. per line)."@en , "Famiglia di costrizioni formali che selezionano il lessico ammesso in base a un'etichetta lessicografica assegnata in un dizionario di riferimento (es. GRADIT) - provenienza, registro, dominio, datazione o categoria grammaticale - sia in modo esaustivo (ogni parola piena reca l'etichetta) sia in modo posizionale (almeno una parola etichettata per unità testuale, es. per verso)."@it ;
     skos:scopeNote "The constraint operates on a dictionary's metadata rather than on the letter set; it presupposes an explicitly named reference work."@en , "La costrizione opera sui metadati del dizionario, non sul set di lettere; presuppone un'opera di riferimento esplicitamente dichiarata."@it ;
@@ -1052,7 +1052,7 @@ desmos:lipogram_A a skos:Concept ;
     skos:prefLabel "Lipogram in A"@en , "Lipogramma in A"@it ;
     skos:broader desmos:lipogram ;
     skos:definition "Formal constraint consisting in composing a text while deliberately omitting the letter A."@en , "Costrizione formale che consiste nel comporre un testo omettendo deliberatamente la lettera A."@it ;
-    skos:example "'Il cielo è limpito oggi' è un breve testo che non contiene la lettera a."@it , "'Il vento corre lieve' is a short text containing no letter a."@en ;
+    skos:example "'Il cielo è limpido oggi' è un breve testo che non contiene la lettera a."@it , "'Il vento corre lieve' is a short text containing no letter a."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:lipogram_B a skos:Concept ;
@@ -1137,7 +1137,7 @@ desmos:mandatory_sentence a skos:Concept ;
         desmos:mnemonic_encoding ,
         desmos:prescribed_line_frame ,
         desmos:terminal_word_series ;
-    skos:definition "A constraint requiring the inclusion of one or more specific textual strings (typically a sentence or fixed phrase) at any position within the text."@en , "Costrizione formale che impone l'inclusione di una o più stringhe testuali specifiche (tipicamente una frase o sintagma fisso) in un punto qualsiasi del testo."@it ;
+    skos:definition "Formal constraint requiring the inclusion of one or more specific textual strings (typically a sentence or fixed phrase) at any position within the text."@en , "Costrizione formale che impone l'inclusione di una o più stringhe testuali specifiche (tipicamente una frase o sintagma fisso) in un punto qualsiasi del testo."@it ;
     skos:example "Se la frase obbligatoria è 'Domani parto', il testo 'Ho chiuso la valigia e salutato tutti. Domani parto. Il treno parte alle sette.' soddisfa la costrizione includendola invariata."@it , "If the mandatory string is 'Tomorrow I leave', the text 'I have packed my suitcase and said goodbye to everyone. Tomorrow I leave. The train departs at seven.' satisfies the constraint by including it unchanged."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
@@ -1167,7 +1167,7 @@ desmos:metagram a skos:Concept ;
     skos:related desmos:anagram ,
         desmos:enigmatic_transformation_chain ;
     skos:definition "Formal constraint that consists of having an initial word and a final word drawn from a vocabulary, with the goal of progressively modifying the first until reaching the last."@en , "Costrizione formale che consiste nell'avere una parola iniziale e una parola finale tratte da un vocabolario, con lo scopo di modificare progressivamente la prima fino ad arrivare all'ultima."@it ;
-    skos:historyNote "The constraint was invented by Lewis Carroll. The first example was published in Vanity Fair, the 29th of march 1879."@en , "La costrizione è stata inventata da Lewis Carroll. Il primo esempio è stato pubblicato su Vanity Fair, il 29 marzo 1879."@it ;
+    skos:historyNote "The constraint was invented by Lewis Carroll. The first example was published in Vanity Fair, the 29th of March 1879."@en , "La costrizione è stata inventata da Lewis Carroll. Il primo esempio è stato pubblicato su Vanity Fair, il 29 marzo 1879."@it ;
     skos:example "La catena 'CASA → COSA → ROSA → RASA → RANA → LANA' trasforma progressivamente la parola iniziale nella parola finale modificando una lettera alla volta."@it , "The chain 'CASA → COSA → ROSA → RASA → RANA → LANA' progressively transforms the initial word into the final word by changing one letter at a time."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
@@ -1182,7 +1182,7 @@ desmos:mnemonic_encoding a skos:Concept ;
     skos:narrower desmos:mnemonic_fragment ;
     skos:related desmos:mandatory_sentence ,
         desmos:postal_code_acrostic ;
-    skos:definition "Formal constraint in which a external source string (e.g. the incipit of a novel) is inserted within a new text through a regular highlighting/selection key, so that the source can be reconstructed from the marked elements."@en , "Costrizione formale in cui una stringa-sorgente esterna (es. l'incipit di un romanzo) è inserita in un nuovo testo tramite una chiave regolare di evidenziazione/selezione, così che la sorgente sia ricostruibile dagli elementi marcati."@it ;
+    skos:definition "Formal constraint in which an external source string (e.g. the incipit of a novel) is inserted within a new text through a regular highlighting/selection key, so that the source can be reconstructed from the marked elements."@en , "Costrizione formale in cui una stringa-sorgente esterna (es. l'incipit di un romanzo) è inserita in un nuovo testo tramite una chiave regolare di evidenziazione/selezione, così che la sorgente sia ricostruibile dagli elementi marcati."@it ;
     skos:example "In 'Nel vecchio rione ogni finestra ospita piccole storie mentre la notte avanza', la prima lettera di ogni terza parola restituisce R-O-M-A."@it , "In 'In autumn rivers often seem oddly calm while mist slowly gathers above', the first letter of every third word yields R-O-M-A."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
@@ -1224,7 +1224,7 @@ desmos:monovocalism a skos:Concept ;
 desmos:monovocalism_A a skos:Concept ;
     skos:prefLabel "Monovocalism in A"@en , "Monovocalismo in A"@it ;
     skos:broader desmos:monovocalism ;
-    skos:definition "Formal constraint consisting in composing a text using only the vowel A throughout its entire length, systematically excluding the other four vowels."@en , "Costrizione che consiste nel comporre un testo utilizzando esclusivamente la vocale A per tutta la sua estensione, escludendo sistematicamente le altre quattro vocali."@it ;
+    skos:definition "Formal constraint consisting in composing a text using only the vowel A throughout its entire length, systematically excluding the other four vowels."@en , "Costrizione formale che consiste nel comporre un testo utilizzando esclusivamente la vocale A per tutta la sua estensione, escludendo sistematicamente le altre quattro vocali."@it ;
     skos:example "'La mamma parla' contiene soltanto la vocale a."@it , "'La mamma parla' contains only the vowel a."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
@@ -1238,14 +1238,14 @@ desmos:monovocalism_E a skos:Concept ;
 desmos:monovocalism_I a skos:Concept ;
     skos:prefLabel "Monovocalism in I"@en , "Monovocalismo in I"@it ;
     skos:broader desmos:monovocalism ;
-    skos:definition "Formal constraint consisting in composing a text using only the vowel I throughout its entire length, systematically excluding the other four vowels."@en , "Costrizione che consiste nel comporre un testo utilizzando esclusivamente la vocale I per tutta la sua estensione, escludendo sistematicamente le altre quattro vocali."@it ;
+    skos:definition "Formal constraint consisting in composing a text using only the vowel I throughout its entire length, systematically excluding the other four vowels."@en , "Costrizione formale che consiste nel comporre un testo utilizzando esclusivamente la vocale I per tutta la sua estensione, escludendo sistematicamente le altre quattro vocali."@it ;
     skos:example "'Vivi lì' contiene soltanto la vocale i."@it , "'Vivi lì' contains only the vowel i."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:monovocalism_O a skos:Concept ;
     skos:prefLabel "Monovocalism in O"@en , "Monovocalismo in O"@it ;
     skos:broader desmos:monovocalism ;
-    skos:definition "Formal constraint consisting in composing a text using only the vowel O throughout its entire length, systematically excluding the other four vowels."@en , "Costrizione che consiste nel comporre un testo utilizzando esclusivamente la vocale O per tutta la sua estensione, escludendo sistematicamente le altre quattro vocali."@it ;
+    skos:definition "Formal constraint consisting in composing a text using only the vowel O throughout its entire length, systematically excluding the other four vowels."@en , "Costrizione formale che consiste nel comporre un testo utilizzando esclusivamente la vocale O per tutta la sua estensione, escludendo sistematicamente le altre quattro vocali."@it ;
     skos:example "'Non sono solo' contiene soltanto la vocale o."@it , "'Non sono solo' contains only the vowel o."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
@@ -1297,7 +1297,7 @@ desmos:palindrome a skos:Concept ;
 
 desmos:panvocalism a skos:Concept ;
     skos:prefLabel "Panvocalism"@en , "Panvocalismo"@it ;
-    skos:definition "Formal constraint that requires using words or phrases that contain all five vowels (i.e. a, e, i, o, u)"@en , "Costrizione formale che richiede di utilizzare parole o frasi che contengono tutte e cinque le vocali (i.e. a, e, i, o, u)"@it ;
+    skos:definition "Formal constraint that requires using words or phrases that contain all five vowels (a, e, i, o, u)"@en , "Costrizione formale che richiede di utilizzare parole o frasi che contengono tutte e cinque le vocali (a, e, i, o, u)"@it ;
     skos:example "Placeholder example."@en , "Esempio placeholder."@it ;
     skos:inScheme desmos:FormalConstraintScheme .
 
@@ -1313,7 +1313,7 @@ desmos:paronomasia a skos:Concept ;
 desmos:pentamini a skos:Concept ;
     skos:prefLabel "Pentamini"@en , "Pentamini"@it ;
     skos:related desmos:fixed_text_length ;
-    skos:definition "Formal constraint in which word boundaries (effective separations, not mere apostrophes) fall at least every five letters, so that each line is segmentable into five-letter blocks; consequently the letter count of each line, and of the whole text, is a multiple of five."@en , "Costrizione formale in cui le cesure fra parola e parola (separazioni effettive, non meri apostrofi) intervengono almeno ogni cinque lettere, sicchè ogni verso è segmentabile in blocchi di cinque lettere; di conseguenza il numero di lettere di ogni verso, e dell'intero testo, è multiplo di cinque."@it ;
+    skos:definition "Formal constraint in which word boundaries (effective separations, not mere apostrophes) fall at least every five letters, so that each line is segmentable into five-letter blocks; consequently the letter count of each line, and of the whole text, is a multiple of five."@en , "Costrizione formale in cui le cesure fra parola e parola (separazioni effettive, non meri apostrofi) intervengono almeno ogni cinque lettere, sicché ogni verso è segmentabile in blocchi di cinque lettere; di conseguenza il numero di lettere di ogni verso, e dell'intero testo, è multiplo di cinque."@it ;
     skos:example "Placeholder example"@en , "Esempio segnaposto"@it ;
     skos:inScheme desmos:FormalConstraintScheme .
 
@@ -1349,7 +1349,7 @@ desmos:postal_code_acrostic a skos:Concept ;
     skos:broader desmos:acrostic ;
     skos:related desmos:mnemonic_encoding ;
     skos:definition "Formal constraint in which the initial letters of the lines, read vertically and converted into digits through a fixed letter-to-number cipher (A=0/1, B=2, C=3 … I=9), spell the postal codes delimiting a city's street-directory range; the poem synthesises salient features of that city."@en , "Costrizione formale in cui le lettere iniziali dei versi, lette verticalmente e convertite in cifre tramite una tabella fissa lettera-numero (A=0/1, B=2, C=3 … I=9), compongono i codici postali che delimitano lo stradario di una città; il testo ne sintetizza i caratteri salienti."@it ;
-    skos:historyNote "The constraint was invented by Marco Pelliti (2021), plaquette n. 47."@en , "La costrizione è stata inventata da Marco Pelliti (2021), plaquette n. 47."@it ;
+    skos:historyNote "The constraint was invented by Matteo Pelliti (2021), plaquette n. 47."@en , "La costrizione è stata inventata da Matteo Pelliti (2021), plaquette n. 47."@it ;
     skos:example """Placeholder example."""@en , """Esempio segnaposto."""@it ;
     skos:inScheme desmos:FormalConstraintScheme .
 
@@ -1521,7 +1521,7 @@ desmos:slang_register_lexicon a skos:Concept ;
 desmos:solfeix a skos:Concept ;
     skos:prefLabel "Solfeix"@en , "Solfeix"@it ;
     skos:definition "Formal constraint based on the syllabic transliteration of a melody. The text must contain the names of the notes in sequence; the distance between a note name and the next is determined by the musical value of the note itself, which imposes a fixed number of syllables of separation (from 1 for the semibreve up to 64 for the semibiscroma)."@en , "Costrizione formale basata sulla traslitterazione sillabica di una melodia. Il testo deve contenere i nomi delle note in sequenza; la distanza tra un nome di nota e il successivo è determinata dal valore musicale della nota stessa, che impone un numero fisso di sillabe di separazione (da 1 per la semibreve fino a 64 per la semibiscroma)."@it ;
-    skos:historyNote "The constraint was invented by Màrius Serra in 'Turandot Espuri' (1998), 'La Biblioteca Oplepiana' n. 14."@en , "La costrizione è stata inventata da Màrius Serra in 'Turandot Espuri' (1998), 'La Biblioteca Oplepiana' n. 14."@it ;
+    skos:historyNote "The constraint was invented by Màrius Serra in 'Turandot espuri' (1998), 'La Biblioteca Oplepiana' n. 14."@en , "La costrizione è stata inventata da Màrius Serra in 'Turandot espuri' (1998), 'La Biblioteca Oplepiana' n. 14."@it ;
     skos:example "Placeholder example."@en , "Placeholder example"@it ;
     skos:inScheme desmos:FormalConstraintScheme .
 
@@ -1536,7 +1536,7 @@ desmos:statistical_bound a skos:Concept ;
     skos:prefLabel "Statistical bound"@en , "Rimbalzo statistico"@it ;
     skos:narrower desmos:statistical_bound_in_E ;
     skos:definition "Formal constraint requiring a target letter to appear in the text at a fixed interval mirroring its statistically attested frequency within a reference language or corpus."@en , "Costrizione formale che impone ad una lettera di comparire nel testo a intervalli fissi corrispondenti alla sua frequenza statistica attestata nella lingua di riferimento."@it ;
-    skos:historyNote "Constraint introduced by Aldo Spinelli in 'Le ripartite' (1995), Biblioteca Oplepiana n. 9."@en , "Costrizione introdotta da Aldo Spinelli ne 'Le ripartite' (1995), Biblioteca Oplepiana n. 9."@it ;
+    skos:historyNote "Constraint introduced by Aldo Spinelli in 'Le ripartite' (1994), Biblioteca Oplepiana n. 9."@en , "Costrizione introdotta da Aldo Spinelli ne 'Le ripartite' (1994), Biblioteca Oplepiana n. 9."@it ;
     skos:example "Placeholder example."@en , "Esempio placeholder."@it ;
     skos:inScheme desmos:FormalConstraintScheme .
 
@@ -1558,7 +1558,7 @@ desmos:stolen_letters a skos:Concept ;
 
 desmos:syllable_expansion a skos:Concept ;
     skos:prefLabel "Syllable expansion"@en , "Sillabe in crescenza"@it ;
-    skos:definition "Formal constraint consisting in the rewriting of a text through a progressive metrical expansion, from the shortest unit (monosyllables) to the longest one (double heptameters)."@en ,"Costrizione formale che consiste in una progressiva espansione metrica, dall'unità più breve (monosillabi) fino alla più lunga (settenari doppi)."@it ;
+    skos:definition "Formal constraint consisting in the rewriting of a text through a progressive metrical expansion, from the shortest unit (monosyllables) to the longest one (double septenaries)."@en ,"Costrizione formale che consiste in una progressiva espansione metrica, dall'unità più breve (monosillabi) fino alla più lunga (settenari doppi)."@it ;
     skos:historyNote "The constraint was invented by Luca Chiti in 'L'infinito futuro' (1999), 'La Biblioteca Oplepiana' n. 15."@en , "La costrizione è stata inventata da Luca Chiti in 'L'infinito futuro' (1999), 'La Biblioteca Oplepiana' n. 15."@it ;
     skos:example "Placeholder example."@en , "Esempio placeholder."@it ;
     skos:inScheme desmos:FormalConstraintScheme .

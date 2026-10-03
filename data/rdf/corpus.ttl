@@ -15,11 +15,11 @@
 ### Authority File ###
 <https://w3id.org/desmos/oplepiana/author/campagnoli> a crm:E39_Actor , prov:Agent ;
 	rdfs:label "Ruggero Campagnoli" ;
-	owl:sameAs <https://viaf.org/viaf/46879675/> .
+	owl:sameAs <https://viaf.org/viaf/46879675> .
 
 <https://w3id.org/desmos/oplepiana/author/spinelli> a crm:E39_Actor , prov:Agent ;
 	rdfs:label "Aldo Spinelli" ;
-	owl:sameAs <https://viaf.org/viaf/245219518/> .
+	owl:sameAs <https://viaf.org/viaf/245219518> .
 
 <https://w3id.org/desmos/oplepiana/author/varaldo> a crm:E39_Actor , prov:Agent ;
 	rdfs:label "Giuseppe Varaldo" ;
@@ -27,7 +27,7 @@
 
 <https://w3id.org/desmos/oplepiana/author/falchetta> a crm:E39_Actor , prov:Agent ;
 	rdfs:label "Piero Falchetta" ;
-	owl:sameAs <https://viaf.org/viaf/12445112/> .
+	owl:sameAs <https://viaf.org/viaf/12445112> .
 
 <https://w3id.org/desmos/oplepiana/author/addomine> a crm:E39_Actor , prov:Agent ;
 	rdfs:label "Elena Addòmine" ;
@@ -35,11 +35,11 @@
 
 <https://w3id.org/desmos/oplepiana/author/albani> a crm:E39_Actor , prov:Agent ;
 	rdfs:label "Paolo Albani" ;
-	owl:sameAs <https://viaf.org/viaf/41919639/> .
+	owl:sameAs <https://viaf.org/viaf/41919639> .
 
 <https://w3id.org/desmos/oplepiana/author/oplepo> a crm:E39_Actor , prov:Agent ;
 	rdfs:label "Oplepo" ;
-	owl:sameAs <https://viaf.org/viaf/148099167/> .
+	owl:sameAs <https://viaf.org/viaf/148099167> .
 
 <https://w3id.org/desmos/oplepiana/author/chiti> a crm:E39_Actor , prov:Agent ;
 	rdfs:label "Luca Chiti" ;
@@ -47,7 +47,7 @@
 
 <https://w3id.org/desmos/oplepiana/author/odifreddi> a crm:E39_Actor , prov:Agent ;
 	rdfs:label "Piergiorgio Odifreddi" ;
-	owl:sameAs <https://viaf.org/viaf/27127695/> .
+	owl:sameAs <https://viaf.org/viaf/27127695> .
 
 <https://w3id.org/desmos/oplepiana/author/chierchia> a crm:E39_Actor , prov:Agent ;
 	rdfs:label "Salvatore Chierchia" ;
@@ -515,7 +515,7 @@ desmos:fixed_fictional_time a desmos:SemanticConstraint ;
 	desmos:constrainsSemanticUnit desmos:fictional_time .
 
 desmos:figured_alphabet a desmos:VisualConstraint ;
-	rdfs:label "Alfabeto raffigurato"@it , "Figured Alphabet"@en ;
+	rdfs:label "Alfabeto raffigurato"@it , "Figured alphabet"@en ;
 	desmos:constraintOrigin desmos:original ;
 	desmos:constrainsFormalUnit desmos:letter ,
 		desmos:typography ;
@@ -1423,7 +1423,7 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	prov:wasAttributedTo <https://w3id.org/desmos/oplepiana/author/oplepo> .
 
 <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_26> a crm:E33_Linguistic_Object ;
-	crm:P3_has_note "l principio della chimera, animale mitologico frutto di un mostruoso assemblaggio al pari dell'ircocervo e di altre creature immaginarie, 'sembra potersi trasporre, in più modi diversi, nelle strutture letterarie', sosteneva François Le Lionnais nella sezione de La littérature potentielle (1973) dedicata alle manipolazioni lessicografiche, sintattiche o prosodiche.» Sensibili allo spunto dell'ingegnere e scacchista oulipiano, gli Oplepiani hanno raccolto la sfida e prodotto le loro 'chimeriche trasposizioni', riferendosi alla parentela semantica tra chimerico, illusorio e fantastico (Borges)."@it ;
+	crm:P3_has_note "Il principio della chimera, animale mitologico frutto di un mostruoso assemblaggio al pari dell'ircocervo e di altre creature immaginarie, 'sembra potersi trasporre, in più modi diversi, nelle strutture letterarie', sosteneva François Le Lionnais nella sezione de La littérature potentielle (1973) dedicata alle manipolazioni lessicografiche, sintattiche o prosodiche.» Sensibili allo spunto dell'ingegnere e scacchista oulipiano, gli Oplepiani hanno raccolto la sfida e prodotto le loro 'chimeriche trasposizioni', riferendosi alla parentela semantica tra chimerico, illusorio e fantastico (Borges)."@it ;
 	crm:P129_is_about desmos:mandatory_theme ;
 	crm:P67_refers_to <https://w3id.org/desmos/oplepiana/expression/e_plaquette_26> ;
 	prov:wasAttributedTo <https://w3id.org/desmos/oplepiana/author/oplepo> .
@@ -1590,7 +1590,7 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	prov:wasAttributedTo <https://w3id.org/desmos/oplepiana/author/oplepo> .
 
 <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_31_benabou> a crm:E33_Linguistic_Object ;
-	crm:P3_has_note "La struttura è quella della 'morale élémentaire' che Raymond Queneau, suo 'inventore', così definì: 'All'inizio tre volte tre più un gruppo di sostantivi più aggettivo (o participio) con ripetizioni, rime, allitterazioni, echi 'ad libidum'; dopo, una sorta di intermezzo di sette versi da una a cinque sillabe: infine, una conclusione di tre più un gruppo di sostantivi più aggettivo che riprende più o meno alcune delle ventiquattro parole utilizzate nella prima parte'."@it ;
+	crm:P3_has_note "La struttura è quella della 'morale élémentaire' che Raymond Queneau, suo 'inventore', così definì: 'All'inizio tre volte tre più un gruppo di sostantivi più aggettivo (o participio) con ripetizioni, rime, allitterazioni, echi 'ad libitum'; dopo, una sorta di intermezzo di sette versi da una a cinque sillabe: infine, una conclusione di tre più un gruppo di sostantivi più aggettivo che riprende più o meno alcune delle ventiquattro parole utilizzate nella prima parte'."@it ;
 	crm:P129_is_about desmos:morale_elementaire ;
 	crm:P67_refers_to <https://w3id.org/desmos/oplepiana/expression/e_plaquette_31_text_benabou> ;
 	prov:wasAttributedTo <https://w3id.org/desmos/oplepiana/author/oplepo> .
@@ -1608,7 +1608,7 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	prov:wasAttributedTo <https://w3id.org/desmos/oplepiana/author/pergola> .
 
 <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_34> a crm:E33_Linguistic_Object ;
-	crm:P3_has_note "[...] non potevano che essere numerosi e diversi i contributi di quanti - oplepiani, oulipiani e nin - hanno voluto rendere omaggio allo scrittore che più di ogni altro personifica lo spirito e le caratteristiche della letteratura 'à contrainte'."@it ;
+	crm:P3_has_note "[...] non potevano che essere numerosi e diversi i contributi di quanti - oplepiani, oulipiani e non - hanno voluto rendere omaggio allo scrittore che più di ogni altro personifica lo spirito e le caratteristiche della letteratura 'à contrainte'."@it ;
 	crm:P129_is_about desmos:mandatory_dedication ;
 	crm:P67_refers_to <https://w3id.org/desmos/oplepiana/expression/e_plaquette_34> ;
 	prov:wasAttributedTo <https://w3id.org/desmos/oplepiana/author/oplepo> .
@@ -1739,7 +1739,7 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	prov:wasAttributedTo <https://w3id.org/desmos/oplepiana/author/varaldo> .
 
 <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_41_varaldo_b> a crm:E33_Linguistic_Object ;
-	crm:P3_has_note "Eco aveva una singolare passione per i giochi di parole imperniati sulle vocali [...]. in omaggio a questa sua predilezione sono state composte due ottave caratterizzate dalla presenza di due sole vocali (la A e la I nella prima, la I e la O nella seconda), le quali si alternano continuamente."@it ;
+	crm:P3_has_note "Eco aveva una singolare passione per i giochi di parole imperniati sulle vocali [...]. In omaggio a questa sua predilezione sono state composte due ottave caratterizzate dalla presenza di due sole vocali (la A e la I nella prima, la I e la O nella seconda), le quali si alternano continuamente."@it ;
 	crm:P129_is_about desmos:octave ,
 		desmos:lipogram_A ,
 		desmos:lipogram_I ,
@@ -1788,13 +1788,13 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	prov:wasAttributedTo <https://w3id.org/desmos/oplepiana/author/oplepo> .
 
 <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_46> a crm:E33_Linguistic_Object ;
-	crm:P3_has_note "Il rebus è un gioco illustrato composto da una o più vignette, nelle quali alcuni soggetti (persone, animali, cose) sono contrassegnati da lettere, denominate grafemi, o piiù raramente da asterischi. Procedendo da sinistra verso destra e abbinando opportunamente i grafemi con gli elementi da essi indicati, o nel caso degli asterischi specificando tout court ciò che gli elementi marcati sono o fanno, si otterrà una frase ('prima lettura'), la quale, mantenendo le lettere nel medesimo ordine ma ripartendole diversamente, verrà convertita in un'altra frase, di senso compiuto ('seconda lettura'), corrispondente alla soluzione del rebus. Il doppio diagramma numerico indica la lunghezza delle parole costituenti le due letture."@it ;
+	crm:P3_has_note "Il rebus è un gioco illustrato composto da una o più vignette, nelle quali alcuni soggetti (persone, animali, cose) sono contrassegnati da lettere, denominate grafemi, o più raramente da asterischi. Procedendo da sinistra verso destra e abbinando opportunamente i grafemi con gli elementi da essi indicati, o nel caso degli asterischi specificando tout court ciò che gli elementi marcati sono o fanno, si otterrà una frase ('prima lettura'), la quale, mantenendo le lettere nel medesimo ordine ma ripartendole diversamente, verrà convertita in un'altra frase, di senso compiuto ('seconda lettura'), corrispondente alla soluzione del rebus. Il doppio diagramma numerico indica la lunghezza delle parole costituenti le due letture."@it ;
 	crm:P129_is_about desmos:rebus ;
 	crm:P67_refers_to <https://w3id.org/desmos/oplepiana/expression/e_plaquette_46> ;
 	prov:wasAttributedTo <https://w3id.org/desmos/oplepiana/author/varaldo> .
 
 <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_47> a crm:E33_Linguistic_Object ;
-	crm:P3_has_note "Le 'Cartoline di città' (dove l'acronimo CAP viene reinterpretato in 'Codici di Avviamento Poetico') sono brevi poesie geografico-sintetiche derivate dai vari Codici di Avviamento Postale italiani (o esteri) di altrettante città. le lettere iniziali dei versi corrispondonon al numero che compone il CAP secondo la corrispondenza A=0 e 1 (due numeri attribuiti alla stessa lettera A per mantenere la sequenza alfabetica più intuitiva, dove B è la seconda lettera dell'alfabeto), quindi B=2, C=3, ecc. I testi sono composti di due quartine e un distico (con rima ABAB ABAB CC) che ripartiscono i 10 numeri dei due CAP nei qali ogni verso inizia con la lettera corrispondente alla sequenza dei deu CAP cittadini."@it ;
+	crm:P3_has_note "Le 'Cartoline di città' (dove l'acronimo CAP viene reinterpretato in 'Codici di Avviamento Poetico') sono brevi poesie geografico-sintetiche derivate dai vari Codici di Avviamento Postale italiani (o esteri) di altrettante città. Le lettere iniziali dei versi corrispondono al numero che compone il CAP secondo la corrispondenza A=0 e 1 (due numeri attribuiti alla stessa lettera A per mantenere la sequenza alfabetica più intuitiva, dove B è la seconda lettera dell'alfabeto), quindi B=2, C=3, ecc. I testi sono composti di due quartine e un distico (con rima ABAB ABAB CC) che ripartiscono i 10 numeri dei due CAP nei quali ogni verso inizia con la lettera corrispondente alla sequenza dei CAP cittadini."@it ;
 	crm:P67_refers_to <https://w3id.org/desmos/oplepiana/expression/e_plaquette_47> ;
 	crm:P129_is_about desmos:acronym ,
 		desmos:postal_code_acrostic ,
@@ -1840,7 +1840,7 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	prov:wasAttributedTo <https://w3id.org/desmos/oplepiana/author/pelliti> .
 
 <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_50_sebregondi> a crm:E33_Linguistic_Object ;
-	crm:P3_has_note "Dissonanze è un goffo tentativo di poesia antonimica esercitato senza il dovuto rigore oplepiano sul medesimo ben noto baudelairiano Corresponces. Del sonetto originario si conserva qui la struttura rimica ABBA CDDC EFE FGG."@it ;
+	crm:P3_has_note "Dissonanze è un goffo tentativo di poesia antonimica esercitato senza il dovuto rigore oplepiano sul medesimo ben noto baudelairiano Correspondances. Del sonetto originario si conserva qui la struttura rimica ABBA CDDC EFE FGG."@it ;
 	crm:P129_is_about desmos:antonymic_rewriting ;
 	crm:P67_refers_to <https://w3id.org/desmos/oplepiana/expression/e_plaquette_50_text_sebregondi> ;
 	prov:wasAttributedTo <https://w3id.org/desmos/oplepiana/author/sebregondi> .
@@ -1884,7 +1884,7 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	prov:wasAttributedTo <https://w3id.org/desmos/oplepiana/author/oplepo> .
 
 <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_55> a crm:E33_Linguistic_Object ;
-	crm:P3_has_note "Sulla base degli esercizi qui raccolti, ispirati a Kafka nel centenario della nascita [...], si potrà pur dire che esiste anche un Kafka dell'Oplepo, piccolo, sparuto gruppo di anomali sperimentatori che si diverte a esplorare i misteriori meandri del linguaggio."@it ;
+	crm:P3_has_note "Sulla base degli esercizi qui raccolti, ispirati a Kafka nel centenario della nascita [...], si potrà pur dire che esiste anche un Kafka dell'Oplepo, piccolo, sparuto gruppo di anomali sperimentatori che si diverte a esplorare i misteriosi meandri del linguaggio."@it ;
 	crm:P67_refers_to <https://w3id.org/desmos/oplepiana/expression/e_plaquette_55> ;
 	crm:P129_is_about desmos:mandatory_dedication ;
 	prov:wasAttributedTo <https://w3id.org/desmos/oplepiana/author/albani> .
@@ -4271,7 +4271,7 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 		desmos:mnemonic_fragment ,
 		desmos:acrostic ,
 		desmos:syllabic_set_constraint ,
-		desmos:pentomino_segmentation ,
+		desmos:pentamini ,
 		desmos:trisyllabic_text ,
 		desmos:bisyllabic_text ,
 		desmos:monosyllabic_text ,
