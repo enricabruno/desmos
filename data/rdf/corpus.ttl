@@ -1423,7 +1423,7 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	prov:wasAttributedTo <https://w3id.org/desmos/oplepiana/author/oplepo> .
 
 <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_26> a crm:E33_Linguistic_Object ;
-	crm:P3_has_note "Il principio della chimera, animale mitologico frutto di un mostruoso assemblaggio al pari dell'ircocervo e di altre creature immaginarie, 'sembra potersi trasporre, in più modi diversi, nelle strutture letterarie', sosteneva François Le Lionnais nella sezione de La littérature potentielle (1973) dedicata alle manipolazioni lessicografiche, sintattiche o prosodiche.» Sensibili allo spunto dell'ingegnere e scacchista oulipiano, gli Oplepiani hanno raccolto la sfida e prodotto le loro 'chimeriche trasposizioni', riferendosi alla parentela semantica tra chimerico, illusorio e fantastico (Borges)."@it ;
+	crm:P3_has_note "Il principio della chimera, animale mitologico frutto di un mostruoso assemblaggio al pari dell'ircocervo e di altre creature immaginarie, 'sembra potersi trasporre, in più modi diversi, nelle strutture letterarie', sosteneva François Le Lionnais nella sezione de La littérature potentielle (1973) dedicata alle manipolazioni lessicografiche, sintattiche o prosodiche. Sensibili allo spunto dell'ingegnere e scacchista oulipiano, gli Oplepiani hanno raccolto la sfida e prodotto le loro 'chimeriche trasposizioni', riferendosi alla parentela semantica tra chimerico, illusorio e fantastico (Borges)."@it ;
 	crm:P129_is_about desmos:mandatory_theme ;
 	crm:P67_refers_to <https://w3id.org/desmos/oplepiana/expression/e_plaquette_26> ;
 	prov:wasAttributedTo <https://w3id.org/desmos/oplepiana/author/oplepo> .
@@ -1761,7 +1761,7 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	prov:wasAttributedTo <https://w3id.org/desmos/oplepiana/author/tonietto> .
 
 <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_44_aragona> a crm:E33_Linguistic_Object ;
-	crm:P3_has_note "Alla struttura del 'poliacrostico' (un 'acrostico', anche tautogrammatico verso per verso, che rimanda al titolo 'a Domenico D'Oria) è unita quella del 'beau présent', che impone l'uso delle sole lettere costituenti il nome della persona cui il testo è dedicato."@it ;
+	crm:P3_has_note "Alla struttura del 'poliacrostico' (un 'acrostico', anche tautogrammatico verso per verso, che rimanda al titolo 'a Domenico D'Oria') è unita quella del 'beau présent', che impone l'uso delle sole lettere costituenti il nome della persona cui il testo è dedicato."@it ;
 	crm:P129_is_about desmos:poliacrostic ,
 		desmos:beau_present ;
 	crm:P67_refers_to <https://w3id.org/desmos/oplepiana/expression/e_plaquette_44_text_aragona> ;
@@ -1819,7 +1819,7 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	prov:wasAttributedTo <https://w3id.org/desmos/oplepiana/author/addomine> .
 
 <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_49_brignoli> a crm:E33_Linguistic_Object ;
-	crm:P3_has_note "(Dante Alighieri, 'Vita Nota', cap. XXVI) a partire da alcune variazioni aggettivali che offrono le rime con 'gentile' e 'onesta'."@it ;
+	crm:P3_has_note "(Dante Alighieri, 'Vita Nova', cap. XXVI) a partire da alcune variazioni aggettivali che offrono le rime con 'gentile' e 'onesta'."@it ;
 	crm:P129_is_about desmos:paronomasia ;
 	crm:P67_refers_to <https://w3id.org/desmos/oplepiana/expression/e_plaquette_49_text_brignoli> ;
 	prov:wasAttributedTo <https://w3id.org/desmos/oplepiana/author/brignoli> .
