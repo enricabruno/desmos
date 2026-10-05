@@ -3553,8 +3553,8 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	intro:R19_hasType desmos:hypertextuality .
 
 <https://w3id.org/desmos/oplepiana/hypertextuality/hypertextuality_48> a intro:INT31_IntertextualRelation ;
-	intro:R13_hasReferringEntity <https://w3id.org/desmos/oplepiana/expression/e_plaquette_48> ;
-	intro:R12_hasReferredToEntity <https://w3id.org/desmos/oplepiana/expression/e_text_inferno> ;
+	intro:R13_hasReferringEntity <https://w3id.org/desmos/oplepiana/passage/hypertext_plaquette_48_001-006> ;
+	intro:R12_hasReferredToEntity <https://w3id.org/desmos/oplepiana/passage/hypotext_text_inferno_01_001-006> ;
 	intro:R19_hasType desmos:hypertextuality .
 
 <https://w3id.org/desmos/oplepiana/hypertextuality/hypertextuality_50> a intro:INT31_IntertextualRelation ;
