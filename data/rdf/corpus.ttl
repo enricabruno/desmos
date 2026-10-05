@@ -4805,6 +4805,16 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
  	desmos:revealsConstraint desmos:acronym ,
 		desmos:postal_code_acrostic .
 
+<https://w3id.org/desmos/oplepiana/textual_feat/text_feature_51_aragona> a desmos:TextualFeature ;
+    desmos:isFeatureOf <https://w3id.org/desmos/oplepiana/expression/e_plaquette_51_text_aragona> ;
+    crm:P3_has_note "Il testo è disposto in versi di lunghezza progressivamente crescente, ciascuno formato da una lettera in più rispetto al precedente; l’espansione progressiva dei versi produce una configurazione triangolare che richiama la silhouette della Torre Eiffel."@it ;
+     desmos:revealsConstraint desmos:boule_de_neige .
+
+<https://w3id.org/desmos/oplepiana/textual_feat/text_feature_51_bloomfield> a desmos:TextualFeature ;
+    desmos:isFeatureOf <https://w3id.org/desmos/oplepiana/expression/e_plaquette_51_text_bloomfield> ;
+    crm:P3_has_note "La disposizione tipografica distribuisce il testo lungo linee verticali, oblique e curve convergenti, costruendo una configurazione visiva che richiama la Torre Eiffel rovesciata; al centro della composizione la sequenza “elle / F” rende inoltre visibile il gioco sul nome 'Eiffel'."@it ;
+     desmos:revealsConstraint desmos:calligram.
+
 <https://w3id.org/desmos/oplepiana/textual_feat/text_feature_54> a desmos:TextualFeature ;
 	desmos:isFeatureOf <https://w3id.org/desmos/oplepiana/expression/e_plaquette_54> ;
 	crm:P3_has_note "La plaquette presenta alcuni testi accompagnati da un coccodrillo stilizzato con all'interno lo stesso testo scritto a mano dall'autrice/autore."@it ;
