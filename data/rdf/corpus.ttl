@@ -323,7 +323,8 @@ desmos:boule_de_neige a desmos:VisualConstraint ;
     desmos:constraintOrigin desmos:original ;
     desmos:constrainsFormalUnit desmos:letter ,
         desmos:word ,
-        desmos:line .
+        desmos:line ;
+	desmos:involvesOperation desmos:displacement .
 
 desmos:brivadois_acrostiche a desmos:FormalConstraint ;
 	rdfs:label "Acrostico brivadois"@it , "Acrostic brivadois"@en ;
