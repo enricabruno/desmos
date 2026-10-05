@@ -50,8 +50,9 @@ desmos/
 * **`data/ontology/desmos.owl`**: main DeSMòS ontology, serialized in RDF/XML.
 * **`data/rdf/concept.ttl`**: RDF data for the controlled concepts and vocabularies used by the model, serialized in Turtle.
 * **`data/rdf/corpus.ttl`**: RDF data for the corpus used as the DeSMòS case study, serialized in Turtle.
+* **`data/csv/`**: source tabular data used to populate the knowledge base; the RDF datasets in `data/rdf/` were generated from these files.
+* **`evaluation/shacl.ttl`**: **SHACL shapes** used to validate `data/rdf/concept.ttl` and `data/rdf/corpus.ttl` against the constraints of the DeSMòS ontology.
 * **`img/`**: graphical documentation of the ontology and its main modeling components.
-* **`OOPSevaluation/`**: reports produced through **OOPS! (OntOlogy Pitfall Scanner!)** and ontology validation checks.
 
 **Author:** Enrica Bruno  
 **Version:** 1.2.0  
