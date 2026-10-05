@@ -1882,7 +1882,7 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 	crm:P129_is_about desmos:mandatory_genre ,
 		desmos:figure_bounded_text ,
 		desmos:handwritten_realization ;
-	prov:wasAttributedTo <https://w3id.org/desmos/oplepiana/author/oplepo> .
+	prov:wasAttributedTo <https://w3id.org/desmos/oplepiana/author/albani> .
 
 <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_55> a crm:E33_Linguistic_Object ;
 	crm:P3_has_note "Sulla base degli esercizi qui raccolti, ispirati a Kafka nel centenario della nascita [...], si potrà pur dire che esiste anche un Kafka dell'Oplepo, piccolo, sparuto gruppo di anomali sperimentatori che si diverte a esplorare i misteriosi meandri del linguaggio."@it ;
