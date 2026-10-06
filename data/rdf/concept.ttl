@@ -806,7 +806,7 @@ desmos:figured_alphabet a skos:Concept ;
     skos:prefLabel "Figured alphabet"@en , "Alfabeto raffigurato"@it ;
     skos:definition "Visual constraint consisting of the composition of a text within a literary grid, understood as a defined geometric space, where the arrangement of letters is designed to visually reproduce the shape of the letter itself, effectively turning the script into a figurative geometry."@en , "Costrizione visiva che consiste nel comporre un testo all'interno di una griglia letteraria intesa come spazio geometrico delimitato, dove la disposizione delle lettere è finalizzata a riprodurre visivamente il disegno della lettera stessa."@it ;
     skos:example "In 'Geomtriche visioni', plaquette 12 dell'Oplepo, una griglia dedicata, per esempio, alla lettera E dispone le occorrenze di E in modo da disegnare una E maiuscola; la stessa lettera non può comparire altrove nel testo della griglia."@it ,
-    "In 'Geomtriche. visioni', Oplepo's plaquette 12, a grid devoted, for example, to the letter E arranges occurrences of E so as to draw a capital E; that letter may not occur elsewhere in the grid's text."@en ;
+    "In 'Geomtriche visioni', Oplepo's plaquette 12, a grid devoted, for example, to the letter E arranges occurrences of E so as to draw a capital E; that letter may not occur elsewhere in the grid's text."@en ;
     skos:inScheme desmos:VisualConstraintScheme .
 
 desmos:figure_bounded_text a skos:Concept ;
