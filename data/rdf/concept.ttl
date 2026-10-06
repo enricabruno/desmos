@@ -1012,7 +1012,7 @@ desmos:latin_noun_lexicon a skos:Concept ;
 
 desmos:lexical_gap a skos:Concept ;
     skos:prefLabel "Lexical gap"@en , "Lacuna lessicale"@it ;
-    skos:definition "Formal constraint where letters are removed from within words, creating visible gaps; these extracted letters, when reassembled in sequence, constitute a hidden latent word."@en , "Una tecnica di scrittura in cui alcune lettere vengono rimosse dall'interno delle parole lasciando uno spazio vuoto; queste lettere, se lette in sequenza, formano a loro volta una nuova parola nascosta."@it ;
+    skos:definition "Formal constraint where letters are removed from within words, creating visible gaps; these extracted letters, when reassembled in sequence, constitute a hidden latent word."@en , "Costrizione formale che impone di rimuovere lettere dall'interno delle parole, creando gap visibili; queste lettere estratte, quando riordinate in sequenza, costituiscono una parola nascosta."@it ;
     skos:historyNote "The constraint was invented by Paolo Albani in 'Fantasmagorie' (2001), 'La Biblioteca Oplepiana' n. 19."@en , "La costrizione è stata inventata da Paolo Albani in 'Fantasmagorie' (2001), 'La Biblioteca Oplepiana' n. 19."@it ;
     skos:example "Nella sequenza 'ca_a p_ne a_are c_sa', le lettere mancanti R-O-M-A possono essere lette in ordine per formare la parola ROMA."@it , "In the sequence 'ca_a p_ne a_are c_sa', the missing letters R-O-M-A can be read in order to form the word ROMA."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
