@@ -598,7 +598,7 @@ desmos:colloquial_register_lexicon a skos:Concept ;
     skos:prefLabel "Colloquial-register lexicon"@en , "Lessico colloquiale"@it ;
     skos:broader desmos:register_lexicon ;
     skos:definition "Formal constraint requiring every content word to bear the label 'colloq.' (colloquial) in the reference dictionary, at least in the sense used."@en , "Costrizione formale che impone a ogni parola piena di recare l'etichetta 'colloq.' (colloquiale) nel dizionario di riferimento, almeno nell'accezione impiegata."@it ;
-    skos:example "In 'I costretti sposi', ottava 37, 'Nonostante gli impiastri ed i casini / che sforni a vagonate e le cappelle…': sostantivi, aggettivi e verbi recano nel GRADIT la qualifica 'colloq.', almeno nell’accezione impiegata."@it , "In 'I costretti sposi', octave 37, 'Nonostante gli impiastri ed i casini / che sforni a vagonate e le cappelle…': nouns, adjectives and verbs carry the GRADIT label 'colloq.', at least in the sense used."@en ;
+    skos:example "In 'I costretti sposi' di Giuseppe Varaldo, ottava 37, 'Nonostante gli impiastri ed i casini / che sforni a vagonate e le cappelle…': sostantivi, aggettivi e verbi recano nel GRADIT la qualifica 'colloq.', almeno nell’accezione impiegata."@it , "In Giuseppe Varaldo's 'I costretti sposi', octave 37, 'Nonostante gli impiastri ed i casini / che sforni a vagonate e le cappelle…': nouns, adjectives and verbs carry the GRADIT label 'colloq.', at least in the sense used."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:combinatorial_lottery a skos:Concept ;
@@ -622,7 +622,7 @@ desmos:compound_noun_lexicon a skos:Concept ;
     skos:prefLabel "Compound-noun lexicon"@en , "Lessico di nomi composti"@it ;
     skos:broader desmos:grammatical_category_lexicon ;
     skos:definition "Formal constraint requiring every noun of the text to be a compound noun recorded as such by the reference dictionary."@en , "Costrizione formale che impone a ogni sostantivo del testo di essere un nome composto registrato come tale dal dizionario di riferimento."@it ;
-    skos:example "In 'I costretti sposi', ottava 3, 'Divenire non può capofamiglia / un sanguecaldo facile a scattare, / ché un bellimbusto… / a un cacasotto nega il benestare': tutti i sostantivi sono nomi composti."@it , "In 'I costretti sposi', octave 3, 'Divenire non può capofamiglia / un sanguecaldo facile a scattare, / ché un bellimbusto… / a un cacasotto nega il benestare': all nouns are compound nouns."@en ;
+    skos:example "In 'I costretti sposi' di Giuseppe Varaldo, ottava 3, 'Divenire non può capofamiglia / un sanguecaldo facile a scattare, / ché un bellimbusto… / a un cacasotto nega il benestare': tutti i sostantivi sono nomi composti."@it , "In Giuseppe Varaldo's 'I costretti sposi', octave 3, 'Divenire non può capofamiglia / un sanguecaldo facile a scattare, / ché un bellimbusto… / a un cacasotto nega il benestare': all nouns are compound nouns."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:crown_of_sonnets a skos:Concept ;
@@ -646,7 +646,7 @@ desmos:datation_lexicon a skos:Concept ;
         desmos:progressive_century_datation ;
     skos:broader desmos:lexicographic_marker_constraint ;
     skos:definition "Formal constraint restricting the lexicon to lemmas whose recorded date of entry into the language falls within a predefined chronological window; the window may be common to the whole text or vary progressively from one textual unit to the next."@en , "Costrizione formale che restringe il lessico ai lemmi la cui data di ingresso nella lingua, registrata dal dizionario, cade entro una finestra cronologica prestabilita; la finestra può essere comune all'intero testo oppure variare progressivamente da un'unità testuale alla successiva."@it ;
-    skos:example "L’ottava 50 dei 'Costretti sposi' vincola il lessico a parole datate dal GRADIT dopo il 1989: 'Non mi sconfinferan lo sfaccimmuso / che imparanoia e blabla oltremisura…'."@it , "Octave 50 of 'I costretti sposi' restricts the lexicon to words dated by GRADIT after 1989: 'Non mi sconfinferan lo sfaccimmuso / che imparanoia e blabla oltremisura…'."@en ;
+    skos:example "L’ottava 50 dei 'Costretti sposi' di Giuseppe Varaldo vincola il lessico a parole datate dal GRADIT dopo il 1989: 'Non mi sconfinferan lo sfaccimmuso / che imparanoia e blabla oltremisura…'."@it , "Octave 50 of Giuseppe Varaldo's 'I costretti sposi' restricts the lexicon to words dated by GRADIT after 1989: 'Non mi sconfinferan lo sfaccimmuso / che imparanoia e blabla oltremisura…'."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:datation_1621_1640_lexicon a skos:Concept ;
@@ -654,7 +654,7 @@ desmos:datation_1621_1640_lexicon a skos:Concept ;
     skos:broader desmos:datation_lexicon ;
     skos:definition "Formal constraint requiring every content word to have entered the language, according to the reference dictionary's datation, between 1621 and 1640 (the years in which the novel is set)."@en , "Costrizione formale che impone a ogni parola piena di essere entrata nella lingua, secondo la datazione del dizionario di riferimento, fra il 1621 e il 1640 (gli anni in cui si svolgono le vicende narrate)."@it ;
     skos:scopeNote "When the date is preceded by 'av.' (ante), the accepted lemmas are restricted to a tighter ten-year anterior bound (1631-1640)."@en , "Quando la data è preceduta da 'av.' (avanti), i lemmi accettati sono ristretti a un limite anteriore più stretto di dieci anni (1631-1640)."@it ;
-    skos:example "In 'I costretti sposi', ottava 47, 'Mentre abbini in impervia coesistenza, / con impegno e infrequente limatezza, / l’aristocratica malipotenza…': tutte le parole piene sono datate dal GRADIT fra il 1621 e il 1640."@it , "In 'I costretti sposi', octave 47, 'Mentre abbini in impervia coesistenza, / con impegno e infrequente limatezza, / l’aristocratica malipotenza…': all content words are dated by GRADIT between 1621 and 1640."@en ;
+    skos:example "In 'I costretti sposi' di Giuseppe Varaldo, ottava 47, 'Mentre abbini in impervia coesistenza, / con impegno e infrequente limatezza, / l’aristocratica malipotenza…': tutte le parole piene sono datate dal GRADIT fra il 1621 e il 1640."@it , "In Giuseppe Varaldo's 'I costretti sposi', octave 47, 'Mentre abbini in impervia coesistenza, / con impegno e infrequente limatezza, / l’aristocratica malipotenza…': all content words are dated by GRADIT between 1621 and 1640."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:datation_1827_1842_lexicon a skos:Concept ;
@@ -662,21 +662,21 @@ desmos:datation_1827_1842_lexicon a skos:Concept ;
     skos:broader desmos:datation_lexicon ;
     skos:definition "Formal constraint requiring every content word to have entered the language, according to the reference dictionary's datation, between 1827 and 1842 (the years of the 'Ventisettana' and 'Quarantana' editions of the novel)."@en , "Costrizione formale che impone a ogni parola piena di essere entrata nella lingua, secondo la datazione del dizionario di riferimento, fra il 1827 e il 1842 (gli anni della 'Ventisettana' e della 'Quarantana')."@it ;
     skos:scopeNote "Same 'av.' handling as datation_1621_1640_lexicon, restricting accepted lemmas to 1837-1842."@en , "Stessa gestione di 'av.' del lessico 1621-1640, con restrizione dei lemmi accettati al 1837-1842."@it ;
-    skos:example "In 'I costretti sposi', ottava 48, 'Commistura di epos e umorismo / – sapidezza non certo da sghignazzi! –, / il cui ineccepibile ibridismo…': tutte le parole piene sono datate dal GRADIT fra il 1827 e il 1842."@it , "In 'I costretti sposi', octave 48, 'Commistura di epos e umorismo / – sapidezza non certo da sghignazzi! –, / il cui ineccepibile ibridismo…': all content words are dated by GRADIT between 1827 and 1842."@en ;
+    skos:example "In 'I costretti sposi' di Giuseppe Varaldo, ottava 48, 'Commistura di epos e umorismo / – sapidezza non certo da sghignazzi! –, / il cui ineccepibile ibridismo…': tutte le parole piene sono datate dal GRADIT fra il 1827 e il 1842."@it , "In Giuseppe Varaldo's 'I costretti sposi', octave 48, 'Commistura di epos e umorismo / – sapidezza non certo da sghignazzi! –, / il cui ineccepibile ibridismo…': all content words are dated by GRADIT between 1827 and 1842."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:defective_verb_lexicon a skos:Concept ;
     skos:prefLabel "Defective-verb lexicon"@en , "Lessico di verbi difettivi"@it ;
     skos:broader desmos:grammatical_category_lexicon ;
     skos:definition "Formal constraint requiring every verb of the text to be a defective verb, i.e. lacking some moods or tenses according to the reference dictionary's (e.g. GRADIT) restrictive criterion."@en , "Costrizione formale che impone a ogni verbo del testo di essere difettivo, ovvero mancante di alcuni modi o tempi secondo il criterio restrittivo del dizionario di riferimento (es. GRADIT)."@it ;
-    skos:example "In 'I costretti sposi', ottava 1, 'Mentre già fervono i preparativi / per uno sposalizio di paese, / un prete se n’esime…': tutti i verbi impiegati sono difettivi secondo il criterio del GRADIT."@it , "In 'I costretti sposi', octave 1, 'Mentre già fervono i preparativi / per uno sposalizio di paese, / un prete se n’esime…': every verb used is defective according to the GRADIT criterion."@en ;
+    skos:example "In 'I costretti sposi' di Giuseppe Varaldo, ottava 1, 'Mentre già fervono i preparativi / per uno sposalizio di paese, / un prete se n’esime…': tutti i verbi impiegati sono difettivi secondo il criterio del GRADIT."@it , "In Giuseppe Varaldo's 'I costretti sposi', octave 1, 'Mentre già fervono i preparativi / per uno sposalizio di paese, / un prete se n’esime…': every verb used is defective according to the GRADIT criterion."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:derogatory_register_lexicon a skos:Concept ;
     skos:prefLabel "Derogatory-register lexicon"@en , "Lessico spregiativo"@it ;
     skos:broader desmos:register_lexicon ;
     skos:definition "Formal constraint requiring every content word to bear the label 'spreg.' (derogatory) in the reference dictionary, at least in the sense used."@en , "Costrizione formale che impone a ogni parola piena di recare l'etichetta 'spreg.' (spregiativo) nel dizionario di riferimento, almeno nell'accezione impiegata."@it ;
-    skos:example "In 'I costretti sposi', ottava 40, 'Risciacquatura ahinoi fiorentinesca, / dove saccenta o intriga un’accozzaglia / – benpensante, bavosa o animalesca – / di lecchini, giannizzeri, sbirraglia': le parole piene sono marcate 'spreg.' nel GRADIT."@it , "In 'I costretti sposi', octave 40, 'Risciacquatura ahinoi fiorentinesca, / dove saccenta o intriga un’accozzaglia / – benpensante, bavosa o animalesca – / di lecchini, giannizzeri, sbirraglia': content words are marked 'spreg.' in GRADIT."@en ;
+    skos:example "In 'I costretti sposi' di Giuseppe Varaldo, ottava 40, 'Risciacquatura ahinoi fiorentinesca, / dove saccenta o intriga un’accozzaglia / – benpensante, bavosa o animalesca – / di lecchini, giannizzeri, sbirraglia': le parole piene sono marcate 'spreg.' nel GRADIT."@it , "In Giuseppe Varaldo's 'I costretti sposi', octave 40, 'Risciacquatura ahinoi fiorentinesca, / dove saccenta o intriga un’accozzaglia / – benpensante, bavosa o animalesca – / di lecchini, giannizzeri, sbirraglia': content words are marked 'spreg.' in GRADIT."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:diatopic_lexicon a skos:Concept ;
@@ -685,7 +685,7 @@ desmos:diatopic_lexicon a skos:Concept ;
         desmos:tuscan_lexicon ;
     skos:broader desmos:lexicographic_marker_constraint ;
     skos:definition "Formal constraint restricting the lexicon to lemmas marked with a given regional/dialectal area of provenance in the reference dictionary."@en , "Costrizione formale che restringe il lessico ai lemmi marcati con una data area regionale o dialettale di provenienza nel dizionario di riferimento."@it ;
-    skos:example "L’ottava 45 dei 'Costretti sposi' usa soltanto parole piene qualificate dal GRADIT come lombarde o milanesi: 'Lui dopo il garibaldi, forloccando, / si svacca come un bamba…'."@it , "Octave 45 of 'I costretti sposi' uses only content words labeled by GRADIT as Lombard or Milanese: 'Lui dopo il garibaldi, forloccando, / si svacca come un bamba…'."@en ;
+    skos:example "L’ottava 45 dei 'Costretti sposi' di Giuseppe Varaldo usa soltanto parole piene qualificate dal GRADIT come lombarde o milanesi: 'Lui dopo il garibaldi, forloccando, / si svacca come un bamba…'."@it , "Octave 45 of Giuseppe Varaldo's 'I costretti sposi' uses only content words labeled by GRADIT as Lombard or Milanese: 'Lui dopo il garibaldi, forloccando, / si svacca come un bamba…'."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:dispersed_name a skos:Concept ;
@@ -693,7 +693,7 @@ desmos:dispersed_name a skos:Concept ;
     skos:broader desmos:hypogram ;
     skos:definition "Formal constraint in which the distinct letters of one proper name are distributed within each line, while the distinct letters of a second proper name are distributed cyclically across the junctions between consecutive lines."@en , "Costrizione formale in cui le lettere distinte di un nome proprio sono distribuite all'interno di ciascun verso, mentre le lettere distinte di un secondo nome proprio sono distribuite ciclicamente nei passaggi fra versi consecutivi."@it ;
     skos:scopeNote "Specialization of hypogram with a double, position-defined reading key (intra-line vs inter-line)."@en , "Specializzazione dell'ipogramma con doppia chiave posizionale (intra-verso vs inter-verso)."@it ;
-    skos:example "Nei 'Versi vincolati' dei 'Costretti sposi' le lettere di RENZO ricorrono, in combinazioni differenti, all’interno di ciascun verso, mentre quelle di LUCIA sono distribuite ciclicamente nei passaggi fra un verso e il successivo."@it , "In the 'Versi vincolati' of 'I costretti sposi', the letters of RENZO occur in different combinations within each line, while those of LUCIA are cyclically distributed across the junctions between consecutive lines."@en ;
+    skos:example "Nei 'Versi vincolati' dei 'Costretti sposi' di Giuseppe Varaldo le lettere di RENZO ricorrono, in combinazioni differenti, all’interno di ciascun verso, mentre quelle di LUCIA sono distribuite ciclicamente nei passaggi fra un verso e il successivo."@it , "In the 'Versi vincolati' of Giuseppe Varaldo's 'I costretti sposi', the letters of RENZO occur in different combinations within each line, while those of LUCIA are cyclically distributed across the junctions between consecutive lines."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:distich a skos:Concept ;
@@ -738,8 +738,8 @@ desmos:english_loanword_lexicon a skos:Concept ;
     skos:prefLabel "English-loanword lexicon"@en , "Lessico di prestiti inglesi"@it ;
     skos:broader desmos:loanword_lexicon ;
     skos:definition "Formal constraint requiring each line to contain an English loanword marked 'ingl.' in the reference dictionary."@en , "Costrizione formale che impone a ciascun verso di contenere un prestito inglese marcato 'ingl.' nel dizionario di riferimento."@it ;
-    skos:example "In 'I costretti sposi', ottava 6, 'Sposarsi, per gli eroi di ’sta love story, / è una mission impossible, o almeno, / per l’escalation d’atti vessatori / dal primo round…': ciascun verso contiene un prestito inglese."@it ,
-    "In 'I costretti sposi', octave 6, 'Sposarsi, per gli eroi di ’sta love story, / è una mission impossible, o almeno, / per l’escalation d’atti vessatori / dal primo round…': each line contains an English loanword."@en ;
+    skos:example "In 'I costretti sposi' di Giuseppe Varaldo, ottava 6, 'Sposarsi, per gli eroi di ’sta love story, / è una mission impossible, o almeno, / per l’escalation d’atti vessatori / dal primo round…': ciascun verso contiene un prestito inglese."@it ,
+    "In Giuseppe Varaldo's 'I costretti sposi', octave 6, 'Sposarsi, per gli eroi di ’sta love story, / è una mission impossible, o almeno, / per l’escalation d’atti vessatori / dal primo round…': each line contains an English loanword."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:enigmatic_transformation_chain a skos:Concept ;
@@ -762,7 +762,7 @@ desmos:familiar_register_lexicon a skos:Concept ;
     skos:prefLabel "Familiar-register lexicon"@en , "Lessico familiare"@it ;
     skos:broader desmos:register_lexicon ;
     skos:definition "Formal constraint requiring every content word to bear the label 'fam.' (familiar) in the reference dictionary, at least in the sense used."@en , "Costrizione formale che impone a ogni parola piena di recare l'etichetta 'fam.' (familiare) nel dizionario di riferimento, almeno nell'accezione impiegata."@it ;
-    skos:example "In 'I costretti sposi', ottava 36, 'Quando, dopo il paciugo e già bevuto, / spiscioleggiava senza sdarsi mai, / lo scriteriato molto si è sbattuto…': sostantivi, aggettivi e verbi sono marcati 'fam.' nel GRADIT."@it , "In 'I costretti sposi', octave 36, 'Quando, dopo il paciugo e già bevuto, / spiscioleggiava senza sdarsi mai, / lo scriteriato molto si è sbattuto…': nouns, adjectives and verbs are marked 'fam.' in GRADIT."@en ;
+    skos:example "In 'I costretti sposi' di Giuseppe Varaldo, ottava 36, 'Quando, dopo il paciugo e già bevuto, / spiscioleggiava senza sdarsi mai, / lo scriteriato molto si è sbattuto…': sostantivi, aggettivi e verbi sono marcati 'fam.' nel GRADIT."@it , "In Giuseppe Varaldo's 'I costretti sposi', octave 36, 'Quando, dopo il paciugo e già bevuto, / spiscioleggiava senza sdarsi mai, / lo scriteriato molto si è sbattuto…': nouns, adjectives and verbs are marked 'fam.' in GRADIT."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:fragmentation a skos:Concept ;
@@ -777,8 +777,8 @@ desmos:french_loanword_lexicon a skos:Concept ;
     skos:prefLabel "French-loanword lexicon"@en , "Lessico di prestiti francesi"@it ;
     skos:broader desmos:loanword_lexicon ;
     skos:definition "Formal constraint requiring each line to contain a French loanword marked 'fr.' in the reference dictionary."@en , "Costrizione formale che impone a ciascun verso di contenere un prestito francese marcato 'fr.' nel dizionario di riferimento."@it ;
-    skos:example "In 'I costretti sposi', ottava 7, 'Chapeau per il grandissimo Manzon, / che prima nel carnet mette un intoppo / a un matrimonio insulso e sans façon; / poi, con non poco aplomb…': ciascun verso contiene un prestito francese."@it ,
-    "In 'I costretti sposi', octave 7, 'Chapeau per il grandissimo Manzon, / che prima nel carnet mette un intoppo / a un matrimonio insulso e sans façon; / poi, con non poco aplomb…': each line contains a French loanword."@en ;
+    skos:example "In 'I costretti sposi' di Giuseppe Varaldo, ottava 7, 'Chapeau per il grandissimo Manzon, / che prima nel carnet mette un intoppo / a un matrimonio insulso e sans façon; / poi, con non poco aplomb…': ciascun verso contiene un prestito francese."@it ,
+    "In Giuseppe Varaldo's 'I costretti sposi', octave 7, 'Chapeau per il grandissimo Manzon, / che prima nel carnet mette un intoppo / a un matrimonio insulso e sans façon; / poi, con non poco aplomb…': each line contains a French loanword."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:fixed_fictional_character a skos:Concept ;
@@ -842,7 +842,7 @@ desmos:german_loanword_lexicon a skos:Concept ;
     skos:prefLabel "German-loanword lexicon"@en , "Lessico di prestiti tedeschi"@it ;
     skos:broader desmos:loanword_lexicon ;
     skos:definition "Formal constraint requiring each line to contain a German loanword marked 'ted.' in the reference dictionary."@en , "Costrizione formale che impone a ciascun verso di contenere un prestito tedesco marcato 'ted.' nel dizionario di riferimento."@it ;
-    skos:example "In 'I costretti sposi', ottava 9, 'Opera (achtung!) d’alta narrativa / codesto kolossal ottocentesco / – che dallo Sturm und Drang però deriva –, / nel quale, per il diktat…': ciascun verso contiene un prestito tedesco."@it , "In 'I costretti sposi', octave 9, 'Opera (achtung!) d’alta narrativa / codesto kolossal ottocentesco / – che dallo Sturm und Drang però deriva –, / nel quale, per il diktat…': each line contains a German loanword."@en ;
+    skos:example "In 'I costretti sposi' di Giuseppe Varaldo, ottava 9, 'Opera (achtung!) d’alta narrativa / codesto kolossal ottocentesco / – che dallo Sturm und Drang però deriva –, / nel quale, per il diktat…': ciascun verso contiene un prestito tedesco."@it , "In Giuseppe Varaldo's 'I costretti sposi', octave 9, 'Opera (achtung!) d’alta narrativa / codesto kolossal ottocentesco / – che dallo Sturm und Drang però deriva –, / nel quale, per il diktat…': each line contains a German loanword."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:grammatical_category_lexicon a skos:Concept ;
@@ -853,14 +853,14 @@ desmos:grammatical_category_lexicon a skos:Concept ;
         desmos:procomplementary_verb_lexicon ;
     skos:broader desmos:lexicographic_marker_constraint ;
     skos:definition "Formal constraint requiring every content word of a class to belong to a single grammatical or morphological sub-category recorded by the reference dictionary (e.g. defective verbs, procomplementary verbs, compound nouns), or to share a defined grammatical/orthographic anomaly."@en , "Costrizione formale che impone a tutte le parole piene di una classe di appartenere a un'unica sotto-categoria grammaticale o morfologica registrata dal dizionario di riferimento (es. verbi difettivi, verbi procomplementari, nomi composti), oppure di condividere una definita anomalia grammaticale o ortografica."@it ;
-    skos:example "L’ottava 1 dei 'Costretti sposi' seleziona una specifica categoria grammaticale: tutti i verbi devono essere difettivi secondo il GRADIT ('fervono', 's’esime', 'competa'…)."@it , "Octave 1 of 'I costretti sposi' selects a specific grammatical category: every verb must be defective according to GRADIT ('fervono', 's’esime', 'competa'…)."@en ;
+    skos:example "L’ottava 1 dei 'Costretti sposi' di Giuseppe Varaldo seleziona una specifica categoria grammaticale: tutti i verbi devono essere difettivi secondo il GRADIT ('fervono', 's’esime', 'competa'…)."@it , "Octave 1 of Giuseppe Varaldo's 'I costretti sposi' selects a specific grammatical category: every verb must be defective according to GRADIT ('fervono', 's’esime', 'competa'…)."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:grammatical_exception_lexicon a skos:Concept ;
     skos:prefLabel "Grammatical/orthographic-exception lexicon"@en , "Lessico per eccezioni grammaticali"@it ;
     skos:broader desmos:grammatical_category_lexicon ;
     skos:definition "Formal constraint requiring every noun of the text to constitute an orthographic or grammatical exception that contradicts, to some degree, a general rule of the language (e.g. anomalous spellings, overabundant or defective nouns, irregular plurals/feminines)."@en , "Costrizione formale che impone a ogni sostantivo del testo di costituire un'eccezione ortografica o grammaticale che contraddice, in qualche misura, una regola generale della lingua (grafie anomale, nomi sovrabbondanti o difettivi, plurali/femminili irregolari)."@it ;
-    skos:example "In 'I costretti sposi', ottava 4, 'soqquadro', 'forestiere', 'familiare', 'mani', 'cuoia' e altri sostantivi sono scelti perché costituiscono eccezioni ortografiche o grammaticali registrate dal GRADIT."@it , "In 'I costretti sposi', octave 4, 'soqquadro', 'forestiere', 'familiare', 'mani', 'cuoia' and other nouns are selected because they are orthographic or grammatical exceptions recorded by GRADIT."@en ;
+    skos:example "In 'I costretti sposi' di Giuseppe Varaldo, ottava 4, 'soqquadro', 'forestiere', 'familiare', 'mani', 'cuoia' e altri sostantivi sono scelti perché costituiscono eccezioni ortografiche o grammaticali registrate dal GRADIT."@it , "In Giuseppe Varaldo's 'I costretti sposi', octave 4, 'soqquadro', 'forestiere', 'familiare', 'mani', 'cuoia' and other nouns are selected because they are orthographic or grammatical exceptions recorded by GRADIT."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:handwritten_realization a skos:Concept ;
@@ -882,7 +882,7 @@ desmos:heterogeneous_register_lexicon a skos:Concept ;
     skos:prefLabel "Heterogeneous-register lexicon"@en , "Lessico ibrido espressivo"@it ;
     skos:broader desmos:register_lexicon ;
     skos:definition "Formal constraint requiring all content words of a given line to share one expressive label, while each line adopts a different label, with no prescribed order among lines."@en , "Costrizione formale che impone a tutte le parole piene di un dato verso di condividere una qualifica espressiva, mentre ciascun verso ne adotta una diversa, senza ordine prestabilito fra i versi."@it ;
-    skos:example "In 'I costretti sposi', ottava 44, ciascun verso adotta una diversa marca espressiva del GRADIT: nell’ordine gergale, iperbolica, familiare, colloquiale, ironica, spregiativa, popolare e scherzosa."@it , "In 'I costretti sposi', octave 44, each line adopts a different GRADIT expressive label: slang, hyperbolic, familiar, colloquial, ironic, derogatory, popular and jocular, in that order."@en ;
+    skos:example "In 'I costretti sposi' di Giuseppe Varaldo, ottava 44, ciascun verso adotta una diversa marca espressiva del GRADIT: nell’ordine gergale, iperbolica, familiare, colloquiale, ironica, spregiativa, popolare e scherzosa."@it , "In Giuseppe Varaldo's 'I costretti sposi', octave 44, each line adopts a different GRADIT expressive label: slang, hyperbolic, familiar, colloquial, ironic, derogatory, popular and jocular, in that order."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:heterogram a skos:Concept ;
@@ -903,7 +903,7 @@ desmos:hyperbolic_register_lexicon a skos:Concept ;
     skos:prefLabel "Hyperbolic-register lexicon"@en , "Lessico iperbolico"@it ;
     skos:broader desmos:register_lexicon ;
     skos:definition "Formal constraint requiring every content word to bear the label 'iperb.' (hyperbolic) in the reference dictionary, at least in the sense used."@en , "Costrizione formale che impone a ogni parola piena di recare l'etichetta 'iperb.' (iperbolico) nel dizionario di riferimento, almeno nell'accezione impiegata."@it ;
-    skos:example "In 'I costretti sposi', ottava 43, 'Per loro una tortura interminabile, / e un’infernale eterna apocalisse, / se un prodigio pazzesco, ma impagabile…': le parole piene sono marcate 'iperb.' nel GRADIT."@it , "In 'I costretti sposi', octave 43, 'Per loro una tortura interminabile, / e un’infernale eterna apocalisse, / se un prodigio pazzesco, ma impagabile…': content words are marked 'iperb.' in GRADIT."@en ;
+    skos:example "In 'I costretti sposi' di Giuseppe Varaldo, ottava 43, 'Per loro una tortura interminabile, / e un’infernale eterna apocalisse, / se un prodigio pazzesco, ma impagabile…': le parole piene sono marcate 'iperb.' nel GRADIT."@it , "In Giuseppe Varaldo's 'I costretti sposi', octave 43, 'Per loro una tortura interminabile, / e un’infernale eterna apocalisse, / se un prodigio pazzesco, ma impagabile…': content words are marked 'iperb.' in GRADIT."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:hypogram a skos:Concept ;
@@ -952,7 +952,7 @@ desmos:iambic_hendecasyllable a skos:Concept ;
     skos:definition "Hendecasyllable realized with a regular iambic rhythm: the metrical stresses (ictus) fall on the even syllables (2nd, 4th, 6th, 8th, 10th), producing a steady rising cadence. It is a rhythmic specialization of the hendecasyllable."@en ,
         "Endecasillabo realizzato con ritmo giambico regolare: gli accenti metrici (ictus) cadono sulle posizioni pari (2ª, 4ª, 6ª, 8ª, 10ª sillaba), con andamento ascendente costante. È una specializzazione ritmica dell'endecasillabo."@it ;
     skos:related desmos:hendecasyllable ;
-    skos:example "Il verso 'Tra chi fa vita ricca, chi da schiavi' dei 'Costretti sposi' realizza un endecasillabo giambico: Tra(1) CHI(2) fa(3) VÌ(4)-ta(5) RÌC(6)-ca(7) CHI(8) da(9) SCHIÀ(10)-vi(11)."@it , "The line 'Tra chi fa vita ricca, chi da schiavi' from 'I costretti sposi' realizes an iambic hendecasyllable: Tra(1) CHI(2) fa(3) VÌ(4)-ta(5) RÌC(6)-ca(7) CHI(8) da(9) SCHIÀ(10)-vi(11)."@en ;
+    skos:example "Il verso 'Tra chi fa vita ricca, chi da schiavi' dei 'Costretti sposi' di Giuseppe Varaldo realizza un endecasillabo giambico: Tra(1) CHI(2) fa(3) VÌ(4)-ta(5) RÌC(6)-ca(7) CHI(8) da(9) SCHIÀ(10)-vi(11)."@it , "The line 'Tra chi fa vita ricca, chi da schiavi' from Giuseppe Varaldo's 'I costretti sposi' realizes an iambic hendecasyllable: Tra(1) CHI(2) fa(3) VÌ(4)-ta(5) RÌC(6)-ca(7) CHI(8) da(9) SCHIÀ(10)-vi(11)."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:inverted_rhyme a skos:Concept ;
@@ -967,7 +967,7 @@ desmos:ironic_register_lexicon a skos:Concept ;
     skos:prefLabel "Ironic-register lexicon"@en , "Lessico ironico"@it ;
     skos:broader desmos:register_lexicon ;
     skos:definition "Formal constraint requiring every content word to bear the label 'iron.' (ironic) in the reference dictionary, at least in the sense used."@en , "Costrizione formale che impone a ogni parola piena di recare l'etichetta 'iron.' (ironico) nel dizionario di riferimento, almeno nell'accezione impiegata."@it ;
-    skos:example "In 'I costretti sposi', ottava 42, 'Certo monumentabile, accipicchia, / del poppante (però immilanesito!) / lo sfucinar delizie, se bevicchia…': le parole piene sono marcate 'iron.' nel GRADIT."@it , "In 'I costretti sposi', octave 42, 'Certo monumentabile, accipicchia, / del poppante (però immilanesito!) / lo sfucinar delizie, se bevicchia…': content words are marked 'iron.' in GRADIT."@en ;
+    skos:example "In 'I costretti sposi' di Giuseppe Varaldo, ottava 42, 'Certo monumentabile, accipicchia, / del poppante (però immilanesito!) / lo sfucinar delizie, se bevicchia…': le parole piene sono marcate 'iron.' nel GRADIT."@it , "In Giuseppe Varaldo's 'I costretti sposi', octave 42, 'Certo monumentabile, accipicchia, / del poppante (però immilanesito!) / lo sfucinar delizie, se bevicchia…': content words are marked 'iron.' in GRADIT."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:isosyllabic_words a skos:Concept ;
@@ -993,21 +993,21 @@ desmos:jocular_register_lexicon a skos:Concept ;
     skos:prefLabel "Jocular-register lexicon"@en , "Lessico scherzoso"@it ;
     skos:broader desmos:register_lexicon ;
     skos:definition "Formal constraint requiring every content word to bear the label 'scherz.' (jocular) in the reference dictionary, at least in the sense used."@en , "Costrizione formale che impone a ogni parola piena di recare l'etichetta 'scherz.' (scherzoso) nel dizionario di riferimento, almeno nell'accezione impiegata."@it ;
-    skos:example "In 'I costretti sposi', ottava 41, 'Una goduria sia l’ambaradan / megagalattico alla meneghina, / sia – pure lei paneropolitan – / del togo baccellier la mogliettina': le parole piene sono marcate 'scherz.' nel GRADIT."@it , "In 'I costretti sposi', octave 41, 'Una goduria sia l’ambaradan / megagalattico alla meneghina, / sia – pure lei paneropolitan – / del togo baccellier la mogliettina': content words are marked 'scherz.' in GRADIT."@en ;
+    skos:example "In 'I costretti sposi' di Giuseppe Varaldo, ottava 41, 'Una goduria sia l’ambaradan / megagalattico alla meneghina, / sia – pure lei paneropolitan – / del togo baccellier la mogliettina': le parole piene sono marcate 'scherz.' nel GRADIT."@it , "In Giuseppe Varaldo's 'I costretti sposi', octave 41, 'Una goduria sia l’ambaradan / megagalattico alla meneghina, / sia – pure lei paneropolitan – / del togo baccellier la mogliettina': content words are marked 'scherz.' in GRADIT."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:latin_locution_lexicon a skos:Concept ;
     skos:prefLabel "Latin-locution lexicon"@en , "Lessico di locuzioni latine"@it ;
     skos:broader desmos:loanword_lexicon ;
     skos:definition "Formal constraint requiring each line to contain a Latin locution recorded as an autonomous entry with the double label 'loc.' and 'lat.' in the reference dictionary."@en , "Costrizione formale che impone a ciascun verso di contenere una locuzione latina registrata come lemma autonomo con la doppia indicazione 'loc.' e 'lat.' nel dizionario di riferimento."@it ;
-    skos:example "In 'I costretti sposi', ottava 12, 'Chi, dal modus vivendi depravato, / causò de facto tutto questo strazio, / in primis minacciando il buon curato, / poi ricorrendo come extrema ratio…': ogni verso contiene una locuzione latina."@it , "In 'I costretti sposi', octave 12, 'Chi, dal modus vivendi depravato, / causò de facto tutto questo strazio, / in primis minacciando il buon curato, / poi ricorrendo come extrema ratio…': each line contains a Latin locution."@en ;
+    skos:example "In 'I costretti sposi' di Giuseppe Varaldo, ottava 12, 'Chi, dal modus vivendi depravato, / causò de facto tutto questo strazio, / in primis minacciando il buon curato, / poi ricorrendo come extrema ratio…': ogni verso contiene una locuzione latina."@it , "In Giuseppe Varaldo's 'I costretti sposi', octave 12, 'Chi, dal modus vivendi depravato, / causò de facto tutto questo strazio, / in primis minacciando il buon curato, / poi ricorrendo come extrema ratio…': each line contains a Latin locution."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:latin_noun_lexicon a skos:Concept ;
     skos:prefLabel "Latin-noun lexicon"@en , "Lessico di sostantivi latini"@it ;
     skos:broader desmos:loanword_lexicon ;
     skos:definition "Formal constraint requiring every noun of the text to be a Latin loanword regularly recorded as 'lat.' in the reference dictionary."@en , "Costrizione formale che impone a ogni sostantivo del testo di essere un prestito latino regolarmente registrato come 'lat.' nel dizionario di riferimento."@it ;
-    skos:example "In 'I costretti sposi', ottava 11, 'Una summa davvero entusiasmante, / che realizza, dall’incipit famoso / fino all’explicit sapido e ammiccante, / in un continuum…': tutti i sostantivi sono prestiti latini."@it , "In 'I costretti sposi', octave 11, 'Una summa davvero entusiasmante, / che realizza, dall’incipit famoso / fino all’explicit sapido e ammiccante, / in un continuum…': all nouns are Latin loanwords."@en ;
+    skos:example "In 'I costretti sposi' di Giuseppe Varaldo, ottava 11, 'Una summa davvero entusiasmante, / che realizza, dall’incipit famoso / fino all’explicit sapido e ammiccante, / in un continuum…': tutti i sostantivi sono prestiti latini."@it , "In Giuseppe Varaldo's 'I costretti sposi', octave 11, 'Una summa davvero entusiasmante, / che realizza, dall’incipit famoso / fino all’explicit sapido e ammiccante, / in un continuum…': all nouns are Latin loanwords."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:lexical_gap a skos:Concept ;
@@ -1028,7 +1028,7 @@ desmos:lexicographic_marker_constraint a skos:Concept ;
         desmos:mathematical_lexicon ;
     skos:definition "Family of formal constraints that select the admissible lexicon of a text by a lexicographic label assigned in a reference dictionary (e.g. GRADIT) - origin, register, domain, datation or grammatical category - whether applied exhaustively (every content word bears the label) or positionally (at least one labeled word per textual unit, e.g. per line)."@en , "Famiglia di costrizioni formali che selezionano il lessico ammesso in base a un'etichetta lessicografica assegnata in un dizionario di riferimento (es. GRADIT) - provenienza, registro, dominio, datazione o categoria grammaticale - sia in modo esaustivo (ogni parola piena reca l'etichetta) sia in modo posizionale (almeno una parola etichettata per unità testuale, es. per verso)."@it ;
     skos:scopeNote "The constraint operates on a dictionary's metadata rather than on the letter set; it presupposes an explicitly named reference work."@en , "La costrizione opera sui metadati del dizionario, non sul set di lettere; presuppone un'opera di riferimento esplicitamente dichiarata."@it ;
-    skos:example "In 'I costretti sposi', ottava 35, 'Individuo degenere e potente, / con legami più o meno sviluppati…': tutte le parole devono corrispondere a lemmi o accezioni cui il GRADIT assegna l’etichetta 'mat.'."@it , "In 'I costretti sposi', octave 35, 'Individuo degenere e potente, / con legami più o meno sviluppati…': every word must correspond to a GRADIT lemma or sense carrying the label 'mat.'."@en ;
+    skos:example "In 'I costretti sposi' di Giuseppe Varaldo, ottava 35, 'Individuo degenere e potente, / con legami più o meno sviluppati…': tutte le parole devono corrispondere a lemmi o accezioni cui il GRADIT assegna l’etichetta 'mat.'."@it , "In Giuseppe Varaldo's 'I costretti sposi', octave 35, 'Individuo degenere e potente, / con legami più o meno sviluppati…': every word must correspond to a GRADIT lemma or sense carrying the label 'mat.'."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:lipogram a skos:Concept ;
@@ -1101,14 +1101,14 @@ desmos:loanword_lexicon a skos:Concept ;
         desmos:spanish_loanword_lexicon ;
     skos:broader desmos:lexicographic_marker_constraint ;
     skos:definition "Formal constraint that selects loanwords by the language or geographical area of provenance recorded in the reference dictionary."@en , "Costrizione formale che seleziona i prestiti in base alla lingua o all'area geografica di provenienza registrata nel dizionario di riferimento."@it ;
-    skos:example "L’ottava 6 dei 'Costretti sposi' vincola ciascun verso a un prestito inglese del GRADIT, tra cui 'love story', 'mission impossible', 'escalation' e 'round'."@it , "Octave 6 of 'I costretti sposi' requires each line to contain a GRADIT English loanword, including 'love story', 'mission impossible', 'escalation' and 'round'."@en ;
+    skos:example "L’ottava 6 dei 'Costretti sposi' di Giuseppe Varaldo vincola ciascun verso a un prestito inglese del GRADIT, tra cui 'love story', 'mission impossible', 'escalation' e 'round'."@it , "Octave 6 of Giuseppe Varaldo's 'I costretti sposi' requires each line to contain a GRADIT English loanword, including 'love story', 'mission impossible', 'escalation' and 'round'."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:lombard_lexicon a skos:Concept ;
     skos:prefLabel "Lombard/Milanese lexicon"@en , "Lessico lombardo/milanese"@it ;
     skos:broader desmos:diatopic_lexicon ;
     skos:definition "Formal constraint requiring every content word, or at least the sense used, to bear the area label 'lomb.' (Lombard) or, more specifically, 'milan.' (Milanese) in the reference dictionary."@en , "Costrizione formale che impone a ogni parola piena, o almeno all'accezione impiegata, di recare la marca d'area 'lomb.' (lombardo) o, più specificamente, 'milan.' (milanese) nel dizionario di riferimento."@it ;
-    skos:example "In 'I costretti sposi', ottava 45, 'Lui dopo il garibaldi, forloccando, / si svacca come un bamba, mentre ella, / sgomentendosi e molto tripillando…': le parole piene sono marcate 'lomb.' o 'milan.' nel GRADIT."@it , "In 'I costretti sposi', octave 45, 'Lui dopo il garibaldi, forloccando, / si svacca come un bamba, mentre ella, / sgomentendosi e molto tripillando…': content words are marked 'lomb.' or 'milan.' in GRADIT."@en ;
+    skos:example "In 'I costretti sposi' di Giuseppe Varaldo, ottava 45, 'Lui dopo il garibaldi, forloccando, / si svacca come un bamba, mentre ella, / sgomentendosi e molto tripillando…': le parole piene sono marcate 'lomb.' o 'milan.' nel GRADIT."@it , "In Giuseppe Varaldo's 'I costretti sposi', octave 45, 'Lui dopo il garibaldi, forloccando, / si svacca come un bamba, mentre ella, / sgomentendosi e molto tripillando…': content words are marked 'lomb.' or 'milan.' in GRADIT."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:LD_method a skos:Concept ;
@@ -1159,7 +1159,7 @@ desmos:mathematical_lexicon a skos:Concept ;
     skos:prefLabel "Mathematical lexicon"@en , "Lessico matematico"@it ;
     skos:broader desmos:lexicographic_marker_constraint ;
     skos:definition "Formal constraint requiring every word of the text to be a term recorded with the domain label 'mat.' (mathematics) in the reference dictionary, possibly inflected or declined from the labeled base lemma."@en , "Costrizione formale che impone a ogni parola del testo di essere un termine registrato con l'etichetta di dominio 'mat.' (matematica) nel dizionario di riferimento, eventualmente coniugato o declinato a partire dal lemma-base etichettato."@it ;
-    skos:example "In 'I costretti sposi', ottava 35, 'Individuo degenere e potente, / con legami più o meno sviluppati / e contorno costante e conseguente…': tutte le parole sono anche termini matematici registrati dal GRADIT con l’etichetta 'mat.'."@it , "In 'I costretti sposi', octave 35, 'Individuo degenere e potente, / con legami più o meno sviluppati / e contorno costante e conseguente…': every word is also a mathematical term recorded by GRADIT with the label 'mat.'."@en ;
+    skos:example "In 'I costretti sposi' di Giuseppe Varaldo, ottava 35, 'Individuo degenere e potente, / con legami più o meno sviluppati / e contorno costante e conseguente…': tutte le parole sono anche termini matematici registrati dal GRADIT con l’etichetta 'mat.'."@it , "In Giuseppe Varaldo's 'I costretti sposi', octave 35, 'Individuo degenere e potente, / con legami più o meno sviluppati / e contorno costante e conseguente…': every word is also a mathematical term recorded by GRADIT with the label 'mat.'."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:metagram a skos:Concept ;
@@ -1333,14 +1333,14 @@ desmos:polyglot_loanword_lexicon a skos:Concept ;
     skos:prefLabel "Polyglot-loanword lexicon"@en , "Lessico di prestiti poliglotti"@it ;
     skos:broader desmos:loanword_lexicon ;
     skos:definition "Formal constraint requiring each line to contain a loanword from a different language each time, distinct from English, French, Spanish and German (e.g. Japanese, Russian, Hungarian, Portuguese, Arabic, Turkish, Greek, Dutch)."@en , "Costrizione formale che impone a ciascun verso di contenere un prestito da una lingua ogni volta diversa, distinta da inglese, francese, spagnolo e tedesco (es. giapponese, russo, ungherese, portoghese, arabo, turco, greco, olandese)."@it ;
-    skos:example "In 'I costretti sposi', ottava 10, 'Questo romantico monogatari, / ma la cui trama è fatta di matrioske, / non senza paprika ed aromi vari, / si snoda tra saudade e imprese losche…': ogni verso contiene un prestito da una lingua diversa."@it , "In 'I costretti sposi', octave 10, 'Questo romantico monogatari, / ma la cui trama è fatta di matrioske, / non senza paprika ed aromi vari, / si snoda tra saudade e imprese losche…': each line contains a loanword from a different language."@en ;
+    skos:example "In 'I costretti sposi' di Giuseppe Varaldo, ottava 10, 'Questo romantico monogatari, / ma la cui trama è fatta di matrioske, / non senza paprika ed aromi vari, / si snoda tra saudade e imprese losche…': ogni verso contiene un prestito da una lingua diversa."@it , "In Giuseppe Varaldo's 'I costretti sposi', octave 10, 'Questo romantico monogatari, / ma la cui trama è fatta di matrioske, / non senza paprika ed aromi vari, / si snoda tra saudade e imprese losche…': each line contains a loanword from a different language."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:popular_register_lexicon a skos:Concept ;
     skos:prefLabel "Popular-register lexicon"@en , "Lessico popolare"@it ;
     skos:broader desmos:register_lexicon ;
     skos:definition "Formal constraint requiring every content word to bear the label 'pop.' (popular) in the reference dictionary, at least in the sense used."@en , "Costrizione formale che impone a ogni parola piena di recare l'etichetta 'pop.' (popolare) nel dizionario di riferimento, almeno nell'accezione impiegata."@it ;
-    skos:example "In 'I costretti sposi', ottava 38, 'Fregole, ciucche, fetenzìe, marroni, / posteme e scassamenti sbordellanti / di chiurli, calabrache, mollacchioni…': le parole piene sono marcate 'pop.' nel GRADIT."@it , "In 'I costretti sposi', octave 38, 'Fregole, ciucche, fetenzìe, marroni, / posteme e scassamenti sbordellanti / di chiurli, calabrache, mollacchioni…': content words are marked 'pop.' in GRADIT."@en ;
+    skos:example "In 'I costretti sposi' di Giuseppe Varaldo, ottava 38, 'Fregole, ciucche, fetenzìe, marroni, / posteme e scassamenti sbordellanti / di chiurli, calabrache, mollacchioni…': le parole piene sono marcate 'pop.' nel GRADIT."@it , "In Giuseppe Varaldo's 'I costretti sposi', octave 38, 'Fregole, ciucche, fetenzìe, marroni, / posteme e scassamenti sbordellanti / di chiurli, calabrache, mollacchioni…': content words are marked 'pop.' in GRADIT."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:postal_code_acrostic a skos:Concept ;
@@ -1357,7 +1357,7 @@ desmos:post_1989_lexicon a skos:Concept ;
     skos:prefLabel "Post-1989 lexicon"@en , "Lessico del dopo-muro"@it ;
     skos:broader desmos:datation_lexicon ;
     skos:definition "Formal constraint requiring every content word to have a date of entry into the language, according to the reference dictionary, subsequent to 1989 (the fall of the Berlin Wall taken as a watershed)."@en , "Costrizione formale che impone a ogni parola piena una data d'ingresso nella lingua, secondo il dizionario di riferimento, successiva al 1989 (la caduta del Muro di Berlino assunta come spartiacque)."@it ;
-    skos:example "In 'I costretti sposi', ottava 50, 'Non mi sconfinferan lo sfaccimmuso / che imparanoia e blabla oltremisura, / la seraficità dello scantuso…': le parole piene hanno nel GRADIT una datazione successiva al 1989."@it , "In 'I costretti sposi', octave 50, 'Non mi sconfinferan lo sfaccimmuso / che imparanoia e blabla oltremisura, / la seraficità dello scantuso…': content words have a GRADIT dating later than 1989."@en ;
+    skos:example "In 'I costretti sposi' di Giuseppe Varaldo, ottava 50, 'Non mi sconfinferan lo sfaccimmuso / che imparanoia e blabla oltremisura, / la seraficità dello scantuso…': le parole piene hanno nel GRADIT una datazione successiva al 1989."@it , "In Giuseppe Varaldo's 'I costretti sposi', octave 50, 'Non mi sconfinferan lo sfaccimmuso / che imparanoia e blabla oltremisura, / la seraficità dello scantuso…': content words have a GRADIT dating later than 1989."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:prescribed_line_frame a skos:Concept ;
@@ -1404,7 +1404,7 @@ desmos:progressive_century_datation a skos:Concept ;
     skos:prefLabel "Progressive-century datation lexicon"@en , "Lessico a datazione secolare progressiva"@it ;
     skos:broader desmos:datation_lexicon ;
     skos:definition "Formal constraint in which the content words of each successive line share a common date of entry into the language assigned to a progressively later century, advancing one century per line (here from the 13th to the 20th)."@en , "Costrizione formale in cui le parole piene di ciascun verso successivo condividono una data d'ingresso nella lingua assegnata a un secolo via via più tardo, avanzando di un secolo per verso (qui dal XIII al XX)."@it ;
-    skos:example "In 'I costretti sposi', ottava 49, le parole piene del 1º verso sono datate al XIII secolo, quelle del 2º al XIV e così via fino al XX secolo dell’8º verso: 'Abbandonare il borgo e i propri averi: / per la coppia una scelta ahimè increscevole…'."@it , "In 'I costretti sposi', octave 49, content words in line 1 are dated to the thirteenth century, those in line 2 to the fourteenth, and so on up to the twentieth century in line 8: 'Abbandonare il borgo e i propri averi: / per la coppia una scelta ahimè increscevole…'."@en ;
+    skos:example "In 'I costretti sposi' di Giuseppe Varaldo, ottava 49, le parole piene del 1º verso sono datate al XIII secolo, quelle del 2º al XIV e così via fino al XX secolo dell’8º verso: 'Abbandonare il borgo e i propri averi: / per la coppia una scelta ahimè increscevole…'."@it , "In Giuseppe Varaldo's 'I costretti sposi', octave 49, content words in line 1 are dated to the thirteenth century, those in line 2 to the fourteenth, and so on up to the twentieth century in line 8: 'Abbandonare il borgo e i propri averi: / per la coppia una scelta ahimè increscevole…'."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:progressive_vocalic_lipogram a skos:Concept ;
@@ -1435,7 +1435,7 @@ desmos:quatrain a skos:Concept ;
 desmos:rebus a skos:Concept ;
     skos:prefLabel "Rebus"@en , "Rebus"@it ;
     skos:definition "Formal constraint in which an illustrated scene marked with letters (graphemes) yields a first reading (segmenting the graphemes with the depicted elements); keeping the letters in the same order but re-segmenting them produces a second, meaningful reading that is the solution. A double numeric diagram states the word lengths of both readings."@en , "Costrizione formale in cui una scena illustrata contrassegnata da lettere (grafemi) produce una prima lettura (abbinando i grafemi agli elementi raffigurati); mantenendo le lettere nel medesimo ordine ma raggruppandole diversamente si ottiene una seconda lettura, di senso compiuto, corrispondente alla soluzione. Un doppio diagramma numerico indica la lunghezza delle parole delle due letture."@it ;
-    skos:example """Placeholder example."""@en , """Esempio segnaposto."""@it ;
+    skos:example "Nel 'Rebus' di Antonella Sbrilli, la prima lettura '(Perec) H (esco) MP (arsa)' viene risegmentata nella soluzione 'Per E, ch’è scomparsa', secondo il diagramma numerico '3 1 2’ 1 9'."@it , "In Antonella Sbrilli’s 'Rebus', the first reading '(Perec) H (esco) MP (arsa)' is resegmented into the solution 'Per E, ch’è scomparsa', according to the numerical pattern '3 1 2’ 1 9'."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:register_lexicon a skos:Concept ;
@@ -1451,41 +1451,42 @@ desmos:register_lexicon a skos:Concept ;
         desmos:slang_register_lexicon ;
     skos:broader desmos:lexicographic_marker_constraint ;
     skos:definition "Formal constraint requiring every content word (noun, adjective, verb) to bear the same expressive/usage label in the reference dictionary - at least in the sense in which it is used - within a given textual unit: the whole text, or, when the label varies, the individual line."@en , "Costrizione formale che impone a ogni parola piena (sostantivo, aggettivo, verbo) di recare la medesima qualifica espressiva o d'uso nel dizionario di riferimento - almeno nell'accezione impiegata - entro una data unità testuale: l'intero testo o, quando l'etichetta varia, il singolo verso."@it ;
-    skos:example "Varaldo, octave 'Lessico popolare': every content word is 'pop.' - «fregole», «mollacchioni», «paraculi», «minchioni», «berlicche»."@en , "Varaldo, ottava 'Lessico popolare': ogni parola piena è 'pop.' - «fregole», «mollacchioni», «paraculi», «minchioni», «berlicche»."@it ;
+    skos:example "L’ottava 37 dei 'Costretti sposi' di Giuseppe Varaldo applica una marca di registro a tutte le parole piene: 'impiastri', 'casini', 'cappelle', 'sfiga' ecc. sono impiegati in accezioni qualificate 'colloq.' dal GRADIT."@it , "Octave 37 of Giuseppe Varaldo's 'I costretti sposi' applies a register label to all content words: 'impiastri', 'casini', 'cappelle', 'sfiga', etc. are used in senses labelled 'colloq.' by GRADIT."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:regraphing a skos:Concept ;
     skos:prefLabel "Regraphing"@en , "Rigrafia"@it ;
     skos:definition "Formal constraint consisting in composing a derived text by reordering typographic lines taken from a source text."@en , "Costrizione formale che consiste nel comporre un testo derivato riordinando righe tipografiche tratte da un testo base."@it ;
     skos:historyNote "The constraint was invented by Aldo Spinelli in 'L'uso delle istruzioni' (1991), 'La Biblioteca Oplepiana' n. 2."@en , "La costrizione è stata inventata da Aldo Spinelli in 'L'uso delle istruzioni' (1991), 'La Biblioteca Oplepiana' n. 2."@it ;
-    skos:example "Example of regraphing: 'Sì, tutto potrebbe iniziare così, qui, in questo modo, una maniera' → '...'."@en , "Esempio di rigrafia: 'Sì, tutto potrebbe iniziare così, qui, in questo modo, una maniera' → '...'."@it ;
+    skos:example "In 'L'uso delle istruzioni' di Aldo Spinelli, le righe tratte da 'La vita istruzioni per l'uso' 'provenienti da un nascondiglio scavato in una delle muraglie di Santa / Sofia. La lista degli oggetti in questione ci è nota per via di una lettera' e 'nella sua stessa ironia, di una W.' sono ricomposte, senza modificarne il contenuto, nella sequenza 'provenienti da un nascondiglio scavato in una delle muraglie di Santa / Sofia. La lista degli oggetti in questione ci è nota per via di una lettera / nella sua stessa ironia, di una W.'."@it , "In Aldo Spinelli's 'L'uso delle istruzioni', lines taken from 'La vita istruzioni per l'uso' — 'provenienti da un nascondiglio scavato in una delle muraglie di Santa / Sofia. La lista degli oggetti in questione ci è nota per via di una lettera' and 'nella sua stessa ironia, di una W.' — are recombined without altering their content into the sequence 'provenienti da un nascondiglio scavato in una delle muraglie di Santa / Sofia. La lista degli oggetti in questione ci è nota per via di una lettera / nella sua stessa ironia, di una W.'."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:sdrucciola_hendecasyllable a skos:Concept ;
     skos:prefLabel "Sdrucciolo hendecasyllable"@en , "Endecasillabo sdrucciolo"@it ;
     skos:definition "Hendecasyllable with a proparoxytone (sdrucciolo) ending: twelve syllables with stress on the antepenultimate."@en , "Endecasillabo con uscita sdrucciola (proparossitona): dodici sillabe con accento sulla terzultima."@it ;
     skos:related desmos:hendecasyllable ;
+    skos:example "Nel verso 'Per loro una tortura interminabile' dei 'Costretti sposi' di Giuseppe Varaldo, le sinalefi 'loro_una' e 'tortura_interminabile' danno dodici sillabe metriche, con accento sulla 10ª ('-nà-'): è un endecasillabo sdrucciolo."@it , "In the line 'Per loro una tortura interminabile' from Giuseppe Varaldo's 'I costretti sposi', the synaloephae 'loro_una' and 'tortura_interminabile' yield twelve metric syllables, with stress on the 10th ('-nà-'): it is a proparoxytone hendecasyllable."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:sdrucciola_rhyme a skos:Concept ;
     skos:prefLabel "Sdrucciola rhyme"@en , "Rima sdrucciola"@it ;
     skos:altLabel "Dactylic rhyme"@en ;
     skos:definition "Formal constraint requiring a rhyme whose final word bears its stress on the third-to-last syllable (proparoxytone)."@en , "Costrizione rimica che impone una rima la cui parola finale abbia l'accento sulla terzultima sillaba (parola sdrucciola)."@it ;
-    skos:example "Luca Chiti, 'Elogio dell'Operosa pastorelleria legata, elegantemente poco ortodossa' (2000): A-rhymes are always sdrucciola in the AAB scheme."@en , "Luca Chiti, 'Elogio dell'Operosa pastorelleria legata, elegantemente poco ortodossa' (2000): le rime A sono sempre sdrucciole nello schema AAB."@it ;
+    skos:example "Due versi che terminano con 'tavolo' e 'cavolo' realizzano una rima sdrucciola."@it , "Two lines ending with 'tavolo' and 'cavolo' realise a proparoxytone rhyme."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:semi_automatic_locutionary_text a skos:Concept ;
     skos:prefLabel "Semi-automatic locutionary text"@en , "Testo locuzionale semiautomatico"@it ;
     skos:definition "Formal constraint generating a text through an algorithm applied to a dictionary of idiomatic expressions (locutions): the first locution under a headword is transcribed, the first noun in its definition determines the next headword, and the procedure is iterated until a fixed number of lines is reached."@en , "Costrizione formale che genera un testo mediante un algoritmo applicato a un dizionario di modi di dire: si trascrive il primo modo di dire sotto un lemma, il primo sostantivo della relativa definizione individua il lemma successivo e la procedura si itera fino al raggiungimento di un numero fisso di versi."@it ;
     skos:historyNote "The constraint was invented by Ruggero Campagnoli in 'Sestine per modo di dire' (1994), 'La Biblioteca Oplepiana' n. 10."@en , "La costrizione è stata inventata da Ruggero Campagnoli in 'Sestine per modo di dire' (1994), 'La Biblioteca Oplepiana' n. 10."@it ;
-    skos:example "Placeholder example."@en , "Esempio placeholder."@it ;
+    skos:example "In 'Sestine per modo di dire', la catena generata dal dizionario si chiude in sei versi: 'Allungai le zampe, / mi presi delle confidenze: / fanalino di coda, / mi feci valere / facendo morire dal ridere. / Avrò l’età della ragione?'."@it , "In 'Sestine per modo di dire', the dictionary-generated chain closes after six lines: 'Allungai le zampe, / mi presi delle confidenze: / fanalino di coda, / mi feci valere / facendo morire dal ridere. / Avrò l’età della ragione?'."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:septenary a skos:Concept ;
     skos:prefLabel "Septenary"@en , "Settenario"@it ;
     skos:related desmos:septenary_double ;
     skos:definition "Formal constraint requiring lines of seven syllables."@en , "Costrizione metrica che impone l’uso di versi di sette sillabe."@it ;
-    skos:example "Placeholder example."@en , "Esempio placeholder."@it ;
+    skos:example "'La nebbia sale lenta' è un verso di sette sillabe."@it , "'La nebbia sale lenta' is a seven-syllable line."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:septenary_double a skos:Concept ;
@@ -1494,13 +1495,13 @@ desmos:septenary_double a skos:Concept ;
     skos:narrower desmos:martellian_verse ;
     skos:related desmos:septenary ;
     skos:definition "Formal constraint requiring the use of lines composed of fourteen syllables, typically organized into stanzas or sections."@en , "Costrizione formale che impone l'uso di versi composti da quattordici sillabe, solitamente organizzati in strofe o sezioni."@it ;
-    skos:example "Placeholder example."@en , "Esempio placeholder."@it ;
+    skos:example "'La nebbia sale lenta | la sera scende piano' combina due unità di sette sillabe in un verso di quattordici sillabe."@it , "'La nebbia sale lenta | la sera scende piano' combines two seven-syllable units into a fourteen-syllable line."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:sestina a skos:Concept ;
     skos:prefLabel "Sestina"@en , "Sestina"@it ;
     skos:definition "Formal constraint requiring the text to be organized into six-line stanzas, optionally following a predefined metrical/rhyme scheme."@en , "Costrizione strofica che impone l'organizzazione del testo in strofe di sei versi, eventualmente secondo uno schema metrico-rimico determinato."@it ;
-    skos:example "Placeholder example."@en , "Esempio placeholder."@it ;
+    skos:example "In 'Sestine per modo di dire' di Ruggero Campagnoli, 'Inquietudini d’adolescente' è composta da sei versi: 'Allungai le zampe / mi presi delle confidenze: / fanalino di coda, / mi feci valere / facendo morire dal ridere. / Avrò l’età della ragione?'."@it , "In Ruggero Campagnoli's 'Sestine per modo di dire', 'Inquietudini d’adolescente' is composed of six lines: 'Allungai le zampe / mi presi delle confidenze: / fanalino di coda, / mi feci valere / facendo morire dal ridere. / Avrò l’età della ragione?'."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:syllabic_set_constraint a skos:Concept ;
@@ -1508,28 +1509,28 @@ desmos:syllabic_set_constraint a skos:Concept ;
     skos:related desmos:tautogram ;
     skos:definition "Formal constraint requiring every word of the text to begin with one of a closed set of syllables (typically the syllables composing a reference title), each syllable being represented at least once."@en , "Costrizione formale che impone a ogni parola del testo di iniziare con un insieme chiuso di sillabe (tipicamente le sillabe che compongono un titolo di riferimento), con ciascuna sillaba rappresentata almeno una volta."@it ;
     skos:scopeNote "Generalizes the tautogram from a single initial letter to a finite set of initial syllables."@en , "Generalizza il tautogramma da una singola lettera iniziale a un insieme finito di sillabe iniziali."@it ;
-    skos:example "Varaldo: tutte le parole iniziano con I, PRO, MES, SI o SPO (da 'I promessi sposi')."@it ;
+    skos:example "Nell'ottava 'Sillabario' di 'I costretti sposi' di Giuseppe Varaldo, tutte le parole iniziano con uno dei cinque gruppi I, PRO, MES, SI e SPO, ricavati dalle sillabe del titolo 'I promessi sposi': per esempio 'impedito' (I), 'provoca' (PRO), 'mestizia' (MES), 'sinché' (SI) e 'spodesterà' (SPO)."@it , "In the octave 'Sillabario' from Giuseppe Varaldo's 'I costretti sposi', every word begins with one of the five groups I, PRO, MES, SI and SPO, derived from the syllables of the title 'I promessi sposi': examples include 'impedito' (I), 'provoca' (PRO), 'mestizia' (MES), 'sinché' (SI), and 'spodesterà' (SPO)."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:slang_register_lexicon a skos:Concept ;
     skos:prefLabel "Slang-register lexicon"@en , "Lessico gergale"@it ;
     skos:broader desmos:register_lexicon ;
     skos:definition "Formal constraint requiring every content word to bear the label 'gerg.' (slang/jargon) in the reference dictionary, at least in the sense used."@en , "Costrizione formale che impone a ogni parola piena di recare l'etichetta 'gerg.' (gergale) nel dizionario di riferimento, almeno nell'accezione impiegata."@it ;
-    skos:example "Placeholder example"@en , "Esempio segnaposto"@it ;
+    skos:example "In 'I costretti sposi' di Giuseppe Varaldo, ottava 39, 'Benché m’appallino le favalesse / e mi scazzino pure gli strafatti, / per le cannate mitiche e scafesse…': le parole piene sono marcate 'gerg.' nel GRADIT."@it , "In Giuseppe Varaldo's 'I costretti sposi', octave 39, 'Benché m’appallino le favalesse / e mi scazzino pure gli strafatti, / per le cannate mitiche e scafesse…': content words are marked 'gerg.' in GRADIT."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:solfeix a skos:Concept ;
     skos:prefLabel "Solfeix"@en , "Solfeix"@it ;
     skos:definition "Formal constraint based on the syllabic transliteration of a melody. The text must contain the names of the notes in sequence; the distance between a note name and the next is determined by the musical value of the note itself, which imposes a fixed number of syllables of separation (from 1 for the semibreve up to 64 for the semibiscroma)."@en , "Costrizione formale basata sulla traslitterazione sillabica di una melodia. Il testo deve contenere i nomi delle note in sequenza; la distanza tra un nome di nota e il successivo è determinata dal valore musicale della nota stessa, che impone un numero fisso di sillabe di separazione (da 1 per la semibreve fino a 64 per la semibiscroma)."@it ;
     skos:historyNote "The constraint was invented by Màrius Serra in 'Turandot espuri' (1998), 'La Biblioteca Oplepiana' n. 14."@en , "La costrizione è stata inventata da Màrius Serra in 'Turandot espuri' (1998), 'La Biblioteca Oplepiana' n. 14."@it ;
-    skos:example "Placeholder example."@en , "Placeholder example"@it ;
+    skos:example "In 'Turandot espuri' di Màrius Serra, la successione musicale 'Re+12, Re+8, Mi+4, Mi+4, Mi+4, Re+4, Do+12...' è traslitterata nel testo catalano 'Reviu una melodia molt llunyana mentre aguanta el black'n'decker. Mira d'escoltar millor aquest so mig guerrer i sorprenent...': le sillabe contenenti i nomi delle note seguono la melodia, mentre la durata delle note determina il numero di sillabe interposte."@it , "In Màrius Serra's 'Turandot espuri', the musical sequence 'Re+12, Re+8, Mi+4, Mi+4, Mi+4, Re+4, Do+12...' is transliterated into the Catalan text 'Reviu una melodia molt llunyana mentre aguanta el black'n'decker. Mira d'escoltar millor aquest so mig guerrer i sorprenent...': syllables containing note names follow the melody, while note duration determines the number of intervening syllables."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:spanish_loanword_lexicon a skos:Concept ;
     skos:prefLabel "Spanish-loanword lexicon"@en , "Lessico di prestiti spagnoli"@it ;
     skos:broader desmos:loanword_lexicon ;
     skos:definition "Formal constraint requiring each line to contain a Spanish loanword marked 'sp.' in the reference dictionary."@en , "Costrizione formale che impone a ciascun verso di contenere un prestito spagnolo marcato 'sp.' nel dizionario di riferimento."@it ;
-    skos:example "Placeholder example."@en , "Esempio placeholder."@it ;
+    skos:example "In 'I costretti sposi' di Giuseppe Varaldo, ottava 8, 'Anche se tu non sei una pasionaria, / a far di me un aficionado vero / fu il muto 'Adiós' diffùsosi nell’aria / dal cuore tuo dopo l’embarcadero': ciascun verso contiene un prestito spagnolo."@it , "In Giuseppe Varaldo's 'I costretti sposi', octave 8, 'Anche se tu non sei una pasionaria, / a far di me un aficionado vero / fu il muto 'Adiós' diffùsosi nell’aria / dal cuore tuo dopo l’embarcadero': each line contains a Spanish loanword."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:statistical_bound a skos:Concept ;
@@ -1537,7 +1538,7 @@ desmos:statistical_bound a skos:Concept ;
     skos:narrower desmos:statistical_bound_in_E ;
     skos:definition "Formal constraint requiring a target letter to appear in the text at a fixed interval mirroring its statistically attested frequency within a reference language or corpus."@en , "Costrizione formale che impone ad una lettera di comparire nel testo a intervalli fissi corrispondenti alla sua frequenza statistica attestata nella lingua di riferimento."@it ;
     skos:historyNote "Constraint introduced by Aldo Spinelli in 'Le ripartite' (1994), Biblioteca Oplepiana n. 9."@en , "Costrizione introdotta da Aldo Spinelli ne 'Le ripartite' (1994), Biblioteca Oplepiana n. 9."@it ;
-    skos:example "Placeholder example."@en , "Esempio placeholder."@it ;
+    skos:example "Nella stringa 'abcdXfghiXklmnX', la lettera X compare esattamente alle posizioni 5, 10 e 15, cioè a intervalli regolari di cinque caratteri."@it , "In the string 'abcdXfghiXklmnX', the letter X occurs exactly at positions 5, 10 and 15, that is, at regular five-character intervals."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:statistical_bound_in_E a skos:Concept ;
@@ -1545,7 +1546,7 @@ desmos:statistical_bound_in_E a skos:Concept ;
     skos:broader desmos:statistical_bound ;
     skos:definition "Formal constraint requiring the letter E to appear every nine letters in Italian, according to the rule imposed by the 'Statistical bound' constraint."@en , "Costrizione formale che impone alla lettera E in italiano di apparire ogni nove lettere, secondo la regola imposta dalla costrizione del 'Rimbalzo statistico'."@it ;
     skos:scopeNote "The interval of nine characters reflects the empirical frequency of 'e' in Italian, where 'e' is the most frequent vowel."@en , "L'intervallo di nove caratteri riflette la frequenza empirica della 'e' in italiano, dove 'e' è la vocale più frequente."@it ;
-    skos:example "Placeholder example."@en , "Esempio placeholder."@it ;
+    skos:example "In 'Le ripartite. Rimbalzo statistico' di Aldo Spinelli, l'incipit 'Eh già. Potrei iniziare così, in questo modo / lento o anche un poco spento: una anemica / maniera di concentrarmi per produrre / qualcosa. E abbozzare, dopo, un preciso / intreccio in questa facile quanto preoccupante / forma di regola...' mantiene una distanza costante di otto lettere tra ogni 'e' e la successiva, facendo ricorrere la vocale ogni nove lettere."@it , "In Aldo Spinelli's 'Le ripartite. Rimbalzo statistico', the opening passage 'Eh già. Potrei iniziare così, in questo modo / lento o anche un poco spento: una anemica / maniera di concentrarmi per produrre / qualcosa. E abbozzare, dopo, un preciso / intreccio in questa facile quanto preoccupante / forma di regola...' maintains a constant interval of eight letters between each 'e' and the next, so that the vowel occurs every nine letters."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:stolen_letters a skos:Concept ;
@@ -1553,20 +1554,20 @@ desmos:stolen_letters a skos:Concept ;
     skos:related desmos:lipogram ;
     skos:definition "Formal constraint that generates a derived text from a source text by systematically subtracting one or more letters from every lexical word, while leaving articles, conjunctions, prepositions and syntactic structure unchanged: the procedure produces a pair of texts (source and derivation) whose words must all differ in meaning. The derived text can be regarded as a lipogram in the subtracted letter, but the constraint operates on the relation between the two texts, not on a single text."@en , "Costrizione formale che genera un testo derivato a partire da un testo sorgente mediante la sottrazione sistematica di una o più lettere da ogni parola lessicale, lasciando inalterati articoli, congiunzioni, preposizioni e struttura sintattica: la procedura produce una coppia di testi (sorgente e derivato) le cui parole devono differire per significato. Il testo derivato può essere considerato un lipogramma nella lettera sottratta, ma la costrizione opera sulla relazione tra i due testi, non su un testo isolato."@it ;
     skos:historyNote "The constraint was invented by Paolo Albani in 'Rose osé' (1998), 'La Biblioteca Oplepiana' n. 13."@en , "La costrizione è stata inventata da Paolo Albani in 'Rose osé' (1998), 'La Biblioteca Oplepiana' n. 13."@it ;
-    skos:example "Placeholder example."@en , "Esempio placeholder."@it ;
+    skos:example "In 'Rose osé', di Paolo Albani sottraendo la lettera R si passa da 'Elisìr / respira un ardito scirocco' a 'Miti / espìa un àdito sciocco': la detrazione produce parole diverse e un nuovo testo di altro significato."@it , "In Paolo Albani's 'Rose osé', subtracting the letter R transforms 'Elisìr / respira un ardito scirocco' into 'Miti / espìa un àdito sciocco': the deletion produces different words and a new text with a different meaning."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:syllable_expansion a skos:Concept ;
     skos:prefLabel "Syllable expansion"@en , "Sillabe in crescenza"@it ;
     skos:definition "Formal constraint consisting in the rewriting of a text through a progressive metrical expansion, from the shortest unit (monosyllables) to the longest one (double septenaries)."@en ,"Costrizione formale che consiste in una progressiva espansione metrica, dall'unità più breve (monosillabi) fino alla più lunga (settenari doppi)."@it ;
     skos:historyNote "The constraint was invented by Luca Chiti in 'L'infinito futuro' (1999), 'La Biblioteca Oplepiana' n. 15."@en , "La costrizione è stata inventata da Luca Chiti in 'L'infinito futuro' (1999), 'La Biblioteca Oplepiana' n. 15."@it ;
-    skos:example "Placeholder example."@en , "Esempio placeholder."@it ;
+    skos:example "In 'L'infinito futuro' di Luca Chiti, la riscrittura monosillabica di 'L'Infinito' comincia con 'Mi fu nel cuor / ad or ad or / quel mio bel col / che sta da sol', mentre una successiva espansione bisillabica inizia con 'Ebbi sempre caro questo / ermo colle, dove resto / quasi chiuso dalla siepe / senza crepe': la lunghezza sillabica ammessa per le parole aumenta progressivamente da una riscrittura alla successiva."@it , "In Luca Chiti's 'L'infinito futuro', the monosyllabic rewriting of 'L'Infinito' begins 'Mi fu nel cuor / ad or ad or / quel mio bel col / che sta da sol', while a subsequent bisyllabic expansion begins 'Ebbi sempre caro questo / ermo colle, dove resto / quasi chiuso dalla siepe / senza crepe': the syllabic length allowed for words progressively increases from one rewriting to the next."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:tanka a skos:Concept ;
     skos:prefLabel "Tanka"@ja , "Tanka"@en, "Tanka"@it ;
     skos:definition "Formal constraint requiring the text to be organized into five-line stanzas with a 5-7-5-7-7 syllable pattern."@en , "Costrizione strofica di origine giapponese composta da 31 more (sillabe), distribuite in 5 versi secondo lo schema 5-7-5-7-7."@it ;
-    skos:example "Placeholder example."@en , "Esempio placeholder."@it ;
+    skos:example "In '5x5: 5 Tanka+1 di Epilogo' di Maria Sebregondi, 'Oscuri indizi / ondeggiano sul filo / oltre il già noto – / orizzonti in potenza / osando in costrizione' forma un tanka secondo lo schema sillabico 5-7-5-7-7; nel testo è seguito dalla coda bisillabica 'Oibò!'."@it , "In Maria Sebregondi's '5x5: 5 Tanka+1 di Epilogo', 'Oscuri indizi / ondeggiano sul filo / oltre il già noto – / orizzonti in potenza / osando in costrizione' forms a tanka following the 5-7-5-7-7 syllabic pattern; in the text it is followed by the two-syllable coda 'Oibò!'."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:tautogram a skos:Concept ;
@@ -1574,21 +1575,21 @@ desmos:tautogram a skos:Concept ;
     skos:related desmos:alliteration ,
         desmos:syllabic_set_constraint ;
     skos:definition "Formal constraint that requires using words that all begin with the same letter."@en , "Costrizione formale che impone l'uso di parole che iniziano tutte con la stessa lettera."@it ;
-    skos:example "Placeholder example."@en , "Esempio placeholder."@it ;
+    skos:example "In 'Frenosonetto' di Giuseppe Varaldo, il verso 'Veleggiar verso vacue verità' è un tautogramma in V."@it , "In Giuseppe Varaldo's 'Frenosonetto', the line 'Veleggiar verso vacue verità' is a tautogram in V."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:temporal_constraint a skos:Concept ;
     skos:prefLabel "Temporal constraint"@en , "Tempo obbligato"@it ;
     skos:related desmos:fixed_text_length ;
     skos:definition "Formal constraint requiring the text to be calibrated so that its declamation or reading duration matches the execution time of a predefined external reference (typically a musical piece)."@en , "Costrizione formale che impone al testo di essere calibrato in modo che la sua declamazione o lettura abbia una durata pari al tempo di esecuzione di un riferimento esterno prestabilito (tipicamente un brano musicale)."@it ;
-    skos:example "Placeholder example"@en , "Placeholder example"@it ;
+    skos:example "Un testo destinato alla lettura ad alta voce viene calibrato per durare esattamente 3 minuti e 42 secondi, così che l’ultima parola coincida con l’ultima nota di un brano musicale della stessa durata."@it , "A text intended for oral reading is calibrated to last exactly 3 minutes and 42 seconds, so that its final word coincides with the final note of a musical piece of the same duration."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:terminal_word_series a skos:Concept ;
     skos:prefLabel "Terminal-word series"@en , "Serie di parole terminali"@it ;
     skos:related desmos:cento , desmos:mandatory_sentence ;
     skos:definition "Formal constraint requiring each line to contain, in progressive order, the final word of a successive chapter (or section) of a source text."@en , "Costrizione formale che impone a ciascun verso di contenere, in ordine progressivo, la parola finale di un capitolo (o sezione) successivo di un testo-sorgente."@it ;
-    skos:example "Varaldo: parole finali dei capitoli IV, VI, XIII, XIV, XXIV, XXXI, XXXIII, XXXVIII de 'I promessi sposi'."@it ;
+    skos:example "Se tre sezioni del testo-sorgente terminano con 'mare', 'notte' e 'vento', i versi 'Il mare resta immobile. / La notte copre il porto. / Il vento scioglie le vele.' incorporano le tre parole nello stesso ordine."@it , "If three sections of the source text end with 'sea', 'night' and 'wind', the lines 'The sea lies still. / Night covers the harbour. / The wind loosens the sails.' incorporate the three words in the same order."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:tercet a skos:Concept ;
@@ -1596,47 +1597,48 @@ desmos:tercet a skos:Concept ;
     skos:related desmos:classical_sonnet , 
         desmos:chained_rhyme ;
     skos:definition "Formal constraint requiring the text to be organized into three-line stanzas, optionally following a predefined metrical/rhyme scheme."@en , "Costrizione strofica che impone l’organizzazione del testo in strofe di tre versi, eventualmente secondo uno schema metrico-rimico determinato."@it ;
-    skos:example "Placeholder example."@en , "Esempio placeholder."@it ;
+    skos:example "'Nel mezzo del cammin di nostra vita / mi ritrovai per una selva oscura / ché la diritta via era smarrita': i primi tre versi dell'Inferno di Dante Alighieri formano una terzina."@it , "'Nel mezzo del cammin di nostra vita / mi ritrovai per una selva oscura / ché la diritta via era smarrita': the opening three lines of Dante Alighieri's Inferno form a tercet."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:triple_letter_cluster a skos:Concept ;
     skos:prefLabel "Triple letter cluster"@en , "Gruppo letterale triripetuto"@it ;
     skos:related desmos:alliteration ;
     skos:definition "Formal constraint requiring each line to contain a cluster of at least two letters repeated three times within the line; the cluster need not coincide with a syllable."@en , "Costrizione formale che impone a ciascun verso di contenere un gruppo di almeno due lettere ripetuto tre volte nel verso; il gruppo non deve necessariamente coincidere con una sillaba."@it ;
-    skos:example "Varaldo: 'ininin(terrotte) [...] larman man man [...] tran tran tran(quillo)'."@it ;
+    skos:example "Un verso che contiene la sequenza 'ma ma ma' ripete tre volte lo stesso gruppo letterale 'ma'."@it , "A line containing the sequence 'ma ma ma' repeats the same letter cluster 'ma' three times."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:trisyllabic_text a skos:Concept ;
     skos:prefLabel "Trisyllabic text"@en , "Testo trisillabico"@it ;
     skos:broader desmos:isosyllabic_words ;
     skos:definition "Formal constraint requiring every word of the text to be trisyllabic."@en , "Costrizione formale che impone a ogni parola del testo di essere trisillabica."@it ;
-    skos:example "Placeholder example"@en , "Esempio segnaposto"@it ;
+    skos:example "La sequenza 'Lucia cammina serena' è composta esclusivamente da parole trisillabiche."@it , "The sequence 'Lucia cammina serena' consists exclusively of three-syllable words."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:truncated_rhyme a skos:Concept ;
     skos:prefLabel "Truncated rhyme"@en , "Rima tronca"@it ;
     skos:altLabel "Oxytone rhyme"@en , "Masculine rhyme"@en ;
     skos:definition "Formal constraint requiring a rhyme whose final word bears its stress on the last syllable (oxytone)."@en , "Costrizione rimica che impone una rima la cui parola finale abbia l'accento sull'ultima sillaba (parola tronca)."@it ;
-    skos:example "Luca Chiti, 'Elogio dell'Operosa pastorelleria legata, elegantemente poco ortodossa' (2000): B-rhymes are always truncated in the AAB scheme."@en , "Luca Chiti, 'Elogio dell'Operosa pastorelleria legata, elegantemente poco ortodossa' (2000): le rime B sono sempre tronche nello schema AAB."@it ;
+    skos:example "Due versi che terminano rispettivamente con 'città' e 'metà', entrambe parole tronche, realizzano una rima tronca."@it , "Two lines ending respectively in 'città' and 'metà', both oxytone words, realize an oxytone rhyme."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:tuscan_lexicon a skos:Concept ;
     skos:prefLabel "Tuscan lexicon"@en , "Lessico toscano"@it ;
     skos:broader desmos:diatopic_lexicon ;
     skos:definition "Formal constraint requiring every content word, or at least the sense used, to bear the area label 'tosc.' (Tuscan) in the reference dictionary."@en , "Costrizione formale che impone a ogni parola piena, o almeno all'accezione impiegata, di recare la marca d'area 'tosc.' (toscano) nel dizionario di riferimento."@it ;
-    skos:example "Placeholder example"@en , "Esempio segnaposto"@it ;
+    skos:example "In 'I costretti sposi' di Giuseppe Varaldo, ottava 46, 'Mi ribollon, del damo assai foresto, / la tantafera e pur le strullerie, / quando, al biribissaio già rammesto…': le parole piene sono marcate 'tosc.' nel GRADIT."@it , "In Giuseppe Varaldo's 'I costretti sposi', octave 46, 'Mi ribollon, del damo assai foresto, / la tantafera e pur le strullerie, / quando, al biribissaio già rammesto…': content words are marked 'tosc.' in GRADIT."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:typographic_constraints a skos:Concept ;
     skos:prefLabel "Typographic constraints"@en , "Norme tipografiche"@it ;
     skos:definition "Formal constraint requiring adherence to typographic and editorial conventions defined by a reference model."@en , "Costrizione formale che impone l’adozione di convenzioni tipografiche e redazionali definite da un modello di riferimento."@it ;
-    skos:example "Placeholder example."@en , "Esempio placeholder."@it ;
+    skos:example "In 'Giallo di Anghiari. Misteri obbligati' di Oplepo le regole comuni prescrivono, per tutti i racconti, di adottare le norme tipografiche in uso nei volumi pubblicati dalla casa editrice Einaudi."@it , "In Oplepo's 'Giallo di Anghiari. Misteri obbligati', the common rules require every story to follow the typographic conventions used in volumes published by Einaudi."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:value_inversion a skos:Concept ;
     skos:prefLabel "Value inversion"@en , "Rovesciamento di valori"@it ;
     skos:definition "Semantic constraint that systematically inverts the values or thematic oppositions of the text, turning the represented content into its opposite."@en , "Costrizione semantica che inverte sistematicamente i valori o le opposizioni tematiche del testo, ribaltandone il contenuto nel suo opposto."@it ;
     skos:related desmos:antonymic_rewriting ;
+    skos:example "'Il protagonista è coraggioso e generoso.' → 'Il protagonista è vile e avaro.': i valori attribuiti al personaggio sono sistematicamente ribaltati nei loro opposti."@it , "'The protagonist is brave and generous.' → 'The protagonist is cowardly and miserly.': the values attributed to the character are systematically reversed into their opposites."@en ;
     skos:inScheme desmos:SemanticConstraintScheme .
 
 desmos:visual_anaphora a skos:Concept ;
@@ -1644,7 +1646,7 @@ desmos:visual_anaphora a skos:Concept ;
     skos:related desmos:alliteration ;
     skos:definition "Visual constraint that transposes the rhetorical figure of anaphora onto the visual plane: a recurring image or visual element is repeated across the work as the iconic counterpart of textual anaphoric repetition."@en , "Costrizione visiva che traspone la figura retorica dell'anafora sul piano visivo: un'immagine o un elemento visivo ricorrente è ripetuto lungo l'opera come corrispettivo iconico della ripetizione anaforica testuale."@it ;
     skos:historyNote "The constraint was coined by Paolo Albani as «una sorta di anafora visiva»; the repetition admits a single licensed exception (clinamen)."@en , "La costrizione è stata coniata da Paolo Albani come «una sorta di anafora visiva»; la ripetizione ammette un'unica eccezione regolata (clinamen)."@it ;
-    skos:example "Esempio segnaposto."@it ,"Placeholder example."@en ;
+    skos:example "In 'Je me souviens visuellement de Georges Perec' di Paolo Albani, alcune fotografie di Perec, ritratto di fronte o di profilo, ricorrono ripetutamente come una sorta di anafora visiva, in analogia con la ripetizione di 'Je me souviens' nell'omonimo testo di Perec; l'ultima immagine, che lo mostra di schiena, introduce un clinamen."@it , "In Paolo Albani's 'Je me souviens visuellement de Georges Perec', photographs of Perec shown from the front or in profile recur as a form of visual anaphora, paralleling the repetition of 'Je me souviens' in Perec's eponymous text; the final image, showing him from behind, introduces a clinamen."@en ;
     skos:inScheme desmos:VisualConstraintScheme .
 
 desmos:vowel_alternation a skos:Concept ;
@@ -1654,21 +1656,21 @@ desmos:vowel_alternation a skos:Concept ;
     skos:related desmos:monovocalism , desmos:isovocalism ;
     skos:definition "Formal constraint admitting only two distinct vowels which must alternate continuously throughout the text; the first and last vowel differ, so that the alternation is cyclic."@en , "Costrizione formale che ammette solo due vocali distinte, le quali devono alternarsi di continuo lungo il testo; la prima e l'ultima vocale differiscono, sicché l'alternanza è ciclica."@it ;
     skos:scopeNote "L'alternanza vocalica agisce sostituendo l'ordine naturale delle vocali della stringa testuale sorgente con una sequenza binaria ciclica e regolare."@it , "Vowel alternation acts by replacing the natural order of the vowels in the source textual string with a cyclic and regular binary sequence."@en ;
-    skos:example "Varaldo, octave 'Alternanza vocalica E/O': only E and O alternate - «moderno e onesto eroe, nonché promesso»."@en , "Varaldo, ottava 'Alternanza vocalica E/O': si alternano solo E e O - «moderno e onesto eroe, nonché promesso»."@it ;
+    skos:example "In 'I costretti sposi' di Giuseppe Varaldo, le ottave 'Alternanza vocalica A/I' e 'Alternanza vocalica E/O' impiegano ciascuna soltanto due vocali, che si succedono in alternanza continua per tutta la composizione."@it , "In Giuseppe Varaldo's 'I costretti sposi', the octaves 'Alternanza vocalica A/I' and 'Alternanza vocalica E/O' each use only two vowels, which alternate continuously throughout the composition."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:vowel_alternation_AI a skos:Concept ;
     skos:prefLabel "Vowel alternation A/I"@en , "Alternanza vocalica A/I"@it ;
     skos:broader desmos:vowel_alternation ;
     skos:definition "Formal constraint admitting only the vowels A and I, alternating continuously and cyclically throughout the text."@en , "Costrizione formale che ammette solo le vocali A e I, in alternanza continua e ciclica lungo tutto il testo."@it ;
-    skos:example "Placeholder example"@en , "Esempio segnaposto"@it ;
+    skos:example "In 'I costretti sposi' di Giuseppe Varaldo, l'ottava 'Alternanza vocalica A/I', che inizia 'Tra chi fa vita ricca, chi da schiavi / (ma in pratica si sfascia di fatica)', impiega soltanto le vocali A e I, alternate continuamente."@it , "In Giuseppe Varaldo's 'I costretti sposi', the octave 'Alternanza vocalica A/I', beginning 'Tra chi fa vita ricca, chi da schiavi / (ma in pratica si sfascia di fatica)', uses only the vowels A and I in continuous alternation."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:vowel_alternation_EO a skos:Concept ;
     skos:prefLabel "Vowel alternation E/O"@en , "Alternanza vocalica E/O"@it ;
     skos:broader desmos:vowel_alternation ;
     skos:definition "Formal constraint admitting only the vowels E and O, alternating continuously and cyclically throughout the text."@en , "Costrizione formale che ammette solo le vocali E e O, in alternanza continua e ciclica lungo tutto il testo."@it ;
-    skos:example "Placeholder example"@en , "Esempio segnaposto"@it ;
+    skos:example "In 'I costretti sposi' di Giuseppe Varaldo, l'ottava 'Alternanza vocalica E/O', che inizia 'Renzo è codesto fenomeno ver: / moderno e onesto eroe, nonché promesso', impiega soltanto le vocali E e O, alternate continuamente."@it , "In Giuseppe Varaldo's 'I costretti sposi', the octave 'Alternanza vocalica E/O', beginning 'Renzo è codesto fenomeno ver: / moderno e onesto eroe, nonché promesso', uses only the vowels E and O in continuous alternation."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:vowel_slide a skos:Concept ;
@@ -1678,26 +1680,26 @@ desmos:vowel_slide a skos:Concept ;
     skos:related desmos:isovocalism , desmos:progressive_vocalic_lipogram ;
     skos:definition "Formal constraint in which the sequence of vowels follows a fixed ordered cycle (a-e-i-o-u or its retrograde u-o-i-e-a): each vowel may repeat ad libitum or slide only to the next one in the prescribed order; the first and last vowel are fixed, ensuring cyclicity."@en , "Costrizione formale in cui la successione delle vocali segue un ciclo ordinato fisso (a-e-i-o-u o il retrogrado u-o-i-e-a): ogni vocale può ripetersi ad libitum oppure slittare solo verso la successiva nell'ordine prescritto; la prima e l'ultima vocale sono fisse, a garanzia della ciclicità."@it ;
     skos:scopeNote "Lo slittamento vocalico implica uno spostamento sequenziale controllato e orientato lungo la serie ordinata delle vocali {A, E, I, O, U}."@it , "Vowel slide implies a controlled and oriented sequential shift along the ordered series of vowels {A, E, I, O, U}."@en ;
-    skos:example "Varaldo, octave 'Slittamento vocalico': the vowels follow the cycle a-e-i-o-u - «Tra l'empio Don, un frate sempre in moto»."@en , "Varaldo, ottava 'Slittamento vocalico': le vocali seguono il ciclo a-e-i-o-u - «Tra l'empio Don, un frate sempre in moto»."@it ;
+    skos:example "In 'I costretti sposi' di Giuseppe Varaldo, le ottave 'Slittamento vocalico' e 'Slittamento vocalico inverso' ammettono per ciascuna vocale la ripetizione oppure il passaggio alla vocale successiva, rispettivamente secondo i cicli A-E-I-O-U e U-O-I-E-A."@it , "In Giuseppe Varaldo's 'I costretti sposi', the octaves 'Slittamento vocalico' and 'Slittamento vocalico inverso' allow each vowel either to be repeated or to shift to the next vowel, following respectively the cycles A-E-I-O-U and U-O-I-E-A."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:vowel_slide_direct a skos:Concept ;
     skos:prefLabel "Direct vowel slide"@en , "Slittamento vocalico diretto"@it ;
     skos:broader desmos:vowel_slide ;
     skos:definition "Formal constraint in which each vowel may repeat or slide only to the next one following the order a-e-i-o-u; the first vowel must be 'a' and the last 'u', ensuring a cyclic progression."@en , "Costrizione formale in cui ogni vocale può ripetersi o slittare solo verso la successiva secondo l'ordine a-e-i-o-u; la prima vocale deve essere 'a' e l'ultima 'u', garantendo una progressione ciclica."@it ;
-    skos:example "Placeholder example"@en , "Esempio segnaposto"@it ;
+    skos:example "In 'I costretti sposi' di Giuseppe Varaldo, l'ottava 'Slittamento vocalico', che inizia 'Tra l'empio Don, un frate sempre in moto / una ragazza \"madre\" dissoluta', fa sì che ogni vocale possa ripetersi oppure avanzare alla successiva secondo il ciclo A-E-I-O-U."@it , "In Giuseppe Varaldo's 'I costretti sposi', the octave 'Slittamento vocalico', beginning 'Tra l'empio Don, un frate sempre in moto / una ragazza \"madre\" dissoluta', allows each vowel either to be repeated or to advance to the next one in the A-E-I-O-U cycle."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:vowel_slide_retrograde a skos:Concept ;
     skos:prefLabel "Retrograde vowel slide"@en , "Slittamento vocalico inverso"@it ;
     skos:broader desmos:vowel_slide ;
     skos:definition "Formal constraint in which each vowel may repeat or slide only to the next one following the retrograde order u-o-i-e-a; the first vowel must be 'u' and the last 'a', ensuring a cyclic progression."@en , "Costrizione formale in cui ogni vocale può ripetersi o slittare solo verso la successiva secondo l'ordine retrogrado u-o-i-e-a; la prima vocale deve essere 'u' e l'ultima 'a', garantendo una progressione ciclica."@it ;
-    skos:example "Placeholder example"@en , "Esempio segnaposto"@it ;
+    skos:example "In 'tuo miele, casa' le vocali seguono la progressione u-o-i-e-e-a-a, compatibile con l’ordine retrogrado u-o-i-e-a."@it , "In 'tuo miele, casa' the vowels follow the progression u-o-i-e-e-a-a, compatible with the retrograde order u-o-i-e-a."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:word_length_oscillation a skos:Concept ;
     skos:prefLabel "Word length oscillation (N±1)"@en , "Oscillazione della lunghezza delle parole (N±1)"@it ;
     skos:definition "Formal constraint that requires each word to be exactly one letter longer or shorter than the immediately preceding word."@en , "Costrizione formale che vincola la lunghezza di ogni parola a essere esattamente di una lettera più lunga o più corta rispetto alla parola immediatamente precedente."@it ;
     skos:historyNote "The constraint was invented by Paolo Pergola in 'Lessico famigliare' (2012), 'La Biblioteca Oplepiana' n. 33."@en , "La costrizione è stata inventata da Paolo Pergola in 'Lessico famigliare' (2012), 'La Biblioteca Oplepiana' n. 33."@it ;
-    skos:example "Placeholder example."@en , "Esempio placeholder."@it ;
+    skos:example "Nella sequenza 'a re ora re ora' le lunghezze delle parole sono 1-2-3-2-3: ogni parola differisce dalla precedente di una sola lettera."@it , "In the sequence 'a re ora re ora' the word lengths are 1-2-3-2-3: each word differs in length from the previous one by exactly one letter."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
