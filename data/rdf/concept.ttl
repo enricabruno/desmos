@@ -16,7 +16,7 @@
 
 desmos:ConstraintOriginScheme a skos:ConceptScheme ;
     skos:prefLabel "Constraint origin scheme"@en , "Schema dell'origine della costrizione"@it ;
-    skos:definition "A scheme defining the origin of the constraint, distinguishing between forms inherited from tradition and Oulipian or Oplepian inventions."@en , "Schema che definisce la provenienza della costrizione, distinguendo tra forme ereditate dalla tradizione e invenzioni oulipiane o oplepiane."@it ;
+    skos:definition "A scheme defining the origin of the constraint, distinguishing between forms inherited from tradition and constraints invented ex novo in a compositional context."@en , "Schema che definisce la provenienza della costrizione, distinguendo tra forme ereditate dalla tradizione e invenzioni inventate ex novo in un contesto compositivo."@it ;
     skos:hasTopConcept
         desmos:historical ,
         desmos:original .
@@ -202,7 +202,7 @@ desmos:historical a skos:Concept ;
 
 desmos:original a skos:Concept ;
     skos:prefLabel "Original"@en , "Originale"@it ;
-    skos:definition "Costrizione inventata ex novo in un contesto compositivo."@en , "Costrizione inventata ex novo in un contesto compositivo."@it ;    
+    skos:definition "Constraint invented ex novo in a compositional context."@en , "Costrizione inventata ex novo in un contesto compositivo."@it ;    
     skos:inScheme desmos:ConstraintOriginScheme .
 
 ### Literary Forms
