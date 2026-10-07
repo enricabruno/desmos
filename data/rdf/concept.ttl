@@ -16,7 +16,7 @@
 
 desmos:ConstraintOriginScheme a skos:ConceptScheme ;
     skos:prefLabel "Constraint origin scheme"@en , "Schema dell'origine della costrizione"@it ;
-    skos:definition "A scheme defining the origin of the constraint, distinguishing between constraints inherited from a pre-existing tradition and constraints introduced ex novo in a specific compositional context."@en , "Schema che definisce la provenienza della costrizione, distinguendo tra costrizioni riprese da una tradizione preesistente e costrizioni introdotte ex novo in un contesto compositivo."@it ;
+    skos:definition "A scheme defining the origin of the constraint, distinguishing between constraints inherited from a pre-existing tradition and constraints introduced ex novo in a specific compositional context."@en , "Schema che definisce l'origine della costrizione, distinguendo tra costrizioni riprese da una tradizione preesistente e costrizioni introdotte ex novo in uno specifico contesto compositivo."@it ;
     skos:hasTopConcept
         desmos:historical ,
         desmos:original .
