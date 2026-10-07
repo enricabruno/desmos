@@ -1,3 +1,3 @@
 skos:Concept,rdf:type,skos:prefLabel@it,skos:prefLabel@en,skos:inScheme,skos:definition@it,skos:definition@en
-desmos:historical,skos:Concept,Storica,Historical,desmos:ConstraintOriginScheme,Costrizione ripresa dalla tradizione letteraria.,Constraint transmitted within the literary tradition.
-desmos:original,skos:Concept,Originale,Original,desmos:ConstraintOriginScheme,"Costrizione inventata in ambito oulipiano o oplepiano, dall'autore del testo o da un altro membro, in contrapposizione alle costrizioni trasmesse dalla tradizione letteraria precedente.","Constraint invented within the Oulipo or the Oplepo, either by the author of the text or by another member, as opposed to constraints transmitted by the earlier literary tradition."
+desmos:historical,skos:Concept,Storica,Historical,desmos:ConstraintOriginScheme,Costrizione ripresa da una tradizione letteraria preesistente.,Constraint derived from a pre-existing literary tradition.
+desmos:original,skos:Concept,Originale,Original,desmos:ConstraintOriginScheme,Costrizione inventata ex novo in un contesto compositivo.,Constraint invented ex novo in a compositional context.
