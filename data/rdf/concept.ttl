@@ -16,7 +16,7 @@
 
 desmos:ConstraintOriginScheme a skos:ConceptScheme ;
     skos:prefLabel "Constraint origin scheme"@en , "Schema dell'origine della costrizione"@it ;
-    skos:definition "A scheme defining the origin of the constraint, distinguishing between forms inherited from tradition and constraints invented ex novo in a compositional context."@en , "Schema che definisce la provenienza della costrizione, distinguendo tra forme ereditate dalla tradizione e invenzioni inventate ex novo in un contesto compositivo."@it ;
+    skos:definition "A scheme defining the origin of the constraint, distinguishing between constraints inherited from a pre-existing tradition and constraints introduced ex novo in a specific compositional context."@en , "Schema che definisce la provenienza della costrizione, distinguendo tra costrizioni riprese da una tradizione preesistente e costrizioni introdotte ex novo in un contesto compositivo."@it ;
     skos:hasTopConcept
         desmos:historical ,
         desmos:original .
@@ -1152,7 +1152,7 @@ desmos:martellian_verse a skos:Concept ;
     skos:prefLabel "Martellian verse"@en , "Verso martelliano"@it ;
     skos:broader desmos:septenary_double ;
     skos:definition "Formal constraint requiring the use of lines composed of fourteen syllables, typically organized into stanzas or sections."@en , "Costrizione formale che impone l'uso di versi composti da quattordici sillabe, solitamente organizzati in strofe o sezioni."@it ;
-    skos:example "Un verso composto da due settenari, per esempio 'La nebbia sale lenta | la sera scende piano', realizza una struttura di 7+7 sillabe."@it , "A line composed of two seven-syllable units, for example 'La nebbia sale lenta | la sera scende piano', realizes a 7+7 syllabic structure."@en ;
+    skos:example "Un verso composto da due settenari, per esempio 'La nebbia sale lenta || la sera scende piano', realizza una struttura di 7+7 sillabe."@it , "A line composed of two seven-syllable units, for example 'La nebbia sale lenta || la sera scende piano', realizes a 7+7 syllabic structure."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:mathematical_lexicon a skos:Concept ;
@@ -1495,7 +1495,7 @@ desmos:septenary_double a skos:Concept ;
     skos:narrower desmos:martellian_verse ;
     skos:related desmos:septenary ;
     skos:definition "Formal constraint requiring the use of lines composed of fourteen syllables, typically organized into stanzas or sections."@en , "Costrizione formale che impone l'uso di versi composti da quattordici sillabe, solitamente organizzati in strofe o sezioni."@it ;
-    skos:example "'La nebbia sale lenta | la sera scende piano' combina due unità di sette sillabe in un verso di quattordici sillabe."@it , "'La nebbia sale lenta | la sera scende piano' combines two seven-syllable units into a fourteen-syllable line."@en ;
+    skos:example "'La nebbia sale lenta || la sera scende piano' combina due unità di sette sillabe in un verso di quattordici sillabe."@it , "'La nebbia sale lenta || la sera scende piano' combines two seven-syllable units into a fourteen-syllable line."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
 
 desmos:sestina a skos:Concept ;
