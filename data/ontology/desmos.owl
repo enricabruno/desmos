@@ -726,8 +726,8 @@
         <owl:inverseOf rdf:resource="https://w3id.org/desmos/isOriginOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/desmos/LiteraryConstraint"/>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdfs:comment xml:lang="it">Collega una costrizione letteraria ad un concetto SKOS che ne qualifica l'origine concettuale (tradizione o invenzione oulipiana o oplepiana).</rdfs:comment>
-        <rdfs:comment xml:lang="en">Relates a constraint to a SKOS concept qualifying its conceptual origin (tradition or oulipian or oplepian invention).</rdfs:comment>
+        <rdfs:comment xml:lang="it">Collega una costrizione letteraria ad un concetto SKOS che ne qualifica l'origine concettuale (tradizione o invenzione ex novo).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a constraint to a SKOS concept qualifying its conceptual origin (tradition or brand-new invention).</rdfs:comment>
         <rdfs:label xml:lang="en">constraint origin</rdfs:label>
         <rdfs:label xml:lang="it">origine della costrizione</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
@@ -802,8 +802,8 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/desmos/isOriginOf">
         <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:range rdf:resource="https://w3id.org/desmos/LiteraryConstraint"/>
-        <rdfs:comment xml:lang="en">Inverse relationship of constraintOrigin. Relates a SKOS concept (tradition or authorial invention) to the literary constraint whose genesis it defines.</rdfs:comment>
-        <rdfs:comment xml:lang="it">Relazione inversa di constraintOrigin. Collega un concetto SKOS (tradizione o invenzione autoriale) alla costrizione letteraria di cui definisce la genesi.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Inverse relationship of constraintOrigin. Relates a SKOS concept (tradition or brand-new invention) to the literary constraint whose genesis it defines.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Relazione inversa di constraintOrigin. Collega un concetto SKOS (tradizione o invenzione ex novo) alla costrizione letteraria di cui definisce la genesi.</rdfs:comment>
         <rdfs:label xml:lang="en">is origin of</rdfs:label>
         <rdfs:label xml:lang="it">è origine di</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
@@ -1332,8 +1332,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/desmos/ConstraintOriginScheme">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-        <rdfs:comment xml:lang="en">Concept scheme distinguishing constraints inherited from tradition from those introduced as Oulipian/Oplepian inventions. Expected as the range value of desmos:constraintOrigin.</rdfs:comment>
-        <rdfs:comment xml:lang="it">Schema concettuale che distingue le costrizioni ereditate dalla tradizione da quelle introdotte come invenzioni oulipiane o oplepiane. Atteso come valore del range di desmos:constraintOrigin.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Concept scheme distinguishing between traditional constraints and newly introduced constraints in a specific compositional context. Expected as the range value of desmos:constraintOrigin.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Schema concettuale che distingue le costrizioni riprese dalla tradizione da quelle introdotte ex novo in uno specifico contesto compositivo. Atteso come valore del range di desmos:constraintOrigin.</rdfs:comment>
         <rdfs:label xml:lang="en">Constraint Origin Scheme</rdfs:label>
         <rdfs:label xml:lang="it">Schema dell'origine della costrizione</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
