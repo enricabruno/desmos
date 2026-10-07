@@ -303,7 +303,7 @@ desmos:apocryphal_pentimento a desmos:SemanticConstraint ;
 
 desmos:beau_present a desmos:FormalConstraint ;
 	rdfs:label "Beau présent"@it , "Beau présent"@en ;
-	desmos:constraintOrigin desmos:original ;
+	desmos:constraintOrigin desmos:historical ;
 	desmos:constrainsFormalUnit desmos:letter ;
 	desmos:involvesOperation desmos:subtraction .
 
@@ -320,7 +320,7 @@ desmos:bisyllabic_text a desmos:FormalConstraint ;
 
 desmos:boule_de_neige a desmos:VisualConstraint ;
     rdfs:label "Boule de neige"@it , "Snowball"@en ;
-    desmos:constraintOrigin desmos:original ;
+    desmos:constraintOrigin desmos:historical ;
     desmos:constrainsFormalUnit desmos:letter ,
         desmos:word ,
         desmos:line ;
@@ -328,7 +328,7 @@ desmos:boule_de_neige a desmos:VisualConstraint ;
 
 desmos:brivadois_acrostiche a desmos:FormalConstraint ;
 	rdfs:label "Acrostico brivadois"@it , "Acrostic brivadois"@en ;
-	desmos:constraintOrigin desmos:original ;
+	desmos:constraintOrigin desmos:historical ;
 	desmos:constrainsFormalUnit desmos:letter ;
 	desmos:involvesOperation desmos:extraction .
 
@@ -767,7 +767,7 @@ desmos:mandatory_genre a desmos:SemanticConstraint ;
 
 desmos:mandatory_sentence a desmos:FormalConstraint ;
 	rdfs:label "Frase obbligata"@it , "Mandatory sentence insertion"@en ;
-	desmos:constraintOrigin desmos:original ;
+	desmos:constraintOrigin desmos:historical ;
 	desmos:constrainsFormalUnit desmos:line ;
 	desmos:involvesOperation desmos:addition .
 
@@ -778,7 +778,7 @@ desmos:mandatory_theme a desmos:SemanticConstraint ;
 
 desmos:martellian_verse a desmos:FormalConstraint ;
 	rdfs:label "Verso martelliano"@it , "Martellian verse"@en ;
-	desmos:constraintOrigin desmos:original ;
+	desmos:constraintOrigin desmos:historical ;
 	desmos:constrainsFormalUnit desmos:line ;
 	desmos:involvesOperation desmos:multiplication .
 
@@ -964,7 +964,7 @@ desmos:preventive_review a desmos:FormalConstraint ;
 
 desmos:prisoner_constraint a desmos:FormalConstraint ;
 	rdfs:label "Contrainte du prisonnier"@it , "Contrainte du prisonnier"@en ;
-	desmos:constraintOrigin desmos:original ;
+	desmos:constraintOrigin desmos:historical ;
 	desmos:constrainsFormalUnit desmos:letter ;
 	desmos:involvesOperation desmos:subtraction .
 
@@ -1121,7 +1121,7 @@ desmos:tautogram a desmos:FormalConstraint ;
 
 desmos:temporal_constraint a desmos:FormalConstraint ;
 	rdfs:label "Tempo obbligato"@it , "Temporal constraint"@en ;
-	desmos:constraintOrigin desmos:original ;
+	desmos:constraintOrigin desmos:historical ;
 	desmos:constrainsFormalUnit desmos:line .
 
 desmos:tercet a desmos:FormalConstraint ;

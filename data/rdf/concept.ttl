@@ -197,13 +197,13 @@ desmos:ProceduralOperationScheme a skos:ConceptScheme ;
 ### Constraint Origins
 desmos:historical a skos:Concept ;
     skos:prefLabel "Historical"@en , "Storica"@it ;
-    skos:definition "Constraint transmitted within the literary tradition."@en , "Costrizione ripresa dalla tradizione letteraria."@it ;
+    skos:definition "Constraint derived from a pre-existing literary tradition."@en , "Costrizione ripresa da una tradizione letteraria preesistente."@it ;
     skos:inScheme desmos:ConstraintOriginScheme .
 
 desmos:original a skos:Concept ;
     skos:prefLabel "Original"@en , "Originale"@it ;
-    skos:definition "Constraint invented within the Oulipo or the Oplepo, either by the author of the text or by another member, as opposed to constraints transmitted by the earlier literary tradition."@en ,
-        "Costrizione inventata in ambito oulipiano o oplepiano, dall'autore del testo o da un altro membro, in contrapposizione alle costrizioni trasmesse dalla tradizione letteraria precedente."@it ;    skos:inScheme desmos:ConstraintOriginScheme .
+    skos:definition "Costrizione inventata ex novo in un contesto compositivo."@en , "Costrizione inventata ex novo in un contesto compositivo."@it ;    
+    skos:inScheme desmos:ConstraintOriginScheme .
 
 ### Literary Forms
 desmos:poetry a skos:Concept ;
