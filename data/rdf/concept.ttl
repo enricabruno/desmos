@@ -507,7 +507,7 @@ desmos:beau_present a skos:Concept ;
     skos:related desmos:acrobistic ;
     skos:definition "Oulipian formal constraint where each line of a poem dedicated to a person is written using only the letters found in the recipient's name."@en ,"Costrizione formale oulipiana in cui ogni verso di un componimento dedicato a una persona è scritto utilizzando esclusivamente le lettere che compongono il nome del destinatario."@it ;
     skos:scopeNote "The constraint is based on inclusion and, for this reason, the generative mechanism is inverse to that of a lipogram or an alphabetic set constraint."@en , "La costrizione è basata sull'inclusione e, per questo motivo, il meccanismo generativo è inverso a quello del lipogramma o della costrizione sul set alfabetico."@it ;
-    skos:historyNote "The constraint was invented by the Oulipo."@en , "La costrizione è stata inventata dall'Oulipo."@it ;
+    skos:historyNote "The constraint was invented by the Oulipians."@en , "La costrizione è stata inventata dall'Oulipo."@it ;
     skos:closeMatch <https://oulipo.net/contraintes/beau-present> ;
     skos:example "Per MARINA: 'Marina ama i mari.' Il verso utilizza esclusivamente le lettere A, I, M, N e R presenti nel nome della destinataria."@it , "For MELANIE: 'Melanie, I am Elaine.' The sentence uses only the letters A, E, I, L, M and N occurring in the addressee's name."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
@@ -1379,7 +1379,7 @@ desmos:prisoner_constraint a skos:Concept ;
     skos:broader desmos:alphabetic_set_constraint ;
     skos:scopeNote "Costrizione basata su esclusione motivata da una proprietà tipografica (assenza di ascensori/descensori): il set ammissibile è definito dalle caratteristiche dei glifi ad altezza x, non dalla selezione individuale delle lettere."@it ,"Exclusion-based constraint motivated by a typographic property (absence of ascenders/descenders): the admissible set is defined by x-height glyph features, not by individual letter selection."@en ;
     skos:definition "Formal constraint consisting of writing a text using only letters without ascenders or descenders (avoiding 'hampes' and 'jambages'), thus restricting the character set to those contained within the x-height (a, c, e, i, m, n, o, r, s, u, v, w, x, z)."@en , "Costrizione formale che consiste nello scrivere un testo utilizzando esclusivamente lettere che non presentano tratti ascendenti o discendenti (ovvero lettere prive di 'hampes' e 'jambages'), limitando il set di caratteri a quelli che rientrano nell'altezza dell'occhio medio (a, c, e, i, m, n, o, r, s, u, v, w, x, z)."@it ;
-    skos:historyNote "The constraint was invented by the Oulipo."@en , "La costrizione è stata inventata dall'Oulipo."@it ;
+    skos:historyNote "The constraint was invented by the Oulipians."@en , "La costrizione è stata inventata dall'Oulipo."@it ;
     skos:closeMatch <https://oulipo.net/contraintes/contrainte-du-prisonnier> ;
     skos:example "La sequenza 'mamma mia' utilizza soltanto lettere prive di tratti ascendenti o discendenti nel set previsto dalla contrainte du prisonnier."@it , "The sequence 'mamma mia' uses only letters without ascenders or descenders in the character set allowed by the prisoner's constraint."@en ;
     skos:inScheme desmos:FormalConstraintScheme .
