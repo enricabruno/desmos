@@ -20,7 +20,7 @@
         <owl:versionInfo xml:lang="en">Version 1.2.0</owl:versionInfo>
         <owl:versionInfo xml:lang="it">Versione 1.2.0</owl:versionInfo>
         <owl:priorVersion rdf:resource="https://zenodo.org/records/19610250/files/desmos.owl"/>
-        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-30</dcterms:modified>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-22</dcterms:modified>
         <vann:preferredNamespacePrefix>desmos</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/desmos/</vann:preferredNamespaceUri>
         <dcterms:bibliographicCitation>Bruno, Enrica. (2026). DeSMòS: Descriptive Semantic Model for Structured Texts (Version 1.2.0) [Ontology].</dcterms:bibliographicCitation>
@@ -313,6 +313,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P2_has_type">
         <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
         <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
         <rdfs:label xml:lang="en">P2 has type</rdfs:label>
         <rdfs:label xml:lang="it">P2 ha tipo</rdfs:label>
@@ -325,6 +326,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of">
         <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
         <rdfs:label xml:lang="en">P2i is type of</rdfs:label>
         <rdfs:label xml:lang="it">P2i è tipo di</rdfs:label>
         <rdfs:comment xml:lang="it">In DeSMòS, P2i is type of collega un tipo controllato alle espressioni classificate attraverso di esso; è l'inversa di P2 has type.</rdfs:comment>
@@ -337,6 +339,7 @@
     <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/lrm/lrmoo/R15_has_fragment">
         <owl:inverseOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R15i_is_fragment_of"/>
         <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object"/>
         <rdfs:comment xml:lang="it">In DeSMòS, R15 has fragment è utilizzata per collegare un'espressione alla dichiarazione peritestuale (crm:E33_Linguistic_Object) contenuta nella stessa pubblicazione, che ne costituisce un frammento e documenta l'impiego di una costrizione.</rdfs:comment>
         <rdfs:comment xml:lang="en">In DeSMòS, R15 has fragment is used to relate an expression to the peritextual statement (crm:E33_Linguistic_Object) contained in the same publication, which constitutes a fragment of it and documents the use of a constraint.</rdfs:comment>
         <rdfs:label xml:lang="it">R15 ha frammento</rdfs:label>
@@ -347,6 +350,7 @@
     <!-- http://iflastandards.info/ns/lrm/lrmoo/R15i_is_fragment_of -->
 
     <owl:ObjectProperty rdf:about="http://iflastandards.info/ns/lrm/lrmoo/R15i_is_fragment_of">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object"/>
         <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
         <rdfs:comment xml:lang="en">In DeSMòS, R15i is fragment of relates a textual fragment to the expression of which it forms part; it is the inverse of R15 has fragment.</rdfs:comment>
         <rdfs:comment xml:lang="it">In DeSMòS, R15i is fragment of collega un frammento testuale all'espressione di cui fa parte; è l'inversa di R15 has fragment.</rdfs:comment>
@@ -462,6 +466,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P129_is_about">
         <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
         <rdfs:comment xml:lang="en">In DeSMòS, P129 is about is used to document that a linguistic object has a literary constraint as its subject matter.</rdfs:comment>
         <rdfs:comment xml:lang="it">In DeSMòS, P129 is about è utilizzata per documentare che un oggetto linguistico ha come oggetto tematico una costrizione letteraria.</rdfs:comment>
         <rdfs:label xml:lang="en">P129 is about</rdfs:label>
@@ -472,6 +478,8 @@
     <!-- http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of -->
 
     <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"/>
         <rdfs:comment xml:lang="en">In DeSMòS, P129i is subject of relates a literary constraint to the linguistic objects that have it as their subject matter; it is the inverse of P129 is about.</rdfs:comment>
         <rdfs:comment xml:lang="it">In DeSMòS, P129i is subject of collega una costrizione letteraria agli oggetti linguistici che la assumono come oggetto tematico; è l'inversa di P129 is about.</rdfs:comment>
         <rdfs:label xml:lang="en">P129i is subject of</rdfs:label>
@@ -483,6 +491,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of">
         <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
         <rdfs:comment xml:lang="it">In DeSMòS, P130 shows features of è utilizzata tra espressioni per documentare un legame più blando di R76 is derivative of: l'espressione presenta tratti di una fonte (lessicali, onomastici, fraseologici, tematici o narrativi, oppure, per fonti non testuali, di andamento) senza derivarne il contenuto e senza che si instauri una relazione intertestuale INTRO (es. un componimento costruito con i nomi di un repertorio onomastico o modellato sulle indicazioni di movimento e sulla durata di brani musicali).</rdfs:comment>
         <rdfs:comment xml:lang="en">In DeSMòS, P130 shows features of is used between expressions to document a looser link than R76 is derivative of: the expression shows features of a source (lexical, onomastic, phraseological, thematic or narrative, or, for non-textual sources, of tempo and pacing) without deriving its content and without establishing an INTRO intertextual relation (e.g., a poem built from the names in an onomastic repertory or modelled on the tempo markings and duration of musical pieces).</rdfs:comment>
         <rdfs:label xml:lang="it">P130 presenta caratteristiche di</rdfs:label>
@@ -493,6 +503,8 @@
     <!-- http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on -->
 
     <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
         <rdfs:comment xml:lang="it">In DeSMòS, P130i features are also found on collega un'espressione assunta come fonte (es. un repertorio onomastico o fraseologico, un'opera musicale) alle espressioni che ne presentano dei tratti senza derivarne il contenuto; è l'inversa di P130 shows features of.</rdfs:comment>
         <rdfs:comment xml:lang="en">In DeSMòS, P130i features are also found on relates an expression used as a source (e.g., an onomastic or phraseological repertory, a musical work) to the expressions that show some of its features without deriving its content; it is the inverse of P130 shows features of.</rdfs:comment>
         <rdfs:label xml:lang="it">P130i caratteristiche si ritrovano anche in</rdfs:label>
@@ -504,6 +516,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P148_has_component">
         <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P148i_is_component_of"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"/>
         <rdfs:comment xml:lang="it">In DeSMòS, P148 has component è utilizzata per articolare espressioni e manifestazioni complesse nelle rispettive componenti.</rdfs:comment>
         <rdfs:comment xml:lang="en">In DeSMòS, P148 has component is used to decompose complex expressions and manifestations into their respective components.</rdfs:comment>
         <rdfs:label xml:lang="it">P148 ha componente</rdfs:label>
@@ -514,6 +528,8 @@
     <!-- http://www.cidoc-crm.org/cidoc-crm/P148i_is_component_of -->
 
     <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P148i_is_component_of">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"/>
         <rdfs:comment xml:lang="en">In DeSMòS, P148i is component of relates a component to the complex expression or manifestation of which it forms part; it is the inverse of P148 has component.</rdfs:comment>
         <rdfs:comment xml:lang="it">In DeSMòS, P148i is component of collega una componente all'espressione o alla manifestazione complessa di cui fa parte; è l'inversa di P148 has component.</rdfs:comment>
         <rdfs:label xml:lang="en">P148i is component of</rdfs:label>
@@ -525,6 +541,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by">
         <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P14i_performed"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
         <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
         <rdfs:comment xml:lang="it">In DeSMòS, P14 carried out by è utilizzata per collegare un evento di creazione dell'espressione all'autore o agli autori che lo hanno realizzato.</rdfs:comment>
         <rdfs:comment xml:lang="en">In DeSMòS, P14 carried out by is used to relate an expression creation event to the author or authors who carried it out.</rdfs:comment>
@@ -537,6 +554,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P14i_performed">
         <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
         <rdfs:comment xml:lang="en">In DeSMòS, P14i performed relates an author to the expression creation events they carried out; it is the inverse of P14 carried out by.</rdfs:comment>
         <rdfs:comment xml:lang="it">In DeSMòS, P14i performed collega un autore agli eventi di creazione dell'espressione da lui realizzati; è l'inversa di P14 carried out by.</rdfs:comment>
         <rdfs:label xml:lang="it">P14i ha eseguito</rdfs:label>
@@ -548,6 +566,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P33_used_specific_technique">
         <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P33i_was_used_by"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
         <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"/>
         <rdfs:comment xml:lang="it">In DeSMòS, P33 used specific technique è utilizzata per collegare un evento di creazione dell'espressione alla costrizione letteraria impiegata come procedura compositiva.</rdfs:comment>
         <rdfs:comment xml:lang="en">In DeSMòS, P33 used specific technique is used to relate an expression creation event to the literary constraint employed as a compositional procedure.</rdfs:comment>
@@ -560,6 +579,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P33i_was_used_by">
         <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
         <rdfs:comment xml:lang="en">In DeSMòS, P33i was used by relates a literary constraint to the expression creation events in which it was employed; it is the inverse of P33 used specific technique.</rdfs:comment>
         <rdfs:comment xml:lang="it">In DeSMòS, P33i was used by collega una costrizione letteraria agli eventi di creazione dell'espressione nei quali essa è stata impiegata; è l'inversa di P33 used specific technique.</rdfs:comment>
         <rdfs:label xml:lang="en">P33i was used by</rdfs:label>
@@ -571,6 +591,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P67_refers_to">
         <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
         <rdfs:comment xml:lang="it">In DeSMòS, P67 refers to è utilizzata per collegare un oggetto linguistico all'espressione testuale alla quale esso fa riferimento.</rdfs:comment>
         <rdfs:comment xml:lang="en">In DeSMòS, P67 refers to is used to relate a linguistic object to the textual expression to which it refers.</rdfs:comment>
         <rdfs:label xml:lang="en">P67 refers to</rdfs:label>
@@ -581,6 +603,8 @@
     <!-- http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by -->
 
     <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"/>
         <rdfs:comment xml:lang="en">In DeSMòS, P67i is referred to by relates a textual expression to the linguistic objects that refer to it; it is the inverse of P67 refers to.</rdfs:comment>
         <rdfs:comment xml:lang="it">In DeSMòS, P67i is referred to by collega un'espressione testuale agli oggetti linguistici che vi fanno riferimento; è l'inversa di P67 refers to.</rdfs:comment>
         <rdfs:label xml:lang="en">P67i is referred to by</rdfs:label>
@@ -852,6 +876,17 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/lso/intro/beta202506#R12_hasReferredToEntity">
         <owl:inverseOf rdf:resource="https://w3id.org/lso/intro/beta202506#R12i_isReferredToEntity"/>
         <rdfs:domain rdf:resource="https://w3id.org/lso/intro/beta202506#INT3_Interrelation"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F1_Work"/>
+                    <rdf:Description rdf:about="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+                    <rdf:Description rdf:about="https://w3id.org/lso/intro/beta202506#INT1_Passage"/>
+                    <rdf:Description rdf:about="https://w3id.org/lso/intro/beta202506#INT2_ActualizationOfFeature"/>
+                    <rdf:Description rdf:about="https://w3id.org/lso/intro/beta202506#INT6_Architext"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
         <rdfs:comment xml:lang="it">In DeSMòS, questa proprietà identifica l'entità ipotestuale coinvolta in una relazione intertestuale. Può fare riferimento a un lrmoo:F2_Expression quando la relazione è stabilita a livello dell'intero testo, o a un intro:INT21_TextPassage quando la relazione può essere localizzata in una porzione specifica dell'ipotesto.</rdfs:comment>
         <rdfs:comment xml:lang="en">In DeSMòS, this property identifies the hypotextual entity involved in an intertextual relation. It may refer to an lrmoo:F2_Expression when the relation is established at the level of the text as a whole, or to an intro:INT21_TextPassage when the relation can be localized to a specific portion of the hypotext.</rdfs:comment>
         <rdfs:label xml:lang="it">R12 ha entità a cui si riferisce</rdfs:label>
@@ -862,6 +897,17 @@
     <!-- https://w3id.org/lso/intro/beta202506#R12i_isReferredToEntity -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/lso/intro/beta202506#R12i_isReferredToEntity">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F1_Work"/>
+                    <rdf:Description rdf:about="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+                    <rdf:Description rdf:about="https://w3id.org/lso/intro/beta202506#INT1_Passage"/>
+                    <rdf:Description rdf:about="https://w3id.org/lso/intro/beta202506#INT2_ActualizationOfFeature"/>
+                    <rdf:Description rdf:about="https://w3id.org/lso/intro/beta202506#INT6_Architext"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/lso/intro/beta202506#INT3_Interrelation"/>
         <rdfs:comment xml:lang="en">In DeSMòS, this property links a hypotextual entity to the intertextual relation in which it acts as the entity to which the reference is made. The hypotextual entity may be an lrmoo:F2_Expression when the relation is established at the level of the text as a whole, or an intro:INT21_TextPassage when the relation can be localized to a specific portion of the hypotext.</rdfs:comment>
         <rdfs:comment xml:lang="it">In DeSMòS, questa proprietà collega un'entità ipotestuale alla relazione intertestuale nella quale costituisce l'entità a cui si fa riferimento. L'entità ipotestuale può essere un lrmoo:F2_Expression quando la relazione è stabilita a livello dell'intero testo, o un intro:INT21_TextPassage quando la relazione può essere localizzata in una porzione specifica dell'ipotesto.</rdfs:comment>
@@ -875,6 +921,17 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/lso/intro/beta202506#R13_hasReferringEntity">
         <owl:inverseOf rdf:resource="https://w3id.org/lso/intro/beta202506#R13i_isReferringEntity"/>
         <rdfs:domain rdf:resource="https://w3id.org/lso/intro/beta202506#INT3_Interrelation"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F1_Work"/>
+                    <rdf:Description rdf:about="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+                    <rdf:Description rdf:about="https://w3id.org/lso/intro/beta202506#INT1_Passage"/>
+                    <rdf:Description rdf:about="https://w3id.org/lso/intro/beta202506#INT2_ActualizationOfFeature"/>
+                    <rdf:Description rdf:about="https://w3id.org/lso/intro/beta202506#INT6_Architext"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
         <rdfs:comment xml:lang="it">In DeSMòS, questa proprietà identifica l'entità ipertestuale coinvolta in una relazione intertestuale. Può fare riferimento a un lrmoo:F2_Expression quando la relazione è stabilita a livello dell'intero testo, o a un intro:INT21_TextPassage quando la relazione può essere localizzata in una porzione specifica dell'ipertesto.</rdfs:comment>
         <rdfs:comment xml:lang="en">In DeSMòS, this property identifies the hypertextual entity involved in an intertextual relation. It may refer to an lrmoo:F2_Expression when the relation is established at the level of the text as a whole, or to an intro:INT21_TextPassage when the relation can be localized to a specific portion of the hypertext.</rdfs:comment>
         <rdfs:label xml:lang="it">R13 ha entità referente</rdfs:label>
@@ -885,6 +942,17 @@
     <!-- https://w3id.org/lso/intro/beta202506#R13i_isReferringEntity -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/lso/intro/beta202506#R13i_isReferringEntity">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F1_Work"/>
+                    <rdf:Description rdf:about="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+                    <rdf:Description rdf:about="https://w3id.org/lso/intro/beta202506#INT1_Passage"/>
+                    <rdf:Description rdf:about="https://w3id.org/lso/intro/beta202506#INT2_ActualizationOfFeature"/>
+                    <rdf:Description rdf:about="https://w3id.org/lso/intro/beta202506#INT6_Architext"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/lso/intro/beta202506#INT3_Interrelation"/>
         <rdfs:comment xml:lang="en">In DeSMòS, this property links a hypertextual entity to the intertextual relation in which it acts as the referring entity. The hypertextual entity may be an lrmoo:F2_Expression when the relation is established at the level of the text as a whole, or an intro:INT21_TextPassage when the relation can be localized to a specific portion of the hypertext.</rdfs:comment>
         <rdfs:comment xml:lang="it">In DeSMòS, questa proprietà collega un'entità ipertestuale alla relazione intertestuale nella quale costituisce l'entità referente. L'entità ipertestuale può essere un lrmoo:F2_Expression quando la relazione è stabilita a livello dell'intero testo, o un intro:INT21_TextPassage quando la relazione può essere localizzata in una porzione specifica dell'ipertesto.</rdfs:comment>
@@ -897,6 +965,8 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/lso/intro/beta202506#R19_hasType">
         <owl:inverseOf rdf:resource="https://w3id.org/lso/intro/beta202506#R19i_isTypeOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/lso/intro/beta202506#INT3_Interrelation"/>
+        <rdfs:range rdf:resource="https://w3id.org/lso/intro/beta202506#INT11_TypeOfInterrelation"/>
         <rdfs:comment xml:lang="it">In DeSMòS, R19 has type è utilizzata per qualificare una relazione intertestuale mediante un tipo controllato, come l'ipertestualità.</rdfs:comment>
         <rdfs:comment xml:lang="en">In DeSMòS, R19 has type is used to qualify an intertextual relation with a controlled relation type, such as hypertextuality.</rdfs:comment>
         <rdfs:label xml:lang="it">R19 ha tipo</rdfs:label>
@@ -907,6 +977,8 @@
     <!-- https://w3id.org/lso/intro/beta202506#R19i_isTypeOf -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/lso/intro/beta202506#R19i_isTypeOf">
+        <rdfs:domain rdf:resource="https://w3id.org/lso/intro/beta202506#INT11_TypeOfInterrelation"/>
+        <rdfs:range rdf:resource="https://w3id.org/lso/intro/beta202506#INT3_Interrelation"/>
         <rdfs:comment xml:lang="en">In DeSMòS, R19i is type of relates a relation type to the intertextual relations it qualifies; it is the inverse of R19 has type.</rdfs:comment>
         <rdfs:comment xml:lang="it">In DeSMòS, R19i is type of collega un tipo di relazione alle relazioni intertestuali che esso qualifica; è l'inversa di R19 has type.</rdfs:comment>
         <rdfs:label xml:lang="en">R19i is type of</rdfs:label>
@@ -918,6 +990,14 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/lso/intro/beta202506#R30_hasTextPassage">
         <owl:inverseOf rdf:resource="https://w3id.org/lso/intro/beta202506#R30i_isTextPassageOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+                    <rdf:Description rdf:about="https://w3id.org/lso/intro/beta202506#INT1_Passage"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/lso/intro/beta202506#INT21_TextPassage"/>
         <rdfs:comment xml:lang="it">In DeSMòS, R30 has text passage è utilizzata per collegare un testo al passaggio testuale selezionato al suo interno, in particolare quando la relazione intertestuale riguarda porzioni specifiche del testo.</rdfs:comment>
         <rdfs:comment xml:lang="en">In DeSMòS, R30 has text passage is used to relate a text to a textual passage selected within it, particularly when an intertextual relation concerns specific portions of the text.</rdfs:comment>
@@ -930,6 +1010,14 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/lso/intro/beta202506#R30i_isTextPassageOf">
         <rdfs:domain rdf:resource="https://w3id.org/lso/intro/beta202506#INT21_TextPassage"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+                    <rdf:Description rdf:about="https://w3id.org/lso/intro/beta202506#INT1_Passage"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
         <rdfs:comment xml:lang="en">In DeSMòS, R30i is text passage of relates a textual passage to the text from which it is taken; it is the inverse of R30 has text passage.</rdfs:comment>
         <rdfs:comment xml:lang="it">In DeSMòS, R30i is text passage of collega un passaggio testuale al testo dal quale è tratto; è l'inversa di R30 has text passage.</rdfs:comment>
         <rdfs:label xml:lang="en">R30i is text passage of</rdfs:label>
@@ -953,6 +1041,7 @@
     <!-- http://purl.org/dc/terms/created -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/created">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="it">In DeSMòS, dcterms:created è utilizzata per registrare la data associata all'evento di creazione di un'espressione.</rdfs:comment>
         <rdfs:comment xml:lang="en">In DeSMòS, dcterms:created is used to record the date associated with an expression creation event.</rdfs:comment>
         <rdfs:label xml:lang="en">created</rdfs:label>
@@ -965,6 +1054,7 @@
     <!-- http://purl.org/dc/terms/issued -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/issued">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="it">In DeSMòS, dcterms:issued è utilizzata per registrare la data di pubblicazione o emissione di una manifestazione.</rdfs:comment>
         <rdfs:comment xml:lang="en">In DeSMòS, dcterms:issued is used to record the publication or issuance date of a manifestation.</rdfs:comment>
         <rdfs:label xml:lang="it">data di emissione</rdfs:label>
@@ -985,6 +1075,8 @@
     <!-- http://www.cidoc-crm.org/cidoc-crm/P3_has_note -->
 
     <owl:DatatypeProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/P3_has_note">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="it">In DeSMòS, P3 has note è utilizzata per associare a un oggetto linguistico o a una caratteristica testuale una descrizione testuale aggiuntiva espressa come letterale.</rdfs:comment>
         <rdfs:comment xml:lang="en">In DeSMòS, P3 has note is used to associate a linguistic object or textual feature with an additional textual description expressed as a literal.</rdfs:comment>
         <rdfs:label xml:lang="it">ha nota</rdfs:label>
@@ -995,6 +1087,14 @@
     <!-- https://w3id.org/lso/intro/beta202506#R44_hasWording -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/lso/intro/beta202506#R44_hasWording">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/lso/intro/beta202506#INT16_Segment"/>
+                    <rdf:Description rdf:about="https://w3id.org/lso/intro/beta202506#INT1_Passage"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:comment xml:lang="it">In DeSMòS, R44 has wording è utilizzata per registrare come stringa la formulazione testuale esatta di un passaggio identificato mediante INT21 Text Passage.</rdfs:comment>
         <rdfs:comment xml:lang="en">In DeSMòS, R44 has wording is used to record as a string the exact textual wording of a passage identified through INT21 Text Passage.</rdfs:comment>
         <rdfs:label xml:lang="it">R44 ha formulazione</rdfs:label>
@@ -1029,6 +1129,7 @@
     <!-- http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation -->
 
     <owl:Class rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
         <rdfs:comment xml:lang="it">In DeSMòS, F28 Expression Creation è utilizzata per rappresentare l'evento compositivo che produce un'espressione testuale e nel quale può essere impiegata una costrizione letteraria.</rdfs:comment>
         <rdfs:comment xml:lang="en">In DeSMòS, F28 Expression Creation is used to represent the compositional event that produces a textual expression and in which a literary constraint may be employed.</rdfs:comment>
         <rdfs:label xml:lang="en">F28 Expression Creation</rdfs:label>
@@ -1083,6 +1184,7 @@
     <!-- http://www.cidoc-crm.org/cidoc-crm/E39_Actor -->
 
     <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E39_Actor">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
         <rdfs:comment xml:lang="it">In DeSMòS, E39 Actor è utilizzata per rappresentare autori, curatori e soggetti collettivi coinvolti nella creazione e nella documentazione delle espressioni testuali.</rdfs:comment>
         <rdfs:comment xml:lang="en">In DeSMòS, E39 Actor is used to represent authors, editors, and collective agents involved in the creation and documentation of textual expressions.</rdfs:comment>
         <rdfs:label xml:lang="en">E39 Actor</rdfs:label>
@@ -1093,6 +1195,7 @@
     <!-- http://www.cidoc-crm.org/cidoc-crm/E55_Type -->
 
     <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E55_Type">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"/>
         <rdfs:comment xml:lang="it">In DeSMòS, E55 Type è utilizzata per due ordini di tipi controllati: le forme espressive delle opere (prosa, poesia, poesia visiva, arte visiva, musica), assegnate alle espressioni mediante P2 has type, e, attraverso la sottoclasse INTRO INT11 Type of Interrelation, i tipi di relazione intertestuale come l'ipertestualità, assegnati mediante R19 has type.</rdfs:comment>
         <rdfs:comment xml:lang="en">In DeSMòS, E55 Type is used for two kinds of controlled types: the expressive forms of works (prose, poetry, visual poetry, visual art, music), assigned to expressions via P2 has type, and, through the INTRO subclass INT11 Type of Interrelation, intertextual relation types such as hypertextuality, assigned via R19 has type.</rdfs:comment>
         <rdfs:label xml:lang="en">E55 Type</rdfs:label>
@@ -1104,6 +1207,7 @@
 
     <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"/>
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object"/>
         <rdfs:comment xml:lang="it">In DeSMòS, E73 Information Object è utilizzata come categoria generale per gli oggetti informativi coinvolti nella rappresentazione del testo e delle procedure ad esso associate, attraverso le classi specializzate riprese da CIDOC CRM, LRMoo e INTRO.</rdfs:comment>
         <rdfs:comment xml:lang="en">In DeSMòS, E73 Information Object is used as a general category for information objects involved in the representation of texts and their associated procedures, through specialised classes reused from CIDOC CRM, LRMoo, and INTRO.</rdfs:comment>
         <rdfs:label xml:lang="en">E73 Information Object</rdfs:label>
@@ -1114,10 +1218,54 @@
     <!-- http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object -->
 
     <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"/>
     <rdfs:comment xml:lang="it">Questa classe comprende entità che esistono come insiemi di caratteristiche o proprietà, piuttosto che come oggetti fisici. In DeSMòS, rappresenta le entità astratte come le opere, le costrizioni letterarie e le relazioni intertestuali.</rdfs:comment>
     <rdfs:comment xml:lang="en">This class comprises entities that exist as sets of characteristics or properties rather than as physical objects. In DeSMòS, it represents abstract entities such as works, literary constraints, and intertextual relations.</rdfs:comment>
         <rdfs:label xml:lang="en">E89 Propositional Object</rdfs:label>
         <rdfs:label xml:lang="it">E89 Oggetto Proposizionale</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+    </owl:Class>
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity">
+        <rdfs:comment xml:lang="en">In DeSMòS, E1 CRM Entity is the root of the CIDOC CRM hierarchy and is referenced as the original domain or range of P2 has type, P3 has note, P67 refers to and P129 is about. E7 Activity, E39 Actor and E70 Thing are declared as its direct subclasses, abbreviating the official chains through E5 Event and E77 Persistent Item.</rdfs:comment>
+        <rdfs:comment xml:lang="it">In DeSMòS, E1 CRM Entity è la radice della gerarchia di CIDOC CRM ed è referenziata come domain o range originale di P2 has type, P3 has note, P67 refers to e P129 is about. E7 Activity, E39 Actor ed E70 Thing ne sono dichiarate sottoclassi dirette, abbreviando le catene ufficiali che passano per E5 Event ed E77 Persistent Item.</rdfs:comment>
+        <rdfs:label xml:lang="en">E1 CRM Entity</rdfs:label>
+        <rdfs:label xml:lang="it">E1 Entità CRM</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+    </owl:Class>
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E7_Activity -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E7_Activity">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+        <rdfs:comment xml:lang="en">In DeSMòS, E7 Activity is referenced as the original domain of P14 carried out by and P33 used specific technique. lrmoo:F28_Expression_Creation is declared as its direct subclass, abbreviating the official chain F28 Expression Creation ⊑ E65 Creation ⊑ E7 Activity (LRMoo 1.0; CIDOC CRM 7.1.3).</rdfs:comment>
+        <rdfs:comment xml:lang="it">In DeSMòS, E7 Activity è referenziata come domain originale di P14 carried out by e P33 used specific technique. lrmoo:F28_Expression_Creation ne è dichiarata sottoclasse diretta, abbreviando la catena ufficiale F28 Expression Creation ⊑ E65 Creation ⊑ E7 Activity (LRMoo 1.0; CIDOC CRM 7.1.3).</rdfs:comment>
+        <rdfs:label xml:lang="en">E7 Activity</rdfs:label>
+        <rdfs:label xml:lang="it">E7 Attività</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+    </owl:Class>
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E70_Thing -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E70_Thing">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+        <rdfs:comment xml:lang="en">In DeSMòS, E70 Thing is referenced as the original domain and range of P130 shows features of. E28 Conceptual Object is declared as its direct subclass, abbreviating the official chain E28 Conceptual Object ⊑ E71 Human-Made Thing ⊑ E70 Thing (CIDOC CRM 7.1.3).</rdfs:comment>
+        <rdfs:comment xml:lang="it">In DeSMòS, E70 Thing è referenziata come domain e range originali di P130 shows features of. E28 Conceptual Object ne è dichiarata sottoclasse diretta, abbreviando la catena ufficiale E28 Conceptual Object ⊑ E71 Human-Made Thing ⊑ E70 Thing (CIDOC CRM 7.1.3).</rdfs:comment>
+        <rdfs:label xml:lang="en">E70 Thing</rdfs:label>
+        <rdfs:label xml:lang="it">E70 Cosa</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+    </owl:Class>
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"/>
+        <rdfs:comment xml:lang="en">In DeSMòS, E90 Symbolic Object is referenced as the original range of R15 has fragment: the peritextual statements (E33 Linguistic Object) linked to an expression through R15 are symbolic objects via E73 Information Object. It is the superclass of E73 Information Object and, in INTRO, of INT1 Passage and INT16 Segment.</rdfs:comment>
+        <rdfs:comment xml:lang="it">In DeSMòS, E90 Symbolic Object è referenziata come range originale di R15 has fragment: le dichiarazioni peritestuali (E33 Linguistic Object) collegate a un'espressione mediante R15 sono oggetti simbolici attraverso E73 Information Object. È superclasse di E73 Information Object e, in INTRO, di INT1 Passage e INT16 Segment.</rdfs:comment>
+        <rdfs:label xml:lang="en">E90 Symbolic Object</rdfs:label>
+        <rdfs:label xml:lang="it">E90 Oggetto Simbolico</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
     </owl:Class>
     
@@ -1274,6 +1422,7 @@
 
     <!-- https://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object -->
     <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
         <rdfs:label xml:lang="en">E28 Conceptual Object</rdfs:label>
         <rdfs:label xml:lang="it">E28 Oggetto Concettuale</rdfs:label>
         <rdfs:comment xml:lang="en">In DeSMòS, E28 Conceptual Object provides the conceptual category under which intro:INT3_Interrelation is positioned.</rdfs:comment>
@@ -1283,10 +1432,44 @@
     
     <!-- https://w3id.org/lso/intro/beta202506#INT1_Passage -->
     <owl:Class rdf:about="https://w3id.org/lso/intro/beta202506#INT1_Passage">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object"/>
         <rdfs:label xml:lang="en">INT1 Passage</rdfs:label>
         <rdfs:label xml:lang="it">INT1 Passaggio</rdfs:label>
         <rdfs:comment xml:lang="en">In DeSMòS, INT1 Passage provides the general category for intro:INT21_TextPassage, used to represent textual passages involved in intertextual relations.</rdfs:comment>
         <rdfs:comment xml:lang="it">In DeSMòS, INT1 Passage fornisce la categoria generale per intro:INT21_TextPassage, utilizzata per rappresentare i passaggi testuali coinvolti nelle relazioni intertestuali.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
+    </owl:Class>
+
+    <!-- https://w3id.org/lso/intro/beta202506#INT2_ActualizationOfFeature -->
+
+    <owl:Class rdf:about="https://w3id.org/lso/intro/beta202506#INT2_ActualizationOfFeature">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"/>
+        <rdfs:comment xml:lang="en">In DeSMòS, INT2 Actualization of Feature is referenced only as a member of the original union range of R12 has referred to entity and R13 has referring entity, and of the union domain of their inverses; it is not instantiated in the DeSMòS corpus.</rdfs:comment>
+        <rdfs:comment xml:lang="it">In DeSMòS, INT2 Actualization of Feature è referenziata solo come membro dell'unione che costituisce il range originale di R12 has referred to entity e R13 has referring entity, e il domain delle loro inverse; non è istanziata nel corpus DeSMòS.</rdfs:comment>
+        <rdfs:label xml:lang="en">INT2 Actualization of Feature</rdfs:label>
+        <rdfs:label xml:lang="it">INT2 Attualizzazione di caratteristica</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
+    </owl:Class>
+
+    <!-- https://w3id.org/lso/intro/beta202506#INT6_Architext -->
+
+    <owl:Class rdf:about="https://w3id.org/lso/intro/beta202506#INT6_Architext">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"/>
+        <rdfs:comment xml:lang="en">In DeSMòS, INT6 Architext is referenced only as a member of the original union range of R12 has referred to entity and R13 has referring entity, and of the union domain of their inverses; it is not instantiated in the DeSMòS corpus.</rdfs:comment>
+        <rdfs:comment xml:lang="it">In DeSMòS, INT6 Architext è referenziata solo come membro dell'unione che costituisce il range originale di R12 has referred to entity e R13 has referring entity, e il domain delle loro inverse; non è istanziata nel corpus DeSMòS.</rdfs:comment>
+        <rdfs:label xml:lang="en">INT6 Architext</rdfs:label>
+        <rdfs:label xml:lang="it">INT6 Architesto</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
+    </owl:Class>
+
+    <!-- https://w3id.org/lso/intro/beta202506#INT16_Segment -->
+
+    <owl:Class rdf:about="https://w3id.org/lso/intro/beta202506#INT16_Segment">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object"/>
+        <rdfs:comment xml:lang="en">In DeSMòS, INT16 Segment is referenced only as a member of the original union domain of R44 has wording; it is not instantiated in the DeSMòS corpus, where R44 is applied to INT21 Text Passage.</rdfs:comment>
+        <rdfs:comment xml:lang="it">In DeSMòS, INT16 Segment è referenziata solo come membro dell'unione che costituisce il domain originale di R44 has wording; non è istanziata nel corpus DeSMòS, dove R44 è applicata a INT21 Text Passage.</rdfs:comment>
+        <rdfs:label xml:lang="en">INT16 Segment</rdfs:label>
+        <rdfs:label xml:lang="it">INT16 Segmento</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
     </owl:Class>
 
