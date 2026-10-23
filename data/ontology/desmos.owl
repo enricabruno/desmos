@@ -628,6 +628,7 @@
     <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:comment xml:lang="it">In DeSMòS, skos:closeMatch è utilizzata per allineare un concetto DeSMòS a un concetto esterno semanticamente vicino ma non considerato equivalente.</rdfs:comment>
@@ -640,6 +641,8 @@
     <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:comment xml:lang="it">In DeSMòS, skos:exactMatch è utilizzata per allineare un concetto DeSMòS a un concetto esterno considerato semanticamente equivalente.</rdfs:comment>
@@ -699,6 +702,7 @@
     <!-- http://www.w3.org/2004/02/skos/core#related -->
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#related">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:comment xml:lang="en">In DeSMòS, skos:related is used to express non-hierarchical semantic associations between concepts in the controlled vocabularies.</rdfs:comment>
@@ -731,6 +735,19 @@
         <rdfs:label xml:lang="it">vincola unità formale</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
     </owl:ObjectProperty>
+
+    <!-- https://w3id.org/desmos/isFormalUnitConstrainedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/desmos/isFormalUnitConstrainedBy">
+        <owl:inverseOf rdf:resource="https://w3id.org/desmos/constrainsFormalUnit"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range rdf:resource="https://w3id.org/desmos/FormalConstraint"/>
+        <rdfs:comment xml:lang="en">Inverse relationship of constrainsFormalUnit. Relates a discrete unit of the writing system (e.g., letter, syllable, word) to the formal constraints that operate on it.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Relazione inversa di constrainsFormalUnit. Collega un'unità discreta del sistema di scrittura (es. lettera, sillaba, parola) alle costrizioni formali che operano su di essa.</rdfs:comment>
+        <rdfs:label xml:lang="en">is formal unit constrained by</rdfs:label>
+        <rdfs:label xml:lang="it">è unità formale vincolata da</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
+    </owl:ObjectProperty>
     
     <!-- https://w3id.org/desmos/constrainsSemanticUnit -->
 
@@ -741,6 +758,18 @@
         <rdfs:comment xml:lang="en">Relates a semantic constraint to the unit of the content plane (e.g., character, space, time) that is determined by the generative process.</rdfs:comment>
         <rdfs:label xml:lang="en">constrains semantic unit</rdfs:label>
         <rdfs:label xml:lang="it">vincola unità semantica</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
+    </owl:ObjectProperty>
+
+    <!-- https://w3id.org/desmos/isSemanticUnitConstrainedBy -->
+    <owl:ObjectProperty rdf:about="https://w3id.org/desmos/isSemanticUnitConstrainedBy">
+        <owl:inverseOf rdf:resource="https://w3id.org/desmos/constrainsSemanticUnit"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range rdf:resource="https://w3id.org/desmos/SemanticConstraint"/>
+        <rdfs:comment xml:lang="en">Inverse relationship of constrainsSemanticUnit. Relates a unit of the content plane (e.g., character, space, time) to the semantic constraints that determine it.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Relazione inversa di constrainsSemanticUnit. Collega un'unità del piano del contenuto (es. personaggio, spazio, tempo) alle costrizioni semantiche che la determinano.</rdfs:comment>
+        <rdfs:label xml:lang="en">is semantic unit constrained by</rdfs:label>
+        <rdfs:label xml:lang="it">è unità semantica vincolata da</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
     </owl:ObjectProperty>
     
