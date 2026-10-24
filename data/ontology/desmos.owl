@@ -1250,8 +1250,8 @@
 
     <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object">
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"/>
-    <rdfs:comment xml:lang="it">Questa classe comprende entità che esistono come insiemi di caratteristiche o proprietà, piuttosto che come oggetti fisici. In DeSMòS, rappresenta le entità astratte come le opere, le costrizioni letterarie e le relazioni intertestuali.</rdfs:comment>
-    <rdfs:comment xml:lang="en">This class comprises entities that exist as sets of characteristics or properties rather than as physical objects. In DeSMòS, it represents abstract entities such as works, literary constraints, and intertextual relations.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Questa classe comprende entità che esistono come insiemi di caratteristiche o proprietà, piuttosto che come oggetti fisici. In DeSMòS, rappresenta le entità astratte come le opere e, attraverso E73 Information Object, le espressioni, le dichiarazioni e le costrizioni letterarie. Le relazioni intertestuali (intro:INT3_Interrelation) non ne fanno parte, essendo sottoclasse diretta di E28 Conceptual Object.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class comprises entities that exist as sets of characteristics or properties rather than as physical objects. In DeSMòS, it represents abstract entities such as works and, through E73 Information Object, expressions, declarations and literary constraints. Intertextual relations (intro:INT3_Interrelation) are not included, being a direct subclass of E28 Conceptual Object.</rdfs:comment>
         <rdfs:label xml:lang="en">E89 Propositional Object</rdfs:label>
         <rdfs:label xml:lang="it">E89 Oggetto Proposizionale</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
@@ -1457,8 +1457,8 @@
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
         <rdfs:label xml:lang="en">E28 Conceptual Object</rdfs:label>
         <rdfs:label xml:lang="it">E28 Oggetto Concettuale</rdfs:label>
-        <rdfs:comment xml:lang="en">In DeSMòS, E28 Conceptual Object provides the conceptual category under which intro:INT3_Interrelation is positioned.</rdfs:comment>
-        <rdfs:comment xml:lang="it">In DeSMòS, E28 Conceptual Object fornisce la categoria concettuale entro cui è ricondotta intro:INT3_Interrelation.</rdfs:comment>
+        <rdfs:comment xml:lang="en">In DeSMòS, E28 Conceptual Object is the common superclass of the non-material entities in the model: through E89 Propositional Object and E90 Symbolic Object it subsumes information objects (works, expressions, linguistic objects, passages); it is also the direct superclass of E55 Type, desmos:TextualFeature and intro:INT3_Interrelation (the reified intertextual relations), as well as of intro:INT2_ActualizationOfFeature and intro:INT6_Architext, which are referenced only in the original ranges of R12 and R13.</rdfs:comment>
+        <rdfs:comment xml:lang="it">In DeSMòS, E28 Conceptual Object è la superclasse comune delle entità non materiali del modello: attraverso E89 Propositional Object ed E90 Symbolic Object comprende gli oggetti informativi (opere, espressioni, oggetti linguistici, passaggi); è inoltre superclasse diretta di E55 Type, desmos:TextualFeature e intro:INT3_Interrelation (le relazioni intertestuali reificate), nonché di intro:INT2_ActualizationOfFeature e intro:INT6_Architext, referenziate solo nei range originali di R12 e R13.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
         </owl:Class>
     
