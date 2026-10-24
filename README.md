@@ -40,7 +40,7 @@ desmos/
 │   │   ├── README.md
 │   │   └── oops-report.pdf
 │   └── shacl/
-│       ├── shacl.ttl
+│       └── shacl.ttl
 ├── img/
 │   ├── 1.png
 │   ├── 2.png
