@@ -61,8 +61,8 @@
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title">
         <rdfs:comment xml:lang="en">A name given to the resource.</rdfs:comment>
         <rdfs:comment xml:lang="it">Un nome dato alla risorsa.</rdfs:comment>
-        <rdfs:label xml:lang="en">Title</rdfs:label>
-        <rdfs:label xml:lang="it">Titolo</rdfs:label>
+        <rdfs:label xml:lang="en">title</rdfs:label>
+        <rdfs:label xml:lang="it">titolo</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
     </owl:AnnotationProperty>
 
@@ -81,8 +81,8 @@
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description">
         <rdfs:comment xml:lang="en">A description of the resource.</rdfs:comment>
         <rdfs:comment xml:lang="it">Una descrizione della risorsa.</rdfs:comment>
-        <rdfs:label xml:lang="en">Description</rdfs:label>
-        <rdfs:label xml:lang="it">Descrizione</rdfs:label>
+        <rdfs:label xml:lang="en">description</rdfs:label>
+        <rdfs:label xml:lang="it">descrizione</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
     </owl:AnnotationProperty>
     
@@ -91,8 +91,8 @@
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasVersion">
         <rdfs:comment xml:lang="en">A related resource that is a version, edition, or adaptation of the described resource.</rdfs:comment>
         <rdfs:comment xml:lang="it">Una risorsa correlata che è una versione, edizione o adattamento della risorsa descritta.</rdfs:comment>
-        <rdfs:label xml:lang="it">Ha versione</rdfs:label>
-        <rdfs:label xml:lang="en">Has version</rdfs:label>
+        <rdfs:label xml:lang="it">ha versione</rdfs:label>
+        <rdfs:label xml:lang="en">has version</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
     </owl:AnnotationProperty>
     
@@ -101,8 +101,8 @@
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
         <rdfs:comment xml:lang="en">A legal document giving official permission to do something with the resource.</rdfs:comment>
         <rdfs:comment xml:lang="it">Il documento legale che stabilisce i permessi di utilizzo della risorsa.</rdfs:comment>
-        <rdfs:label xml:lang="en">License</rdfs:label>
-        <rdfs:label xml:lang="it">Licenza</rdfs:label>
+        <rdfs:label xml:lang="en">license</rdfs:label>
+        <rdfs:label xml:lang="it">licenza</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
     </owl:AnnotationProperty>
     
@@ -111,8 +111,8 @@
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified">
         <rdfs:comment xml:lang="it">La data in cui la risorsa è stata modificata.</rdfs:comment>
         <rdfs:comment xml:lang="en">The date on which the resource was modified.</rdfs:comment>
-        <rdfs:label xml:lang="it">Modificato</rdfs:label>
-        <rdfs:label xml:lang="en">Modified</rdfs:label>
+        <rdfs:label xml:lang="it">modificato</rdfs:label>
+        <rdfs:label xml:lang="en">modified</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
     </owl:AnnotationProperty>
     
@@ -121,31 +121,31 @@
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source">
         <rdfs:comment xml:lang="en">A related resource from which the described resource is derived.</rdfs:comment>
         <rdfs:comment xml:lang="it">Una risorsa correlata da cui deriva la risorsa corrente.</rdfs:comment>
-        <rdfs:label xml:lang="it">Fonte</rdfs:label>
-        <rdfs:label xml:lang="en">Source</rdfs:label>
+        <rdfs:label xml:lang="it">fonte</rdfs:label>
+        <rdfs:label xml:lang="en">source</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
     </owl:AnnotationProperty>
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation">
         <rdfs:comment xml:lang="en">A bibliographic reference for the resource.</rdfs:comment>
         <rdfs:comment xml:lang="it">Il riferimento bibliografico con cui citare la risorsa.</rdfs:comment>
-        <rdfs:label xml:lang="en">Bibliographic citation</rdfs:label>
-        <rdfs:label xml:lang="it">Citazione bibliografica</rdfs:label>
+        <rdfs:label xml:lang="en">bibliographic citation</rdfs:label>
+        <rdfs:label xml:lang="it">citazione bibliografica</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
     </owl:AnnotationProperty>
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix">
         <rdfs:comment xml:lang="en">The preferred namespace prefix to use when using terms from the vocabulary in an XML document.</rdfs:comment>
         <rdfs:comment xml:lang="it">Il prefisso preferito da usare per i termini del vocabolario.</rdfs:comment>
-        <rdfs:label xml:lang="en">Preferred namespace prefix</rdfs:label>
-        <rdfs:label xml:lang="it">Prefisso preferito del namespace</rdfs:label>
+        <rdfs:label xml:lang="en">preferred namespace prefix</rdfs:label>
+        <rdfs:label xml:lang="it">prefisso preferito del namespace</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/vann/"/>
     </owl:AnnotationProperty>
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri">
         <rdfs:comment xml:lang="en">The preferred namespace URI to use when using terms from the vocabulary in an XML document.</rdfs:comment>
         <rdfs:comment xml:lang="it">L'URI di namespace preferito da usare per i termini del vocabolario.</rdfs:comment>
-        <rdfs:label xml:lang="en">Preferred namespace URI</rdfs:label>
+        <rdfs:label xml:lang="en">preferred namespace URI</rdfs:label>
         <rdfs:label xml:lang="it">URI preferito del namespace</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/vann/"/>
     </owl:AnnotationProperty>
@@ -155,8 +155,8 @@
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
         <rdfs:comment xml:lang="en">A textual description of the entity.</rdfs:comment>
         <rdfs:comment xml:lang="it">Una descrizione testuale dell'entità.</rdfs:comment>
-        <rdfs:label xml:lang="en">Comment</rdfs:label>
-        <rdfs:label xml:lang="it">Commento</rdfs:label>
+        <rdfs:label xml:lang="en">comment</rdfs:label>
+        <rdfs:label xml:lang="it">commento</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2000/01/rdf-schema#"/>
     </owl:AnnotationProperty>
 
@@ -165,8 +165,8 @@
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
         <rdfs:comment xml:lang="en">A human-readable name for the entity.</rdfs:comment>
         <rdfs:comment xml:lang="it">Un nome leggibile per l'entità.</rdfs:comment>
-        <rdfs:label xml:lang="it">Etichetta</rdfs:label>
-        <rdfs:label xml:lang="en">Label</rdfs:label>
+        <rdfs:label xml:lang="it">etichetta</rdfs:label>
+        <rdfs:label xml:lang="en">label</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2000/01/rdf-schema#"/>
     </owl:AnnotationProperty>
     
@@ -175,8 +175,8 @@
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
         <rdfs:comment xml:lang="it">Indica una risorsa esterna che può fornire informazioni supplementari sulla risorsa descritta.</rdfs:comment>
         <rdfs:comment xml:lang="en">Used to indicate a resource that might provide additional information about the subject resource.</rdfs:comment>
-        <rdfs:label xml:lang="en">See also</rdfs:label>
-        <rdfs:label xml:lang="it">Vedi anche</rdfs:label>
+        <rdfs:label xml:lang="en">see also</rdfs:label>
+        <rdfs:label xml:lang="it">vedi anche</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2000/01/rdf-schema#"/>
     </owl:AnnotationProperty>
     
@@ -185,8 +185,8 @@
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
         <rdfs:comment xml:lang="en">A string identifying the version of this ontology.</rdfs:comment>
         <rdfs:comment xml:lang="it">Una stringa che identifica la versione di questa ontologia.</rdfs:comment>
-        <rdfs:label xml:lang="it">Informazioni sulla versione</rdfs:label>
-        <rdfs:label xml:lang="en">Version info</rdfs:label>
+        <rdfs:label xml:lang="it">informazioni sulla versione</rdfs:label>
+        <rdfs:label xml:lang="en">version info</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
     </owl:AnnotationProperty>
     
@@ -195,8 +195,8 @@
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition">
         <rdfs:comment xml:lang="en">A statement of the meaning of the concept.</rdfs:comment>
         <rdfs:comment xml:lang="it">Una spiegazione del significato del concetto.</rdfs:comment>
-        <rdfs:label xml:lang="en">Definition</rdfs:label>
-        <rdfs:label xml:lang="it">Definizione</rdfs:label>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <rdfs:label xml:lang="it">definizione</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
     </owl:AnnotationProperty>
 
@@ -206,8 +206,8 @@
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example">
         <rdfs:comment xml:lang="en">An example of the use of a concept.</rdfs:comment>
         <rdfs:comment xml:lang="it">Fornisce un esempio dell'uso di un concetto.</rdfs:comment>
-        <rdfs:label xml:lang="it">Esempio</rdfs:label>
-        <rdfs:label xml:lang="en">Example</rdfs:label>
+        <rdfs:label xml:lang="it">esempio</rdfs:label>
+        <rdfs:label xml:lang="en">example</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
     </owl:AnnotationProperty>
     
@@ -216,8 +216,8 @@
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
         <rdfs:comment xml:lang="it">Il termine preferito per rappresentare il concetto.</rdfs:comment>
         <rdfs:comment xml:lang="en">The preferred term for representing the concept.</rdfs:comment>
-        <rdfs:label xml:lang="it">Etichetta preferita</rdfs:label>
-        <rdfs:label xml:lang="en">Preferred label</rdfs:label>
+        <rdfs:label xml:lang="it">etichetta preferita</rdfs:label>
+        <rdfs:label xml:lang="en">preferred label</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
     </owl:AnnotationProperty>
 
@@ -226,8 +226,8 @@
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#historyNote">
         <rdfs:comment xml:lang="en">A note about the past use of the concept.</rdfs:comment>
         <rdfs:comment xml:lang="it">Una nota sull'uso passato del concetto.</rdfs:comment>
-        <rdfs:label xml:lang="en">History note</rdfs:label>
-        <rdfs:label xml:lang="it">Nota storica</rdfs:label>
+        <rdfs:label xml:lang="en">history note</rdfs:label>
+        <rdfs:label xml:lang="it">nota storica</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
     </owl:AnnotationProperty>
 
@@ -236,8 +236,8 @@
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote">
         <rdfs:comment xml:lang="en">A note that clarifies the intended meaning of the concept.</rdfs:comment>
         <rdfs:comment xml:lang="it">Una nota che chiarisce il significato inteso del concetto.</rdfs:comment>
-        <rdfs:label xml:lang="en">Scope note</rdfs:label>
-        <rdfs:label xml:lang="it">Nota di ambito</rdfs:label>
+        <rdfs:label xml:lang="en">scope note</rdfs:label>
+        <rdfs:label xml:lang="it">nota di ambito</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
     </owl:AnnotationProperty>
 
@@ -246,8 +246,8 @@
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel">
         <rdfs:comment xml:lang="en">An alternative term for a concept.</rdfs:comment>
         <rdfs:comment xml:lang="it">Un termine alternativo per un concetto.</rdfs:comment>
-        <rdfs:label xml:lang="en">Alternative label</rdfs:label>
-        <rdfs:label xml:lang="it">Etichetta alternativa</rdfs:label>
+        <rdfs:label xml:lang="en">alternative label</rdfs:label>
+        <rdfs:label xml:lang="it">etichetta alternativa</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
     </owl:AnnotationProperty>
 
@@ -673,8 +673,8 @@
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
         <rdfs:comment xml:lang="it">Inversa di skos:hasTopConcept: in DeSMòS collega un concetto allo schema di cui è punto di accesso gerarchico principale. La proprietà originale ha come domain skos:Concept e come range skos:ConceptScheme. In DeSMòS la stessa proprietà ha come domain skos:Concept e come range skos:ConceptScheme.</rdfs:comment>
         <rdfs:comment xml:lang="en">Inverse of skos:hasTopConcept: in DeSMòS, it relates a concept to the scheme of which it is a main hierarchical entry point. The original property has domain skos:Concept and range skos:ConceptScheme. In DeSMòS, the same property has domain skos:Concept and range skos:ConceptScheme.</rdfs:comment>
-        <rdfs:label xml:lang="it">Concetto principale di</rdfs:label>
-        <rdfs:label xml:lang="en">Top concept of</rdfs:label>
+        <rdfs:label xml:lang="it">concetto principale di</rdfs:label>
+        <rdfs:label xml:lang="en">top concept of</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
     </owl:ObjectProperty>
     
@@ -795,8 +795,8 @@
         <rdfs:range rdf:resource="https://w3id.org/desmos/TextualFeature"/>
         <rdfs:comment xml:lang="it">Questa proprietà collega un'espressione testuale all'evidenza testuale osservabile di una costrizione. La proprietà ha come domain lrmoo:F2_Expression e come range desmos:TextualFeature.</rdfs:comment>
         <rdfs:comment xml:lang="en">This property relates a textual expression to an observable textual feature of a constraint. The property has domain lrmoo:F2_Expression and range desmos:TextualFeature.</rdfs:comment>
-        <rdfs:label xml:lang="it">Ha caratteristica</rdfs:label>
-        <rdfs:label xml:lang="en">Has feature</rdfs:label>
+        <rdfs:label xml:lang="it">ha caratteristica</rdfs:label>
+        <rdfs:label xml:lang="en">has feature</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
     </owl:ObjectProperty>
 
@@ -897,8 +897,8 @@
         <rdfs:range rdf:resource="https://w3id.org/desmos/LiteraryConstraint"/>
         <rdfs:comment xml:lang="it">Questa proprietà collega un evento di creazione dell'espressione alla costrizione letteraria impiegata come dispositivo generativo; sottoproprietà di crm:P33_used_specific_technique. La proprietà ha come domain lrmoo:F28_Expression_Creation e come range desmos:LiteraryConstraint.</rdfs:comment>
         <rdfs:comment xml:lang="en">This property relates an expression creation event to the literary constraint employed as a generative device; subproperty of crm:P33_used_specific_technique. The property has domain lrmoo:F28_Expression_Creation and range desmos:LiteraryConstraint.</rdfs:comment>
-        <rdfs:label xml:lang="it">Usa costrizione</rdfs:label>
-        <rdfs:label xml:lang="en">Uses constraint</rdfs:label>
+        <rdfs:label xml:lang="it">ha usato costrizione</rdfs:label>
+        <rdfs:label xml:lang="en">used constraint</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
     </owl:ObjectProperty>
     
