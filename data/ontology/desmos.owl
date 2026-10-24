@@ -731,8 +731,8 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/desmos/constrainsFormalUnit">
         <rdfs:domain rdf:resource="https://w3id.org/desmos/FormalConstraint"/>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdfs:comment xml:lang="it">Collega una costrizione formale all'unità del sistema di scrittura su cui opera (es. lettera, sillaba, parola). La proprietà ha come domain desmos:FormalConstraint e come range skos:Concept.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Relates a formal constraint to the unit of the writing system on which it operates (e.g., letter, syllable, word). The property has domain desmos:FormalConstraint and range skos:Concept.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Collega una costrizione formale all'unità testuale su cui opera (ad es. lettera, sillaba o parola). La proprietà ha come domain desmos:FormalConstraint e come range skos:Concept.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a formal constraint to the textual unit on which it operates. The property has domain desmos:FormalConstraint and range skos:Concept.</rdfs:comment>
         <rdfs:label xml:lang="en">constrains formal unit</rdfs:label>
         <rdfs:label xml:lang="it">vincola unità formale</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
@@ -756,8 +756,8 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/desmos/constrainsSemanticUnit">
         <rdfs:domain rdf:resource="https://w3id.org/desmos/SemanticConstraint"/>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdfs:comment xml:lang="it">Collega una costrizione semantica all'unità del piano del contenuto che essa determina (es. personaggio, spazio, tempo). La proprietà ha come domain desmos:SemanticConstraint e come range skos:Concept.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Relates a semantic constraint to the unit of the content plane it determines (e.g., character, space, time). The property has domain desmos:SemanticConstraint and range skos:Concept.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Questa proprietà collega una costrizione semantica all’unità semantica su cui opera (ad es. personaggio, spazio o tempo). La proprietà ha come domain desmos:SemanticConstraint e come range skos:Concept.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property relates a semantic constraint to the semantic unit on which it operates (e.g., character, space, or time). The property has domain desmos:SemanticConstraint and range skos:Concept.</rdfs:comment>
         <rdfs:label xml:lang="en">constrains semantic unit</rdfs:label>
         <rdfs:label xml:lang="it">vincola unità semantica</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
@@ -781,8 +781,8 @@
         <owl:inverseOf rdf:resource="https://w3id.org/desmos/isOriginOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/desmos/LiteraryConstraint"/>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdfs:comment xml:lang="it">Collega una costrizione letteraria al concetto che ne qualifica l'origine (tradizione o invenzione ex novo). La proprietà ha come domain desmos:LiteraryConstraint e come range skos:Concept.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Relates a literary constraint to the concept qualifying its origin (tradition or brand-new invention). The property has domain desmos:LiteraryConstraint and range skos:Concept.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Questa proprietà collega una costrizione letteraria al concetto che ne qualifica l'origine (tradizione o invenzione ex novo). La proprietà ha come domain desmos:LiteraryConstraint e come range skos:Concept.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property relates a literary constraint to the concept qualifying its origin (tradition or brand-new invention). The property has domain desmos:LiteraryConstraint and range skos:Concept.</rdfs:comment>
         <rdfs:label xml:lang="en">constraint origin</rdfs:label>
         <rdfs:label xml:lang="it">origine della costrizione</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
@@ -793,8 +793,8 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/desmos/hasFeature">
         <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
         <rdfs:range rdf:resource="https://w3id.org/desmos/TextualFeature"/>
-        <rdfs:comment xml:lang="it">Collega un'espressione testuale all'evidenza testuale osservabile di una costrizione. La proprietà ha come domain lrmoo:F2_Expression e come range desmos:TextualFeature.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Relates a textual expression to an observable textual feature of a constraint. The property has domain lrmoo:F2_Expression and range desmos:TextualFeature.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Questa proprietà collega un'espressione testuale all'evidenza testuale osservabile di una costrizione. La proprietà ha come domain lrmoo:F2_Expression e come range desmos:TextualFeature.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property relates a textual expression to an observable textual feature of a constraint. The property has domain lrmoo:F2_Expression and range desmos:TextualFeature.</rdfs:comment>
         <rdfs:label xml:lang="it">Ha caratteristica</rdfs:label>
         <rdfs:label xml:lang="en">Has feature</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
@@ -819,8 +819,8 @@
         <owl:inverseOf rdf:resource="https://w3id.org/desmos/isOperationInvolvedIn"/>
         <rdfs:domain rdf:resource="https://w3id.org/desmos/LiteraryConstraint"/>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdfs:comment xml:lang="it">Collega una costrizione letteraria all'operazione procedurale che il suo impiego comporta. La proprietà ha come domain desmos:LiteraryConstraint e come range skos:Concept.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Relates a literary constraint to the procedural operation its use involves. The property has domain desmos:LiteraryConstraint and range skos:Concept.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Questa proprietà collega una costrizione letteraria all'operazione procedurale che il suo impiego comporta. La proprietà ha come domain desmos:LiteraryConstraint e come range skos:Concept.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property relates a literary constraint to the procedural operation its use involves. The property has domain desmos:LiteraryConstraint and range skos:Concept.</rdfs:comment>
         <rdfs:label xml:lang="it">coinvolge operazione</rdfs:label>
         <rdfs:label xml:lang="en">involves operation</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
@@ -833,8 +833,8 @@
         <owl:inverseOf rdf:resource="https://w3id.org/desmos/usedConstraint"/>
         <rdfs:domain rdf:resource="https://w3id.org/desmos/LiteraryConstraint"/>
         <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"/>
-        <rdfs:comment xml:lang="it">Inversa di usedConstraint: collega una costrizione letteraria agli eventi di creazione dell'espressione in cui è stata impiegata come dispositivo generativo; sottoproprietà di crm:P33i_was_used_by. La proprietà ha come domain desmos:LiteraryConstraint e come range lrmoo:F28_Expression_Creation.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Inverse of usedConstraint: relates a literary constraint to the expression creation events in which it was employed as a generative device; subproperty of crm:P33i_was_used_by. The property has domain desmos:LiteraryConstraint and range lrmoo:F28_Expression_Creation.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Questa proprietà collega una costrizione letteraria agli eventi di creazione dell'espressione in cui è stata impiegata come dispositivo generativo; sottoproprietà di crm:P33i_was_used_by. La proprietà ha come domain desmos:LiteraryConstraint e come range lrmoo:F28_Expression_Creation.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property relates a literary constraint to the expression creation events in which it was employed as a generative device; subproperty of crm:P33i_was_used_by. The property has domain desmos:LiteraryConstraint and range lrmoo:F28_Expression_Creation.</rdfs:comment>
         <rdfs:label xml:lang="en">is constraint used in</rdfs:label>
         <rdfs:label xml:lang="it">è costrizione usata in</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
@@ -845,8 +845,8 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/desmos/isOperationInvolvedIn">
         <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:range rdf:resource="https://w3id.org/desmos/LiteraryConstraint"/>
-        <rdfs:comment xml:lang="it">Inversa di involvesOperation: collega un'operazione procedurale alle costrizioni letterarie che la comportano. La proprietà ha come domain skos:Concept e come range desmos:LiteraryConstraint.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Inverse of involvesOperation: relates a procedural operation to the literary constraints that involve it. The property has domain skos:Concept and range desmos:LiteraryConstraint.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Inversa di involvesOperation: questa proprietà collega un'operazione procedurale alle costrizioni letterarie che la comportano. La proprietà ha come domain skos:Concept e come range desmos:LiteraryConstraint.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Inverse of involvesOperation: this property relates a procedural operation to the literary constraints that involve it. The property has domain skos:Concept and range desmos:LiteraryConstraint.</rdfs:comment>
         <rdfs:label xml:lang="en">is operation involved in</rdfs:label>
         <rdfs:label xml:lang="it">è l'operazione coinvolta in</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
@@ -857,8 +857,8 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/desmos/isOriginOf">
         <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:range rdf:resource="https://w3id.org/desmos/LiteraryConstraint"/>
-        <rdfs:comment xml:lang="it">Inversa di constraintOrigin: collega un concetto di origine (tradizione o invenzione ex novo) alle costrizioni letterarie che qualifica. La proprietà ha come domain skos:Concept e come range desmos:LiteraryConstraint.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Inverse of constraintOrigin: relates an origin concept (tradition or brand-new invention) to the literary constraints it qualifies. The property has domain skos:Concept and range desmos:LiteraryConstraint.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Questa proprietà collega un concetto di origine (tradizione o invenzione ex novo) alle costrizioni letterarie che qualifica. La proprietà ha come domain skos:Concept e come range desmos:LiteraryConstraint.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property relates an origin concept (tradition or brand-new invention) to the literary constraints it qualifies. The property has domain skos:Concept and range desmos:LiteraryConstraint.</rdfs:comment>
         <rdfs:label xml:lang="en">is origin of</rdfs:label>
         <rdfs:label xml:lang="it">è origine di</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
@@ -870,8 +870,8 @@
         <owl:inverseOf rdf:resource="https://w3id.org/desmos/revealsConstraint"/>
         <rdfs:domain rdf:resource="https://w3id.org/desmos/LiteraryConstraint"/>
         <rdfs:range rdf:resource="https://w3id.org/desmos/TextualFeature"/>
-        <rdfs:comment xml:lang="it">Collega una costrizione letteraria all'evidenza testuale che ne permette l'identificazione. La proprietà ha come domain desmos:LiteraryConstraint e come range desmos:TextualFeature.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Relates a literary constraint to the textual feature that makes it identifiable. The property has domain desmos:LiteraryConstraint and range desmos:TextualFeature.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Inversa di revealsConstraint: questa proprietà collega una costrizione letteraria all'evidenza testuale che ne permette l'identificazione. La proprietà ha come domain desmos:LiteraryConstraint e come range desmos:TextualFeature.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Inverse of revealsConstraint: this property relates a literary constraint to the textual feature that makes it identifiable. The property has domain desmos:LiteraryConstraint and range desmos:TextualFeature.</rdfs:comment>
         <rdfs:label xml:lang="en">is revealed by</rdfs:label>
         <rdfs:label xml:lang="it">è rivelata da</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
@@ -882,8 +882,8 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/desmos/revealsConstraint">
         <rdfs:domain rdf:resource="https://w3id.org/desmos/TextualFeature"/>
         <rdfs:range rdf:resource="https://w3id.org/desmos/LiteraryConstraint"/>
-        <rdfs:comment xml:lang="it">Inversa di isRevealedBy: collega un'evidenza testuale alla costrizione letteraria che rende identificabile. La proprietà ha come domain desmos:TextualFeature e come range desmos:LiteraryConstraint.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Inverse of isRevealedBy: relates a textual feature to the literary constraint it makes identifiable. The property has domain desmos:TextualFeature and range desmos:LiteraryConstraint.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Inversa di isRevealedBy: questa proprietà collega un'evidenza testuale alla costrizione letteraria che rende identificabile. La proprietà ha come domain desmos:TextualFeature e come range desmos:LiteraryConstraint.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Inverse of isRevealedBy: this property relates a textual feature to the literary constraint it makes identifiable. The property has domain desmos:TextualFeature and range desmos:LiteraryConstraint.</rdfs:comment>
         <rdfs:label xml:lang="en">reveals constraint</rdfs:label>
         <rdfs:label xml:lang="it">rivela costrizione</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
@@ -895,8 +895,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P33_used_specific_technique"/>
         <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"/>
         <rdfs:range rdf:resource="https://w3id.org/desmos/LiteraryConstraint"/>
-        <rdfs:comment xml:lang="it">Collega un evento di creazione dell'espressione alla costrizione letteraria impiegata come dispositivo generativo; sottoproprietà di crm:P33_used_specific_technique. La proprietà ha come domain lrmoo:F28_Expression_Creation e come range desmos:LiteraryConstraint.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Relates an expression creation event to the literary constraint employed as a generative device; subproperty of crm:P33_used_specific_technique. The property has domain lrmoo:F28_Expression_Creation and range desmos:LiteraryConstraint.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Questa proprietà collega un evento di creazione dell'espressione alla costrizione letteraria impiegata come dispositivo generativo; sottoproprietà di crm:P33_used_specific_technique. La proprietà ha come domain lrmoo:F28_Expression_Creation e come range desmos:LiteraryConstraint.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property relates an expression creation event to the literary constraint employed as a generative device; subproperty of crm:P33_used_specific_technique. The property has domain lrmoo:F28_Expression_Creation and range desmos:LiteraryConstraint.</rdfs:comment>
         <rdfs:label xml:lang="it">Usa costrizione</rdfs:label>
         <rdfs:label xml:lang="en">Uses constraint</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
@@ -1345,7 +1345,7 @@
     <owl:Class rdf:about="https://w3id.org/desmos/FormalConstraint">
         <rdfs:subClassOf rdf:resource="https://w3id.org/desmos/LiteraryConstraint"/>
         <owl:disjointWith rdf:resource="https://w3id.org/desmos/SemanticConstraint"/>
-        <rdfs:comment xml:lang="en">Constraint that intervenes primarily on the signifier. The properties that can be used with this class are desmos:constrainsFormalUnit, desmos:constraintOrigin, desmos:involvesOperation, skos:broader, skos:closeMatch, skos:inScheme, skos:narrower and skos:related.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A constraint that operates primarily at the level of the signifier. The properties that can be used with this class are desmos:constrainsFormalUnit, desmos:constraintOrigin, desmos:involvesOperation, skos:broader, skos:closeMatch, skos:inScheme, skos:narrower and skos:related.</rdfs:comment>
         <rdfs:comment xml:lang="it">Costrizione che interviene prioritariamente sul significante. Le proprietà che possono essere usate con questa classe sono desmos:constrainsFormalUnit, desmos:constraintOrigin, desmos:involvesOperation, skos:broader, skos:closeMatch, skos:inScheme, skos:narrower e skos:related.</rdfs:comment>
         <rdfs:label xml:lang="it">Costrizione formale</rdfs:label>
         <rdfs:label xml:lang="en">Formal constraint</rdfs:label>
@@ -1356,8 +1356,8 @@
 
     <owl:Class rdf:about="https://w3id.org/desmos/VisualConstraint">
         <rdfs:subClassOf rdf:resource="https://w3id.org/desmos/FormalConstraint"/>
-        <rdfs:comment xml:lang="en">Visual Constraint intervening on the visual or typographic arrangement of the text, where the spatial layout of letters/words on the page is itself part of the rule. The properties that can be used with this class are desmos:constrainsFormalUnit, desmos:constraintOrigin, desmos:involvesOperation, skos:closeMatch, skos:inScheme and skos:related.</rdfs:comment>
-        <rdfs:comment xml:lang="it">Costrizione visiva che interviene sulla disposizione visiva o tipografica del testo, in cui l'impaginazione spaziale di lettere/parole sulla pagina è essa stessa parte della regola. Le proprietà che possono essere usate con questa classe sono desmos:constrainsFormalUnit, desmos:constraintOrigin, desmos:involvesOperation, skos:closeMatch, skos:inScheme e skos:related.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Constraint that intervenes on the visual or typographic arrangement of the text, where the spatial layout of letters/words on the page is itself part of the rule. The properties that can be used with this class are desmos:constrainsFormalUnit, desmos:constraintOrigin, desmos:involvesOperation, skos:closeMatch, skos:inScheme and skos:related.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Costrizione che interviene sulla disposizione visiva o tipografica del testo, in cui l'impaginazione spaziale di lettere/parole sulla pagina è essa stessa parte della regola. Le proprietà che possono essere usate con questa classe sono desmos:constrainsFormalUnit, desmos:constraintOrigin, desmos:involvesOperation, skos:closeMatch, skos:inScheme e skos:related.</rdfs:comment>
         <rdfs:label xml:lang="it">Costrizione visiva</rdfs:label>
         <rdfs:label xml:lang="en">Visual constraint</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
@@ -1380,7 +1380,7 @@
     <owl:Class rdf:about="https://w3id.org/desmos/SemanticConstraint">
         <rdfs:subClassOf rdf:resource="https://w3id.org/desmos/LiteraryConstraint"/>
         <owl:disjointWith rdf:resource="https://w3id.org/desmos/FormalConstraint"/>
-        <rdfs:comment xml:lang="en">Constraint that intervenes primarily on the signified. The properties that can be used with this class are desmos:constrainsSemanticUnit, desmos:constraintOrigin, desmos:involvesOperation, skos:inScheme and skos:related.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A constraint that operates primarily at the level of the signified. The properties that can be used with this class are desmos:constrainsSemanticUnit, desmos:constraintOrigin, desmos:involvesOperation, skos:inScheme and skos:related.</rdfs:comment>
         <rdfs:comment xml:lang="it">Costrizione che interviene prioritariamente sul significato. Le proprietà che possono essere usate con questa classe sono desmos:constrainsSemanticUnit, desmos:constraintOrigin, desmos:involvesOperation, skos:inScheme e skos:related.</rdfs:comment>
         <rdfs:label xml:lang="it">Costrizione semantica</rdfs:label>
         <rdfs:label xml:lang="en">Semantic constraint</rdfs:label>
@@ -1391,8 +1391,8 @@
 
     <owl:Class rdf:about="https://w3id.org/desmos/TextualFeature">
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"/>
-        <rdfs:comment xml:lang="it">Caratteristica osservabile dell’espressione che può rendere leggibile una costrizione. In DeSMòS è intesa come evidenza intratestuale: una traccia testuale che supporta l’identificazione della costrizione, senza implicare di per sé sufficienza o necessità. Le proprietà che possono essere usate con questa classe sono crm:P3_has_note, desmos:isFeatureOf e desmos:revealsConstraint.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Observable feature of an expression that may make a constraint legible. In DeSMòS it is treated as intratextual evidence: a textual trace supporting the identification of a constraint, without implying necessity or sufficiency by itself. The properties that can be used with this class are crm:P3_has_note, desmos:isFeatureOf and desmos:revealsConstraint.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Caratteristica osservabile di un'espressione testuale che può indicare la presenza di una costrizione letteraria. In DeSMòS è intesa come evidenza intratestuale: una traccia testuale che supporta l’identificazione della costrizione, senza implicare di per sé sufficienza o necessità. Le proprietà che possono essere usate con questa classe sono crm:P3_has_note, desmos:isFeatureOf e desmos:revealsConstraint.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An observable feature of a textual expression that may indicate the presence of a literary constraint. In DeSMòS it is treated as intratextual evidence: a textual trace supporting the identification of a constraint, without implying necessity or sufficiency by itself. The properties that can be used with this class are crm:P3_has_note, desmos:isFeatureOf and desmos:revealsConstraint.</rdfs:comment>
         <rdfs:label xml:lang="it">Caratteristica testuale</rdfs:label>
         <rdfs:label xml:lang="en">Textual feature</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
