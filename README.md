@@ -41,7 +41,6 @@ desmos/
 │   │   └── oops-report.pdf
 │   └── shacl/
 │       ├── shacl.ttl
-│       └── validation-report.ttl
 ├── img/
 │   ├── 1.png
 │   ├── 2.png
@@ -58,7 +57,6 @@ desmos/
 * **`data/rdf/corpus.ttl`**: RDF data for the corpus used as the DeSMòS case study, serialized in Turtle.
 * **`data/csv/`**: source tabular data used to populate the knowledge base; the RDF datasets in `data/rdf/` were generated from these files.
 * **`evaluation/shacl/shacl.ttl`**: SHACL shapes used to validate `data/rdf/concept.ttl` and `data/rdf/corpus.ttl` against the constraints of the DeSMòS ontology.
-* **`evaluation/shacl/validation-report.ttl`**: RDF validation report produced by the SHACL assessment.
 * **`evaluation/oops/oops-report.pdf`**: report of the ontology evaluation performed with OOPS! (OntOlogy Pitfall Scanner!).
 * **`evaluation/oops/README.md`**: documentation and assessment of the pitfalls identified by OOPS!.
 * **`img/`**: graphical documentation of the ontology and its main modeling components.
