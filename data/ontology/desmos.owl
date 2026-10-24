@@ -1390,6 +1390,7 @@
     <!-- https://w3id.org/desmos/TextualFeature -->
 
     <owl:Class rdf:about="https://w3id.org/desmos/TextualFeature">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"/>
         <rdfs:comment xml:lang="it">Caratteristica osservabile dell’espressione che può rendere leggibile una costrizione. In DeSMòS è intesa come evidenza intratestuale: una traccia testuale che supporta l’identificazione della costrizione, senza implicare di per sé sufficienza o necessità.</rdfs:comment>
         <rdfs:comment xml:lang="en">Observable feature of an expression that may make a constraint legible. In DeSMòS it is treated as intratextual evidence: a textual trace supporting the identification of a constraint, without implying necessity or sufficiency by itself.</rdfs:comment>
         <rdfs:label xml:lang="it">Caratteristica testuale</rdfs:label>

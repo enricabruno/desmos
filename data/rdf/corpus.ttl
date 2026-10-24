@@ -2416,7 +2416,8 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_32> a lrmoo:F2_Expression ;
 	dcterms:title "Le confessioni di italiano. Peccati di lingua"^^xsd:string ;
-	lrmoo:R15_has_fragment <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_32_addomine> ,
+	lrmoo:R15_has_fragment <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_32> ,
+		<https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_32_addomine> ,
 		<https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_32_spinelli_a> ,
 		<https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_32_spinelli_b> ;
 	rdfs:seeAlso <https://www.oplepo.com/copia-di-p36> ;
@@ -2449,7 +2450,8 @@ desmos:vowel_slide_retrograde a desmos:FormalConstraint ;
 
 <https://w3id.org/desmos/oplepiana/expression/e_plaquette_34> a lrmoo:F2_Expression ;
 	dcterms:title "A Georges Perec"^^xsd:string ;
-	lrmoo:R15_has_fragment <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_34_albani_a> ,
+	lrmoo:R15_has_fragment <https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_34> ,
+		<https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_34_albani_a> ,
 		<https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_34_albani_b> ,
 		<https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_34_aragona> ,
 		<https://w3id.org/desmos/oplepiana/ling_obj/ling_obj_34_carrese> ,
