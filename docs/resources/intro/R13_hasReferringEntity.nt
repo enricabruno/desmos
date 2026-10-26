@@ -1,0 +1,21 @@
+<https://w3id.org/lso/intro/beta202506#R13_hasReferringEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "In DeSMòS, it identifies the hypertextual entity of an intertextual relation: the whole expression or, when the relation can be localised, a specific passage of the hypertext. The original property has domain intro:INT3_Interrelation and range the union of lrmoo:F1_Work, crm:E73_Information_Object, intro:INT1_Passage, intro:INT2_ActualizationOfFeature and intro:INT6_Architext. In DeSMòS, the same property has domain intro:INT31_IntertextualRelation and range lrmoo:F2_Expression or intro:INT21_TextPassage."@en .
+<https://w3id.org/lso/intro/beta202506#R13_hasReferringEntity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lso/intro/beta202506#INT3_Interrelation> .
+_:N68e9e0231c5f411b8c29f0290c98a2a2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lso/intro/beta202506#INT6_Architext> .
+_:N75b54eeabe2341e8babc365b545afd7e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lso/intro/beta202506#INT2_ActualizationOfFeature> .
+_:N75b54eeabe2341e8babc365b545afd7e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N68e9e0231c5f411b8c29f0290c98a2a2 .
+_:N68e9e0231c5f411b8c29f0290c98a2a2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Nf5aacba359594da3ba2d4cb102b27105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> .
+<https://w3id.org/lso/intro/beta202506#R13_hasReferringEntity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lso/intro/beta202506#> .
+<https://w3id.org/lso/intro/beta202506#R13_hasReferringEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N6393be91e22943cc81ba80ed06556ea5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nf5aacba359594da3ba2d4cb102b27105 .
+<https://w3id.org/lso/intro/beta202506#R13_hasReferringEntity> <http://www.w3.org/2000/01/rdf-schema#range> _:N5870764855854f4a9e2c79cc07e1eccf .
+_:N5870764855854f4a9e2c79cc07e1eccf <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:N5870764855854f4a9e2c79cc07e1eccf <http://www.w3.org/2002/07/owl#unionOf> _:N6393be91e22943cc81ba80ed06556ea5 .
+<https://w3id.org/lso/intro/beta202506#R13_hasReferringEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "In DeSMòS identifica l'entità ipertestuale di una relazione intertestuale: l'intera espressione o, se la relazione è localizzabile, un passaggio specifico dell'ipertesto. La proprietà originale ha come domain intro:INT3_Interrelation e come range l'unione di lrmoo:F1_Work, crm:E73_Information_Object, intro:INT1_Passage, intro:INT2_ActualizationOfFeature e intro:INT6_Architext. In DeSMòS la stessa proprietà ha come domain intro:INT31_IntertextualRelation e come range lrmoo:F2_Expression o intro:INT21_TextPassage."@it .
+<https://w3id.org/lso/intro/beta202506#R13_hasReferringEntity> <http://www.w3.org/2000/01/rdf-schema#label> "R13 has referring entity"@en .
+_:N6393be91e22943cc81ba80ed06556ea5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://iflastandards.info/ns/lrm/lrmoo/F1_Work> .
+_:Nf8b4490a135f40c89670df7ad1999390 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N75b54eeabe2341e8babc365b545afd7e .
+_:Nf5aacba359594da3ba2d4cb102b27105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nf8b4490a135f40c89670df7ad1999390 .
+_:Nf8b4490a135f40c89670df7ad1999390 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lso/intro/beta202506#INT1_Passage> .
+<https://w3id.org/lso/intro/beta202506#R13_hasReferringEntity> <http://www.w3.org/2000/01/rdf-schema#label> "R13 ha entità referente"@it .
+<https://w3id.org/lso/intro/beta202506#R13_hasReferringEntity> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/lso/intro/beta202506#R13i_isReferringEntity> .

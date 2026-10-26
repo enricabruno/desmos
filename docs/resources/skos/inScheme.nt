@@ -1,0 +1,7 @@
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2000/01/rdf-schema#label> "nello schema"@it .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2000/01/rdf-schema#label> "in scheme"@en .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "In DeSMòS, it indicates the concept scheme to which a concept belongs. The original property has no declared domain and range skos:ConceptScheme. In DeSMòS, the same property has domain skos:Concept and range skos:ConceptScheme."@en .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2004/02/skos/core#> .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "In DeSMòS indica lo schema concettuale cui appartiene un concetto. La proprietà originale ha nessun domain dichiarato e come range skos:ConceptScheme. In DeSMòS la stessa proprietà ha come domain skos:Concept e come range skos:ConceptScheme."@it .

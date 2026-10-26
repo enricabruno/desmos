@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "http://www.w3.org/2000/01/rdf-schema#label",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A human-readable name for the entity."
+      },
+      {
+        "@language": "it",
+        "@value": "Un nome leggibile per l'entità."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "etichetta"
+      },
+      {
+        "@language": "en",
+        "@value": "label"
+      }
+    ]
+  }
+]

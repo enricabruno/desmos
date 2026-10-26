@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://w3id.org/desmos/SemanticConstraint",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A constraint that operates primarily at the level of the signified. The properties that can be used with this class are desmos:constrainsSemanticUnit, desmos:constraintOrigin, desmos:involvesOperation, skos:inScheme and skos:related."
+      },
+      {
+        "@language": "it",
+        "@value": "Costrizione che interviene prioritariamente sul significato. Le proprietà che possono essere usate con questa classe sono desmos:constrainsSemanticUnit, desmos:constraintOrigin, desmos:involvesOperation, skos:inScheme e skos:related."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Semantic constraint"
+      },
+      {
+        "@language": "it",
+        "@value": "Costrizione semantica"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/desmos/LiteraryConstraint"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "https://w3id.org/desmos/FormalConstraint"
+      }
+    ]
+  }
+]

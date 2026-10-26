@@ -1,0 +1,9 @@
+<http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.w3.org/2000/01/rdf-schema#label> "corrispondenza vicina"@it .
+<http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2004/02/skos/core#> .
+<http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.w3.org/2000/01/rdf-schema#comment> "In DeSMòS allinea un concetto DeSMòS a un concetto esterno semanticamente vicino ma non equivalente. La proprietà originale ha come domain skos:Concept (ereditato da skos:semanticRelation) e come range skos:Concept (ereditato da skos:semanticRelation). In DeSMòS la stessa proprietà ha come domain skos:Concept e come range skos:Concept."@it .
+<http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.w3.org/2000/01/rdf-schema#label> "close match"@en .
+<http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.w3.org/2000/01/rdf-schema#comment> "In DeSMòS, it aligns a DeSMòS concept with a semantically close but non-equivalent external concept. The original property has domain skos:Concept (inherited from skos:semanticRelation) and range skos:Concept (inherited from skos:semanticRelation). In DeSMòS, the same property has domain skos:Concept and range skos:Concept."@en .

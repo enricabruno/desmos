@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/P3_has_note",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, P3 has note is used to associate a linguistic object or textual feature with an additional textual description expressed as a literal."
+      },
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, P3 has note è utilizzata per associare a un oggetto linguistico o a una caratteristica testuale una descrizione testuale aggiuntiva espressa come letterale."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has note"
+      },
+      {
+        "@language": "it",
+        "@value": "ha nota"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ]
+  }
+]

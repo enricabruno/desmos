@@ -1,0 +1,9 @@
+<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.cidoc-crm.org/cidoc-crm/P14i_performed> .
+<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <http://www.w3.org/2000/01/rdf-schema#comment> "In DeSMòS, it relates an expression creation event to its author or authors. The original property has domain crm:E7_Activity and range crm:E39_Actor. In DeSMòS, the same property has domain lrmoo:F28_Expression_Creation and range crm:E39_Actor."@en .
+<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <http://www.w3.org/2000/01/rdf-schema#comment> "In DeSMòS collega un evento di creazione dell'espressione al suo autore o ai suoi autori. La proprietà originale ha come domain crm:E7_Activity e come range crm:E39_Actor. In DeSMòS la stessa proprietà ha come domain lrmoo:F28_Expression_Creation e come range crm:E39_Actor."@it .
+<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <http://www.w3.org/2000/01/rdf-schema#label> "P14 eseguito da"@it .
+<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.cidoc-crm.org/cidoc-crm/> .
+<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/cidoc-crm/E39_Actor> .
+<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <http://www.w3.org/2000/01/rdf-schema#label> "P14 carried out by"@en .
+<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> .

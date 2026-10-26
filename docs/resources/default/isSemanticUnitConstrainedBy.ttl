@@ -1,0 +1,15 @@
+@prefix : <https://w3id.org/desmos/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:isSemanticUnitConstrainedBy a owl:ObjectProperty ;
+    rdfs:label "is semantic unit constrained by"@en,
+        "è unità semantica vincolata da"@it ;
+    rdfs:comment "Inverse of constrainsSemanticUnit: relates a unit of the content plane to the semantic constraints that determine it. The property has domain skos:Concept and range desmos:SemanticConstraint."@en,
+        "Inversa di constrainsSemanticUnit: collega un'unità del piano del contenuto alle costrizioni semantiche che la determinano. La proprietà ha come domain skos:Concept e come range desmos:SemanticConstraint."@it ;
+    rdfs:domain skos:Concept ;
+    rdfs:isDefinedBy : ;
+    rdfs:range :SemanticConstraint ;
+    owl:inverseOf :constrainsSemanticUnit .
+

@@ -1,0 +1,13 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+lrmoo:F3_Manifestation a owl:Class ;
+    rdfs:label "F3 Manifestation"@en,
+        "F3 Manifestazione"@it ;
+    rdfs:comment "In DeSMòS, F3 Manifestation is used to represent the published or digital manifestation embodying an expression and carrying information about its publication and textual location. The properties that can be used with this class are crm:P148_has_component, crm:P148i_is_component_of, dcterms:issued, lrmoo:R4_embodies and schema:pagination."@en,
+        "In DeSMòS, F3 Manifestation è utilizzata per rappresentare la manifestazione editoriale o digitale che incorpora un'espressione e alla quale sono associate informazioni relative alla pubblicazione e alla collocazione del testo. Le proprietà che possono essere usate con questa classe sono crm:P148_has_component, crm:P148i_is_component_of, dcterms:issued, lrmoo:R4_embodies e schema:pagination."@it ;
+    rdfs:isDefinedBy lrmoo: ;
+    rdfs:subClassOf crm:E73_Information_Object .
+

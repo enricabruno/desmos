@@ -1,0 +1,70 @@
+[
+  {
+    "@id": "https://w3id.org/lso/intro/beta202506#R13i_isReferringEntity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Inversa di R13 has referring entity: in DeSMòS collega un'entità ipertestuale (espressione o passaggio) alla relazione intertestuale in cui è l'entità referente. La proprietà originale ha come domain l'unione di lrmoo:F1_Work, crm:E73_Information_Object, intro:INT1_Passage, intro:INT2_ActualizationOfFeature e intro:INT6_Architext e come range intro:INT3_Interrelation. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression o intro:INT21_TextPassage e come range intro:INT31_IntertextualRelation."
+      },
+      {
+        "@language": "en",
+        "@value": "Inverse of R13 has referring entity: in DeSMòS, it relates a hypertextual entity (expression or passage) to the intertextual relation in which it is the referring entity. The original property has domain the union of lrmoo:F1_Work, crm:E73_Information_Object, intro:INT1_Passage, intro:INT2_ActualizationOfFeature and intro:INT6_Architext and range intro:INT3_Interrelation. In DeSMòS, the same property has domain lrmoo:F2_Expression or intro:INT21_TextPassage and range intro:INT31_IntertextualRelation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:N348636469c27458e8186f4ec3446c83a"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "R13i is referring entity of"
+      },
+      {
+        "@language": "it",
+        "@value": "R13i è entità referente di"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#INT3_Interrelation"
+      }
+    ]
+  },
+  {
+    "@id": "_:N348636469c27458e8186f4ec3446c83a",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://iflastandards.info/ns/lrm/lrmoo/F1_Work"
+          },
+          {
+            "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+          },
+          {
+            "@id": "https://w3id.org/lso/intro/beta202506#INT1_Passage"
+          },
+          {
+            "@id": "https://w3id.org/lso/intro/beta202506#INT2_ActualizationOfFeature"
+          },
+          {
+            "@id": "https://w3id.org/lso/intro/beta202506#INT6_Architext"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.cidoc-crm.org/cidoc-crm/E39_Actor">
+    <rdfs:label xml:lang="it">E39 Attore</rdfs:label>
+    <rdfs:label xml:lang="en">E39 Actor</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">In DeSMòS, E39 Actor is used to represent authors, editors, and collective agents involved in the creation and documentation of textual expressions.</rdfs:comment>
+    <rdfs:comment xml:lang="it">In DeSMòS, E39 Actor è utilizzata per rappresentare autori, curatori e soggetti collettivi coinvolti nella creazione e nella documentazione delle espressioni testuali.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object">
+    <rdfs:label xml:lang="en">E33 Linguistic Object</rdfs:label>
+    <rdfs:label xml:lang="it">E33 Oggetto Linguistico</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+    <rdfs:comment xml:lang="en">In DeSMòS, E33 Linguistic Object is used to identify paratextual passages (epitextual or peritextual) in which the author or editor of the volume declares the use of a literary constraint. The properties that can be used with this class are crm:P129_is_about, crm:P3_has_note, crm:P67_refers_to and prov:wasAttributedTo.</rdfs:comment>
+    <rdfs:comment xml:lang="it">In DeSMòS, E33 Linguistic Object è utilizzata per identificare passaggi paratestuali (epitestuali o peritestuali) nei quali l'autore o il curatore del volume dichiara l'utilizzo di una costrizione letteraria. Le proprietà che possono essere usate con questa classe sono crm:P129_is_about, crm:P3_has_note, crm:P67_refers_to e prov:wasAttributedTo.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>

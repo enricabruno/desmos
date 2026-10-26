@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by">
+    <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P14i_performed"/>
+    <rdfs:comment xml:lang="en">In DeSMòS, it relates an expression creation event to its author or authors. The original property has domain crm:E7_Activity and range crm:E39_Actor. In DeSMòS, the same property has domain lrmoo:F28_Expression_Creation and range crm:E39_Actor.</rdfs:comment>
+    <rdfs:comment xml:lang="it">In DeSMòS collega un evento di creazione dell'espressione al suo autore o ai suoi autori. La proprietà originale ha come domain crm:E7_Activity e come range crm:E39_Actor. In DeSMòS la stessa proprietà ha come domain lrmoo:F28_Expression_Creation e come range crm:E39_Actor.</rdfs:comment>
+    <rdfs:label xml:lang="it">P14 eseguito da</rdfs:label>
+    <rdfs:label xml:lang="en">P14 carried out by</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+  </rdf:Description>
+</rdf:RDF>

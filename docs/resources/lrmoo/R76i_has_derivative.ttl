@@ -1,0 +1,13 @@
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+lrmoo:R76i_has_derivative a owl:ObjectProperty ;
+    rdfs:label "R76i has derivative"@en,
+        "R76i ha derivato"@it ;
+    rdfs:comment "Inverse of R76 is derivative of: in DeSMòS, it relates a source expression to the expressions derived from it. The original property has domain lrmoo:F2_Expression and range lrmoo:F2_Expression. In DeSMòS, the same property has domain lrmoo:F2_Expression and range lrmoo:F2_Expression."@en,
+        "Inversa di R76 is derivative of: in DeSMòS collega un'espressione fonte alle espressioni che ne derivano. La proprietà originale ha come domain lrmoo:F2_Expression e come range lrmoo:F2_Expression. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression e come range lrmoo:F2_Expression."@it ;
+    rdfs:domain lrmoo:F2_Expression ;
+    rdfs:isDefinedBy lrmoo: ;
+    rdfs:range lrmoo:F2_Expression .
+

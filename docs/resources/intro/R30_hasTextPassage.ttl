@@ -1,0 +1,17 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix intro: <https://w3id.org/lso/intro/beta202506#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+intro:R30_hasTextPassage a owl:ObjectProperty ;
+    rdfs:label "R30 has text passage"@en,
+        "R30 ha passaggio testuale"@it ;
+    rdfs:comment "In DeSMòS, it relates an expression to a textual passage selected within it, when an intertextual relation concerns specific portions of the text. The original property has domain the union of crm:E73_Information_Object and intro:INT1_Passage and range intro:INT21_TextPassage. In DeSMòS, the same property has domain lrmoo:F2_Expression and range intro:INT21_TextPassage."@en,
+        "In DeSMòS collega un'espressione a un passaggio testuale selezionato al suo interno, quando la relazione intertestuale riguarda porzioni specifiche del testo. La proprietà originale ha come domain l'unione di crm:E73_Information_Object e intro:INT1_Passage e come range intro:INT21_TextPassage. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression e come range intro:INT21_TextPassage."@it ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( crm:E73_Information_Object intro:INT1_Passage ) ] ;
+    rdfs:isDefinedBy intro: ;
+    rdfs:range intro:INT21_TextPassage ;
+    owl:inverseOf intro:R30i_isTextPassageOf .
+

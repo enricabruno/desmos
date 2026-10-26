@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "http://www.w3.org/2004/02/skos/core#topConceptOf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Inversa di skos:hasTopConcept: in DeSMòS collega un concetto allo schema di cui è punto di accesso gerarchico principale. La proprietà originale ha come domain skos:Concept e come range skos:ConceptScheme. In DeSMòS la stessa proprietà ha come domain skos:Concept e come range skos:ConceptScheme."
+      },
+      {
+        "@language": "en",
+        "@value": "Inverse of skos:hasTopConcept: in DeSMòS, it relates a concept to the scheme of which it is a main hierarchical entry point. The original property has domain skos:Concept and range skos:ConceptScheme. In DeSMòS, the same property has domain skos:Concept and range skos:ConceptScheme."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "concetto principale di"
+      },
+      {
+        "@language": "en",
+        "@value": "top concept of"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+      }
+    ]
+  }
+]

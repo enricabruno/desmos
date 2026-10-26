@@ -1,0 +1,13 @@
+@prefix : <https://w3id.org/desmos/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:FormalConstraintScheme a owl:NamedIndividual,
+        skos:ConceptScheme ;
+    rdfs:label "Formal Constraint Scheme"@en,
+        "Schema delle costrizioni formali"@it ;
+    rdfs:comment "Concept scheme collecting formal constraints, which intervene primarily on the signifier of the text."@en,
+        "Schema concettuale che raccoglie le costrizioni formali, che intervengono prioritariamente sul significante del testo."@it ;
+    rdfs:isDefinedBy : .
+

@@ -1,0 +1,12 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+crm:E28_Conceptual_Object a owl:Class ;
+    rdfs:label "E28 Conceptual Object"@en,
+        "E28 Oggetto Concettuale"@it ;
+    rdfs:comment "In DeSMòS, E28 Conceptual Object is the common superclass of the non-material entities in the model: through E89 Propositional Object and E90 Symbolic Object it subsumes information objects (works, expressions, linguistic objects, passages); it is also the direct superclass of E55 Type, desmos:TextualFeature and intro:INT3_Interrelation (the reified intertextual relations), as well as of intro:INT2_ActualizationOfFeature and intro:INT6_Architext, which are referenced only in the original ranges of R12 and R13."@en,
+        "In DeSMòS, E28 Conceptual Object è la superclasse comune delle entità non materiali del modello: attraverso E89 Propositional Object ed E90 Symbolic Object comprende gli oggetti informativi (opere, espressioni, oggetti linguistici, passaggi); è inoltre superclasse diretta di E55 Type, desmos:TextualFeature e intro:INT3_Interrelation (le relazioni intertestuali reificate), nonché di intro:INT2_ActualizationOfFeature e intro:INT6_Architext, referenziate solo nei range originali di R12 e R13."@it ;
+    rdfs:isDefinedBy crm: ;
+    rdfs:subClassOf crm:E70_Thing .
+

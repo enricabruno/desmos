@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
+    <rdfs:comment xml:lang="en">A string identifying the version of this ontology.</rdfs:comment>
+    <rdfs:comment xml:lang="it">Una stringa che identifica la versione di questa ontologia.</rdfs:comment>
+    <rdfs:label xml:lang="en">version info</rdfs:label>
+    <rdfs:label xml:lang="it">informazioni sulla versione</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+</rdf:RDF>

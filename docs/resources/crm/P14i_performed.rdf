@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.cidoc-crm.org/cidoc-crm/P14i_performed">
+    <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+    <rdfs:comment xml:lang="it">Inversa di P14 carried out by: in DeSMòS collega un autore agli eventi di creazione dell'espressione che ha realizzato. La proprietà originale ha come domain crm:E39_Actor e come range crm:E7_Activity. In DeSMòS la stessa proprietà ha come domain crm:E39_Actor e come range lrmoo:F28_Expression_Creation.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Inverse of P14 carried out by: in DeSMòS, it relates an author to the expression creation events they carried out. The original property has domain crm:E39_Actor and range crm:E7_Activity. In DeSMòS, the same property has domain crm:E39_Actor and range lrmoo:F28_Expression_Creation.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    <rdfs:label xml:lang="it">P14i ha eseguito</rdfs:label>
+    <rdfs:label xml:lang="en">P14i performed</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+</rdf:RDF>

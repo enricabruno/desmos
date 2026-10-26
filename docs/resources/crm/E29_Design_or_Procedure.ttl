@@ -1,0 +1,12 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+crm:E29_Design_or_Procedure a owl:Class ;
+    rdfs:label "E29 Design or Procedure"@en,
+        "E29 Progetto o Procedura"@it ;
+    rdfs:comment "In DeSMòS, E29 Design or Procedure provides the procedural category under which desmos:LiteraryConstraint is modelled, as a procedure applied during the creation of an expression."@en,
+        "In DeSMòS, E29 Design or Procedure fornisce la categoria procedurale entro cui è modellata desmos:LiteraryConstraint, intesa come procedura applicata durante la creazione di un'espressione."@it ;
+    rdfs:isDefinedBy crm: ;
+    rdfs:subClassOf crm:E73_Information_Object .
+

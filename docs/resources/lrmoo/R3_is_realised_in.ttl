@@ -1,0 +1,14 @@
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+lrmoo:R3_is_realised_in a owl:ObjectProperty ;
+    rdfs:label "R3 is realised in"@en,
+        "R3 è realizzato in"@it ;
+    rdfs:comment "In DeSMòS, it relates a work to the textual expression that realises it. The original property has domain lrmoo:F1_Work and range lrmoo:F2_Expression. In DeSMòS, the same property has domain lrmoo:F1_Work and range lrmoo:F2_Expression."@en,
+        "In DeSMòS collega un'opera all'espressione testuale che la realizza. La proprietà originale ha come domain lrmoo:F1_Work e come range lrmoo:F2_Expression. In DeSMòS la stessa proprietà ha come domain lrmoo:F1_Work e come range lrmoo:F2_Expression."@it ;
+    rdfs:domain lrmoo:F1_Work ;
+    rdfs:isDefinedBy lrmoo: ;
+    rdfs:range lrmoo:F2_Expression ;
+    owl:inverseOf lrmoo:R3i_realises .
+

@@ -1,0 +1,34 @@
+[
+  {
+    "@id": "https://w3id.org/desmos/SemanticUnitScheme",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Schema concettuale che definisce le unità discrete del piano del contenuto (personaggio, spazio, tempo) determinate da una costrizione di tipo semantico. Atteso come valore del range di desmos:constrainsSemanticUnit."
+      },
+      {
+        "@language": "en",
+        "@value": "Concept scheme defining the discrete units of the content plane (e.g., character, space, time) determined by a semantic constraint. Expected as the range value of desmos:constrainsSemanticUnit."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Semantic Unit Scheme"
+      },
+      {
+        "@language": "it",
+        "@value": "Schema delle unità semantiche"
+      }
+    ]
+  }
+]

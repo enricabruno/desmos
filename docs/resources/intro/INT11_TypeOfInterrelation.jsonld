@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "https://w3id.org/lso/intro/beta202506#INT11_TypeOfInterrelation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, INT11 Type of Interrelation è utilizzata come categoria generale per i tipi che qualificano le relazioni intertestuali rappresentate attraverso INTRO."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, INT11 Type of Interrelation is used as a general category for the types that qualify intertextual relations represented through INTRO."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "INT11 Tipo di interrelazione"
+      },
+      {
+        "@language": "en",
+        "@value": "INT11 Type of Interrelation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  }
+]

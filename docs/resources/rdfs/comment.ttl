@@ -1,0 +1,10 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+rdfs:comment a owl:AnnotationProperty ;
+    rdfs:label "comment"@en,
+        "commento"@it ;
+    rdfs:comment "A textual description of the entity."@en,
+        "Una descrizione testuale dell'entità."@it ;
+    rdfs:isDefinedBy rdfs: .
+

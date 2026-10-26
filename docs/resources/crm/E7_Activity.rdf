@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.cidoc-crm.org/cidoc-crm/E7_Activity">
+    <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+    <rdfs:label xml:lang="it">E7 Attività</rdfs:label>
+    <rdfs:label xml:lang="en">E7 Activity</rdfs:label>
+    <rdfs:comment xml:lang="it">In DeSMòS, E7 Activity è referenziata come domain originale di P14 carried out by e P33 used specific technique. lrmoo:F28_Expression_Creation ne è dichiarata sottoclasse diretta, abbreviando la catena ufficiale F28 Expression Creation ⊑ E65 Creation ⊑ E7 Activity (LRMoo 1.0; CIDOC CRM 7.1.3).</rdfs:comment>
+    <rdfs:comment xml:lang="en">In DeSMòS, E7 Activity is referenced as the original domain of P14 carried out by and P33 used specific technique. lrmoo:F28_Expression_Creation is declared as its direct subclass, abbreviating the official chain F28 Expression Creation ⊑ E65 Creation ⊑ E7 Activity (LRMoo 1.0; CIDOC CRM 7.1.3).</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+  </rdf:Description>
+</rdf:RDF>

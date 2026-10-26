@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/lso/intro/beta202506#INT1_Passage">
+    <rdfs:label xml:lang="it">INT1 Passaggio</rdfs:label>
+    <rdfs:label xml:lang="en">INT1 Passage</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">In DeSMòS, INT1 Passage provides the general category for intro:INT21_TextPassage, used to represent textual passages involved in intertextual relations.</rdfs:comment>
+    <rdfs:comment xml:lang="it">In DeSMòS, INT1 Passage fornisce la categoria generale per intro:INT21_TextPassage, utilizzata per rappresentare i passaggi testuali coinvolti nelle relazioni intertestuali.</rdfs:comment>
+  </rdf:Description>
+</rdf:RDF>

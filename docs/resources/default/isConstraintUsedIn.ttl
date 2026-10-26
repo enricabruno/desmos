@@ -1,0 +1,17 @@
+@prefix : <https://w3id.org/desmos/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:isConstraintUsedIn a owl:ObjectProperty ;
+    rdfs:label "is constraint used in"@en,
+        "è costrizione usata in"@it ;
+    rdfs:comment "This property relates a literary constraint to the expression creation events in which it was employed as a generative device; subproperty of crm:P33i_was_used_by. The property has domain desmos:LiteraryConstraint and range lrmoo:F28_Expression_Creation."@en,
+        "Questa proprietà collega una costrizione letteraria agli eventi di creazione dell'espressione in cui è stata impiegata come dispositivo generativo; sottoproprietà di crm:P33i_was_used_by. La proprietà ha come domain desmos:LiteraryConstraint e come range lrmoo:F28_Expression_Creation."@it ;
+    rdfs:domain :LiteraryConstraint ;
+    rdfs:isDefinedBy : ;
+    rdfs:range lrmoo:F28_Expression_Creation ;
+    rdfs:subPropertyOf crm:P33i_was_used_by ;
+    owl:inverseOf :usedConstraint .
+

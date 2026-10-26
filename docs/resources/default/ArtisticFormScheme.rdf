@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/desmos/ArtisticFormScheme">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <rdfs:label xml:lang="it">Schema delle forme artistiche</rdfs:label>
+    <rdfs:label xml:lang="en">Artistic Form Scheme</rdfs:label>
+    <rdfs:comment xml:lang="it">Schema concettuale che definisce la forma artistica di espressioni non linguistiche (arte visuale, musica). Utilizzato per qualificare istanze di lrmoo:F2_Expression tramite crm:P2_has_type, in complemento a desmos:LiteraryFormScheme nei casi in cui l'espressione non sia un testo.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Concept scheme defining the artistic form of non-linguistic expressions (visual art, music). Used to qualify lrmoo:F2_Expression instances via crm:P2_has_type, complementing desmos:LiteraryFormScheme where the source expression is not a text.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
+  </rdf:Description>
+</rdf:RDF>

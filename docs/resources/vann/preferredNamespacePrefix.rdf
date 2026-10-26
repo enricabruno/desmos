@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix">
+    <rdfs:label xml:lang="en">preferred namespace prefix</rdfs:label>
+    <rdfs:label xml:lang="it">prefisso preferito del namespace</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/vann/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:comment xml:lang="en">The preferred namespace prefix to use when using terms from the vocabulary in an XML document.</rdfs:comment>
+    <rdfs:comment xml:lang="it">Il prefisso preferito da usare per i termini del vocabolario.</rdfs:comment>
+  </rdf:Description>
+</rdf:RDF>

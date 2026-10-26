@@ -1,0 +1,16 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+lrmoo:R76_is_derivative_of a owl:ObjectProperty ;
+    rdfs:label "R76 is derivative of"@en,
+        "R76 è derivato di"@it ;
+    rdfs:comment "In DeSMòS, it states that an expression derives from another expression used as a source in its creation. The original property has domain lrmoo:F2_Expression and range lrmoo:F2_Expression. In DeSMòS, the same property has domain lrmoo:F2_Expression and range lrmoo:F2_Expression."@en,
+        "In DeSMòS indica che un'espressione deriva da un'altra espressione assunta come fonte nella sua creazione. La proprietà originale ha come domain lrmoo:F2_Expression e come range lrmoo:F2_Expression. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression e come range lrmoo:F2_Expression."@it ;
+    rdfs:domain lrmoo:F2_Expression ;
+    rdfs:isDefinedBy lrmoo: ;
+    rdfs:range lrmoo:F2_Expression ;
+    rdfs:subPropertyOf crm:P130_shows_features_of ;
+    owl:inverseOf lrmoo:R76i_has_derivative .
+

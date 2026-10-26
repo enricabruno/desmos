@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, skos:ConceptScheme è utilizzata per organizzare in vocabolari controllati le costrizioni letterarie e le categorie analitiche impiegate per descriverle. La proprietà che può essere usata con questa classe è skos:hasTopConcept."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, skos:ConceptScheme is used to organise literary constraints and the analytical categories used to describe them into controlled vocabularies. The property that can be used with this class is skos:hasTopConcept."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "Schema di concetti"
+      },
+      {
+        "@language": "en",
+        "@value": "Concept Scheme"
+      }
+    ]
+  }
+]

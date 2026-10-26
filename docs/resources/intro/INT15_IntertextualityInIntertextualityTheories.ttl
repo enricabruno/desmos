@@ -1,0 +1,12 @@
+@prefix intro: <https://w3id.org/lso/intro/beta202506#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+intro:INT15_IntertextualityInIntertextualityTheories a owl:Class ;
+    rdfs:label "INT15 Intertextuality in Intertextuality Theories"@en,
+        "INT15 Intertestualità nelle teorie dell'intertestualità"@it ;
+    rdfs:comment "In DeSMòS, INT15 Intertextuality in Intertextuality Theories is used to represent relation types derived from theories of intertextuality, including hypertextuality in Gérard Genette's classification."@en,
+        "In DeSMòS, INT15 Intertextuality in Intertextuality Theories è utilizzata per rappresentare tipi di relazione derivati da teorie dell'intertestualità, tra cui l'ipertestualità nella classificazione di Gérard Genette."@it ;
+    rdfs:isDefinedBy intro: ;
+    rdfs:subClassOf intro:INT11_TypeOfInterrelation .
+

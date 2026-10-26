@@ -1,0 +1,6 @@
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agente"@it .
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov#> .
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "In DeSMòS, prov:Agent is used to represent agents to whom entities or declarations are attributed, including authors, editors, collective agents and, where relevant, software systems."@en .
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "In DeSMòS, prov:Agent è utilizzata per rappresentare gli agenti ai quali vengono attribuite entità o dichiarazioni, inclusi autori, curatori, soggetti collettivi e, ove pertinente, sistemi software."@it .
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent"@en .

@@ -1,0 +1,8 @@
+<http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.cidoc-crm.org/cidoc-crm/> .
+<http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of> <http://www.w3.org/2000/01/rdf-schema#label> "P129i è oggetto di"@it .
+<http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object> .
+<http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of> <http://www.w3.org/2000/01/rdf-schema#label> "P129i is subject of"@en .
+<http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> .
+<http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of P129 is about: in DeSMòS, it relates a literary constraint to the declarations that have it as their subject. The original property has domain crm:E1_CRM_Entity and range crm:E89_Propositional_Object. In DeSMòS, the same property has domain desmos:LiteraryConstraint and range crm:E33_Linguistic_Object."@en .
+<http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of> <http://www.w3.org/2000/01/rdf-schema#comment> "Inversa di P129 is about: in DeSMòS collega una costrizione letteraria alle dichiarazioni che la hanno come argomento. La proprietà originale ha come domain crm:E1_CRM_Entity e come range crm:E89_Propositional_Object. In DeSMòS la stessa proprietà ha come domain desmos:LiteraryConstraint e come range crm:E33_Linguistic_Object."@it .
+<http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .

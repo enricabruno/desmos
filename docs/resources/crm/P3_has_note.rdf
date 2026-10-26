@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.cidoc-crm.org/cidoc-crm/P3_has_note">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:comment xml:lang="en">In DeSMòS, P3 has note is used to associate a linguistic object or textual feature with an additional textual description expressed as a literal.</rdfs:comment>
+    <rdfs:comment xml:lang="it">In DeSMòS, P3 has note è utilizzata per associare a un oggetto linguistico o a una caratteristica testuale una descrizione testuale aggiuntiva espressa come letterale.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+    <rdfs:label xml:lang="en">has note</rdfs:label>
+    <rdfs:label xml:lang="it">ha nota</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

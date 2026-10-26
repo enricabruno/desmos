@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "http://purl.org/dc/terms/bibliographicCitation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A bibliographic reference for the resource."
+      },
+      {
+        "@language": "it",
+        "@value": "Il riferimento bibliografico con cui citare la risorsa."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/dc/terms/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "bibliographic citation"
+      },
+      {
+        "@language": "it",
+        "@value": "citazione bibliografica"
+      }
+    ]
+  }
+]

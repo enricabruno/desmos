@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrower">
+    <rdfs:comment xml:lang="it">Inversa di skos:broader: in DeSMòS collega un concetto a un concetto più specifico entro gli schemi controllati dell'ontologia. La proprietà originale ha come domain skos:Concept (ereditato da skos:semanticRelation) e come range skos:Concept (ereditato da skos:semanticRelation). In DeSMòS la stessa proprietà ha come domain skos:Concept e come range skos:Concept.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Inverse of skos:broader: in DeSMòS, it relates a concept to a more specific concept within the ontology's controlled schemes. The original property has domain skos:Concept (inherited from skos:semanticRelation) and range skos:Concept (inherited from skos:semanticRelation). In DeSMòS, the same property has domain skos:Concept and range skos:Concept.</rdfs:comment>
+    <rdfs:label xml:lang="it">più specifico</rdfs:label>
+    <rdfs:label xml:lang="en">narrower</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+</rdf:RDF>

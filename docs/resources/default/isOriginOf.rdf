@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/desmos/isOriginOf">
+    <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:range rdf:resource="https://w3id.org/desmos/LiteraryConstraint"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">This property relates an origin concept (tradition or brand-new invention) to the literary constraints it qualifies. The property has domain skos:Concept and range desmos:LiteraryConstraint.</rdfs:comment>
+    <rdfs:comment xml:lang="it">Questa proprietà collega un concetto di origine (tradizione o invenzione ex novo) alle costrizioni letterarie che qualifica. La proprietà ha come domain skos:Concept e come range desmos:LiteraryConstraint.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
+    <rdfs:label xml:lang="en">is origin of</rdfs:label>
+    <rdfs:label xml:lang="it">è origine di</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

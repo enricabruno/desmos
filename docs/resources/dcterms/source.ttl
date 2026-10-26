@@ -1,0 +1,11 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+dcterms:source a owl:AnnotationProperty ;
+    rdfs:label "source"@en,
+        "fonte"@it ;
+    rdfs:comment "A related resource from which the described resource is derived."@en,
+        "Una risorsa correlata da cui deriva la risorsa corrente."@it ;
+    rdfs:isDefinedBy dcterms: .
+

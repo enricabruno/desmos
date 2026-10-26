@@ -1,0 +1,6 @@
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#label> "title"@en .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#label> "titolo"@it .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#comment> "Un nome dato alla risorsa."@it .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#comment> "A name given to the resource."@en .

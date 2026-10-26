@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.cidoc-crm.org/cidoc-crm/P2_has_type">
+    <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+    <rdfs:label xml:lang="en">P2 has type</rdfs:label>
+    <rdfs:label xml:lang="it">P2 ha tipo</rdfs:label>
+    <rdfs:comment xml:lang="it">In DeSMòS classifica un'espressione secondo la sua forma letteraria o artistica (es. prosa, poesia, poesia visiva). La proprietà originale ha come domain crm:E1_CRM_Entity e come range crm:E55_Type. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression e come range crm:E55_Type.</rdfs:comment>
+    <rdfs:comment xml:lang="en">In DeSMòS, it classifies an expression by its literary or artistic form (e.g., prose, poetry, visual poetry). The original property has domain crm:E1_CRM_Entity and range crm:E55_Type. In DeSMòS, the same property has domain lrmoo:F2_Expression and range crm:E55_Type.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+</rdf:RDF>

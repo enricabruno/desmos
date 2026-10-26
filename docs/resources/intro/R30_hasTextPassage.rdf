@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N89804f5ffb624956b59b82abfba6949a">
+    <owl:unionOf rdf:nodeID="N89b9ea964b9845ddba18be2202b50acb"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/lso/intro/beta202506#R30_hasTextPassage">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
+    <rdfs:range rdf:resource="https://w3id.org/lso/intro/beta202506#INT21_TextPassage"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/lso/intro/beta202506#R30i_isTextPassageOf"/>
+    <rdfs:comment xml:lang="it">In DeSMòS collega un'espressione a un passaggio testuale selezionato al suo interno, quando la relazione intertestuale riguarda porzioni specifiche del testo. La proprietà originale ha come domain l'unione di crm:E73_Information_Object e intro:INT1_Passage e come range intro:INT21_TextPassage. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression e come range intro:INT21_TextPassage.</rdfs:comment>
+    <rdfs:comment xml:lang="en">In DeSMòS, it relates an expression to a textual passage selected within it, when an intertextual relation concerns specific portions of the text. The original property has domain the union of crm:E73_Information_Object and intro:INT1_Passage and range intro:INT21_TextPassage. In DeSMòS, the same property has domain lrmoo:F2_Expression and range intro:INT21_TextPassage.</rdfs:comment>
+    <rdfs:domain rdf:nodeID="N89804f5ffb624956b59b82abfba6949a"/>
+    <rdfs:label xml:lang="it">R30 ha passaggio testuale</rdfs:label>
+    <rdfs:label xml:lang="en">R30 has text passage</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N89b9ea964b9845ddba18be2202b50acb">
+    <rdf:first rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+    <rdf:rest rdf:nodeID="Naea0bf1f9f814ec38fc0284538c6c0be"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Naea0bf1f9f814ec38fc0284538c6c0be">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="https://w3id.org/lso/intro/beta202506#INT1_Passage"/>
+  </rdf:Description>
+</rdf:RDF>

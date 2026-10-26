@@ -1,0 +1,56 @@
+[
+  {
+    "@id": "https://w3id.org/lso/intro/beta202506#R44_hasWording",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, R44 has wording è utilizzata per registrare come stringa la formulazione testuale esatta di un passaggio identificato mediante INT21 Text Passage."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, R44 has wording is used to record as a string the exact textual wording of a passage identified through INT21 Text Passage."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:N116fdf236e6c4da69f23441a66a56baf"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "R44 has wording"
+      },
+      {
+        "@language": "it",
+        "@value": "R44 ha formulazione"
+      }
+    ]
+  },
+  {
+    "@id": "_:N116fdf236e6c4da69f23441a66a56baf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/lso/intro/beta202506#INT16_Segment"
+          },
+          {
+            "@id": "https://w3id.org/lso/intro/beta202506#INT1_Passage"
+          }
+        ]
+      }
+    ]
+  }
+]

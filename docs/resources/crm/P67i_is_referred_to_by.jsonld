@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Inversa di P67 refers to: in DeSMòS collega un'espressione testuale alle dichiarazioni che vi fanno riferimento. La proprietà originale ha come domain crm:E1_CRM_Entity e come range crm:E89_Propositional_Object. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression e come range crm:E33_Linguistic_Object."
+      },
+      {
+        "@language": "en",
+        "@value": "Inverse of P67 refers to: in DeSMòS, it relates a textual expression to the declarations referring to it. The original property has domain crm:E1_CRM_Entity and range crm:E89_Propositional_Object. In DeSMòS, the same property has domain lrmoo:F2_Expression and range crm:E33_Linguistic_Object."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "P67i is referred to by"
+      },
+      {
+        "@language": "it",
+        "@value": "P67i è riferito da"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"
+      }
+    ]
+  }
+]

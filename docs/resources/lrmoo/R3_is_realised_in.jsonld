@@ -1,0 +1,48 @@
+[
+  {
+    "@id": "http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS collega un'opera all'espressione testuale che la realizza. La proprietà originale ha come domain lrmoo:F1_Work e come range lrmoo:F2_Expression. In DeSMòS la stessa proprietà ha come domain lrmoo:F1_Work e come range lrmoo:F2_Expression."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, it relates a work to the textual expression that realises it. The original property has domain lrmoo:F1_Work and range lrmoo:F2_Expression. In DeSMòS, the same property has domain lrmoo:F1_Work and range lrmoo:F2_Expression."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F1_Work"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "R3 è realizzato in"
+      },
+      {
+        "@language": "en",
+        "@value": "R3 is realised in"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R3i_realises"
+      }
+    ]
+  }
+]

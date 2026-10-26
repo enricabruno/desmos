@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/lso/intro/beta202506#INT3_Interrelation">
+    <rdfs:comment xml:lang="en">In DeSMòS, INT3 Interrelation provides the general category for the reified representation of relations between entities, specialised through INT31 Intertextual Relation for the intertextual relations considered in the model.</rdfs:comment>
+    <rdfs:comment xml:lang="it">In DeSMòS, INT3 Interrelation fornisce la categoria generale per la rappresentazione reificata delle relazioni tra entità, specializzata attraverso INT31 Intertextual Relation per le relazioni intertestuali considerate nel modello.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"/>
+    <rdfs:label xml:lang="it">INT3 Interrelazione</rdfs:label>
+    <rdfs:label xml:lang="en">INT3 Interrelation</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
+  </rdf:Description>
+</rdf:RDF>

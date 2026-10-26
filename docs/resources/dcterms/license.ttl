@@ -1,0 +1,11 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+dcterms:license a owl:AnnotationProperty ;
+    rdfs:label "license"@en,
+        "licenza"@it ;
+    rdfs:comment "A legal document giving official permission to do something with the resource."@en,
+        "Il documento legale che stabilisce i permessi di utilizzo della risorsa."@it ;
+    rdfs:isDefinedBy dcterms: .
+

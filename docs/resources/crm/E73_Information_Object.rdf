@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object">
+    <rdfs:label xml:lang="it">E73 Oggetto Informativo</rdfs:label>
+    <rdfs:label xml:lang="en">E73 Information Object</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object"/>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">In DeSMòS, E73 Information Object is used as a general category for information objects involved in the representation of texts and their associated procedures, through specialised classes reused from CIDOC CRM, LRMoo, and INTRO.</rdfs:comment>
+    <rdfs:comment xml:lang="it">In DeSMòS, E73 Information Object è utilizzata come categoria generale per gli oggetti informativi coinvolti nella rappresentazione del testo e delle procedure ad esso associate, attraverso le classi specializzate riprese da CIDOC CRM, LRMoo e INTRO.</rdfs:comment>
+  </rdf:Description>
+</rdf:RDF>

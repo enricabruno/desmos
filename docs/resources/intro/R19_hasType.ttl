@@ -1,0 +1,14 @@
+@prefix intro: <https://w3id.org/lso/intro/beta202506#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+intro:R19_hasType a owl:ObjectProperty ;
+    rdfs:label "R19 has type"@en,
+        "R19 ha tipo"@it ;
+    rdfs:comment "In DeSMòS, it qualifies an intertextual relation with a controlled type (e.g., hypertextuality). The original property has domain intro:INT3_Interrelation and range intro:INT11_TypeOfInterrelation. In DeSMòS, the same property has domain intro:INT31_IntertextualRelation and range intro:INT11_TypeOfInterrelation."@en,
+        "In DeSMòS qualifica una relazione intertestuale con un tipo controllato (es. ipertestualità). La proprietà originale ha come domain intro:INT3_Interrelation e come range intro:INT11_TypeOfInterrelation. In DeSMòS la stessa proprietà ha come domain intro:INT31_IntertextualRelation e come range intro:INT11_TypeOfInterrelation."@it ;
+    rdfs:domain intro:INT3_Interrelation ;
+    rdfs:isDefinedBy intro: ;
+    rdfs:range intro:INT11_TypeOfInterrelation ;
+    owl:inverseOf intro:R19i_isTypeOf .
+

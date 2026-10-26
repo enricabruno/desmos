@@ -1,0 +1,8 @@
+<http://www.w3.org/2004/02/skos/core#narrower> <http://www.w3.org/2000/01/rdf-schema#comment> "Inversa di skos:broader: in DeSMòS collega un concetto a un concetto più specifico entro gli schemi controllati dell'ontologia. La proprietà originale ha come domain skos:Concept (ereditato da skos:semanticRelation) e come range skos:Concept (ereditato da skos:semanticRelation). In DeSMòS la stessa proprietà ha come domain skos:Concept e come range skos:Concept."@it .
+<http://www.w3.org/2004/02/skos/core#narrower> <http://www.w3.org/2000/01/rdf-schema#label> "più specifico"@it .
+<http://www.w3.org/2004/02/skos/core#narrower> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of skos:broader: in DeSMòS, it relates a concept to a more specific concept within the ontology's controlled schemes. The original property has domain skos:Concept (inherited from skos:semanticRelation) and range skos:Concept (inherited from skos:semanticRelation). In DeSMòS, the same property has domain skos:Concept and range skos:Concept."@en .
+<http://www.w3.org/2004/02/skos/core#narrower> <http://www.w3.org/2000/01/rdf-schema#label> "narrower"@en .
+<http://www.w3.org/2004/02/skos/core#narrower> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2004/02/skos/core#> .
+<http://www.w3.org/2004/02/skos/core#narrower> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.w3.org/2004/02/skos/core#narrower> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.w3.org/2004/02/skos/core#narrower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .

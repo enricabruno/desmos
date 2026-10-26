@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/lso/intro/beta202506#INT16_Segment">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
+    <rdfs:label xml:lang="en">INT16 Segment</rdfs:label>
+    <rdfs:label xml:lang="it">INT16 Segmento</rdfs:label>
+    <rdfs:comment xml:lang="it">In DeSMòS, INT16 Segment è referenziata solo come membro dell'unione che costituisce il domain originale di R44 has wording; non è istanziata nel corpus DeSMòS, dove R44 è applicata a INT21 Text Passage.</rdfs:comment>
+    <rdfs:comment xml:lang="en">In DeSMòS, INT16 Segment is referenced only as a member of the original union domain of R44 has wording; it is not instantiated in the DeSMòS corpus, where R44 is applied to INT21 Text Passage.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>

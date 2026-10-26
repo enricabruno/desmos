@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "http://purl.org/dc/terms/source",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A related resource from which the described resource is derived."
+      },
+      {
+        "@language": "it",
+        "@value": "Una risorsa correlata da cui deriva la risorsa corrente."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/dc/terms/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "source"
+      },
+      {
+        "@language": "it",
+        "@value": "fonte"
+      }
+    ]
+  }
+]

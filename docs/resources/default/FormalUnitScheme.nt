@@ -1,0 +1,7 @@
+<https://w3id.org/desmos/FormalUnitScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/desmos/> .
+<https://w3id.org/desmos/FormalUnitScheme> <http://www.w3.org/2000/01/rdf-schema#label> "Schema delle unità formali"@it .
+<https://w3id.org/desmos/FormalUnitScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "Schema concettuale che definisce le unità discrete del sistema di scrittura (ad esempio lettera, sillaba, parola) su cui opera una costrizione di tipo formale. Atteso come valore del range di desmos:constrainsFormalUnit."@it .
+<https://w3id.org/desmos/FormalUnitScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<https://w3id.org/desmos/FormalUnitScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept scheme defining the discrete units of the writing system (e.g., letter, syllable, word) on which a formal constraint operates. Expected as the range value of desmos:constrainsFormalUnit."@en .
+<https://w3id.org/desmos/FormalUnitScheme> <http://www.w3.org/2000/01/rdf-schema#label> "Formal Unit Scheme"@en .
+<https://w3id.org/desmos/FormalUnitScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

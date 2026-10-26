@@ -1,0 +1,8 @@
+<https://w3id.org/desmos/revealsConstraint> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of isRevealedBy: this property relates a textual feature to the literary constraint it makes identifiable. The property has domain desmos:TextualFeature and range desmos:LiteraryConstraint."@en .
+<https://w3id.org/desmos/revealsConstraint> <http://www.w3.org/2000/01/rdf-schema#label> "rivela costrizione"@it .
+<https://w3id.org/desmos/revealsConstraint> <http://www.w3.org/2000/01/rdf-schema#label> "reveals constraint"@en .
+<https://w3id.org/desmos/revealsConstraint> <http://www.w3.org/2000/01/rdf-schema#comment> "Inversa di isRevealedBy: questa proprietà collega un'evidenza testuale alla costrizione letteraria che rende identificabile. La proprietà ha come domain desmos:TextualFeature e come range desmos:LiteraryConstraint."@it .
+<https://w3id.org/desmos/revealsConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/desmos/revealsConstraint> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/desmos/LiteraryConstraint> .
+<https://w3id.org/desmos/revealsConstraint> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/desmos/TextualFeature> .
+<https://w3id.org/desmos/revealsConstraint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/desmos/> .

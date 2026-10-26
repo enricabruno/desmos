@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/lso/intro/beta202506#R30i_isTextPassageOf">
+    <rdfs:domain rdf:resource="https://w3id.org/lso/intro/beta202506#INT21_TextPassage"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
+    <rdfs:comment xml:lang="it">Inversa di R30 has text passage: in DeSMòS collega un passaggio testuale all'espressione da cui è tratto. La proprietà originale ha come domain intro:INT21_TextPassage e come range l'unione di crm:E73_Information_Object e intro:INT1_Passage. In DeSMòS la stessa proprietà ha come domain intro:INT21_TextPassage e come range lrmoo:F2_Expression.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Inverse of R30 has text passage: in DeSMòS, it relates a textual passage to the expression from which it is taken. The original property has domain intro:INT21_TextPassage and range the union of crm:E73_Information_Object and intro:INT1_Passage. In DeSMòS, the same property has domain intro:INT21_TextPassage and range lrmoo:F2_Expression.</rdfs:comment>
+    <rdfs:range rdf:nodeID="N32a2541c7d984d84b0ffa3debfdcdc75"/>
+    <rdfs:label xml:lang="en">R30i is text passage of</rdfs:label>
+    <rdfs:label xml:lang="it">R30i è passaggio testuale di</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N32a2541c7d984d84b0ffa3debfdcdc75">
+    <owl:unionOf rdf:nodeID="Nf25af678661840df9a81198ad16cb724"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc298ad92f22941b49121a64f97e0aa04">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="https://w3id.org/lso/intro/beta202506#INT1_Passage"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf25af678661840df9a81198ad16cb724">
+    <rdf:rest rdf:nodeID="Nc298ad92f22941b49121a64f97e0aa04"/>
+    <rdf:first rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+  </rdf:Description>
+</rdf:RDF>

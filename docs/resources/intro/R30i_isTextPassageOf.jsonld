@@ -1,0 +1,61 @@
+[
+  {
+    "@id": "https://w3id.org/lso/intro/beta202506#R30i_isTextPassageOf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Inversa di R30 has text passage: in DeSMòS collega un passaggio testuale all'espressione da cui è tratto. La proprietà originale ha come domain intro:INT21_TextPassage e come range l'unione di crm:E73_Information_Object e intro:INT1_Passage. In DeSMòS la stessa proprietà ha come domain intro:INT21_TextPassage e come range lrmoo:F2_Expression."
+      },
+      {
+        "@language": "en",
+        "@value": "Inverse of R30 has text passage: in DeSMòS, it relates a textual passage to the expression from which it is taken. The original property has domain intro:INT21_TextPassage and range the union of crm:E73_Information_Object and intro:INT1_Passage. In DeSMòS, the same property has domain intro:INT21_TextPassage and range lrmoo:F2_Expression."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#INT21_TextPassage"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "R30i is text passage of"
+      },
+      {
+        "@language": "it",
+        "@value": "R30i è passaggio testuale di"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:N32a2541c7d984d84b0ffa3debfdcdc75"
+      }
+    ]
+  },
+  {
+    "@id": "_:N32a2541c7d984d84b0ffa3debfdcdc75",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+          },
+          {
+            "@id": "https://w3id.org/lso/intro/beta202506#INT1_Passage"
+          }
+        ]
+      }
+    ]
+  }
+]

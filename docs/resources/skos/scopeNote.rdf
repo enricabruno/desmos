@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote">
+    <rdfs:comment xml:lang="en">A note that clarifies the intended meaning of the concept.</rdfs:comment>
+    <rdfs:comment xml:lang="it">Una nota che chiarisce il significato inteso del concetto.</rdfs:comment>
+    <rdfs:label xml:lang="it">nota di ambito</rdfs:label>
+    <rdfs:label xml:lang="en">scope note</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+  </rdf:Description>
+</rdf:RDF>

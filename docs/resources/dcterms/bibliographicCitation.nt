@@ -1,0 +1,6 @@
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/2000/01/rdf-schema#comment> "A bibliographic reference for the resource."@en .
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/2000/01/rdf-schema#label> "bibliographic citation"@en .
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/2000/01/rdf-schema#comment> "Il riferimento bibliografico con cui citare la risorsa."@it .
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/2000/01/rdf-schema#label> "citazione bibliografica"@it .

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/lso/intro/beta202506#R13_hasReferringEntity">
+    <rdfs:comment xml:lang="en">In DeSMòS, it identifies the hypertextual entity of an intertextual relation: the whole expression or, when the relation can be localised, a specific passage of the hypertext. The original property has domain intro:INT3_Interrelation and range the union of lrmoo:F1_Work, crm:E73_Information_Object, intro:INT1_Passage, intro:INT2_ActualizationOfFeature and intro:INT6_Architext. In DeSMòS, the same property has domain intro:INT31_IntertextualRelation and range lrmoo:F2_Expression or intro:INT21_TextPassage.</rdfs:comment>
+    <rdfs:comment xml:lang="it">In DeSMòS identifica l'entità ipertestuale di una relazione intertestuale: l'intera espressione o, se la relazione è localizzabile, un passaggio specifico dell'ipertesto. La proprietà originale ha come domain intro:INT3_Interrelation e come range l'unione di lrmoo:F1_Work, crm:E73_Information_Object, intro:INT1_Passage, intro:INT2_ActualizationOfFeature e intro:INT6_Architext. In DeSMòS la stessa proprietà ha come domain intro:INT31_IntertextualRelation e come range lrmoo:F2_Expression o intro:INT21_TextPassage.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://w3id.org/lso/intro/beta202506#INT3_Interrelation"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:nodeID="N5870764855854f4a9e2c79cc07e1eccf"/>
+    <rdfs:label xml:lang="en">R13 has referring entity</rdfs:label>
+    <rdfs:label xml:lang="it">R13 ha entità referente</rdfs:label>
+    <owl:inverseOf rdf:resource="https://w3id.org/lso/intro/beta202506#R13i_isReferringEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N68e9e0231c5f411b8c29f0290c98a2a2">
+    <rdf:first rdf:resource="https://w3id.org/lso/intro/beta202506#INT6_Architext"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N75b54eeabe2341e8babc365b545afd7e">
+    <rdf:first rdf:resource="https://w3id.org/lso/intro/beta202506#INT2_ActualizationOfFeature"/>
+    <rdf:rest rdf:nodeID="N68e9e0231c5f411b8c29f0290c98a2a2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf5aacba359594da3ba2d4cb102b27105">
+    <rdf:first rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+    <rdf:rest rdf:nodeID="Nf8b4490a135f40c89670df7ad1999390"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6393be91e22943cc81ba80ed06556ea5">
+    <rdf:rest rdf:nodeID="Nf5aacba359594da3ba2d4cb102b27105"/>
+    <rdf:first rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F1_Work"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5870764855854f4a9e2c79cc07e1eccf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="N6393be91e22943cc81ba80ed06556ea5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf8b4490a135f40c89670df7ad1999390">
+    <rdf:rest rdf:nodeID="N75b54eeabe2341e8babc365b545afd7e"/>
+    <rdf:first rdf:resource="https://w3id.org/lso/intro/beta202506#INT1_Passage"/>
+  </rdf:Description>
+</rdf:RDF>

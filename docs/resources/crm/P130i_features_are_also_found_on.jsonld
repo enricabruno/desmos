@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Inversa di P130 shows features of: in DeSMòS collega un'espressione assunta come fonte alle espressioni che ne presentano tratti senza derivarne il contenuto. La proprietà originale ha come domain crm:E70_Thing e come range crm:E70_Thing. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression e come range lrmoo:F2_Expression."
+      },
+      {
+        "@language": "en",
+        "@value": "Inverse of P130 shows features of: in DeSMòS, it relates an expression used as a source to the expressions showing its features without deriving its content. The original property has domain crm:E70_Thing and range crm:E70_Thing. In DeSMòS, the same property has domain lrmoo:F2_Expression and range lrmoo:F2_Expression."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E70_Thing"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "P130i features are also found on"
+      },
+      {
+        "@language": "it",
+        "@value": "P130i caratteristiche si ritrovano anche in"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E70_Thing"
+      }
+    ]
+  }
+]

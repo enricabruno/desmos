@@ -1,0 +1,14 @@
+@prefix : <https://w3id.org/desmos/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:isOperationInvolvedIn a owl:ObjectProperty ;
+    rdfs:label "is operation involved in"@en,
+        "è l'operazione coinvolta in"@it ;
+    rdfs:comment "Inverse of involvesOperation: this property relates a procedural operation to the literary constraints that involve it. The property has domain skos:Concept and range desmos:LiteraryConstraint."@en,
+        "Inversa di involvesOperation: questa proprietà collega un'operazione procedurale alle costrizioni letterarie che la comportano. La proprietà ha come domain skos:Concept e come range desmos:LiteraryConstraint."@it ;
+    rdfs:domain skos:Concept ;
+    rdfs:isDefinedBy : ;
+    rdfs:range :LiteraryConstraint .
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/desmos/VisualConstraintScheme">
+    <rdfs:label xml:lang="it">Schema delle costrizioni visive</rdfs:label>
+    <rdfs:label xml:lang="en">Visual Constraint Scheme</rdfs:label>
+    <rdfs:comment xml:lang="en">Concept scheme collecting visual constraints, which intervene on the spatial, graphic or typographic arrangement of the text on the page.</rdfs:comment>
+    <rdfs:comment xml:lang="it">Schema concettuale che raccoglie le costrizioni visive, che intervengono sulla disposizione spaziale, grafica o tipografica del testo sulla pagina.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
+  </rdf:Description>
+</rdf:RDF>

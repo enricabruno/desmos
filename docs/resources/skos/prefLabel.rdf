@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:comment xml:lang="en">The preferred term for representing the concept.</rdfs:comment>
+    <rdfs:comment xml:lang="it">Il termine preferito per rappresentare il concetto.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+    <rdfs:label xml:lang="en">preferred label</rdfs:label>
+    <rdfs:label xml:lang="it">etichetta preferita</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

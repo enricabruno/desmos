@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, F3 Manifestation is used to represent the published or digital manifestation embodying an expression and carrying information about its publication and textual location. The properties that can be used with this class are crm:P148_has_component, crm:P148i_is_component_of, dcterms:issued, lrmoo:R4_embodies and schema:pagination."
+      },
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, F3 Manifestation è utilizzata per rappresentare la manifestazione editoriale o digitale che incorpora un'espressione e alla quale sono associate informazioni relative alla pubblicazione e alla collocazione del testo. Le proprietà che possono essere usate con questa classe sono crm:P148_has_component, crm:P148i_is_component_of, dcterms:issued, lrmoo:R4_embodies e schema:pagination."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "F3 Manifestazione"
+      },
+      {
+        "@language": "en",
+        "@value": "F3 Manifestation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+      }
+    ]
+  }
+]

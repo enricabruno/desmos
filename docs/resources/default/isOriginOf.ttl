@@ -1,0 +1,14 @@
+@prefix : <https://w3id.org/desmos/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:isOriginOf a owl:ObjectProperty ;
+    rdfs:label "is origin of"@en,
+        "è origine di"@it ;
+    rdfs:comment "This property relates an origin concept (tradition or brand-new invention) to the literary constraints it qualifies. The property has domain skos:Concept and range desmos:LiteraryConstraint."@en,
+        "Questa proprietà collega un concetto di origine (tradizione o invenzione ex novo) alle costrizioni letterarie che qualifica. La proprietà ha come domain skos:Concept e come range desmos:LiteraryConstraint."@it ;
+    rdfs:domain skos:Concept ;
+    rdfs:isDefinedBy : ;
+    rdfs:range :LiteraryConstraint .
+

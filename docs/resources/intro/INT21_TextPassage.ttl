@@ -1,0 +1,12 @@
+@prefix intro: <https://w3id.org/lso/intro/beta202506#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+intro:INT21_TextPassage a owl:Class ;
+    rdfs:label "INT21 Text Passage"@en,
+        "INT21 Passaggio Testuale"@it ;
+    rdfs:comment "In DeSMòS, INT21 Text Passage is used to represent an identifiable textual portion of an expression, particularly when documenting passages involved in an intertextual relation. The properties that can be used with this class are intro:R30i_isTextPassageOf and intro:R44_hasWording."@en,
+        "In DeSMòS, INT21 Text Passage è utilizzata per rappresentare una porzione testuale identificabile di un'espressione, in particolare quando è necessario documentare i passaggi coinvolti in una relazione intertestuale. Le proprietà che possono essere usate con questa classe sono intro:R30i_isTextPassageOf e intro:R44_hasWording."@it ;
+    rdfs:isDefinedBy intro: ;
+    rdfs:subClassOf intro:INT1_Passage .
+

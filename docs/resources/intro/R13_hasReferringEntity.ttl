@@ -1,0 +1,18 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix intro: <https://w3id.org/lso/intro/beta202506#> .
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+intro:R13_hasReferringEntity a owl:ObjectProperty ;
+    rdfs:label "R13 has referring entity"@en,
+        "R13 ha entità referente"@it ;
+    rdfs:comment "In DeSMòS, it identifies the hypertextual entity of an intertextual relation: the whole expression or, when the relation can be localised, a specific passage of the hypertext. The original property has domain intro:INT3_Interrelation and range the union of lrmoo:F1_Work, crm:E73_Information_Object, intro:INT1_Passage, intro:INT2_ActualizationOfFeature and intro:INT6_Architext. In DeSMòS, the same property has domain intro:INT31_IntertextualRelation and range lrmoo:F2_Expression or intro:INT21_TextPassage."@en,
+        "In DeSMòS identifica l'entità ipertestuale di una relazione intertestuale: l'intera espressione o, se la relazione è localizzabile, un passaggio specifico dell'ipertesto. La proprietà originale ha come domain intro:INT3_Interrelation e come range l'unione di lrmoo:F1_Work, crm:E73_Information_Object, intro:INT1_Passage, intro:INT2_ActualizationOfFeature e intro:INT6_Architext. In DeSMòS la stessa proprietà ha come domain intro:INT31_IntertextualRelation e come range lrmoo:F2_Expression o intro:INT21_TextPassage."@it ;
+    rdfs:domain intro:INT3_Interrelation ;
+    rdfs:isDefinedBy intro: ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( lrmoo:F1_Work crm:E73_Information_Object intro:INT1_Passage intro:INT2_ActualizationOfFeature intro:INT6_Architext ) ] ;
+    owl:inverseOf intro:R13i_isReferringEntity .
+

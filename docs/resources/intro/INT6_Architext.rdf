@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/lso/intro/beta202506#INT6_Architext">
+    <rdfs:label xml:lang="it">INT6 Architesto</rdfs:label>
+    <rdfs:label xml:lang="en">INT6 Architext</rdfs:label>
+    <rdfs:comment xml:lang="en">In DeSMòS, INT6 Architext is referenced only as a member of the original union range of R12 has referred to entity and R13 has referring entity, and of the union domain of their inverses; it is not instantiated in the DeSMòS corpus.</rdfs:comment>
+    <rdfs:comment xml:lang="it">In DeSMòS, INT6 Architext è referenziata solo come membro dell'unione che costituisce il range originale di R12 has referred to entity e R13 has referring entity, e il domain delle loro inverse; non è istanziata nel corpus DeSMòS.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
+  </rdf:Description>
+</rdf:RDF>

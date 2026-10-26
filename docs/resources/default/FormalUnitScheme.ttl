@@ -1,0 +1,13 @@
+@prefix : <https://w3id.org/desmos/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:FormalUnitScheme a owl:NamedIndividual,
+        skos:ConceptScheme ;
+    rdfs:label "Formal Unit Scheme"@en,
+        "Schema delle unità formali"@it ;
+    rdfs:comment "Concept scheme defining the discrete units of the writing system (e.g., letter, syllable, word) on which a formal constraint operates. Expected as the range value of desmos:constrainsFormalUnit."@en,
+        "Schema concettuale che definisce le unità discrete del sistema di scrittura (ad esempio lettera, sillaba, parola) su cui opera una costrizione di tipo formale. Atteso come valore del range di desmos:constrainsFormalUnit."@it ;
+    rdfs:isDefinedBy : .
+

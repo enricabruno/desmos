@@ -1,0 +1,15 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+skos:exactMatch a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:label "exact match"@en,
+        "corrispondenza esatta"@it ;
+    rdfs:comment "In DeSMòS, it aligns a DeSMòS concept with a semantically equivalent external concept. The original property has domain skos:Concept (inherited from skos:semanticRelation) and range skos:Concept (inherited from skos:semanticRelation). In DeSMòS, the same property has domain skos:Concept and range skos:Concept."@en,
+        "In DeSMòS allinea un concetto DeSMòS a un concetto esterno semanticamente equivalente. La proprietà originale ha come domain skos:Concept (ereditato da skos:semanticRelation) e come range skos:Concept (ereditato da skos:semanticRelation). In DeSMòS la stessa proprietà ha come domain skos:Concept e come range skos:Concept."@it ;
+    rdfs:domain skos:Concept ;
+    rdfs:isDefinedBy skos: ;
+    rdfs:range skos:Concept .
+

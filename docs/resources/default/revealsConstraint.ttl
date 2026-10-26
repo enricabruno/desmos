@@ -1,0 +1,13 @@
+@prefix : <https://w3id.org/desmos/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:revealsConstraint a owl:ObjectProperty ;
+    rdfs:label "reveals constraint"@en,
+        "rivela costrizione"@it ;
+    rdfs:comment "Inverse of isRevealedBy: this property relates a textual feature to the literary constraint it makes identifiable. The property has domain desmos:TextualFeature and range desmos:LiteraryConstraint."@en,
+        "Inversa di isRevealedBy: questa proprietà collega un'evidenza testuale alla costrizione letteraria che rende identificabile. La proprietà ha come domain desmos:TextualFeature e come range desmos:LiteraryConstraint."@it ;
+    rdfs:domain :TextualFeature ;
+    rdfs:isDefinedBy : ;
+    rdfs:range :LiteraryConstraint .
+

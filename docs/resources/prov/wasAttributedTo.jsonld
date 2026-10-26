@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "http://www.w3.org/ns/prov#wasAttributedTo",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, it attributes a declaration (linguistic object) about a constraint to the agent responsible for it. The original property has domain prov:Entity and range prov:Agent. In DeSMòS, the same property has domain crm:E33_Linguistic_Object and range crm:E39_Actor (also prov:Agent)."
+      },
+      {
+        "@language": "it",
+        "@value": "In DeSMòS attribuisce una dichiarazione (oggetto linguistico) relativa a una costrizione all'agente che ne è responsabile. La proprietà originale ha come domain prov:Entity e come range prov:Agent. In DeSMòS la stessa proprietà ha come domain crm:E33_Linguistic_Object e come range crm:E39_Actor (anche prov:Agent)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "was attributed to"
+      },
+      {
+        "@language": "it",
+        "@value": "è stato attribuito a"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Agent"
+      }
+    ]
+  }
+]

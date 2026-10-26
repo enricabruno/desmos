@@ -1,0 +1,13 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix intro: <https://w3id.org/lso/intro/beta202506#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+intro:INT3_Interrelation a owl:Class ;
+    rdfs:label "INT3 Interrelation"@en,
+        "INT3 Interrelazione"@it ;
+    rdfs:comment "In DeSMòS, INT3 Interrelation provides the general category for the reified representation of relations between entities, specialised through INT31 Intertextual Relation for the intertextual relations considered in the model."@en,
+        "In DeSMòS, INT3 Interrelation fornisce la categoria generale per la rappresentazione reificata delle relazioni tra entità, specializzata attraverso INT31 Intertextual Relation per le relazioni intertestuali considerate nel modello."@it ;
+    rdfs:isDefinedBy intro: ;
+    rdfs:subClassOf crm:E28_Conceptual_Object .
+

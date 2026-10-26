@@ -1,0 +1,7 @@
+<https://w3id.org/lso/intro/beta202506#INT11_TypeOfInterrelation> <http://www.w3.org/2000/01/rdf-schema#label> "INT11 Tipo di interrelazione"@it .
+<https://w3id.org/lso/intro/beta202506#INT11_TypeOfInterrelation> <http://www.w3.org/2000/01/rdf-schema#comment> "In DeSMòS, INT11 Type of Interrelation è utilizzata come categoria generale per i tipi che qualificano le relazioni intertestuali rappresentate attraverso INTRO."@it .
+<https://w3id.org/lso/intro/beta202506#INT11_TypeOfInterrelation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lso/intro/beta202506#> .
+<https://w3id.org/lso/intro/beta202506#INT11_TypeOfInterrelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lso/intro/beta202506#INT11_TypeOfInterrelation> <http://www.w3.org/2000/01/rdf-schema#label> "INT11 Type of Interrelation"@en .
+<https://w3id.org/lso/intro/beta202506#INT11_TypeOfInterrelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E55_Type> .
+<https://w3id.org/lso/intro/beta202506#INT11_TypeOfInterrelation> <http://www.w3.org/2000/01/rdf-schema#comment> "In DeSMòS, INT11 Type of Interrelation is used as a general category for the types that qualify intertextual relations represented through INTRO."@en .

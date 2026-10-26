@@ -1,0 +1,34 @@
+[
+  {
+    "@id": "https://w3id.org/desmos/FormalConstraintScheme",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Concept scheme collecting formal constraints, which intervene primarily on the signifier of the text."
+      },
+      {
+        "@language": "it",
+        "@value": "Schema concettuale che raccoglie le costrizioni formali, che intervengono prioritariamente sul significante del testo."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "Schema delle costrizioni formali"
+      },
+      {
+        "@language": "en",
+        "@value": "Formal Constraint Scheme"
+      }
+    ]
+  }
+]

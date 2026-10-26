@@ -1,0 +1,15 @@
+@prefix : <https://w3id.org/desmos/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:isFormalUnitConstrainedBy a owl:ObjectProperty ;
+    rdfs:label "is formal unit constrained by"@en,
+        "è unità formale vincolata da"@it ;
+    rdfs:comment "Inverse of constrainsFormalUnit: relates a unit of the writing system to the formal constraints operating on it. The property has domain skos:Concept and range desmos:FormalConstraint."@en,
+        "Inversa di constrainsFormalUnit: collega un'unità del sistema di scrittura alle costrizioni formali che operano su di essa. La proprietà ha come domain skos:Concept e come range desmos:FormalConstraint."@it ;
+    rdfs:domain skos:Concept ;
+    rdfs:isDefinedBy : ;
+    rdfs:range :FormalConstraint ;
+    owl:inverseOf :constrainsFormalUnit .
+

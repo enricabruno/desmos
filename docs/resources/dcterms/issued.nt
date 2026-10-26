@@ -1,0 +1,7 @@
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#label> "data di emissione"@it .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#comment> "In DeSMòS, dcterms:issued è utilizzata per registrare la data di pubblicazione o emissione di una manifestazione."@it .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#label> "date issued"@en .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#comment> "In DeSMòS, dcterms:issued is used to record the publication or issuance date of a manifestation."@en .

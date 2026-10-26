@@ -1,0 +1,12 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+skos:inScheme a owl:ObjectProperty ;
+    rdfs:label "in scheme"@en,
+        "nello schema"@it ;
+    rdfs:comment "In DeSMòS, it indicates the concept scheme to which a concept belongs. The original property has no declared domain and range skos:ConceptScheme. In DeSMòS, the same property has domain skos:Concept and range skos:ConceptScheme."@en,
+        "In DeSMòS indica lo schema concettuale cui appartiene un concetto. La proprietà originale ha nessun domain dichiarato e come range skos:ConceptScheme. In DeSMòS la stessa proprietà ha come domain skos:Concept e come range skos:ConceptScheme."@it ;
+    rdfs:isDefinedBy skos: ;
+    rdfs:range skos:ConceptScheme .
+

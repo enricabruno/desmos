@@ -1,0 +1,7 @@
+<https://w3id.org/desmos/VisualConstraint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/desmos/FormalConstraint> .
+<https://w3id.org/desmos/VisualConstraint> <http://www.w3.org/2000/01/rdf-schema#comment> "Constraint that intervenes on the visual or typographic arrangement of the text, where the spatial layout of letters/words on the page is itself part of the rule. The properties that can be used with this class are desmos:constrainsFormalUnit, desmos:constraintOrigin, desmos:involvesOperation, skos:closeMatch, skos:inScheme and skos:related."@en .
+<https://w3id.org/desmos/VisualConstraint> <http://www.w3.org/2000/01/rdf-schema#label> "Visual constraint"@en .
+<https://w3id.org/desmos/VisualConstraint> <http://www.w3.org/2000/01/rdf-schema#label> "Costrizione visiva"@it .
+<https://w3id.org/desmos/VisualConstraint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/desmos/> .
+<https://w3id.org/desmos/VisualConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/desmos/VisualConstraint> <http://www.w3.org/2000/01/rdf-schema#comment> "Costrizione che interviene sulla disposizione visiva o tipografica del testo, in cui l'impaginazione spaziale di lettere/parole sulla pagina è essa stessa parte della regola. Le proprietà che possono essere usate con questa classe sono desmos:constrainsFormalUnit, desmos:constraintOrigin, desmos:involvesOperation, skos:closeMatch, skos:inScheme e skos:related."@it .

@@ -1,0 +1,6 @@
+<http://purl.org/dc/terms/hasVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "Una risorsa correlata che è una versione, edizione o adattamento della risorsa descritta."@it .
+<http://purl.org/dc/terms/hasVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "A related resource that is a version, edition, or adaptation of the described resource."@en .
+<http://purl.org/dc/terms/hasVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/hasVersion> <http://www.w3.org/2000/01/rdf-schema#label> "has version"@en .
+<http://purl.org/dc/terms/hasVersion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/hasVersion> <http://www.w3.org/2000/01/rdf-schema#label> "ha versione"@it .

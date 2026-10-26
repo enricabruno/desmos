@@ -1,0 +1,14 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+crm:P130_shows_features_of a owl:ObjectProperty ;
+    rdfs:label "P130 shows features of"@en,
+        "P130 presenta caratteristiche di"@it ;
+    rdfs:comment "In DeSMòS, it documents a looser link between expressions than R76 is derivative of: the expression shows features of a source (lexical, onomastic, phraseological, thematic, narrative or, for non-textual sources, of tempo and pacing) without deriving its content or establishing an INTRO intertextual relation. The original property has domain crm:E70_Thing and range crm:E70_Thing. In DeSMòS, the same property has domain lrmoo:F2_Expression and range lrmoo:F2_Expression."@en,
+        "In DeSMòS documenta un legame tra espressioni più blando di R76 is derivative of: l'espressione presenta tratti di una fonte (lessicali, onomastici, fraseologici, tematici, narrativi o, per fonti non testuali, di andamento) senza derivarne il contenuto né instaurare una relazione intertestuale INTRO. La proprietà originale ha come domain crm:E70_Thing e come range crm:E70_Thing. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression e come range lrmoo:F2_Expression."@it ;
+    rdfs:domain crm:E70_Thing ;
+    rdfs:isDefinedBy crm: ;
+    rdfs:range crm:E70_Thing ;
+    owl:inverseOf crm:P130i_features_are_also_found_on .
+

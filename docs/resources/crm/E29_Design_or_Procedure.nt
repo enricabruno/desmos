@@ -1,0 +1,7 @@
+<http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> .
+<http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure> <http://www.w3.org/2000/01/rdf-schema#comment> "In DeSMòS, E29 Design or Procedure provides the procedural category under which desmos:LiteraryConstraint is modelled, as a procedure applied during the creation of an expression."@en .
+<http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure> <http://www.w3.org/2000/01/rdf-schema#label> "E29 Progetto o Procedura"@it .
+<http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.cidoc-crm.org/cidoc-crm/> .
+<http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure> <http://www.w3.org/2000/01/rdf-schema#label> "E29 Design or Procedure"@en .
+<http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure> <http://www.w3.org/2000/01/rdf-schema#comment> "In DeSMòS, E29 Design or Procedure fornisce la categoria procedurale entro cui è modellata desmos:LiteraryConstraint, intesa come procedura applicata durante la creazione di un'espressione."@it .

@@ -1,0 +1,15 @@
+_:N89804f5ffb624956b59b82abfba6949a <http://www.w3.org/2002/07/owl#unionOf> _:N89b9ea964b9845ddba18be2202b50acb .
+<https://w3id.org/lso/intro/beta202506#R30_hasTextPassage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lso/intro/beta202506#> .
+<https://w3id.org/lso/intro/beta202506#R30_hasTextPassage> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lso/intro/beta202506#INT21_TextPassage> .
+<https://w3id.org/lso/intro/beta202506#R30_hasTextPassage> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/lso/intro/beta202506#R30i_isTextPassageOf> .
+_:N89b9ea964b9845ddba18be2202b50acb <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> .
+_:N89b9ea964b9845ddba18be2202b50acb <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Naea0bf1f9f814ec38fc0284538c6c0be .
+<https://w3id.org/lso/intro/beta202506#R30_hasTextPassage> <http://www.w3.org/2000/01/rdf-schema#comment> "In DeSMòS collega un'espressione a un passaggio testuale selezionato al suo interno, quando la relazione intertestuale riguarda porzioni specifiche del testo. La proprietà originale ha come domain l'unione di crm:E73_Information_Object e intro:INT1_Passage e come range intro:INT21_TextPassage. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression e come range intro:INT21_TextPassage."@it .
+<https://w3id.org/lso/intro/beta202506#R30_hasTextPassage> <http://www.w3.org/2000/01/rdf-schema#domain> _:N89804f5ffb624956b59b82abfba6949a .
+<https://w3id.org/lso/intro/beta202506#R30_hasTextPassage> <http://www.w3.org/2000/01/rdf-schema#comment> "In DeSMòS, it relates an expression to a textual passage selected within it, when an intertextual relation concerns specific portions of the text. The original property has domain the union of crm:E73_Information_Object and intro:INT1_Passage and range intro:INT21_TextPassage. In DeSMòS, the same property has domain lrmoo:F2_Expression and range intro:INT21_TextPassage."@en .
+<https://w3id.org/lso/intro/beta202506#R30_hasTextPassage> <http://www.w3.org/2000/01/rdf-schema#label> "R30 ha passaggio testuale"@it .
+_:N89804f5ffb624956b59b82abfba6949a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Naea0bf1f9f814ec38fc0284538c6c0be <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Naea0bf1f9f814ec38fc0284538c6c0be <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lso/intro/beta202506#INT1_Passage> .
+<https://w3id.org/lso/intro/beta202506#R30_hasTextPassage> <http://www.w3.org/2000/01/rdf-schema#label> "R30 has text passage"@en .
+<https://w3id.org/lso/intro/beta202506#R30_hasTextPassage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .

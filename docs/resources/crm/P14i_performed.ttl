@@ -1,0 +1,13 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+crm:P14i_performed a owl:ObjectProperty ;
+    rdfs:label "P14i performed"@en,
+        "P14i ha eseguito"@it ;
+    rdfs:comment "Inverse of P14 carried out by: in DeSMòS, it relates an author to the expression creation events they carried out. The original property has domain crm:E39_Actor and range crm:E7_Activity. In DeSMòS, the same property has domain crm:E39_Actor and range lrmoo:F28_Expression_Creation."@en,
+        "Inversa di P14 carried out by: in DeSMòS collega un autore agli eventi di creazione dell'espressione che ha realizzato. La proprietà originale ha come domain crm:E39_Actor e come range crm:E7_Activity. In DeSMòS la stessa proprietà ha come domain crm:E39_Actor e come range lrmoo:F28_Expression_Creation."@it ;
+    rdfs:domain crm:E39_Actor ;
+    rdfs:isDefinedBy crm: ;
+    rdfs:range crm:E7_Activity .
+

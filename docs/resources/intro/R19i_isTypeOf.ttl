@@ -1,0 +1,13 @@
+@prefix intro: <https://w3id.org/lso/intro/beta202506#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+intro:R19i_isTypeOf a owl:ObjectProperty ;
+    rdfs:label "R19i is type of"@en,
+        "R19i è tipo di"@it ;
+    rdfs:comment "Inverse of R19 has type: in DeSMòS, it relates a relation type to the intertextual relations it qualifies. The original property has domain intro:INT11_TypeOfInterrelation and range intro:INT3_Interrelation. In DeSMòS, the same property has domain intro:INT11_TypeOfInterrelation and range intro:INT31_IntertextualRelation."@en,
+        "Inversa di R19 has type: in DeSMòS collega un tipo di relazione alle relazioni intertestuali che qualifica. La proprietà originale ha come domain intro:INT11_TypeOfInterrelation e come range intro:INT3_Interrelation. In DeSMòS la stessa proprietà ha come domain intro:INT11_TypeOfInterrelation e come range intro:INT31_IntertextualRelation."@it ;
+    rdfs:domain intro:INT11_TypeOfInterrelation ;
+    rdfs:isDefinedBy intro: ;
+    rdfs:range intro:INT3_Interrelation .
+

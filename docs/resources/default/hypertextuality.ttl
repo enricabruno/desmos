@@ -1,0 +1,20 @@
+@prefix : <https://w3id.org/desmos/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix intro: <https://w3id.org/lso/intro/beta202506#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:hypertextuality a owl:NamedIndividual,
+        intro:INT15_IntertextualityInIntertextualityTheories ;
+    rdfs:label "Hypertextuality"@en,
+        "Ipertestualità"@it ;
+    dcterms:source <https://www.worldcat.org/isbn/9782020061162> ;
+    rdfs:isDefinedBy : ;
+    skos:definition "Type of intertextual relation, in the Genettian sense, designating any relationship of derivation linking a later text (the hypertext) to an earlier one (the hypotext) upon which it is grafted in a manner that is not that of commentary; the derivation may proceed by transformation (as in parody) or by imitation (as in pastiche)."@en,
+        "Tipo di relazione intertestuale, nell'accezione genettiana, che designa qualsiasi rapporto di derivazione che collega un testo posteriore (l'ipertesto) ad un testo anteriore (l'ipotesto) sul quale esso si innesta in modo non commentativo; la derivazione può realizzarsi per trasformazione (come nella parodia) o per imitazione (come nel pastiche)."@it ;
+    skos:prefLabel "Hypertextuality"@en,
+        "Ipertestualità"@it ;
+    skos:scopeNote "Used as the object of intro:R19_hasType to qualify instances of intro:INT31_IntertextualRelation as Genettian hypertextual relations."@en,
+        "Utilizzato come oggetto di intro:R19_hasType per qualificare istanze di intro:INT31_IntertextualRelation come relazioni ipertestuali genettiane."@it .
+

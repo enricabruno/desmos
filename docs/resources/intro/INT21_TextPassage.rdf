@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/lso/intro/beta202506#INT21_TextPassage">
+    <rdfs:label xml:lang="it">INT21 Passaggio Testuale</rdfs:label>
+    <rdfs:label xml:lang="en">INT21 Text Passage</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/lso/intro/beta202506#INT1_Passage"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">In DeSMòS, INT21 Text Passage is used to represent an identifiable textual portion of an expression, particularly when documenting passages involved in an intertextual relation. The properties that can be used with this class are intro:R30i_isTextPassageOf and intro:R44_hasWording.</rdfs:comment>
+    <rdfs:comment xml:lang="it">In DeSMòS, INT21 Text Passage è utilizzata per rappresentare una porzione testuale identificabile di un'espressione, in particolare quando è necessario documentare i passaggi coinvolti in una relazione intertestuale. Le proprietà che possono essere usate con questa classe sono intro:R30i_isTextPassageOf e intro:R44_hasWording.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
+  </rdf:Description>
+</rdf:RDF>

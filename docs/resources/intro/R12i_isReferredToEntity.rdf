@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="Nef3fd721b04b46c4bb6dc40c1a758c9e">
+    <rdf:rest rdf:nodeID="N14451544ed8744d8abac5d6236c855a1"/>
+    <rdf:first rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F1_Work"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/lso/intro/beta202506#R12i_isReferredToEntity">
+    <rdfs:range rdf:resource="https://w3id.org/lso/intro/beta202506#INT3_Interrelation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
+    <rdfs:comment xml:lang="en">Inverse of R12 has referred to entity: in DeSMòS, it relates a hypotextual entity (expression or passage) to the intertextual relation in which it is the entity referred to. The original property has domain the union of lrmoo:F1_Work, crm:E73_Information_Object, intro:INT1_Passage, intro:INT2_ActualizationOfFeature and intro:INT6_Architext and range intro:INT3_Interrelation. In DeSMòS, the same property has domain lrmoo:F2_Expression or intro:INT21_TextPassage and range intro:INT31_IntertextualRelation.</rdfs:comment>
+    <rdfs:comment xml:lang="it">Inversa di R12 has referred to entity: in DeSMòS collega un'entità ipotestuale (espressione o passaggio) alla relazione intertestuale in cui è l'entità a cui si fa riferimento. La proprietà originale ha come domain l'unione di lrmoo:F1_Work, crm:E73_Information_Object, intro:INT1_Passage, intro:INT2_ActualizationOfFeature e intro:INT6_Architext e come range intro:INT3_Interrelation. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression o intro:INT21_TextPassage e come range intro:INT31_IntertextualRelation.</rdfs:comment>
+    <rdfs:label xml:lang="it">R12i è entità a cui si riferisce di</rdfs:label>
+    <rdfs:label xml:lang="en">R12i is referred to entity of</rdfs:label>
+    <rdfs:domain rdf:nodeID="N519b097bffb94882b572110f47d6b1ce"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8d32349f039c4883a38925ad3d548524">
+    <rdf:first rdf:resource="https://w3id.org/lso/intro/beta202506#INT2_ActualizationOfFeature"/>
+    <rdf:rest rdf:nodeID="Nbfd327fa25fe44a896e28a82ce189994"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N519b097bffb94882b572110f47d6b1ce">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="Nef3fd721b04b46c4bb6dc40c1a758c9e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nae0fbf48ebe24e97945a4eb8709fd7e0">
+    <rdf:first rdf:resource="https://w3id.org/lso/intro/beta202506#INT1_Passage"/>
+    <rdf:rest rdf:nodeID="N8d32349f039c4883a38925ad3d548524"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbfd327fa25fe44a896e28a82ce189994">
+    <rdf:first rdf:resource="https://w3id.org/lso/intro/beta202506#INT6_Architext"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N14451544ed8744d8abac5d6236c855a1">
+    <rdf:first rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+    <rdf:rest rdf:nodeID="Nae0fbf48ebe24e97945a4eb8709fd7e0"/>
+  </rdf:Description>
+</rdf:RDF>

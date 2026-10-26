@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#example">
+    <rdfs:comment xml:lang="it">Fornisce un esempio dell'uso di un concetto.</rdfs:comment>
+    <rdfs:comment xml:lang="en">An example of the use of a concept.</rdfs:comment>
+    <rdfs:label xml:lang="en">example</rdfs:label>
+    <rdfs:label xml:lang="it">esempio</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+  </rdf:Description>
+</rdf:RDF>

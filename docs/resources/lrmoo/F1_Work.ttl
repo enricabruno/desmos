@@ -1,0 +1,13 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+lrmoo:F1_Work a owl:Class ;
+    rdfs:label "F1 Work"@en,
+        "F1 Opera"@it ;
+    rdfs:comment "In DeSMòS, F1 Work is used to represent the work as an abstract entity, distinct from the textual expressions through which it is realised. The property that can be used with this class is lrmoo:R3_is_realised_in."@en,
+        "In DeSMòS, F1 Work è utilizzata per rappresentare l'opera come entità astratta, distinta dalle espressioni testuali attraverso cui essa viene realizzata. La proprietà che può essere usata con questa classe è lrmoo:R3_is_realised_in."@it ;
+    rdfs:isDefinedBy lrmoo: ;
+    rdfs:subClassOf crm:E89_Propositional_Object .
+

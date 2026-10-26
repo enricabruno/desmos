@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.cidoc-crm.org/cidoc-crm/P67_refers_to">
+    <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by"/>
+    <rdfs:comment xml:lang="it">In DeSMòS collega una dichiarazione (oggetto linguistico) all'espressione testuale a cui fa riferimento. La proprietà originale ha come domain crm:E89_Propositional_Object e come range crm:E1_CRM_Entity. In DeSMòS la stessa proprietà ha come domain crm:E33_Linguistic_Object e come range lrmoo:F2_Expression.</rdfs:comment>
+    <rdfs:comment xml:lang="en">In DeSMòS, it relates a declaration (linguistic object) to the textual expression it refers to. The original property has domain crm:E89_Propositional_Object and range crm:E1_CRM_Entity. In DeSMòS, the same property has domain crm:E33_Linguistic_Object and range lrmoo:F2_Expression.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    <rdfs:label xml:lang="en">P67 refers to</rdfs:label>
+    <rdfs:label xml:lang="it">P67 si riferisce a</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"/>
+  </rdf:Description>
+</rdf:RDF>

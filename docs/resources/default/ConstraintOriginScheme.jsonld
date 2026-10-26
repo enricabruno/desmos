@@ -1,0 +1,34 @@
+[
+  {
+    "@id": "https://w3id.org/desmos/ConstraintOriginScheme",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Schema concettuale che distingue le costrizioni riprese dalla tradizione da quelle introdotte ex novo in uno specifico contesto compositivo. Atteso come valore del range di desmos:constraintOrigin."
+      },
+      {
+        "@language": "en",
+        "@value": "Concept scheme distinguishing between traditional constraints and newly introduced constraints in a specific compositional context. Expected as the range value of desmos:constraintOrigin."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "Schema dell'origine della costrizione"
+      },
+      {
+        "@language": "en",
+        "@value": "Constraint Origin Scheme"
+      }
+    ]
+  }
+]

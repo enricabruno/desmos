@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/desmos/coarserThan">
+    <rdfs:comment xml:lang="en">Relates a formal unit to a formal unit of finer textual granularity (e.g., a word with respect to a syllable or a letter), exclusively within the FormalUnitScheme. The property has domain skos:Concept and range skos:Concept.</rdfs:comment>
+    <rdfs:comment xml:lang="it">Collega un'unità formale a un'unità formale di granularità testuale più fine (es. la parola rispetto a sillaba e lettera), esclusivamente entro il FormalUnitScheme. La proprietà ha come domain skos:Concept e come range skos:Concept.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
+    <rdfs:label xml:lang="it">ha granularità più ampia di</rdfs:label>
+    <rdfs:label xml:lang="en">has coarser granularity than</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/desmos/finerThan"/>
+  </rdf:Description>
+</rdf:RDF>

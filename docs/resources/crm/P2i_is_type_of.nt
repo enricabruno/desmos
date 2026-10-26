@@ -1,0 +1,8 @@
+<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of P2 has type: in DeSMòS, it relates a literary or artistic form type to the expressions it classifies. The original property has domain crm:E55_Type and range crm:E1_CRM_Entity. In DeSMòS, the same property has domain crm:E55_Type and range lrmoo:F2_Expression."@en .
+<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <http://www.w3.org/2000/01/rdf-schema#label> "P2i è tipo di"@it .
+<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> .
+<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.cidoc-crm.org/cidoc-crm/> .
+<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <http://www.w3.org/2000/01/rdf-schema#comment> "Inversa di P2 has type: in DeSMòS collega un tipo di forma letteraria o artistica alle espressioni che classifica. La proprietà originale ha come domain crm:E55_Type e come range crm:E1_CRM_Entity. In DeSMòS la stessa proprietà ha come domain crm:E55_Type e come range lrmoo:F2_Expression."@it .
+<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cidoc-crm.org/cidoc-crm/E55_Type> .
+<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <http://www.w3.org/2000/01/rdf-schema#label> "P2i is type of"@en .

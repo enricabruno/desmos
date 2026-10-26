@@ -1,0 +1,13 @@
+@prefix : <https://w3id.org/desmos/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:VisualConstraintScheme a owl:NamedIndividual,
+        skos:ConceptScheme ;
+    rdfs:label "Visual Constraint Scheme"@en,
+        "Schema delle costrizioni visive"@it ;
+    rdfs:comment "Concept scheme collecting visual constraints, which intervene on the spatial, graphic or typographic arrangement of the text on the page."@en,
+        "Schema concettuale che raccoglie le costrizioni visive, che intervengono sulla disposizione spaziale, grafica o tipografica del testo sulla pagina."@it ;
+    rdfs:isDefinedBy : .
+

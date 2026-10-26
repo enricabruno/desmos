@@ -1,0 +1,41 @@
+[
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, E73 Information Object is used as a general category for information objects involved in the representation of texts and their associated procedures, through specialised classes reused from CIDOC CRM, LRMoo, and INTRO."
+      },
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, E73 Information Object è utilizzata come categoria generale per gli oggetti informativi coinvolti nella rappresentazione del testo e delle procedure ad esso associate, attraverso le classi specializzate riprese da CIDOC CRM, LRMoo e INTRO."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "E73 Oggetto Informativo"
+      },
+      {
+        "@language": "en",
+        "@value": "E73 Information Object"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object"
+      },
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"
+      }
+    ]
+  }
+]

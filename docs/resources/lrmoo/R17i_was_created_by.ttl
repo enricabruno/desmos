@@ -1,0 +1,13 @@
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+lrmoo:R17i_was_created_by a owl:ObjectProperty ;
+    rdfs:label "R17i was created by"@en,
+        "R17i è stata creata da"@it ;
+    rdfs:comment "Inverse of R17 created: in DeSMòS, it relates a textual expression to the compositional event that produced it. The original property has domain lrmoo:F2_Expression and range lrmoo:F28_Expression_Creation. In DeSMòS, the same property has domain lrmoo:F2_Expression and range lrmoo:F28_Expression_Creation."@en,
+        "Inversa di R17 created: in DeSMòS collega un'espressione testuale all'evento compositivo che l'ha prodotta. La proprietà originale ha come domain lrmoo:F2_Expression e come range lrmoo:F28_Expression_Creation. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression e come range lrmoo:F28_Expression_Creation."@it ;
+    rdfs:domain lrmoo:F2_Expression ;
+    rdfs:isDefinedBy lrmoo: ;
+    rdfs:range lrmoo:F28_Expression_Creation .
+

@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/P14i_performed",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Inversa di P14 carried out by: in DeSMòS collega un autore agli eventi di creazione dell'espressione che ha realizzato. La proprietà originale ha come domain crm:E39_Actor e come range crm:E7_Activity. In DeSMòS la stessa proprietà ha come domain crm:E39_Actor e come range lrmoo:F28_Expression_Creation."
+      },
+      {
+        "@language": "en",
+        "@value": "Inverse of P14 carried out by: in DeSMòS, it relates an author to the expression creation events they carried out. The original property has domain crm:E39_Actor and range crm:E7_Activity. In DeSMòS, the same property has domain crm:E39_Actor and range lrmoo:F28_Expression_Creation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "P14i ha eseguito"
+      },
+      {
+        "@language": "en",
+        "@value": "P14i performed"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E7_Activity"
+      }
+    ]
+  }
+]

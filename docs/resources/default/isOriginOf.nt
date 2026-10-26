@@ -1,0 +1,8 @@
+<https://w3id.org/desmos/isOriginOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/desmos/LiteraryConstraint> .
+<https://w3id.org/desmos/isOriginOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/desmos/isOriginOf> <http://www.w3.org/2000/01/rdf-schema#label> "è origine di"@it .
+<https://w3id.org/desmos/isOriginOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/desmos/isOriginOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates an origin concept (tradition or brand-new invention) to the literary constraints it qualifies. The property has domain skos:Concept and range desmos:LiteraryConstraint."@en .
+<https://w3id.org/desmos/isOriginOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/desmos/> .
+<https://w3id.org/desmos/isOriginOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Questa proprietà collega un concetto di origine (tradizione o invenzione ex novo) alle costrizioni letterarie che qualifica. La proprietà ha come domain skos:Concept e come range desmos:LiteraryConstraint."@it .
+<https://w3id.org/desmos/isOriginOf> <http://www.w3.org/2000/01/rdf-schema#label> "is origin of"@en .

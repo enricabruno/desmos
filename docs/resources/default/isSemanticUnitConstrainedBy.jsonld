@@ -1,0 +1,48 @@
+[
+  {
+    "@id": "https://w3id.org/desmos/isSemanticUnitConstrainedBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Inverse of constrainsSemanticUnit: relates a unit of the content plane to the semantic constraints that determine it. The property has domain skos:Concept and range desmos:SemanticConstraint."
+      },
+      {
+        "@language": "it",
+        "@value": "Inversa di constrainsSemanticUnit: collega un'unità del piano del contenuto alle costrizioni semantiche che la determinano. La proprietà ha come domain skos:Concept e come range desmos:SemanticConstraint."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "is semantic unit constrained by"
+      },
+      {
+        "@language": "it",
+        "@value": "è unità semantica vincolata da"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/desmos/SemanticConstraint"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/desmos/constrainsSemanticUnit"
+      }
+    ]
+  }
+]

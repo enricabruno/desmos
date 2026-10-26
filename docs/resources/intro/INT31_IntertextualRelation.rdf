@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/lso/intro/beta202506#INT31_IntertextualRelation">
+    <rdfs:comment xml:lang="en">In DeSMòS, INT31 Intertextual Relation is used to represent an intertextual relation between texts or their passages as an independent entity, specifying the entities involved and the relation type. The properties that can be used with this class are intro:R12_hasReferredToEntity, intro:R13_hasReferringEntity and intro:R19_hasType.</rdfs:comment>
+    <rdfs:comment xml:lang="it">In DeSMòS, INT31 Intertextual Relation è utilizzata per rappresentare come entità autonoma una relazione intertestuale tra testi o loro passaggi, specificandone le entità coinvolte e la tipologia. Le proprietà che possono essere usate con questa classe sono intro:R12_hasReferredToEntity, intro:R13_hasReferringEntity e intro:R19_hasType.</rdfs:comment>
+    <rdfs:label xml:lang="it">INT31 Relazione Intertestuale</rdfs:label>
+    <rdfs:label xml:lang="en">INT31 Intertextual Relation</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/lso/intro/beta202506#INT3_Interrelation"/>
+  </rdf:Description>
+</rdf:RDF>

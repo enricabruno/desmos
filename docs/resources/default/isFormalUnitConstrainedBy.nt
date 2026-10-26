@@ -1,0 +1,9 @@
+<https://w3id.org/desmos/isFormalUnitConstrainedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/desmos/isFormalUnitConstrainedBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/desmos/constrainsFormalUnit> .
+<https://w3id.org/desmos/isFormalUnitConstrainedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is formal unit constrained by"@en .
+<https://w3id.org/desmos/isFormalUnitConstrainedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/desmos/> .
+<https://w3id.org/desmos/isFormalUnitConstrainedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of constrainsFormalUnit: relates a unit of the writing system to the formal constraints operating on it. The property has domain skos:Concept and range desmos:FormalConstraint."@en .
+<https://w3id.org/desmos/isFormalUnitConstrainedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/desmos/FormalConstraint> .
+<https://w3id.org/desmos/isFormalUnitConstrainedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/desmos/isFormalUnitConstrainedBy> <http://www.w3.org/2000/01/rdf-schema#label> "è unità formale vincolata da"@it .
+<https://w3id.org/desmos/isFormalUnitConstrainedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Inversa di constrainsFormalUnit: collega un'unità del sistema di scrittura alle costrizioni formali che operano su di essa. La proprietà ha come domain skos:Concept e come range desmos:FormalConstraint."@it .

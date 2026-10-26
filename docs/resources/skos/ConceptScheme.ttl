@@ -1,0 +1,11 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+skos:ConceptScheme a owl:Class ;
+    rdfs:label "Concept Scheme"@en,
+        "Schema di concetti"@it ;
+    rdfs:comment "In DeSMòS, skos:ConceptScheme is used to organise literary constraints and the analytical categories used to describe them into controlled vocabularies. The property that can be used with this class is skos:hasTopConcept."@en,
+        "In DeSMòS, skos:ConceptScheme è utilizzata per organizzare in vocabolari controllati le costrizioni letterarie e le categorie analitiche impiegate per descriverle. La proprietà che può essere usata con questa classe è skos:hasTopConcept."@it ;
+    rdfs:isDefinedBy skos: .
+

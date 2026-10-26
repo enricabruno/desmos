@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "http://www.w3.org/2004/02/skos/core#altLabel",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Un termine alternativo per un concetto."
+      },
+      {
+        "@language": "en",
+        "@value": "An alternative term for a concept."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "alternative label"
+      },
+      {
+        "@language": "it",
+        "@value": "etichetta alternativa"
+      }
+    ]
+  }
+]

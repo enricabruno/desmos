@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/hasVersion">
+    <rdfs:comment xml:lang="it">Una risorsa correlata che è una versione, edizione o adattamento della risorsa descritta.</rdfs:comment>
+    <rdfs:comment xml:lang="en">A related resource that is a version, edition, or adaptation of the described resource.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:label xml:lang="en">has version</rdfs:label>
+    <rdfs:label xml:lang="it">ha versione</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+  </rdf:Description>
+</rdf:RDF>

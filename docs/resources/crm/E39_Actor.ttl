@@ -1,0 +1,12 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+crm:E39_Actor a owl:Class ;
+    rdfs:label "E39 Actor"@en,
+        "E39 Attore"@it ;
+    rdfs:comment "In DeSMòS, E39 Actor is used to represent authors, editors, and collective agents involved in the creation and documentation of textual expressions."@en,
+        "In DeSMòS, E39 Actor è utilizzata per rappresentare autori, curatori e soggetti collettivi coinvolti nella creazione e nella documentazione delle espressioni testuali."@it ;
+    rdfs:isDefinedBy crm: ;
+    rdfs:subClassOf crm:E1_CRM_Entity .
+

@@ -1,0 +1,14 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+crm:P148i_is_component_of a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:label "P148i is component of"@en,
+        "P148i è componente di"@it ;
+    rdfs:comment "Inverse of P148 has component: in DeSMòS, it relates a component to the complex expression or manifestation it belongs to. The original property has domain crm:E89_Propositional_Object and range crm:E89_Propositional_Object. In DeSMòS, the same property has domain lrmoo:F2_Expression (between expressions) or lrmoo:F3_Manifestation (between manifestations) and range lrmoo:F2_Expression or lrmoo:F3_Manifestation respectively."@en,
+        "Inversa di P148 has component: in DeSMòS collega una componente all'espressione o manifestazione complessa di cui fa parte. La proprietà originale ha come domain crm:E89_Propositional_Object e come range crm:E89_Propositional_Object. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression (tra espressioni) o lrmoo:F3_Manifestation (tra manifestazioni) e come range rispettivamente lrmoo:F2_Expression o lrmoo:F3_Manifestation."@it ;
+    rdfs:domain crm:E89_Propositional_Object ;
+    rdfs:isDefinedBy crm: ;
+    rdfs:range crm:E89_Propositional_Object .
+

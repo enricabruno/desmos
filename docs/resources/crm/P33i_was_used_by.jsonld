@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/P33i_was_used_by",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Inversa di P33 used specific technique: in DeSMòS collega una costrizione letteraria agli eventi di creazione dell'espressione in cui è stata impiegata. La proprietà originale ha come domain crm:E29_Design_or_Procedure e come range crm:E7_Activity. In DeSMòS la stessa proprietà ha come domain desmos:LiteraryConstraint e come range lrmoo:F28_Expression_Creation."
+      },
+      {
+        "@language": "en",
+        "@value": "Inverse of P33 used specific technique: in DeSMòS, it relates a literary constraint to the expression creation events in which it was employed. The original property has domain crm:E29_Design_or_Procedure and range crm:E7_Activity. In DeSMòS, the same property has domain desmos:LiteraryConstraint and range lrmoo:F28_Expression_Creation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "P33i è stata usata da"
+      },
+      {
+        "@language": "en",
+        "@value": "P33i was used by"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E7_Activity"
+      }
+    ]
+  }
+]

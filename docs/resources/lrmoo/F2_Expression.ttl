@@ -1,0 +1,13 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+lrmoo:F2_Expression a owl:Class ;
+    rdfs:label "F2 Expression"@en,
+        "F2 Espressione"@it ;
+    rdfs:comment "In DeSMòS, F2 Expression is used to represent the textual realisation of a work, on which literary constraints and relations to other texts are documented. The properties that can be used with this class are crm:P130_shows_features_of, crm:P148_has_component, crm:P2_has_type, lrmoo:R15_has_fragment, lrmoo:R4i_is_embodied_in and lrmoo:R76_is_derivative_of."@en,
+        "In DeSMòS, F2 Expression è utilizzata per rappresentare la realizzazione testuale di un'opera, sulla quale vengono documentate le costrizioni letterarie e le relazioni con altri testi. Le proprietà che possono essere usate con questa classe sono crm:P130_shows_features_of, crm:P148_has_component, crm:P2_has_type, lrmoo:R15_has_fragment, lrmoo:R4i_is_embodied_in e lrmoo:R76_is_derivative_of."@it ;
+    rdfs:isDefinedBy lrmoo: ;
+    rdfs:subClassOf crm:E73_Information_Object .
+

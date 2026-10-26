@@ -1,0 +1,13 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix intro: <https://w3id.org/lso/intro/beta202506#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+intro:INT1_Passage a owl:Class ;
+    rdfs:label "INT1 Passage"@en,
+        "INT1 Passaggio"@it ;
+    rdfs:comment "In DeSMòS, INT1 Passage provides the general category for intro:INT21_TextPassage, used to represent textual passages involved in intertextual relations."@en,
+        "In DeSMòS, INT1 Passage fornisce la categoria generale per intro:INT21_TextPassage, utilizzata per rappresentare i passaggi testuali coinvolti nelle relazioni intertestuali."@it ;
+    rdfs:isDefinedBy intro: ;
+    rdfs:subClassOf crm:E90_Symbolic_Object .
+

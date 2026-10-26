@@ -1,0 +1,48 @@
+[
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/P33_used_specific_technique",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, it relates an expression creation event to the literary constraint employed as a compositional procedure. The original property has domain crm:E7_Activity and range crm:E29_Design_or_Procedure. In DeSMòS, the same property has domain lrmoo:F28_Expression_Creation and range desmos:LiteraryConstraint."
+      },
+      {
+        "@language": "it",
+        "@value": "In DeSMòS collega un evento di creazione dell'espressione alla costrizione letteraria impiegata come procedura compositiva. La proprietà originale ha come domain crm:E7_Activity e come range crm:E29_Design_or_Procedure. In DeSMòS la stessa proprietà ha come domain lrmoo:F28_Expression_Creation e come range desmos:LiteraryConstraint."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E7_Activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "P33 used specific technique"
+      },
+      {
+        "@language": "it",
+        "@value": "P33 ha usato la tecnica specifica"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P33i_was_used_by"
+      }
+    ]
+  }
+]

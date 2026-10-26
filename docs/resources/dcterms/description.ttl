@@ -1,0 +1,11 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+dcterms:description a owl:AnnotationProperty ;
+    rdfs:label "description"@en,
+        "descrizione"@it ;
+    rdfs:comment "A description of the resource."@en,
+        "Una descrizione della risorsa."@it ;
+    rdfs:isDefinedBy dcterms: .
+

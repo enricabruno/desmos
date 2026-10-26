@@ -1,0 +1,34 @@
+[
+  {
+    "@id": "https://w3id.org/desmos/SemanticConstraintScheme",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Concept scheme collecting semantic constraints, which intervene primarily on the signified of the text."
+      },
+      {
+        "@language": "it",
+        "@value": "Schema concettuale che raccoglie le costrizioni semantiche, che intervengono prioritariamente sul significato del testo."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Semantic Constraint Scheme"
+      },
+      {
+        "@language": "it",
+        "@value": "Schema delle costrizioni semantiche"
+      }
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/lso/intro/beta202506#INT2_ActualizationOfFeature">
+    <rdfs:label xml:lang="en">INT2 Actualization of Feature</rdfs:label>
+    <rdfs:label xml:lang="it">INT2 Attualizzazione di caratteristica</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"/>
+    <rdfs:comment xml:lang="it">In DeSMòS, INT2 Actualization of Feature è referenziata solo come membro dell'unione che costituisce il range originale di R12 has referred to entity e R13 has referring entity, e il domain delle loro inverse; non è istanziata nel corpus DeSMòS.</rdfs:comment>
+    <rdfs:comment xml:lang="en">In DeSMòS, INT2 Actualization of Feature is referenced only as a member of the original union range of R12 has referred to entity and R13 has referring entity, and of the union domain of their inverses; it is not instantiated in the DeSMòS corpus.</rdfs:comment>
+  </rdf:Description>
+</rdf:RDF>

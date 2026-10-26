@@ -1,0 +1,13 @@
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+lrmoo:R4i_is_embodied_in a owl:ObjectProperty ;
+    rdfs:label "R4i is embodied in"@en,
+        "R4i è incarnata in"@it ;
+    rdfs:comment "Inverse of R4 embodies: in DeSMòS, it relates an expression to the published or digital manifestation embodying it. The original property has domain lrmoo:F2_Expression and range lrmoo:F3_Manifestation. In DeSMòS, the same property has domain lrmoo:F2_Expression and range lrmoo:F3_Manifestation."@en,
+        "Inversa di R4 embodies: in DeSMòS collega un'espressione alla manifestazione editoriale o digitale che la incorpora. La proprietà originale ha come domain lrmoo:F2_Expression e come range lrmoo:F3_Manifestation. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression e come range lrmoo:F3_Manifestation."@it ;
+    rdfs:domain lrmoo:F2_Expression ;
+    rdfs:isDefinedBy lrmoo: ;
+    rdfs:range lrmoo:F3_Manifestation .
+

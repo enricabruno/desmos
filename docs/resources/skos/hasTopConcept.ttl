@@ -1,0 +1,14 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+skos:hasTopConcept a owl:ObjectProperty ;
+    rdfs:label "has top concept"@en,
+        "ha concetto principale"@it ;
+    rdfs:comment "In DeSMòS, it relates a concept scheme to the concepts that are its main hierarchical entry points. The original property has domain skos:ConceptScheme and range skos:Concept. In DeSMòS, the same property has domain skos:ConceptScheme and range skos:Concept."@en,
+        "In DeSMòS collega uno schema concettuale ai concetti che ne costituiscono i punti di accesso gerarchici principali. La proprietà originale ha come domain skos:ConceptScheme e come range skos:Concept. In DeSMòS la stessa proprietà ha come domain skos:ConceptScheme e come range skos:Concept."@it ;
+    rdfs:domain skos:ConceptScheme ;
+    rdfs:isDefinedBy skos: ;
+    rdfs:range skos:Concept ;
+    owl:inverseOf skos:topConceptOf .
+

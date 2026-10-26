@@ -1,0 +1,13 @@
+@prefix : <https://w3id.org/desmos/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:ProceduralOperationScheme a owl:NamedIndividual,
+        skos:ConceptScheme ;
+    rdfs:label "Procedural Operation Scheme"@en,
+        "Schema delle operazioni procedurali"@it ;
+    rdfs:comment "Concept scheme describing the procedural operations applied to generate the constrained text. Expected as the range value of desmos:involvesOperation."@en,
+        "Schema concettuale che descrive le operazioni procedurali applicate per generare il testo vincolato. Atteso come valore del range di desmos:involvesOperation."@it ;
+    rdfs:isDefinedBy : .
+

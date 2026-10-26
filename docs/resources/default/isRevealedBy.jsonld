@@ -1,0 +1,48 @@
+[
+  {
+    "@id": "https://w3id.org/desmos/isRevealedBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Inversa di revealsConstraint: questa proprietà collega una costrizione letteraria all'evidenza testuale che ne permette l'identificazione. La proprietà ha come domain desmos:LiteraryConstraint e come range desmos:TextualFeature."
+      },
+      {
+        "@language": "en",
+        "@value": "Inverse of revealsConstraint: this property relates a literary constraint to the textual feature that makes it identifiable. The property has domain desmos:LiteraryConstraint and range desmos:TextualFeature."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/desmos/LiteraryConstraint"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "is revealed by"
+      },
+      {
+        "@language": "it",
+        "@value": "è rivelata da"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/desmos/TextualFeature"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/desmos/revealsConstraint"
+      }
+    ]
+  }
+]

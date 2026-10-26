@@ -1,0 +1,6 @@
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/2000/01/rdf-schema#label> "preferred namespace URI"@en .
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/vocab/vann/> .
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/2000/01/rdf-schema#comment> "L'URI di namespace preferito da usare per i termini del vocabolario."@it .
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/2000/01/rdf-schema#comment> "The preferred namespace URI to use when using terms from the vocabulary in an XML document."@en .
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/2000/01/rdf-schema#label> "URI preferito del namespace"@it .

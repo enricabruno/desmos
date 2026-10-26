@@ -1,0 +1,13 @@
+@prefix : <https://w3id.org/desmos/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:LiteraryFormScheme a owl:NamedIndividual,
+        skos:ConceptScheme ;
+    rdfs:label "Literary Form Scheme"@en,
+        "Schema delle forme letterarie"@it ;
+    rdfs:comment "Concept scheme defining the textual form of the work (prose, poetry, visual form). Used to qualify lrmoo:F2_Expression instances via crm:P2_has_type."@en,
+        "Schema concettuale che definisce la forma testuale dell'opera (prosa, poesia, forma visuale). Utilizzato per qualificare istanze di lrmoo:F2_Expression tramite crm:P2_has_type."@it ;
+    rdfs:isDefinedBy : .
+

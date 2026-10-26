@@ -1,0 +1,13 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix intro: <https://w3id.org/lso/intro/beta202506#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+intro:INT11_TypeOfInterrelation a owl:Class ;
+    rdfs:label "INT11 Type of Interrelation"@en,
+        "INT11 Tipo di interrelazione"@it ;
+    rdfs:comment "In DeSMòS, INT11 Type of Interrelation is used as a general category for the types that qualify intertextual relations represented through INTRO."@en,
+        "In DeSMòS, INT11 Type of Interrelation è utilizzata come categoria generale per i tipi che qualificano le relazioni intertestuali rappresentate attraverso INTRO."@it ;
+    rdfs:isDefinedBy intro: ;
+    rdfs:subClassOf crm:E55_Type .
+

@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, E55 Type è utilizzata per due ordini di tipi controllati: le forme espressive delle opere (prosa, poesia, poesia visiva, arte visiva, musica), assegnate alle espressioni mediante P2 has type, e, attraverso la sottoclasse INTRO INT11 Type of Interrelation, i tipi di relazione intertestuale come l'ipertestualità, assegnati mediante R19 has type. Le proprietà che possono essere usate con questa classe sono skos:exactMatch e skos:inScheme."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, E55 Type is used for two kinds of controlled types: the expressive forms of works (prose, poetry, visual poetry, visual art, music), assigned to expressions via P2 has type, and, through the INTRO subclass INT11 Type of Interrelation, intertextual relation types such as hypertextuality, assigned via R19 has type. The properties that can be used with this class are skos:exactMatch and skos:inScheme."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "E55 Tipo"
+      },
+      {
+        "@language": "en",
+        "@value": "E55 Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"
+      }
+    ]
+  }
+]

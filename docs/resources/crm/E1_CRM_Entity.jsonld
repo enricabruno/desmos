@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, E1 CRM Entity is the root of the CIDOC CRM hierarchy and is referenced as the original domain or range of P2 has type, P3 has note, P67 refers to and P129 is about. E7 Activity, E39 Actor and E70 Thing are declared as its direct subclasses, abbreviating the official chains through E5 Event and E77 Persistent Item."
+      },
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, E1 CRM Entity è la radice della gerarchia di CIDOC CRM ed è referenziata come domain o range originale di P2 has type, P3 has note, P67 refers to e P129 is about. E7 Activity, E39 Actor ed E70 Thing ne sono dichiarate sottoclassi dirette, abbreviando le catene ufficiali che passano per E5 Event ed E77 Persistent Item."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "E1 CRM Entity"
+      },
+      {
+        "@language": "it",
+        "@value": "E1 Entità CRM"
+      }
+    ]
+  }
+]

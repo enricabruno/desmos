@@ -1,0 +1,7 @@
+<https://w3id.org/lso/intro/beta202506#INT2_ActualizationOfFeature> <http://www.w3.org/2000/01/rdf-schema#label> "INT2 Actualization of Feature"@en .
+<https://w3id.org/lso/intro/beta202506#INT2_ActualizationOfFeature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lso/intro/beta202506#> .
+<https://w3id.org/lso/intro/beta202506#INT2_ActualizationOfFeature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lso/intro/beta202506#INT2_ActualizationOfFeature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object> .
+<https://w3id.org/lso/intro/beta202506#INT2_ActualizationOfFeature> <http://www.w3.org/2000/01/rdf-schema#label> "INT2 Attualizzazione di caratteristica"@it .
+<https://w3id.org/lso/intro/beta202506#INT2_ActualizationOfFeature> <http://www.w3.org/2000/01/rdf-schema#comment> "In DeSMòS, INT2 Actualization of Feature è referenziata solo come membro dell'unione che costituisce il range originale di R12 has referred to entity e R13 has referring entity, e il domain delle loro inverse; non è istanziata nel corpus DeSMòS."@it .
+<https://w3id.org/lso/intro/beta202506#INT2_ActualizationOfFeature> <http://www.w3.org/2000/01/rdf-schema#comment> "In DeSMòS, INT2 Actualization of Feature is referenced only as a member of the original union range of R12 has referred to entity and R13 has referring entity, and of the union domain of their inverses; it is not instantiated in the DeSMòS corpus."@en .

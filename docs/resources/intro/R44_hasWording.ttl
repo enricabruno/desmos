@@ -1,0 +1,14 @@
+@prefix intro: <https://w3id.org/lso/intro/beta202506#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+intro:R44_hasWording a owl:DatatypeProperty ;
+    rdfs:label "R44 has wording"@en,
+        "R44 ha formulazione"@it ;
+    rdfs:comment "In DeSMòS, R44 has wording is used to record as a string the exact textual wording of a passage identified through INT21 Text Passage."@en,
+        "In DeSMòS, R44 has wording è utilizzata per registrare come stringa la formulazione testuale esatta di un passaggio identificato mediante INT21 Text Passage."@it ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( intro:INT16_Segment intro:INT1_Passage ) ] ;
+    rdfs:isDefinedBy intro: .
+

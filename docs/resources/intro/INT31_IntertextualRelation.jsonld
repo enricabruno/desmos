@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "https://w3id.org/lso/intro/beta202506#INT31_IntertextualRelation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, INT31 Intertextual Relation is used to represent an intertextual relation between texts or their passages as an independent entity, specifying the entities involved and the relation type. The properties that can be used with this class are intro:R12_hasReferredToEntity, intro:R13_hasReferringEntity and intro:R19_hasType."
+      },
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, INT31 Intertextual Relation è utilizzata per rappresentare come entità autonoma una relazione intertestuale tra testi o loro passaggi, specificandone le entità coinvolte e la tipologia. Le proprietà che possono essere usate con questa classe sono intro:R12_hasReferredToEntity, intro:R13_hasReferringEntity e intro:R19_hasType."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "INT31 Relazione Intertestuale"
+      },
+      {
+        "@language": "en",
+        "@value": "INT31 Intertextual Relation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#INT3_Interrelation"
+      }
+    ]
+  }
+]

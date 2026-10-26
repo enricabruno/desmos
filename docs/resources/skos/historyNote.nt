@@ -1,0 +1,6 @@
+<http://www.w3.org/2004/02/skos/core#historyNote> <http://www.w3.org/2000/01/rdf-schema#label> "history note"@en .
+<http://www.w3.org/2004/02/skos/core#historyNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2004/02/skos/core#historyNote> <http://www.w3.org/2000/01/rdf-schema#label> "nota storica"@it .
+<http://www.w3.org/2004/02/skos/core#historyNote> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2004/02/skos/core#> .
+<http://www.w3.org/2004/02/skos/core#historyNote> <http://www.w3.org/2000/01/rdf-schema#comment> "Una nota sull'uso passato del concetto."@it .
+<http://www.w3.org/2004/02/skos/core#historyNote> <http://www.w3.org/2000/01/rdf-schema#comment> "A note about the past use of the concept."@en .

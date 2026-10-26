@@ -1,0 +1,14 @@
+@prefix : <https://w3id.org/desmos/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:constrainsSemanticUnit a owl:ObjectProperty ;
+    rdfs:label "constrains semantic unit"@en,
+        "vincola unità semantica"@it ;
+    rdfs:comment "This property relates a semantic constraint to the semantic unit on which it operates (e.g., character, space, or time). The property has domain desmos:SemanticConstraint and range skos:Concept."@en,
+        "Questa proprietà collega una costrizione semantica all’unità semantica su cui opera (ad es. personaggio, spazio o tempo). La proprietà ha come domain desmos:SemanticConstraint e come range skos:Concept."@it ;
+    rdfs:domain :SemanticConstraint ;
+    rdfs:isDefinedBy : ;
+    rdfs:range skos:Concept .
+

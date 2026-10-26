@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/lso/intro/beta202506#R44_hasWording">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">R44 has wording</rdfs:label>
+    <rdfs:label xml:lang="it">R44 ha formulazione</rdfs:label>
+    <rdfs:comment xml:lang="it">In DeSMòS, R44 has wording è utilizzata per registrare come stringa la formulazione testuale esatta di un passaggio identificato mediante INT21 Text Passage.</rdfs:comment>
+    <rdfs:comment xml:lang="en">In DeSMòS, R44 has wording is used to record as a string the exact textual wording of a passage identified through INT21 Text Passage.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
+    <rdfs:domain rdf:nodeID="N116fdf236e6c4da69f23441a66a56baf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N116fdf236e6c4da69f23441a66a56baf">
+    <owl:unionOf rdf:nodeID="N7c048158056442b6aa75abd9ce1e0d8d"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7c048158056442b6aa75abd9ce1e0d8d">
+    <rdf:first rdf:resource="https://w3id.org/lso/intro/beta202506#INT16_Segment"/>
+    <rdf:rest rdf:nodeID="Na2641cb16d404152952242571e0f30ac"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na2641cb16d404152952242571e0f30ac">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="https://w3id.org/lso/intro/beta202506#INT1_Passage"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.w3.org/ns/prov#Entity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov#"/>
+    <rdfs:label xml:lang="it">Entità</rdfs:label>
+    <rdfs:label xml:lang="en">Entity</rdfs:label>
+    <rdfs:comment xml:lang="en">In DeSMòS, prov:Entity is used as a provenance category for linguistic objects whose attribution to an agent is documented, particularly declarations concerning literary constraints.</rdfs:comment>
+    <rdfs:comment xml:lang="it">In DeSMòS, prov:Entity è utilizzata come categoria di provenienza per gli oggetti linguistici di cui viene documentata l'attribuzione a un agente, in particolare le dichiarazioni relative alle costrizioni letterarie.</rdfs:comment>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://iflastandards.info/ns/lrm/lrmoo/R4_embodies">
+    <rdfs:comment xml:lang="en">In DeSMòS, it relates a published or digital manifestation to the expression it embodies. The original property has domain lrmoo:F3_Manifestation and range lrmoo:F2_Expression. In DeSMòS, the same property has domain lrmoo:F3_Manifestation and range lrmoo:F2_Expression.</rdfs:comment>
+    <rdfs:comment xml:lang="it">In DeSMòS collega una manifestazione editoriale o digitale all'espressione che incorpora. La proprietà originale ha come domain lrmoo:F3_Manifestation e come range lrmoo:F2_Expression. In DeSMòS la stessa proprietà ha come domain lrmoo:F3_Manifestation e come range lrmoo:F2_Expression.</rdfs:comment>
+    <rdfs:label xml:lang="en">R4 embodies</rdfs:label>
+    <rdfs:label xml:lang="it">R4 incarna</rdfs:label>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+    <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/"/>
+    <owl:inverseOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R4i_is_embodied_in"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+</rdf:RDF>

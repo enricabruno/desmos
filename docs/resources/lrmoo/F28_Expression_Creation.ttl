@@ -1,0 +1,13 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+lrmoo:F28_Expression_Creation a owl:Class ;
+    rdfs:label "F28 Expression Creation"@en,
+        "F28 Creazione dell'espressione"@it ;
+    rdfs:comment "In DeSMòS, F28 Expression Creation is used to represent the compositional event that produces a textual expression and in which a literary constraint may be employed. The properties that can be used with this class are crm:P14_carried_out_by, dcterms:created, desmos:usedConstraint and lrmoo:R17_created."@en,
+        "In DeSMòS, F28 Expression Creation è utilizzata per rappresentare l'evento compositivo che produce un'espressione testuale e nel quale può essere impiegata una costrizione letteraria. Le proprietà che possono essere usate con questa classe sono crm:P14_carried_out_by, dcterms:created, desmos:usedConstraint e lrmoo:R17_created."@it ;
+    rdfs:isDefinedBy lrmoo: ;
+    rdfs:subClassOf crm:E7_Activity .
+

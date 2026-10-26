@@ -1,0 +1,16 @@
+@prefix : <https://w3id.org/desmos/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:coarserThan a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:label "has coarser granularity than"@en,
+        "ha granularità più ampia di"@it ;
+    rdfs:comment "Relates a formal unit to a formal unit of finer textual granularity (e.g., a word with respect to a syllable or a letter), exclusively within the FormalUnitScheme. The property has domain skos:Concept and range skos:Concept."@en,
+        "Collega un'unità formale a un'unità formale di granularità testuale più fine (es. la parola rispetto a sillaba e lettera), esclusivamente entro il FormalUnitScheme. La proprietà ha come domain skos:Concept e come range skos:Concept."@it ;
+    rdfs:domain skos:Concept ;
+    rdfs:isDefinedBy : ;
+    rdfs:range skos:Concept ;
+    owl:inverseOf :finerThan .
+

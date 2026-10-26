@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.cidoc-crm.org/cidoc-crm/P148_has_component">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+    <rdfs:comment xml:lang="it">In DeSMòS articola espressioni e manifestazioni complesse nelle rispettive componenti. La proprietà originale ha come domain crm:E89_Propositional_Object e come range crm:E89_Propositional_Object. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression (tra espressioni) o lrmoo:F3_Manifestation (tra manifestazioni) e come range rispettivamente lrmoo:F2_Expression o lrmoo:F3_Manifestation.</rdfs:comment>
+    <rdfs:comment xml:lang="en">In DeSMòS, it decomposes complex expressions and manifestations into their components. The original property has domain crm:E89_Propositional_Object and range crm:E89_Propositional_Object. In DeSMòS, the same property has domain lrmoo:F2_Expression (between expressions) or lrmoo:F3_Manifestation (between manifestations) and range lrmoo:F2_Expression or lrmoo:F3_Manifestation respectively.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"/>
+    <rdfs:label xml:lang="it">P148 ha componente</rdfs:label>
+    <rdfs:label xml:lang="en">P148 has component</rdfs:label>
+    <owl:inverseOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P148i_is_component_of"/>
+  </rdf:Description>
+</rdf:RDF>

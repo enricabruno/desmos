@@ -1,0 +1,20 @@
+_:Nef3fd721b04b46c4bb6dc40c1a758c9e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N14451544ed8744d8abac5d6236c855a1 .
+<https://w3id.org/lso/intro/beta202506#R12i_isReferredToEntity> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lso/intro/beta202506#INT3_Interrelation> .
+<https://w3id.org/lso/intro/beta202506#R12i_isReferredToEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N8d32349f039c4883a38925ad3d548524 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lso/intro/beta202506#INT2_ActualizationOfFeature> .
+<https://w3id.org/lso/intro/beta202506#R12i_isReferredToEntity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lso/intro/beta202506#> .
+_:N519b097bffb94882b572110f47d6b1ce <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nae0fbf48ebe24e97945a4eb8709fd7e0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lso/intro/beta202506#INT1_Passage> .
+_:Nbfd327fa25fe44a896e28a82ce189994 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lso/intro/beta202506#INT6_Architext> .
+_:N519b097bffb94882b572110f47d6b1ce <http://www.w3.org/2002/07/owl#unionOf> _:Nef3fd721b04b46c4bb6dc40c1a758c9e .
+<https://w3id.org/lso/intro/beta202506#R12i_isReferredToEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of R12 has referred to entity: in DeSMòS, it relates a hypotextual entity (expression or passage) to the intertextual relation in which it is the entity referred to. The original property has domain the union of lrmoo:F1_Work, crm:E73_Information_Object, intro:INT1_Passage, intro:INT2_ActualizationOfFeature and intro:INT6_Architext and range intro:INT3_Interrelation. In DeSMòS, the same property has domain lrmoo:F2_Expression or intro:INT21_TextPassage and range intro:INT31_IntertextualRelation."@en .
+_:N14451544ed8744d8abac5d6236c855a1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> .
+_:N8d32349f039c4883a38925ad3d548524 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nbfd327fa25fe44a896e28a82ce189994 .
+<https://w3id.org/lso/intro/beta202506#R12i_isReferredToEntity> <http://www.w3.org/2000/01/rdf-schema#label> "R12i è entità a cui si riferisce di"@it .
+<https://w3id.org/lso/intro/beta202506#R12i_isReferredToEntity> <http://www.w3.org/2000/01/rdf-schema#label> "R12i is referred to entity of"@en .
+_:Nae0fbf48ebe24e97945a4eb8709fd7e0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N8d32349f039c4883a38925ad3d548524 .
+_:Nef3fd721b04b46c4bb6dc40c1a758c9e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://iflastandards.info/ns/lrm/lrmoo/F1_Work> .
+<https://w3id.org/lso/intro/beta202506#R12i_isReferredToEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Inversa di R12 has referred to entity: in DeSMòS collega un'entità ipotestuale (espressione o passaggio) alla relazione intertestuale in cui è l'entità a cui si fa riferimento. La proprietà originale ha come domain l'unione di lrmoo:F1_Work, crm:E73_Information_Object, intro:INT1_Passage, intro:INT2_ActualizationOfFeature e intro:INT6_Architext e come range intro:INT3_Interrelation. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression o intro:INT21_TextPassage e come range intro:INT31_IntertextualRelation."@it .
+_:Nbfd327fa25fe44a896e28a82ce189994 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/lso/intro/beta202506#R12i_isReferredToEntity> <http://www.w3.org/2000/01/rdf-schema#domain> _:N519b097bffb94882b572110f47d6b1ce .
+_:N14451544ed8744d8abac5d6236c855a1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nae0fbf48ebe24e97945a4eb8709fd7e0 .

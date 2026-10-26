@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "https://w3id.org/lso/intro/beta202506#INT3_Interrelation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, INT3 Interrelation provides the general category for the reified representation of relations between entities, specialised through INT31 Intertextual Relation for the intertextual relations considered in the model."
+      },
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, INT3 Interrelation fornisce la categoria generale per la rappresentazione reificata delle relazioni tra entità, specializzata attraverso INT31 Intertextual Relation per le relazioni intertestuali considerate nel modello."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "INT3 Interrelazione"
+      },
+      {
+        "@language": "en",
+        "@value": "INT3 Interrelation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"
+      }
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+lrmoo:R15_has_fragment a owl:ObjectProperty ;
+    rdfs:label "R15 has fragment"@en,
+        "R15 ha frammento"@it ;
+    rdfs:comment "In DeSMòS, it relates an expression to the peritextual declaration contained in the same publication, which is a fragment of it and documents the use of a constraint. The original property has domain lrmoo:F2_Expression and range crm:E90_Symbolic_Object. In DeSMòS, the same property has domain lrmoo:F2_Expression and range crm:E33_Linguistic_Object."@en,
+        "In DeSMòS collega un'espressione alla dichiarazione peritestuale contenuta nella stessa pubblicazione, che ne è un frammento e documenta l'impiego di una costrizione. La proprietà originale ha come domain lrmoo:F2_Expression e come range crm:E90_Symbolic_Object. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression e come range crm:E33_Linguistic_Object."@it ;
+    rdfs:domain lrmoo:F2_Expression ;
+    rdfs:isDefinedBy lrmoo: ;
+    rdfs:range crm:E90_Symbolic_Object ;
+    owl:inverseOf lrmoo:R15i_is_fragment_of .
+

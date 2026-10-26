@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "http://purl.org/dc/terms/modified",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The date on which the resource was modified."
+      },
+      {
+        "@language": "it",
+        "@value": "La data in cui la risorsa è stata modificata."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/dc/terms/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "modified"
+      },
+      {
+        "@language": "it",
+        "@value": "modificato"
+      }
+    ]
+  }
+]

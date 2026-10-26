@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf">
+    <rdfs:label xml:lang="it">concetto principale di</rdfs:label>
+    <rdfs:label xml:lang="en">top concept of</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="it">Inversa di skos:hasTopConcept: in DeSMòS collega un concetto allo schema di cui è punto di accesso gerarchico principale. La proprietà originale ha come domain skos:Concept e come range skos:ConceptScheme. In DeSMòS la stessa proprietà ha come domain skos:Concept e come range skos:ConceptScheme.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Inverse of skos:hasTopConcept: in DeSMòS, it relates a concept to the scheme of which it is a main hierarchical entry point. The original property has domain skos:Concept and range skos:ConceptScheme. In DeSMòS, the same property has domain skos:Concept and range skos:ConceptScheme.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+  </rdf:Description>
+</rdf:RDF>

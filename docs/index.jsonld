@@ -1,0 +1,5109 @@
+[
+  {
+    "@id": "https://w3id.org/lso/intro/beta202506#R13i_isReferringEntity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Inversa di R13 has referring entity: in DeSMòS collega un'entità ipertestuale (espressione o passaggio) alla relazione intertestuale in cui è l'entità referente. La proprietà originale ha come domain l'unione di lrmoo:F1_Work, crm:E73_Information_Object, intro:INT1_Passage, intro:INT2_ActualizationOfFeature e intro:INT6_Architext e come range intro:INT3_Interrelation. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression o intro:INT21_TextPassage e come range intro:INT31_IntertextualRelation."
+      },
+      {
+        "@language": "en",
+        "@value": "Inverse of R13 has referring entity: in DeSMòS, it relates a hypertextual entity (expression or passage) to the intertextual relation in which it is the referring entity. The original property has domain the union of lrmoo:F1_Work, crm:E73_Information_Object, intro:INT1_Passage, intro:INT2_ActualizationOfFeature and intro:INT6_Architext and range intro:INT3_Interrelation. In DeSMòS, the same property has domain lrmoo:F2_Expression or intro:INT21_TextPassage and range intro:INT31_IntertextualRelation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:N348636469c27458e8186f4ec3446c83a"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "R13i is referring entity of"
+      },
+      {
+        "@language": "it",
+        "@value": "R13i è entità referente di"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#INT3_Interrelation"
+      }
+    ]
+  },
+  {
+    "@id": "_:N348636469c27458e8186f4ec3446c83a",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://iflastandards.info/ns/lrm/lrmoo/F1_Work"
+          },
+          {
+            "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+          },
+          {
+            "@id": "https://w3id.org/lso/intro/beta202506#INT1_Passage"
+          },
+          {
+            "@id": "https://w3id.org/lso/intro/beta202506#INT2_ActualizationOfFeature"
+          },
+          {
+            "@id": "https://w3id.org/lso/intro/beta202506#INT6_Architext"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/lso/intro/beta202506#INT15_IntertextualityInIntertextualityTheories",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, INT15 Intertextuality in Intertextuality Theories is used to represent relation types derived from theories of intertextuality, including hypertextuality in Gérard Genette's classification."
+      },
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, INT15 Intertextuality in Intertextuality Theories è utilizzata per rappresentare tipi di relazione derivati da teorie dell'intertestualità, tra cui l'ipertestualità nella classificazione di Gérard Genette."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "INT15 Intertextuality in Intertextuality Theories"
+      },
+      {
+        "@language": "it",
+        "@value": "INT15 Intertestualità nelle teorie dell'intertestualità"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#INT11_TypeOfInterrelation"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/lso/intro/beta202506#R12_hasReferredToEntity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS identifica l'entità ipotestuale di una relazione intertestuale: l'intera espressione o, se la relazione è localizzabile, un passaggio specifico dell'ipotesto. La proprietà originale ha come domain intro:INT3_Interrelation e come range l'unione di lrmoo:F1_Work, crm:E73_Information_Object, intro:INT1_Passage, intro:INT2_ActualizationOfFeature e intro:INT6_Architext. In DeSMòS la stessa proprietà ha come domain intro:INT31_IntertextualRelation e come range lrmoo:F2_Expression o intro:INT21_TextPassage."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, it identifies the hypotextual entity of an intertextual relation: the whole expression or, when the relation can be localised, a specific passage of the hypotext. The original property has domain intro:INT3_Interrelation and range the union of lrmoo:F1_Work, crm:E73_Information_Object, intro:INT1_Passage, intro:INT2_ActualizationOfFeature and intro:INT6_Architext. In DeSMòS, the same property has domain intro:INT31_IntertextualRelation and range lrmoo:F2_Expression or intro:INT21_TextPassage."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#INT3_Interrelation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "R12 ha entità a cui si riferisce"
+      },
+      {
+        "@language": "en",
+        "@value": "R12 has referred to entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:N69859e2d3dc746488197ccfd66599050"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#R12i_isReferredToEntity"
+      }
+    ]
+  },
+  {
+    "@id": "_:N69859e2d3dc746488197ccfd66599050",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://iflastandards.info/ns/lrm/lrmoo/F1_Work"
+          },
+          {
+            "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+          },
+          {
+            "@id": "https://w3id.org/lso/intro/beta202506#INT1_Passage"
+          },
+          {
+            "@id": "https://w3id.org/lso/intro/beta202506#INT2_ActualizationOfFeature"
+          },
+          {
+            "@id": "https://w3id.org/lso/intro/beta202506#INT6_Architext"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/E70_Thing",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, E70 Thing is referenced as the original domain and range of P130 shows features of. E28 Conceptual Object is declared as its direct subclass, abbreviating the official chain E28 Conceptual Object ⊑ E71 Human-Made Thing ⊑ E70 Thing (CIDOC CRM 7.1.3)."
+      },
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, E70 Thing è referenziata come domain e range originali di P130 shows features of. E28 Conceptual Object ne è dichiarata sottoclasse diretta, abbreviando la catena ufficiale E28 Conceptual Object ⊑ E71 Human-Made Thing ⊑ E70 Thing (CIDOC CRM 7.1.3)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "E70 Thing"
+      },
+      {
+        "@language": "it",
+        "@value": "E70 Cosa"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/desmos/isOperationInvolvedIn",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Inversa di involvesOperation: questa proprietà collega un'operazione procedurale alle costrizioni letterarie che la comportano. La proprietà ha come domain skos:Concept e come range desmos:LiteraryConstraint."
+      },
+      {
+        "@language": "en",
+        "@value": "Inverse of involvesOperation: this property relates a procedural operation to the literary constraints that involve it. The property has domain skos:Concept and range desmos:LiteraryConstraint."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "is operation involved in"
+      },
+      {
+        "@language": "it",
+        "@value": "è l'operazione coinvolta in"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/desmos/LiteraryConstraint"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Inversa di P129 is about: in DeSMòS collega una costrizione letteraria alle dichiarazioni che la hanno come argomento. La proprietà originale ha come domain crm:E1_CRM_Entity e come range crm:E89_Propositional_Object. In DeSMòS la stessa proprietà ha come domain desmos:LiteraryConstraint e come range crm:E33_Linguistic_Object."
+      },
+      {
+        "@language": "en",
+        "@value": "Inverse of P129 is about: in DeSMòS, it relates a literary constraint to the declarations that have it as their subject. The original property has domain crm:E1_CRM_Entity and range crm:E89_Propositional_Object. In DeSMòS, the same property has domain desmos:LiteraryConstraint and range crm:E33_Linguistic_Object."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "P129i is subject of"
+      },
+      {
+        "@language": "it",
+        "@value": "P129i è oggetto di"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/desmos/LiteraryFormScheme",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Concept scheme defining the textual form of the work (prose, poetry, visual form). Used to qualify lrmoo:F2_Expression instances via crm:P2_has_type."
+      },
+      {
+        "@language": "it",
+        "@value": "Schema concettuale che definisce la forma testuale dell'opera (prosa, poesia, forma visuale). Utilizzato per qualificare istanze di lrmoo:F2_Expression tramite crm:P2_has_type."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Literary Form Scheme"
+      },
+      {
+        "@language": "it",
+        "@value": "Schema delle forme letterarie"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/lso/intro/beta202506#R30i_isTextPassageOf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Inversa di R30 has text passage: in DeSMòS collega un passaggio testuale all'espressione da cui è tratto. La proprietà originale ha come domain intro:INT21_TextPassage e come range l'unione di crm:E73_Information_Object e intro:INT1_Passage. In DeSMòS la stessa proprietà ha come domain intro:INT21_TextPassage e come range lrmoo:F2_Expression."
+      },
+      {
+        "@language": "en",
+        "@value": "Inverse of R30 has text passage: in DeSMòS, it relates a textual passage to the expression from which it is taken. The original property has domain intro:INT21_TextPassage and range the union of crm:E73_Information_Object and intro:INT1_Passage. In DeSMòS, the same property has domain intro:INT21_TextPassage and range lrmoo:F2_Expression."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#INT21_TextPassage"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "R30i is text passage of"
+      },
+      {
+        "@language": "it",
+        "@value": "R30i è passaggio testuale di"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:N32a2541c7d984d84b0ffa3debfdcdc75"
+      }
+    ]
+  },
+  {
+    "@id": "_:N32a2541c7d984d84b0ffa3debfdcdc75",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+          },
+          {
+            "@id": "https://w3id.org/lso/intro/beta202506#INT1_Passage"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/desmos/LiteraryConstraint",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A formal or semantic procedure intervening in the process of textual generation (F28 Expression Creation). Its presence may be documented through objective evidence (TextualFeature) or paratextual statements (E33 Linguistic Object)."
+      },
+      {
+        "@language": "it",
+        "@value": "Procedura formale o semantica che interviene nel processo di generazione testuale (F28 Expression Creation). La sua presenza può essere documentata attraverso evidenze oggettive (TextualFeature) o dichiarazioni paratestuali (E33 Linguistic Object)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "Costrizione letteraria"
+      },
+      {
+        "@language": "en",
+        "@value": "Literary constraint"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"
+      },
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2004/02/skos/core#definition",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A statement of the meaning of the concept."
+      },
+      {
+        "@language": "it",
+        "@value": "Una spiegazione del significato del concetto."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "definition"
+      },
+      {
+        "@language": "it",
+        "@value": "definizione"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, E55 Type è utilizzata per due ordini di tipi controllati: le forme espressive delle opere (prosa, poesia, poesia visiva, arte visiva, musica), assegnate alle espressioni mediante P2 has type, e, attraverso la sottoclasse INTRO INT11 Type of Interrelation, i tipi di relazione intertestuale come l'ipertestualità, assegnati mediante R19 has type. Le proprietà che possono essere usate con questa classe sono skos:exactMatch e skos:inScheme."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, E55 Type is used for two kinds of controlled types: the expressive forms of works (prose, poetry, visual poetry, visual art, music), assigned to expressions via P2 has type, and, through the INTRO subclass INT11 Type of Interrelation, intertextual relation types such as hypertextuality, assigned via R19 has type. The properties that can be used with this class are skos:exactMatch and skos:inScheme."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "E55 Type"
+      },
+      {
+        "@language": "it",
+        "@value": "E55 Tipo"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/desmos/SemanticUnitScheme",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Concept scheme defining the discrete units of the content plane (e.g., character, space, time) determined by a semantic constraint. Expected as the range value of desmos:constrainsSemanticUnit."
+      },
+      {
+        "@language": "it",
+        "@value": "Schema concettuale che definisce le unità discrete del piano del contenuto (personaggio, spazio, tempo) determinate da una costrizione di tipo semantico. Atteso come valore del range di desmos:constrainsSemanticUnit."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Semantic Unit Scheme"
+      },
+      {
+        "@language": "it",
+        "@value": "Schema delle unità semantiche"
+      }
+    ]
+  },
+  {
+    "@id": "http://iflastandards.info/ns/lrm/lrmoo/F1_Work",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, F1 Work è utilizzata per rappresentare l'opera come entità astratta, distinta dalle espressioni testuali attraverso cui essa viene realizzata. La proprietà che può essere usata con questa classe è lrmoo:R3_is_realised_in."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, F1 Work is used to represent the work as an abstract entity, distinct from the textual expressions through which it is realised. The property that can be used with this class is lrmoo:R3_is_realised_in."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "F1 Work"
+      },
+      {
+        "@language": "it",
+        "@value": "F1 Opera"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2004/02/skos/core#broader",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS collega un concetto a un concetto più generale entro gli schemi controllati dell'ontologia. La proprietà originale ha come domain skos:Concept (ereditato da skos:semanticRelation) e come range skos:Concept (ereditato da skos:semanticRelation). In DeSMòS la stessa proprietà ha come domain skos:Concept e come range skos:Concept."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, it relates a concept to a more general concept within the ontology's controlled schemes. The original property has domain skos:Concept (inherited from skos:semanticRelation) and range skos:Concept (inherited from skos:semanticRelation). In DeSMòS, the same property has domain skos:Concept and range skos:Concept."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "broader"
+      },
+      {
+        "@language": "it",
+        "@value": "più ampio"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#narrower"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2004/02/skos/core#example",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An example of the use of a concept."
+      },
+      {
+        "@language": "it",
+        "@value": "Fornisce un esempio dell'uso di un concetto."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "esempio"
+      },
+      {
+        "@language": "en",
+        "@value": "example"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/desmos/ProceduralOperationScheme",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Concept scheme describing the procedural operations applied to generate the constrained text. Expected as the range value of desmos:involvesOperation."
+      },
+      {
+        "@language": "it",
+        "@value": "Schema concettuale che descrive le operazioni procedurali applicate per generare il testo vincolato. Atteso come valore del range di desmos:involvesOperation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Procedural Operation Scheme"
+      },
+      {
+        "@language": "it",
+        "@value": "Schema delle operazioni procedurali"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, E28 Conceptual Object is the common superclass of the non-material entities in the model: through E89 Propositional Object and E90 Symbolic Object it subsumes information objects (works, expressions, linguistic objects, passages); it is also the direct superclass of E55 Type, desmos:TextualFeature and intro:INT3_Interrelation (the reified intertextual relations), as well as of intro:INT2_ActualizationOfFeature and intro:INT6_Architext, which are referenced only in the original ranges of R12 and R13."
+      },
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, E28 Conceptual Object è la superclasse comune delle entità non materiali del modello: attraverso E89 Propositional Object ed E90 Symbolic Object comprende gli oggetti informativi (opere, espressioni, oggetti linguistici, passaggi); è inoltre superclasse diretta di E55 Type, desmos:TextualFeature e intro:INT3_Interrelation (le relazioni intertestuali reificate), nonché di intro:INT2_ActualizationOfFeature e intro:INT6_Architext, referenziate solo nei range originali di R12 e R13."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "E28 Conceptual Object"
+      },
+      {
+        "@language": "it",
+        "@value": "E28 Oggetto Concettuale"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E70_Thing"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/lso/intro/beta202506#R12i_isReferredToEntity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Inversa di R12 has referred to entity: in DeSMòS collega un'entità ipotestuale (espressione o passaggio) alla relazione intertestuale in cui è l'entità a cui si fa riferimento. La proprietà originale ha come domain l'unione di lrmoo:F1_Work, crm:E73_Information_Object, intro:INT1_Passage, intro:INT2_ActualizationOfFeature e intro:INT6_Architext e come range intro:INT3_Interrelation. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression o intro:INT21_TextPassage e come range intro:INT31_IntertextualRelation."
+      },
+      {
+        "@language": "en",
+        "@value": "Inverse of R12 has referred to entity: in DeSMòS, it relates a hypotextual entity (expression or passage) to the intertextual relation in which it is the entity referred to. The original property has domain the union of lrmoo:F1_Work, crm:E73_Information_Object, intro:INT1_Passage, intro:INT2_ActualizationOfFeature and intro:INT6_Architext and range intro:INT3_Interrelation. In DeSMòS, the same property has domain lrmoo:F2_Expression or intro:INT21_TextPassage and range intro:INT31_IntertextualRelation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:N519b097bffb94882b572110f47d6b1ce"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "R12i is referred to entity of"
+      },
+      {
+        "@language": "it",
+        "@value": "R12i è entità a cui si riferisce di"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#INT3_Interrelation"
+      }
+    ]
+  },
+  {
+    "@id": "_:N519b097bffb94882b572110f47d6b1ce",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://iflastandards.info/ns/lrm/lrmoo/F1_Work"
+          },
+          {
+            "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+          },
+          {
+            "@id": "https://w3id.org/lso/intro/beta202506#INT1_Passage"
+          },
+          {
+            "@id": "https://w3id.org/lso/intro/beta202506#INT2_ActualizationOfFeature"
+          },
+          {
+            "@id": "https://w3id.org/lso/intro/beta202506#INT6_Architext"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS classifica un'espressione secondo la sua forma letteraria o artistica (es. prosa, poesia, poesia visiva). La proprietà originale ha come domain crm:E1_CRM_Entity e come range crm:E55_Type. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression e come range crm:E55_Type."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, it classifies an expression by its literary or artistic form (e.g., prose, poetry, visual poetry). The original property has domain crm:E1_CRM_Entity and range crm:E55_Type. In DeSMòS, the same property has domain lrmoo:F2_Expression and range crm:E55_Type."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "P2 has type"
+      },
+      {
+        "@language": "it",
+        "@value": "P2 ha tipo"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/description",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A description of the resource."
+      },
+      {
+        "@language": "it",
+        "@value": "Una descrizione della risorsa."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/dc/terms/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "description"
+      },
+      {
+        "@language": "it",
+        "@value": "descrizione"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/source",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A related resource from which the described resource is derived."
+      },
+      {
+        "@language": "it",
+        "@value": "Una risorsa correlata da cui deriva la risorsa corrente."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/dc/terms/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "fonte"
+      },
+      {
+        "@language": "en",
+        "@value": "source"
+      }
+    ]
+  },
+  {
+    "@id": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, F2 Expression è utilizzata per rappresentare la realizzazione testuale di un'opera, sulla quale vengono documentate le costrizioni letterarie e le relazioni con altri testi. Le proprietà che possono essere usate con questa classe sono crm:P130_shows_features_of, crm:P148_has_component, crm:P2_has_type, lrmoo:R15_has_fragment, lrmoo:R4i_is_embodied_in e lrmoo:R76_is_derivative_of."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, F2 Expression is used to represent the textual realisation of a work, on which literary constraints and relations to other texts are documented. The properties that can be used with this class are crm:P130_shows_features_of, crm:P148_has_component, crm:P2_has_type, lrmoo:R15_has_fragment, lrmoo:R4i_is_embodied_in and lrmoo:R76_is_derivative_of."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "F2 Expression"
+      },
+      {
+        "@language": "it",
+        "@value": "F2 Espressione"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2001/XMLSchema#gYear",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Datatype"
+    ]
+  },
+  {
+    "@id": "https://w3id.org/desmos/hypertextuality",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "https://w3id.org/lso/intro/beta202506#INT15_IntertextualityInIntertextualityTheories"
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@id": "https://www.worldcat.org/isbn/9782020061162"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Hypertextuality"
+      },
+      {
+        "@language": "it",
+        "@value": "Ipertestualità"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Type of intertextual relation, in the Genettian sense, designating any relationship of derivation linking a later text (the hypertext) to an earlier one (the hypotext) upon which it is grafted in a manner that is not that of commentary; the derivation may proceed by transformation (as in parody) or by imitation (as in pastiche)."
+      },
+      {
+        "@language": "it",
+        "@value": "Tipo di relazione intertestuale, nell'accezione genettiana, che designa qualsiasi rapporto di derivazione che collega un testo posteriore (l'ipertesto) ad un testo anteriore (l'ipotesto) sul quale esso si innesta in modo non commentativo; la derivazione può realizzarsi per trasformazione (come nella parodia) o per imitazione (come nel pastiche)."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Hypertextuality"
+      },
+      {
+        "@language": "it",
+        "@value": "Ipertestualità"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#scopeNote": [
+      {
+        "@language": "en",
+        "@value": "Used as the object of intro:R19_hasType to qualify instances of intro:INT31_IntertextualRelation as Genettian hypertextual relations."
+      },
+      {
+        "@language": "it",
+        "@value": "Utilizzato come oggetto di intro:R19_hasType per qualificare istanze di intro:INT31_IntertextualRelation come relazioni ipertestuali genettiane."
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/desmos/involvesOperation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Questa proprietà collega una costrizione letteraria all'operazione procedurale che il suo impiego comporta. La proprietà ha come domain desmos:LiteraryConstraint e come range skos:Concept."
+      },
+      {
+        "@language": "en",
+        "@value": "This property relates a literary constraint to the procedural operation its use involves. The property has domain desmos:LiteraryConstraint and range skos:Concept."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/desmos/LiteraryConstraint"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "coinvolge operazione"
+      },
+      {
+        "@language": "en",
+        "@value": "involves operation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/desmos/isOperationInvolvedIn"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/desmos/SemanticConstraint",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A constraint that operates primarily at the level of the signified. The properties that can be used with this class are desmos:constrainsSemanticUnit, desmos:constraintOrigin, desmos:involvesOperation, skos:inScheme and skos:related."
+      },
+      {
+        "@language": "it",
+        "@value": "Costrizione che interviene prioritariamente sul significato. Le proprietà che possono essere usate con questa classe sono desmos:constrainsSemanticUnit, desmos:constraintOrigin, desmos:involvesOperation, skos:inScheme e skos:related."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "Costrizione semantica"
+      },
+      {
+        "@language": "en",
+        "@value": "Semantic constraint"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/desmos/LiteraryConstraint"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "https://w3id.org/desmos/FormalConstraint"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/desmos/ArtisticFormScheme",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Concept scheme defining the artistic form of non-linguistic expressions (visual art, music). Used to qualify lrmoo:F2_Expression instances via crm:P2_has_type, complementing desmos:LiteraryFormScheme where the source expression is not a text."
+      },
+      {
+        "@language": "it",
+        "@value": "Schema concettuale che definisce la forma artistica di espressioni non linguistiche (arte visuale, musica). Utilizzato per qualificare istanze di lrmoo:F2_Expression tramite crm:P2_has_type, in complemento a desmos:LiteraryFormScheme nei casi in cui l'espressione non sia un testo."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Artistic Form Scheme"
+      },
+      {
+        "@language": "it",
+        "@value": "Schema delle forme artistiche"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, E90 Symbolic Object is referenced as the original range of R15 has fragment: the peritextual statements (E33 Linguistic Object) linked to an expression through R15 are symbolic objects via E73 Information Object. It is the superclass of E73 Information Object and, in INTRO, of INT1 Passage and INT16 Segment."
+      },
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, E90 Symbolic Object è referenziata come range originale di R15 has fragment: le dichiarazioni peritestuali (E33 Linguistic Object) collegate a un'espressione mediante R15 sono oggetti simbolici attraverso E73 Information Object. È superclasse di E73 Information Object e, in INTRO, di INT1 Passage e INT16 Segment."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "E90 Symbolic Object"
+      },
+      {
+        "@language": "it",
+        "@value": "E90 Oggetto Simbolico"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/lso/intro/beta202506#INT31_IntertextualRelation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, INT31 Intertextual Relation è utilizzata per rappresentare come entità autonoma una relazione intertestuale tra testi o loro passaggi, specificandone le entità coinvolte e la tipologia. Le proprietà che possono essere usate con questa classe sono intro:R12_hasReferredToEntity, intro:R13_hasReferringEntity e intro:R19_hasType."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, INT31 Intertextual Relation is used to represent an intertextual relation between texts or their passages as an independent entity, specifying the entities involved and the relation type. The properties that can be used with this class are intro:R12_hasReferredToEntity, intro:R13_hasReferringEntity and intro:R19_hasType."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "INT31 Intertextual Relation"
+      },
+      {
+        "@language": "it",
+        "@value": "INT31 Relazione Intertestuale"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#INT3_Interrelation"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/desmos/constrainsFormalUnit",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Collega una costrizione formale all'unità testuale su cui opera (ad es. lettera, sillaba o parola). La proprietà ha come domain desmos:FormalConstraint e come range skos:Concept."
+      },
+      {
+        "@language": "en",
+        "@value": "Relates a formal constraint to the textual unit on which it operates. The property has domain desmos:FormalConstraint and range skos:Concept."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/desmos/FormalConstraint"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "constrains formal unit"
+      },
+      {
+        "@language": "it",
+        "@value": "vincola unità formale"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/title",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A name given to the resource."
+      },
+      {
+        "@language": "it",
+        "@value": "Un nome dato alla risorsa."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/dc/terms/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "title"
+      },
+      {
+        "@language": "it",
+        "@value": "titolo"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/issued",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, dcterms:issued è utilizzata per registrare la data di pubblicazione o emissione di una manifestazione."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, dcterms:issued is used to record the publication or issuance date of a manifestation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/dc/terms/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "data di emissione"
+      },
+      {
+        "@language": "en",
+        "@value": "date issued"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/lso/intro/beta202506#R30_hasTextPassage",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS collega un'espressione a un passaggio testuale selezionato al suo interno, quando la relazione intertestuale riguarda porzioni specifiche del testo. La proprietà originale ha come domain l'unione di crm:E73_Information_Object e intro:INT1_Passage e come range intro:INT21_TextPassage. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression e come range intro:INT21_TextPassage."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, it relates an expression to a textual passage selected within it, when an intertextual relation concerns specific portions of the text. The original property has domain the union of crm:E73_Information_Object and intro:INT1_Passage and range intro:INT21_TextPassage. In DeSMòS, the same property has domain lrmoo:F2_Expression and range intro:INT21_TextPassage."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:N89804f5ffb624956b59b82abfba6949a"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "R30 ha passaggio testuale"
+      },
+      {
+        "@language": "en",
+        "@value": "R30 has text passage"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#INT21_TextPassage"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#R30i_isTextPassageOf"
+      }
+    ]
+  },
+  {
+    "@id": "_:N89804f5ffb624956b59b82abfba6949a",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+          },
+          {
+            "@id": "https://w3id.org/lso/intro/beta202506#INT1_Passage"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/desmos/isSemanticUnitConstrainedBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Inversa di constrainsSemanticUnit: collega un'unità del piano del contenuto alle costrizioni semantiche che la determinano. La proprietà ha come domain skos:Concept e come range desmos:SemanticConstraint."
+      },
+      {
+        "@language": "en",
+        "@value": "Inverse of constrainsSemanticUnit: relates a unit of the content plane to the semantic constraints that determine it. The property has domain skos:Concept and range desmos:SemanticConstraint."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "is semantic unit constrained by"
+      },
+      {
+        "@language": "it",
+        "@value": "è unità semantica vincolata da"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/desmos/SemanticConstraint"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/desmos/constrainsSemanticUnit"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/desmos/FormalConstraintScheme",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Schema concettuale che raccoglie le costrizioni formali, che intervengono prioritariamente sul significante del testo."
+      },
+      {
+        "@language": "en",
+        "@value": "Concept scheme collecting formal constraints, which intervene primarily on the signifier of the text."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Formal Constraint Scheme"
+      },
+      {
+        "@language": "it",
+        "@value": "Schema delle costrizioni formali"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, E33 Linguistic Object è utilizzata per identificare passaggi paratestuali (epitestuali o peritestuali) nei quali l'autore o il curatore del volume dichiara l'utilizzo di una costrizione letteraria. Le proprietà che possono essere usate con questa classe sono crm:P129_is_about, crm:P3_has_note, crm:P67_refers_to e prov:wasAttributedTo."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, E33 Linguistic Object is used to identify paratextual passages (epitextual or peritextual) in which the author or editor of the volume declares the use of a literary constraint. The properties that can be used with this class are crm:P129_is_about, crm:P3_has_note, crm:P67_refers_to and prov:wasAttributedTo."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "E33 Linguistic Object"
+      },
+      {
+        "@language": "it",
+        "@value": "E33 Oggetto Linguistico"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/lso/intro/beta202506#R19_hasType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS qualifica una relazione intertestuale con un tipo controllato (es. ipertestualità). La proprietà originale ha come domain intro:INT3_Interrelation e come range intro:INT11_TypeOfInterrelation. In DeSMòS la stessa proprietà ha come domain intro:INT31_IntertextualRelation e come range intro:INT11_TypeOfInterrelation."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, it qualifies an intertextual relation with a controlled type (e.g., hypertextuality). The original property has domain intro:INT3_Interrelation and range intro:INT11_TypeOfInterrelation. In DeSMòS, the same property has domain intro:INT31_IntertextualRelation and range intro:INT11_TypeOfInterrelation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#INT3_Interrelation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "R19 ha tipo"
+      },
+      {
+        "@language": "en",
+        "@value": "R19 has type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#INT11_TypeOfInterrelation"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#R19i_isTypeOf"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2004/02/skos/core#historyNote",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A note about the past use of the concept."
+      },
+      {
+        "@language": "it",
+        "@value": "Una nota sull'uso passato del concetto."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "history note"
+      },
+      {
+        "@language": "it",
+        "@value": "nota storica"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, E73 Information Object è utilizzata come categoria generale per gli oggetti informativi coinvolti nella rappresentazione del testo e delle procedure ad esso associate, attraverso le classi specializzate riprese da CIDOC CRM, LRMoo e INTRO."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, E73 Information Object is used as a general category for information objects involved in the representation of texts and their associated procedures, through specialised classes reused from CIDOC CRM, LRMoo, and INTRO."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "E73 Information Object"
+      },
+      {
+        "@language": "it",
+        "@value": "E73 Oggetto Informativo"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"
+      },
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Inversa di P2 has type: in DeSMòS collega un tipo di forma letteraria o artistica alle espressioni che classifica. La proprietà originale ha come domain crm:E55_Type e come range crm:E1_CRM_Entity. In DeSMòS la stessa proprietà ha come domain crm:E55_Type e come range lrmoo:F2_Expression."
+      },
+      {
+        "@language": "en",
+        "@value": "Inverse of P2 has type: in DeSMòS, it relates a literary or artistic form type to the expressions it classifies. The original property has domain crm:E55_Type and range crm:E1_CRM_Entity. In DeSMòS, the same property has domain crm:E55_Type and range lrmoo:F2_Expression."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "P2i is type of"
+      },
+      {
+        "@language": "it",
+        "@value": "P2i è tipo di"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/lso/intro/beta202506#R13_hasReferringEntity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS identifica l'entità ipertestuale di una relazione intertestuale: l'intera espressione o, se la relazione è localizzabile, un passaggio specifico dell'ipertesto. La proprietà originale ha come domain intro:INT3_Interrelation e come range l'unione di lrmoo:F1_Work, crm:E73_Information_Object, intro:INT1_Passage, intro:INT2_ActualizationOfFeature e intro:INT6_Architext. In DeSMòS la stessa proprietà ha come domain intro:INT31_IntertextualRelation e come range lrmoo:F2_Expression o intro:INT21_TextPassage."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, it identifies the hypertextual entity of an intertextual relation: the whole expression or, when the relation can be localised, a specific passage of the hypertext. The original property has domain intro:INT3_Interrelation and range the union of lrmoo:F1_Work, crm:E73_Information_Object, intro:INT1_Passage, intro:INT2_ActualizationOfFeature and intro:INT6_Architext. In DeSMòS, the same property has domain intro:INT31_IntertextualRelation and range lrmoo:F2_Expression or intro:INT21_TextPassage."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#INT3_Interrelation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "R13 ha entità referente"
+      },
+      {
+        "@language": "en",
+        "@value": "R13 has referring entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "_:N5870764855854f4a9e2c79cc07e1eccf"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#R13i_isReferringEntity"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5870764855854f4a9e2c79cc07e1eccf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://iflastandards.info/ns/lrm/lrmoo/F1_Work"
+          },
+          {
+            "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+          },
+          {
+            "@id": "https://w3id.org/lso/intro/beta202506#INT1_Passage"
+          },
+          {
+            "@id": "https://w3id.org/lso/intro/beta202506#INT2_ActualizationOfFeature"
+          },
+          {
+            "@id": "https://w3id.org/lso/intro/beta202506#INT6_Architext"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/desmos/VisualConstraintScheme",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Schema concettuale che raccoglie le costrizioni visive, che intervengono sulla disposizione spaziale, grafica o tipografica del testo sulla pagina."
+      },
+      {
+        "@language": "en",
+        "@value": "Concept scheme collecting visual constraints, which intervene on the spatial, graphic or typographic arrangement of the text on the page."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Visual Constraint Scheme"
+      },
+      {
+        "@language": "it",
+        "@value": "Schema delle costrizioni visive"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, skos:ConceptScheme is used to organise literary constraints and the analytical categories used to describe them into controlled vocabularies. The property that can be used with this class is skos:hasTopConcept."
+      },
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, skos:ConceptScheme è utilizzata per organizzare in vocabolari controllati le costrizioni letterarie e le categorie analitiche impiegate per descriverle. La proprietà che può essere usata con questa classe è skos:hasTopConcept."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Concept Scheme"
+      },
+      {
+        "@language": "it",
+        "@value": "Schema di concetti"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2004/02/skos/core#altLabel",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An alternative term for a concept."
+      },
+      {
+        "@language": "it",
+        "@value": "Un termine alternativo per un concetto."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "alternative label"
+      },
+      {
+        "@language": "it",
+        "@value": "etichetta alternativa"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/P33i_was_used_by",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Inversa di P33 used specific technique: in DeSMòS collega una costrizione letteraria agli eventi di creazione dell'espressione in cui è stata impiegata. La proprietà originale ha come domain crm:E29_Design_or_Procedure e come range crm:E7_Activity. In DeSMòS la stessa proprietà ha come domain desmos:LiteraryConstraint e come range lrmoo:F28_Expression_Creation."
+      },
+      {
+        "@language": "en",
+        "@value": "Inverse of P33 used specific technique: in DeSMòS, it relates a literary constraint to the expression creation events in which it was employed. The original property has domain crm:E29_Design_or_Procedure and range crm:E7_Activity. In DeSMòS, the same property has domain desmos:LiteraryConstraint and range lrmoo:F28_Expression_Creation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "P33i was used by"
+      },
+      {
+        "@language": "it",
+        "@value": "P33i è stata usata da"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E7_Activity"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/desmos/isFeatureOf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Inversa di hasFeature: collega un'evidenza testuale della costrizione all'espressione in cui è manifesta. La proprietà ha come domain desmos:TextualFeature e come range lrmoo:F2_Expression."
+      },
+      {
+        "@language": "en",
+        "@value": "Inverse of hasFeature: relates a textual feature of a constraint to the expression in which it is manifest. The property has domain desmos:TextualFeature and range lrmoo:F2_Expression."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/desmos/TextualFeature"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "è caratteristica di"
+      },
+      {
+        "@language": "en",
+        "@value": "is feature of"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/desmos/hasFeature"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2004/02/skos/core#related",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#SymmetricProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS esprime associazioni semantiche non gerarchiche tra concetti dei vocabolari controllati. La proprietà originale ha come domain skos:Concept (ereditato da skos:semanticRelation) e come range skos:Concept (ereditato da skos:semanticRelation). In DeSMòS la stessa proprietà ha come domain skos:Concept e come range skos:Concept."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, it expresses non-hierarchical associations between concepts of the controlled vocabularies. The original property has domain skos:Concept (inherited from skos:semanticRelation) and range skos:Concept (inherited from skos:semanticRelation). In DeSMòS, the same property has domain skos:Concept and range skos:Concept."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "correlato"
+      },
+      {
+        "@language": "en",
+        "@value": "related"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/desmos/FormalUnitScheme",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Concept scheme defining the discrete units of the writing system (e.g., letter, syllable, word) on which a formal constraint operates. Expected as the range value of desmos:constrainsFormalUnit."
+      },
+      {
+        "@language": "it",
+        "@value": "Schema concettuale che definisce le unità discrete del sistema di scrittura (ad esempio lettera, sillaba, parola) su cui opera una costrizione di tipo formale. Atteso come valore del range di desmos:constrainsFormalUnit."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Formal Unit Scheme"
+      },
+      {
+        "@language": "it",
+        "@value": "Schema delle unità formali"
+      }
+    ]
+  },
+  {
+    "@id": "http://iflastandards.info/ns/lrm/lrmoo/R4i_is_embodied_in",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Inversa di R4 embodies: in DeSMòS collega un'espressione alla manifestazione editoriale o digitale che la incorpora. La proprietà originale ha come domain lrmoo:F2_Expression e come range lrmoo:F3_Manifestation. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression e come range lrmoo:F3_Manifestation."
+      },
+      {
+        "@language": "en",
+        "@value": "Inverse of R4 embodies: in DeSMòS, it relates an expression to the published or digital manifestation embodying it. The original property has domain lrmoo:F2_Expression and range lrmoo:F3_Manifestation. In DeSMòS, the same property has domain lrmoo:F2_Expression and range lrmoo:F3_Manifestation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "R4i is embodied in"
+      },
+      {
+        "@language": "it",
+        "@value": "R4i è incarnata in"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2000/01/rdf-schema#comment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A textual description of the entity."
+      },
+      {
+        "@language": "it",
+        "@value": "Una descrizione testuale dell'entità."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "comment"
+      },
+      {
+        "@language": "it",
+        "@value": "commento"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/modified",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "La data in cui la risorsa è stata modificata."
+      },
+      {
+        "@language": "en",
+        "@value": "The date on which the resource was modified."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/dc/terms/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "modificato"
+      },
+      {
+        "@language": "en",
+        "@value": "modified"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/lso/intro/beta202506#INT2_ActualizationOfFeature",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, INT2 Actualization of Feature is referenced only as a member of the original union range of R12 has referred to entity and R13 has referring entity, and of the union domain of their inverses; it is not instantiated in the DeSMòS corpus."
+      },
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, INT2 Actualization of Feature è referenziata solo come membro dell'unione che costituisce il range originale di R12 has referred to entity e R13 has referring entity, e il domain delle loro inverse; non è istanziata nel corpus DeSMòS."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "INT2 Actualization of Feature"
+      },
+      {
+        "@language": "it",
+        "@value": "INT2 Attualizzazione di caratteristica"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/lso/intro/beta202506#INT3_Interrelation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, INT3 Interrelation fornisce la categoria generale per la rappresentazione reificata delle relazioni tra entità, specializzata attraverso INT31 Intertextual Relation per le relazioni intertestuali considerate nel modello."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, INT3 Interrelation provides the general category for the reified representation of relations between entities, specialised through INT31 Intertextual Relation for the intertextual relations considered in the model."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "INT3 Interrelation"
+      },
+      {
+        "@language": "it",
+        "@value": "INT3 Interrelazione"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"
+      }
+    ]
+  },
+  {
+    "@id": "http://iflastandards.info/ns/lrm/lrmoo/R15_has_fragment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS collega un'espressione alla dichiarazione peritestuale contenuta nella stessa pubblicazione, che ne è un frammento e documenta l'impiego di una costrizione. La proprietà originale ha come domain lrmoo:F2_Expression e come range crm:E90_Symbolic_Object. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression e come range crm:E33_Linguistic_Object."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, it relates an expression to the peritextual declaration contained in the same publication, which is a fragment of it and documents the use of a constraint. The original property has domain lrmoo:F2_Expression and range crm:E90_Symbolic_Object. In DeSMòS, the same property has domain lrmoo:F2_Expression and range crm:E33_Linguistic_Object."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "R15 ha frammento"
+      },
+      {
+        "@language": "en",
+        "@value": "R15 has fragment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R15i_is_fragment_of"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/lso/intro/beta202506#INT16_Segment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, INT16 Segment is referenced only as a member of the original union domain of R44 has wording; it is not instantiated in the DeSMòS corpus, where R44 is applied to INT21 Text Passage."
+      },
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, INT16 Segment è referenziata solo come membro dell'unione che costituisce il domain originale di R44 has wording; non è istanziata nel corpus DeSMòS, dove R44 è applicata a INT21 Text Passage."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "INT16 Segment"
+      },
+      {
+        "@language": "it",
+        "@value": "INT16 Segmento"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/P14i_performed",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Inversa di P14 carried out by: in DeSMòS collega un autore agli eventi di creazione dell'espressione che ha realizzato. La proprietà originale ha come domain crm:E39_Actor e come range crm:E7_Activity. In DeSMòS la stessa proprietà ha come domain crm:E39_Actor e come range lrmoo:F28_Expression_Creation."
+      },
+      {
+        "@language": "en",
+        "@value": "Inverse of P14 carried out by: in DeSMòS, it relates an author to the expression creation events they carried out. The original property has domain crm:E39_Actor and range crm:E7_Activity. In DeSMòS, the same property has domain crm:E39_Actor and range lrmoo:F28_Expression_Creation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "P14i ha eseguito"
+      },
+      {
+        "@language": "en",
+        "@value": "P14i performed"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E7_Activity"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2004/02/skos/core#topConceptOf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Inversa di skos:hasTopConcept: in DeSMòS collega un concetto allo schema di cui è punto di accesso gerarchico principale. La proprietà originale ha come domain skos:Concept e come range skos:ConceptScheme. In DeSMòS la stessa proprietà ha come domain skos:Concept e come range skos:ConceptScheme."
+      },
+      {
+        "@language": "en",
+        "@value": "Inverse of skos:hasTopConcept: in DeSMòS, it relates a concept to the scheme of which it is a main hierarchical entry point. The original property has domain skos:Concept and range skos:ConceptScheme. In DeSMòS, the same property has domain skos:Concept and range skos:ConceptScheme."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "concetto principale di"
+      },
+      {
+        "@language": "en",
+        "@value": "top concept of"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/P3_has_note",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, P3 has note è utilizzata per associare a un oggetto linguistico o a una caratteristica testuale una descrizione testuale aggiuntiva espressa come letterale."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, P3 has note is used to associate a linguistic object or textual feature with an additional textual description expressed as a literal."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "ha nota"
+      },
+      {
+        "@language": "en",
+        "@value": "has note"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/desmos/",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ],
+    "http://purl.org/dc/terms/bibliographicCitation": [
+      {
+        "@value": "Bruno, Enrica. (2026). DeSMòS: Descriptive Semantic Model for Structured Texts (Version 1.2.0) [Ontology]."
+      }
+    ],
+    "http://purl.org/dc/terms/creator": [
+      {
+        "@id": "https://orcid.org/0009-0007-5620-3834"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "DeSMòS (Descriptive Semantic Model for Structured Texts) is an OWL 2 ontology for the formal representation of literary constraints as text-generative procedures, with particular reference to the Oulipian tradition. The model treats constraints as conceptual entities distinct from works and their bibliographic realisations, represented through LRMoo, and describes their use in expression creation events, distinguishing the procedure from both the creative process and the resulting text. Constrained rewriting is represented through derivation and intertextual relations between expressions, allowing the identification of the textual passages involved. The typological characterisation distinguishes formal and semantic constraints, with a specific category for visual constraints, and describes the constrained units, procedural operations, and origins through SKOS controlled vocabularies. The model also supports the documentation of constraint use through intratextual evidence and paratextual statements, whether peritextual or epitextual, distinguishing responsibility for such statements from responsibility for textual creation. Through the reuse of and alignment with CIDOC CRM, LRMoo, PROV-O, SKOS, INTRO, Dublin Core Terms, and Schema.org, DeSMòS supports the description, comparative analysis, and SPARQL querying of constrained writing practices across heterogeneous corpora."
+      },
+      {
+        "@language": "it",
+        "@value": "DeSMòS (Descriptive Semantic Model for Structured Texts) è un'ontologia OWL 2 per la rappresentazione formale delle costrizioni letterarie come procedure generative del testo, con particolare riferimento alla tradizione oulipiana. Il modello riconosce alla costrizione un'autonomia concettuale rispetto all'opera e alle sue realizzazioni bibliografiche, rappresentate mediante LRMoo, e ne descrive l'impiego nell'evento di creazione dell'espressione, distinguendo la procedura dal processo compositivo e dal testo prodotto. La riscrittura vincolata è rappresentata attraverso le relazioni di derivazione e i rapporti intertestuali tra espressioni, con la possibilità di identificare i passaggi testuali coinvolti. La caratterizzazione tipologica distingue costrizioni formali e semantiche, con una specificazione delle costrizioni visive, e ne descrive le unità vincolate, le operazioni procedurali e l'origine mediante vocabolari controllati SKOS. Il modello consente inoltre di documentare l'impiego delle costrizioni attraverso evidenze intratestuali e dichiarazioni paratestuali, peritestuali o epitestuali, distinguendo la responsabilità delle dichiarazioni da quella della creazione testuale. Attraverso il riuso e l'allineamento con CIDOC CRM, LRMoo, PROV-O, SKOS, INTRO, Dublin Core Terms e Schema.org, DeSMòS supporta la descrizione, l'analisi comparativa e l'interrogazione SPARQL delle pratiche di scrittura vincolata in corpora eterogenei."
+      }
+    ],
+    "http://purl.org/dc/terms/hasVersion": [
+      {
+        "@value": "1.2.0"
+      }
+    ],
+    "http://purl.org/dc/terms/license": [
+      {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2026-10-22"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@id": "http://purl.org/dc/terms/"
+      },
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      },
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#"
+      },
+      {
+        "@id": "http://www.w3.org/ns/prov#"
+      },
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/"
+      },
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#"
+      },
+      {
+        "@id": "http://schema.org/"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "en",
+        "@value": "DeSMòS (Descriptive Semantic Model for Structured Texts)"
+      },
+      {
+        "@language": "it",
+        "@value": "DeSMòS (Descriptive Semantic Model for Structured Texts)"
+      }
+    ],
+    "http://purl.org/vocab/vann/preferredNamespacePrefix": [
+      {
+        "@value": "desmos"
+      }
+    ],
+    "http://purl.org/vocab/vann/preferredNamespaceUri": [
+      {
+        "@value": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "DeSMòS adopts an \"alignment-by-reference\" pattern to keep the ontology lightweight and reasoner-friendly."
+      },
+      {
+        "@language": "it",
+        "@value": "DeSMòS adotta un pattern di \"allineamento per riferimento\" per mantenere l'ontologia leggera e compatibile con i reasoner."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "DeSMòS"
+      },
+      {
+        "@language": "it",
+        "@value": "DeSMòS"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#priorVersion": [
+      {
+        "@id": "https://zenodo.org/records/19610250/files/desmos.owl"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionIRI": [
+      {
+        "@id": "https://w3id.org/desmos/v1.2.0"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionInfo": [
+      {
+        "@language": "en",
+        "@value": "Version 1.2.0"
+      },
+      {
+        "@language": "it",
+        "@value": "Versione 1.2.0"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS documenta un legame tra espressioni più blando di R76 is derivative of: l'espressione presenta tratti di una fonte (lessicali, onomastici, fraseologici, tematici, narrativi o, per fonti non testuali, di andamento) senza derivarne il contenuto né instaurare una relazione intertestuale INTRO. La proprietà originale ha come domain crm:E70_Thing e come range crm:E70_Thing. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression e come range lrmoo:F2_Expression."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, it documents a looser link between expressions than R76 is derivative of: the expression shows features of a source (lexical, onomastic, phraseological, thematic, narrative or, for non-textual sources, of tempo and pacing) without deriving its content or establishing an INTRO intertextual relation. The original property has domain crm:E70_Thing and range crm:E70_Thing. In DeSMòS, the same property has domain lrmoo:F2_Expression and range lrmoo:F2_Expression."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E70_Thing"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "P130 presenta caratteristiche di"
+      },
+      {
+        "@language": "en",
+        "@value": "P130 shows features of"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E70_Thing"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS collega un evento di creazione dell'espressione al suo autore o ai suoi autori. La proprietà originale ha come domain crm:E7_Activity e come range crm:E39_Actor. In DeSMòS la stessa proprietà ha come domain lrmoo:F28_Expression_Creation e come range crm:E39_Actor."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, it relates an expression creation event to its author or authors. The original property has domain crm:E7_Activity and range crm:E39_Actor. In DeSMòS, the same property has domain lrmoo:F28_Expression_Creation and range crm:E39_Actor."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E7_Activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "P14 carried out by"
+      },
+      {
+        "@language": "it",
+        "@value": "P14 eseguito da"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E39_Actor"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P14i_performed"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/desmos/isFormalUnitConstrainedBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Inversa di constrainsFormalUnit: collega un'unità del sistema di scrittura alle costrizioni formali che operano su di essa. La proprietà ha come domain skos:Concept e come range desmos:FormalConstraint."
+      },
+      {
+        "@language": "en",
+        "@value": "Inverse of constrainsFormalUnit: relates a unit of the writing system to the formal constraints operating on it. The property has domain skos:Concept and range desmos:FormalConstraint."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "is formal unit constrained by"
+      },
+      {
+        "@language": "it",
+        "@value": "è unità formale vincolata da"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/desmos/FormalConstraint"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/desmos/constrainsFormalUnit"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/P148i_is_component_of",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#TransitiveProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Inversa di P148 has component: in DeSMòS collega una componente all'espressione o manifestazione complessa di cui fa parte. La proprietà originale ha come domain crm:E89_Propositional_Object e come range crm:E89_Propositional_Object. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression (tra espressioni) o lrmoo:F3_Manifestation (tra manifestazioni) e come range rispettivamente lrmoo:F2_Expression o lrmoo:F3_Manifestation."
+      },
+      {
+        "@language": "en",
+        "@value": "Inverse of P148 has component: in DeSMòS, it relates a component to the complex expression or manifestation it belongs to. The original property has domain crm:E89_Propositional_Object and range crm:E89_Propositional_Object. In DeSMòS, the same property has domain lrmoo:F2_Expression (between expressions) or lrmoo:F3_Manifestation (between manifestations) and range lrmoo:F2_Expression or lrmoo:F3_Manifestation respectively."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "P148i is component of"
+      },
+      {
+        "@language": "it",
+        "@value": "P148i è componente di"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/lso/intro/beta202506#INT1_Passage",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, INT1 Passage provides the general category for intro:INT21_TextPassage, used to represent textual passages involved in intertextual relations."
+      },
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, INT1 Passage fornisce la categoria generale per intro:INT21_TextPassage, utilizzata per rappresentare i passaggi testuali coinvolti nelle relazioni intertestuali."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "INT1 Passage"
+      },
+      {
+        "@language": "it",
+        "@value": "INT1 Passaggio"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2000/01/rdf-schema#label",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A human-readable name for the entity."
+      },
+      {
+        "@language": "it",
+        "@value": "Un nome leggibile per l'entità."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "etichetta"
+      },
+      {
+        "@language": "en",
+        "@value": "label"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Questa classe comprende entità che esistono come insiemi di caratteristiche o proprietà, piuttosto che come oggetti fisici. In DeSMòS, rappresenta le entità astratte come le opere e, attraverso E73 Information Object, le espressioni, le dichiarazioni e le costrizioni letterarie. Le relazioni intertestuali (intro:INT3_Interrelation) non ne fanno parte, essendo sottoclasse diretta di E28 Conceptual Object."
+      },
+      {
+        "@language": "en",
+        "@value": "This class comprises entities that exist as sets of characteristics or properties rather than as physical objects. In DeSMòS, it represents abstract entities such as works and, through E73 Information Object, expressions, declarations and literary constraints. Intertextual relations (intro:INT3_Interrelation) are not included, being a direct subclass of E28 Conceptual Object."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "E89 Propositional Object"
+      },
+      {
+        "@language": "it",
+        "@value": "E89 Oggetto Proposizionale"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Indica una risorsa esterna che può fornire informazioni supplementari sulla risorsa descritta."
+      },
+      {
+        "@language": "en",
+        "@value": "Used to indicate a resource that might provide additional information about the subject resource."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "see also"
+      },
+      {
+        "@language": "it",
+        "@value": "vedi anche"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, E1 CRM Entity is the root of the CIDOC CRM hierarchy and is referenced as the original domain or range of P2 has type, P3 has note, P67 refers to and P129 is about. E7 Activity, E39 Actor and E70 Thing are declared as its direct subclasses, abbreviating the official chains through E5 Event and E77 Persistent Item."
+      },
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, E1 CRM Entity è la radice della gerarchia di CIDOC CRM ed è referenziata come domain o range originale di P2 has type, P3 has note, P67 refers to e P129 is about. E7 Activity, E39 Actor ed E70 Thing ne sono dichiarate sottoclassi dirette, abbreviando le catene ufficiali che passano per E5 Event ed E77 Persistent Item."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "E1 CRM Entity"
+      },
+      {
+        "@language": "it",
+        "@value": "E1 Entità CRM"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/desmos/ConstraintOriginScheme",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Concept scheme distinguishing between traditional constraints and newly introduced constraints in a specific compositional context. Expected as the range value of desmos:constraintOrigin."
+      },
+      {
+        "@language": "it",
+        "@value": "Schema concettuale che distingue le costrizioni riprese dalla tradizione da quelle introdotte ex novo in uno specifico contesto compositivo. Atteso come valore del range di desmos:constraintOrigin."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Constraint Origin Scheme"
+      },
+      {
+        "@language": "it",
+        "@value": "Schema dell'origine della costrizione"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2004/02/skos/core#inScheme",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS indica lo schema concettuale cui appartiene un concetto. La proprietà originale ha nessun domain dichiarato e come range skos:ConceptScheme. In DeSMòS la stessa proprietà ha come domain skos:Concept e come range skos:ConceptScheme."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, it indicates the concept scheme to which a concept belongs. The original property has no declared domain and range skos:ConceptScheme. In DeSMòS, the same property has domain skos:Concept and range skos:ConceptScheme."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "in scheme"
+      },
+      {
+        "@language": "it",
+        "@value": "nello schema"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/desmos/usedConstraint",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Questa proprietà collega un evento di creazione dell'espressione alla costrizione letteraria impiegata come dispositivo generativo; sottoproprietà di crm:P33_used_specific_technique. La proprietà ha come domain lrmoo:F28_Expression_Creation e come range desmos:LiteraryConstraint."
+      },
+      {
+        "@language": "en",
+        "@value": "This property relates an expression creation event to the literary constraint employed as a generative device; subproperty of crm:P33_used_specific_technique. The property has domain lrmoo:F28_Expression_Creation and range desmos:LiteraryConstraint."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "ha usato costrizione"
+      },
+      {
+        "@language": "en",
+        "@value": "used constraint"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/desmos/LiteraryConstraint"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P33_used_specific_technique"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/desmos/TextualFeature",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Caratteristica osservabile di un'espressione testuale che può indicare la presenza di una costrizione letteraria. In DeSMòS è intesa come evidenza intratestuale: una traccia testuale che supporta l’identificazione della costrizione, senza implicare di per sé sufficienza o necessità. Le proprietà che possono essere usate con questa classe sono crm:P3_has_note, desmos:isFeatureOf e desmos:revealsConstraint."
+      },
+      {
+        "@language": "en",
+        "@value": "An observable feature of a textual expression that may indicate the presence of a literary constraint. In DeSMòS it is treated as intratextual evidence: a textual trace supporting the identification of a constraint, without implying necessity or sufficiency by itself. The properties that can be used with this class are crm:P3_has_note, desmos:isFeatureOf and desmos:revealsConstraint."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "Caratteristica testuale"
+      },
+      {
+        "@language": "en",
+        "@value": "Textual feature"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/desmos/revealsConstraint",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Inversa di isRevealedBy: questa proprietà collega un'evidenza testuale alla costrizione letteraria che rende identificabile. La proprietà ha come domain desmos:TextualFeature e come range desmos:LiteraryConstraint."
+      },
+      {
+        "@language": "en",
+        "@value": "Inverse of isRevealedBy: this property relates a textual feature to the literary constraint it makes identifiable. The property has domain desmos:TextualFeature and range desmos:LiteraryConstraint."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/desmos/TextualFeature"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "reveals constraint"
+      },
+      {
+        "@language": "it",
+        "@value": "rivela costrizione"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/desmos/LiteraryConstraint"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/lso/intro/beta202506#R44_hasWording",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, R44 has wording è utilizzata per registrare come stringa la formulazione testuale esatta di un passaggio identificato mediante INT21 Text Passage."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, R44 has wording is used to record as a string the exact textual wording of a passage identified through INT21 Text Passage."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:N116fdf236e6c4da69f23441a66a56baf"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "R44 ha formulazione"
+      },
+      {
+        "@language": "en",
+        "@value": "R44 has wording"
+      }
+    ]
+  },
+  {
+    "@id": "_:N116fdf236e6c4da69f23441a66a56baf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "https://w3id.org/lso/intro/beta202506#INT16_Segment"
+          },
+          {
+            "@id": "https://w3id.org/lso/intro/beta202506#INT1_Passage"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2002/07/owl#versionInfo",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A string identifying the version of this ontology."
+      },
+      {
+        "@language": "it",
+        "@value": "Una stringa che identifica la versione di questa ontologia."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "informazioni sulla versione"
+      },
+      {
+        "@language": "en",
+        "@value": "version info"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, E29 Design or Procedure fornisce la categoria procedurale entro cui è modellata desmos:LiteraryConstraint, intesa come procedura applicata durante la creazione di un'espressione."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, E29 Design or Procedure provides the procedural category under which desmos:LiteraryConstraint is modelled, as a procedure applied during the creation of an expression."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "E29 Design or Procedure"
+      },
+      {
+        "@language": "it",
+        "@value": "E29 Progetto o Procedura"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/desmos/isConstraintUsedIn",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Questa proprietà collega una costrizione letteraria agli eventi di creazione dell'espressione in cui è stata impiegata come dispositivo generativo; sottoproprietà di crm:P33i_was_used_by. La proprietà ha come domain desmos:LiteraryConstraint e come range lrmoo:F28_Expression_Creation."
+      },
+      {
+        "@language": "en",
+        "@value": "This property relates a literary constraint to the expression creation events in which it was employed as a generative device; subproperty of crm:P33i_was_used_by. The property has domain desmos:LiteraryConstraint and range lrmoo:F28_Expression_Creation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/desmos/LiteraryConstraint"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "is constraint used in"
+      },
+      {
+        "@language": "it",
+        "@value": "è costrizione usata in"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P33i_was_used_by"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/desmos/usedConstraint"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS collega uno schema concettuale ai concetti che ne costituiscono i punti di accesso gerarchici principali. La proprietà originale ha come domain skos:ConceptScheme e come range skos:Concept. In DeSMòS la stessa proprietà ha come domain skos:ConceptScheme e come range skos:Concept."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, it relates a concept scheme to the concepts that are its main hierarchical entry points. The original property has domain skos:ConceptScheme and range skos:Concept. In DeSMòS, the same property has domain skos:ConceptScheme and range skos:Concept."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "ha concetto principale"
+      },
+      {
+        "@language": "en",
+        "@value": "has top concept"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#topConceptOf"
+      }
+    ]
+  },
+  {
+    "@id": "http://iflastandards.info/ns/lrm/lrmoo/R17i_was_created_by",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Inversa di R17 created: in DeSMòS collega un'espressione testuale all'evento compositivo che l'ha prodotta. La proprietà originale ha come domain lrmoo:F2_Expression e come range lrmoo:F28_Expression_Creation. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression e come range lrmoo:F28_Expression_Creation."
+      },
+      {
+        "@language": "en",
+        "@value": "Inverse of R17 created: in DeSMòS, it relates a textual expression to the compositional event that produced it. The original property has domain lrmoo:F2_Expression and range lrmoo:F28_Expression_Creation. In DeSMòS, the same property has domain lrmoo:F2_Expression and range lrmoo:F28_Expression_Creation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "R17i was created by"
+      },
+      {
+        "@language": "it",
+        "@value": "R17i è stata creata da"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/desmos/SemanticConstraintScheme",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Schema concettuale che raccoglie le costrizioni semantiche, che intervengono prioritariamente sul significato del testo."
+      },
+      {
+        "@language": "en",
+        "@value": "Concept scheme collecting semantic constraints, which intervene primarily on the signified of the text."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Semantic Constraint Scheme"
+      },
+      {
+        "@language": "it",
+        "@value": "Schema delle costrizioni semantiche"
+      }
+    ]
+  },
+  {
+    "@id": "http://iflastandards.info/ns/lrm/lrmoo/R76i_has_derivative",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Inversa di R76 is derivative of: in DeSMòS collega un'espressione fonte alle espressioni che ne derivano. La proprietà originale ha come domain lrmoo:F2_Expression e come range lrmoo:F2_Expression. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression e come range lrmoo:F2_Expression."
+      },
+      {
+        "@language": "en",
+        "@value": "Inverse of R76 is derivative of: in DeSMòS, it relates a source expression to the expressions derived from it. The original property has domain lrmoo:F2_Expression and range lrmoo:F2_Expression. In DeSMòS, the same property has domain lrmoo:F2_Expression and range lrmoo:F2_Expression."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "R76i ha derivato"
+      },
+      {
+        "@language": "en",
+        "@value": "R76i has derivative"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#Agent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, prov:Agent is used to represent agents to whom entities or declarations are attributed, including authors, editors, collective agents and, where relevant, software systems."
+      },
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, prov:Agent è utilizzata per rappresentare gli agenti ai quali vengono attribuite entità o dichiarazioni, inclusi autori, curatori, soggetti collettivi e, ove pertinente, sistemi software."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Agent"
+      },
+      {
+        "@language": "it",
+        "@value": "Agente"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/lso/intro/beta202506#INT11_TypeOfInterrelation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, INT11 Type of Interrelation is used as a general category for the types that qualify intertextual relations represented through INTRO."
+      },
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, INT11 Type of Interrelation è utilizzata come categoria generale per i tipi che qualificano le relazioni intertestuali rappresentate attraverso INTRO."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "INT11 Type of Interrelation"
+      },
+      {
+        "@language": "it",
+        "@value": "INT11 Tipo di interrelazione"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E55_Type"
+      }
+    ]
+  },
+  {
+    "@id": "http://iflastandards.info/ns/lrm/lrmoo/R3i_realises",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Inversa di R3 is realised in: in DeSMòS collega un'espressione testuale all'opera che realizza. La proprietà originale ha come domain lrmoo:F2_Expression e come range lrmoo:F1_Work. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression e come range lrmoo:F1_Work."
+      },
+      {
+        "@language": "en",
+        "@value": "Inverse of R3 is realised in: in DeSMòS, it relates a textual expression to the work it realises. The original property has domain lrmoo:F2_Expression and range lrmoo:F1_Work. In DeSMòS, the same property has domain lrmoo:F2_Expression and range lrmoo:F1_Work."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "R3i realises"
+      },
+      {
+        "@language": "it",
+        "@value": "R3i realizza"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F1_Work"
+      }
+    ]
+  },
+  {
+    "@id": "http://iflastandards.info/ns/lrm/lrmoo/R76_is_derivative_of",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS indica che un'espressione deriva da un'altra espressione assunta come fonte nella sua creazione. La proprietà originale ha come domain lrmoo:F2_Expression e come range lrmoo:F2_Expression. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression e come range lrmoo:F2_Expression."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, it states that an expression derives from another expression used as a source in its creation. The original property has domain lrmoo:F2_Expression and range lrmoo:F2_Expression. In DeSMòS, the same property has domain lrmoo:F2_Expression and range lrmoo:F2_Expression."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "R76 è derivato di"
+      },
+      {
+        "@language": "en",
+        "@value": "R76 is derivative of"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R76i_has_derivative"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/E7_Activity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, E7 Activity is referenced as the original domain of P14 carried out by and P33 used specific technique. lrmoo:F28_Expression_Creation is declared as its direct subclass, abbreviating the official chain F28 Expression Creation ⊑ E65 Creation ⊑ E7 Activity (LRMoo 1.0; CIDOC CRM 7.1.3)."
+      },
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, E7 Activity è referenziata come domain originale di P14 carried out by e P33 used specific technique. lrmoo:F28_Expression_Creation ne è dichiarata sottoclasse diretta, abbreviando la catena ufficiale F28 Expression Creation ⊑ E65 Creation ⊑ E7 Activity (LRMoo 1.0; CIDOC CRM 7.1.3)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "E7 Activity"
+      },
+      {
+        "@language": "it",
+        "@value": "E7 Attività"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"
+      }
+    ]
+  },
+  {
+    "@id": "http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, F3 Manifestation è utilizzata per rappresentare la manifestazione editoriale o digitale che incorpora un'espressione e alla quale sono associate informazioni relative alla pubblicazione e alla collocazione del testo. Le proprietà che possono essere usate con questa classe sono crm:P148_has_component, crm:P148i_is_component_of, dcterms:issued, lrmoo:R4_embodies e schema:pagination."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, F3 Manifestation is used to represent the published or digital manifestation embodying an expression and carrying information about its publication and textual location. The properties that can be used with this class are crm:P148_has_component, crm:P148i_is_component_of, dcterms:issued, lrmoo:R4_embodies and schema:pagination."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "F3 Manifestation"
+      },
+      {
+        "@language": "it",
+        "@value": "F3 Manifestazione"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Il termine preferito per rappresentare il concetto."
+      },
+      {
+        "@language": "en",
+        "@value": "The preferred term for representing the concept."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "etichetta preferita"
+      },
+      {
+        "@language": "en",
+        "@value": "preferred label"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/lso/intro/beta202506#INT21_TextPassage",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, INT21 Text Passage è utilizzata per rappresentare una porzione testuale identificabile di un'espressione, in particolare quando è necessario documentare i passaggi coinvolti in una relazione intertestuale. Le proprietà che possono essere usate con questa classe sono intro:R30i_isTextPassageOf e intro:R44_hasWording."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, INT21 Text Passage is used to represent an identifiable textual portion of an expression, particularly when documenting passages involved in an intertextual relation. The properties that can be used with this class are intro:R30i_isTextPassageOf and intro:R44_hasWording."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "INT21 Text Passage"
+      },
+      {
+        "@language": "it",
+        "@value": "INT21 Passaggio Testuale"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#INT1_Passage"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2004/02/skos/core#scopeNote",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A note that clarifies the intended meaning of the concept."
+      },
+      {
+        "@language": "it",
+        "@value": "Una nota che chiarisce il significato inteso del concetto."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "scope note"
+      },
+      {
+        "@language": "it",
+        "@value": "nota di ambito"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/desmos/isRevealedBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Inversa di revealsConstraint: questa proprietà collega una costrizione letteraria all'evidenza testuale che ne permette l'identificazione. La proprietà ha come domain desmos:LiteraryConstraint e come range desmos:TextualFeature."
+      },
+      {
+        "@language": "en",
+        "@value": "Inverse of revealsConstraint: this property relates a literary constraint to the textual feature that makes it identifiable. The property has domain desmos:LiteraryConstraint and range desmos:TextualFeature."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/desmos/LiteraryConstraint"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "is revealed by"
+      },
+      {
+        "@language": "it",
+        "@value": "è rivelata da"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/desmos/TextualFeature"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/desmos/revealsConstraint"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/P33_used_specific_technique",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS collega un evento di creazione dell'espressione alla costrizione letteraria impiegata come procedura compositiva. La proprietà originale ha come domain crm:E7_Activity e come range crm:E29_Design_or_Procedure. In DeSMòS la stessa proprietà ha come domain lrmoo:F28_Expression_Creation e come range desmos:LiteraryConstraint."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, it relates an expression creation event to the literary constraint employed as a compositional procedure. The original property has domain crm:E7_Activity and range crm:E29_Design_or_Procedure. In DeSMòS, the same property has domain lrmoo:F28_Expression_Creation and range desmos:LiteraryConstraint."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E7_Activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "P33 ha usato la tecnica specifica"
+      },
+      {
+        "@language": "en",
+        "@value": "P33 used specific technique"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P33i_was_used_by"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/vocab/vann/preferredNamespacePrefix",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The preferred namespace prefix to use when using terms from the vocabulary in an XML document."
+      },
+      {
+        "@language": "it",
+        "@value": "Il prefisso preferito da usare per i termini del vocabolario."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/vocab/vann/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "preferred namespace prefix"
+      },
+      {
+        "@language": "it",
+        "@value": "prefisso preferito del namespace"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/desmos/constrainsSemanticUnit",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Questa proprietà collega una costrizione semantica all’unità semantica su cui opera (ad es. personaggio, spazio o tempo). La proprietà ha come domain desmos:SemanticConstraint e come range skos:Concept."
+      },
+      {
+        "@language": "en",
+        "@value": "This property relates a semantic constraint to the semantic unit on which it operates (e.g., character, space, or time). The property has domain desmos:SemanticConstraint and range skos:Concept."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/desmos/SemanticConstraint"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "constrains semantic unit"
+      },
+      {
+        "@language": "it",
+        "@value": "vincola unità semantica"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Inversa di P67 refers to: in DeSMòS collega un'espressione testuale alle dichiarazioni che vi fanno riferimento. La proprietà originale ha come domain crm:E1_CRM_Entity e come range crm:E89_Propositional_Object. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression e come range crm:E33_Linguistic_Object."
+      },
+      {
+        "@language": "en",
+        "@value": "Inverse of P67 refers to: in DeSMòS, it relates a textual expression to the declarations referring to it. The original property has domain crm:E1_CRM_Entity and range crm:E89_Propositional_Object. In DeSMòS, the same property has domain lrmoo:F2_Expression and range crm:E33_Linguistic_Object."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "P67i is referred to by"
+      },
+      {
+        "@language": "it",
+        "@value": "P67i è riferito da"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2004/02/skos/core#narrower",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Inversa di skos:broader: in DeSMòS collega un concetto a un concetto più specifico entro gli schemi controllati dell'ontologia. La proprietà originale ha come domain skos:Concept (ereditato da skos:semanticRelation) e come range skos:Concept (ereditato da skos:semanticRelation). In DeSMòS la stessa proprietà ha come domain skos:Concept e come range skos:Concept."
+      },
+      {
+        "@language": "en",
+        "@value": "Inverse of skos:broader: in DeSMòS, it relates a concept to a more specific concept within the ontology's controlled schemes. The original property has domain skos:Concept (inherited from skos:semanticRelation) and range skos:Concept (inherited from skos:semanticRelation). In DeSMòS, the same property has domain skos:Concept and range skos:Concept."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "narrower"
+      },
+      {
+        "@language": "it",
+        "@value": "più specifico"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#wasAttributedTo",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS attribuisce una dichiarazione (oggetto linguistico) relativa a una costrizione all'agente che ne è responsabile. La proprietà originale ha come domain prov:Entity e come range prov:Agent. In DeSMòS la stessa proprietà ha come domain crm:E33_Linguistic_Object e come range crm:E39_Actor (anche prov:Agent)."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, it attributes a declaration (linguistic object) about a constraint to the agent responsible for it. The original property has domain prov:Entity and range prov:Agent. In DeSMòS, the same property has domain crm:E33_Linguistic_Object and range crm:E39_Actor (also prov:Agent)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "was attributed to"
+      },
+      {
+        "@language": "it",
+        "@value": "è stato attribuito a"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Agent"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/desmos/FormalConstraint",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A constraint that operates primarily at the level of the signifier. The properties that can be used with this class are desmos:constrainsFormalUnit, desmos:constraintOrigin, desmos:involvesOperation, skos:broader, skos:closeMatch, skos:inScheme, skos:narrower and skos:related."
+      },
+      {
+        "@language": "it",
+        "@value": "Costrizione che interviene prioritariamente sul significante. Le proprietà che possono essere usate con questa classe sono desmos:constrainsFormalUnit, desmos:constraintOrigin, desmos:involvesOperation, skos:broader, skos:closeMatch, skos:inScheme, skos:narrower e skos:related."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "Costrizione formale"
+      },
+      {
+        "@language": "en",
+        "@value": "Formal constraint"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/desmos/LiteraryConstraint"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "https://w3id.org/desmos/SemanticConstraint"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/P129_is_about",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS indica che una dichiarazione (oggetto linguistico) ha come argomento una costrizione letteraria. La proprietà originale ha come domain crm:E89_Propositional_Object e come range crm:E1_CRM_Entity. In DeSMòS la stessa proprietà ha come domain crm:E33_Linguistic_Object e come range desmos:LiteraryConstraint."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, it states that a declaration (linguistic object) has a literary constraint as its subject. The original property has domain crm:E89_Propositional_Object and range crm:E1_CRM_Entity. In DeSMòS, the same property has domain crm:E33_Linguistic_Object and range desmos:LiteraryConstraint."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "P129 is about"
+      },
+      {
+        "@language": "it",
+        "@value": "P129 verte su"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2004/02/skos/core#exactMatch",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#SymmetricProperty",
+      "http://www.w3.org/2002/07/owl#TransitiveProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS allinea un concetto DeSMòS a un concetto esterno semanticamente equivalente. La proprietà originale ha come domain skos:Concept (ereditato da skos:semanticRelation) e come range skos:Concept (ereditato da skos:semanticRelation). In DeSMòS la stessa proprietà ha come domain skos:Concept e come range skos:Concept."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, it aligns a DeSMòS concept with a semantically equivalent external concept. The original property has domain skos:Concept (inherited from skos:semanticRelation) and range skos:Concept (inherited from skos:semanticRelation). In DeSMòS, the same property has domain skos:Concept and range skos:Concept."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "corrispondenza esatta"
+      },
+      {
+        "@language": "en",
+        "@value": "exact match"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ]
+  },
+  {
+    "@id": "http://schema.org/pagination",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, schema:pagination è utilizzata per registrare la pagina o l'intervallo di pagine di una F3_Manifestation."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, schema:pagination is used to record the page or page range of a F3_Manifestation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://schema.org/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "pagination"
+      },
+      {
+        "@language": "it",
+        "@value": "paginazione"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/desmos/hasFeature",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Questa proprietà collega un'espressione testuale all'evidenza testuale osservabile di una costrizione. La proprietà ha come domain lrmoo:F2_Expression e come range desmos:TextualFeature."
+      },
+      {
+        "@language": "en",
+        "@value": "This property relates a textual expression to an observable textual feature of a constraint. The property has domain lrmoo:F2_Expression and range desmos:TextualFeature."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "ha caratteristica"
+      },
+      {
+        "@language": "en",
+        "@value": "has feature"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/desmos/TextualFeature"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/P130i_features_are_also_found_on",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Inversa di P130 shows features of: in DeSMòS collega un'espressione assunta come fonte alle espressioni che ne presentano tratti senza derivarne il contenuto. La proprietà originale ha come domain crm:E70_Thing e come range crm:E70_Thing. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression e come range lrmoo:F2_Expression."
+      },
+      {
+        "@language": "en",
+        "@value": "Inverse of P130 shows features of: in DeSMòS, it relates an expression used as a source to the expressions showing its features without deriving its content. The original property has domain crm:E70_Thing and range crm:E70_Thing. In DeSMòS, the same property has domain lrmoo:F2_Expression and range lrmoo:F2_Expression."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E70_Thing"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "P130i caratteristiche si ritrovano anche in"
+      },
+      {
+        "@language": "en",
+        "@value": "P130i features are also found on"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E70_Thing"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/hasVersion",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A related resource that is a version, edition, or adaptation of the described resource."
+      },
+      {
+        "@language": "it",
+        "@value": "Una risorsa correlata che è una versione, edizione o adattamento della risorsa descritta."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/dc/terms/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "ha versione"
+      },
+      {
+        "@language": "en",
+        "@value": "has version"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/lso/intro/beta202506#R19i_isTypeOf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Inversa di R19 has type: in DeSMòS collega un tipo di relazione alle relazioni intertestuali che qualifica. La proprietà originale ha come domain intro:INT11_TypeOfInterrelation e come range intro:INT3_Interrelation. In DeSMòS la stessa proprietà ha come domain intro:INT11_TypeOfInterrelation e come range intro:INT31_IntertextualRelation."
+      },
+      {
+        "@language": "en",
+        "@value": "Inverse of R19 has type: in DeSMòS, it relates a relation type to the intertextual relations it qualifies. The original property has domain intro:INT11_TypeOfInterrelation and range intro:INT3_Interrelation. In DeSMòS, the same property has domain intro:INT11_TypeOfInterrelation and range intro:INT31_IntertextualRelation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#INT11_TypeOfInterrelation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "R19i is type of"
+      },
+      {
+        "@language": "it",
+        "@value": "R19i è tipo di"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#INT3_Interrelation"
+      }
+    ]
+  },
+  {
+    "@id": "http://iflastandards.info/ns/lrm/lrmoo/R4_embodies",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS collega una manifestazione editoriale o digitale all'espressione che incorpora. La proprietà originale ha come domain lrmoo:F3_Manifestation e come range lrmoo:F2_Expression. In DeSMòS la stessa proprietà ha come domain lrmoo:F3_Manifestation e come range lrmoo:F2_Expression."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, it relates a published or digital manifestation to the expression it embodies. The original property has domain lrmoo:F3_Manifestation and range lrmoo:F2_Expression. In DeSMòS, the same property has domain lrmoo:F3_Manifestation and range lrmoo:F2_Expression."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "R4 embodies"
+      },
+      {
+        "@language": "it",
+        "@value": "R4 incarna"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R4i_is_embodied_in"
+      }
+    ]
+  },
+  {
+    "@id": "http://iflastandards.info/ns/lrm/lrmoo/R15i_is_fragment_of",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Inversa di R15 has fragment: in DeSMòS collega una dichiarazione peritestuale all'espressione di cui è frammento. La proprietà originale ha come domain crm:E90_Symbolic_Object e come range lrmoo:F2_Expression. In DeSMòS la stessa proprietà ha come domain crm:E33_Linguistic_Object e come range lrmoo:F2_Expression."
+      },
+      {
+        "@language": "en",
+        "@value": "Inverse of R15 has fragment: in DeSMòS, it relates a peritextual declaration to the expression of which it is a fragment. The original property has domain crm:E90_Symbolic_Object and range lrmoo:F2_Expression. In DeSMòS, the same property has domain crm:E33_Linguistic_Object and range lrmoo:F2_Expression."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "R15i is fragment of"
+      },
+      {
+        "@language": "it",
+        "@value": "R15i è frammento di"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/P67_refers_to",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS collega una dichiarazione (oggetto linguistico) all'espressione testuale a cui fa riferimento. La proprietà originale ha come domain crm:E89_Propositional_Object e come range crm:E1_CRM_Entity. In DeSMòS la stessa proprietà ha come domain crm:E33_Linguistic_Object e come range lrmoo:F2_Expression."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, it relates a declaration (linguistic object) to the textual expression it refers to. The original property has domain crm:E89_Propositional_Object and range crm:E1_CRM_Entity. In DeSMòS, the same property has domain crm:E33_Linguistic_Object and range lrmoo:F2_Expression."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "P67 refers to"
+      },
+      {
+        "@language": "it",
+        "@value": "P67 si riferisce a"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/desmos/VisualConstraint",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Constraint that intervenes on the visual or typographic arrangement of the text, where the spatial layout of letters/words on the page is itself part of the rule. The properties that can be used with this class are desmos:constrainsFormalUnit, desmos:constraintOrigin, desmos:involvesOperation, skos:closeMatch, skos:inScheme and skos:related."
+      },
+      {
+        "@language": "it",
+        "@value": "Costrizione che interviene sulla disposizione visiva o tipografica del testo, in cui l'impaginazione spaziale di lettere/parole sulla pagina è essa stessa parte della regola. Le proprietà che possono essere usate con questa classe sono desmos:constrainsFormalUnit, desmos:constraintOrigin, desmos:involvesOperation, skos:closeMatch, skos:inScheme e skos:related."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "Costrizione visiva"
+      },
+      {
+        "@language": "en",
+        "@value": "Visual constraint"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/desmos/FormalConstraint"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/license",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A legal document giving official permission to do something with the resource."
+      },
+      {
+        "@language": "it",
+        "@value": "Il documento legale che stabilisce i permessi di utilizzo della risorsa."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/dc/terms/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "license"
+      },
+      {
+        "@language": "it",
+        "@value": "licenza"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/desmos/isOriginOf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Questa proprietà collega un concetto di origine (tradizione o invenzione ex novo) alle costrizioni letterarie che qualifica. La proprietà ha come domain skos:Concept e come range desmos:LiteraryConstraint."
+      },
+      {
+        "@language": "en",
+        "@value": "This property relates an origin concept (tradition or brand-new invention) to the literary constraints it qualifies. The property has domain skos:Concept and range desmos:LiteraryConstraint."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "is origin of"
+      },
+      {
+        "@language": "it",
+        "@value": "è origine di"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/desmos/LiteraryConstraint"
+      }
+    ]
+  },
+  {
+    "@id": "http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, F28 Expression Creation è utilizzata per rappresentare l'evento compositivo che produce un'espressione testuale e nel quale può essere impiegata una costrizione letteraria. Le proprietà che possono essere usate con questa classe sono crm:P14_carried_out_by, dcterms:created, desmos:usedConstraint e lrmoo:R17_created."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, F28 Expression Creation is used to represent the compositional event that produces a textual expression and in which a literary constraint may be employed. The properties that can be used with this class are crm:P14_carried_out_by, dcterms:created, desmos:usedConstraint and lrmoo:R17_created."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "F28 Expression Creation"
+      },
+      {
+        "@language": "it",
+        "@value": "F28 Creazione dell'espressione"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E7_Activity"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#Entity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, prov:Entity è utilizzata come categoria di provenienza per gli oggetti linguistici di cui viene documentata l'attribuzione a un agente, in particolare le dichiarazioni relative alle costrizioni letterarie."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, prov:Entity is used as a provenance category for linguistic objects whose attribution to an agent is documented, particularly declarations concerning literary constraints."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/prov#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Entity"
+      },
+      {
+        "@language": "it",
+        "@value": "Entità"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/created",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, dcterms:created è utilizzata per registrare la data associata all'evento di creazione di un'espressione."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, dcterms:created is used to record the date associated with an expression creation event."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/dc/terms/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "created"
+      },
+      {
+        "@language": "it",
+        "@value": "creato"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ]
+  },
+  {
+    "@id": "http://iflastandards.info/ns/lrm/lrmoo/R17_created",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS collega un evento di creazione dell'espressione all'espressione testuale che produce. La proprietà originale ha come domain lrmoo:F28_Expression_Creation e come range lrmoo:F2_Expression. In DeSMòS la stessa proprietà ha come domain lrmoo:F28_Expression_Creation e come range lrmoo:F2_Expression."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, it relates an expression creation event to the textual expression it produces. The original property has domain lrmoo:F28_Expression_Creation and range lrmoo:F2_Expression. In DeSMòS, the same property has domain lrmoo:F28_Expression_Creation and range lrmoo:F2_Expression."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "R17 created"
+      },
+      {
+        "@language": "it",
+        "@value": "R17 ha creato"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R17i_was_created_by"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/bibliographicCitation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A bibliographic reference for the resource."
+      },
+      {
+        "@language": "it",
+        "@value": "Il riferimento bibliografico con cui citare la risorsa."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/dc/terms/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "bibliographic citation"
+      },
+      {
+        "@language": "it",
+        "@value": "citazione bibliografica"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/vocab/vann/preferredNamespaceUri",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The preferred namespace URI to use when using terms from the vocabulary in an XML document."
+      },
+      {
+        "@language": "it",
+        "@value": "L'URI di namespace preferito da usare per i termini del vocabolario."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/vocab/vann/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "preferred namespace URI"
+      },
+      {
+        "@language": "it",
+        "@value": "URI preferito del namespace"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/desmos/constraintOrigin",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Questa proprietà collega una costrizione letteraria al concetto che ne qualifica l'origine (tradizione o invenzione ex novo). La proprietà ha come domain desmos:LiteraryConstraint e come range skos:Concept."
+      },
+      {
+        "@language": "en",
+        "@value": "This property relates a literary constraint to the concept qualifying its origin (tradition or brand-new invention). The property has domain desmos:LiteraryConstraint and range skos:Concept."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/desmos/LiteraryConstraint"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "constraint origin"
+      },
+      {
+        "@language": "it",
+        "@value": "origine della costrizione"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/desmos/isOriginOf"
+      }
+    ]
+  },
+  {
+    "@id": "http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_in",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS collega un'opera all'espressione testuale che la realizza. La proprietà originale ha come domain lrmoo:F1_Work e come range lrmoo:F2_Expression. In DeSMòS la stessa proprietà ha come domain lrmoo:F1_Work e come range lrmoo:F2_Expression."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, it relates a work to the textual expression that realises it. The original property has domain lrmoo:F1_Work and range lrmoo:F2_Expression. In DeSMòS, the same property has domain lrmoo:F1_Work and range lrmoo:F2_Expression."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F1_Work"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "R3 is realised in"
+      },
+      {
+        "@language": "it",
+        "@value": "R3 è realizzato in"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R3i_realises"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2004/02/skos/core#Concept",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, la classe viene utilizzata per definire le singole costrizioni letterarie e le categorie analitiche all'interno di un sistema di conoscenza organizzato. Le proprietà che possono essere usate con questa classe sono desmos:coarserThan, desmos:constrainsFormalUnit, desmos:constrainsSemanticUnit, desmos:constraintOrigin, desmos:finerThan, desmos:involvesOperation, skos:broader, skos:closeMatch, skos:exactMatch, skos:inScheme, skos:narrower e skos:related."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, the class is used to define individual literary constraints and analytical categories within an organized knowledge system. The properties that can be used with this class are desmos:coarserThan, desmos:constrainsFormalUnit, desmos:constrainsSemanticUnit, desmos:constraintOrigin, desmos:finerThan, desmos:involvesOperation, skos:broader, skos:closeMatch, skos:exactMatch, skos:inScheme, skos:narrower and skos:related."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Concept"
+      },
+      {
+        "@language": "it",
+        "@value": "Concetto"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/lso/intro/beta202506#INT6_Architext",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, INT6 Architext is referenced only as a member of the original union range of R12 has referred to entity and R13 has referring entity, and of the union domain of their inverses; it is not instantiated in the DeSMòS corpus."
+      },
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, INT6 Architext è referenziata solo come membro dell'unione che costituisce il range originale di R12 has referred to entity e R13 has referring entity, e il domain delle loro inverse; non è istanziata nel corpus DeSMòS."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "INT6 Architext"
+      },
+      {
+        "@language": "it",
+        "@value": "INT6 Architesto"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/E39_Actor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, E39 Actor è utilizzata per rappresentare autori, curatori e soggetti collettivi coinvolti nella creazione e nella documentazione delle espressioni testuali."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, E39 Actor is used to represent authors, editors, and collective agents involved in the creation and documentation of textual expressions."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "E39 Actor"
+      },
+      {
+        "@language": "it",
+        "@value": "E39 Attore"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/desmos/coarserThan",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#TransitiveProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Collega un'unità formale a un'unità formale di granularità testuale più fine (es. la parola rispetto a sillaba e lettera), esclusivamente entro il FormalUnitScheme. La proprietà ha come domain skos:Concept e come range skos:Concept."
+      },
+      {
+        "@language": "en",
+        "@value": "Relates a formal unit to a formal unit of finer textual granularity (e.g., a word with respect to a syllable or a letter), exclusively within the FormalUnitScheme. The property has domain skos:Concept and range skos:Concept."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "ha granularità più ampia di"
+      },
+      {
+        "@language": "en",
+        "@value": "has coarser granularity than"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/desmos/finerThan"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2004/02/skos/core#closeMatch",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#SymmetricProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS allinea un concetto DeSMòS a un concetto esterno semanticamente vicino ma non equivalente. La proprietà originale ha come domain skos:Concept (ereditato da skos:semanticRelation) e come range skos:Concept (ereditato da skos:semanticRelation). In DeSMòS la stessa proprietà ha come domain skos:Concept e come range skos:Concept."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, it aligns a DeSMòS concept with a semantically close but non-equivalent external concept. The original property has domain skos:Concept (inherited from skos:semanticRelation) and range skos:Concept (inherited from skos:semanticRelation). In DeSMòS, the same property has domain skos:Concept and range skos:Concept."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "close match"
+      },
+      {
+        "@language": "it",
+        "@value": "corrispondenza vicina"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/desmos/finerThan",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#TransitiveProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Collega un'unità formale a un'unità formale di granularità testuale più ampia (es. la lettera rispetto a sillaba e parola), esclusivamente entro il FormalUnitScheme. La proprietà ha come domain skos:Concept e come range skos:Concept."
+      },
+      {
+        "@language": "en",
+        "@value": "Relates a formal unit to a formal unit of coarser textual granularity (e.g., a letter with respect to a syllable or a word), exclusively within the FormalUnitScheme. The property has domain skos:Concept and range skos:Concept."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "ha granularità più fine di"
+      },
+      {
+        "@language": "en",
+        "@value": "has finer granularity than"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "https://w3id.org/desmos/coarserThan"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/creator",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An entity responsible for making the resource."
+      },
+      {
+        "@language": "it",
+        "@value": "Un'entità responsabile della creazione della risorsa."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/dc/terms/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "creator"
+      },
+      {
+        "@language": "it",
+        "@value": "creatore"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/P148_has_component",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#TransitiveProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS articola espressioni e manifestazioni complesse nelle rispettive componenti. La proprietà originale ha come domain crm:E89_Propositional_Object e come range crm:E89_Propositional_Object. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression (tra espressioni) o lrmoo:F3_Manifestation (tra manifestazioni) e come range rispettivamente lrmoo:F2_Expression o lrmoo:F3_Manifestation."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, it decomposes complex expressions and manifestations into their components. The original property has domain crm:E89_Propositional_Object and range crm:E89_Propositional_Object. In DeSMòS, the same property has domain lrmoo:F2_Expression (between expressions) or lrmoo:F3_Manifestation (between manifestations) and range lrmoo:F2_Expression or lrmoo:F3_Manifestation respectively."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "P148 ha componente"
+      },
+      {
+        "@language": "en",
+        "@value": "P148 has component"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P148i_is_component_of"
+      }
+    ]
+  }
+]

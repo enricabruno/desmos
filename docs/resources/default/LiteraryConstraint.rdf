@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/desmos/LiteraryConstraint">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E29_Design_or_Procedure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="it">Costrizione letteraria</rdfs:label>
+    <rdfs:label xml:lang="en">Literary constraint</rdfs:label>
+    <rdfs:comment xml:lang="it">Procedura formale o semantica che interviene nel processo di generazione testuale (F28 Expression Creation). La sua presenza può essere documentata attraverso evidenze oggettive (TextualFeature) o dichiarazioni paratestuali (E33 Linguistic Object).</rdfs:comment>
+    <rdfs:comment xml:lang="en">A formal or semantic procedure intervening in the process of textual generation (F28 Expression Creation). Its presence may be documented through objective evidence (TextualFeature) or paratextual statements (E33 Linguistic Object).</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
+  </rdf:Description>
+</rdf:RDF>

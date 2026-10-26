@@ -1,0 +1,49 @@
+[
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/P148_has_component",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#TransitiveProperty",
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS articola espressioni e manifestazioni complesse nelle rispettive componenti. La proprietà originale ha come domain crm:E89_Propositional_Object e come range crm:E89_Propositional_Object. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression (tra espressioni) o lrmoo:F3_Manifestation (tra manifestazioni) e come range rispettivamente lrmoo:F2_Expression o lrmoo:F3_Manifestation."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, it decomposes complex expressions and manifestations into their components. The original property has domain crm:E89_Propositional_Object and range crm:E89_Propositional_Object. In DeSMòS, the same property has domain lrmoo:F2_Expression (between expressions) or lrmoo:F3_Manifestation (between manifestations) and range lrmoo:F2_Expression or lrmoo:F3_Manifestation respectively."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "P148 ha componente"
+      },
+      {
+        "@language": "en",
+        "@value": "P148 has component"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P148i_is_component_of"
+      }
+    ]
+  }
+]

@@ -1,0 +1,9 @@
+<http://iflastandards.info/ns/lrm/lrmoo/R17_created> <http://www.w3.org/2002/07/owl#inverseOf> <http://iflastandards.info/ns/lrm/lrmoo/R17i_was_created_by> .
+<http://iflastandards.info/ns/lrm/lrmoo/R17_created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iflastandards.info/ns/lrm/lrmoo/R17_created> <http://www.w3.org/2000/01/rdf-schema#comment> "In DeSMòS collega un evento di creazione dell'espressione all'espressione testuale che produce. La proprietà originale ha come domain lrmoo:F28_Expression_Creation e come range lrmoo:F2_Expression. In DeSMòS la stessa proprietà ha come domain lrmoo:F28_Expression_Creation e come range lrmoo:F2_Expression."@it .
+<http://iflastandards.info/ns/lrm/lrmoo/R17_created> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation> .
+<http://iflastandards.info/ns/lrm/lrmoo/R17_created> <http://www.w3.org/2000/01/rdf-schema#comment> "In DeSMòS, it relates an expression creation event to the textual expression it produces. The original property has domain lrmoo:F28_Expression_Creation and range lrmoo:F2_Expression. In DeSMòS, the same property has domain lrmoo:F28_Expression_Creation and range lrmoo:F2_Expression."@en .
+<http://iflastandards.info/ns/lrm/lrmoo/R17_created> <http://www.w3.org/2000/01/rdf-schema#label> "R17 created"@en .
+<http://iflastandards.info/ns/lrm/lrmoo/R17_created> <http://www.w3.org/2000/01/rdf-schema#range> <http://iflastandards.info/ns/lrm/lrmoo/F2_Expression> .
+<http://iflastandards.info/ns/lrm/lrmoo/R17_created> <http://www.w3.org/2000/01/rdf-schema#label> "R17 ha creato"@it .
+<http://iflastandards.info/ns/lrm/lrmoo/R17_created> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://iflastandards.info/ns/lrm/lrmoo/> .

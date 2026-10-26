@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/desmos/ConstraintOriginScheme">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="it">Schema dell'origine della costrizione</rdfs:label>
+    <rdfs:label xml:lang="en">Constraint Origin Scheme</rdfs:label>
+    <rdfs:comment xml:lang="it">Schema concettuale che distingue le costrizioni riprese dalla tradizione da quelle introdotte ex novo in uno specifico contesto compositivo. Atteso come valore del range di desmos:constraintOrigin.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Concept scheme distinguishing between traditional constraints and newly introduced constraints in a specific compositional context. Expected as the range value of desmos:constraintOrigin.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
+  </rdf:Description>
+</rdf:RDF>

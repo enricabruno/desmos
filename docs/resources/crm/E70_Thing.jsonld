@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/E70_Thing",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, E70 Thing is referenced as the original domain and range of P130 shows features of. E28 Conceptual Object is declared as its direct subclass, abbreviating the official chain E28 Conceptual Object ⊑ E71 Human-Made Thing ⊑ E70 Thing (CIDOC CRM 7.1.3)."
+      },
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, E70 Thing è referenziata come domain e range originali di P130 shows features of. E28 Conceptual Object ne è dichiarata sottoclasse diretta, abbreviando la catena ufficiale E28 Conceptual Object ⊑ E71 Human-Made Thing ⊑ E70 Thing (CIDOC CRM 7.1.3)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "E70 Thing"
+      },
+      {
+        "@language": "it",
+        "@value": "E70 Cosa"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"
+      }
+    ]
+  }
+]

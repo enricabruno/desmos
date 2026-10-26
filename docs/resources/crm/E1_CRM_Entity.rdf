@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity">
+    <rdfs:comment xml:lang="en">In DeSMòS, E1 CRM Entity is the root of the CIDOC CRM hierarchy and is referenced as the original domain or range of P2 has type, P3 has note, P67 refers to and P129 is about. E7 Activity, E39 Actor and E70 Thing are declared as its direct subclasses, abbreviating the official chains through E5 Event and E77 Persistent Item.</rdfs:comment>
+    <rdfs:comment xml:lang="it">In DeSMòS, E1 CRM Entity è la radice della gerarchia di CIDOC CRM ed è referenziata come domain o range originale di P2 has type, P3 has note, P67 refers to e P129 is about. E7 Activity, E39 Actor ed E70 Thing ne sono dichiarate sottoclassi dirette, abbreviando le catene ufficiali che passano per E5 Event ed E77 Persistent Item.</rdfs:comment>
+    <rdfs:label xml:lang="en">E1 CRM Entity</rdfs:label>
+    <rdfs:label xml:lang="it">E1 Entità CRM</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>

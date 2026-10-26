@@ -1,0 +1,20 @@
+_:N348636469c27458e8186f4ec3446c83a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lso/intro/beta202506#R13i_isReferringEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:N00e99d6a9d8c401fb88ecec8914d471e <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lso/intro/beta202506#INT2_ActualizationOfFeature> .
+<https://w3id.org/lso/intro/beta202506#R13i_isReferringEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Inversa di R13 has referring entity: in DeSMòS collega un'entità ipertestuale (espressione o passaggio) alla relazione intertestuale in cui è l'entità referente. La proprietà originale ha come domain l'unione di lrmoo:F1_Work, crm:E73_Information_Object, intro:INT1_Passage, intro:INT2_ActualizationOfFeature e intro:INT6_Architext e come range intro:INT3_Interrelation. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression o intro:INT21_TextPassage e come range intro:INT31_IntertextualRelation."@it .
+<https://w3id.org/lso/intro/beta202506#R13i_isReferringEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of R13 has referring entity: in DeSMòS, it relates a hypertextual entity (expression or passage) to the intertextual relation in which it is the referring entity. The original property has domain the union of lrmoo:F1_Work, crm:E73_Information_Object, intro:INT1_Passage, intro:INT2_ActualizationOfFeature and intro:INT6_Architext and range intro:INT3_Interrelation. In DeSMòS, the same property has domain lrmoo:F2_Expression or intro:INT21_TextPassage and range intro:INT31_IntertextualRelation."@en .
+_:Nc45a6abe444a458a8758c19073577254 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://iflastandards.info/ns/lrm/lrmoo/F1_Work> .
+_:N2de407b41b3a499f81c7e642bbe4c976 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lso/intro/beta202506#INT6_Architext> .
+_:Nc45a6abe444a458a8758c19073577254 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N701be260e2f64ff1b1137da86a692d04 .
+<https://w3id.org/lso/intro/beta202506#R13i_isReferringEntity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lso/intro/beta202506#> .
+<https://w3id.org/lso/intro/beta202506#R13i_isReferringEntity> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lso/intro/beta202506#INT3_Interrelation> .
+_:N701be260e2f64ff1b1137da86a692d04 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Ndb8f2bf091674a32af4ad5b875fde088 .
+_:N00e99d6a9d8c401fb88ecec8914d471e <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N2de407b41b3a499f81c7e642bbe4c976 .
+<https://w3id.org/lso/intro/beta202506#R13i_isReferringEntity> <http://www.w3.org/2000/01/rdf-schema#label> "R13i is referring entity of"@en .
+_:N348636469c27458e8186f4ec3446c83a <http://www.w3.org/2002/07/owl#unionOf> _:Nc45a6abe444a458a8758c19073577254 .
+_:Ndb8f2bf091674a32af4ad5b875fde088 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lso/intro/beta202506#INT1_Passage> .
+<https://w3id.org/lso/intro/beta202506#R13i_isReferringEntity> <http://www.w3.org/2000/01/rdf-schema#domain> _:N348636469c27458e8186f4ec3446c83a .
+_:N701be260e2f64ff1b1137da86a692d04 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> .
+<https://w3id.org/lso/intro/beta202506#R13i_isReferringEntity> <http://www.w3.org/2000/01/rdf-schema#label> "R13i è entità referente di"@it .
+_:N2de407b41b3a499f81c7e642bbe4c976 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Ndb8f2bf091674a32af4ad5b875fde088 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N00e99d6a9d8c401fb88ecec8914d471e .

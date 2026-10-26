@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "http://iflastandards.info/ns/lrm/lrmoo/F1_Work",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, F1 Work è utilizzata per rappresentare l'opera come entità astratta, distinta dalle espressioni testuali attraverso cui essa viene realizzata. La proprietà che può essere usata con questa classe è lrmoo:R3_is_realised_in."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, F1 Work is used to represent the work as an abstract entity, distinct from the textual expressions through which it is realised. The property that can be used with this class is lrmoo:R3_is_realised_in."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "F1 Opera"
+      },
+      {
+        "@language": "en",
+        "@value": "F1 Work"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"
+      }
+    ]
+  }
+]

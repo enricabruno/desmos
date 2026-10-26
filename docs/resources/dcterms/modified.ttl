@@ -1,0 +1,11 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+dcterms:modified a owl:AnnotationProperty ;
+    rdfs:label "modified"@en,
+        "modificato"@it ;
+    rdfs:comment "The date on which the resource was modified."@en,
+        "La data in cui la risorsa è stata modificata."@it ;
+    rdfs:isDefinedBy dcterms: .
+

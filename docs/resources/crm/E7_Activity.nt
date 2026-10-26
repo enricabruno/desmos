@@ -1,0 +1,7 @@
+<http://www.cidoc-crm.org/cidoc-crm/E7_Activity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.cidoc-crm.org/cidoc-crm/> .
+<http://www.cidoc-crm.org/cidoc-crm/E7_Activity> <http://www.w3.org/2000/01/rdf-schema#label> "E7 Attività"@it .
+<http://www.cidoc-crm.org/cidoc-crm/E7_Activity> <http://www.w3.org/2000/01/rdf-schema#label> "E7 Activity"@en .
+<http://www.cidoc-crm.org/cidoc-crm/E7_Activity> <http://www.w3.org/2000/01/rdf-schema#comment> "In DeSMòS, E7 Activity è referenziata come domain originale di P14 carried out by e P33 used specific technique. lrmoo:F28_Expression_Creation ne è dichiarata sottoclasse diretta, abbreviando la catena ufficiale F28 Expression Creation ⊑ E65 Creation ⊑ E7 Activity (LRMoo 1.0; CIDOC CRM 7.1.3)."@it .
+<http://www.cidoc-crm.org/cidoc-crm/E7_Activity> <http://www.w3.org/2000/01/rdf-schema#comment> "In DeSMòS, E7 Activity is referenced as the original domain of P14 carried out by and P33 used specific technique. lrmoo:F28_Expression_Creation is declared as its direct subclass, abbreviating the official chain F28 Expression Creation ⊑ E65 Creation ⊑ E7 Activity (LRMoo 1.0; CIDOC CRM 7.1.3)."@en .
+<http://www.cidoc-crm.org/cidoc-crm/E7_Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cidoc-crm.org/cidoc-crm/E7_Activity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> .

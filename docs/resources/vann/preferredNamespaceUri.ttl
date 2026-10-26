@@ -1,0 +1,11 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+vann:preferredNamespaceUri a owl:AnnotationProperty ;
+    rdfs:label "preferred namespace URI"@en,
+        "URI preferito del namespace"@it ;
+    rdfs:comment "The preferred namespace URI to use when using terms from the vocabulary in an XML document."@en,
+        "L'URI di namespace preferito da usare per i termini del vocabolario."@it ;
+    rdfs:isDefinedBy vann: .
+

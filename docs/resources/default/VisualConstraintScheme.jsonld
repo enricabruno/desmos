@@ -1,0 +1,34 @@
+[
+  {
+    "@id": "https://w3id.org/desmos/VisualConstraintScheme",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Concept scheme collecting visual constraints, which intervene on the spatial, graphic or typographic arrangement of the text on the page."
+      },
+      {
+        "@language": "it",
+        "@value": "Schema concettuale che raccoglie le costrizioni visive, che intervengono sulla disposizione spaziale, grafica o tipografica del testo sulla pagina."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "Schema delle costrizioni visive"
+      },
+      {
+        "@language": "en",
+        "@value": "Visual Constraint Scheme"
+      }
+    ]
+  }
+]

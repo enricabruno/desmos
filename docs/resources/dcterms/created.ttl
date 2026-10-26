@@ -1,0 +1,12 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+dcterms:created a owl:DatatypeProperty ;
+    rdfs:label "created"@en,
+        "creato"@it ;
+    rdfs:comment "In DeSMòS, dcterms:created is used to record the date associated with an expression creation event."@en,
+        "In DeSMòS, dcterms:created è utilizzata per registrare la data associata all'evento di creazione di un'espressione."@it ;
+    rdfs:isDefinedBy dcterms: ;
+    rdfs:range rdfs:Literal .
+

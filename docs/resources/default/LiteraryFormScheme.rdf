@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/desmos/LiteraryFormScheme">
+    <rdfs:comment xml:lang="en">Concept scheme defining the textual form of the work (prose, poetry, visual form). Used to qualify lrmoo:F2_Expression instances via crm:P2_has_type.</rdfs:comment>
+    <rdfs:comment xml:lang="it">Schema concettuale che definisce la forma testuale dell'opera (prosa, poesia, forma visuale). Utilizzato per qualificare istanze di lrmoo:F2_Expression tramite crm:P2_has_type.</rdfs:comment>
+    <rdfs:label xml:lang="it">Schema delle forme letterarie</rdfs:label>
+    <rdfs:label xml:lang="en">Literary Form Scheme</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+  </rdf:Description>
+</rdf:RDF>

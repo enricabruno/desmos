@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "http://purl.org/dc/terms/created",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, dcterms:created è utilizzata per registrare la data associata all'evento di creazione di un'espressione."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, dcterms:created is used to record the date associated with an expression creation event."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/dc/terms/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "created"
+      },
+      {
+        "@language": "it",
+        "@value": "creato"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ]
+  }
+]

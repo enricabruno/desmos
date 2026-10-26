@@ -1,0 +1,11 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+dcterms:hasVersion a owl:AnnotationProperty ;
+    rdfs:label "has version"@en,
+        "ha versione"@it ;
+    rdfs:comment "A related resource that is a version, edition, or adaptation of the described resource."@en,
+        "Una risorsa correlata che è una versione, edizione o adattamento della risorsa descritta."@it ;
+    rdfs:isDefinedBy dcterms: .
+

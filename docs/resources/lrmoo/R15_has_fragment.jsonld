@@ -1,0 +1,48 @@
+[
+  {
+    "@id": "http://iflastandards.info/ns/lrm/lrmoo/R15_has_fragment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS collega un'espressione alla dichiarazione peritestuale contenuta nella stessa pubblicazione, che ne è un frammento e documenta l'impiego di una costrizione. La proprietà originale ha come domain lrmoo:F2_Expression e come range crm:E90_Symbolic_Object. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression e come range crm:E33_Linguistic_Object."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, it relates an expression to the peritextual declaration contained in the same publication, which is a fragment of it and documents the use of a constraint. The original property has domain lrmoo:F2_Expression and range crm:E90_Symbolic_Object. In DeSMòS, the same property has domain lrmoo:F2_Expression and range crm:E33_Linguistic_Object."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "R15 ha frammento"
+      },
+      {
+        "@language": "en",
+        "@value": "R15 has fragment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R15i_is_fragment_of"
+      }
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://iflastandards.info/ns/lrm/lrmoo/R15_has_fragment">
+    <owl:inverseOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R15i_is_fragment_of"/>
+    <rdfs:label xml:lang="it">R15 ha frammento</rdfs:label>
+    <rdfs:label xml:lang="en">R15 has fragment</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="it">In DeSMòS collega un'espressione alla dichiarazione peritestuale contenuta nella stessa pubblicazione, che ne è un frammento e documenta l'impiego di una costrizione. La proprietà originale ha come domain lrmoo:F2_Expression e come range crm:E90_Symbolic_Object. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression e come range crm:E33_Linguistic_Object.</rdfs:comment>
+    <rdfs:comment xml:lang="en">In DeSMòS, it relates an expression to the peritextual declaration contained in the same publication, which is a fragment of it and documents the use of a constraint. The original property has domain lrmoo:F2_Expression and range crm:E90_Symbolic_Object. In DeSMòS, the same property has domain lrmoo:F2_Expression and range crm:E33_Linguistic_Object.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+    <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/"/>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,6 @@
+<http://purl.org/dc/terms/source> <http://www.w3.org/2000/01/rdf-schema#comment> "A related resource from which the described resource is derived."@en .
+<http://purl.org/dc/terms/source> <http://www.w3.org/2000/01/rdf-schema#label> "source"@en .
+<http://purl.org/dc/terms/source> <http://www.w3.org/2000/01/rdf-schema#label> "fonte"@it .
+<http://purl.org/dc/terms/source> <http://www.w3.org/2000/01/rdf-schema#comment> "Una risorsa correlata da cui deriva la risorsa corrente."@it .
+<http://purl.org/dc/terms/source> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .

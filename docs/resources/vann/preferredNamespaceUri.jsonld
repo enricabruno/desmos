@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "http://purl.org/vocab/vann/preferredNamespaceUri",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "L'URI di namespace preferito da usare per i termini del vocabolario."
+      },
+      {
+        "@language": "en",
+        "@value": "The preferred namespace URI to use when using terms from the vocabulary in an XML document."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/vocab/vann/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "preferred namespace URI"
+      },
+      {
+        "@language": "it",
+        "@value": "URI preferito del namespace"
+      }
+    ]
+  }
+]

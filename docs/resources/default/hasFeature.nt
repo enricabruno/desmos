@@ -1,0 +1,8 @@
+<https://w3id.org/desmos/hasFeature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/desmos/> .
+<https://w3id.org/desmos/hasFeature> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iflastandards.info/ns/lrm/lrmoo/F2_Expression> .
+<https://w3id.org/desmos/hasFeature> <http://www.w3.org/2000/01/rdf-schema#label> "ha caratteristica"@it .
+<https://w3id.org/desmos/hasFeature> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/desmos/TextualFeature> .
+<https://w3id.org/desmos/hasFeature> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates a textual expression to an observable textual feature of a constraint. The property has domain lrmoo:F2_Expression and range desmos:TextualFeature."@en .
+<https://w3id.org/desmos/hasFeature> <http://www.w3.org/2000/01/rdf-schema#comment> "Questa proprietà collega un'espressione testuale all'evidenza testuale osservabile di una costrizione. La proprietà ha come domain lrmoo:F2_Expression e come range desmos:TextualFeature."@it .
+<https://w3id.org/desmos/hasFeature> <http://www.w3.org/2000/01/rdf-schema#label> "has feature"@en .
+<https://w3id.org/desmos/hasFeature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .

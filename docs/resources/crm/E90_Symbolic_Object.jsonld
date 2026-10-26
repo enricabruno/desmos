@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, E90 Symbolic Object è referenziata come range originale di R15 has fragment: le dichiarazioni peritestuali (E33 Linguistic Object) collegate a un'espressione mediante R15 sono oggetti simbolici attraverso E73 Information Object. È superclasse di E73 Information Object e, in INTRO, di INT1 Passage e INT16 Segment."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, E90 Symbolic Object is referenced as the original range of R15 has fragment: the peritextual statements (E33 Linguistic Object) linked to an expression through R15 are symbolic objects via E73 Information Object. It is the superclass of E73 Information Object and, in INTRO, of INT1 Passage and INT16 Segment."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "E90 Symbolic Object"
+      },
+      {
+        "@language": "it",
+        "@value": "E90 Oggetto Simbolico"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"
+      }
+    ]
+  }
+]

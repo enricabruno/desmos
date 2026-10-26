@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://w3id.org/desmos/constrainsFormalUnit",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Relates a formal constraint to the textual unit on which it operates. The property has domain desmos:FormalConstraint and range skos:Concept."
+      },
+      {
+        "@language": "it",
+        "@value": "Collega una costrizione formale all'unità testuale su cui opera (ad es. lettera, sillaba o parola). La proprietà ha come domain desmos:FormalConstraint e come range skos:Concept."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/desmos/FormalConstraint"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "vincola unità formale"
+      },
+      {
+        "@language": "en",
+        "@value": "constrains formal unit"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ]
+  }
+]

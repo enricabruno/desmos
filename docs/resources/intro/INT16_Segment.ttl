@@ -1,0 +1,13 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix intro: <https://w3id.org/lso/intro/beta202506#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+intro:INT16_Segment a owl:Class ;
+    rdfs:label "INT16 Segment"@en,
+        "INT16 Segmento"@it ;
+    rdfs:comment "In DeSMòS, INT16 Segment is referenced only as a member of the original union domain of R44 has wording; it is not instantiated in the DeSMòS corpus, where R44 is applied to INT21 Text Passage."@en,
+        "In DeSMòS, INT16 Segment è referenziata solo come membro dell'unione che costituisce il domain originale di R44 has wording; non è istanziata nel corpus DeSMòS, dove R44 è applicata a INT21 Text Passage."@it ;
+    rdfs:isDefinedBy intro: ;
+    rdfs:subClassOf crm:E90_Symbolic_Object .
+

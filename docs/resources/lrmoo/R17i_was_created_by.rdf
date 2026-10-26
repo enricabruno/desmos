@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://iflastandards.info/ns/lrm/lrmoo/R17i_was_created_by">
+    <rdfs:label xml:lang="en">R17i was created by</rdfs:label>
+    <rdfs:label xml:lang="it">R17i è stata creata da</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="it">Inversa di R17 created: in DeSMòS collega un'espressione testuale all'evento compositivo che l'ha prodotta. La proprietà originale ha come domain lrmoo:F2_Expression e come range lrmoo:F28_Expression_Creation. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression e come range lrmoo:F28_Expression_Creation.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Inverse of R17 created: in DeSMòS, it relates a textual expression to the compositional event that produced it. The original property has domain lrmoo:F2_Expression and range lrmoo:F28_Expression_Creation. In DeSMòS, the same property has domain lrmoo:F2_Expression and range lrmoo:F28_Expression_Creation.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"/>
+    <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/"/>
+  </rdf:Description>
+</rdf:RDF>

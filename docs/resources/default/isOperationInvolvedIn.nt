@@ -1,0 +1,8 @@
+<https://w3id.org/desmos/isOperationInvolvedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Inversa di involvesOperation: questa proprietà collega un'operazione procedurale alle costrizioni letterarie che la comportano. La proprietà ha come domain skos:Concept e come range desmos:LiteraryConstraint."@it .
+<https://w3id.org/desmos/isOperationInvolvedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of involvesOperation: this property relates a procedural operation to the literary constraints that involve it. The property has domain skos:Concept and range desmos:LiteraryConstraint."@en .
+<https://w3id.org/desmos/isOperationInvolvedIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/desmos/> .
+<https://w3id.org/desmos/isOperationInvolvedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/desmos/isOperationInvolvedIn> <http://www.w3.org/2000/01/rdf-schema#label> "è l'operazione coinvolta in"@it .
+<https://w3id.org/desmos/isOperationInvolvedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is operation involved in"@en .
+<https://w3id.org/desmos/isOperationInvolvedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/desmos/isOperationInvolvedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/desmos/LiteraryConstraint> .

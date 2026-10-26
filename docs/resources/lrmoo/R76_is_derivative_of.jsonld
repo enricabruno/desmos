@@ -1,0 +1,53 @@
+[
+  {
+    "@id": "http://iflastandards.info/ns/lrm/lrmoo/R76_is_derivative_of",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS indica che un'espressione deriva da un'altra espressione assunta come fonte nella sua creazione. La proprietà originale ha come domain lrmoo:F2_Expression e come range lrmoo:F2_Expression. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression e come range lrmoo:F2_Expression."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, it states that an expression derives from another expression used as a source in its creation. The original property has domain lrmoo:F2_Expression and range lrmoo:F2_Expression. In DeSMòS, the same property has domain lrmoo:F2_Expression and range lrmoo:F2_Expression."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "R76 è derivato di"
+      },
+      {
+        "@language": "en",
+        "@value": "R76 is derivative of"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R76i_has_derivative"
+      }
+    ]
+  }
+]

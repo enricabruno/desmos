@@ -1,0 +1,15 @@
+@prefix : <https://w3id.org/desmos/> .
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:isFeatureOf a owl:ObjectProperty ;
+    rdfs:label "is feature of"@en,
+        "è caratteristica di"@it ;
+    rdfs:comment "Inverse of hasFeature: relates a textual feature of a constraint to the expression in which it is manifest. The property has domain desmos:TextualFeature and range lrmoo:F2_Expression."@en,
+        "Inversa di hasFeature: collega un'evidenza testuale della costrizione all'espressione in cui è manifesta. La proprietà ha come domain desmos:TextualFeature e come range lrmoo:F2_Expression."@it ;
+    rdfs:domain :TextualFeature ;
+    rdfs:isDefinedBy : ;
+    rdfs:range lrmoo:F2_Expression ;
+    owl:inverseOf :hasFeature .
+

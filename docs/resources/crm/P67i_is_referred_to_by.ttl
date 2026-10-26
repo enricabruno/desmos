@@ -1,0 +1,13 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+crm:P67i_is_referred_to_by a owl:ObjectProperty ;
+    rdfs:label "P67i is referred to by"@en,
+        "P67i è riferito da"@it ;
+    rdfs:comment "Inverse of P67 refers to: in DeSMòS, it relates a textual expression to the declarations referring to it. The original property has domain crm:E1_CRM_Entity and range crm:E89_Propositional_Object. In DeSMòS, the same property has domain lrmoo:F2_Expression and range crm:E33_Linguistic_Object."@en,
+        "Inversa di P67 refers to: in DeSMòS collega un'espressione testuale alle dichiarazioni che vi fanno riferimento. La proprietà originale ha come domain crm:E1_CRM_Entity e come range crm:E89_Propositional_Object. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression e come range crm:E33_Linguistic_Object."@it ;
+    rdfs:domain crm:E1_CRM_Entity ;
+    rdfs:isDefinedBy crm: ;
+    rdfs:range crm:E89_Propositional_Object .
+

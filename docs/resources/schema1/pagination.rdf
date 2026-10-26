@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://schema.org/pagination">
+    <rdfs:label xml:lang="it">paginazione</rdfs:label>
+    <rdfs:label xml:lang="en">pagination</rdfs:label>
+    <rdfs:comment xml:lang="en">In DeSMòS, schema:pagination is used to record the page or page range of a F3_Manifestation.</rdfs:comment>
+    <rdfs:comment xml:lang="it">In DeSMòS, schema:pagination è utilizzata per registrare la pagina o l'intervallo di pagine di una F3_Manifestation.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://schema.org/"/>
+  </rdf:Description>
+</rdf:RDF>

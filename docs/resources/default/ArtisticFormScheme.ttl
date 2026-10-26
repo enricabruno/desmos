@@ -1,0 +1,13 @@
+@prefix : <https://w3id.org/desmos/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:ArtisticFormScheme a owl:NamedIndividual,
+        skos:ConceptScheme ;
+    rdfs:label "Artistic Form Scheme"@en,
+        "Schema delle forme artistiche"@it ;
+    rdfs:comment "Concept scheme defining the artistic form of non-linguistic expressions (visual art, music). Used to qualify lrmoo:F2_Expression instances via crm:P2_has_type, complementing desmos:LiteraryFormScheme where the source expression is not a text."@en,
+        "Schema concettuale che definisce la forma artistica di espressioni non linguistiche (arte visuale, musica). Utilizzato per qualificare istanze di lrmoo:F2_Expression tramite crm:P2_has_type, in complemento a desmos:LiteraryFormScheme nei casi in cui l'espressione non sia un testo."@it ;
+    rdfs:isDefinedBy : .
+

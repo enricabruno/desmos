@@ -1,0 +1,70 @@
+[
+  {
+    "@id": "https://w3id.org/lso/intro/beta202506#R12i_isReferredToEntity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Inverse of R12 has referred to entity: in DeSMòS, it relates a hypotextual entity (expression or passage) to the intertextual relation in which it is the entity referred to. The original property has domain the union of lrmoo:F1_Work, crm:E73_Information_Object, intro:INT1_Passage, intro:INT2_ActualizationOfFeature and intro:INT6_Architext and range intro:INT3_Interrelation. In DeSMòS, the same property has domain lrmoo:F2_Expression or intro:INT21_TextPassage and range intro:INT31_IntertextualRelation."
+      },
+      {
+        "@language": "it",
+        "@value": "Inversa di R12 has referred to entity: in DeSMòS collega un'entità ipotestuale (espressione o passaggio) alla relazione intertestuale in cui è l'entità a cui si fa riferimento. La proprietà originale ha come domain l'unione di lrmoo:F1_Work, crm:E73_Information_Object, intro:INT1_Passage, intro:INT2_ActualizationOfFeature e intro:INT6_Architext e come range intro:INT3_Interrelation. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression o intro:INT21_TextPassage e come range intro:INT31_IntertextualRelation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:N519b097bffb94882b572110f47d6b1ce"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "R12i è entità a cui si riferisce di"
+      },
+      {
+        "@language": "en",
+        "@value": "R12i is referred to entity of"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#INT3_Interrelation"
+      }
+    ]
+  },
+  {
+    "@id": "_:N519b097bffb94882b572110f47d6b1ce",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://iflastandards.info/ns/lrm/lrmoo/F1_Work"
+          },
+          {
+            "@id": "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"
+          },
+          {
+            "@id": "https://w3id.org/lso/intro/beta202506#INT1_Passage"
+          },
+          {
+            "@id": "https://w3id.org/lso/intro/beta202506#INT2_ActualizationOfFeature"
+          },
+          {
+            "@id": "https://w3id.org/lso/intro/beta202506#INT6_Architext"
+          }
+        ]
+      }
+    ]
+  }
+]

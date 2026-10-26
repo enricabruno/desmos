@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "http://www.w3.org/2004/02/skos/core#scopeNote",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A note that clarifies the intended meaning of the concept."
+      },
+      {
+        "@language": "it",
+        "@value": "Una nota che chiarisce il significato inteso del concetto."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "nota di ambito"
+      },
+      {
+        "@language": "en",
+        "@value": "scope note"
+      }
+    ]
+  }
+]

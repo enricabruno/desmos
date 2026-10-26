@@ -1,0 +1,7 @@
+<https://w3id.org/desmos/LiteraryFormScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept scheme defining the textual form of the work (prose, poetry, visual form). Used to qualify lrmoo:F2_Expression instances via crm:P2_has_type."@en .
+<https://w3id.org/desmos/LiteraryFormScheme> <http://www.w3.org/2000/01/rdf-schema#label> "Schema delle forme letterarie"@it .
+<https://w3id.org/desmos/LiteraryFormScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/desmos/> .
+<https://w3id.org/desmos/LiteraryFormScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/desmos/LiteraryFormScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "Schema concettuale che definisce la forma testuale dell'opera (prosa, poesia, forma visuale). Utilizzato per qualificare istanze di lrmoo:F2_Expression tramite crm:P2_has_type."@it .
+<https://w3id.org/desmos/LiteraryFormScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<https://w3id.org/desmos/LiteraryFormScheme> <http://www.w3.org/2000/01/rdf-schema#label> "Literary Form Scheme"@en .

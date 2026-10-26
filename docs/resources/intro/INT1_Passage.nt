@@ -1,0 +1,7 @@
+<https://w3id.org/lso/intro/beta202506#INT1_Passage> <http://www.w3.org/2000/01/rdf-schema#label> "INT1 Passaggio"@it .
+<https://w3id.org/lso/intro/beta202506#INT1_Passage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object> .
+<https://w3id.org/lso/intro/beta202506#INT1_Passage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lso/intro/beta202506#> .
+<https://w3id.org/lso/intro/beta202506#INT1_Passage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lso/intro/beta202506#INT1_Passage> <http://www.w3.org/2000/01/rdf-schema#comment> "In DeSMòS, INT1 Passage provides the general category for intro:INT21_TextPassage, used to represent textual passages involved in intertextual relations."@en .
+<https://w3id.org/lso/intro/beta202506#INT1_Passage> <http://www.w3.org/2000/01/rdf-schema#comment> "In DeSMòS, INT1 Passage fornisce la categoria generale per intro:INT21_TextPassage, utilizzata per rappresentare i passaggi testuali coinvolti nelle relazioni intertestuali."@it .
+<https://w3id.org/lso/intro/beta202506#INT1_Passage> <http://www.w3.org/2000/01/rdf-schema#label> "INT1 Passage"@en .

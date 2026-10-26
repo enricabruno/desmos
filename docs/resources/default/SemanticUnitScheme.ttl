@@ -1,0 +1,13 @@
+@prefix : <https://w3id.org/desmos/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:SemanticUnitScheme a owl:NamedIndividual,
+        skos:ConceptScheme ;
+    rdfs:label "Semantic Unit Scheme"@en,
+        "Schema delle unità semantiche"@it ;
+    rdfs:comment "Concept scheme defining the discrete units of the content plane (e.g., character, space, time) determined by a semantic constraint. Expected as the range value of desmos:constrainsSemanticUnit."@en,
+        "Schema concettuale che definisce le unità discrete del piano del contenuto (personaggio, spazio, tempo) determinate da una costrizione di tipo semantico. Atteso come valore del range di desmos:constrainsSemanticUnit."@it ;
+    rdfs:isDefinedBy : .
+

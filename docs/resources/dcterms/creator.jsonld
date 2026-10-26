@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "http://purl.org/dc/terms/creator",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An entity responsible for making the resource."
+      },
+      {
+        "@language": "it",
+        "@value": "Un'entità responsabile della creazione della risorsa."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/dc/terms/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "creator"
+      },
+      {
+        "@language": "it",
+        "@value": "creatore"
+      }
+    ]
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://w3id.org/desmos/hasFeature",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This property relates a textual expression to an observable textual feature of a constraint. The property has domain lrmoo:F2_Expression and range desmos:TextualFeature."
+      },
+      {
+        "@language": "it",
+        "@value": "Questa proprietà collega un'espressione testuale all'evidenza testuale osservabile di una costrizione. La proprietà ha come domain lrmoo:F2_Expression e come range desmos:TextualFeature."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "ha caratteristica"
+      },
+      {
+        "@language": "en",
+        "@value": "has feature"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/desmos/TextualFeature"
+      }
+    ]
+  }
+]

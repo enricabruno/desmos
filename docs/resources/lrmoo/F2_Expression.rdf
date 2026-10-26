@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression">
+    <rdfs:label xml:lang="it">F2 Espressione</rdfs:label>
+    <rdfs:label xml:lang="en">F2 Expression</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+    <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/"/>
+    <rdfs:comment xml:lang="en">In DeSMòS, F2 Expression is used to represent the textual realisation of a work, on which literary constraints and relations to other texts are documented. The properties that can be used with this class are crm:P130_shows_features_of, crm:P148_has_component, crm:P2_has_type, lrmoo:R15_has_fragment, lrmoo:R4i_is_embodied_in and lrmoo:R76_is_derivative_of.</rdfs:comment>
+    <rdfs:comment xml:lang="it">In DeSMòS, F2 Expression è utilizzata per rappresentare la realizzazione testuale di un'opera, sulla quale vengono documentate le costrizioni letterarie e le relazioni con altri testi. Le proprietà che possono essere usate con questa classe sono crm:P130_shows_features_of, crm:P148_has_component, crm:P2_has_type, lrmoo:R15_has_fragment, lrmoo:R4i_is_embodied_in e lrmoo:R76_is_derivative_of.</rdfs:comment>
+  </rdf:Description>
+</rdf:RDF>

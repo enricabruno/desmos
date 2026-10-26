@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of">
+    <rdfs:comment xml:lang="en">Inverse of P2 has type: in DeSMòS, it relates a literary or artistic form type to the expressions it classifies. The original property has domain crm:E55_Type and range crm:E1_CRM_Entity. In DeSMòS, the same property has domain crm:E55_Type and range lrmoo:F2_Expression.</rdfs:comment>
+    <rdfs:comment xml:lang="it">Inversa di P2 has type: in DeSMòS collega un tipo di forma letteraria o artistica alle espressioni che classifica. La proprietà originale ha come domain crm:E55_Type e come range crm:E1_CRM_Entity. In DeSMòS la stessa proprietà ha come domain crm:E55_Type e come range lrmoo:F2_Expression.</rdfs:comment>
+    <rdfs:label xml:lang="it">P2i è tipo di</rdfs:label>
+    <rdfs:label xml:lang="en">P2i is type of</rdfs:label>
+    <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,13 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+crm:P130i_features_are_also_found_on a owl:ObjectProperty ;
+    rdfs:label "P130i features are also found on"@en,
+        "P130i caratteristiche si ritrovano anche in"@it ;
+    rdfs:comment "Inverse of P130 shows features of: in DeSMòS, it relates an expression used as a source to the expressions showing its features without deriving its content. The original property has domain crm:E70_Thing and range crm:E70_Thing. In DeSMòS, the same property has domain lrmoo:F2_Expression and range lrmoo:F2_Expression."@en,
+        "Inversa di P130 shows features of: in DeSMòS collega un'espressione assunta come fonte alle espressioni che ne presentano tratti senza derivarne il contenuto. La proprietà originale ha come domain crm:E70_Thing e come range crm:E70_Thing. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression e come range lrmoo:F2_Expression."@it ;
+    rdfs:domain crm:E70_Thing ;
+    rdfs:isDefinedBy crm: ;
+    rdfs:range crm:E70_Thing .
+

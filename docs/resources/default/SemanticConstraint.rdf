@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/desmos/SemanticConstraint">
+    <rdfs:comment xml:lang="en">A constraint that operates primarily at the level of the signified. The properties that can be used with this class are desmos:constrainsSemanticUnit, desmos:constraintOrigin, desmos:involvesOperation, skos:inScheme and skos:related.</rdfs:comment>
+    <rdfs:comment xml:lang="it">Costrizione che interviene prioritariamente sul significato. Le proprietà che possono essere usate con questa classe sono desmos:constrainsSemanticUnit, desmos:constraintOrigin, desmos:involvesOperation, skos:inScheme e skos:related.</rdfs:comment>
+    <rdfs:label xml:lang="en">Semantic constraint</rdfs:label>
+    <rdfs:label xml:lang="it">Costrizione semantica</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/desmos/LiteraryConstraint"/>
+    <owl:disjointWith rdf:resource="https://w3id.org/desmos/FormalConstraint"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>

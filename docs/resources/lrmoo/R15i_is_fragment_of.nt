@@ -1,0 +1,8 @@
+<http://iflastandards.info/ns/lrm/lrmoo/R15i_is_fragment_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iflastandards.info/ns/lrm/lrmoo/R15i_is_fragment_of> <http://www.w3.org/2000/01/rdf-schema#range> <http://iflastandards.info/ns/lrm/lrmoo/F2_Expression> .
+<http://iflastandards.info/ns/lrm/lrmoo/R15i_is_fragment_of> <http://www.w3.org/2000/01/rdf-schema#label> "R15i is fragment of"@en .
+<http://iflastandards.info/ns/lrm/lrmoo/R15i_is_fragment_of> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://iflastandards.info/ns/lrm/lrmoo/> .
+<http://iflastandards.info/ns/lrm/lrmoo/R15i_is_fragment_of> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of R15 has fragment: in DeSMòS, it relates a peritextual declaration to the expression of which it is a fragment. The original property has domain crm:E90_Symbolic_Object and range lrmoo:F2_Expression. In DeSMòS, the same property has domain crm:E33_Linguistic_Object and range lrmoo:F2_Expression."@en .
+<http://iflastandards.info/ns/lrm/lrmoo/R15i_is_fragment_of> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object> .
+<http://iflastandards.info/ns/lrm/lrmoo/R15i_is_fragment_of> <http://www.w3.org/2000/01/rdf-schema#comment> "Inversa di R15 has fragment: in DeSMòS collega una dichiarazione peritestuale all'espressione di cui è frammento. La proprietà originale ha come domain crm:E90_Symbolic_Object e come range lrmoo:F2_Expression. In DeSMòS la stessa proprietà ha come domain crm:E33_Linguistic_Object e come range lrmoo:F2_Expression."@it .
+<http://iflastandards.info/ns/lrm/lrmoo/R15i_is_fragment_of> <http://www.w3.org/2000/01/rdf-schema#label> "R15i è frammento di"@it .

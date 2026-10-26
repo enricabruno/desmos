@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/desmos/isRevealedBy">
+    <rdfs:comment xml:lang="it">Inversa di revealsConstraint: questa proprietà collega una costrizione letteraria all'evidenza testuale che ne permette l'identificazione. La proprietà ha come domain desmos:LiteraryConstraint e come range desmos:TextualFeature.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Inverse of revealsConstraint: this property relates a literary constraint to the textual feature that makes it identifiable. The property has domain desmos:LiteraryConstraint and range desmos:TextualFeature.</rdfs:comment>
+    <rdfs:label xml:lang="en">is revealed by</rdfs:label>
+    <rdfs:label xml:lang="it">è rivelata da</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/desmos/LiteraryConstraint"/>
+    <rdfs:range rdf:resource="https://w3id.org/desmos/TextualFeature"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/desmos/revealsConstraint"/>
+  </rdf:Description>
+</rdf:RDF>

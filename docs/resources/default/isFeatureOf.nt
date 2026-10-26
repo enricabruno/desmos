@@ -1,0 +1,9 @@
+<https://w3id.org/desmos/isFeatureOf> <http://www.w3.org/2000/01/rdf-schema#label> "is feature of"@en .
+<https://w3id.org/desmos/isFeatureOf> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/desmos/hasFeature> .
+<https://w3id.org/desmos/isFeatureOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/desmos/isFeatureOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasFeature: relates a textual feature of a constraint to the expression in which it is manifest. The property has domain desmos:TextualFeature and range lrmoo:F2_Expression."@en .
+<https://w3id.org/desmos/isFeatureOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inversa di hasFeature: collega un'evidenza testuale della costrizione all'espressione in cui è manifesta. La proprietà ha come domain desmos:TextualFeature e come range lrmoo:F2_Expression."@it .
+<https://w3id.org/desmos/isFeatureOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/desmos/TextualFeature> .
+<https://w3id.org/desmos/isFeatureOf> <http://www.w3.org/2000/01/rdf-schema#label> "è caratteristica di"@it .
+<https://w3id.org/desmos/isFeatureOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://iflastandards.info/ns/lrm/lrmoo/F2_Expression> .
+<https://w3id.org/desmos/isFeatureOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/desmos/> .

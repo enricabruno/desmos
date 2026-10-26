@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "http://purl.org/dc/terms/license",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Il documento legale che stabilisce i permessi di utilizzo della risorsa."
+      },
+      {
+        "@language": "en",
+        "@value": "A legal document giving official permission to do something with the resource."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/dc/terms/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "license"
+      },
+      {
+        "@language": "it",
+        "@value": "licenza"
+      }
+    ]
+  }
+]

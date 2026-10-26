@@ -1,0 +1,11 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+vann:preferredNamespacePrefix a owl:AnnotationProperty ;
+    rdfs:label "preferred namespace prefix"@en,
+        "prefisso preferito del namespace"@it ;
+    rdfs:comment "The preferred namespace prefix to use when using terms from the vocabulary in an XML document."@en,
+        "Il prefisso preferito da usare per i termini del vocabolario."@it ;
+    rdfs:isDefinedBy vann: .
+

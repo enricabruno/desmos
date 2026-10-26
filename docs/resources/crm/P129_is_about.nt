@@ -1,0 +1,9 @@
+<http://www.cidoc-crm.org/cidoc-crm/P129_is_about> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> .
+<http://www.cidoc-crm.org/cidoc-crm/P129_is_about> <http://www.w3.org/2000/01/rdf-schema#label> "P129 verte su"@it .
+<http://www.cidoc-crm.org/cidoc-crm/P129_is_about> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object> .
+<http://www.cidoc-crm.org/cidoc-crm/P129_is_about> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.cidoc-crm.org/cidoc-crm/P129_is_about> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.cidoc-crm.org/cidoc-crm/> .
+<http://www.cidoc-crm.org/cidoc-crm/P129_is_about> <http://www.w3.org/2000/01/rdf-schema#comment> "In DeSMòS, it states that a declaration (linguistic object) has a literary constraint as its subject. The original property has domain crm:E89_Propositional_Object and range crm:E1_CRM_Entity. In DeSMòS, the same property has domain crm:E33_Linguistic_Object and range desmos:LiteraryConstraint."@en .
+<http://www.cidoc-crm.org/cidoc-crm/P129_is_about> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.cidoc-crm.org/cidoc-crm/P129i_is_subject_of> .
+<http://www.cidoc-crm.org/cidoc-crm/P129_is_about> <http://www.w3.org/2000/01/rdf-schema#label> "P129 is about"@en .
+<http://www.cidoc-crm.org/cidoc-crm/P129_is_about> <http://www.w3.org/2000/01/rdf-schema#comment> "In DeSMòS indica che una dichiarazione (oggetto linguistico) ha come argomento una costrizione letteraria. La proprietà originale ha come domain crm:E89_Propositional_Object e come range crm:E1_CRM_Entity. In DeSMòS la stessa proprietà ha come domain crm:E33_Linguistic_Object e come range desmos:LiteraryConstraint."@it .

@@ -1,0 +1,11 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+
+schema1:pagination a owl:DatatypeProperty ;
+    rdfs:label "pagination"@en,
+        "paginazione"@it ;
+    rdfs:comment "In DeSMòS, schema:pagination is used to record the page or page range of a F3_Manifestation."@en,
+        "In DeSMòS, schema:pagination è utilizzata per registrare la pagina o l'intervallo di pagine di una F3_Manifestation."@it ;
+    rdfs:isDefinedBy schema1: .
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://iflastandards.info/ns/lrm/lrmoo/R76_is_derivative_of">
+    <rdfs:comment xml:lang="it">In DeSMòS indica che un'espressione deriva da un'altra espressione assunta come fonte nella sua creazione. La proprietà originale ha come domain lrmoo:F2_Expression e come range lrmoo:F2_Expression. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression e come range lrmoo:F2_Expression.</rdfs:comment>
+    <rdfs:comment xml:lang="en">In DeSMòS, it states that an expression derives from another expression used as a source in its creation. The original property has domain lrmoo:F2_Expression and range lrmoo:F2_Expression. In DeSMòS, the same property has domain lrmoo:F2_Expression and range lrmoo:F2_Expression.</rdfs:comment>
+    <owl:inverseOf rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/R76i_has_derivative"/>
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+    <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/"/>
+    <rdfs:label xml:lang="it">R76 è derivato di</rdfs:label>
+    <rdfs:label xml:lang="en">R76 is derivative of</rdfs:label>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P130_shows_features_of"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/desmos/SemanticConstraintScheme">
+    <rdfs:comment xml:lang="en">Concept scheme collecting semantic constraints, which intervene primarily on the signified of the text.</rdfs:comment>
+    <rdfs:comment xml:lang="it">Schema concettuale che raccoglie le costrizioni semantiche, che intervengono prioritariamente sul significato del testo.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
+    <rdfs:label xml:lang="en">Semantic Constraint Scheme</rdfs:label>
+    <rdfs:label xml:lang="it">Schema delle costrizioni semantiche</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+  </rdf:Description>
+</rdf:RDF>

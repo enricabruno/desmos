@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "https://w3id.org/lso/intro/beta202506#INT15_IntertextualityInIntertextualityTheories",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, INT15 Intertextuality in Intertextuality Theories è utilizzata per rappresentare tipi di relazione derivati da teorie dell'intertestualità, tra cui l'ipertestualità nella classificazione di Gérard Genette."
+      },
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, INT15 Intertextuality in Intertextuality Theories is used to represent relation types derived from theories of intertextuality, including hypertextuality in Gérard Genette's classification."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "INT15 Intertestualità nelle teorie dell'intertestualità"
+      },
+      {
+        "@language": "en",
+        "@value": "INT15 Intertextuality in Intertextuality Theories"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "https://w3id.org/lso/intro/beta202506#INT11_TypeOfInterrelation"
+      }
+    ]
+  }
+]

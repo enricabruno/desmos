@@ -1,0 +1,14 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+crm:P129_is_about a owl:ObjectProperty ;
+    rdfs:label "P129 is about"@en,
+        "P129 verte su"@it ;
+    rdfs:comment "In DeSMòS, it states that a declaration (linguistic object) has a literary constraint as its subject. The original property has domain crm:E89_Propositional_Object and range crm:E1_CRM_Entity. In DeSMòS, the same property has domain crm:E33_Linguistic_Object and range desmos:LiteraryConstraint."@en,
+        "In DeSMòS indica che una dichiarazione (oggetto linguistico) ha come argomento una costrizione letteraria. La proprietà originale ha come domain crm:E89_Propositional_Object e come range crm:E1_CRM_Entity. In DeSMòS la stessa proprietà ha come domain crm:E33_Linguistic_Object e come range desmos:LiteraryConstraint."@it ;
+    rdfs:domain crm:E89_Propositional_Object ;
+    rdfs:isDefinedBy crm: ;
+    rdfs:range crm:E1_CRM_Entity ;
+    owl:inverseOf crm:P129i_is_subject_of .
+

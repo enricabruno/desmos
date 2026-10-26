@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/desmos/isFormalUnitConstrainedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/desmos/constrainsFormalUnit"/>
+    <rdfs:label xml:lang="en">is formal unit constrained by</rdfs:label>
+    <rdfs:label xml:lang="it">è unità formale vincolata da</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
+    <rdfs:comment xml:lang="en">Inverse of constrainsFormalUnit: relates a unit of the writing system to the formal constraints operating on it. The property has domain skos:Concept and range desmos:FormalConstraint.</rdfs:comment>
+    <rdfs:comment xml:lang="it">Inversa di constrainsFormalUnit: collega un'unità del sistema di scrittura alle costrizioni formali che operano su di essa. La proprietà ha come domain skos:Concept e come range desmos:FormalConstraint.</rdfs:comment>
+    <rdfs:range rdf:resource="https://w3id.org/desmos/FormalConstraint"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+</rdf:RDF>

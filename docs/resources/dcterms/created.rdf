@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/created">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    <rdfs:comment xml:lang="it">In DeSMòS, dcterms:created è utilizzata per registrare la data associata all'evento di creazione di un'espressione.</rdfs:comment>
+    <rdfs:comment xml:lang="en">In DeSMòS, dcterms:created is used to record the date associated with an expression creation event.</rdfs:comment>
+    <rdfs:label xml:lang="en">created</rdfs:label>
+    <rdfs:label xml:lang="it">creato</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </rdf:Description>
+</rdf:RDF>

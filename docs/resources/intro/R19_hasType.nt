@@ -1,0 +1,9 @@
+<https://w3id.org/lso/intro/beta202506#R19_hasType> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/lso/intro/beta202506#R19i_isTypeOf> .
+<https://w3id.org/lso/intro/beta202506#R19_hasType> <http://www.w3.org/2000/01/rdf-schema#comment> "In DeSMòS, it qualifies an intertextual relation with a controlled type (e.g., hypertextuality). The original property has domain intro:INT3_Interrelation and range intro:INT11_TypeOfInterrelation. In DeSMòS, the same property has domain intro:INT31_IntertextualRelation and range intro:INT11_TypeOfInterrelation."@en .
+<https://w3id.org/lso/intro/beta202506#R19_hasType> <http://www.w3.org/2000/01/rdf-schema#label> "R19 has type"@en .
+<https://w3id.org/lso/intro/beta202506#R19_hasType> <http://www.w3.org/2000/01/rdf-schema#comment> "In DeSMòS qualifica una relazione intertestuale con un tipo controllato (es. ipertestualità). La proprietà originale ha come domain intro:INT3_Interrelation e come range intro:INT11_TypeOfInterrelation. In DeSMòS la stessa proprietà ha come domain intro:INT31_IntertextualRelation e come range intro:INT11_TypeOfInterrelation."@it .
+<https://w3id.org/lso/intro/beta202506#R19_hasType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lso/intro/beta202506#> .
+<https://w3id.org/lso/intro/beta202506#R19_hasType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lso/intro/beta202506#INT11_TypeOfInterrelation> .
+<https://w3id.org/lso/intro/beta202506#R19_hasType> <http://www.w3.org/2000/01/rdf-schema#label> "R19 ha tipo"@it .
+<https://w3id.org/lso/intro/beta202506#R19_hasType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lso/intro/beta202506#R19_hasType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lso/intro/beta202506#INT3_Interrelation> .

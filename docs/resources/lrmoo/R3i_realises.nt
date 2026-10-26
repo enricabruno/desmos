@@ -1,0 +1,8 @@
+<http://iflastandards.info/ns/lrm/lrmoo/R3i_realises> <http://www.w3.org/2000/01/rdf-schema#range> <http://iflastandards.info/ns/lrm/lrmoo/F1_Work> .
+<http://iflastandards.info/ns/lrm/lrmoo/R3i_realises> <http://www.w3.org/2000/01/rdf-schema#label> "R3i realizza"@it .
+<http://iflastandards.info/ns/lrm/lrmoo/R3i_realises> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iflastandards.info/ns/lrm/lrmoo/F2_Expression> .
+<http://iflastandards.info/ns/lrm/lrmoo/R3i_realises> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of R3 is realised in: in DeSMòS, it relates a textual expression to the work it realises. The original property has domain lrmoo:F2_Expression and range lrmoo:F1_Work. In DeSMòS, the same property has domain lrmoo:F2_Expression and range lrmoo:F1_Work."@en .
+<http://iflastandards.info/ns/lrm/lrmoo/R3i_realises> <http://www.w3.org/2000/01/rdf-schema#comment> "Inversa di R3 is realised in: in DeSMòS collega un'espressione testuale all'opera che realizza. La proprietà originale ha come domain lrmoo:F2_Expression e come range lrmoo:F1_Work. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression e come range lrmoo:F1_Work."@it .
+<http://iflastandards.info/ns/lrm/lrmoo/R3i_realises> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iflastandards.info/ns/lrm/lrmoo/R3i_realises> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://iflastandards.info/ns/lrm/lrmoo/> .
+<http://iflastandards.info/ns/lrm/lrmoo/R3i_realises> <http://www.w3.org/2000/01/rdf-schema#label> "R3i realises"@en .

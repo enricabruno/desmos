@@ -1,0 +1,13 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+crm:P3_has_note a owl:DatatypeProperty ;
+    rdfs:label "has note"@en,
+        "ha nota"@it ;
+    rdfs:comment "In DeSMòS, P3 has note is used to associate a linguistic object or textual feature with an additional textual description expressed as a literal."@en,
+        "In DeSMòS, P3 has note è utilizzata per associare a un oggetto linguistico o a una caratteristica testuale una descrizione testuale aggiuntiva espressa come letterale."@it ;
+    rdfs:domain crm:E1_CRM_Entity ;
+    rdfs:isDefinedBy crm: ;
+    rdfs:range rdfs:Literal .
+

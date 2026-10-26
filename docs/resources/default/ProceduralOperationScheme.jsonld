@@ -1,0 +1,34 @@
+[
+  {
+    "@id": "https://w3id.org/desmos/ProceduralOperationScheme",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Schema concettuale che descrive le operazioni procedurali applicate per generare il testo vincolato. Atteso come valore del range di desmos:involvesOperation."
+      },
+      {
+        "@language": "en",
+        "@value": "Concept scheme describing the procedural operations applied to generate the constrained text. Expected as the range value of desmos:involvesOperation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "Schema delle operazioni procedurali"
+      },
+      {
+        "@language": "en",
+        "@value": "Procedural Operation Scheme"
+      }
+    ]
+  }
+]

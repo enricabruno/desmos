@@ -1,0 +1,7 @@
+<https://w3id.org/desmos/ArtisticFormScheme> <http://www.w3.org/2000/01/rdf-schema#label> "Schema delle forme artistiche"@it .
+<https://w3id.org/desmos/ArtisticFormScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/desmos/ArtisticFormScheme> <http://www.w3.org/2000/01/rdf-schema#label> "Artistic Form Scheme"@en .
+<https://w3id.org/desmos/ArtisticFormScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "Schema concettuale che definisce la forma artistica di espressioni non linguistiche (arte visuale, musica). Utilizzato per qualificare istanze di lrmoo:F2_Expression tramite crm:P2_has_type, in complemento a desmos:LiteraryFormScheme nei casi in cui l'espressione non sia un testo."@it .
+<https://w3id.org/desmos/ArtisticFormScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/desmos/> .
+<https://w3id.org/desmos/ArtisticFormScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<https://w3id.org/desmos/ArtisticFormScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept scheme defining the artistic form of non-linguistic expressions (visual art, music). Used to qualify lrmoo:F2_Expression instances via crm:P2_has_type, complementing desmos:LiteraryFormScheme where the source expression is not a text."@en .

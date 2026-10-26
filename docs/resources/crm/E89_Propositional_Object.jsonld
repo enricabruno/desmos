@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Questa classe comprende entità che esistono come insiemi di caratteristiche o proprietà, piuttosto che come oggetti fisici. In DeSMòS, rappresenta le entità astratte come le opere e, attraverso E73 Information Object, le espressioni, le dichiarazioni e le costrizioni letterarie. Le relazioni intertestuali (intro:INT3_Interrelation) non ne fanno parte, essendo sottoclasse diretta di E28 Conceptual Object."
+      },
+      {
+        "@language": "en",
+        "@value": "This class comprises entities that exist as sets of characteristics or properties rather than as physical objects. In DeSMòS, it represents abstract entities such as works and, through E73 Information Object, expressions, declarations and literary constraints. Intertextual relations (intro:INT3_Interrelation) are not included, being a direct subclass of E28 Conceptual Object."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "E89 Oggetto Proposizionale"
+      },
+      {
+        "@language": "en",
+        "@value": "E89 Propositional Object"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object"
+      }
+    ]
+  }
+]

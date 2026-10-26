@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/lso/intro/beta202506#R19i_isTypeOf">
+    <rdfs:domain rdf:resource="https://w3id.org/lso/intro/beta202506#INT11_TypeOfInterrelation"/>
+    <rdfs:range rdf:resource="https://w3id.org/lso/intro/beta202506#INT3_Interrelation"/>
+    <rdfs:label xml:lang="it">R19i è tipo di</rdfs:label>
+    <rdfs:label xml:lang="en">R19i is type of</rdfs:label>
+    <rdfs:comment xml:lang="it">Inversa di R19 has type: in DeSMòS collega un tipo di relazione alle relazioni intertestuali che qualifica. La proprietà originale ha come domain intro:INT11_TypeOfInterrelation e come range intro:INT3_Interrelation. In DeSMòS la stessa proprietà ha come domain intro:INT11_TypeOfInterrelation e come range intro:INT31_IntertextualRelation.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Inverse of R19 has type: in DeSMòS, it relates a relation type to the intertextual relations it qualifies. The original property has domain intro:INT11_TypeOfInterrelation and range intro:INT3_Interrelation. In DeSMòS, the same property has domain intro:INT11_TypeOfInterrelation and range intro:INT31_IntertextualRelation.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/lso/intro/beta202506#"/>
+  </rdf:Description>
+</rdf:RDF>

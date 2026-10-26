@@ -1,0 +1,48 @@
+[
+  {
+    "@id": "http://iflastandards.info/ns/lrm/lrmoo/R4_embodies",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, it relates a published or digital manifestation to the expression it embodies. The original property has domain lrmoo:F3_Manifestation and range lrmoo:F2_Expression. In DeSMòS, the same property has domain lrmoo:F3_Manifestation and range lrmoo:F2_Expression."
+      },
+      {
+        "@language": "it",
+        "@value": "In DeSMòS collega una manifestazione editoriale o digitale all'espressione che incorpora. La proprietà originale ha come domain lrmoo:F3_Manifestation e come range lrmoo:F2_Expression. In DeSMòS la stessa proprietà ha come domain lrmoo:F3_Manifestation e come range lrmoo:F2_Expression."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F3_Manifestation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "R4 embodies"
+      },
+      {
+        "@language": "it",
+        "@value": "R4 incarna"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/R4i_is_embodied_in"
+      }
+    ]
+  }
+]

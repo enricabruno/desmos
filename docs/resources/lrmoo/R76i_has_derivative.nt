@@ -1,0 +1,8 @@
+<http://iflastandards.info/ns/lrm/lrmoo/R76i_has_derivative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iflastandards.info/ns/lrm/lrmoo/R76i_has_derivative> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iflastandards.info/ns/lrm/lrmoo/F2_Expression> .
+<http://iflastandards.info/ns/lrm/lrmoo/R76i_has_derivative> <http://www.w3.org/2000/01/rdf-schema#range> <http://iflastandards.info/ns/lrm/lrmoo/F2_Expression> .
+<http://iflastandards.info/ns/lrm/lrmoo/R76i_has_derivative> <http://www.w3.org/2000/01/rdf-schema#label> "R76i has derivative"@en .
+<http://iflastandards.info/ns/lrm/lrmoo/R76i_has_derivative> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of R76 is derivative of: in DeSMòS, it relates a source expression to the expressions derived from it. The original property has domain lrmoo:F2_Expression and range lrmoo:F2_Expression. In DeSMòS, the same property has domain lrmoo:F2_Expression and range lrmoo:F2_Expression."@en .
+<http://iflastandards.info/ns/lrm/lrmoo/R76i_has_derivative> <http://www.w3.org/2000/01/rdf-schema#comment> "Inversa di R76 is derivative of: in DeSMòS collega un'espressione fonte alle espressioni che ne derivano. La proprietà originale ha come domain lrmoo:F2_Expression e come range lrmoo:F2_Expression. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression e come range lrmoo:F2_Expression."@it .
+<http://iflastandards.info/ns/lrm/lrmoo/R76i_has_derivative> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://iflastandards.info/ns/lrm/lrmoo/> .
+<http://iflastandards.info/ns/lrm/lrmoo/R76i_has_derivative> <http://www.w3.org/2000/01/rdf-schema#label> "R76i ha derivato"@it .

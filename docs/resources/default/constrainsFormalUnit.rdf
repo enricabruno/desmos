@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/desmos/constrainsFormalUnit">
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/desmos/"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="it">vincola unità formale</rdfs:label>
+    <rdfs:label xml:lang="en">constrains formal unit</rdfs:label>
+    <rdfs:comment xml:lang="en">Relates a formal constraint to the textual unit on which it operates. The property has domain desmos:FormalConstraint and range skos:Concept.</rdfs:comment>
+    <rdfs:comment xml:lang="it">Collega una costrizione formale all'unità testuale su cui opera (ad es. lettera, sillaba o parola). La proprietà ha come domain desmos:FormalConstraint e come range skos:Concept.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://w3id.org/desmos/FormalConstraint"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+</rdf:RDF>

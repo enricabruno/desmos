@@ -1,0 +1,14 @@
+<https://w3id.org/lso/intro/beta202506#R30i_isTextPassageOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lso/intro/beta202506#INT21_TextPassage> .
+_:N32a2541c7d984d84b0ffa3debfdcdc75 <http://www.w3.org/2002/07/owl#unionOf> _:Nf25af678661840df9a81198ad16cb724 .
+<https://w3id.org/lso/intro/beta202506#R30i_isTextPassageOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lso/intro/beta202506#> .
+<https://w3id.org/lso/intro/beta202506#R30i_isTextPassageOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inversa di R30 has text passage: in DeSMòS collega un passaggio testuale all'espressione da cui è tratto. La proprietà originale ha come domain intro:INT21_TextPassage e come range l'unione di crm:E73_Information_Object e intro:INT1_Passage. In DeSMòS la stessa proprietà ha come domain intro:INT21_TextPassage e come range lrmoo:F2_Expression."@it .
+<https://w3id.org/lso/intro/beta202506#R30i_isTextPassageOf> <http://www.w3.org/2000/01/rdf-schema#range> _:N32a2541c7d984d84b0ffa3debfdcdc75 .
+_:N32a2541c7d984d84b0ffa3debfdcdc75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:Nc298ad92f22941b49121a64f97e0aa04 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:Nc298ad92f22941b49121a64f97e0aa04 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lso/intro/beta202506#INT1_Passage> .
+<https://w3id.org/lso/intro/beta202506#R30i_isTextPassageOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of R30 has text passage: in DeSMòS, it relates a textual passage to the expression from which it is taken. The original property has domain intro:INT21_TextPassage and range the union of crm:E73_Information_Object and intro:INT1_Passage. In DeSMòS, the same property has domain intro:INT21_TextPassage and range lrmoo:F2_Expression."@en .
+<https://w3id.org/lso/intro/beta202506#R30i_isTextPassageOf> <http://www.w3.org/2000/01/rdf-schema#label> "R30i is text passage of"@en .
+<https://w3id.org/lso/intro/beta202506#R30i_isTextPassageOf> <http://www.w3.org/2000/01/rdf-schema#label> "R30i è passaggio testuale di"@it .
+_:Nf25af678661840df9a81198ad16cb724 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nc298ad92f22941b49121a64f97e0aa04 .
+<https://w3id.org/lso/intro/beta202506#R30i_isTextPassageOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:Nf25af678661840df9a81198ad16cb724 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> .

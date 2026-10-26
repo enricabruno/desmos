@@ -1,0 +1,13 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+prov:wasAttributedTo a owl:ObjectProperty ;
+    rdfs:label "was attributed to"@en,
+        "è stato attribuito a"@it ;
+    rdfs:comment "In DeSMòS, it attributes a declaration (linguistic object) about a constraint to the agent responsible for it. The original property has domain prov:Entity and range prov:Agent. In DeSMòS, the same property has domain crm:E33_Linguistic_Object and range crm:E39_Actor (also prov:Agent)."@en,
+        "In DeSMòS attribuisce una dichiarazione (oggetto linguistico) relativa a una costrizione all'agente che ne è responsabile. La proprietà originale ha come domain prov:Entity e come range prov:Agent. In DeSMòS la stessa proprietà ha come domain crm:E33_Linguistic_Object e come range crm:E39_Actor (anche prov:Agent)."@it ;
+    rdfs:domain prov:Entity ;
+    rdfs:isDefinedBy prov: ;
+    rdfs:range prov:Agent .
+

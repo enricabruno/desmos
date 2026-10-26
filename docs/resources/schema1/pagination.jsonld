@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "http://schema.org/pagination",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "In DeSMòS, schema:pagination is used to record the page or page range of a F3_Manifestation."
+      },
+      {
+        "@language": "it",
+        "@value": "In DeSMòS, schema:pagination è utilizzata per registrare la pagina o l'intervallo di pagine di una F3_Manifestation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://schema.org/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "paginazione"
+      },
+      {
+        "@language": "en",
+        "@value": "pagination"
+      }
+    ]
+  }
+]

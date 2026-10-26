@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://w3id.org/desmos/constrainsSemanticUnit",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This property relates a semantic constraint to the semantic unit on which it operates (e.g., character, space, or time). The property has domain desmos:SemanticConstraint and range skos:Concept."
+      },
+      {
+        "@language": "it",
+        "@value": "Questa proprietà collega una costrizione semantica all’unità semantica su cui opera (ad es. personaggio, spazio o tempo). La proprietà ha come domain desmos:SemanticConstraint e come range skos:Concept."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/desmos/SemanticConstraint"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "constrains semantic unit"
+      },
+      {
+        "@language": "it",
+        "@value": "vincola unità semantica"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ]
+  }
+]

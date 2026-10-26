@@ -1,0 +1,6 @@
+<http://purl.org/dc/terms/license> <http://www.w3.org/2000/01/rdf-schema#comment> "Il documento legale che stabilisce i permessi di utilizzo della risorsa."@it .
+<http://purl.org/dc/terms/license> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/license> <http://www.w3.org/2000/01/rdf-schema#label> "license"@en .
+<http://purl.org/dc/terms/license> <http://www.w3.org/2000/01/rdf-schema#comment> "A legal document giving official permission to do something with the resource."@en .
+<http://purl.org/dc/terms/license> <http://www.w3.org/2000/01/rdf-schema#label> "licenza"@it .
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .

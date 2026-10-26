@@ -1,0 +1,13 @@
+@prefix : <https://w3id.org/desmos/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:ConstraintOriginScheme a owl:NamedIndividual,
+        skos:ConceptScheme ;
+    rdfs:label "Constraint Origin Scheme"@en,
+        "Schema dell'origine della costrizione"@it ;
+    rdfs:comment "Concept scheme distinguishing between traditional constraints and newly introduced constraints in a specific compositional context. Expected as the range value of desmos:constraintOrigin."@en,
+        "Schema concettuale che distingue le costrizioni riprese dalla tradizione da quelle introdotte ex novo in uno specifico contesto compositivo. Atteso come valore del range di desmos:constraintOrigin."@it ;
+    rdfs:isDefinedBy : .
+

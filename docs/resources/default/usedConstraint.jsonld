@@ -1,0 +1,48 @@
+[
+  {
+    "@id": "https://w3id.org/desmos/usedConstraint",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This property relates an expression creation event to the literary constraint employed as a generative device; subproperty of crm:P33_used_specific_technique. The property has domain lrmoo:F28_Expression_Creation and range desmos:LiteraryConstraint."
+      },
+      {
+        "@language": "it",
+        "@value": "Questa proprietà collega un evento di creazione dell'espressione alla costrizione letteraria impiegata come dispositivo generativo; sottoproprietà di crm:P33_used_specific_technique. La proprietà ha come domain lrmoo:F28_Expression_Creation e come range desmos:LiteraryConstraint."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://iflastandards.info/ns/lrm/lrmoo/F28_Expression_Creation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/desmos/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "used constraint"
+      },
+      {
+        "@language": "it",
+        "@value": "ha usato costrizione"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/desmos/LiteraryConstraint"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.cidoc-crm.org/cidoc-crm/P33_used_specific_technique"
+      }
+    ]
+  }
+]

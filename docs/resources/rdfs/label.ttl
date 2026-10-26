@@ -1,0 +1,10 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+rdfs:label a owl:AnnotationProperty ;
+    rdfs:label "label"@en,
+        "etichetta"@it ;
+    rdfs:comment "A human-readable name for the entity."@en,
+        "Un nome leggibile per l'entità."@it ;
+    rdfs:isDefinedBy rdfs: .
+

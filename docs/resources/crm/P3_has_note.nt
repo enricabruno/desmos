@@ -1,0 +1,8 @@
+<http://www.cidoc-crm.org/cidoc-crm/P3_has_note> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.cidoc-crm.org/cidoc-crm/P3_has_note> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.cidoc-crm.org/cidoc-crm/P3_has_note> <http://www.w3.org/2000/01/rdf-schema#comment> "In DeSMòS, P3 has note is used to associate a linguistic object or textual feature with an additional textual description expressed as a literal."@en .
+<http://www.cidoc-crm.org/cidoc-crm/P3_has_note> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> .
+<http://www.cidoc-crm.org/cidoc-crm/P3_has_note> <http://www.w3.org/2000/01/rdf-schema#comment> "In DeSMòS, P3 has note è utilizzata per associare a un oggetto linguistico o a una caratteristica testuale una descrizione testuale aggiuntiva espressa come letterale."@it .
+<http://www.cidoc-crm.org/cidoc-crm/P3_has_note> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.cidoc-crm.org/cidoc-crm/> .
+<http://www.cidoc-crm.org/cidoc-crm/P3_has_note> <http://www.w3.org/2000/01/rdf-schema#label> "has note"@en .
+<http://www.cidoc-crm.org/cidoc-crm/P3_has_note> <http://www.w3.org/2000/01/rdf-schema#label> "ha nota"@it .

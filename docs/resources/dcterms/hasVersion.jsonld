@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "http://purl.org/dc/terms/hasVersion",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "it",
+        "@value": "Una risorsa correlata che è una versione, edizione o adattamento della risorsa descritta."
+      },
+      {
+        "@language": "en",
+        "@value": "A related resource that is a version, edition, or adaptation of the described resource."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/dc/terms/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has version"
+      },
+      {
+        "@language": "it",
+        "@value": "ha versione"
+      }
+    ]
+  }
+]

@@ -1,0 +1,11 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+dcterms:creator a owl:AnnotationProperty ;
+    rdfs:label "creator"@en,
+        "creatore"@it ;
+    rdfs:comment "An entity responsible for making the resource."@en,
+        "Un'entità responsabile della creazione della risorsa."@it ;
+    rdfs:isDefinedBy dcterms: .
+

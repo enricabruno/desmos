@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://iflastandards.info/ns/lrm/lrmoo/R3i_realises">
+    <rdfs:range rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F1_Work"/>
+    <rdfs:label xml:lang="it">R3i realizza</rdfs:label>
+    <rdfs:label xml:lang="en">R3i realises</rdfs:label>
+    <rdfs:domain rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/F2_Expression"/>
+    <rdfs:comment xml:lang="it">Inversa di R3 is realised in: in DeSMòS collega un'espressione testuale all'opera che realizza. La proprietà originale ha come domain lrmoo:F2_Expression e come range lrmoo:F1_Work. In DeSMòS la stessa proprietà ha come domain lrmoo:F2_Expression e come range lrmoo:F1_Work.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Inverse of R3 is realised in: in DeSMòS, it relates a textual expression to the work it realises. The original property has domain lrmoo:F2_Expression and range lrmoo:F1_Work. In DeSMòS, the same property has domain lrmoo:F2_Expression and range lrmoo:F1_Work.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://iflastandards.info/ns/lrm/lrmoo/"/>
+  </rdf:Description>
+</rdf:RDF>
